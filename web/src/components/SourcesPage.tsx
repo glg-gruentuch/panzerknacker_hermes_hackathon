@@ -4,13 +4,7 @@ import type { Meta } from '../api/types'
 import { Icon } from './Icon'
 import styles from './Pages.module.css'
 
-const MISSING = 'Not recorded yet'
-
-function Value({ text }: { text: string }) {
-  return text.startsWith(MISSING) ? <span className={styles.missing}>{text}</span> : <>{text}</>
-}
-
-/** Dataset versions, the models in the pipeline, and how the sample was chosen. */
+/** The datasets and the models in the pipeline. */
 export function SourcesPage() {
   const [meta, setMeta] = useState<Meta | null>(null)
   const [error, setError] = useState('')
@@ -38,16 +32,6 @@ export function SourcesPage() {
                   {d.name} <Icon name="external" size={13} />
                 </a>
                 <p className={styles.datasetSource}>{d.source}</p>
-                <dl className={styles.kv}>
-                  <dt>Version</dt>
-                  <dd className="num">
-                    <Value text={d.version} />
-                  </dd>
-                  <dt>Downloaded</dt>
-                  <dd className="num">
-                    <Value text={d.downloaded} />
-                  </dd>
-                </dl>
               </div>
             ))}
           </section>
@@ -65,15 +49,6 @@ export function SourcesPage() {
                 </li>
               ))}
             </ol>
-          </section>
-
-          <section className={styles.block} aria-labelledby="src-sample">
-            <h2 id="src-sample" className={styles.blockTitle}>
-              Sample of {meta.sample.size} Britannica pages
-            </h2>
-            <p className={styles.method}>
-              <Value text={meta.sample.method} />
-            </p>
           </section>
         </>
       )}
