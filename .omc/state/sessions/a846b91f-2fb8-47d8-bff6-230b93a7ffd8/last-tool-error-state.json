@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"rtk curl -s https://pypi.org/pypi/lancedb/json | python3 -c \\\"\\nimport json,sys;d=json.load(sys.stdin)\\nok=[v for v,fs in d['releases'].items() if any('macosx' in f['filename'] and 'x86_64...",
+  "error": "Exit code 127\nlatest w/ intel mac wheel: ['0.25.1', '0.25.2', '0.25.3']\nwiki ready: 200\n{\"dataset\":\"wikimedia/structured-wikipedia\",\"dataset_revision\":\"417c267bb457fa645c22eb3b5c77764963194c70\",\"dataset_url\":\"https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70\",\"language\":\"en\",\"canonical_policy\":\"latest-numeric-revision-source-coordinate-v1\",\"retrieval\":\"lexical_bm25\",\"search_column\":\"search_text\",\"lexical_strategy\":\"native-bm2\nparse docs:...",
+  "timestamp": "2026-10-18T10:04:32.430Z",
+  "retry_count": 1
+}
