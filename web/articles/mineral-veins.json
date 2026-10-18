@@ -1,0 +1,391 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "mineral-veins",
+    "label": "Mineral veins",
+    "headword": "VEINS, in mineralogy",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Vein (geology)",
+    "area": "geology",
+    "teaser": "It was long the opinion of the ancients, and of the alchemists, that metals grow in the earth like plants, by the influence of the sun and planets; each metal being ruled by its own planet, as gold by the sun and silver by the moon."
+  },
+  "aliases": [
+    "lode",
+    "lodes",
+    "metallic veins",
+    "ore veins",
+    "mineral vein"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0073",
+    "headword": "VEINS, in mineralogy",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 18",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 18 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "VEI                    [ 683 ]                    VEI\n\nVEIL, a piece of ſtuff ſerving to cover or hide any\nthing.\n  VEINS, in mineralogy, are the clefts or fiſſures in\nrocks, filled with metallic ores, ſpar, quartz, or\nother matter different from the rock in which they lie.\nWhen rich in metal the miners call them lodes.\n  It was long the opinion of the ancients, and of the\nalchemiſts, that metals grow in the earth like plants,\nby the influence of the ſun and plancts; each metal\nbeing ruled by its own planet, as gold by the ſun and\nſilver by the moon.\n  Mr Werner of Freyberg holds that veins were at firſt\nopen fiſſures, formed as the rocks dried and ſettled,\nand that they were afterwards filled from above by\nwater, which depoſited the ores and ſpars that it held\nin ſolution. Dr Hutton, on the contrary, maintains that\nthe matter of veins was forced up from below in a\nmelted ſtate, by the power of ſubterraneous heat.\n  Veins in the ſame diſtrict commonly run in one direc-\ntion; and where two veins croſs, the vein that is cut\nthrough is the older. Many miners truſt to the divining\nrod, a forked twig of hazel which, held in the hands,\nbends down over a vein; and ſome writers affirm that it\nſeldom fails.\n  VELLUM, a kind of fine parchment.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "VEINS, in mineralogy",
+        "text": "VEINS, in mineralogy, are the clefts or fissures in rocks, filled with metallic ores, spar, quartz, or other matter different from the rock in which they lie. When rich in metal the miners call them lodes."
+      },
+      {
+        "id": "B2",
+        "section": "VEINS, in mineralogy",
+        "text": "It was long the opinion of the ancients, and of the alchemists, that metals grow in the earth like plants, by the influence of the sun and planets; each metal being ruled by its own planet, as gold by the sun and silver by the moon."
+      },
+      {
+        "id": "B3",
+        "section": "VEINS, in mineralogy",
+        "text": "Mr Werner of Freyberg holds that veins were at first open fissures, formed as the rocks dried and settled, and that they were afterwards filled from above by water, which deposited the ores and spars that it held in solution."
+      },
+      {
+        "id": "B4",
+        "section": "VEINS, in mineralogy",
+        "text": "Dr Hutton, on the contrary, maintains that the matter of veins was forced up from below in a melted state, by the power of subterraneous heat."
+      },
+      {
+        "id": "B5",
+        "section": "VEINS, in mineralogy",
+        "text": "Veins in the same district commonly run in one direction; and where two veins cross, the vein that is cut through is the older."
+      },
+      {
+        "id": "B6",
+        "section": "VEINS, in mineralogy",
+        "text": "Many miners trust to the divining rod, a forked twig of hazel which, held in the hands, bends down over a vein; and some writers affirm that it seldom fails."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-mineral-veins",
+    "title": "Vein (geology)",
+    "url": "https://en.wikipedia.org/wiki/Vein_(geology)",
+    "dateModified": "2026-09-30",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "In geology, a vein is a distinct sheetlike body of crystallized minerals within a rock. Veins form when mineral constituents carried by an aqueous solution within the rock mass are deposited through precipitation."
+      },
+      {
+        "id": "W2",
+        "section": "Formation",
+        "text": "The fluids that deposit veins are usually hot water solutions, called hydrothermal fluids, which move through cracks in the rock and drop minerals as they cool or as pressure falls."
+      },
+      {
+        "id": "W3",
+        "section": "Formation",
+        "text": "Most veins form in fractures that open when the rock is under stress, and the minerals often grow from the walls of the crack inward."
+      },
+      {
+        "id": "W4",
+        "section": "Ore deposits",
+        "text": "Veins of quartz and other minerals can carry gold, silver, copper, tin and other metals, and many have been mined as lodes."
+      },
+      {
+        "id": "W5",
+        "section": "Formation",
+        "text": "Veins in one area often share the same direction, because they fill fractures formed by the same regional stress."
+      },
+      {
+        "id": "W6",
+        "section": "Relative age",
+        "text": "Where one vein cuts across another, the vein that is cut is older."
+      },
+      {
+        "id": "W7",
+        "section": "Formation",
+        "text": "Hydrothermal fluids are often released from cooling bodies of magma deep below, and rise through the crust."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.83,
+    "rerankScore": 0.84,
+    "reasons": [
+      "The old headword VEINS, in mineralogy, maps to the geological sense of vein.",
+      "Rare terms appear in both: fissures, ores, quartz, lodes.",
+      "Ore genesis scores well but covers all ore deposits, not only veins."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Ore genesis",
+      "url": "https://en.wikipedia.org/wiki/Ore_genesis",
+      "embedScore": 0.79,
+      "rerankScore": 0.63
+    },
+    {
+      "title": "Lode",
+      "url": "https://en.wikipedia.org/wiki/Lode",
+      "embedScore": 0.75,
+      "rerankScore": 0.58
+    },
+    {
+      "title": "Dowsing",
+      "url": "https://en.wikipedia.org/wiki/Dowsing",
+      "embedScore": 0.6,
+      "rerankScore": 0.34
+    }
+  ],
+  "alignments": [
+    {
+      "id": "mv1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Filled fissures",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the clefts or fissures in rocks, filled with metallic ores, spar, quartz"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a distinct sheetlike body of crystallized minerals within a rock"
+      },
+      "note": "Same object in new words. Both describe a sheet of minerals that fills a crack in rock."
+    },
+    {
+      "id": "mv2",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Metals grow",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "metals grow in the earth like plants, by the influence of the sun and planets"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "carried by an aqueous solution within the rock mass are deposited through precipitation"
+      },
+      "note": "The 1797 entry reports this as an old belief. Metals do not grow. Water carries them and deposits them."
+    },
+    {
+      "id": "mv3",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Filled by water",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "filled from above by water, which deposited the ores and spars"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "usually hot water solutions, called hydrothermal fluids"
+      },
+      "note": "Werner was right that water deposits the minerals. The water is usually hot and rises from below, not from above."
+    },
+    {
+      "id": "mv4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Rocks dried and settled",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "formed as the rocks dried and settled"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Most veins form in fractures that open when the rock is under stress"
+      },
+      "note": "Change in knowledge. The cracks come from stress in the crust, not from rocks drying after a primeval ocean."
+    },
+    {
+      "id": "mv5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Melted matter from below",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "forced up from below in a melted state"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Hydrothermal fluids are often released from cooling bodies of magma deep below"
+      },
+      "note": "Hutton was right about heat and a source below. Most veins form from hot water, which often comes from magma, not from melted vein matter."
+    },
+    {
+      "id": "mv6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "One direction",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "Veins in the same district commonly run in one direction"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Veins in one area often share the same direction"
+      },
+      "note": "Same observation. Wikipedia gives the cause: the same regional stress."
+    },
+    {
+      "id": "mv7",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Older vein is cut",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the vein that is cut through is the older"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Where one vein cuts across another, the vein that is cut is older"
+      },
+      "note": "The rule holds and is still used to date veins."
+    },
+    {
+      "id": "mv8",
+      "kind": "dropped",
+      "verdict": "wrong",
+      "label": "Divining rod",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "Many miners trust to the divining rod"
+      },
+      "wikipedia": null,
+      "note": "Wikipedia's vein article does not mention it. Inference from other sources: dowsing has failed controlled tests and does not find veins."
+    },
+    {
+      "id": "mv9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Growth from the walls",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "the minerals often grow from the walls of the crack inward"
+      },
+      "note": "New detail. The 1797 entry does not say how the crystals grow in the fissure."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What a vein is",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Old beliefs",
+      "britannica": 0.2,
+      "wikipedia": 0
+    },
+    {
+      "topic": "How veins are filled",
+      "britannica": 0.3,
+      "wikipedia": 0.35
+    },
+    {
+      "topic": "Direction and age",
+      "britannica": 0.15,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Finding veins",
+      "britannica": 0.15,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Ores in veins",
+      "britannica": 0,
+      "wikipedia": 0.25
+    }
+  ],
+  "suggestedQuestions": [
+    "Who was right about veins, Werner or Hutton?",
+    "Did people think metals grow in the earth?",
+    "Which 1797 claims about veins still hold?"
+  ],
+  "answers": {
+    "Who was right about veins, Werner or Hutton?": {
+      "answer": "Each was partly right. Werner said water filled the veins from above [B3]. Hutton said melted matter came up from below [B4]. Wikipedia says hot water solutions deposit the minerals [W2], and these fluids often come from magma deep below [W7].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did people think metals grow in the earth?": {
+      "answer": "Yes. The 1797 entry reports the old belief that metals grow like plants under the sun and planets [B2]. Wikipedia says the minerals are carried by water and deposited [W1].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.82
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Which 1797 claims about veins still hold?": {
+      "answer": "The field rules hold. Veins in one district run in one direction [B5] [W5], and a vein that is cut is older [B5] [W6]. The divining rod [B6] and growing metals [B2] do not.",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.88
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.7
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.68
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "limestone",
+    "label": "Limestone",
+    "headword": "LIMESTONE",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "match": "strong",
+    "wikipediaTitle": "Limestone",
+    "area": "geology",
+    "teaser": "Mr Werner holds that the oldest or primitive limestone, which contains no shells, was deposited by chemical precipitation from the universal ocean which once covered the globe, before any animals existed."
+  },
+  "aliases": [
+    "limestones",
+    "calcareous earth",
+    "calcareous stone",
+    "chalk"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0072",
+    "headword": "LIMESTONE",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "volume": "Volume 12",
+    "meta": "Encyclopaedia Britannica - Fourth edition, Volume 12 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "LIM                    [ 214 ]                    LIM\n\nLIMERICK, a county of Ireland, in the province of Mun-\nſter.\n  LIMESTONE, a ſtone which, when burnt in a kiln, is\nconverted into quickiime. All the kinds of it effer-\nveſce with acids, and are compoſed chiefly of lime\nunited with fixed air, or carbonic acid. In burning,\nthe fixed air is driven off, as Dr Black firſt fhowed,\nand the ſtone loſes nearly half its weight.\n  Many limeſtones are wholly made up of ſhells and\ncorals, and appear to have been formed at the bottom of\nthe ſea. Mr Werner holds that the oldeſt or primitive\nlimeſtone, which contains no ſhells, was depoſited by\nchemical precipitation from the univerſal ocean which\nonce covered the globe, before any animals exiſted.\nChalk is a ſoft white limeſtone, which ſome naturaliſts\nconſider as formed from the ruins of ſhells ground to\npowder.\n  Marble is a limeſtone of a granular or cryſtalline\ntexture. Dr Hutton maintained that it is limeſtone\nwhich has been hardened and cryſtallized by ſubter-\nraneous heat under great preſſure, an opinion which Sir\nJames Hall has lately ſupported by experiments on chalk\nheated in cloſed veſſels.\n  Limeſtone is of great uſe in agriculture, burnt lime\nbeing laid upon lands to improve them; and in building,\nfor mortar is made of lime and ſand.\n  LIMNING, the art of painting in water colours.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "LIMESTONE",
+        "text": "LIMESTONE, a stone which, when burnt in a kiln, is converted into quicklime. All the kinds of it effervesce with acids, and are composed chiefly of lime united with fixed air, or carbonic acid."
+      },
+      {
+        "id": "B2",
+        "section": "LIMESTONE",
+        "text": "In burning, the fixed air is driven off, as Dr Black first showed, and the stone loses nearly half its weight."
+      },
+      {
+        "id": "B3",
+        "section": "LIMESTONE",
+        "text": "Many limestones are wholly made up of shells and corals, and appear to have been formed at the bottom of the sea."
+      },
+      {
+        "id": "B4",
+        "section": "LIMESTONE",
+        "text": "Mr Werner holds that the oldest or primitive limestone, which contains no shells, was deposited by chemical precipitation from the universal ocean which once covered the globe, before any animals existed."
+      },
+      {
+        "id": "B5",
+        "section": "LIMESTONE",
+        "text": "Chalk is a soft white limestone, which some naturalists consider as formed from the ruins of shells ground to powder."
+      },
+      {
+        "id": "B6",
+        "section": "LIMESTONE",
+        "text": "Marble is a limestone of a granular or crystalline texture. Dr Hutton maintained that it is limestone which has been hardened and crystallized by subterraneous heat under great pressure, an opinion which Sir James Hall has lately supported by experiments on chalk heated in closed vessels."
+      },
+      {
+        "id": "B7",
+        "section": "LIMESTONE",
+        "text": "Limestone is of great use in agriculture, burnt lime being laid upon lands to improve them; and in building, for mortar is made of lime and sand."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-limestone",
+    "title": "Limestone",
+    "url": "https://en.wikipedia.org/wiki/Limestone",
+    "dateModified": "2026-08-27",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Limestone is a sedimentary rock composed mostly of calcium carbonate (CaCO3), usually in the form of the minerals calcite and aragonite."
+      },
+      {
+        "id": "W2",
+        "section": "Origin",
+        "text": "Most limestone forms in shallow, warm seas from the skeletal remains of marine organisms such as corals, shellfish and foraminifera."
+      },
+      {
+        "id": "W3",
+        "section": "Lime",
+        "text": "When heated strongly, limestone gives off carbon dioxide and turns into quicklime, which is calcium oxide."
+      },
+      {
+        "id": "W4",
+        "section": "Chalk",
+        "text": "Chalk is a soft, fine-grained limestone made largely of coccoliths, the tiny calcite plates of single-celled marine algae."
+      },
+      {
+        "id": "W5",
+        "section": "Origin",
+        "text": "Limestone can also form by direct precipitation of calcium carbonate from water, as in travertine at springs, but most limestone has a biological origin."
+      },
+      {
+        "id": "W6",
+        "section": "Metamorphism",
+        "text": "When limestone is subjected to heat and pressure, it recrystallizes into marble, a metamorphic rock."
+      },
+      {
+        "id": "W7",
+        "section": "Uses",
+        "text": "Limestone is used as a building stone, to make lime, cement and mortar, and as a soil conditioner on farmland."
+      },
+      {
+        "id": "W8",
+        "section": "Karst",
+        "text": "Limestone dissolves slowly in rain water that contains carbon dioxide. This forms caves and karst landscapes."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.89,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same headword: LIMESTONE and Limestone.",
+      "Rare terms appear in both: quicklime, shells and corals, chalk, marble, mortar.",
+      "Calcium carbonate scores well but covers the chemical, not the rock."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Chalk",
+      "url": "https://en.wikipedia.org/wiki/Chalk",
+      "embedScore": 0.8,
+      "rerankScore": 0.6
+    },
+    {
+      "title": "Calcium carbonate",
+      "url": "https://en.wikipedia.org/wiki/Calcium_carbonate",
+      "embedScore": 0.77,
+      "rerankScore": 0.55
+    },
+    {
+      "title": "Marble",
+      "url": "https://en.wikipedia.org/wiki/Marble",
+      "embedScore": 0.74,
+      "rerankScore": 0.5
+    }
+  ],
+  "alignments": [
+    {
+      "id": "ls1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Lime and fixed air",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "composed chiefly of lime united with fixed air, or carbonic acid"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "composed mostly of calcium carbonate (CaCO3)"
+      },
+      "note": "Change in language. Fixed air is the old name for carbon dioxide, so lime with fixed air is calcium carbonate."
+    },
+    {
+      "id": "ls2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Burning to quicklime",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the fixed air is driven off, as Dr Black first showed"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "gives off carbon dioxide and turns into quicklime"
+      },
+      "note": "Same fact in new words. Joseph Black showed this in the 1750s."
+    },
+    {
+      "id": "ls3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Shells and corals",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "Many limestones are wholly made up of shells and corals"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "from the skeletal remains of marine organisms such as corals, shellfish and foraminifera"
+      },
+      "note": "The claim holds. Wikipedia adds microscopic organisms such as foraminifera."
+    },
+    {
+      "id": "ls4",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Chemical deposit",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "was deposited by chemical precipitation"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Limestone can also form by direct precipitation of calcium carbonate from water"
+      },
+      "note": "Some limestone does form by precipitation. Wikipedia says most limestone has a biological origin."
+    },
+    {
+      "id": "ls5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Universal ocean",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "from the universal ocean which once covered the globe, before any animals existed"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Most limestone forms in shallow, warm seas"
+      },
+      "note": "Change in knowledge. No universal ocean covered the globe. Inference: much shell-free crystalline limestone is marble, recrystallized from ordinary limestone."
+    },
+    {
+      "id": "ls6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Chalk from shells",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "formed from the ruins of shells ground to powder"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "made largely of coccoliths, the tiny calcite plates of single-celled marine algae"
+      },
+      "note": "Right that chalk comes from living things. The particles are whole microscopic plates, not ground shells."
+    },
+    {
+      "id": "ls7",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Marble from heat",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "hardened and crystallized by subterraneous heat under great pressure"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "When limestone is subjected to heat and pressure, it recrystallizes into marble"
+      },
+      "note": "Hutton's view, still disputed in 1810, is now the accepted one. Wikipedia names it metamorphism."
+    },
+    {
+      "id": "ls8",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Mortar and fields",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "for mortar is made of lime and sand"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "to make lime, cement and mortar, and as a soil conditioner on farmland"
+      },
+      "note": "Same uses. Wikipedia adds cement."
+    },
+    {
+      "id": "ls9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Caves and karst",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "This forms caves and karst landscapes"
+      },
+      "note": "New topic. The 1810 entry does not discuss how rain water dissolves limestone."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What limestone is",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Burning to lime",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Origin",
+      "britannica": 0.3,
+      "wikipedia": 0.3
+    },
+    {
+      "topic": "Chalk",
+      "britannica": 0.1,
+      "wikipedia": 0.13
+    },
+    {
+      "topic": "Marble",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Uses",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Caves and karst",
+      "britannica": 0,
+      "wikipedia": 0.1
+    }
+  ],
+  "suggestedQuestions": [
+    "How did the 1810 entry explain the origin of limestone?",
+    "What is fixed air in the 1810 entry?",
+    "Was Hutton right about marble?"
+  ],
+  "answers": {
+    "How did the 1810 entry explain the origin of limestone?": {
+      "answer": "It gave two origins. Many limestones are made of shells and corals from the sea floor [B3]. Werner's primitive limestone was a chemical deposit from a universal ocean before animals existed [B4]. Wikipedia keeps the first: most limestone comes from the remains of marine organisms [W2]. Chemical precipitation happens, but it is the smaller part [W5].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.88
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What is fixed air in the 1810 entry?": {
+      "answer": "Fixed air is driven off when limestone is burnt to quicklime [B1] [B2]. Wikipedia names the same gas carbon dioxide [W3], and the stone calcium carbonate [W1].",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.85
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Was Hutton right about marble?": {
+      "answer": "Yes. The 1810 entry reports his view that marble is limestone changed by heat under pressure [B6]. Wikipedia says limestone recrystallizes into marble under heat and pressure [W6].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

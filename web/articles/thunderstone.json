@@ -1,0 +1,380 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "thunderstone",
+    "label": "Thunderstone",
+    "headword": "CERAUNIA, or THUNDERSTONE",
+    "edition": "Second edition",
+    "year": 1778,
+    "match": "strong",
+    "wikipediaTitle": "Thunderstone (folklore)",
+    "area": "geology",
+    "teaser": "The common people keep them in their houses as a preservative against lightning, and believe that a house where one is kept will never be struck."
+  },
+  "aliases": [
+    "ceraunia",
+    "thunderstones",
+    "thunderbolt stone",
+    "belemnite",
+    "belemnites"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0075",
+    "headword": "CERAUNIA, or THUNDERSTONE",
+    "edition": "Second edition",
+    "year": 1778,
+    "volume": "Volume 3",
+    "meta": "Encyclopaedia Britannica - Second edition, Volume 3 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "CER                    [ 1765 ]                    CER\n\nCERATE, in pharmacy, an external medicine of wax and\noil.\n  CERAUNIA, or THUNDERSTONE, a name given to ſeveral\nkinds of ſtones, which the vulgar believe to fall from\nthe clouds in thunder-ſtorms, and to be the bolts of\nthe thunder itſelf. Of theſe the moſt common is the\nbelemnitcs, or finger-ſtone, a long ſtone of a conical\nfigure, like the point of a dart or the end of a\nfinger, of a brown colour, and compoſed of fibres\nradiatiug from its axis. Naturaliſts diſpute much about\nits origin; ſome hold it to be a mere mineral con-\ncretion, and others the ſhell or the ſpine of ſome ſea\nanimal now unknown.\n  Others of the ſame name are ſtones in the ſhape of an\naxe or wedge, finely poliſhed, and often bored with a\nhole, which are dug up in many parts of Europe. Theſe\nſome think the weapons or tools of ancient nations,\nbefore the uſe of metals was known. The common people\nkeep them in their houſes as a preſervative againſt\nlightning, and believe that a houſe where one is kept\nwill never be ſtruck.\n  Stones are alſo ſaid by ſome writers to have fallen\nfrom the air in other places; but the learned generally\ntreat theſe accounts as fables, or explain them by\nſtones ſtruck by lightning upon the ground.\n  CERBERUS, in fabulous hiſtory, a dog with three\nheads.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "CERAUNIA, or THUNDERSTONE",
+        "text": "CERAUNIA, or THUNDERSTONE, a name given to several kinds of stones, which the vulgar believe to fall from the clouds in thunder-storms, and to be the bolts of the thunder itself."
+      },
+      {
+        "id": "B2",
+        "section": "CERAUNIA, or THUNDERSTONE",
+        "text": "Of these the most common is the belemnites, or finger-stone, a long stone of a conical figure, like the point of a dart or the end of a finger, of a brown colour, and composed of fibres radiating from its axis."
+      },
+      {
+        "id": "B3",
+        "section": "CERAUNIA, or THUNDERSTONE",
+        "text": "Naturalists dispute much about its origin; some hold it to be a mere mineral concretion, and others the shell or the spine of some sea animal now unknown."
+      },
+      {
+        "id": "B4",
+        "section": "CERAUNIA, or THUNDERSTONE",
+        "text": "Others of the same name are stones in the shape of an axe or wedge, finely polished, and often bored with a hole, which are dug up in many parts of Europe. These some think the weapons or tools of ancient nations, before the use of metals was known."
+      },
+      {
+        "id": "B5",
+        "section": "CERAUNIA, or THUNDERSTONE",
+        "text": "The common people keep them in their houses as a preservative against lightning, and believe that a house where one is kept will never be struck."
+      },
+      {
+        "id": "B6",
+        "section": "CERAUNIA, or THUNDERSTONE",
+        "text": "Stones are also said by some writers to have fallen from the air in other places; but the learned generally treat these accounts as fables, or explain them by stones struck by lightning upon the ground."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-thunderstone",
+    "title": "Thunderstone (folklore)",
+    "url": "https://en.wikipedia.org/wiki/Thunderstone_(folklore)",
+    "dateModified": "2026-10-02",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "A thunderstone is a prehistoric hand axe, stone tool, or fossil that was used as an amulet to protect a person or a building. The name comes from the belief that such stones fell from the sky with lightning."
+      },
+      {
+        "id": "W2",
+        "section": "Stone tools",
+        "text": "Many thunderstones are polished stone axes from the Neolithic period. Scholars such as Michele Mercati in the 16th century argued that they were tools made by early people, a view that became widely accepted later."
+      },
+      {
+        "id": "W3",
+        "section": "Belemnites",
+        "text": "Fossil belemnites, the bullet-shaped remains of an extinct group of squid-like animals, were also called thunderbolts or thunderstones."
+      },
+      {
+        "id": "W4",
+        "section": "Echinoids",
+        "text": "Fossil sea urchins were also known as thunderstones, and in parts of England people placed them on window sills or in houses for protection."
+      },
+      {
+        "id": "W5",
+        "section": "Protection",
+        "text": "People kept thunderstones in their homes or carried them, believing they protected against lightning and other harm."
+      },
+      {
+        "id": "W6",
+        "section": "Origin",
+        "text": "Lightning does not create such stones. They are tools made by people or natural fossils, found in the ground."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.82,
+    "rerankScore": 0.83,
+    "reasons": [
+      "The old headword names the thunderstone, and Wikipedia uses the same name for the folklore object.",
+      "Rare terms appear in both: belemnites, polished axes, protection from lightning.",
+      "Belemnitida scores well but covers only one kind of thunderstone."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Belemnitida",
+      "url": "https://en.wikipedia.org/wiki/Belemnitida",
+      "embedScore": 0.76,
+      "rerankScore": 0.57
+    },
+    {
+      "title": "Hand axe",
+      "url": "https://en.wikipedia.org/wiki/Hand_axe",
+      "embedScore": 0.68,
+      "rerankScore": 0.44
+    },
+    {
+      "title": "Fulgurite",
+      "url": "https://en.wikipedia.org/wiki/Fulgurite",
+      "embedScore": 0.64,
+      "rerankScore": 0.36
+    }
+  ],
+  "alignments": [
+    {
+      "id": "ts1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Several kinds of stones",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a name given to several kinds of stones"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a prehistoric hand axe, stone tool, or fossil"
+      },
+      "note": "Same fact in new words. Both texts apply the name to more than one kind of object."
+    },
+    {
+      "id": "ts2",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Fall with lightning",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "to fall from the clouds in thunder-storms"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Lightning does not create such stones"
+      },
+      "note": "The 1778 entry gives this as a belief of the vulgar. The stones come from the ground, not from storms."
+    },
+    {
+      "id": "ts3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Dart-shaped belemnite",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "a long stone of a conical figure, like the point of a dart"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "the bullet-shaped remains"
+      },
+      "note": "The description holds. Wikipedia says bullet-shaped where the 1778 entry says dart."
+    },
+    {
+      "id": "ts4",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Shell of a sea animal",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the shell or the spine of some sea animal now unknown"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "an extinct group of squid-like animals"
+      },
+      "note": "Change in knowledge. The guess of a sea animal now unknown was right. The belemnite is the hard inner part of an extinct squid-like animal, not a spine."
+    },
+    {
+      "id": "ts5",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Polished axes",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "stones in the shape of an axe or wedge, finely polished"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Many thunderstones are polished stone axes from the Neolithic period"
+      },
+      "note": "Same objects. Wikipedia dates them to the Neolithic."
+    },
+    {
+      "id": "ts6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Tools of ancient nations",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "the weapons or tools of ancient nations, before the use of metals was known"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "they were tools made by early people"
+      },
+      "note": "The view held by some in 1778, after Mercati, is the accepted one now."
+    },
+    {
+      "id": "ts7",
+      "kind": "retained",
+      "verdict": "wrong",
+      "label": "Guard against lightning",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "keep them in their houses as a preservative against lightning"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "believing they protected against lightning"
+      },
+      "note": "Both texts report the same custom. It is folklore: a stone in the house gives no protection."
+    },
+    {
+      "id": "ts8",
+      "kind": "dropped",
+      "verdict": "wrong",
+      "label": "Falling stones are fables",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "the learned generally treat these accounts as fables"
+      },
+      "wikipedia": null,
+      "note": "Wikipedia's thunderstone article does not cover this. Inference from other sources: stones do fall from the sky as meteorites, which scientists accepted after the fall at L'Aigle in 1803."
+    },
+    {
+      "id": "ts9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Fossil sea urchins",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Fossil sea urchins were also known as thunderstones"
+      },
+      "note": "New detail. The 1778 entry does not list fossil sea urchins among the thunderstones."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What a thunderstone is",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Belemnites",
+      "britannica": 0.3,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Stone axes",
+      "britannica": 0.2,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Protection from lightning",
+      "britannica": 0.15,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Stones from the sky",
+      "britannica": 0.15,
+      "wikipedia": 0.05
+    },
+    {
+      "topic": "Fossil sea urchins",
+      "britannica": 0,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1778 entry think thunderstones were?",
+    "What is a belemnite?",
+    "Did thunderstones protect houses from lightning?"
+  ],
+  "answers": {
+    "What did the 1778 entry think thunderstones were?": {
+      "answer": "It names several kinds: the belemnite or finger-stone [B2], and polished stone axes that some took for tools of ancient nations [B4]. Wikipedia agrees: thunderstones are stone tools or fossils [W1], many of them Neolithic axes [W2].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.92
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What is a belemnite?": {
+      "answer": "The 1778 entry describes a dart-shaped stone and reports a dispute about its origin, with some calling it the shell of an unknown sea animal [B2] [B3]. Wikipedia says it is the remains of an extinct group of squid-like animals [W3].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did thunderstones protect houses from lightning?": {
+      "answer": "No. The 1778 entry reports that common people kept them for that purpose [B5]. Wikipedia describes the same custom as folklore [W5], and says lightning does not create such stones [W6].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.8
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}
