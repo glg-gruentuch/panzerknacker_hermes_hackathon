@@ -17,14 +17,35 @@ from dotenv import dotenv_values
 from .config import ConfigurationError, Settings
 from .pipeline import write_json
 
-HERMES_BIN = Path("/opt/hermes/.venv/bin/hermes")
+HERMES_BIN_ENV = "HERMES_BIN"
 REPO = Path(__file__).resolve().parents[2]
 CASE_TIMEOUT = 600
 CITATION = re.compile(r"britannica:[0-9a-f]{40}:train:\d+")
 ENTRY_CITATION = re.compile(r"\[(britannica:[0-9a-f]{40}:train:\d+#[0-9]{4})\]")
 WIKI_CITATION = re.compile(r"\[(https?://en\.wikipedia\.org/[^\]\s]+)\]")
+WIKI_REVISION = re.compile(r"\brevision(?:\s*[_ ]?id)?\s*[:#=]?\s*(\d{4,})", re.IGNORECASE)
 PASSAGE_CITATION = re.compile(r"\[([BW][0-9]{1,3})\]")
 SESSION_DB = REPO / "data" / "hermes" / "state.db"
+
+
+def hermes_bin() -> Path:
+    """Find the Hermes binary (B5): HERMES_BIN, then PATH, then a clear error.
+
+    HERMES_BIN is read from the environment first and from the repository .env
+    second, so a checkout works without a code edit. See docs/hermes.md.
+    """
+    override = (os.environ.get(HERMES_BIN_ENV) or dotenv_values(REPO / ".env").get(HERMES_BIN_ENV) or "").strip()
+    if override:
+        path = Path(override).expanduser()
+        if path.is_file():
+            return path
+        raise ConfigurationError(f"HERMES_BIN points at a missing file: {path}")
+    found = shutil.which("hermes")
+    if found:
+        return Path(found)
+    raise ConfigurationError(
+        "Hermes binary not found: set HERMES_BIN or put hermes on PATH (see docs/hermes.md)"
+    )
 
 
 def hermes_env() -> dict[str, str]:
@@ -43,9 +64,7 @@ def run_chat(question: str, *, timeout: int = CASE_TIMEOUT) -> subprocess.Comple
 
     Shared by the scripted case runner and the web API. Do not copy this call.
     """
-    if not HERMES_BIN.exists():
-        raise ConfigurationError(f"Hermes binary not found at {HERMES_BIN}")
-    command = [str(HERMES_BIN), "chat", "-q", question, "--toolsets", "nemotron_challenge"]
+    command = [str(hermes_bin()), "chat", "-q", question, "--toolsets", "nemotron_challenge"]
     return subprocess.run(command, capture_output=True, text=True, timeout=timeout, env=hermes_env(), cwd=REPO)
 
 
@@ -265,11 +284,38 @@ def load_cases(work_dir: Path) -> list[dict[str, Any]]:
     return cases
 
 
-def check_answer(text: str) -> dict[str, bool]:
-    """Check one reply for a citation or an explicit missing-evidence statement."""
+def check_answer(text: str, session: dict[str, Any] | None = None) -> dict[str, Any]:
+    """Check one reply against the strict citation rules (B5).
+
+    A reply passes as a citation only if it cites a Britannica entry or page ID,
+    cites a Wikipedia revision ID or article URL, and every cited ID appears in
+    a tool result of the session. Without a session the check falls back to
+    presence only and reports ``citations_verified`` false.
+    """
     lowered = text.lower()
+    entry_ids = set(ENTRY_CITATION.findall(text))
+    page_ids = set(CITATION.findall(text)) - {entry.split("#")[0] for entry in entry_ids}
+    britannica_ids = sorted(entry_ids | page_ids)
+    wiki_urls = sorted(set(WIKI_CITATION.findall(text)))
+    wiki_revisions = sorted(set(WIKI_REVISION.findall(text)))
+    cited_ids = [*britannica_ids, *wiki_urls, *wiki_revisions]
+    tool_text = ""
+    if session is not None:
+        tool_text = "\n".join(
+            str(message.get("content") or "")
+            for message in session.get("messages", [])
+            if message.get("role") == "tool"
+        )
+    unsupported_ids = [cited for cited in cited_ids if session is not None and cited not in tool_text]
+    has_entry = bool(britannica_ids)
+    has_wiki = bool(wiki_urls or wiki_revisions)
     return {
-        "has_citation": bool(CITATION.search(text)),
+        "has_citation": bool(has_entry and has_wiki and (session is None or not unsupported_ids)),
+        "has_entry_citation": has_entry,
+        "has_wiki_citation": has_wiki,
+        "citations_verified": session is not None,
+        "cited_ids": cited_ids,
+        "unsupported_ids": unsupported_ids,
         "admits_missing": "insufficient" in lowered or "unmatched" in lowered or "no stored comparison" in lowered,
     }
 
@@ -280,7 +326,7 @@ def run_case(case: dict[str, Any], runs_dir: Path, env: dict[str, str] | None = 
     case_dir.mkdir(parents=True, exist_ok=True)
     started = time.time()
     result = run_chat(case["question"], timeout=CASE_TIMEOUT)
-    write_json(case_dir / "command.json", {"command": [str(HERMES_BIN), "chat", "-q", case["question"],
+    write_json(case_dir / "command.json", {"command": [str(hermes_bin()), "chat", "-q", case["question"],
                                                         "--toolsets", "nemotron_challenge"],
                                            "returncode": result.returncode,
                                            "question": case["question"], "expected": case.get("expected", "")})
@@ -305,7 +351,7 @@ def run_case(case: dict[str, Any], runs_dir: Path, env: dict[str, str] | None = 
     newest = max(sessions.glob("*.jsonl"), key=lambda path: path.stat().st_mtime, default=None) if sessions.exists() else None
     if newest is not None:
         shutil.copy2(newest, case_dir / "session.jsonl")
-    checks = check_answer(answer or result.stdout)
+    checks = check_answer(answer or result.stdout, session)
     expected = case.get("expected", "citation")
     passed = checks["has_citation"] if expected == "citation" else checks["admits_missing"]
     return {"case_id": case["case_id"], "returncode": result.returncode, "expected": expected, "passed": passed,
@@ -317,8 +363,7 @@ def run_agent_cases(settings: Settings, work_dir: Path) -> dict[str, Any]:
     profile = REPO / "data" / "hermes"
     if not (profile / "config.yaml").exists():
         raise ConfigurationError("set up the Hermes profile first: see docs/hermes.md and plan W4.1")
-    if not HERMES_BIN.exists():
-        raise ConfigurationError(f"Hermes binary not found at {HERMES_BIN}")
+    hermes_bin()  # fail with the clear message before running any case
     env = os.environ.copy()
     env["HERMES_HOME"] = str(profile)
     env["PANZERKNACKER_ARTIFACTS"] = str(REPO / "artifacts")
