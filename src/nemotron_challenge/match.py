@@ -109,19 +109,25 @@ def shortlist(retrieval: RetrievalClient, entry_text: str, hits: list[Any],
     """Rank every candidate by embedding similarity. ``keep`` optionally cuts the list.
 
     The embedder sees each excerpt as a document and the entry text as the
-    query. Similarity is the dot product of unit vectors.
+    query. Similarity is the dot product of unit vectors. A candidate without
+    excerpt text cannot be scored; it stays in the list with a null similarity.
     """
     query_vector = retry_call(lambda: retrieval.embed([entry_text[:2000]], input_type="query"))[0]
-    documents = [hit.excerpt[:32000] for hit in hits]
-    vectors = embed_documents(retrieval, documents)
-    scored = sorted(
-        (
-            {"hit": hit, "similarity": sum(a * b for a, b in zip(query_vector, vector))}
-            for hit, vector in zip(hits, vectors)
-        ),
-        key=lambda row: -row["similarity"],
-    )
-    for rank, row in enumerate(scored, start=1):
+    scored: list[dict[str, Any]] = []
+    embeddable = []
+    texts = []
+    for hit in hits:
+        excerpt = (hit.excerpt or "").strip()
+        if excerpt:
+            embeddable.append(hit)
+            texts.append(excerpt[:32000])
+        else:
+            scored.append({"hit": hit, "similarity": None, "embed_rank": None})
+    vectors = embed_documents(retrieval, texts) if texts else []
+    for hit, vector in zip(embeddable, vectors):
+        scored.append({"hit": hit, "similarity": sum(a * b for a, b in zip(query_vector, vector))})
+    scored.sort(key=lambda row: (row["similarity"] is None, -(row["similarity"] or 0.0)))
+    for rank, row in enumerate((row for row in scored if row["similarity"] is not None), start=1):
         row["embed_rank"] = rank
     return scored[:keep] if keep is not None else scored
 
@@ -131,22 +137,28 @@ def rerank_candidates(retrieval: RetrievalClient, entry_text: str, rows: list[di
     """Rerank the candidate rows in one request; the service takes up to 32.
 
     Result rows index into rows; scores are raw logits; the reply order is the
-    rerank rank.
+    rerank rank. Rows without excerpt text are returned unscored.
     """
+    scoreable = [row for row in rows if (row["hit"].excerpt or "").strip()]
+    unscored = [{"row": row, "logit": None, "rerank_rank": None} for row in rows if not (row["hit"].excerpt or "").strip()]
+    if not scoreable:
+        return unscored
     reply = retry_call(
-        lambda: retrieval.rerank(entry_text[:2000], [row["hit"].excerpt[:32000] for row in rows], top_n=top_n)
+        lambda: retrieval.rerank(entry_text[:2000], [row["hit"].excerpt[:32000] for row in scoreable], top_n=top_n)
     )
-    return [
-        {"row": rows[item["index"]], "logit": item["relevance_score"], "rerank_rank": rank}
+    reranked = [
+        {"row": scoreable[item["index"]], "logit": item["relevance_score"], "rerank_rank": rank}
         for rank, item in enumerate(reply, start=1)
     ]
+    return reranked + unscored
 
 
 def decide(reranked: list[dict[str, Any]], threshold: float) -> dict[str, Any] | None:
     """Return the best candidate at or above the threshold. Scores are raw logits."""
-    if not reranked:
+    candidates = [row for row in reranked if row.get("logit") is not None]
+    if not candidates:
         return None
-    best = max(reranked, key=lambda row: row["logit"])
+    best = max(candidates, key=lambda row: row["logit"])
     return best if best["logit"] >= threshold else None
 
 

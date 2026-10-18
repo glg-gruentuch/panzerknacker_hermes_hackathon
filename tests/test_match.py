@@ -11,6 +11,7 @@ from nemotron_challenge.match import (
     entry_query,
     fetch_article,
     rarest_query_words,
+    rerank_candidates,
     run_match,
     shortlist,
     summary_of,
@@ -90,6 +91,44 @@ def test_shortlist_orders_by_dot_product():
     rows = shortlist(FakeRetrieval(), "query", hits, keep=2)
     assert [row["hit"].page_id for row in rows] == ["2", "1"]
     assert rows[0]["similarity"] == 1.0
+
+
+def test_shortlist_keeps_unscored_candidates_without_excerpt_text():
+    hits = [SimpleNamespace(page_id="1", excerpt="a"), SimpleNamespace(page_id="2", excerpt="")]
+
+    class FakeRetrieval:
+        vectors = {"query": [1.0, 0.0], "a": [1.0, 0.0]}
+
+        def embed(self, inputs, input_type):
+            if input_type == "query":
+                return [self.vectors["query"]]
+            return [self.vectors[text] for text in inputs]
+
+    rows = shortlist(FakeRetrieval(), "query", hits)
+    assert [row["hit"].page_id for row in rows] == ["1", "2"]
+    assert rows[0]["embed_rank"] == 1
+    assert rows[1]["similarity"] is None and rows[1]["embed_rank"] is None
+
+
+def test_rerank_returns_rows_without_excerpt_text_unscored():
+    rows = [
+        {"hit": SimpleNamespace(page_id="1", excerpt="a"), "similarity": 0.5, "embed_rank": 1},
+        {"hit": SimpleNamespace(page_id="2", excerpt=""), "similarity": None, "embed_rank": None},
+    ]
+
+    class FakeRetrieval:
+        def rerank(self, query, documents, top_n=None):
+            assert documents == ["a"]
+            return [{"index": 0, "relevance_score": 1.5}]
+
+    result = {row["row"]["hit"].page_id: row for row in rerank_candidates(FakeRetrieval(), "query", rows)}
+    assert result["1"]["rerank_rank"] == 1 and result["1"]["logit"] == 1.5
+    assert result["2"]["rerank_rank"] is None and result["2"]["logit"] is None
+
+
+def test_decide_ignores_unscored_rows():
+    assert decide([{"row": {}, "logit": None}], 0.0) is None
+    assert decide([{"row": {}, "logit": None}, {"row": {}, "logit": -1.0}], -2.0)["logit"] == -1.0
 
 
 def test_decide_uses_threshold_on_raw_logits():
