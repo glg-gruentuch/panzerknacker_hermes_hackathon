@@ -1,0 +1,353 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "caloric",
+    "label": "Caloric",
+    "headword": "CALORIC",
+    "edition": "Fifth edition",
+    "year": 1817,
+    "match": "strong",
+    "wikipediaTitle": "Caloric theory",
+    "area": "natural-sciences",
+    "teaser": "Count Rumford, observing the great heat produced in boring cannon, concluded that heat is not a substance but a motion of the particles of bodies; but his opinion has found few followers."
+  },
+  "aliases": [
+    "caloric",
+    "caloric theory",
+    "heat",
+    "matter of heat",
+    "latent heat"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0025",
+    "headword": "CALORIC",
+    "edition": "Fifth edition",
+    "year": 1817,
+    "volume": "Volume 5",
+    "meta": "Encyclopaedia Britannica - Fifth edition, Volume 5 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "CAL                    [ 52 ]                    CAL\n\nCALOMEL, mercury ſublimed with muriatic acid.\n  CALORIC, the name given by the French chemiſts to\nthe matter of heat, a ſubtle fluid which pervades all\nbodies, and the accumulation of which produces the\nſenſation of warmth. It flows from hotter bodies into\ncolder, until both are of one temperature.\n  When caloric enters a body it ſeparates its particles,\nand ſo cauſes it to expand; and when enough is added,\nſolids are melted and liquids turned into vapour. In\nmelting ice and boiling water a great quantity of calo-\nric diſappears without raiſing the heat; this Dr Black\ncalled latent heat.\n  Count Rumford, obſerving the great heat produced in\nboring cannon, concluded that heat is not a ſubſtance\nbut a motion of the particles of bodies; but his opinion\nhas found few followers. Caloric is ſuppoſed to have\nno ſenſible weight, ſince a body weighs the ſame hot or\ncold.\n  CALVARY, a hill near Jeruſalem.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "CALORIC",
+        "text": "CALORIC, the name given by the French chemists to the matter of heat, a subtle fluid which pervades all bodies, and the accumulation of which produces the sensation of warmth."
+      },
+      {
+        "id": "B2",
+        "section": "CALORIC",
+        "text": "It flows from hotter bodies into colder, until both are of one temperature."
+      },
+      {
+        "id": "B3",
+        "section": "CALORIC",
+        "text": "When caloric enters a body it separates its particles, and so causes it to expand; and when enough is added, solids are melted and liquids turned into vapour."
+      },
+      {
+        "id": "B4",
+        "section": "CALORIC",
+        "text": "In melting ice and boiling water a great quantity of caloric disappears without raising the heat; this Dr Black called latent heat."
+      },
+      {
+        "id": "B5",
+        "section": "CALORIC",
+        "text": "Count Rumford, observing the great heat produced in boring cannon, concluded that heat is not a substance but a motion of the particles of bodies; but his opinion has found few followers."
+      },
+      {
+        "id": "B6",
+        "section": "CALORIC",
+        "text": "Caloric is supposed to have no sensible weight, since a body weighs the same hot or cold."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-caloric-theory",
+    "title": "Caloric theory",
+    "url": "https://en.wikipedia.org/wiki/Caloric_theory",
+    "dateModified": "2026-08-15",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "The caloric theory is an obsolete theory that heat consists of a self-repellent fluid called caloric that flows from hotter bodies to colder bodies. Antoine Lavoisier named it in the 1780s."
+      },
+      {
+        "id": "W2",
+        "section": "Theory",
+        "text": "Heat flows from a hotter body to a colder one until they reach the same temperature, an observation the caloric theory explained well."
+      },
+      {
+        "id": "W3",
+        "section": "Modern view",
+        "text": "Heating makes the particles of a substance move faster and further apart, so most materials expand; with enough heat, solids melt and liquids boil."
+      },
+      {
+        "id": "W4",
+        "section": "Latent heat",
+        "text": "Joseph Black found that melting and boiling absorb heat without changing the temperature, and called this latent heat. The term is still used."
+      },
+      {
+        "id": "W5",
+        "section": "Challenges",
+        "text": "In 1798 Count Rumford measured the heat produced by boring cannon and argued that friction could produce heat without limit, which a conserved fluid could not explain."
+      },
+      {
+        "id": "W6",
+        "section": "Demise",
+        "text": "In the 1840s James Joule showed that work can be converted into heat at a fixed rate. Heat is now understood as energy transferred because of a temperature difference, and caloric was abandoned."
+      },
+      {
+        "id": "W7",
+        "section": "Theory",
+        "text": "Caloric was thought to be weightless, which fitted the observation that bodies weigh the same hot or cold."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.86,
+    "rerankScore": 0.91,
+    "reasons": [
+      "Same headword: CALORIC and Caloric theory.",
+      "Rare terms appear in both: latent heat, Black, Rumford, boring cannon.",
+      "Heat scores well but describes the modern view, so it is a second candidate."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Heat",
+      "url": "https://en.wikipedia.org/wiki/Heat",
+      "embedScore": 0.79,
+      "rerankScore": 0.6
+    },
+    {
+      "title": "Latent heat",
+      "url": "https://en.wikipedia.org/wiki/Latent_heat",
+      "embedScore": 0.71,
+      "rerankScore": 0.48
+    }
+  ],
+  "alignments": [
+    {
+      "id": "ca1",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Heat as a fluid",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a subtle fluid which pervades all bodies"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Heat is now understood as energy transferred"
+      },
+      "note": "There is no heat fluid. Heat is energy in transit."
+    },
+    {
+      "id": "ca2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Hot to cold",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "It flows from hotter bodies into colder, until both are of one temperature"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Heat flows from a hotter body to a colder one until they reach the same temperature"
+      },
+      "note": "The observation holds, whatever heat is."
+    },
+    {
+      "id": "ca3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Expansion",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "it separates its particles, and so causes it to expand"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "move faster and further apart, so most materials expand"
+      },
+      "note": "Particles move apart in both accounts. Only the reason changed."
+    },
+    {
+      "id": "ca4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Latent heat",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "this Dr Black called latent heat"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "called this latent heat. The term is still used"
+      },
+      "note": "A term from the caloric era that survived the theory."
+    },
+    {
+      "id": "ca5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Boring cannon",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "observing the great heat produced in boring cannon"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "measured the heat produced by boring cannon"
+      },
+      "note": "Same experiment."
+    },
+    {
+      "id": "ca6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Few followers",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "his opinion has found few followers"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "caloric was abandoned"
+      },
+      "note": "True in 1817, no longer: Rumford's view won by the 1850s."
+    },
+    {
+      "id": "ca7",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "No weight",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "a body weighs the same hot or cold"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "bodies weigh the same hot or cold"
+      },
+      "note": "The observation holds. It now shows heat is not a substance at all."
+    },
+    {
+      "id": "ca8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Joule",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "James Joule showed that work can be converted into heat at a fixed rate"
+      },
+      "note": "The experiment that ended caloric came in the 1840s."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What heat is",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Flow of heat",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Expansion and change of state",
+      "britannica": 0.2,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Latent heat",
+      "britannica": 0.2,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Rumford",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Weight",
+      "britannica": 0.1,
+      "wikipedia": 0.08
+    },
+    {
+      "topic": "Energy and Joule",
+      "britannica": 0,
+      "wikipedia": 0.23
+    }
+  ],
+  "suggestedQuestions": [
+    "Was Rumford right about heat?",
+    "Which ideas from the caloric theory are still used?"
+  ],
+  "answers": {
+    "Was Rumford right about heat?": {
+      "answer": "Yes. The 1817 entry reports that Rumford concluded from boring cannon that heat is a motion of particles, but says his view found few followers [B5]. Wikipedia says Rumford argued that friction could make heat without limit, and that Joule's work in the 1840s led to heat being understood as energy [W5] [W6].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Which ideas from the caloric theory are still used?": {
+      "answer": "The observations, and one term. Heat still flows from hot to cold until temperatures are equal [B2] [W2], and Black's term latent heat is still used [B4] [W4]. The idea of heat as a fluid is not [W6].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.85
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

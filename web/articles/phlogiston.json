@@ -1,0 +1,312 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "phlogiston",
+    "label": "Phlogiston",
+    "headword": "PHLOGISTON",
+    "edition": "Second edition",
+    "year": 1778,
+    "match": "strong",
+    "wikipediaTitle": "Phlogiston theory",
+    "area": "natural-sciences",
+    "teaser": "It is remarkable that metals gain weight by calcination, though they are said to lose something"
+  },
+  "aliases": [
+    "phlogiston",
+    "phlogiston theory",
+    "inflammable principle",
+    "calcination"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0021",
+    "headword": "PHLOGISTON",
+    "edition": "Second edition",
+    "year": 1778,
+    "volume": "Volume 8",
+    "meta": "Encyclopaedia Britannica - Second edition, Volume 8 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "PHL                    [ 6012 ]                    PHL\n\nPHLEBOTOMY, the act of letting blood. See SURGERY.\n  PHLOGISTON, in chemiſtry, the principle of inflam-\nmability, or that ſubſtance which, being contained in\nbodies, renders them capable of burning. When a body\nburns, the phlogiſton eſcapes from it, and what remains\nis the body deprived of its inflammable principle; thus\nmetals, when calcined, are reduced to a calx or earth.\n  Charcoal, being very rich in phlogiſton, reſtores it to\na calx when they are heated together, and the metal is\nrevived. Air is neceſſary to burning, becauſe it receives\nthe phlogiſton as it is ſet free; a candle in a cloſe veſ-\nſel goes out when the air is ſaturated with it.\n  It is remarkable that metals gain weight by calcina-\ntion, though they are ſaid to loſe ſomething; which ſome\nexplain by ſuppoſing phlogiſton to be lighter than no-\nthing, or to poſſeſs a principle of levity.\n  The doctrine was eſtabliſhed by Stahl, from the ear-\nlier opinions of Becher, and is now received by almoſt\nall chemiſts.\n  PHOCA, the ſeal. See MAMMALIA.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "PHLOGISTON",
+        "text": "PHLOGISTON, in chemistry, the principle of inflammability, or that substance which, being contained in bodies, renders them capable of burning."
+      },
+      {
+        "id": "B2",
+        "section": "PHLOGISTON",
+        "text": "When a body burns, the phlogiston escapes from it, and what remains is the body deprived of its inflammable principle; thus metals, when calcined, are reduced to a calx or earth."
+      },
+      {
+        "id": "B3",
+        "section": "PHLOGISTON",
+        "text": "Charcoal, being very rich in phlogiston, restores it to a calx when they are heated together, and the metal is revived."
+      },
+      {
+        "id": "B4",
+        "section": "PHLOGISTON",
+        "text": "Air is necessary to burning, because it receives the phlogiston as it is set free; a candle in a close vessel goes out when the air is saturated with it."
+      },
+      {
+        "id": "B5",
+        "section": "PHLOGISTON",
+        "text": "It is remarkable that metals gain weight by calcination, though they are said to lose something; which some explain by supposing phlogiston to be lighter than nothing, or to possess a principle of levity."
+      },
+      {
+        "id": "B6",
+        "section": "PHLOGISTON",
+        "text": "The doctrine was established by Stahl, from the earlier opinions of Becher, and is now received by almost all chemists."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-phlogiston-theory",
+    "title": "Phlogiston theory",
+    "url": "https://en.wikipedia.org/wiki/Phlogiston_theory",
+    "dateModified": "2026-08-30",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "The phlogiston theory, now obsolete, held that a fire-like element called phlogiston is contained within combustible bodies and released during combustion. It was first stated in 1667 by Johann Joachim Becher and put together more formally by Georg Ernst Stahl."
+      },
+      {
+        "id": "W2",
+        "section": "Theory",
+        "text": "In the theory, burning a metal released phlogiston and left its calx; heating the calx with charcoal, which was thought rich in phlogiston, turned it back into metal."
+      },
+      {
+        "id": "W3",
+        "section": "Theory",
+        "text": "Air was thought to absorb phlogiston, and burning stopped in a closed space once the air was saturated."
+      },
+      {
+        "id": "W4",
+        "section": "Challenge and demise",
+        "text": "Metals were found to gain mass when burned. Some supporters suggested that phlogiston had negative weight."
+      },
+      {
+        "id": "W5",
+        "section": "Challenge and demise",
+        "text": "Antoine Lavoisier showed in the 1770s and 1780s that combustion is a reaction with oxygen, and the theory was abandoned by the end of the 18th century."
+      },
+      {
+        "id": "W6",
+        "section": "Modern view",
+        "text": "A calx is now known as an oxide: the metal combined with oxygen. Charcoal turns it back into metal by removing the oxygen."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.88,
+    "rerankScore": 0.93,
+    "reasons": [
+      "Same headword: PHLOGISTON and Phlogiston theory.",
+      "Rare terms appear in both: calx, Stahl, Becher, negative weight.",
+      "Combustion scores lower because it describes the modern view, not the old theory."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Combustion",
+      "url": "https://en.wikipedia.org/wiki/Combustion",
+      "embedScore": 0.72,
+      "rerankScore": 0.49
+    },
+    {
+      "title": "Georg Ernst Stahl",
+      "url": "https://en.wikipedia.org/wiki/Georg_Ernst_Stahl",
+      "embedScore": 0.69,
+      "rerankScore": 0.46
+    }
+  ],
+  "alignments": [
+    {
+      "id": "ph1",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "What burning is",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "When a body burns, the phlogiston escapes from it"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "combustion is a reaction with oxygen"
+      },
+      "note": "Reversed: burning does not release something, it takes up oxygen."
+    },
+    {
+      "id": "ph2",
+      "kind": "reworded",
+      "verdict": "partly",
+      "label": "Calx",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "metals, when calcined, are reduced to a calx"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "A calx is now known as an oxide"
+      },
+      "note": "The observation holds. The calx is the metal plus oxygen, not the metal minus phlogiston."
+    },
+    {
+      "id": "ph3",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Charcoal revives metal",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "restores it to a calx when they are heated together, and the metal is revived"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Charcoal turns it back into metal by removing the oxygen"
+      },
+      "note": "Right result, reversed reason: charcoal takes oxygen away rather than giving phlogiston back."
+    },
+    {
+      "id": "ph4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Candle in a closed vessel",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "a candle in a close vessel goes out"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "burning stopped in a closed space"
+      },
+      "note": "The observation is sound. Today the candle goes out because the oxygen is used up."
+    },
+    {
+      "id": "ph5",
+      "kind": "retained",
+      "verdict": "wrong",
+      "label": "Lighter than nothing",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "supposing phlogiston to be lighter than nothing"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Some supporters suggested that phlogiston had negative weight"
+      },
+      "note": "Both report the same rescue of the theory. The weight gain was the clue that led to oxygen."
+    },
+    {
+      "id": "ph6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Becher and Stahl",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "established by Stahl, from the earlier opinions of Becher"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "first stated in 1667 by Johann Joachim Becher and put together more formally by Georg Ernst Stahl"
+      },
+      "note": "Same history of the idea."
+    },
+    {
+      "id": "ph7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Accepted by all",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "is now received by almost all chemists"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "the theory was abandoned by the end of the 18th century"
+      },
+      "note": "True in 1778, no longer: within twenty years almost no chemist held it."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Definition",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Metals and calx",
+      "britannica": 0.3,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Role of air",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Weight gain",
+      "britannica": 0.2,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "History of the theory",
+      "britannica": 0.15,
+      "wikipedia": 0.13
+    },
+    {
+      "topic": "Oxygen and its end",
+      "britannica": 0,
+      "wikipedia": 0.25
+    }
+  ],
+  "suggestedQuestions": [
+    "Why did metals gain weight when burned, according to the 1778 entry?",
+    "What replaced the phlogiston theory?"
+  ],
+  "answers": {
+    "Why did metals gain weight when burned, according to the 1778 entry?": {
+      "answer": "The entry calls it remarkable and reports that some explained it by supposing phlogiston to be lighter than nothing [B5]. Wikipedia records the same idea of negative weight [W4]. The real reason is that the metal combines with oxygen from the air, which adds weight [W6].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.85
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What replaced the phlogiston theory?": {
+      "answer": "Lavoisier's oxygen theory. Wikipedia says he showed that combustion is a reaction with oxygen, and that phlogiston was abandoned by the end of the 18th century [W5]. In 1778 the entry still says almost all chemists accept phlogiston [B6].",
+      "citations": [
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.88
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

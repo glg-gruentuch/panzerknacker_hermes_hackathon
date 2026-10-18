@@ -1,0 +1,349 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "light",
+    "label": "Light",
+    "headword": "LIGHT",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Light",
+    "area": "natural-sciences",
+    "teaser": "Others, after Huygens, suppose it to be the vibrations of a subtle elastic medium which fills all space; but the Newtonian opinion is now generally received."
+  },
+  "aliases": [
+    "light",
+    "rays of light",
+    "optics"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0023",
+    "headword": "LIGHT",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 10",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 10 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "LIG                    [ 92 ]                    LIG\n\nLIGATURE, in ſurgery, a cord or thread.\n  LIGHT, that principle by which objects are made per-\nceptible to our ſenſe of ſeeing; conſiſting, according to\nSir Iſaac Newton, of exceedingly ſmall particles emitted\nfrom luminous bodies. Others, after Huygens, ſuppoſe it\nto be the vibrations of a ſubtle elaſtic medium which\nfills all ſpace; but the Newtonian opinion is now gene-\nrally received.\n  Its motion is not inſtantaneous: from the eclipſes of\nJupiter's ſatellites, Roemer, and after him Dr Bradley,\nfound that it comes from the ſun to the earth in about\neight minutes. White light is not ſimple but compounded\nof rays of different colours, which are ſeparated by the\npriſm, as Newton demonſtrated.\n  Light is reflected from the ſurfaces of bodies, and re-\nfracted, or bent, in paſſing out of one medium into an-\nother of different denſity. Some chemiſts hold that light\nis a ſubſtance which combines with bodies, and is the\ncauſe of the green colour of plants.\n  LIGHTNING. See ELECTRICITY.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "LIGHT",
+        "text": "LIGHT, that principle by which objects are made perceptible to our sense of seeing; consisting, according to Sir Isaac Newton, of exceedingly small particles emitted from luminous bodies."
+      },
+      {
+        "id": "B2",
+        "section": "LIGHT",
+        "text": "Others, after Huygens, suppose it to be the vibrations of a subtle elastic medium which fills all space; but the Newtonian opinion is now generally received."
+      },
+      {
+        "id": "B3",
+        "section": "LIGHT",
+        "text": "Its motion is not instantaneous: from the eclipses of Jupiter's satellites, Roemer, and after him Dr Bradley, found that it comes from the sun to the earth in about eight minutes."
+      },
+      {
+        "id": "B4",
+        "section": "LIGHT",
+        "text": "White light is not simple but compounded of rays of different colours, which are separated by the prism, as Newton demonstrated."
+      },
+      {
+        "id": "B5",
+        "section": "LIGHT",
+        "text": "Light is reflected from the surfaces of bodies, and refracted, or bent, in passing out of one medium into another of different density."
+      },
+      {
+        "id": "B6",
+        "section": "LIGHT",
+        "text": "Some chemists hold that light is a substance which combines with bodies, and is the cause of the green colour of plants."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-light",
+    "title": "Light",
+    "url": "https://en.wikipedia.org/wiki/Light",
+    "dateModified": "2026-09-27",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Light is electromagnetic radiation that can be perceived by the human eye."
+      },
+      {
+        "id": "W2",
+        "section": "Theories",
+        "text": "Light shows properties of both waves and particles. In the 19th century the wave theory of Huygens, supported by Young and Fresnel, replaced Newton's corpuscular theory; in the 20th century light was found to come in quanta called photons."
+      },
+      {
+        "id": "W3",
+        "section": "Speed of light",
+        "text": "The speed of light in a vacuum is about 300,000 kilometres per second. Ole Romer first showed in 1676, from the timing of eclipses of Jupiter's moon Io, that light travels at a finite speed. Sunlight takes about 8 minutes 20 seconds to reach Earth."
+      },
+      {
+        "id": "W4",
+        "section": "Colour",
+        "text": "Isaac Newton showed with prisms that white light is a mixture of colours, which a prism separates into a spectrum."
+      },
+      {
+        "id": "W5",
+        "section": "Optics",
+        "text": "Light is reflected at surfaces and refracted, changing direction, when it passes from one medium into another."
+      },
+      {
+        "id": "W6",
+        "section": "Theories",
+        "text": "The idea of a luminiferous aether filling space, in which light waves travel, was abandoned after the Michelson-Morley experiment of 1887 and Einstein's theory of relativity."
+      },
+      {
+        "id": "W7",
+        "section": "Light and life",
+        "text": "Plants capture the energy of light in photosynthesis."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.84,
+    "rerankScore": 0.88,
+    "reasons": [
+      "Same headword: LIGHT and Light.",
+      "Rare terms appear in both: Huygens, Newton, Jupiter's satellites, prism, refraction.",
+      "Speed of light scores well but covers one section of the entry, so it is a second candidate."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Speed of light",
+      "url": "https://en.wikipedia.org/wiki/Speed_of_light",
+      "embedScore": 0.78,
+      "rerankScore": 0.61
+    },
+    {
+      "title": "Corpuscular theory of light",
+      "url": "https://en.wikipedia.org/wiki/Corpuscular_theory_of_light",
+      "embedScore": 0.76,
+      "rerankScore": 0.66
+    }
+  ],
+  "alignments": [
+    {
+      "id": "li1",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Particles",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "exceedingly small particles emitted from luminous bodies"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "light was found to come in quanta called photons"
+      },
+      "note": "Newton's particles were set aside in the 19th century, then partly returned as photons."
+    },
+    {
+      "id": "li2",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Waves in a medium",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the vibrations of a subtle elastic medium which fills all space"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "The idea of a luminiferous aether filling space"
+      },
+      "note": "Huygens was right about waves, but the medium that filled space was abandoned."
+    },
+    {
+      "id": "li3",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Newton's view prevails",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the Newtonian opinion is now generally received"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "replaced Newton's corpuscular theory"
+      },
+      "note": "True in 1797, no longer: the wave theory won a few decades later."
+    },
+    {
+      "id": "li4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Finite speed",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "Its motion is not instantaneous"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "light travels at a finite speed"
+      },
+      "note": "Same finding, from the same method: Jupiter's moons."
+    },
+    {
+      "id": "li5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Eight minutes from the sun",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "comes from the sun to the earth in about eight minutes"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Sunlight takes about 8 minutes 20 seconds to reach Earth"
+      },
+      "note": "The 1797 figure is close to today's."
+    },
+    {
+      "id": "li6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "The prism",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "compounded of rays of different colours, which are separated by the prism"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "white light is a mixture of colours, which a prism separates"
+      },
+      "note": "Newton's result, unchanged."
+    },
+    {
+      "id": "li7",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Reflection and refraction",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "refracted, or bent, in passing out of one medium into another"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "refracted, changing direction, when it passes from one medium into another"
+      },
+      "note": "Same law in the same words."
+    },
+    {
+      "id": "li8",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Light and plants",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "is the cause of the green colour of plants"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Plants capture the energy of light in photosynthesis"
+      },
+      "note": "Light does matter to plants, but as a source of energy, not as a substance that colours them."
+    },
+    {
+      "id": "li9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Electromagnetic",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "Light is electromagnetic radiation"
+      },
+      "note": "The link between light and electricity came in the 1860s."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What light is",
+      "britannica": 0.3,
+      "wikipedia": 0.3
+    },
+    {
+      "topic": "Speed",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Colour and the prism",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Reflection and refraction",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Light and plants",
+      "britannica": 0.15,
+      "wikipedia": 0.08
+    },
+    {
+      "topic": "Electromagnetism",
+      "britannica": 0,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "Who was right about light in 1797, Newton or Huygens?",
+    "How fast did people in 1797 think light travels?"
+  ],
+  "answers": {
+    "Who was right about light in 1797, Newton or Huygens?": {
+      "answer": "Both, in part. In 1797 Newton's particle theory was generally received over Huygens's vibrations of a space-filling medium [B1] [B2]. Wikipedia says the wave theory replaced Newton's in the 19th century, and that in the 20th light was found to come in particles called photons [W2]. The medium Huygens assumed was abandoned [W6].",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.84
+        }
+      ],
+      "grounding": "supported"
+    },
+    "How fast did people in 1797 think light travels?": {
+      "answer": "Fast but not instantly: from the eclipses of Jupiter's moons, light was found to come from the sun in about eight minutes [B3]. Wikipedia gives about 8 minutes 20 seconds, at about 300,000 kilometres per second [W3].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

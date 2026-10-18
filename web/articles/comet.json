@@ -1,0 +1,339 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "comet",
+    "label": "Comet",
+    "headword": "COMET",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Comet",
+    "area": "natural-sciences",
+    "teaser": "Dr Halley, computing the orbit of the comet of 1682, foretold its return about the end of 1758; and it accordingly appeared, passing the sun in the spring of 1759."
+  },
+  "aliases": [
+    "comet",
+    "comets",
+    "halley's comet"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0022",
+    "headword": "COMET",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 5",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 5 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "COM                    [ 214 ]                    COM\n\nCOMEDY, a dramatic piece. See POETRY.\n  COMET, a heavenly body in the planetary region, ap-\npearing ſuddenly and again diſappearing, and during\nthe time of its appearance moving in an orbit like a\nplanet. Comets were long held by the vulgar to be pre-\nſages of war, famine, and the death of princes; but they\nare now known to be bodies as regular in their motions\nas the planets.\n  They move about the ſun in very eccentric ellipſes,\nſo that they are viſible only when near the ſun, and\nſpend the greater part of their period in regions far\nbeyond the planets. Dr Halley, computing the orbit of\nthe comet of 1682, foretold its return about the end of\n1758; and it accordingly appeared, paſſing the ſun in\nthe ſpring of 1759.\n  The tail is a thin vapour raiſed from the body of the\ncomet by the heat of the ſun, and is always turned from\nthe ſun. Sir Iſaac Newton conjectured that the vapours\nof comets may ſerve to recruit the waters of the planets,\nand to ſupply the ſun with fuel.\n  COMFREY, a plant. See SYMPHYTUM.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "COMET",
+        "text": "COMET, a heavenly body in the planetary region, appearing suddenly and again disappearing, and during the time of its appearance moving in an orbit like a planet."
+      },
+      {
+        "id": "B2",
+        "section": "COMET",
+        "text": "Comets were long held by the vulgar to be presages of war, famine, and the death of princes; but they are now known to be bodies as regular in their motions as the planets."
+      },
+      {
+        "id": "B3",
+        "section": "COMET",
+        "text": "They move about the sun in very eccentric ellipses, so that they are visible only when near the sun, and spend the greater part of their period in regions far beyond the planets."
+      },
+      {
+        "id": "B4",
+        "section": "COMET",
+        "text": "Dr Halley, computing the orbit of the comet of 1682, foretold its return about the end of 1758; and it accordingly appeared, passing the sun in the spring of 1759."
+      },
+      {
+        "id": "B5",
+        "section": "COMET",
+        "text": "The tail is a thin vapour raised from the body of the comet by the heat of the sun, and is always turned from the sun."
+      },
+      {
+        "id": "B6",
+        "section": "COMET",
+        "text": "Sir Isaac Newton conjectured that the vapours of comets may serve to recruit the waters of the planets, and to supply the sun with fuel."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-comet",
+    "title": "Comet",
+    "url": "https://en.wikipedia.org/wiki/Comet",
+    "dateModified": "2026-10-03",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "A comet is an icy small body of the Solar System that, when passing close to the Sun, warms and begins to release gases, producing a visible atmosphere, the coma, and sometimes a tail."
+      },
+      {
+        "id": "W2",
+        "section": "Orbits",
+        "text": "Comets have highly eccentric elliptical orbits, with periods from a few years to hundreds of thousands of years. Long-period comets are thought to come from the Oort cloud far beyond the planets."
+      },
+      {
+        "id": "W3",
+        "section": "Nucleus",
+        "text": "The solid core, the nucleus, is made of ice, dust and rock, and is often described as a dirty snowball."
+      },
+      {
+        "id": "W4",
+        "section": "History",
+        "text": "Edmond Halley showed that the comets of 1531, 1607 and 1682 were the same object and predicted its return in 1758. It reappeared as he had foretold, and it is now called Halley's Comet."
+      },
+      {
+        "id": "W5",
+        "section": "Tails",
+        "text": "The tails are made of dust and gas pushed out from the coma by sunlight and the solar wind, so they always point away from the Sun."
+      },
+      {
+        "id": "W6",
+        "section": "History",
+        "text": "Comets were long seen as bad omens of disasters and the deaths of kings."
+      },
+      {
+        "id": "W7",
+        "section": "Comets and Earth",
+        "text": "Comets may have delivered some of the water in Earth's oceans, but measurements of the water in several comets suggest they supplied only part of it."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.87,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same headword: COMET and Comet.",
+      "Rare terms appear in both: Halley, 1682, 1758, eccentric orbits, tail turned from the sun.",
+      "Halley's Comet scores well but covers only one comet, so it is a second candidate."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Halley's Comet",
+      "url": "https://en.wikipedia.org/wiki/Halley%27s_Comet",
+      "embedScore": 0.83,
+      "rerankScore": 0.74
+    },
+    {
+      "title": "Comet tail",
+      "url": "https://en.wikipedia.org/wiki/Comet_tail",
+      "embedScore": 0.71,
+      "rerankScore": 0.52
+    }
+  ],
+  "alignments": [
+    {
+      "id": "co1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Omens",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "presages of war, famine, and the death of princes"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "bad omens of disasters and the deaths of kings"
+      },
+      "note": "Both report the old belief, and the 1797 entry already rejects it."
+    },
+    {
+      "id": "co2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Eccentric orbits",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "very eccentric ellipses"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "highly eccentric elliptical orbits"
+      },
+      "note": "Same description of the orbit."
+    },
+    {
+      "id": "co3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Far beyond the planets",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "spend the greater part of their period in regions far beyond the planets"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "come from the Oort cloud far beyond the planets"
+      },
+      "note": "The distant region now has a name, the Oort cloud."
+    },
+    {
+      "id": "co4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Halley's prediction",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "foretold its return about the end of 1758"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "predicted its return in 1758"
+      },
+      "note": "Same prediction, same outcome."
+    },
+    {
+      "id": "co5",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "The tail",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "a thin vapour raised from the body of the comet by the heat of the sun"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "dust and gas pushed out from the coma by sunlight"
+      },
+      "note": "Vapour raised by the sun's heat is close to the modern account."
+    },
+    {
+      "id": "co6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Points away from the sun",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "always turned from the sun"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "always point away from the Sun"
+      },
+      "note": "Same observation."
+    },
+    {
+      "id": "co7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Water for the planets",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "recruit the waters of the planets"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Comets may have delivered some of the water in Earth's oceans"
+      },
+      "note": "Newton's guess survives in part: comets may have brought some of Earth's water."
+    },
+    {
+      "id": "co8",
+      "kind": "dropped",
+      "verdict": "wrong",
+      "label": "Fuel for the sun",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "to supply the sun with fuel"
+      },
+      "wikipedia": null,
+      "note": "Inference: the Wikipedia article gives comets no role in powering the Sun."
+    },
+    {
+      "id": "co9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Dirty snowball",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "made of ice, dust and rock"
+      },
+      "note": "The 1797 entry does not say what a comet is made of."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What a comet is",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Omens",
+      "britannica": 0.15,
+      "wikipedia": 0.08
+    },
+    {
+      "topic": "Orbits",
+      "britannica": 0.2,
+      "wikipedia": 0.17
+    },
+    {
+      "topic": "Halley's comet",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Tails",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Comets and planets",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Composition",
+      "britannica": 0,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "Was Halley's prediction correct?",
+    "What did Newton think comets were for?"
+  ],
+  "answers": {
+    "Was Halley's prediction correct?": {
+      "answer": "Yes. The 1797 entry says Halley computed the orbit of the comet of 1682 and foretold its return about the end of 1758, and that it passed the sun in spring 1759 [B4]. Wikipedia says the comet reappeared as he had foretold and now bears his name [W4].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What did Newton think comets were for?": {
+      "answer": "The 1797 entry says Newton guessed that comet vapours might replenish the waters of the planets and feed the sun [B6]. Wikipedia keeps part of the first idea: comets may have delivered some of Earth's ocean water [W7]. It gives comets no role in feeding the Sun.",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "partial"
+    }
+  }
+}

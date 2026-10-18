@@ -1,0 +1,350 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "air",
+    "label": "Air",
+    "headword": "AIR",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Atmosphere of Earth",
+    "area": "natural-sciences",
+    "teaser": "Of these the vital air makes about one part in four, and the azote nearly three parts."
+  },
+  "aliases": [
+    "air",
+    "atmosphere",
+    "atmospheric air",
+    "vital air",
+    "azote",
+    "fixed air"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0026",
+    "headword": "AIR",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 1",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 1 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "AIR                    [ 268 ]                    AIR\n\nAIGUILLETTE, a point or tag.\n  AIR, a thin, inviſible, elaſtic fluid, which ſurrounds\nthe earth to a conſiderable height, and is neceſſary to\nthe life of animals and to the burning of fire.\n  It was long reckoned one of the four elements; but\nthe modern chemiſts have ſhown it to be a compound\nof two kinds of air: vital or dephlogiſticated air, which\nſupports flame and life, and azote, or phlogiſticated air,\nin which an animal dies. Of theſe the vital air makes\nabout one part in four, and the azote nearly three parts.\n  The air has weight, as Torricelli proved; its preſſure\nſupports a column of mercury of about thirty inches in\nthe barometer. It grows thinner as we aſcend, and is\nſuppoſed not to extend above forty-five miles from the\nearth. Fixed air, which is found in ſmall quantity in\nthe atmoſphere, is produced by breathing and by burn-\ning, and is fatal to animals.\n  AIR-PUMP. See PNEUMATICS.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "AIR",
+        "text": "AIR, a thin, invisible, elastic fluid, which surrounds the earth to a considerable height, and is necessary to the life of animals and to the burning of fire."
+      },
+      {
+        "id": "B2",
+        "section": "AIR",
+        "text": "It was long reckoned one of the four elements; but the modern chemists have shown it to be a compound of two kinds of air: vital or dephlogisticated air, which supports flame and life, and azote, or phlogisticated air, in which an animal dies."
+      },
+      {
+        "id": "B3",
+        "section": "AIR",
+        "text": "Of these the vital air makes about one part in four, and the azote nearly three parts."
+      },
+      {
+        "id": "B4",
+        "section": "AIR",
+        "text": "The air has weight, as Torricelli proved; its pressure supports a column of mercury of about thirty inches in the barometer."
+      },
+      {
+        "id": "B5",
+        "section": "AIR",
+        "text": "It grows thinner as we ascend, and is supposed not to extend above forty-five miles from the earth."
+      },
+      {
+        "id": "B6",
+        "section": "AIR",
+        "text": "Fixed air, which is found in small quantity in the atmosphere, is produced by breathing and by burning, and is fatal to animals."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-atmosphere-of-earth",
+    "title": "Atmosphere of Earth",
+    "url": "https://en.wikipedia.org/wiki/Atmosphere_of_Earth",
+    "dateModified": "2026-10-04",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "The atmosphere of Earth is the layer of gases, known together as air, held by Earth's gravity. It protects life and makes breathing possible."
+      },
+      {
+        "id": "W2",
+        "section": "Composition",
+        "text": "Dry air contains about 78% nitrogen and 21% oxygen, with small amounts of argon, carbon dioxide and other gases."
+      },
+      {
+        "id": "W3",
+        "section": "History",
+        "text": "Oxygen was isolated in the 1770s by Carl Wilhelm Scheele and Joseph Priestley and named by Antoine Lavoisier, who showed that air is a mixture of gases and not an element."
+      },
+      {
+        "id": "W4",
+        "section": "Pressure",
+        "text": "Air pressure at sea level is about 101 kilopascals, equal to a column of mercury about 760 millimetres high. Evangelista Torricelli invented the mercury barometer in 1643."
+      },
+      {
+        "id": "W5",
+        "section": "Structure",
+        "text": "Air becomes thinner with height. There is no definite upper boundary; the Karman line at 100 kilometres is often used as the edge of space."
+      },
+      {
+        "id": "W6",
+        "section": "Composition",
+        "text": "Carbon dioxide makes up about 0.04% of the air. It is released by respiration and by burning fuels, and it traps heat in the atmosphere."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.79,
+    "rerankScore": 0.84,
+    "reasons": [
+      "The 1797 entry describes the air around the earth, which Wikipedia covers under Atmosphere of Earth.",
+      "Rare terms appear in both: Torricelli, barometer, column of mercury, proportions of the two main gases.",
+      "Air (classical element) scores on the headword but covers only the old idea of four elements."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Air (classical element)",
+      "url": "https://en.wikipedia.org/wiki/Air_(classical_element)",
+      "embedScore": 0.81,
+      "rerankScore": 0.52
+    },
+    {
+      "title": "Oxygen",
+      "url": "https://en.wikipedia.org/wiki/Oxygen",
+      "embedScore": 0.7,
+      "rerankScore": 0.49
+    }
+  ],
+  "alignments": [
+    {
+      "id": "ai1",
+      "kind": "reworded",
+      "verdict": "partly",
+      "label": "Not an element",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "It was long reckoned one of the four elements; but the modern chemists have shown it to be a compound"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "air is a mixture of gases and not an element"
+      },
+      "note": "Right that air is not an element. It is a mixture, not a compound: its gases are not chemically joined."
+    },
+    {
+      "id": "ai2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Vital air",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "vital or dephlogisticated air, which supports flame and life"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Oxygen was isolated in the 1770s"
+      },
+      "note": "A change in language: vital or dephlogisticated air is oxygen."
+    },
+    {
+      "id": "ai3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Azote",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "azote, or phlogisticated air, in which an animal dies"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "78% nitrogen"
+      },
+      "note": "Azote is nitrogen. The French still call it azote."
+    },
+    {
+      "id": "ai4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "The proportions",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the vital air makes about one part in four"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "21% oxygen"
+      },
+      "note": "Close: one in four is 25%, today's figure is 21%."
+    },
+    {
+      "id": "ai5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Weight of the air",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "supports a column of mercury of about thirty inches"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "a column of mercury about 760 millimetres high"
+      },
+      "note": "760 millimetres is just under thirty inches."
+    },
+    {
+      "id": "ai6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Height of the air",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "is supposed not to extend above forty-five miles"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "There is no definite upper boundary"
+      },
+      "note": "Thinner with height is right. A fixed edge at 45 miles is not."
+    },
+    {
+      "id": "ai7",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Fixed air",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "produced by breathing and by burning"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "released by respiration and by burning fuels"
+      },
+      "note": "Fixed air is carbon dioxide; its sources are the same."
+    },
+    {
+      "id": "ai8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Greenhouse gas",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "it traps heat in the atmosphere"
+      },
+      "note": "The 1797 entry sees fixed air only as a poison to animals."
+    },
+    {
+      "id": "ai9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Argon",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "small amounts of argon"
+      },
+      "note": "Argon was found in 1894."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What air is",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Composition",
+      "britannica": 0.35,
+      "wikipedia": 0.3
+    },
+    {
+      "topic": "Pressure",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Height",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Carbon dioxide",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Climate",
+      "britannica": 0,
+      "wikipedia": 0.1
+    }
+  ],
+  "suggestedQuestions": [
+    "What are vital air and azote called today?",
+    "Was the 1797 entry right about what air is made of?"
+  ],
+  "answers": {
+    "What are vital air and azote called today?": {
+      "answer": "Vital air, which supports flame and life, is oxygen; azote, in which an animal dies, is nitrogen [B2]. Wikipedia names the same two gases as oxygen and nitrogen [W2] [W3].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Was the 1797 entry right about what air is made of?": {
+      "answer": "Mostly. It says air is not an element but made of vital air, about one part in four, and azote, nearly three parts [B2] [B3]. Wikipedia gives 21% oxygen and 78% nitrogen [W2], and calls air a mixture rather than a compound [W3].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.88
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

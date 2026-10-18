@@ -1,0 +1,309 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "magnet",
+    "label": "Magnet",
+    "headword": "MAGNET",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Magnet",
+    "area": "natural-sciences",
+    "teaser": "The cause of magnetism is supposed by many to be a subtle fluid which circulates through the magnet, entering at one pole and going out at the other."
+  },
+  "aliases": [
+    "magnet",
+    "magnets",
+    "loadstone",
+    "lodestone",
+    "compass needle"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0024",
+    "headword": "MAGNET",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 10",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 10 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "MAG                    [ 418 ]                    MAG\n\nMAGNESIA, a white earth. See CHEMISTRY.\n  MAGNET, or LOADSTONE, a ferruginous ſtone, which\nattracts iron, and, when freely ſuſpended, turns one of\nits ends towards the north. Every magnet has two poles;\nthe like poles of two magnets repel, and the unlike at-\ntract each other.\n  A piece of ſteel rubbed upon a magnet acquires the\nſame virtues, and keeps them; whereas ſoft iron loſes\nthem as ſoon as it is removed. The needle does not\npoint exactly to the north; its variation from the meri-\ndian differs in different places, and changes from year\nto year, at London being now about 24 degrees weſt.\n  Dr Gilbert ſuppoſed the earth itſelf to be a great mag-\nnet, which opinion is confirmed by the direction of the\nneedle. The cauſe of magnetiſm is ſuppoſed by many to\nbe a ſubtle fluid which circulates through the magnet,\nentering at one pole and going out at the other.\n  MAGNIFICAT, a hymn.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "MAGNET",
+        "text": "MAGNET, or LOADSTONE, a ferruginous stone, which attracts iron, and, when freely suspended, turns one of its ends towards the north."
+      },
+      {
+        "id": "B2",
+        "section": "MAGNET",
+        "text": "Every magnet has two poles; the like poles of two magnets repel, and the unlike attract each other."
+      },
+      {
+        "id": "B3",
+        "section": "MAGNET",
+        "text": "A piece of steel rubbed upon a magnet acquires the same virtues, and keeps them; whereas soft iron loses them as soon as it is removed."
+      },
+      {
+        "id": "B4",
+        "section": "MAGNET",
+        "text": "The needle does not point exactly to the north; its variation from the meridian differs in different places, and changes from year to year, at London being now about 24 degrees west."
+      },
+      {
+        "id": "B5",
+        "section": "MAGNET",
+        "text": "Dr Gilbert supposed the earth itself to be a great magnet, which opinion is confirmed by the direction of the needle."
+      },
+      {
+        "id": "B6",
+        "section": "MAGNET",
+        "text": "The cause of magnetism is supposed by many to be a subtle fluid which circulates through the magnet, entering at one pole and going out at the other."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-magnet",
+    "title": "Magnet",
+    "url": "https://en.wikipedia.org/wiki/Magnet",
+    "dateModified": "2026-09-12",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "A magnet is a material or object that produces a magnetic field. Lodestones, a naturally magnetized form of the iron mineral magnetite, were the first magnets known."
+      },
+      {
+        "id": "W2",
+        "section": "Poles",
+        "text": "Every magnet has a north and a south pole. Opposite poles attract and like poles repel."
+      },
+      {
+        "id": "W3",
+        "section": "Materials",
+        "text": "Hard magnetic materials such as some steels stay magnetized after being magnetized; soft iron loses most of its magnetism when the outside field is removed."
+      },
+      {
+        "id": "W4",
+        "section": "Earth's magnetism",
+        "text": "The Earth behaves like a large magnet, as William Gilbert proposed in 1600, which is why a compass needle points roughly north."
+      },
+      {
+        "id": "W5",
+        "section": "Earth's magnetism",
+        "text": "The Earth's magnetic poles slowly wander, so the angle between magnetic north and true north varies from place to place and changes over the years."
+      },
+      {
+        "id": "W6",
+        "section": "Physics",
+        "text": "Magnetism arises from moving electric charges and from the spin of electrons. In 1820 Hans Christian Oersted found that an electric current deflects a compass needle, linking electricity and magnetism."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.85,
+    "rerankScore": 0.87,
+    "reasons": [
+      "Same headword: MAGNET and Magnet.",
+      "Rare terms appear in both: loadstone or lodestone, poles, steel, Gilbert.",
+      "Magnetic declination scores well but covers only the variation of the needle."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Magnetic declination",
+      "url": "https://en.wikipedia.org/wiki/Magnetic_declination",
+      "embedScore": 0.75,
+      "rerankScore": 0.58
+    },
+    {
+      "title": "Lodestone",
+      "url": "https://en.wikipedia.org/wiki/Lodestone",
+      "embedScore": 0.79,
+      "rerankScore": 0.63
+    }
+  ],
+  "alignments": [
+    {
+      "id": "ma1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Loadstone",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a ferruginous stone, which attracts iron"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a naturally magnetized form of the iron mineral magnetite"
+      },
+      "note": "The iron-bearing stone now has a mineral name, magnetite."
+    },
+    {
+      "id": "ma2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Two poles",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the like poles of two magnets repel, and the unlike attract each other"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Opposite poles attract and like poles repel"
+      },
+      "note": "Same rule."
+    },
+    {
+      "id": "ma3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Steel keeps it",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "acquires the same virtues, and keeps them; whereas soft iron loses them"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "soft iron loses most of its magnetism"
+      },
+      "note": "Same observation. 'Virtues' became 'magnetism'."
+    },
+    {
+      "id": "ma4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Variation of the needle",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "differs in different places, and changes from year to year"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "varies from place to place and changes over the years"
+      },
+      "note": "Same finding. Wikipedia explains it: the magnetic poles wander."
+    },
+    {
+      "id": "ma5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "The earth is a magnet",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "Dr Gilbert supposed the earth itself to be a great magnet"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "The Earth behaves like a large magnet, as William Gilbert proposed in 1600"
+      },
+      "note": "Gilbert's idea, still accepted."
+    },
+    {
+      "id": "ma6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "A circulating fluid",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "a subtle fluid which circulates through the magnet"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Magnetism arises from moving electric charges and from the spin of electrons"
+      },
+      "note": "No fluid flows through a magnet. The cause is electric charge in motion."
+    },
+    {
+      "id": "ma7",
+      "kind": "added",
+      "verdict": null,
+      "label": "Electricity and magnetism",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "an electric current deflects a compass needle"
+      },
+      "note": "Oersted's discovery came 23 years after this edition."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Loadstone",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Poles",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Steel and iron",
+      "britannica": 0.15,
+      "wikipedia": 0.13
+    },
+    {
+      "topic": "Compass and variation",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Earth as a magnet",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Electromagnetism",
+      "britannica": 0,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "What did people in 1797 think caused magnetism?",
+    "Was Gilbert right that the earth is a magnet?"
+  ],
+  "answers": {
+    "What did people in 1797 think caused magnetism?": {
+      "answer": "Many supposed a subtle fluid that circulates through the magnet, entering at one pole and leaving at the other [B6]. Wikipedia says magnetism comes from moving electric charges and the spin of electrons, and that Oersted linked it to electricity in 1820 [W6].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Was Gilbert right that the earth is a magnet?": {
+      "answer": "Yes. The 1797 entry reports Gilbert's view and says the direction of the needle confirms it [B5]. Wikipedia agrees that the Earth behaves like a large magnet, which is why a compass points roughly north [W4].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}
