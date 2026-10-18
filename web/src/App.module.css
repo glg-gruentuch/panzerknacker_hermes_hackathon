@@ -279,8 +279,7 @@
     gap: var(--space-4);
   }
 
-  .hideNarrow,
-  .mock {
+  .hideNarrow {
     display: none;
   }
 

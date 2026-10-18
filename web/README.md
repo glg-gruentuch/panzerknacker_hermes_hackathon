@@ -31,12 +31,13 @@ npm run dev:mock
 | `npm run dev:mock` | Dev server on built-in sample data |
 | `npm run build` | Typecheck, then a live build into `dist/`. CI runs this. |
 | `npm run build:static` | Static build into `../deliverables/website/app/`, read from exported JSON |
+| `npm run build:cloudflare` | Sample-data build into `dist/` for the Cloudflare deploy |
 | `npm run typecheck` | TypeScript only |
 | `npm run examples` | Rewrite `api-examples/` from the mock data |
 
 [API.md](API.md) lists what the UI reads from each route, with saved live
-replies in `artifacts/web/`. Only `npm run dev:mock` includes the sample data;
-the live and static builds leave it out.
+replies in `artifacts/web/`. Only `npm run dev:mock` and `npm run build:cloudflare`
+include the sample data; the live and static builds leave it out.
 
 Link straight to an entry with `?q=`, for example `http://localhost:5173/?q=coinage`.
 
@@ -52,10 +53,19 @@ to `landing-page` starts a new deploy. The dashboard settings are:
 | Build command | `npm ci && npm run build` |
 | Deploy command | `npx wrangler deploy` |
 
+Cloudflare does not run the Python backend, so the deployed site uses the
+sample data for now. `wrangler.jsonc` has a `build.command`, so
+`npx wrangler deploy` first runs `npm run build:cloudflare`
+(`VITE_API_MODE=mock`) and then uploads `dist/`. The dashboard settings above
+stay as they are. The site says it runs on sample data, in the header and
+under the introduction.
+
+When the static export exists (B10), switch to real data: change
+`build:cloudflare` to `VITE_API_MODE=static vite build` and copy the exported
+`data/` folder and the scans into `dist/` before the upload.
+
 `wrangler.jsonc` names the Worker and tells it to serve the built files in
-`dist/`. The name in that file must match the Worker name in Cloudflare. The
-deployed site uses the built-in sample data, because Cloudflare does not run
-the Python backend.
+`dist/`. The name in that file must match the Worker name in Cloudflare.
 
 ## What's on screen
 

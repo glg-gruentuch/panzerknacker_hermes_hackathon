@@ -3,6 +3,11 @@
 {
   "name": "panzerknacker-hermes-hackathon",
   "compatibility_date": "2026-09-01",
+  // Cloudflare does not run the Python backend, so the deployed site uses the sample data
+  // (VITE_API_MODE=mock) until the static export exists. `wrangler deploy` runs this first.
+  "build": {
+    "command": "npm run build:cloudflare"
+  },
   "assets": {
     "directory": "./dist",
     "not_found_handling": "single-page-application"

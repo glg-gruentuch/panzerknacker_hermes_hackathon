@@ -179,7 +179,11 @@ export function ReadingPane({ comparison: c, activeId, onActivate, focus, narrow
           {b.quality && (
             <button type="button" className={styles.chip} aria-expanded={qualityOpen} onClick={() => setQualityOpen((o) => !o)}>
               {b.quality.dictionaryShare !== null ? `${Math.round(b.quality.dictionaryShare * 100)}% dictionary words` : 'Extraction'}
-              {b.quality.issues.length > 0 && <span className={styles.chipCount}>{b.quality.issues.length} issues</span>}
+              {b.quality.issues.length > 0 && (
+                <span className={styles.chipCount}>
+                  {b.quality.issues.length} {b.quality.issues.length === 1 ? 'issue' : 'issues'}
+                </span>
+              )}
             </button>
           )}
           <p className={`${styles.meta} num`}>Britannica, {editionLine(b).toLowerCase()}</p>

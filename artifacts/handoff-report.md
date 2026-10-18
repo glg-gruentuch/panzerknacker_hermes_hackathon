@@ -35,6 +35,10 @@ Branch `ui-real-data`, based on `landing-page` with `main` merged at `df45ca8`. 
 - **F4 green run.** Needs a push, which the human has not asked for yet.
 - **`package-lock.json`.** This clone has no uncommitted lock change, so nothing to decide here. The teammate's local change still needs the human's call.
 
+### Decisions by the human
+
+- **Cloudflare deploy uses sample data for now.** Cloudflare does not run the Python backend, and the static export does not exist yet. `web/wrangler.jsonc` runs `npm run build:cloudflare` (`VITE_API_MODE=mock`) before each deploy. The site labels itself as sample data in the header and under the introduction. Switch it to static mode once B10 writes the export (steps in `web/README.md`, "Deploy to Cloudflare").
+
 ### Requests for the backend agent
 
 The UI reads these when present and shows "pending" until then. Details in `web/API.md`, section "Fields the UI already supports".

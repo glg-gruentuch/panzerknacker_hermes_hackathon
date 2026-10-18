@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { API_MODE } from '../api/client'
 import type { AreaSlug, TopicSummary } from '../api/types'
 import { AREAS, HERO_PLATE, areaOf, type Area, type Plate } from '../config/areas'
 import { VERDICTS, VERDICT_ORDER } from '../lib/kinds'
@@ -74,6 +75,12 @@ export function Landing({ topics, input, onInput, onSearch }: Props) {
               </span>{' '}
               it.
             </p>
+            {API_MODE === 'mock' && (
+              <p className={styles.sampleNote}>
+                This copy of the site runs on sample data. Its Britannica passages are written for the demo, not read from the scans, and its comparisons
+                are examples.
+              </p>
+            )}
           </section>
 
           <section className={styles.subjects} aria-labelledby="subjects-title">
