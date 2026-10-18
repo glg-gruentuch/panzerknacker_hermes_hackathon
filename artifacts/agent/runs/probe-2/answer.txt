@@ -1,0 +1,8 @@
+No rerank-logit field is exposed by `challenge_compare` (it returns `match_confidence = -5.47265625`, a token/log-odds metric) or `challenge_claims`. The stored match evidence that ranks candidates is `challenge_search`. A content query matching this entry returns it as the **top candidate (first match)** with score `16.746749877929688`.
+
+Result:
+- Entry: britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:217#0000 (article "The Refreshments", Britannica page_id britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:217, scan page-0217-7dc36e3a55f8.jpg, sha256 7dc36e3a55f8250a0b4a7854c3ac1ca73e4bfb1ae457129c889057610a8084e7)
+- Rank: top candidate (1st match)
+- Rerank logit (score): 16.746749877929688
+
+Source record cited: `challenge_search` stored match evidence (query "cottages farm country woods fields"), which lists this entry as the leading match with that score; entry identity corroborated by `challenge_compare` / `challenge_claims` for the same entry_id.

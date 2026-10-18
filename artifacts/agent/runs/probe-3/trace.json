@@ -1,0 +1,36 @@
+{
+  "session_id": "20261018_151841_32e98d",
+  "model": "nvidia/Nemotron-3.5-Super-VL",
+  "steps": [
+    {
+      "step": "Tool call: tool_describe",
+      "model": "Hermes Agent tools",
+      "detail": "{\"tools\": {\"challenge_claims\": {\"description\": \"Return the stored claim alignment for one matched entry: every Britannica claim with its ver",
+      "ms": 109
+    },
+    {
+      "step": "Tool call: tool_search",
+      "model": "Hermes Agent tools",
+      "detail": "{\"queries\": [\"britannica 309f765b1ecc83e0a7f7762e44b4a927a7555443 train 261 Lepidoptera butterflies moths\", \"Hymenoptera in the 10th edition",
+      "ms": 115
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"error\": \"Local tools require one entry per tool_call; mixed and multi-local batches are not supported.\"}",
+      "ms": 24
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"entry_id\": \"britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:261#0000\"}, \"name\": \"challenge_claims\"}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"entry_id\": \"britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:261#0000\"}, \"name\": \"challenge_compare\"}]}",
+      "ms": null
+    }
+  ]
+}

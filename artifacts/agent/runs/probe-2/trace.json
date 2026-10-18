@@ -1,0 +1,48 @@
+{
+  "session_id": "20261018_151329_a6a0cb",
+  "model": "nvidia/Nemotron-3.5-Super-VL",
+  "steps": [
+    {
+      "step": "Tool call: tool_describe",
+      "model": "Hermes Agent tools",
+      "detail": "{\"tools\": {\"challenge_claims\": {\"description\": \"Return the stored claim alignment for one matched entry: every Britannica claim with its ver",
+      "ms": 87
+    },
+    {
+      "step": "Tool call: tool_describe",
+      "model": "Hermes Agent tools",
+      "detail": "{\"tools\": {\"challenge_search\": {\"description\": \"Search the stored Britannica-to-Wikipedia comparisons. Returns the best matching entries wit",
+      "ms": 12
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"error\": \"Local tools require one entry per tool_call; mixed and multi-local batches are not supported.\"}",
+      "ms": 17
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"entry_id\": \"britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:217#0000\"}, \"name\": \"challenge_compare\"}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"entry_id\": \"britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:217#0000\"}, \"name\": \"challenge_claims\"}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"error\": \"Local tools require one entry per tool_call; mixed and multi-local batches are not supported.\"}",
+      "ms": 16
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"cottages farm country woods fields\"}, \"name\": \"challenge_search\"}]}",
+      "ms": null
+    }
+  ]
+}

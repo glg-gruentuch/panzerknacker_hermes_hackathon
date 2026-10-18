@@ -1,1 +1,1 @@
-No stored comparison exists for entry ID `britannica:0000000000000000000000000000000000000000:train:9999#0000`. The tool returned `status: insufficient_evidence` with the detail that this entry has no stored comparison, so there is nothing to report.
+No comparison is stored for that entry. The tool returned `insufficient_evidence`, meaning this entry ID has no Britannica excerpt, Wikipedia article, or citations on file. I won't guess or fabricate a comparison.

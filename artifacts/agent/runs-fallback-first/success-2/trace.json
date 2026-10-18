@@ -1,0 +1,54 @@
+{
+  "session_id": "20261018_144523_ae1ee0",
+  "model": "nvidia/Nemotron-3.5-Super-VL",
+  "steps": [
+    {
+      "step": "Tool call: tool_search",
+      "model": "Hermes Agent tools",
+      "detail": "{\"queries\": [\"Mount Etna Britannica Wikipedia comparison\", \"challenge_search Mount Etna\"], \"total_available\": 4, \"results\": [{\"query\": \"Moun",
+      "ms": 89
+    },
+    {
+      "step": "Tool call: tool_describe",
+      "model": "Hermes Agent tools",
+      "detail": "{\"tools\": {\"challenge_search\": {\"description\": \"Search the stored Britannica-to-Wikipedia comparisons. Returns the best matching entries wit",
+      "ms": 25
+    },
+    {
+      "step": "Tool call: tool_search",
+      "model": "Hermes Agent tools",
+      "detail": "{\"queries\": [\"Etna volcano Sicily\", \"volcano comparisons Britannica\"], \"total_available\": 4, \"results\": [{\"query\": \"Etna volcano Sicily\", \"m",
+      "ms": 29
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"name\": \"challenge_search\", \"arguments\": {\"query\": \"Mount Etna\"}, \"limit\": 10}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"error\": \"Local tools require one entry per tool_call; mixed and multi-local batches are not supported.\"}",
+      "ms": 18
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"error\": \"tool_call calls[0] requires a 'name'\"}",
+      "ms": 16
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"Etna\"}, \"name\": \"challenge_search\"}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"volcano\"}, \"name\": \"challenge_search\"}]}",
+      "ms": null
+    }
+  ]
+}

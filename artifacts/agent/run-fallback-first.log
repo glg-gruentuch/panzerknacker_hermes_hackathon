@@ -1,0 +1,14 @@
+[agent] 1/8 success-1
+[agent] 2/8 success-2
+[agent] 3/8 success-3
+[agent] 4/8 success-4
+[agent] 5/8 failure-1
+[agent] 6/8 failure-2
+[agent] 7/8 failure-3
+[agent] 8/8 scan-check-1
+{
+  "stage": "agent",
+  "cases": 8,
+  "passed": 6,
+  "report": "artifacts/agent/report.json"
+}

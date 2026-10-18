@@ -1,0 +1,3 @@
+No stored comparison covers Mount Etna.
+
+I searched the challenge index with "Mount Etna", "Etna", "Sicily volcano", and "volcano" — every query returned `insufficient_evidence`, meaning no Britannica-to-Wikipedia matched pair in the stored dataset mentions the mountain. Because no entry exists, there is no entry ID to pass to `challenge_compare`, and I cannot summarize two source descriptions or cite either source. If you have a specific entry ID (e.g. `britannica:...:train:N#0000`) you believe covers it, I can run `challenge_compare` on it directly.

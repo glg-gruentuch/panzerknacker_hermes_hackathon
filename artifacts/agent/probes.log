@@ -1,0 +1,1 @@
+probe-3 {"case_id": "probe-3", "returncode": 0, "expected": "citation", "passed": false, "session_id": "20261018_151841_32e98d", "has_citation": false, "has_entry_citation": false, "has_wiki_citation": true, "citations_verified": true, "cited_ids": ["1337353135"], "unsupported_ids": [], "admits_missing": false, "scan_checks": []}

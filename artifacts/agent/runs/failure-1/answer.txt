@@ -1,3 +1,13 @@
-No stored comparison about quantum computing exists in the challenge corpus. I searched for "quantum computing" and "quantum" with `challenge_search`, and both returned no matching entries (status: insufficient_evidence). Without a stored Britannica-to-Wikipedia comparison entry ID, `challenge_compare` has nothing to retrieve, and there are no sources to cite.
+No stored Britannica-to-Wikipedia comparison about quantum computing exists in this corpus.
 
-If you have a specific entry ID from this corpus (e.g., `britannica:...:quantum:...#0000`), I can pull the stored comparison with its citations directly.
+What the search actually returned:
+- Query "quantum computing": only paragraph-level matches (no Britannica entry), top hits on page_id 6473626 and 77646361.
+- Query "quantum": one Britannica entry, `britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:220#0000`, but its content is about Captain Cook / Queen Charlotte's Sound, matched against the Wikipedia "Index of underwater diving: D–E" (match confidence -5.3) — unrelated to quantum computing.
+
+Since `challenge_compare`/`challenge_claims` require a Britannica entry_id and none exists for quantum computing, I can't produce the comparison you asked for.
+
+Sources checked:
+- Britannica scan: `page-0220-f28b3445b235.jpg`, sha256 `f28b3445b2354a93e2efbd2647cb2058637dea9d7c095bb9c2e239624ac95565` (National Library of Scotland, CC0 1.0)
+- Wikipedia: `https://en.wikipedia.org/wiki/Index_of_underwater_diving:_D%E2%80%93E`, revision 1328331033, sha256 `52fd6e81112d38d741a2b7e4841be88aa68d92c1aadd1b2d52ed999f8dfb08c5` (CC BY-SA 4.0)
+
+If you have a different topic in mind, or want me to compare a stored entry that does exist, let me know the entry_id or topic.

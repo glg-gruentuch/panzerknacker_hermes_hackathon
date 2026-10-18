@@ -1,5 +1,13 @@
 No matched pair in the stored comparisons covers Mount Etna.
 
-I searched the comparison store with the terms "Mount Etna," "Etna," "volcano," "Sicily," "Italy," and "mountain." Each returned "insufficient_evidence — No stored comparison matches the query terms." Since no entry exists, I cannot call challenge_compare or provide excerpts and citations from Britannica and Wikipedia for this topic.
+I searched the nemotron_challenge stored comparisons using `challenge_search` with queries including "Mount Etna", "Etna", "volcano", "Sicily", "active volcano Europe", "Aetna", and "Etna mountain". The only entry-level match related to a volcano is:
 
-If you have a specific entry ID (e.g. britannica:...:train:...) for an Etna comparison, I can pass it to challenge_compare directly.
+- `britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:247#0000` (heading: null, matched on "volcano")
+
+I called `challenge_compare` on that entry, and it returned:
+
+> "This entry has no stored comparison. Do not guess an answer."
+
+All other matches were paragraph-level hits (page/paragraph fragments) rather than Britannica-to-Wikipedia entry pairs, so they don't qualify as matched pairs with citations from both sources.
+
+**Bottom line:** there is no Britannica-to-Wikipedia comparison pair for Mount Etna in the stored dataset, so I cannot summarize how the two sources describe it or cite both sources. If you have a specific entry ID you believe should contain Etna, I can look it up directly.

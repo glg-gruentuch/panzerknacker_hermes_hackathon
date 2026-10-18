@@ -1,0 +1,10 @@
+Comparison: entry britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:217#0000, article "The Refreshments" (match_confidence -5.47).
+
+Token counts (tokens = lowercase letter runs of two or more characters, stopwords removed, per the stored comparison's method note):
+
+- Britannica: 1177 tokens
+  - Citation: page_id britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:217, scan page-0217-7dc36e3a55f8.jpg, sha256 7dc36e3a55f8250a0b4a7854c3ac1ca73e4bfb1ae457129c889057610a8084e7 (source: britannica; National Library of Scotland, CC0 1.0)
+- Wikipedia: 21 tokens
+  - Citation: page_id 8113875, revision_id 1185608460, sha256 8adacbc88dd7ff9409c60f35851b940cb209b215196175032c54780be145aa9f, url https://en.wikipedia.org/wiki/The_Refreshments (source: wikipedia, CC BY-SA 4.0)
+
+No further work needed — token counts and citations were returned directly by challenge_compare for the entry found via challenge_search.

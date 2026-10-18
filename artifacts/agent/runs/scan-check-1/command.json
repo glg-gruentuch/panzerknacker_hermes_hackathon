@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/hermes/.venv/bin/hermes",
+    "chat",
+    "-q",
+    "The stored text for page britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:257 (filename page-0257-012cf5a82a33.jpg, the Swift entry) contains the word 'grocery', which looks like a modern insertion by the text extraction. Call challenge_scan_check with this page ID and the quote 'grocery' to verify whether the word appears in the scan image. Report the returned result and reason, and quote the block text.",
+    "--toolsets",
+    "nemotron_challenge"
+  ],
+  "returncode": 0,
+  "question": "The stored text for page britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:257 (filename page-0257-012cf5a82a33.jpg, the Swift entry) contains the word 'grocery', which looks like a modern insertion by the text extraction. Call challenge_scan_check with this page ID and the quote 'grocery' to verify whether the word appears in the scan image. Report the returned result and reason, and quote the block text.",
+  "expected": "scan_check"
+}

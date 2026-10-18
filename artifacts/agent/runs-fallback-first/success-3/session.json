@@ -1,0 +1,9 @@
+{
+  "id": "20261018_144542_cc0190",
+  "started_at": 1792334748.6579542,
+  "ended_at": 1792334780.4585154,
+  "message_count": 56,
+  "tool_call_count": 27,
+  "input_tokens": 91870,
+  "output_tokens": 5061
+}

@@ -1,0 +1,132 @@
+{
+  "note": "challenge_search calls per agent run and which search served them (B3)",
+  "runs": [
+    {
+      "case_id": "failure-1",
+      "session_id": "20261018_150237_eae719",
+      "challenge_search_calls": 2,
+      "served_by_api": 2,
+      "fallback": 0,
+      "example_api_result": {
+        "query": "quantum computing",
+        "top": {
+          "kind": "paragraph",
+          "page_id": "6473626",
+          "revision_id": "1318177804",
+          "paragraph_index": 39,
+          "score": 11.780107498168945
+        }
+      }
+    },
+    {
+      "case_id": "failure-3",
+      "session_id": "20261018_150313_0e4486",
+      "challenge_search_calls": 23,
+      "served_by_api": 23,
+      "fallback": 0,
+      "example_api_result": {
+        "query": "blank binding",
+        "top": {
+          "kind": "paragraph",
+          "page_id": "58854649",
+          "revision_id": "1308115649",
+          "paragraph_index": 5,
+          "score": 7.0685133934021
+        }
+      }
+    },
+    {
+      "case_id": "probe-2",
+      "session_id": "20261018_151329_a6a0cb",
+      "challenge_search_calls": 1,
+      "served_by_api": 1,
+      "fallback": 0,
+      "example_api_result": {
+        "query": "cottages farm country woods fields",
+        "top": {
+          "kind": "entry",
+          "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:217#0000",
+          "heading": null,
+          "score": 16.746749877929688
+        }
+      }
+    },
+    {
+      "case_id": "scan-check-2",
+      "session_id": "20261018_150434_5e6b88",
+      "challenge_search_calls": 2,
+      "served_by_api": 2,
+      "fallback": 0,
+      "example_api_result": {
+        "query": "Swift",
+        "top": {
+          "kind": "entry",
+          "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:257#0000",
+          "heading": null,
+          "score": 7.790884494781494
+        }
+      }
+    },
+    {
+      "case_id": "success-1",
+      "session_id": "20261018_145739_f633d5",
+      "challenge_search_calls": 87,
+      "served_by_api": 87,
+      "fallback": 0,
+      "example_api_result": {
+        "query": "SHIP-BUILDING",
+        "top": {
+          "kind": "entry",
+          "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:13#0000",
+          "heading": null,
+          "score": 8.867051124572754
+        }
+      }
+    },
+    {
+      "case_id": "success-2",
+      "session_id": "20261018_150116_0ac436",
+      "challenge_search_calls": 11,
+      "served_by_api": 11,
+      "fallback": 0,
+      "example_api_result": {
+        "query": "Mount Etna",
+        "top": {
+          "kind": "paragraph",
+          "page_id": "77646361",
+          "revision_id": "1328331033",
+          "paragraph_index": 276,
+          "score": 9.067619323730469
+        }
+      }
+    },
+    {
+      "case_id": "success-3",
+      "session_id": "20261018_150143_54c30c",
+      "challenge_search_calls": 3,
+      "served_by_api": 3,
+      "fallback": 0,
+      "example_api_result": {
+        "query": "entomology",
+        "top": {}
+      }
+    },
+    {
+      "case_id": "success-4",
+      "session_id": "20261018_150209_0282a8",
+      "challenge_search_calls": 7,
+      "served_by_api": 7,
+      "fallback": 0,
+      "example_api_result": {
+        "query": "britain",
+        "top": {
+          "kind": "paragraph",
+          "page_id": "124259",
+          "revision_id": "1347769028",
+          "paragraph_index": 4,
+          "score": 5.930025100708008
+        }
+      }
+    }
+  ]
+}

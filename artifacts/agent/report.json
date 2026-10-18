@@ -5,66 +5,248 @@
       "case_id": "success-1",
       "returncode": 0,
       "expected": "citation",
-      "passed": true,
-      "session_id": "20261018_134445_121e62",
-      "has_citation": true,
-      "admits_missing": true
+      "passed": false,
+      "session_id": "20261018_145739_f633d5",
+      "has_citation": false,
+      "has_entry_citation": true,
+      "has_wiki_citation": false,
+      "citations_verified": true,
+      "cited_ids": [
+        "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:13"
+      ],
+      "unsupported_ids": [],
+      "admits_missing": true,
+      "scan_checks": [
+        {
+          "status": "not_found",
+          "result": null,
+          "reason": "",
+          "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:13"
+        },
+        {
+          "status": "not_found",
+          "result": null,
+          "reason": "",
+          "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:13"
+        }
+      ]
     },
     {
       "case_id": "success-2",
       "returncode": 0,
       "expected": "citation",
       "passed": false,
-      "session_id": "20261018_134532_05051e",
+      "session_id": "20261018_150116_0ac436",
       "has_citation": false,
-      "admits_missing": true
+      "has_entry_citation": true,
+      "has_wiki_citation": false,
+      "citations_verified": true,
+      "cited_ids": [
+        "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:247"
+      ],
+      "unsupported_ids": [],
+      "admits_missing": true,
+      "scan_checks": []
     },
     {
       "case_id": "success-3",
       "returncode": 0,
       "expected": "citation",
       "passed": true,
-      "session_id": "20261018_134555_55d17b",
+      "session_id": "20261018_150143_54c30c",
       "has_citation": true,
-      "admits_missing": true
+      "has_entry_citation": true,
+      "has_wiki_citation": true,
+      "citations_verified": true,
+      "cited_ids": [
+        "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:261",
+        "https://en.wikipedia.org/wiki/Hymenoptera_in_the_10th_edition_of_Systema_Naturae",
+        "1337353135"
+      ],
+      "unsupported_ids": [],
+      "admits_missing": true,
+      "scan_checks": []
     },
     {
       "case_id": "success-4",
       "returncode": 0,
       "expected": "citation",
       "passed": true,
-      "session_id": "20261018_134635_527596",
+      "session_id": "20261018_150209_0282a8",
       "has_citation": true,
-      "admits_missing": false
+      "has_entry_citation": true,
+      "has_wiki_citation": true,
+      "citations_verified": true,
+      "cited_ids": [
+        "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:261",
+        "https://en.wikipedia.org/wiki/Hymenoptera_in_the_10th_edition_of_Systema_Naturae",
+        "1337353135"
+      ],
+      "unsupported_ids": [],
+      "admits_missing": false,
+      "scan_checks": []
     },
     {
       "case_id": "failure-1",
       "returncode": 0,
       "expected": "insufficient_evidence",
       "passed": true,
-      "session_id": "20261018_134659_3b092f",
-      "has_citation": false,
-      "admits_missing": true
+      "session_id": "20261018_150237_eae719",
+      "has_citation": true,
+      "has_entry_citation": true,
+      "has_wiki_citation": true,
+      "citations_verified": true,
+      "cited_ids": [
+        "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:220",
+        "https://en.wikipedia.org/wiki/Index_of_underwater_diving:_D%E2%80%93E",
+        "1328331033"
+      ],
+      "unsupported_ids": [],
+      "admits_missing": true,
+      "scan_checks": []
     },
     {
       "case_id": "failure-2",
       "returncode": 0,
       "expected": "insufficient_evidence",
       "passed": true,
-      "session_id": "20261018_134717_8750aa",
-      "has_citation": true,
-      "admits_missing": true
+      "session_id": "20261018_150258_a9498f",
+      "has_citation": false,
+      "has_entry_citation": false,
+      "has_wiki_citation": false,
+      "citations_verified": true,
+      "cited_ids": [],
+      "unsupported_ids": [],
+      "admits_missing": true,
+      "scan_checks": []
     },
     {
       "case_id": "failure-3",
       "returncode": 0,
       "expected": "insufficient_evidence",
-      "passed": false,
-      "session_id": "20261018_134733_785228",
+      "passed": true,
+      "session_id": "20261018_150313_0e4486",
       "has_citation": false,
-      "admits_missing": false
+      "has_entry_citation": true,
+      "has_wiki_citation": false,
+      "citations_verified": true,
+      "cited_ids": [
+        "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2448"
+      ],
+      "unsupported_ids": [],
+      "admits_missing": true,
+      "scan_checks": [
+        {
+          "status": "not_found",
+          "result": null,
+          "reason": "",
+          "page_id": "page-0452"
+        },
+        {
+          "status": "not_found",
+          "result": null,
+          "reason": "",
+          "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:452"
+        },
+        {
+          "status": "not_found",
+          "result": null,
+          "reason": "",
+          "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:0452"
+        }
+      ]
+    },
+    {
+      "case_id": "scan-check-1",
+      "returncode": 0,
+      "expected": "scan_check",
+      "passed": true,
+      "session_id": "20261018_150417_d9aabf",
+      "has_citation": false,
+      "has_entry_citation": false,
+      "has_wiki_citation": false,
+      "citations_verified": true,
+      "cited_ids": [],
+      "unsupported_ids": [],
+      "admits_missing": false,
+      "scan_checks": [
+        {
+          "status": "ok",
+          "result": "mismatch",
+          "reason": "The word 'grocery' does not appear in the visible text.",
+          "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:257"
+        }
+      ]
+    },
+    {
+      "case_id": "scan-check-2",
+      "returncode": 0,
+      "expected": "citation",
+      "passed": false,
+      "session_id": "20261018_150434_5e6b88",
+      "has_citation": false,
+      "has_entry_citation": true,
+      "has_wiki_citation": false,
+      "citations_verified": true,
+      "cited_ids": [
+        "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:257"
+      ],
+      "unsupported_ids": [],
+      "admits_missing": true,
+      "scan_checks": []
+    },
+    {
+      "case_id": "probe-1",
+      "returncode": 0,
+      "expected": "citation",
+      "passed": false,
+      "session_id": "20261018_151314_8099e5",
+      "has_citation": false,
+      "has_entry_citation": false,
+      "has_wiki_citation": true,
+      "citations_verified": true,
+      "cited_ids": [
+        "1337353135"
+      ],
+      "unsupported_ids": [],
+      "admits_missing": false,
+      "scan_checks": []
+    },
+    {
+      "case_id": "probe-2",
+      "returncode": 0,
+      "expected": "citation",
+      "passed": false,
+      "session_id": "20261018_151329_a6a0cb",
+      "has_citation": false,
+      "has_entry_citation": true,
+      "has_wiki_citation": false,
+      "citations_verified": true,
+      "cited_ids": [
+        "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:217"
+      ],
+      "unsupported_ids": [],
+      "admits_missing": false,
+      "scan_checks": []
+    },
+    {
+      "case_id": "probe-3",
+      "returncode": 0,
+      "expected": "citation",
+      "passed": false,
+      "session_id": "20261018_151841_32e98d",
+      "has_citation": false,
+      "has_entry_citation": false,
+      "has_wiki_citation": true,
+      "citations_verified": true,
+      "cited_ids": [
+        "1337353135"
+      ],
+      "unsupported_ids": [],
+      "admits_missing": false,
+      "scan_checks": []
     }
   ],
-  "passed": 5,
-  "total": 7
+  "passed": 6,
+  "total": 12
 }

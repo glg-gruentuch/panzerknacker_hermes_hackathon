@@ -1,5 +1,3 @@
-I could not find a stored comparison with the running head SHIP-BUILDING. I searched the challenge store with every relevant term I could think of — SHIP-BUILDING, SHIPBUILDING, ship-building, shipbuilding, ship, building, boat, vessel, keel, hull, mast, timber, dock, yard, launch, sea, ocean, sail, naval, marine, seamanship, navigation, anchor, rudder, stern, and more — and every query returned "No stored comparison matches the query terms."
+The SHIP-BUILDING entry was found via `challenge_search` (entry `britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:13#0000`), but `challenge_compare` returns "insufficient_evidence — this entry has no stored comparison." I also verified with `challenge_claims` and multiple paragraph suffixes (#0001 through #0005) — all return the same result.
 
-The only ship-related comparison in the store is CABIN / "Cabin (ship)" (entry_id britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2464#0005), which I retrieved via challenge_compare. It is not the SHIP-BUILDING page you asked for.
-
-If you have a different page title or running head for the ship-building comparison, I can look it up directly with challenge_compare. Otherwise, the SHIP-BUILDING comparison simply is not in the stored dataset, and I can't list vocabulary differences or cite sources for something that isn't there.
+I cannot list two vocabulary differences between the 1768 Britannica text and the Wikipedia article because no stored comparison exists for this entry in the challenge dataset. I won't fabricate terms or citations.

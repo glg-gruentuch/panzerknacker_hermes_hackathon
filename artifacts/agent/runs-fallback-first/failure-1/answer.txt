@@ -1,0 +1,7 @@
+The stored comparison database has no entry about quantum computing. Searches for "quantum computing", "quantum", and "computing" all returned no matches, so there is nothing to compare against the Wikipedia article and no sources to cite from the stored set.
+
+- **Stored comparison**: none found — the nemotron_challenge comparison store contains no quantum computing entry.
+- **Wikipedia article**: not checked, since there is no stored comparison to compare it with.
+- **Sources cited**: none available.
+
+If you have a specific stored entry ID or title, I can look it up directly with `challenge_claims` / `challenge_compare`.

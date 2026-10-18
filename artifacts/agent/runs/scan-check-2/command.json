@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/hermes/.venv/bin/hermes",
+    "chat",
+    "-q",
+    "Use challenge_search with the query 'Swift' to find the stored Britannica entry for page-0257 about Jonathan Swift, then summarize in two sentences what the stored Britannica text says about Swift's early life and career. Cite the entry ID.",
+    "--toolsets",
+    "nemotron_challenge"
+  ],
+  "returncode": 0,
+  "question": "Use challenge_search with the query 'Swift' to find the stored Britannica entry for page-0257 about Jonathan Swift, then summarize in two sentences what the stored Britannica text says about Swift's early life and career. Cite the entry ID.",
+  "expected": "citation"
+}

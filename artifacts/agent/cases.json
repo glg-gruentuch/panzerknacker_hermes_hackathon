@@ -38,5 +38,25 @@
     "case_id": "scan-check-1",
     "question": "The stored text for page britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:257 (filename page-0257-012cf5a82a33.jpg, the Swift entry) contains the word 'grocery', which looks like a modern insertion by the text extraction. Call challenge_scan_check with this page ID and the quote 'grocery' to verify whether the word appears in the scan image. Report the returned result and reason, and quote the block text.",
     "expected": "scan_check"
+  },
+  {
+    "case_id": "scan-check-2",
+    "question": "Use challenge_search with the query 'Swift' to find the stored Britannica entry for page-0257 about Jonathan Swift, then summarize in two sentences what the stored Britannica text says about Swift's early life and career. Cite the entry ID.",
+    "expected": "citation"
+  },
+  {
+    "case_id": "probe-1",
+    "question": "Use challenge_compare for the entry britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:261#0000 and quote one full sentence from the stored Wikipedia article verbatim, with the article revision id cited.",
+    "expected": "citation"
+  },
+  {
+    "case_id": "probe-2",
+    "question": "Report the exact rerank logit of the top candidate for the entry britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:217#0000 from the stored match evidence and cite the source record you used.",
+    "expected": "citation"
+  },
+  {
+    "case_id": "probe-3",
+    "question": "The Britannica entry britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:261#0000 pairs with the Wikipedia article 'Hymenoptera in the 10th edition of Systema Naturae'. List three ways the Britannica text's coverage of butterflies and moths (Lepidoptera) differs from the Wikipedia article's coverage, quoting both texts for each difference.",
+    "expected": "citation"
   }
 ]

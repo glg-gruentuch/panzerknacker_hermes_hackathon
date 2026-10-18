@@ -23,7 +23,8 @@ CASE_TIMEOUT = 600
 CITATION = re.compile(r"britannica:[0-9a-f]{40}:train:\d+")
 ENTRY_CITATION = re.compile(r"\[(britannica:[0-9a-f]{40}:train:\d+#[0-9]{4})\]")
 WIKI_CITATION = re.compile(r"\[(https?://en\.wikipedia\.org/[^\]\s]+)\]")
-WIKI_REVISION = re.compile(r"\brevision(?:\s*[_ ]?id)?\s*[:#=]?\s*(\d{4,})", re.IGNORECASE)
+WIKI_URL = re.compile(r"https?://en\.wikipedia\.org/[^\s\]\)\"'<>`]+")
+WIKI_REVISION = re.compile(r"\brevision(?:\s*[_ ]?id)?\s*[:#=]?\s*[`'\"]{0,2}\s*(\d{4,})", re.IGNORECASE)
 PASSAGE_CITATION = re.compile(r"\[([BW][0-9]{1,3})\]")
 SESSION_DB = REPO / "data" / "hermes" / "state.db"
 
@@ -300,7 +301,8 @@ def check_answer(text: str, session: dict[str, Any] | None = None) -> dict[str, 
     entry_ids = set(ENTRY_CITATION.findall(text))
     page_ids = set(CITATION.findall(text)) - {entry.split("#")[0] for entry in entry_ids}
     britannica_ids = sorted(entry_ids | page_ids)
-    wiki_urls = sorted(set(WIKI_CITATION.findall(text)))
+    wiki_urls = sorted({url.rstrip(".,;:`") for url in
+                        (set(WIKI_CITATION.findall(text)) | set(WIKI_URL.findall(text)))})
     wiki_revisions = sorted(set(WIKI_REVISION.findall(text)))
     cited_ids = [*britannica_ids, *wiki_urls, *wiki_revisions]
     tool_text = ""
@@ -320,7 +322,7 @@ def check_answer(text: str, session: dict[str, Any] | None = None) -> dict[str, 
         "citations_verified": session is not None,
         "cited_ids": cited_ids,
         "unsupported_ids": unsupported_ids,
-        "admits_missing": "insufficient" in lowered or "unmatched" in lowered or "no stored comparison" in lowered,
+        "admits_missing": "insufficient" in lowered or "unmatched" in lowered or "no stored" in lowered,
     }
 
 

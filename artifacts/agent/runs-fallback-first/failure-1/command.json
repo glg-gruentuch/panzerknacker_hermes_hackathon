@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/hermes/.venv/bin/hermes",
+    "chat",
+    "-q",
+    "Compare the stored comparison about quantum computing with its Wikipedia article and cite the sources.",
+    "--toolsets",
+    "nemotron_challenge"
+  ],
+  "returncode": 0,
+  "question": "Compare the stored comparison about quantum computing with its Wikipedia article and cite the sources.",
+  "expected": "insufficient_evidence"
+}

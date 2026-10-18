@@ -1,0 +1,7 @@
+I found the entry but cannot retrieve its stored text. Here's the status:
+
+**Entry found:** `britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:257#0000` (returned by `challenge_search` with query "Swift", score 7.79)
+
+**Blocker:** Both `challenge_compare` and `challenge_claims` return `insufficient_evidence` for this entry ID — the stored Britannica text and claim alignment are not available in the dataset. I also have no quote to feed to `challenge_scan_check`, so the scan path can't be used either.
+
+I won't fabricate a summary of Swift's early life and career. The entry exists in the index, but its stored Britannica content isn't accessible through any available tool. If you have a quote from the page or another way to identify the text, I can verify it against the scan with `challenge_scan_check`.

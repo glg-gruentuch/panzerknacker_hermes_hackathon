@@ -1,0 +1,18 @@
+The premise of your question doesn't hold. Neither text covers butterflies and moths (Lepidoptera), so there are no Lepidoptera coverage differences to report. Here's what each text actually says, with quotes.
+
+**Wikipedia article — "Hymenoptera in the 10th edition of Systema Naturae"** (revision 1337353135):
+
+> "In the 10th edition of Systema Naturae, Carl Linnaeus classified the arthropods, including insects, arachnids and crustaceans, among his class "Insecta". Insects with membranous wings, including bees, wasps and ants were brought together under the name Hymenoptera."
+
+The article then lists Hymenoptera genera/species: Cynips rosae, Cynips hieracii, Cynips glechomae, Cynips quercus bacca, etc. Its most frequent terms are ichneumon (70), tenthredo (40), apis (39), sphex (26), vespa (18), formica (17), cynips (15), mutilla, bombus — all Hymenoptera. No Lepidoptera term (butterfly, moth, Papilio, Sphinx, Phalaena, lepidoptera) appears anywhere.
+
+**Britannica entry** (scan page-0261, 689 tokens):
+
+> "Aptera
+> a great height; to accomplish which, they climb up some eminence, and are walked about by the winds, filling the air with their threads. They are destroyed by the spikes and ichneumon.
+> Linnaeus has subdivided this genus according to the number and position of their eyes:
+> fasnata. Of a silver color; the abdomen marked with yellowish bandes; the legs surrounded with brown rings. 49. A nativ..."
+
+The Britannica excerpt is headed "Aptera" (Linnaeus's order of wingless insects) and reads like a spider/insect description ("filling the air with their threads" = spider ballooning). Its individual claims are native-place descriptions of assorted insects (e.g., "49. A native of the island of Malachi", "99. A native of Europe, in meadows", "95. A native of America; large, the thorax oval, legs black, thighs pale"). None mentions butterflies or moths. Top terms: native, marked, black, europe, abdomen, legs, brown, oval, white, colour, thorax — no Lepidoptera vocabulary.
+
+**Conclusion:** The stored pairing has a very low match confidence (-5.44), consistent with these being different subjects. The Britannica text covers Aptera/miscellaneous insects with native-place and physical-description claims; the Wikipedia article covers Hymenoptera (bees, wasps, ants, ichneumons, sawflies). Since neither text addresses Lepidoptera, I cannot list three differences in butterfly/moth coverage — fabricating them would be invented output. If you have a different Britannica entry that actually discusses Lepidoptera, share its ID and I'll compare it properly.

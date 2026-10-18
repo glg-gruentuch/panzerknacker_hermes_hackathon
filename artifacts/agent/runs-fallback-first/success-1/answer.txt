@@ -1,0 +1,8 @@
+I searched the stored Britannica-to-Wikipedia comparisons for "SHIP-BUILDING" and several related terms (ship, building, ship-building, shipbuilding, naval, construction). No stored comparison matches any of these queries — the only match returned is for "CABIN", an unrelated entry.
+
+Because there is no SHIP-BUILDING comparison in the stored data, I cannot run `challenge_compare` for it or list vocabulary differences between the 1768 Britannica text and the Wikipedia article. The requested entry does not exist in this dataset, so I can't verify or fabricate it.
+
+What I did:
+- `challenge_search` queries: SHIP-BUILDING, ship, building, ship-building, shipbuilding, naval, construction — all returned insufficient evidence except "ship", which matched an unrelated "CABIN" entry.
+
+If you have a specific entry ID for SHIP-BUILDING, I can run `challenge_compare` directly with it. Otherwise, this comparison appears not to be in the stored dataset.

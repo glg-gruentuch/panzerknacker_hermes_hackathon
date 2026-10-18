@@ -1,6 +1,7 @@
-Entry: "Howard Jarvis Taxpayers Association" (britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1166#0000)
+Stored comparison: entry `britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:261#0000` (Britannica page 261, scanned page-0261-881563669b04.jpg vs. Wikipedia article "Hymenoptera in the 10th edition of Systema Naturae", page_id 28899252).
 
-- Britannica: 1318 tokens — citation: page_id britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1166, scan page-1166-ec9dc1d6c2c9.jpg (sha256 ec9dc1d6c2c96661593803f1cde606a6c27b453bccb4803b9562db602f4c0c69)
-- Wikipedia: 581 tokens — citation: page_id 12251120, revision_id 1350466616, https://en.wikipedia.org/wiki/Howard_Jarvis_Taxpayers_Association (sha256 2e392436ac56cd128ef3c80e24ccddb2bbc463cc1e5f50371bf9b6bf09771163)
+Token counts:
+- Britannica: 689 tokens [citation: britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:261, scan page-0261-881563669b04.jpg, sha256 881563669b04b487e86fd839d3c3ed37df89ebbf558afc819085fdba215bff61]
+- Wikipedia: 859 tokens [citation: page_id 28899252, revision_id 1337353135, sha256 17625006cc84dbbf75a4c14b753072953c9bbc012788e694e5d25ad4aa7d4232, https://en.wikipedia.org/wiki/Hymenoptera_in_the_10th_edition_of_Systema_Naturae]
 
-Token counts come from the challenge_compare result's `tokens` field for each document; citations are the `citations` array entries from the same result.
+Tokenization rule: lowercase letter runs of two or more characters, stopwords removed. Britannica type/token ratio 0.45 (310 types); Wikipedia 0.50 (431 types). Verified via challenge_compare with status ok.

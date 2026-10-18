@@ -1,36 +1,42 @@
 {
-  "session_id": "20261018_134532_05051e",
+  "session_id": "20261018_150116_0ac436",
   "model": "nvidia/Nemotron-3.5-Super-VL",
   "steps": [
     {
       "step": "Tool call: tool_search",
       "model": "Hermes Agent tools",
-      "detail": "{\"queries\": [\"Mount Etna comparison Britannica Wikipedia\"], \"total_available\": 2, \"results\": [{\"query\": \"Mount Etna comparison Britannica Wi",
-      "ms": 103
-    },
-    {
-      "step": "Tool call: tool_search",
-      "model": "Hermes Agent tools",
-      "detail": "{\"queries\": [\"Etna\"], \"total_available\": 2, \"results\": [{\"query\": \"Etna\", \"matches\": [], \"available_sources\": [{\"name\": \"nemotron_challenge\"",
-      "ms": 17
+      "detail": "{\"queries\": [\"Mount Etna\"], \"total_available\": 4, \"results\": [{\"query\": \"Mount Etna\", \"matches\": [], \"available_sources\": [{\"name\": \"nemotro",
+      "ms": 107
     },
     {
       "step": "Tool call: tool_describe",
       "model": "Hermes Agent tools",
       "detail": "{\"tools\": {\"challenge_search\": {\"description\": \"Search the stored Britannica-to-Wikipedia comparisons. Returns the best matching entries wit",
-      "ms": 16
+      "ms": 22
     },
     {
-      "step": "Tool call: tool_call",
+      "step": "Tool call: tool_search",
       "model": "Hermes Agent tools",
-      "detail": "{\"calls\": [{\"name\": \"challenge_search\", \"arguments\": {\"query\": \"Mount Etna\"}}]}",
-      "ms": null
+      "detail": "{\"queries\": [\"Etna\", \"volcano Sicily\", \"volcano\"], \"total_available\": 4, \"results\": [{\"query\": \"Etna\", \"matches\": [], \"available_sources\": [",
+      "ms": 28
     },
     {
       "step": "Tool call: tool_call",
       "model": "Hermes Agent tools",
       "detail": "{\"error\": \"Local tools require one entry per tool_call; mixed and multi-local batches are not supported.\"}",
-      "ms": 11
+      "ms": 19
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"Mount Etna\"}, \"name\": \"challenge_search\"}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"Etna\"}, \"name\": \"challenge_search\"}]}",
+      "ms": null
     },
     {
       "step": "Tool call: tool_call",
@@ -41,7 +47,61 @@
     {
       "step": "Tool call: tool_call",
       "model": "Hermes Agent tools",
-      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"mountain\"}, \"name\": \"challenge_search\"}]}",
+      "detail": "{\"calls\": [{\"arguments\": {\"entry_id\": \"britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:247#0000\"}, \"name\": \"challenge_compare\"}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"Sicily\"}, \"name\": \"challenge_search\"}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"active volcano Europe\"}, \"name\": \"challenge_search\"}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"error\": \"tool_call 'calls' must be a non-empty array of {name, arguments}\"}",
+      "ms": 209
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"Mount Etna Sicily volcano\"}, \"name\": \"challenge_search\"}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"Etna volcano\"}, \"name\": \"challenge_search\"}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"Mount\"}, \"name\": \"challenge_search\"}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"Sicily volcano mountain\"}, \"name\": \"challenge_search\"}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"Aetna\"}, \"name\": \"challenge_search\"}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"Etna mountain\"}, \"name\": \"challenge_search\"}]}",
       "ms": null
     }
   ]

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/hermes/.venv/bin/hermes",
+    "chat",
+    "-q",
+    "Report the exact rerank logit of the top candidate for the entry britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:217#0000 from the stored match evidence and cite the source record you used.",
+    "--toolsets",
+    "nemotron_challenge"
+  ],
+  "returncode": 0,
+  "question": "Report the exact rerank logit of the top candidate for the entry britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:217#0000 from the stored match evidence and cite the source record you used.",
+  "expected": "citation"
+}
