@@ -24,7 +24,7 @@ export interface Area {
   /** One plain sentence on what the area covers. */
   blurb: string
   plate: Plate
-  /** Topic slugs to show first, with their teaser and verdicts. The rest follow in index order. */
+  /** Topic slugs to show first, with today's title and a Compare link. The rest follow in index order. */
   featured: string[]
 }
 

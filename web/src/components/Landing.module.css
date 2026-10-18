@@ -261,16 +261,6 @@
   color: var(--muted);
 }
 
-.teaser {
-  margin: var(--space-2) 0 var(--space-1);
-  max-width: 54ch;
-  font-family: var(--font-caslon);
-  font-size: var(--text-lg);
-  font-style: italic;
-  line-height: 1.5;
-  color: var(--ink);
-}
-
 .featuredFoot {
   display: flex;
   align-items: center;

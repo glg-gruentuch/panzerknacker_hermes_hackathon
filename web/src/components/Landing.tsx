@@ -163,7 +163,6 @@ function Featured({ topic: t, onSearch }: { topic: TopicSummary; onSearch: (q: s
           {t.edition}, {t.year}
           {t.wikipediaTitle && <> · today “{t.wikipediaTitle}”</>}
         </span>
-        {t.teaser && <q className={styles.teaser}>{t.teaser}</q>}
         <span className={styles.featuredFoot}>
           <Verdicts topic={t} />
           <span className={styles.open}>
