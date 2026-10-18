@@ -1,0 +1,44 @@
+{
+  "reviewer": "Hermes Agent (vision review against the source scans)",
+  "date": "2026-10-18",
+  "method": "Vision read of the scan image, compared with the derived entry text for the same page.",
+  "scans": [
+    {
+      "filename": "page-0013-50049db49e8b.jpg",
+      "verdict": "matches with identified errors",
+      "running_head": "292 SHIP-BUILDING. Source and derived record agree.",
+      "findings": [
+        "Section heading: the source reads 'Practical Building'; the Parse output reads 'Fractical Building' (F for P).",
+        "Opening text agrees at the start: 'ends in close contact with, and ...'.",
+        "Mid-sentence wording differs in low-contrast words; the 600 px scan cannot arbitrate every word."
+      ]
+    },
+    {
+      "filename": "page-0247-cb5b8fd3e311.jpg",
+      "verdict": "matches with identified errors",
+      "running_head": "ETNA. 381. The Parse output garbles it as 'ET N [ 8 ] E T N'.",
+      "findings": [
+        "Page subject agrees: Mount Etna crater descriptions.",
+        "Figure caption subject agrees: 'Fig. 2 exhibits a view of the crater of Etna' in the source; the derived text shows 'Eta' (missing n)."
+      ]
+    },
+    {
+      "filename": "page-0452-233256cb3c3c.jpg",
+      "verdict": "failed scan, no text content",
+      "findings": [
+        "The scan is a blank, textured book binding with no printed text.",
+        "The Parse reply degenerated into a repetition loop and stopped at finish_reason 'length'.",
+        "Recorded as a failure in coverage.json; the degenerate reply is kept in artifacts/extract/failures/."
+      ]
+    },
+    {
+      "filename": "page-2243-0bd9a3e05239.jpg",
+      "verdict": "failed scan, plate page",
+      "findings": [
+        "The scan is an engraved plate of lunar astronomy diagrams (Plate XLII/XLIII), with no typeset text.",
+        "The Parse reply degenerated into a repetition loop ('21 21 21 ...') and stopped at finish_reason 'length'.",
+        "Recorded as a failure in coverage.json; the degenerate reply is kept in artifacts/extract/failures/."
+      ]
+    }
+  ]
+}

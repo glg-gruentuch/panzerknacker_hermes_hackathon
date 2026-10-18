@@ -1,0 +1,7 @@
+body { font-family: Georgia, serif; margin: 2rem auto; max-width: 60rem; padding: 0 1rem; color: #1b1b1b; }
+nav a { margin-right: 1rem; }
+img.scan { max-width: 100%; border: 1px solid #999; }
+pre { white-space: pre-wrap; font-family: inherit; }
+.cite { color: #555; font-size: 0.9rem; }
+table { border-collapse: collapse; }
+td, th { border: 1px solid #bbb; padding: 0.3rem 0.6rem; }
