@@ -1,0 +1,32 @@
+// Cloudflare Pages Function for POST /api/chat. It forwards the request to the
+// chat backend on Nebius, so the browser stays on one domain and needs no CORS.
+// Set these in the Pages project (Settings > Variables and Secrets):
+//   CHAT_BACKEND_URL    origin of the backend, e.g. https://chat.example.org
+//   CHAT_BACKEND_TOKEN  optional; sent as a bearer token so the backend can
+//                       refuse calls that do not come through this site
+
+interface Env {
+  CHAT_BACKEND_URL?: string
+  CHAT_BACKEND_TOKEN?: string
+}
+
+const detail = (status: number, message: string) => Response.json({ detail: message }, { status })
+
+export async function onRequestPost({ request, env }: { request: Request; env: Env }): Promise<Response> {
+  if (!env.CHAT_BACKEND_URL) {
+    return detail(503, 'The chat backend is not set up yet. Set CHAT_BACKEND_URL in the Cloudflare Pages settings.')
+  }
+  const headers: Record<string, string> = { 'Content-Type': 'application/json' }
+  if (env.CHAT_BACKEND_TOKEN) headers.Authorization = `Bearer ${env.CHAT_BACKEND_TOKEN}`
+
+  let res: Response
+  try {
+    res = await fetch(new URL('/api/chat', env.CHAT_BACKEND_URL), { method: 'POST', headers, body: await request.text() })
+  } catch {
+    return detail(502, 'The chat backend did not answer. Check that it is running on Nebius.')
+  }
+  return new Response(res.body, {
+    status: res.status,
+    headers: { 'Content-Type': res.headers.get('Content-Type') ?? 'application/json' },
+  })
+}

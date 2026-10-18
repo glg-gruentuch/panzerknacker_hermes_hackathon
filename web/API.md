@@ -1,21 +1,36 @@
-# Backend API for the web UI
+# Data and API for the web UI
 
-The UI calls five endpoints under `/api`. In development, Vite proxies `/api/*`
-to `VITE_BACKEND_URL` (default `http://localhost:8000`), so the backend needs no
-CORS setup. The TypeScript source of truth is [`src/api/types.ts`](src/api/types.ts);
-real example payloads are in [`api-examples/`](api-examples/) (regenerate with
+The site runs on Cloudflare Pages. It needs a live backend for one call only:
+
+- **Four static files.** `topics`, `compare`, `cases` and `meta` do not change
+  while someone uses the site. The pipeline writes them as JSON files to
+  [`public/data/`](public/data/README.md), and Cloudflare serves them with the
+  site. The sections below still name them `GET /api/...`; each file holds the
+  body that endpoint would return.
+- **One live endpoint.** `POST /api/chat` goes to the chat backend on Nebius,
+  where Hermes, the models and LanceDB run. On Cloudflare,
+  [`functions/api/chat.ts`](functions/api/chat.ts) forwards it. In
+  development, Vite proxies `/api/*` to `VITE_BACKEND_URL` (default
+  `http://localhost:8000`).
+
+The TypeScript source of truth is [`src/api/types.ts`](src/api/types.ts).
+Example payloads are in [`api-examples/`](api-examples/) (regenerate with
 `npm run examples`).
 
-Errors: return a non-2xx status with JSON `{"detail": "..."}` (FastAPI's default
-shape). The UI shows `detail` to the user, so write it as a sentence.
+Chat errors: return a non-2xx status with JSON `{"detail": "..."}` (FastAPI's
+default shape). The UI shows `detail` to the user, so write it as a sentence.
 
-| Endpoint | Purpose | Example |
-|---|---|---|
-| `GET /api/topics` | Every indexed Britannica page, for search suggestions and the landing index | [topics.json](api-examples/topics.json) |
-| `GET /api/compare?q=blood` | The pair of texts, match scores, aligned claims, vocabulary, coverage | [compare_q-blood.json](api-examples/compare_q-blood.json) |
-| `POST /api/chat` | One question to the agent, answered with citations | [chat.json](api-examples/chat.json) |
-| `GET /api/cases` | The six documented agent cases (3 work, 3 fail) | [cases.json](api-examples/cases.json) |
-| `GET /api/meta` | Dataset versions, models, how the 100 pages were sampled | [meta.json](api-examples/meta.json) |
+| Data | Where it lives | Purpose | Example |
+|---|---|---|---|
+| `GET /api/topics` | `public/data/topics.json` | Every indexed Britannica page, for search suggestions and the landing index | [topics.json](api-examples/topics.json) |
+| `GET /api/compare?q=blood` | `public/data/compare/<slug>.json` | The pair of texts, match scores, aligned claims, vocabulary, coverage | [compare_q-blood.json](api-examples/compare_q-blood.json) |
+| `POST /api/chat` | Chat backend on Nebius | One question to the agent, answered with citations | [chat.json](api-examples/chat.json) |
+| `GET /api/cases` | `public/data/cases.json` | The six documented agent cases (3 work, 3 fail) | [cases.json](api-examples/cases.json) |
+| `GET /api/meta` | `public/data/meta.json` | Dataset versions, models, how the 100 pages were sampled | [meta.json](api-examples/meta.json) |
+
+The UI finds the compare file itself: it matches the search against each
+topic's `slug`, `label` and `headword` in `topics.json`, then loads
+`compare/<slug>.json`. Give every topic in `topics.json` a compare file.
 
 ## Where each required model shows up
 

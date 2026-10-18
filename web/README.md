@@ -20,7 +20,12 @@ npm run dev          # http://localhost:5173
 ```
 
 By default the UI runs on **built-in demo data** (five medical topics), so it
-works before the backend exists. To use the real backend:
+works before the backend exists. To use real results:
+
+1. Export the pipeline results to `public/data/` (see
+   [its README](public/data/README.md)).
+2. Start the chat backend.
+3. Run the UI in live mode:
 
 ```bash
 cp .env.example .env
@@ -28,9 +33,24 @@ cp .env.example .env
 npm run dev
 ```
 
-The dev server proxies `/api/*` to the backend. **[API.md](API.md) is the
-contract for the backend team**, with example payloads in
-[`api-examples/`](api-examples/).
+In live mode the UI reads the four data files from `public/data/` and sends
+chat questions to `/api/chat`. The dev server proxies `/api/*` to the backend.
+**[API.md](API.md) is the contract for the backend team**, with example
+payloads in [`api-examples/`](api-examples/).
+
+### Deploy on Cloudflare Pages
+
+Use `web` as the root directory, `npm run build` as the build command and
+`dist` as the output directory. Set these variables in the Pages project:
+
+| Variable | Value |
+|---|---|
+| `VITE_API_MODE` | `live` (build time). Leave it out to deploy the demo data. |
+| `CHAT_BACKEND_URL` | Origin of the chat backend on Nebius, for example `https://chat.example.org` |
+| `CHAT_BACKEND_TOKEN` | Optional. [`functions/api/chat.ts`](functions/api/chat.ts) sends it as a bearer token, so the backend can refuse calls that skip the site. |
+
+Cloudflare picks up `functions/` and serves `/api/chat` from it. To update
+the articles, export new files to `public/data/`, commit them and push.
 
 | Script | What it does |
 |---|---|
@@ -117,11 +137,13 @@ the Python backend.
 ```
 src/
   api/types.ts        the data contract (mirrors API.md)
-  api/client.ts       fetch wrapper; demo or live by VITE_API_MODE
+  api/client.ts       data files and chat calls; demo or live by VITE_API_MODE
   api/demo/           sample topics, keyword fallback for chat, example cases
   components/         one component + one CSS module each
   lib/                change kinds, text highlighting, chat state, breakpoints
   styles/tokens.css   colours, type, spacing
+functions/api/chat.ts Cloudflare Pages Function that forwards /api/chat
+public/data/          the pipeline's JSON files for live mode
 ```
 
 Breakpoints: ≥ 1200px puts the agent beside the texts; 760–1199px opens it as
