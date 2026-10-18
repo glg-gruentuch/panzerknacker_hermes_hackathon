@@ -40,6 +40,23 @@ the live and static builds leave it out.
 
 Link straight to an entry with `?q=`, for example `http://localhost:5173/?q=coinage`.
 
+## Deploy to Cloudflare
+
+Cloudflare Workers builds and serves the site from this repository. Each push
+to `landing-page` starts a new deploy. The dashboard settings are:
+
+| Setting | Value |
+|---|---|
+| Production branch | `landing-page` |
+| Root directory | `/web/` |
+| Build command | `npm ci && npm run build` |
+| Deploy command | `npx wrangler deploy` |
+
+`wrangler.jsonc` names the Worker and tells it to serve the built files in
+`dist/`. The name in that file must match the Worker name in Cloudflare. The
+deployed site uses the built-in sample data, because Cloudflare does not run
+the Python backend.
+
 ## What's on screen
 
 - **Landing page.** An engraved plate from the Britannica sits behind the
