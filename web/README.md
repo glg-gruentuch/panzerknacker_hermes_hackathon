@@ -54,7 +54,7 @@ npx wrangler login   # once
 npm run deploy       # builds, then uploads dist/
 ```
 
-Wrangler prints the URL, for example `https://knowledge-across-time.<account>.workers.dev`.
+Wrangler prints the URL, for example `https://panzerknacker-hermes-hackathon.<account>.workers.dev`.
 
 The workflow `.github/workflows/deploy-web.yml` deploys on each push to `main`
 that changes `web/`. You can also start it by hand from the Actions tab. Add

@@ -1,7 +1,7 @@
 // Cloudflare Workers config: serves the built site in dist/ as static assets.
 // Deploy with `npm run deploy` (needs `npx wrangler login` or CLOUDFLARE_API_TOKEN).
 {
-  "name": "knowledge-across-time",
+  "name": "panzerknacker-hermes-hackathon",
   "compatibility_date": "2026-09-01",
   "assets": {
     "directory": "./dist",
