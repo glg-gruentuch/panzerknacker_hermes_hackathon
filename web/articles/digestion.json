@@ -1,0 +1,337 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "digestion",
+    "label": "Digestion",
+    "headword": "DIGESTION",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Digestion",
+    "area": "anatomy",
+    "teaser": "Some physicians have ascribed digestion to the grinding of the food by the muscular force of the stomach, others to a kind of fermentation or putrefaction."
+  },
+  "aliases": [
+    "digestion",
+    "gastric juice",
+    "chyle",
+    "stomach"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0030",
+    "headword": "DIGESTION",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 6",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 6 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "DIG                    [ 41 ]                    DIG\n\nDIGEST, a collection of the Roman laws.\n  DIGESTION, in animal economy, the diſſolution of the\naliment in the ſtomach, by which it is converted into\nchyle fit for the nouriſhment of the body. Some phyſi-\ncians have aſcribed digeſtion to the grinding of the food\nby the muſcular force of the ſtomach, others to a kind\nof fermentation or putrefaction.\n  But the experiments of the Abbe Spallanzani have\nſhown that it is performed chiefly by the gaſtric juice,\na fluid which diſſolves the food even out of the body,\nin a veſſel kept warm. In birds with a gizzard, as the\nturkey and the gooſe, the food is ground by the ſtrong\nmuſcles of that organ, aſſiſted by ſmall ſtones which\nthey ſwallow.\n  The chyle is taken up by the lacteal veſſels of the in-\nteſtines and carried by the thoracic duct into the blood.\nThe bile, coming from the liver, mixes with the food in\nthe inteſtines, and ſerves to ſeparate the chyle from the\ngroſſer parts.\n  DIGIT, a finger's breadth.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "DIGESTION",
+        "text": "DIGESTION, in animal economy, the dissolution of the aliment in the stomach, by which it is converted into chyle fit for the nourishment of the body."
+      },
+      {
+        "id": "B2",
+        "section": "DIGESTION",
+        "text": "Some physicians have ascribed digestion to the grinding of the food by the muscular force of the stomach, others to a kind of fermentation or putrefaction."
+      },
+      {
+        "id": "B3",
+        "section": "DIGESTION",
+        "text": "But the experiments of the Abbe Spallanzani have shown that it is performed chiefly by the gastric juice, a fluid which dissolves the food even out of the body, in a vessel kept warm."
+      },
+      {
+        "id": "B4",
+        "section": "DIGESTION",
+        "text": "In birds with a gizzard, as the turkey and the goose, the food is ground by the strong muscles of that organ, assisted by small stones which they swallow."
+      },
+      {
+        "id": "B5",
+        "section": "DIGESTION",
+        "text": "The chyle is taken up by the lacteal vessels of the intestines and carried by the thoracic duct into the blood."
+      },
+      {
+        "id": "B6",
+        "section": "DIGESTION",
+        "text": "The bile, coming from the liver, mixes with the food in the intestines, and serves to separate the chyle from the grosser parts."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-digestion",
+    "title": "Digestion",
+    "url": "https://en.wikipedia.org/wiki/Digestion",
+    "dateModified": "2026-09-05",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Digestion is the breakdown of large food molecules into small water-soluble ones that can be absorbed into the blood. Most of it takes place in the small intestine, after the stomach."
+      },
+      {
+        "id": "W2",
+        "section": "Stomach",
+        "text": "The stomach mixes food with gastric juice, which contains hydrochloric acid and the enzyme pepsin that breaks down proteins."
+      },
+      {
+        "id": "W3",
+        "section": "History",
+        "text": "In the 1780s Lazzaro Spallanzani showed that gastric juice digests food, even outside the body, disproving the idea that the stomach only grinds food."
+      },
+      {
+        "id": "W4",
+        "section": "Other animals",
+        "text": "Many birds have a gizzard, a muscular stomach that grinds food, often helped by swallowed stones called gastroliths."
+      },
+      {
+        "id": "W5",
+        "section": "Absorption",
+        "text": "Digested fats are absorbed into lymph vessels in the intestine called lacteals, forming a milky fluid, chyle, which reaches the blood through the thoracic duct."
+      },
+      {
+        "id": "W6",
+        "section": "Small intestine",
+        "text": "Bile, made by the liver, breaks fats into small droplets so that enzymes can digest them."
+      },
+      {
+        "id": "W7",
+        "section": "Small intestine",
+        "text": "Enzymes from the pancreas digest proteins, fats and carbohydrates in the small intestine."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.87,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same headword: DIGESTION and Digestion.",
+      "Rare terms appear in both: gastric juice, Spallanzani, gizzard, lacteals, thoracic duct.",
+      "Stomach scores well but covers one organ, so it is a second candidate."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Stomach",
+      "url": "https://en.wikipedia.org/wiki/Stomach",
+      "embedScore": 0.78,
+      "rerankScore": 0.6
+    },
+    {
+      "title": "Chyle",
+      "url": "https://en.wikipedia.org/wiki/Chyle",
+      "embedScore": 0.69,
+      "rerankScore": 0.47
+    }
+  ],
+  "alignments": [
+    {
+      "id": "di1",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Where digestion happens",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the dissolution of the aliment in the stomach"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "Most of it takes place in the small intestine"
+      },
+      "note": "The stomach starts the work, but most digestion happens in the small intestine."
+    },
+    {
+      "id": "di2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Gastric juice",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "it is performed chiefly by the gastric juice"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "The stomach mixes food with gastric juice"
+      },
+      "note": "Same agent. Wikipedia names its parts: acid and pepsin."
+    },
+    {
+      "id": "di3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Spallanzani's experiment",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "a fluid which dissolves the food even out of the body"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "showed that gastric juice digests food, even outside the body"
+      },
+      "note": "Same experiment, same conclusion."
+    },
+    {
+      "id": "di4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "The gizzard",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "assisted by small stones which they swallow"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "helped by swallowed stones called gastroliths"
+      },
+      "note": "Same fact. The stones now have a name."
+    },
+    {
+      "id": "di5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Chyle and the thoracic duct",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "taken up by the lacteal vessels of the intestines and carried by the thoracic duct into the blood"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "reaches the blood through the thoracic duct"
+      },
+      "note": "Right for fats. Most other nutrients pass straight into the blood vessels of the gut."
+    },
+    {
+      "id": "di6",
+      "kind": "reworded",
+      "verdict": "partly",
+      "label": "Bile",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "serves to separate the chyle from the grosser parts"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "breaks fats into small droplets"
+      },
+      "note": "Bile does help, but by breaking up fats, not by sorting chyle from waste."
+    },
+    {
+      "id": "di7",
+      "kind": "added",
+      "verdict": null,
+      "label": "The pancreas",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Enzymes from the pancreas digest proteins, fats and carbohydrates"
+      },
+      "note": "The 1797 entry gives the pancreas no role."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Definition",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Theories of digestion",
+      "britannica": 0.2,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Gastric juice",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Birds",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Absorption",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Bile",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Enzymes",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "How did Spallanzani change ideas about digestion?",
+    "Was the 1797 entry right that digestion happens in the stomach?"
+  ],
+  "answers": {
+    "How did Spallanzani change ideas about digestion?": {
+      "answer": "Before him, some physicians blamed grinding by the stomach and others a kind of fermentation [B2]. The 1797 entry says Spallanzani showed that gastric juice dissolves food, even outside the body in a warm vessel [B3]. Wikipedia describes the same result and says it disproved the grinding idea [W3].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Was the 1797 entry right that digestion happens in the stomach?": {
+      "answer": "Partly. The 1797 entry defines digestion as the dissolution of food in the stomach [B1]. Wikipedia says the stomach begins it with gastric juice [W2], but most of it takes place in the small intestine [W1], helped by bile and pancreatic enzymes [W6] [W7].",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.88
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.8
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.82
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

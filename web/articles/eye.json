@@ -1,0 +1,381 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "eye",
+    "label": "Eye",
+    "headword": "EYE",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "match": "strong",
+    "wikipediaTitle": "Human eye",
+    "area": "anatomy",
+    "teaser": "Some suppose the optic nerve, which enters the eye, to be the immediate organ of vision; but Mariotte showed that where it enters there is no sight at all."
+  },
+  "aliases": [
+    "eye",
+    "eyes",
+    "vision",
+    "sight",
+    "retina"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0031",
+    "headword": "EYE",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "volume": "Volume 8",
+    "meta": "Encyclopaedia Britannica - Fourth edition, Volume 8 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "EYE                    [ 506 ]                    EYE\n\nEXUVIAE, the caſt ſkins of animals.\n  EYE, the organ of ſight, of a globular figure, conſiſt-\ning of ſeveral coats and humours. The cryſtalline hu-\nmour, which is a lens, collects the rays of light that\nenter by the pupil, and paints an inverted image of out-\nward objects upon the retina at the back of the eye, as\nKepler firſt ſhowed. That we ſee objects upright, though\ntheir image is inverted, is owing to the mind, which\njudges of their poſition by experience.\n  The pupil contracts in a ſtrong light and dilates in a\nweak one, by the action of the iris. The eye accommo-\ndates itſelf to near and diſtant objects; but by what\nmeans is ſtill diſputed among anatomiſts, ſome aſcrib-\ning it to a change in the figure of the cryſtalline.\n  Short-ſighted perſons are relieved by concave glaſſes,\nand the long-ſighted by convex ones. Some ſuppoſe the\noptic nerve, which enters the eye, to be the immediate\norgan of viſion; but Mariotte ſhowed that where it en-\nters there is no ſight at all.\n  EYE-BRIGHT, a plant. See EUPHRASIA.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "EYE",
+        "text": "EYE, the organ of sight, of a globular figure, consisting of several coats and humours."
+      },
+      {
+        "id": "B2",
+        "section": "EYE",
+        "text": "The crystalline humour, which is a lens, collects the rays of light that enter by the pupil, and paints an inverted image of outward objects upon the retina at the back of the eye, as Kepler first showed."
+      },
+      {
+        "id": "B3",
+        "section": "EYE",
+        "text": "That we see objects upright, though their image is inverted, is owing to the mind, which judges of their position by experience."
+      },
+      {
+        "id": "B4",
+        "section": "EYE",
+        "text": "The pupil contracts in a strong light and dilates in a weak one, by the action of the iris."
+      },
+      {
+        "id": "B5",
+        "section": "EYE",
+        "text": "The eye accommodates itself to near and distant objects; but by what means is still disputed among anatomists, some ascribing it to a change in the figure of the crystalline."
+      },
+      {
+        "id": "B6",
+        "section": "EYE",
+        "text": "Short-sighted persons are relieved by concave glasses, and the long-sighted by convex ones."
+      },
+      {
+        "id": "B7",
+        "section": "EYE",
+        "text": "Some suppose the optic nerve, which enters the eye, to be the immediate organ of vision; but Mariotte showed that where it enters there is no sight at all."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-human-eye",
+    "title": "Human eye",
+    "url": "https://en.wikipedia.org/wiki/Human_eye",
+    "dateModified": "2026-09-29",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "The human eye is a sensory organ that reacts to light and allows vision. It is roughly spherical."
+      },
+      {
+        "id": "W2",
+        "section": "Image formation",
+        "text": "The cornea and the lens focus light to form an inverted image on the retina, a light-sensitive layer at the back of the eye. Johannes Kepler first explained this in 1604."
+      },
+      {
+        "id": "W3",
+        "section": "Image formation",
+        "text": "The brain processes the signals from the retina so that the world is seen upright."
+      },
+      {
+        "id": "W4",
+        "section": "Iris and pupil",
+        "text": "The iris controls the size of the pupil: it contracts in bright light and widens in dim light."
+      },
+      {
+        "id": "W5",
+        "section": "Accommodation",
+        "text": "To focus on near objects, the ciliary muscle changes the shape of the lens, a process called accommodation."
+      },
+      {
+        "id": "W6",
+        "section": "Refractive errors",
+        "text": "Myopia, or short-sightedness, is corrected with concave lenses, and hyperopia, or long-sightedness, with convex lenses."
+      },
+      {
+        "id": "W7",
+        "section": "Blind spot",
+        "text": "Where the optic nerve leaves the eye there are no light receptors, which creates a blind spot. Edme Mariotte described it in the 1660s."
+      },
+      {
+        "id": "W8",
+        "section": "Retina",
+        "text": "The retina contains two kinds of light receptor: rods, which work in dim light, and cones, which detect colour."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.86,
+    "rerankScore": 0.89,
+    "reasons": [
+      "The 1810 headword EYE matches the Wikipedia article on the human eye.",
+      "Rare terms appear in both: Kepler, retina, accommodation, Mariotte, concave and convex glasses.",
+      "Eye (all animals) scores on the headword but is less specific than Human eye."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Eye",
+      "url": "https://en.wikipedia.org/wiki/Eye",
+      "embedScore": 0.85,
+      "rerankScore": 0.77
+    },
+    {
+      "title": "Blind spot (vision)",
+      "url": "https://en.wikipedia.org/wiki/Blind_spot_(vision)",
+      "embedScore": 0.66,
+      "rerankScore": 0.45
+    }
+  ],
+  "alignments": [
+    {
+      "id": "ey1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Globular",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "of a globular figure"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "It is roughly spherical"
+      },
+      "note": "Same shape."
+    },
+    {
+      "id": "ey2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Inverted image",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "paints an inverted image of outward objects upon the retina at the back of the eye, as Kepler first showed"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "form an inverted image on the retina, a light-sensitive layer at the back of the eye. Johannes Kepler first explained this"
+      },
+      "note": "Kepler's explanation, unchanged. Wikipedia adds the cornea as a second lens."
+    },
+    {
+      "id": "ey3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Seeing upright",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "is owing to the mind"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "The brain processes the signals from the retina so that the world is seen upright"
+      },
+      "note": "The mind became the brain."
+    },
+    {
+      "id": "ey4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "The pupil",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "The pupil contracts in a strong light and dilates in a weak one"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "it contracts in bright light and widens in dim light"
+      },
+      "note": "Same fact."
+    },
+    {
+      "id": "ey5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Focusing",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "some ascribing it to a change in the figure of the crystalline"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "the ciliary muscle changes the shape of the lens"
+      },
+      "note": "The view that was disputed in 1810 turned out to be right."
+    },
+    {
+      "id": "ey6",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Spectacles",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "Short-sighted persons are relieved by concave glasses"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Myopia, or short-sightedness, is corrected with concave lenses"
+      },
+      "note": "Same remedy, with a medical name added."
+    },
+    {
+      "id": "ey7",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "The blind spot",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "Mariotte showed that where it enters there is no sight at all"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Where the optic nerve leaves the eye there are no light receptors"
+      },
+      "note": "Same discovery. Wikipedia explains it: no receptors there."
+    },
+    {
+      "id": "ey8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Rods and cones",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "rods, which work in dim light, and cones, which detect colour"
+      },
+      "note": "The two kinds of receptor were described later in the 19th century."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Structure",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Image formation",
+      "britannica": 0.3,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Pupil",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Focusing",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Spectacles",
+      "britannica": 0.1,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Blind spot",
+      "britannica": 0.2,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Receptors",
+      "britannica": 0,
+      "wikipedia": 0.17
+    }
+  ],
+  "suggestedQuestions": [
+    "How much of the 1810 account of the eye still holds?",
+    "How does the eye focus, according to each text?"
+  ],
+  "answers": {
+    "How much of the 1810 account of the eye still holds?": {
+      "answer": "Almost all of it. The inverted image on the retina [B2] [W2], the pupil narrowing in bright light [B4] [W4], concave glasses for short sight [B6] [W6] and Mariotte's blind spot [B7] [W7] all hold. What is new in Wikipedia is the detail of the receptors, rods and cones [W8].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.84
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.84
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.82
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.82
+        },
+        {
+          "id": "B7",
+          "source": "britannica",
+          "passageId": "B7",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "W8",
+          "source": "wikipedia",
+          "passageId": "W8",
+          "rerankScore": 0.78
+        }
+      ],
+      "grounding": "supported"
+    },
+    "How does the eye focus, according to each text?": {
+      "answer": "In 1810 the means was disputed; some anatomists thought the crystalline lens changes its shape [B5]. Wikipedia confirms that view: the ciliary muscle changes the shape of the lens [W5].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

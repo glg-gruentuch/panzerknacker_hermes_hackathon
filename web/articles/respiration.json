@@ -1,0 +1,329 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "respiration",
+    "label": "Respiration",
+    "headword": "RESPIRATION",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Breathing",
+    "area": "anatomy",
+    "teaser": "The ancients believed that the use of respiration was to cool the blood; which opinion is still held by some."
+  },
+  "aliases": [
+    "respiration",
+    "breathing",
+    "breath",
+    "lungs"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0029",
+    "headword": "RESPIRATION",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 16",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 16 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "RES                    [ 172 ]                    RES\n\nRESPITE, in law, a delay or forbearance.\n  RESPIRATION, the act of breathing, by which the air\nis alternately drawn into the lungs and driven out of\nthem. Inſpiration is performed by the deſcent of the\ndiaphragm and the raiſing of the ribs, by which the ca-\nvity of the cheſt is enlarged and the air ruſhes in.\n  The ancients believed that the uſe of reſpiration was\nto cool the blood; which opinion is ſtill held by ſome.\nBut Mr Lavoiſier has ſhown that in reſpiration the vital\nair is abſorbed, and fixed air is given out, in the ſame\nmanner as in the burning of charcoal; ſo that reſpira-\ntion is a ſlow combuſtion carried on in the lungs, which\nis the ſource of animal heat.\n  A man breathes about twenty times in a minute. The\nblood which has paſſed through the lungs changes from\na dark to a florid red colour.\n  RESPONSE, an anſwer.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "RESPIRATION",
+        "text": "RESPIRATION, the act of breathing, by which the air is alternately drawn into the lungs and driven out of them."
+      },
+      {
+        "id": "B2",
+        "section": "RESPIRATION",
+        "text": "Inspiration is performed by the descent of the diaphragm and the raising of the ribs, by which the cavity of the chest is enlarged and the air rushes in."
+      },
+      {
+        "id": "B3",
+        "section": "RESPIRATION",
+        "text": "The ancients believed that the use of respiration was to cool the blood; which opinion is still held by some."
+      },
+      {
+        "id": "B4",
+        "section": "RESPIRATION",
+        "text": "But Mr Lavoisier has shown that in respiration the vital air is absorbed, and fixed air is given out, in the same manner as in the burning of charcoal; so that respiration is a slow combustion carried on in the lungs, which is the source of animal heat."
+      },
+      {
+        "id": "B5",
+        "section": "RESPIRATION",
+        "text": "A man breathes about twenty times in a minute."
+      },
+      {
+        "id": "B6",
+        "section": "RESPIRATION",
+        "text": "The blood which has passed through the lungs changes from a dark to a florid red colour."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-breathing",
+    "title": "Breathing",
+    "url": "https://en.wikipedia.org/wiki/Breathing",
+    "dateModified": "2026-09-19",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Breathing is the process of moving air into and out of the lungs to allow gas exchange, mostly to take in oxygen and remove carbon dioxide."
+      },
+      {
+        "id": "W2",
+        "section": "Mechanics",
+        "text": "During inhalation the diaphragm contracts and moves down and the rib cage is raised, enlarging the chest cavity so that air flows in."
+      },
+      {
+        "id": "W3",
+        "section": "Gas exchange",
+        "text": "In the lungs, oxygen passes from the air into the blood and carbon dioxide passes out. Blood rich in oxygen is bright red; blood low in oxygen is darker."
+      },
+      {
+        "id": "W4",
+        "section": "Purpose",
+        "text": "Cells use the oxygen in cellular respiration to release energy from food, producing carbon dioxide and water. Much of this energy is released as body heat."
+      },
+      {
+        "id": "W5",
+        "section": "Rate",
+        "text": "A resting adult breathes about 12 to 20 times a minute."
+      },
+      {
+        "id": "W6",
+        "section": "Control",
+        "text": "Breathing is controlled automatically by the brainstem, which responds mainly to the level of carbon dioxide in the blood."
+      },
+      {
+        "id": "W7",
+        "section": "History",
+        "text": "Lavoisier's experiments in the 1770s and 1780s showed that respiration consumes oxygen and produces carbon dioxide, like combustion."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.83,
+    "rerankScore": 0.87,
+    "reasons": [
+      "The 1797 entry is about breathing, which Wikipedia covers under Breathing.",
+      "Rare terms appear in both: diaphragm, ribs, Lavoisier, colour of the blood.",
+      "Cellular respiration scores on the headword but covers chemistry inside cells, not breathing."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Cellular respiration",
+      "url": "https://en.wikipedia.org/wiki/Cellular_respiration",
+      "embedScore": 0.8,
+      "rerankScore": 0.55
+    },
+    {
+      "title": "Lung",
+      "url": "https://en.wikipedia.org/wiki/Lung",
+      "embedScore": 0.74,
+      "rerankScore": 0.6
+    }
+  ],
+  "alignments": [
+    {
+      "id": "re1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "In and out of the lungs",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the air is alternately drawn into the lungs and driven out of them"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "moving air into and out of the lungs"
+      },
+      "note": "Same definition."
+    },
+    {
+      "id": "re2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Diaphragm and ribs",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the descent of the diaphragm and the raising of the ribs"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "the diaphragm contracts and moves down and the rib cage is raised"
+      },
+      "note": "The mechanics are unchanged."
+    },
+    {
+      "id": "re3",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Cooling the blood",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the use of respiration was to cool the blood"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "mostly to take in oxygen and remove carbon dioxide"
+      },
+      "note": "The old purpose is gone. The 1797 entry itself sets it aside for Lavoisier's view."
+    },
+    {
+      "id": "re4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Oxygen in, carbon dioxide out",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "the vital air is absorbed, and fixed air is given out"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "respiration consumes oxygen and produces carbon dioxide"
+      },
+      "note": "Lavoisier's result, with modern names for the gases."
+    },
+    {
+      "id": "re5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Where the burning happens",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "a slow combustion carried on in the lungs, which is the source of animal heat"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Cells use the oxygen in cellular respiration to release energy"
+      },
+      "note": "Right that body heat comes from a slow combustion. It happens in every cell, not in the lungs."
+    },
+    {
+      "id": "re6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Breaths per minute",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "about twenty times in a minute"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "about 12 to 20 times a minute"
+      },
+      "note": "At the top of today's range."
+    },
+    {
+      "id": "re7",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Dark to bright red",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "changes from a dark to a florid red colour"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Blood rich in oxygen is bright red; blood low in oxygen is darker"
+      },
+      "note": "Same observation, now explained by oxygen."
+    },
+    {
+      "id": "re8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Automatic control",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "controlled automatically by the brainstem"
+      },
+      "note": "The 1797 entry does not say what keeps breathing going."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Mechanics",
+      "britannica": 0.3,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Purpose",
+      "britannica": 0.35,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Rate",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Blood colour",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Body heat",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Control",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "Why did people in 1797 think we breathe?",
+    "Was Lavoisier right that breathing is a kind of burning?"
+  ],
+  "answers": {
+    "Why did people in 1797 think we breathe?": {
+      "answer": "The entry gives two views. The old one, still held by some, was that breathing cools the blood [B3]. The newer one, from Lavoisier, was that breathing takes in vital air and gives out fixed air, like burning charcoal [B4]. Wikipedia matches the newer view: we breathe to take in oxygen and remove carbon dioxide [W1].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Was Lavoisier right that breathing is a kind of burning?": {
+      "answer": "Largely. The 1797 entry reports his view of a slow combustion that produces animal heat, placed in the lungs [B4]. Wikipedia says cells use the oxygen to release energy from food, much of it as body heat [W4]. The difference is the place: the cells, not the lungs.",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.94
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

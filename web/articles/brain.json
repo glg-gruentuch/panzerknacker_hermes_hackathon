@@ -1,0 +1,338 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "brain",
+    "label": "Brain",
+    "headword": "BRAIN",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Human brain",
+    "area": "anatomy",
+    "teaser": "Des Cartes placed the seat of the soul in the pineal gland; but this opinion has no foundation."
+  },
+  "aliases": [
+    "brain",
+    "cerebrum",
+    "cerebellum",
+    "pineal gland"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0028",
+    "headword": "BRAIN",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 3",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 3 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "BRA                    [ 562 ]                    BRA\n\nBRAINE, a town of France.\n  BRAIN, in anatomy, the ſoft maſs contained within\nthe ſkull, divided into the cerebrum, or brain properly\nſo called, and the cerebellum, or little brain, placed be-\nhind and below it. It conſiſts of two ſubſtances: an\nouter, of an aſh colour, called the cortical; and an in-\nner, white, called the medullary.\n  The brain is the ſeat of ſenſation and the organ of\nthe mind; for when it is injured, ſenſe and motion are\ndeſtroyed or diſordered. The nerves ariſe from the\nbrain and ſpinal marrow, and convey to it the impreſ-\nſions of objects, and from it the commands of the will.\n  Des Cartes placed the ſeat of the ſoul in the pineal\ngland; but this opinion has no foundation. The cere-\nbellum is thought by ſome to preſide over the vital mo-\ntions, as the beating of the heart and breathing, which\ngo on without our will. The brain of man is larger, in\nproportion to his body, than that of any other animal.\n  BRAKE, a ſort of large fern.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "BRAIN",
+        "text": "BRAIN, in anatomy, the soft mass contained within the skull, divided into the cerebrum, or brain properly so called, and the cerebellum, or little brain, placed behind and below it."
+      },
+      {
+        "id": "B2",
+        "section": "BRAIN",
+        "text": "It consists of two substances: an outer, of an ash colour, called the cortical; and an inner, white, called the medullary."
+      },
+      {
+        "id": "B3",
+        "section": "BRAIN",
+        "text": "The brain is the seat of sensation and the organ of the mind; for when it is injured, sense and motion are destroyed or disordered."
+      },
+      {
+        "id": "B4",
+        "section": "BRAIN",
+        "text": "The nerves arise from the brain and spinal marrow, and convey to it the impressions of objects, and from it the commands of the will."
+      },
+      {
+        "id": "B5",
+        "section": "BRAIN",
+        "text": "Des Cartes placed the seat of the soul in the pineal gland; but this opinion has no foundation."
+      },
+      {
+        "id": "B6",
+        "section": "BRAIN",
+        "text": "The cerebellum is thought by some to preside over the vital motions, as the beating of the heart and breathing, which go on without our will."
+      },
+      {
+        "id": "B7",
+        "section": "BRAIN",
+        "text": "The brain of man is larger, in proportion to his body, than that of any other animal."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-human-brain",
+    "title": "Human brain",
+    "url": "https://en.wikipedia.org/wiki/Human_brain",
+    "dateModified": "2026-10-10",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "The human brain is the central organ of the nervous system. Its main parts are the cerebrum, the brainstem and the cerebellum, which lies at the back, below the cerebrum."
+      },
+      {
+        "id": "W2",
+        "section": "Structure",
+        "text": "The outer layer of the cerebrum, the cerebral cortex, is made of grey matter; beneath it lies white matter, made of nerve fibres."
+      },
+      {
+        "id": "W3",
+        "section": "Function",
+        "text": "The brain controls most activities of the body, processing information from the senses and producing thought, memory and voluntary movement."
+      },
+      {
+        "id": "W4",
+        "section": "Function",
+        "text": "Nerves carry signals from the senses to the brain and spinal cord, and from them to the muscles."
+      },
+      {
+        "id": "W5",
+        "section": "History",
+        "text": "The pineal gland produces the hormone melatonin, which helps regulate sleep. Rene Descartes believed it was the seat of the soul."
+      },
+      {
+        "id": "W6",
+        "section": "Function",
+        "text": "The cerebellum coordinates movement and balance. Breathing and heart rate are controlled by the brainstem."
+      },
+      {
+        "id": "W7",
+        "section": "Size",
+        "text": "Relative to body size the human brain is unusually large, though some small animals have a higher ratio of brain weight to body weight."
+      },
+      {
+        "id": "W8",
+        "section": "Cells",
+        "text": "The brain contains about 86 billion neurons, which communicate by electrical and chemical signals."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.86,
+    "rerankScore": 0.89,
+    "reasons": [
+      "The 1797 headword BRAIN matches the Wikipedia article on the human brain.",
+      "Rare terms appear in both: cerebrum, cerebellum, cortical, pineal gland, Descartes.",
+      "Brain (all animals) scores on the headword but is less specific than Human brain."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Brain",
+      "url": "https://en.wikipedia.org/wiki/Brain",
+      "embedScore": 0.87,
+      "rerankScore": 0.79
+    },
+    {
+      "title": "Pineal gland",
+      "url": "https://en.wikipedia.org/wiki/Pineal_gland",
+      "embedScore": 0.62,
+      "rerankScore": 0.38
+    }
+  ],
+  "alignments": [
+    {
+      "id": "br1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Cerebrum and cerebellum",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the cerebellum, or little brain, placed behind and below it"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "the cerebellum, which lies at the back, below the cerebrum"
+      },
+      "note": "Same parts, same places."
+    },
+    {
+      "id": "br2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Grey and white",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "an outer, of an ash colour, called the cortical; and an inner, white, called the medullary"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "made of grey matter; beneath it lies white matter"
+      },
+      "note": "Ash-coloured and medullary became grey matter and white matter."
+    },
+    {
+      "id": "br3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Organ of the mind",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the seat of sensation and the organ of the mind"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "producing thought, memory and voluntary movement"
+      },
+      "note": "The same role, with the evidence of injury already given in 1797."
+    },
+    {
+      "id": "br4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Nerves in and out",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "convey to it the impressions of objects, and from it the commands of the will"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "from the senses to the brain and spinal cord, and from them to the muscles"
+      },
+      "note": "Same two directions of traffic."
+    },
+    {
+      "id": "br5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Not the seat of the soul",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "this opinion has no foundation"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "The pineal gland produces the hormone melatonin"
+      },
+      "note": "The 1797 entry already rejects Descartes. The gland's real role was found much later."
+    },
+    {
+      "id": "br6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The cerebellum's job",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "to preside over the vital motions, as the beating of the heart and breathing"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "The cerebellum coordinates movement and balance"
+      },
+      "note": "Wrong part: breathing and heart rate belong to the brainstem."
+    },
+    {
+      "id": "br7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "The largest brain",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "larger, in proportion to his body, than that of any other animal"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "some small animals have a higher ratio of brain weight to body weight"
+      },
+      "note": "Unusually large, yes. Largest by simple ratio, no."
+    },
+    {
+      "id": "br8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Neurons",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "about 86 billion neurons"
+      },
+      "note": "The nerve cell was not described until the 19th century."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Parts",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Function",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Nerves",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Pineal gland",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Cerebellum",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Size",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Neurons",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "Did the 1797 entry agree with Descartes about the pineal gland?",
+    "What did the 1797 entry think the cerebellum does?"
+  ],
+  "answers": {
+    "Did the 1797 entry agree with Descartes about the pineal gland?": {
+      "answer": "No. It says Descartes placed the soul in the pineal gland, but that the opinion has no foundation [B5]. Wikipedia says the gland produces melatonin, which helps regulate sleep [W5].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What did the 1797 entry think the cerebellum does?": {
+      "answer": "Some thought it governed the vital motions, such as the heartbeat and breathing [B6]. Wikipedia says the cerebellum coordinates movement and balance, and that breathing and heart rate are controlled by the brainstem [W6].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

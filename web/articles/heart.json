@@ -1,0 +1,379 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "heart",
+    "label": "Heart",
+    "headword": "HEART",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Heart",
+    "area": "anatomy",
+    "teaser": "The motion of the heart is thought to be caused by the nervous influence flowing to it from the brain."
+  },
+  "aliases": [
+    "heart",
+    "cor",
+    "heartbeat",
+    "pulse"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0027",
+    "headword": "HEART",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 8",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 8 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "HEA                    [ 312 ]                    HEA\n\nHEARSE, a carriage for the dead.\n  HEART, in anatomy, a hollow muſcular body, ſitua-\nted in the breaſt between the two lobes of the lungs,\nwhich by its contraction drives the blood through the\narteries. It has two ventricles, or cavities, ſeparated by\na partition, and two auricles; the right ventricle ſends\nthe blood to the lungs, and the left through the whole\nbody.\n  The circulation of the blood through the heart, ar-\nteries, and veins was diſcovered by our countryman Dr\nWilliam Harvey, who publiſhed it in 1628. The valves\nat the mouths of the veſſels permit the blood to paſs\none way only, and hinder its return. In a grown man\nthe heart contracts about ſeventy-five times in a minute.\n  The motion of the heart is thought to be cauſed by\nthe nervous influence flowing to it from the brain. The\nancients made the heart the ſeat of the paſſions and of\ncourage; and the expreſſions of common ſpeech ſtill\nbear the marks of that opinion.\n  HEAT. See CHEMISTRY.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "HEART",
+        "text": "HEART, in anatomy, a hollow muscular body, situated in the breast between the two lobes of the lungs, which by its contraction drives the blood through the arteries."
+      },
+      {
+        "id": "B2",
+        "section": "HEART",
+        "text": "It has two ventricles, or cavities, separated by a partition, and two auricles; the right ventricle sends the blood to the lungs, and the left through the whole body."
+      },
+      {
+        "id": "B3",
+        "section": "HEART",
+        "text": "The circulation of the blood through the heart, arteries, and veins was discovered by our countryman Dr William Harvey, who published it in 1628."
+      },
+      {
+        "id": "B4",
+        "section": "HEART",
+        "text": "The valves at the mouths of the vessels permit the blood to pass one way only, and hinder its return."
+      },
+      {
+        "id": "B5",
+        "section": "HEART",
+        "text": "In a grown man the heart contracts about seventy-five times in a minute."
+      },
+      {
+        "id": "B6",
+        "section": "HEART",
+        "text": "The motion of the heart is thought to be caused by the nervous influence flowing to it from the brain."
+      },
+      {
+        "id": "B7",
+        "section": "HEART",
+        "text": "The ancients made the heart the seat of the passions and of courage; and the expressions of common speech still bear the marks of that opinion."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-heart",
+    "title": "Heart",
+    "url": "https://en.wikipedia.org/wiki/Heart",
+    "dateModified": "2026-10-07",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "The heart is a muscular organ that pumps blood through the blood vessels. In humans it lies in the chest between the lungs, slightly to the left."
+      },
+      {
+        "id": "W2",
+        "section": "Structure",
+        "text": "The human heart has four chambers: two upper atria and two lower ventricles. The right ventricle pumps blood to the lungs and the left ventricle pumps it to the rest of the body."
+      },
+      {
+        "id": "W3",
+        "section": "History",
+        "text": "William Harvey described the circulation of the blood in his book De Motu Cordis, published in 1628."
+      },
+      {
+        "id": "W4",
+        "section": "Structure",
+        "text": "Heart valves keep blood flowing in one direction through the heart."
+      },
+      {
+        "id": "W5",
+        "section": "Heart rate",
+        "text": "The resting heart rate of an adult is typically 60 to 100 beats per minute."
+      },
+      {
+        "id": "W6",
+        "section": "Electrical conduction",
+        "text": "The heartbeat starts in the heart itself, in a group of pacemaker cells called the sinoatrial node. Nerves can speed it up or slow it down but do not start each beat."
+      },
+      {
+        "id": "W7",
+        "section": "Culture",
+        "text": "The heart was long believed to be the seat of emotion and thought. It remains a common symbol of love."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.88,
+    "rerankScore": 0.91,
+    "reasons": [
+      "Same headword: HEART and Heart.",
+      "Rare terms appear in both: ventricles, Harvey, 1628, valves.",
+      "Circulatory system scores well but covers the vessels as much as the heart."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Circulatory system",
+      "url": "https://en.wikipedia.org/wiki/Circulatory_system",
+      "embedScore": 0.8,
+      "rerankScore": 0.64
+    },
+    {
+      "title": "Sinoatrial node",
+      "url": "https://en.wikipedia.org/wiki/Sinoatrial_node",
+      "embedScore": 0.65,
+      "rerankScore": 0.42
+    }
+  ],
+  "alignments": [
+    {
+      "id": "he1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "A muscular pump",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a hollow muscular body"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a muscular organ that pumps blood"
+      },
+      "note": "Same description."
+    },
+    {
+      "id": "he2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Four chambers",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "two ventricles, or cavities, separated by a partition, and two auricles"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "two upper atria and two lower ventricles"
+      },
+      "note": "The auricles are now called atria."
+    },
+    {
+      "id": "he3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Right side to the lungs",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the right ventricle sends the blood to the lungs"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "The right ventricle pumps blood to the lungs"
+      },
+      "note": "Same fact, almost the same words."
+    },
+    {
+      "id": "he4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Harvey, 1628",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "discovered by our countryman Dr William Harvey, who published it in 1628"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "William Harvey described the circulation of the blood in his book De Motu Cordis, published in 1628"
+      },
+      "note": "Same discovery, same year."
+    },
+    {
+      "id": "he5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Valves",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "permit the blood to pass one way only"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "keep blood flowing in one direction"
+      },
+      "note": "Same function."
+    },
+    {
+      "id": "he6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Heart rate",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "about seventy-five times in a minute"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "60 to 100 beats per minute"
+      },
+      "note": "The 1797 figure falls inside today's normal range."
+    },
+    {
+      "id": "he7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "What starts the beat",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "caused by the nervous influence flowing to it from the brain"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "The heartbeat starts in the heart itself"
+      },
+      "note": "The heart makes its own beat. Nerves only change its speed."
+    },
+    {
+      "id": "he8",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Seat of the passions",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "The ancients made the heart the seat of the passions"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "long believed to be the seat of emotion and thought"
+      },
+      "note": "Both report the old belief and its trace in language. Neither endorses it."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Structure",
+      "britannica": 0.3,
+      "wikipedia": 0.3
+    },
+    {
+      "topic": "Circulation and Harvey",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Valves",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Heart rate",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "What drives the beat",
+      "britannica": 0.15,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Emotion and symbol",
+      "britannica": 0.2,
+      "wikipedia": 0.18
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1797 entry think makes the heart beat?",
+    "How much of the 1797 description of the heart still holds?"
+  ],
+  "answers": {
+    "What did the 1797 entry think makes the heart beat?": {
+      "answer": "A nervous influence flowing to it from the brain [B6]. Wikipedia says the beat starts in the heart itself, in the pacemaker cells of the sinoatrial node; nerves can speed it up or slow it down but do not start each beat [W6].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "How much of the 1797 description of the heart still holds?": {
+      "answer": "Most of it. The four chambers [B2] [W2], Harvey's circulation of 1628 [B3] [W3], one-way valves [B4] [W4] and a rate of about 75 beats a minute [B5] [W5] all hold. The claim that the brain drives the beat [B6] does not [W6].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.88
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.88
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.83
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.83
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.81
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.81
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.84
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.84
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}
