@@ -14,10 +14,10 @@
       "error": "ProtocolError: chat response is incomplete; inspect the token budget and finish_reason"
     }
   ],
-  "entries_total": 229,
-  "entries_processed": 229,
+  "entries_total": 232,
+  "entries_processed": 232,
   "matched": 76,
-  "unmatched": 153,
+  "unmatched": 156,
   "threshold": -5.5,
   "failures": []
 }

@@ -292,3 +292,33 @@ def test_run_match_uses_heading_when_body_is_empty(tmp_path, monkeypatch):
     assert result["matched"] == 1
     summary = json.loads((work / "match" / "summary.json").read_text(encoding="utf-8"))
     assert summary["failures"] == []
+
+
+def test_run_match_skips_entries_with_no_text(tmp_path, monkeypatch):
+    """B1 empty fragments carry no query text; record them, do not fail."""
+    work = tmp_path / "artifacts"
+    entries = [
+        {"entry_id": "b:train:1#0000", "page_id": "b:train:1", "filename": "page-1.jpg", "scan_sha256": "c" * 64,
+         "heading": None, "heading_class": None, "fragment": True, "page_header": "", "continued": True,
+         "continued_on": None, "n_blocks": 0, "body": ""},
+    ]
+    derived = work / "extract" / "derived"
+    derived.mkdir(parents=True)
+    (derived / "entries.json").write_text(json.dumps(entries), encoding="utf-8")
+    manifest = {"dataset": "NationalLibraryOfScotland/encyclopaedia_britannica_illustrated",
+                "revision": "309f765b1ecc83e0a7f7762e44b4a927a7555443",
+                "source_url": "https://example.com", "license": "CC0-1.0", "pages": []}
+    monkeypatch.setattr("nemotron_challenge.match.load_manifest", lambda: manifest)
+    monkeypatch.setattr("nemotron_challenge.match.WikiClient", _StubWiki)
+    monkeypatch.setattr("nemotron_challenge.match.RetrievalClient", _StubRetrieval)
+
+    settings = Settings(wikipedia_api_url="http://stub", retrieval_base_url="http://stub", db_path=tmp_path / "db.lancedb")
+    result = run_match(settings, work, threshold=0.0)
+
+    assert result["unmatched"] == 1
+    summary = json.loads((work / "match" / "summary.json").read_text(encoding="utf-8"))
+    assert summary["failures"] == []
+    evidence = [json.loads(line) for line in (work / "match" / "evidence.jsonl").read_text(encoding="utf-8").splitlines()]
+    assert len(evidence) == 1
+    assert evidence[0]["decision"] == "no-candidates"
+    assert evidence[0]["note"] == "the entry has no text to query"

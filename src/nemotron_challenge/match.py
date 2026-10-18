@@ -272,8 +272,18 @@ def run_match(
             print(f"[match] {index}/{len(entries)} {entry_id} {(entry.get('heading') or '(fragment)')[:50]}",
                   file=sys.stderr, flush=True)
             try:
-                search = retry_call(lambda: wiki.search(build_query(entry, frequencies), top_k=CANDIDATES,
-                                                        excerpt_chars=1200))
+                query = build_query(entry, frequencies)
+                if not query:
+                    # B1 pages can carry no text (full-page pictures). Querying
+                    # the wiki API with an empty string fails; record the fact.
+                    append_jsonl(evidence_path, [{"entry_id": entry_id, "page_id": entry["page_id"],
+                                                  "candidate_page_id": None, "candidate_title": None,
+                                                  "bm25_rank": None, "bm25_score": None, "embed_similarity": None,
+                                                  "embed_rank": None, "rerank_logit": None, "rerank_rank": None,
+                                                  "decision": "no-candidates",
+                                                  "note": "the entry has no text to query"}])
+                    continue
+                search = retry_call(lambda: wiki.search(query, top_k=CANDIDATES, excerpt_chars=1200))
                 hits = search.hits
                 if not hits:
                     append_jsonl(evidence_path, [{"entry_id": entry_id, "page_id": entry["page_id"],
