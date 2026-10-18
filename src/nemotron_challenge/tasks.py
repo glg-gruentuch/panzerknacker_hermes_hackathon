@@ -1,4 +1,4 @@
-"""Teams implement these stages with their coding agents."""
+"""The six challenge stages. Each stage returns a JSON result."""
 from pathlib import Path
 from typing import Any
 
@@ -6,39 +6,47 @@ from .config import Settings
 
 STAGES = ("extract", "match", "compare", "agent", "site", "evaluate")
 
-
-def _unfinished(stage: str) -> None:
-    raise NotImplementedError(
-        f"TODO: implement the {stage} milestone. Read docs/milestones.md#{stage}. "
-        "The starter has no result for this stage."
-    )
+# Stages with a working implementation. The CLI and doctor report this set.
+IMPLEMENTED: set[str] = set(STAGES)
 
 
 def extract(settings: Settings, work_dir: Path) -> dict[str, Any]:
-    """TODO: define your extraction and entry segmentation process."""
-    _unfinished("extract")
+    """Extract scans with Parse 3.5 and segment entries. See docs/milestones.md#extract."""
+    from .extract import run_extract
+
+    return run_extract(settings, work_dir)
 
 
 def match(settings: Settings, work_dir: Path) -> dict[str, Any]:
-    """TODO: define how your team finds and verifies article matches."""
-    _unfinished("match")
+    """Find and verify Wikipedia article matches. See docs/milestones.md#match."""
+    from .match import run_match
+
+    return run_match(settings, work_dir)
 
 
 def compare(settings: Settings, work_dir: Path) -> dict[str, Any]:
-    """TODO: define your vocabulary, frequency, or topic comparison."""
-    _unfinished("compare")
+    """Frequency and distinctive-term comparison. See docs/milestones.md#compare."""
+    from .compare import run_compare
+
+    return run_compare(settings, work_dir)
 
 
 def agent(settings: Settings, work_dir: Path) -> dict[str, Any]:
-    """TODO: implement your Hermes tools and evidence checks."""
-    _unfinished("agent")
+    """Run the scripted Hermes cases and record evidence. See docs/milestones.md#agent."""
+    from .agent_runner import run_agent_cases
+
+    return run_agent_cases(settings, work_dir)
 
 
 def site(settings: Settings, work_dir: Path) -> dict[str, Any]:
-    """TODO: build your LaTeX documents and static website."""
-    _unfinished("site")
+    """Build the LaTeX documents and the static website. See docs/milestones.md#site."""
+    from .site_build import build_site
+
+    return build_site(settings, work_dir)
 
 
 def evaluate(settings: Settings, work_dir: Path) -> dict[str, Any]:
-    """TODO: review your results and document successes and failures."""
-    _unfinished("evaluate")
+    """Assemble the evaluation report. See docs/milestones.md#evaluate."""
+    from .evaluate import run_evaluate
+
+    return run_evaluate(settings, work_dir)
