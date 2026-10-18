@@ -1,0 +1,334 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "animalcules",
+    "label": "Animalcules",
+    "headword": "ANIMALCULE",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "partial",
+    "wikipediaTitle": "Microorganism",
+    "area": "natural-sciences",
+    "teaser": "These little creatures, being so minute, can be of no use or hurt to man, and seem made only to show the infinite variety of the works of nature."
+  },
+  "aliases": [
+    "animalcule",
+    "animalcules",
+    "infusoria",
+    "microscopic animals",
+    "spontaneous generation",
+    "microbes"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0079",
+    "headword": "ANIMALCULE",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 2",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 2 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "ANI                    [ 14 ]                    ANI\n\nANIMAL, an organized body, endued with life and ſenſation.\n  ANIMALCULE, a little animal, chiefly ſuch as are\ninviſible to the naked eye, and are diſcovered only by\nthe microſcope. Mr Leeuwenhoek, by his microſcopes,\nfound them in vaſt numbers in rain water, in infuſions\nof pcpper and hay, and in the matter ſcraped from the\nteeth.\n  Mr Needham, having boiled infuſions and ſhut them up\nin veſſels, ſtill found them ſwarming with animalcules,\nand concluded that they ariſe of themſelves from a\nvegetative force in corrupted matter. But the Abbe\nSpallanzani has ſhown that when the infuſions are\nboiled long enough, and the veſſels ſealed\nhermetically, no animalcules appear in them.\n  Theſe little creatures, being ſo minute, can be of no\nuſe or hurt to man, and ſeem made only to ſhow the\ninfinite variety of the works of nature. Some authors\nhave ſuppoſed that the animalcules of the male ſeed are\nthe firſt rudiments of the fnture animal, which needs\nonly to be nouriſhed in the womb to grow into its\nproper form.\n  ANIMATED, ſomething endued with life.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "ANIMALCULE",
+        "text": "ANIMALCULE, a little animal, chiefly such as are invisible to the naked eye, and are discovered only by the microscope."
+      },
+      {
+        "id": "B2",
+        "section": "ANIMALCULE",
+        "text": "Mr Leeuwenhoek, by his microscopes, found them in vast numbers in rain water, in infusions of pepper and hay, and in the matter scraped from the teeth."
+      },
+      {
+        "id": "B3",
+        "section": "ANIMALCULE",
+        "text": "Mr Needham, having boiled infusions and shut them up in vessels, still found them swarming with animalcules, and concluded that they arise of themselves from a vegetative force in corrupted matter."
+      },
+      {
+        "id": "B4",
+        "section": "ANIMALCULE",
+        "text": "But the Abbe Spallanzani has shown that when the infusions are boiled long enough, and the vessels sealed hermetically, no animalcules appear in them."
+      },
+      {
+        "id": "B5",
+        "section": "ANIMALCULE",
+        "text": "These little creatures, being so minute, can be of no use or hurt to man, and seem made only to show the infinite variety of the works of nature."
+      },
+      {
+        "id": "B6",
+        "section": "ANIMALCULE",
+        "text": "Some authors have supposed that the animalcules of the male seed are the first rudiments of the future animal, which needs only to be nourished in the womb to grow into its proper form."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-animalcules",
+    "title": "Microorganism",
+    "url": "https://en.wikipedia.org/wiki/Microorganism",
+    "dateModified": "2026-09-08",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "A microorganism, or microbe, is an organism of microscopic size, which may exist as a single cell or as a colony of cells."
+      },
+      {
+        "id": "W2",
+        "section": "History",
+        "text": "Antonie van Leeuwenhoek was one of the first to observe microorganisms, in the 1670s, using simple microscopes of his own design."
+      },
+      {
+        "id": "W3",
+        "section": "Spontaneous generation",
+        "text": "Lazzaro Spallanzani found in 1768 that broth which was boiled and then sealed stayed free of microorganisms. In the 1860s Louis Pasteur showed that boiled broth kept from airborne particles stayed free of growth, which disproved spontaneous generation."
+      },
+      {
+        "id": "W4",
+        "section": "Germ theory",
+        "text": "Robert Koch showed in the 1870s and 1880s that particular microorganisms cause particular diseases, such as anthrax and tuberculosis."
+      },
+      {
+        "id": "W5",
+        "section": "Human health",
+        "text": "Microorganisms in the human gut help to digest food and are part of normal health. Others are pathogens that cause infectious diseases."
+      },
+      {
+        "id": "W6",
+        "section": "Uses",
+        "text": "People use microorganisms to make bread, beer, wine, cheese and yogurt by fermentation, and to treat sewage."
+      },
+      {
+        "id": "W7",
+        "section": "Classification",
+        "text": "Microorganisms include bacteria, archaea, most protists and some fungi. Most are not animals, and they live in almost every habitat on Earth."
+      }
+    ]
+  },
+  "match": {
+    "strength": "partial",
+    "embedScore": 0.78,
+    "rerankScore": 0.71,
+    "reasons": [
+      "The old headword ANIMALCULE has no Wikipedia article of its own. Microorganism is the closest modern subject.",
+      "Rare terms appear in both: Leeuwenhoek, Spallanzani, boiled and sealed infusions.",
+      "Spontaneous generation scores well but covers only the Needham and Spallanzani part."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Spontaneous generation",
+      "url": "https://en.wikipedia.org/wiki/Spontaneous_generation",
+      "embedScore": 0.77,
+      "rerankScore": 0.68
+    },
+    {
+      "title": "Infusoria",
+      "url": "https://en.wikipedia.org/wiki/Infusoria",
+      "embedScore": 0.74,
+      "rerankScore": 0.6
+    }
+  ],
+  "alignments": [
+    {
+      "id": "an1",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Tiny animals",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a little animal, chiefly such as are invisible to the naked eye"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Most are not animals"
+      },
+      "note": "Right that they are living things too small to see. Most of them are bacteria, protists or fungi, not animals."
+    },
+    {
+      "id": "an2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Leeuwenhoek's microscopes",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "Mr Leeuwenhoek, by his microscopes, found them in vast numbers"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Antonie van Leeuwenhoek was one of the first to observe microorganisms"
+      },
+      "note": "Both texts credit Leeuwenhoek. The matter from the teeth he studied held bacteria."
+    },
+    {
+      "id": "an3",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Needham's vegetative force",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "they arise of themselves from a vegetative force in corrupted matter"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "which disproved spontaneous generation"
+      },
+      "note": "Life does not arise of itself from broth. Needham's vessels were not boiled long enough or were not sealed well."
+    },
+    {
+      "id": "an4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Spallanzani's sealed infusions",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "the vessels sealed hermetically, no animalcules appear in them"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "broth which was boiled and then sealed stayed free of microorganisms"
+      },
+      "note": "The experiment holds. Pasteur settled the question in the 1860s."
+    },
+    {
+      "id": "an5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Of no use to man",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "can be of no use"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "People use microorganisms to make bread, beer, wine, cheese and yogurt"
+      },
+      "note": "Brewers and bakers used yeast long before 1797 without knowing it was alive. This is a change in knowledge."
+    },
+    {
+      "id": "an6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Of no harm to man",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "or hurt to man"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "particular microorganisms cause particular diseases"
+      },
+      "note": "Germ theory showed that many diseases come from microorganisms. This is the largest change in this entry."
+    },
+    {
+      "id": "an7",
+      "kind": "dropped",
+      "verdict": "wrong",
+      "label": "Animalcules in the seed",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "the first rudiments of the future animal"
+      },
+      "wikipedia": null,
+      "note": "The Microorganism article does not cover this idea. Sperm cells are not small animals that grow into the adult."
+    },
+    {
+      "id": "an8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Microbes in the gut",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Microorganisms in the human gut help to digest food"
+      },
+      "note": "The 1797 entry gives the animalcules no role in the body. Wikipedia adds that some are part of normal health."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What animalcules are",
+      "britannica": 0.15,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Microscope discovery",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Spontaneous generation",
+      "britannica": 0.35,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Use and harm to man",
+      "britannica": 0.15,
+      "wikipedia": 0.3
+    },
+    {
+      "topic": "Animalcules in the seed",
+      "britannica": 0.2,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Kinds of microorganism",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "Did the 1797 entry believe in spontaneous generation?",
+    "Did people in 1797 know that microbes cause disease?"
+  ],
+  "answers": {
+    "Did the 1797 entry believe in spontaneous generation?": {
+      "answer": "It reports both sides. Needham said animalcules arise of themselves in corrupted matter [B3]. Spallanzani showed that infusions boiled long enough and sealed produce none [B4]. Wikipedia confirms Spallanzani's result and adds that Pasteur disproved spontaneous generation in the 1860s [W3].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did people in 1797 know that microbes cause disease?": {
+      "answer": "No. The entry says the animalcules can be of no use or hurt to man [B5]. Wikipedia says Koch showed in the 1870s and 1880s that particular microorganisms cause particular diseases [W4], and that others help digestion in the gut [W5].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.86
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

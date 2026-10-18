@@ -1,0 +1,328 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "fire",
+    "label": "Fire",
+    "headword": "FIRE",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Fire",
+    "area": "natural-sciences",
+    "teaser": "No fire can subsist without air; a candle shut up in a close vessel is soon extinguished, the pure part of the air being consumed."
+  },
+  "aliases": [
+    "fire",
+    "flame",
+    "flames",
+    "combustion",
+    "burning"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0077",
+    "headword": "FIRE",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 7",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 7 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "FIR                    [ 208 ]                    FIR\n\nFIR, a tree of the pine kind, yielding turpentine.\n  FIRE was by the ancients reckoned one of the fonr\nelements, of which, with air, water, and earth, all\nbodies were thought to be compoſed. Many modern\nchemiſts conſider fire as a peculiar ſubſtance, the\nmatter of heat and light, which, entering into bodies,\nexpands them, and, eſcaping from them, produces the\nphenomena of burning.\n  The followers of Stahl hold that burning is the\neſcape of phlogiſton from the inflammable body. But Mr\nLavoiſier and his followers maintain that burning is\nnothing elſe than the union of the burning body with\nthe pure or vital part of the air, by which the body\ngains in weight.\n  No fire can ſubſiſt without air; a candle ſhut up in\na cloſe veſſel is ſoon extingniſhed, the pure part of\nthe air being conſumed. Flame is nothing elſe than the\nvapour of the burning body, heated ſo far as to ſhine.\n  FIRE-ARMS, all ſorts of guns, piſtols, and the like.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "FIRE",
+        "text": "FIRE was by the ancients reckoned one of the four elements, of which, with air, water, and earth, all bodies were thought to be composed."
+      },
+      {
+        "id": "B2",
+        "section": "FIRE",
+        "text": "Many modern chemists consider fire as a peculiar substance, the matter of heat and light, which, entering into bodies, expands them, and, escaping from them, produces the phenomena of burning."
+      },
+      {
+        "id": "B3",
+        "section": "FIRE",
+        "text": "The followers of Stahl hold that burning is the escape of phlogiston from the inflammable body."
+      },
+      {
+        "id": "B4",
+        "section": "FIRE",
+        "text": "But Mr Lavoisier and his followers maintain that burning is nothing else than the union of the burning body with the pure or vital part of the air, by which the body gains in weight."
+      },
+      {
+        "id": "B5",
+        "section": "FIRE",
+        "text": "No fire can subsist without air; a candle shut up in a close vessel is soon extinguished, the pure part of the air being consumed."
+      },
+      {
+        "id": "B6",
+        "section": "FIRE",
+        "text": "Flame is nothing else than the vapour of the burning body, heated so far as to shine."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-fire",
+    "title": "Fire",
+    "url": "https://en.wikipedia.org/wiki/Fire",
+    "dateModified": "2026-08-27",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Fire is the rapid oxidation of a fuel in the chemical process of combustion. The reaction gives off heat, light and various reaction products."
+      },
+      {
+        "id": "W2",
+        "section": "History",
+        "text": "The ancient Greeks counted fire among the four classical elements. Modern science treats fire as a chemical reaction, not as an element or a substance."
+      },
+      {
+        "id": "W3",
+        "section": "Chemistry",
+        "text": "A fire needs three things, together called the fire triangle: fuel, an oxidizer such as the oxygen in air, and enough heat. Removing any one of them puts the fire out."
+      },
+      {
+        "id": "W4",
+        "section": "History",
+        "text": "In the late 18th century Antoine Lavoisier showed that combustion is a reaction with oxygen. His work replaced the phlogiston theory."
+      },
+      {
+        "id": "W5",
+        "section": "Flame",
+        "text": "A flame is the visible, gaseous part of a fire. Its light comes from hot gases and from tiny particles of soot that glow because they are hot."
+      },
+      {
+        "id": "W6",
+        "section": "Chemistry",
+        "text": "When fuels made of carbon and hydrogen burn completely, the main products are carbon dioxide and water."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.85,
+    "rerankScore": 0.86,
+    "reasons": [
+      "Same headword: FIRE and Fire.",
+      "Rare terms appear in both: four elements, phlogiston, Lavoisier, flame, air needed for burning.",
+      "Combustion scores well but covers the reaction more than fire as a whole."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Combustion",
+      "url": "https://en.wikipedia.org/wiki/Combustion",
+      "embedScore": 0.82,
+      "rerankScore": 0.7
+    },
+    {
+      "title": "Flame",
+      "url": "https://en.wikipedia.org/wiki/Flame",
+      "embedScore": 0.76,
+      "rerankScore": 0.55
+    }
+  ],
+  "alignments": [
+    {
+      "id": "fi1",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "One of four elements",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "one of the four elements"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Modern science treats fire as a chemical reaction, not as an element or a substance"
+      },
+      "note": "The entry reports the old view and does not defend it. Fire is not an element. This is a change in knowledge."
+    },
+    {
+      "id": "fi2",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Fire as a substance",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "a peculiar substance, the matter of heat and light"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "Fire is the rapid oxidation of a fuel in the chemical process of combustion"
+      },
+      "note": "Fire is a process, not a matter that flows into and out of bodies. The same idea appears as caloric in other 1797 entries."
+    },
+    {
+      "id": "fi3",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Escape of phlogiston",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "burning is the escape of phlogiston from the inflammable body"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "His work replaced the phlogiston theory"
+      },
+      "note": "Nothing escapes from the fuel as phlogiston. The entry gives this view only briefly, next to Lavoisier's."
+    },
+    {
+      "id": "fi4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Union with vital air",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "the union of the burning body with the pure or vital part of the air"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "combustion is a reaction with oxygen"
+      },
+      "note": "Vital air is the 1790s name for oxygen. This is a change in language only."
+    },
+    {
+      "id": "fi5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Fire needs air",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "No fire can subsist without air"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "an oxidizer such as the oxygen in air"
+      },
+      "note": "The candle test still holds. Wikipedia adds fuel and heat as the other two sides of the fire triangle."
+    },
+    {
+      "id": "fi6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "What flame is",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "the vapour of the burning body, heated so far as to shine"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Its light comes from hot gases and from tiny particles of soot that glow because they are hot"
+      },
+      "note": "Right that flame is hot gas that glows. Much of the light of a candle flame comes from glowing soot, which the entry does not name."
+    },
+    {
+      "id": "fi7",
+      "kind": "added",
+      "verdict": null,
+      "label": "Products of burning",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "the main products are carbon dioxide and water"
+      },
+      "note": "The 1797 entry does not say what burning makes. Wikipedia names the products of complete burning."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Fire as an element",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Fire as a substance",
+      "britannica": 0.2,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Phlogiston and Lavoisier",
+      "britannica": 0.3,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Air needed for fire",
+      "britannica": 0.2,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Flame",
+      "britannica": 0.15,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Products of burning",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1797 entry say fire is?",
+    "Did the 1797 entry know that fire needs oxygen?"
+  ],
+  "answers": {
+    "What did the 1797 entry say fire is?": {
+      "answer": "It gives several views. The ancients made fire one of four elements [B1]. Many chemists of 1797 thought fire a substance, the matter of heat and light [B2]. Wikipedia says fire is the rapid oxidation of a fuel, a chemical reaction and not an element or a substance [W1] [W2].",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did the 1797 entry know that fire needs oxygen?": {
+      "answer": "Yes, in its own words. It reports Lavoisier's view that burning is the union of a body with the vital part of the air [B4], and says a candle in a closed vessel goes out [B5]. Wikipedia says combustion is a reaction with oxygen [W4] and that oxygen is one side of the fire triangle [W3].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}
