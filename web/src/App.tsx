@@ -185,11 +185,6 @@ export default function App() {
         )}
 
         <nav className={styles.nav} aria-label="Pages">
-          {topics.some((t) => t.demo) && (
-            <span className={styles.demo} title="Some articles are invented demo text. They are marked demo in web/articles/.">
-              Demo data
-            </span>
-          )}
           {PAGES.map((p) => (
             <button key={p.id} type="button" className={styles.navItem} aria-current={page === p.id ? 'page' : undefined} onClick={() => goPage(p.id)}>
               {p.short ? (
