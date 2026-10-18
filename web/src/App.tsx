@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState, type ReactNode } from 'react'
 import { api } from './api/client'
-import type { AgentCase, Comparison, TopicSummary } from './api/types'
+import type { Comparison, TopicSummary } from './api/types'
 import { AgentPanel } from './components/AgentPanel'
 import { ChangesView } from './components/ChangesView'
 import { Headword } from './components/Headword'
@@ -25,7 +25,7 @@ const PAGES: { id: Page; label: string; short?: string }[] = [
 const params = () => new URLSearchParams(window.location.search)
 const pageFromUrl = (): Page => {
   const p = params().get('page')
-  // The agent cases are now a section of the sources page; old links to ?page=cases still land there.
+  // Old links to the removed Cases page (?page=cases) land on the sources page.
   return p === 'cases' || p === 'sources' ? 'sources' : 'compare'
 }
 
@@ -155,16 +155,6 @@ export default function App() {
     setActiveId(id)
   }
 
-  const replay = async (c: AgentCase) => {
-    pushUrl({ page: 'compare', q: c.topic })
-    setPage('compare')
-    await load(c.topic)
-    if (narrow) setPanel('ask')
-    else if (wide) hideAgent(false)
-    else setDrawerOpen(true)
-    chat.ask(c.topic, c.question)
-  }
-
   const inWorkspace = page === 'compare' && status !== 'idle'
   const ready = status === 'ready' && comparison
   const topicKey = comparison?.topic.label ?? ''
@@ -215,7 +205,7 @@ export default function App() {
         </nav>
       </header>
 
-      {page === 'sources' && <SourcesPage onReplay={replay} />}
+      {page === 'sources' && <SourcesPage />}
 
       {page === 'compare' && !inWorkspace && <Landing topics={topics} input={input} onInput={setInput} onSearch={search} />}
 
