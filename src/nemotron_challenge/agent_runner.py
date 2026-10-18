@@ -320,6 +320,24 @@ def check_answer(text: str, session: dict[str, Any] | None = None) -> dict[str, 
     }
 
 
+def _scan_checks(session: dict[str, Any] | None) -> list[dict[str, Any]]:
+    """Outcomes of challenge_scan_check calls recorded in a session (task 7)."""
+    checks: list[dict[str, Any]] = []
+    if session is None:
+        return checks
+    for message in session.get("messages", []):
+        if message.get("role") != "tool" or message.get("tool_name") != "challenge_scan_check":
+            continue
+        try:
+            row = json.loads(message.get("content") or "")
+        except (TypeError, ValueError):
+            continue
+        if isinstance(row, dict):
+            checks.append({"status": row.get("status"), "result": row.get("result"),
+                           "reason": row.get("reason", ""), "page_id": row.get("page_id", "")})
+    return checks
+
+
 def run_case(case: dict[str, Any], runs_dir: Path, env: dict[str, str] | None = None) -> dict[str, Any]:
     """Run one question through the Hermes profile and save all evidence."""
     case_dir = runs_dir / case["case_id"]
@@ -353,9 +371,14 @@ def run_case(case: dict[str, Any], runs_dir: Path, env: dict[str, str] | None = 
         shutil.copy2(newest, case_dir / "session.jsonl")
     checks = check_answer(answer or result.stdout, session)
     expected = case.get("expected", "citation")
-    passed = checks["has_citation"] if expected == "citation" else checks["admits_missing"]
+    scans = _scan_checks(session)
+    if expected == "scan_check":
+        passed = any(row["status"] == "ok" and row["result"] in {"match", "mismatch", "unreadable"}
+                     for row in scans)
+    else:
+        passed = checks["has_citation"] if expected == "citation" else checks["admits_missing"]
     return {"case_id": case["case_id"], "returncode": result.returncode, "expected": expected, "passed": passed,
-            "session_id": session["id"] if session else None, **checks}
+            "session_id": session["id"] if session else None, **checks, "scan_checks": scans}
 
 
 def run_agent_cases(settings: Settings, work_dir: Path) -> dict[str, Any]:
