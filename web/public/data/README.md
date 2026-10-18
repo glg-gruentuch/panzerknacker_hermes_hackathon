@@ -1,7 +1,7 @@
 # Site data
 
 The pipeline writes these files. In live mode (`VITE_API_MODE=live`) the UI
-reads them directly, and Cloudflare Pages serves them as static files.
+reads them directly, and Cloudflare serves them as static files.
 
 ```
 topics.json            { "topics": TopicSummary[] }   one entry per indexed page

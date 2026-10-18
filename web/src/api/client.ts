@@ -44,8 +44,8 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 const DATA = `${import.meta.env.BASE_URL}data`
 
 /**
- * Reads one of the pipeline's JSON files from public/data/. Cloudflare Pages
- * answers a missing file with index.html, so a non-JSON reply counts as missing.
+ * Reads one of the pipeline's JSON files from public/data/. Cloudflare can
+ * answer a missing file with index.html, so a non-JSON reply counts as missing.
  */
 async function readData<T>(file: string): Promise<T> {
   let res: Response

@@ -38,20 +38,6 @@ chat questions to `/api/chat`. The dev server proxies `/api/*` to the backend.
 **[API.md](API.md) is the contract for the backend team**, with example
 payloads in [`api-examples/`](api-examples/).
 
-### Deploy on Cloudflare Pages
-
-Use `web` as the root directory, `npm run build` as the build command and
-`dist` as the output directory. Set these variables in the Pages project:
-
-| Variable | Value |
-|---|---|
-| `VITE_API_MODE` | `live` (build time). Leave it out to deploy the demo data. |
-| `CHAT_BACKEND_URL` | Origin of the chat backend on Nebius, for example `https://chat.example.org` |
-| `CHAT_BACKEND_TOKEN` | Optional. [`functions/api/chat.ts`](functions/api/chat.ts) sends it as a bearer token, so the backend can refuse calls that skip the site. |
-
-Cloudflare picks up `functions/` and serves `/api/chat` from it. To update
-the articles, export new files to `public/data/`, commit them and push.
-
 | Script | What it does |
 |---|---|
 | `npm run dev` | Dev server with hot reload |
@@ -74,9 +60,21 @@ to `landing-page` starts a new deploy. The dashboard settings are:
 | Deploy command | `npx wrangler deploy` |
 
 `wrangler.jsonc` names the Worker and tells it to serve the built files in
-`dist/`. The name in that file must match the Worker name in Cloudflare. The
-deployed site uses the built-in sample data, because Cloudflare does not run
-the Python backend.
+`dist/`. The name in that file must match the Worker name in Cloudflare.
+Requests to `/api/*` run [`worker/index.ts`](worker/index.ts) first. It
+forwards `POST /api/chat` to the chat backend, because Cloudflare does not run
+the Python backend. Everything else is a static file.
+
+Set these variables in the Worker settings:
+
+| Variable | When | Value |
+|---|---|---|
+| `VITE_API_MODE` | Build | `live` to show the files in `public/data/`. Leave it out to deploy the demo data. |
+| `CHAT_BACKEND_URL` | Runtime | Origin of the chat backend on Nebius, for example `https://chat.example.org` |
+| `CHAT_BACKEND_TOKEN` | Runtime, optional | The Worker sends it as a bearer token, so the backend can refuse calls that skip the site. |
+
+To update the articles, export new files to `public/data/`, commit them and
+push.
 
 ## What's on screen
 
@@ -142,7 +140,7 @@ src/
   components/         one component + one CSS module each
   lib/                change kinds, text highlighting, chat state, breakpoints
   styles/tokens.css   colours, type, spacing
-functions/api/chat.ts Cloudflare Pages Function that forwards /api/chat
+worker/index.ts       Cloudflare Worker: static files, forwards /api/chat
 public/data/          the pipeline's JSON files for live mode
 ```
 

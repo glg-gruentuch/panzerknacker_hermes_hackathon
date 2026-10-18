@@ -1,6 +1,6 @@
 # Data and API for the web UI
 
-The site runs on Cloudflare Pages. It needs a live backend for one call only:
+The site runs on Cloudflare Workers. It needs a live backend for one call only:
 
 - **Four static files.** `topics`, `compare`, `cases` and `meta` do not change
   while someone uses the site. The pipeline writes them as JSON files to
@@ -9,7 +9,7 @@ The site runs on Cloudflare Pages. It needs a live backend for one call only:
   body that endpoint would return.
 - **One live endpoint.** `POST /api/chat` goes to the chat backend on Nebius,
   where Hermes, the models and LanceDB run. On Cloudflare,
-  [`functions/api/chat.ts`](functions/api/chat.ts) forwards it. In
+  [`worker/index.ts`](worker/index.ts) forwards it. In
   development, Vite proxies `/api/*` to `VITE_BACKEND_URL` (default
   `http://localhost:8000`).
 
