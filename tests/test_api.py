@@ -322,3 +322,21 @@ def test_search_without_a_store_returns_a_note(tmp_path):
     payload = client.get("/api/search", params={"q": "ship"}).json()
     assert payload["results"] == []
     assert payload["note"]
+
+
+def test_cases_read_the_documented_case_files(tmp_path):
+    work = make_artifacts(tmp_path)
+    case_dir = tmp_path / "docs" / "cases"
+    case_dir.mkdir(parents=True)
+    (case_dir / "scan-check-1.md").write_text(
+        "# Case study\n\nCase ID: scan-check-1\nClassification: success\n"
+        "Run record: artifacts/agent/runs/scan-check-1/\nCode revision: 91bc3dc\n\n"
+        "## Question\n\nThe quote 'grocery' on the Swift page.\n\n## Result\n\nMismatch found.\n",
+        encoding="utf-8")
+    client = TestClient(create_app(work, make_scans(tmp_path), tmp_path / "db.lancedb"))
+    payload = client.get("/api/cases").json()
+    assert payload["pending"] == []
+    assert payload["cases"][0]["id"] == "scan-check-1"
+    assert payload["cases"][0]["outcome"] == "success"
+    assert "Mismatch" in payload["cases"][0]["answerExcerpt"]
+    assert payload["cases"][0]["file"] == "docs/cases/scan-check-1.md"

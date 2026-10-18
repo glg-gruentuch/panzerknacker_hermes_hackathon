@@ -46,7 +46,7 @@
       "title": "failure-1",
       "topic": "",
       "question": "",
-      "answerExcerpt": "ce there is no stored comparison to compare it with.\n- Sources cited: none available.\n\nIf you have a specific stored entry ID or title, I can look it up directly with challenge_claims / challenge_compare.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_144648_b75eb7\n  hermes -c \"Compare quantum computing content with Wikipedia article\"\n\nSession:        20261018_144648_b75eb7\nTitle:          Compare quantum computing content with Wikipedia article\nDuration:       13s\nMessages:       17 (1 user, 15 tool calls)",
+      "answerExcerpt": "2d38d741a2b7e4841be88aa68d92c1aadd1b2d52ed999f8dfb08c5 (CC BY-SA 4.0)\n\nIf you have a different topic in mind, or want me to compare a stored entry that does exist, let me know the entry_id or topic.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_150237_eae719\n  hermes -c \"Compare quantum computing summary with Wikipedia article #3\"\n\nSession:        20261018_150237_eae719\nTitle:          Compare quantum computing summary with Wikipedia article #3\nDuration:       16s\nMessages:       15 (1 user, 13 tool calls)",
       "diagnosis": "returncode 0, expected insufficient_evidence",
       "lesson": ""
     },
@@ -56,7 +56,7 @@
       "title": "failure-2",
       "topic": "",
       "question": "",
-      "answerExcerpt": "9999#0000 does not exist — challenge_compare returned status insufficient_evidence with the detail that this entry has no stored comparison. Nothing to report.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_144708_c99c0a\n  hermes -c \"Run challenge compare with entry id britannica 000000000000000000000000000000...\"\n\nSession:        20261018_144708_c99c0a\nTitle:          Run challenge compare with entry id britannica 000000000000000000000000000000...\nDuration:       9s\nMessages:       4 (1 user, 2 tool calls)",
+      "answerExcerpt": "insufficient_evidence, meaning this entry ID has no Britannica excerpt, Wikipedia article, or citations on file. I won't guess or fabricate a comparison.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_150258_a9498f\n  hermes -c \"Run challenge compare with entry id britannica 000000000000000000000000000000... #2\"\n\nSession:        20261018_150258_a9498f\nTitle:          Run challenge compare with entry id britannica 000000000000000000000000000000... #2\nDuration:       9s\nMessages:       6 (1 user, 4 tool calls)",
       "diagnosis": "returncode 0, expected insufficient_evidence",
       "lesson": ""
     },
@@ -66,7 +66,7 @@
       "title": "failure-3",
       "topic": "",
       "question": "",
-      "answerExcerpt": "her a different entry title/page ID that exists in the dataset, or the source materials loaded so a comparison can be performed. I won't fabricate Britannica or Wikipedia content or citations.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_144722_cfc027\n  hermes -c \"Compare blank binding scan page-0452 with Wikipedia article #2\"\n\nSession:        20261018_144722_cfc027\nTitle:          Compare blank binding scan page-0452 with Wikipedia article #2\nDuration:       21s\nMessages:       28 (1 user, 26 tool calls)",
+      "answerExcerpt": " you have a different entry_id or page_id (e.g., from a prior challenge_search result that includes an entry_id of kind \"entry\"), I can run challenge_compare and challenge_scan_check directly.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_150313_0e4486\n  hermes -c \"Compare blank binding scan page-0452 with Wikipedia article #3\"\n\nSession:        20261018_150313_0e4486\nTitle:          Compare blank binding scan page-0452 with Wikipedia article #3\nDuration:       58s\nMessages:       89 (1 user, 87 tool calls)",
       "diagnosis": "returncode 0, expected insufficient_evidence",
       "lesson": ""
     },
@@ -76,8 +76,48 @@
       "title": "scan-check-1",
       "topic": "",
       "question": "",
-      "answerExcerpt": "hor among people with which he we weretrafed, and for a while atten\"\n\nThe scan check found no match for 'grocery' in the image, so the OCR'd word is spurious.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_144750_85979d\n  hermes -c \"Verify grocery in page britannica 309f765b1ecc83e0a7f7762e44b4a927a7555443 tr...\"\n\nSession:        20261018_144750_85979d\nTitle:          Verify grocery in page britannica 309f765b1ecc83e0a7f7762e44b4a927a7555443 tr...\nDuration:       11s\nMessages:       4 (1 user, 2 tool calls)",
+      "answerExcerpt": "urnt. That this provides might not be forgotten, Swift dedicated to the king the author among people with which he we weretrafed, and for a while atten\"\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_150417_d9aabf\n  hermes -c \"Verify grocery in page britannica 309f765b1ecc83e0a7f7762e44b4a927a7555443 tr... #2\"\n\nSession:        20261018_150417_d9aabf\nTitle:          Verify grocery in page britannica 309f765b1ecc83e0a7f7762e44b4a927a7555443 tr... #2\nDuration:       11s\nMessages:       6 (1 user, 4 tool calls)",
       "diagnosis": "returncode 0, expected scan_check",
+      "lesson": ""
+    },
+    {
+      "id": "scan-check-2",
+      "outcome": "failure",
+      "title": "scan-check-2",
+      "topic": "",
+      "question": "",
+      "answerExcerpt": "try exists in the index, but its stored Britannica content isn't accessible through any available tool. If you have a quote from the page or another way to identify the text, I can verify it against the scan with challenge_scan_check.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_150434_5e6b88\n  hermes -c \"Summarize Jonathan Swift Britannica entry\"\n\nSession:        20261018_150434_5e6b88\nTitle:          Summarize Jonathan Swift Britannica entry\nDuration:       17s\nMessages:       14 (1 user, 12 tool calls)",
+      "diagnosis": "returncode 0, expected citation",
+      "lesson": ""
+    },
+    {
+      "id": "probe-1",
+      "outcome": "failure",
+      "title": "probe-1",
+      "topic": "",
+      "question": "",
+      "answerExcerpt": "arachnids and crustaceans, among his class \"Insecta\".\n\nSource: Wikipedia article \"Hymenoptera in the 10th edition of Systema Naturae\" (page_id 28899252), revision_id 1337353135.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_151314_8099e5\n  hermes -c \"Use challenge_compare for britannica entry and quote Wikipedia sentence\"\n\nSession:        20261018_151314_8099e5\nTitle:          Use challenge_compare for britannica entry and quote Wikipedia sentence\nDuration:       9s\nMessages:       6 (1 user, 4 tool calls)",
+      "diagnosis": "returncode 0, expected citation",
+      "lesson": ""
+    },
+    {
+      "id": "probe-2",
+      "outcome": "failure",
+      "title": "probe-2",
+      "topic": "",
+      "question": "",
+      "answerExcerpt": "challenge_search stored match evidence (query \"cottages farm country woods fields\"), which lists this entry as the leading match with that score; entry identity corroborated by challenge_compare / challenge_claims for the same entry_id.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_151329_a6a0cb\n  hermes -c \"Report rerank logit for britannica entry\"\n\nSession:        20261018_151329_a6a0cb\nTitle:          Report rerank logit for britannica entry\nDuration:       21s\nMessages:       15 (1 user, 13 tool calls)",
+      "diagnosis": "returncode 0, expected citation",
+      "lesson": ""
+    },
+    {
+      "id": "probe-3",
+      "outcome": "failure",
+      "title": "probe-3",
+      "topic": "",
+      "question": "",
+      "answerExcerpt": " three differences in butterfly/moth coverage — fabricating them would be invented output. If you have a different Britannica entry that actually discusses Lepidoptera, share its ID and I'll compare it properly.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_151841_32e98d\n  hermes -c \"Compare Britannica and Wikipedia Lepidoptera coverage\"\n\nSession:        20261018_151841_32e98d\nTitle:          Compare Britannica and Wikipedia Lepidoptera coverage\nDuration:       49s\nMessages:       11 (1 user, 9 tool calls)",
+      "diagnosis": "returncode 0, expected citation",
       "lesson": ""
     }
   ],

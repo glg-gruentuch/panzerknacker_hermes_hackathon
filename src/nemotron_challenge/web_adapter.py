@@ -612,7 +612,38 @@ class WebAdapter:
             },
         }
 
+    def _documented_cases(self) -> list[dict[str, Any]]:
+        """The six case study files under docs/cases, in the UI shape (task 7)."""
+        case_dir = self.work_dir.parent / "docs" / "cases"
+        if not case_dir.is_dir():
+            return []
+        rows = []
+        for path in sorted(case_dir.glob("*.md")):
+            text = path.read_text(encoding="utf-8")
+            fields: dict[str, str] = {}
+            for line in text.splitlines():
+                for key in ("Case ID", "Classification", "Run record", "Code revision"):
+                    if line.lower().startswith(key.lower() + ":"):
+                        fields[key] = line.split(":", 1)[1].strip()
+            question = re.search(r"## Question\s*\n+(.*?)(?:\n##|\Z)", text, re.S)
+            result = re.search(r"## Result\s*\n+(.*?)(?:\n##|\Z)", text, re.S)
+            rows.append({
+                "id": path.stem,
+                "outcome": (fields.get("Classification", "").split() or [""])[0].lower(),
+                "title": fields.get("Case ID", path.stem),
+                "topic": "",
+                "question": re.sub(r"\s+", " ", question.group(1)).strip() if question else "",
+                "answerExcerpt": (re.sub(r"\s+", " ", result.group(1)).strip()[:600] if result else ""),
+                "diagnosis": f"run {fields.get('Run record', '')} at revision {fields.get('Code revision', '')}".strip(),
+                "lesson": "",
+                "file": str(path.relative_to(self.work_dir.parent)) if self.work_dir.parent in path.parents else str(path),
+            })
+        return rows
+
     def cases(self) -> dict[str, Any]:
+        documented_rows = self._documented_cases()
+        if documented_rows:
+            return {"cases": documented_rows, "pending": []}
         report = self._json("agent/report.json")
         if not report:
             return {"cases": [], "pending": ["agent cases are pending; run the agent stage"]}
