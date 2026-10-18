@@ -99,8 +99,13 @@
 
 /* Sizes */
 
+/* The hero sizes its type so the longest article name fits the column. --chars is that name's length. */
+.hero {
+  container-type: inline-size;
+}
+
 .hero .field {
-  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  font-size: min(5.5rem, 8vw, calc(100cqi / (var(--chars, 6) * 0.68)));
 }
 
 .hero .go {

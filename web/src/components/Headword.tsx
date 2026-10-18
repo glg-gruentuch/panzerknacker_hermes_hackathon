@@ -1,4 +1,4 @@
-import { useEffect, useId, useMemo, useState, type KeyboardEvent } from 'react'
+import { useEffect, useId, useMemo, useState, type CSSProperties, type KeyboardEvent } from 'react'
 import type { TopicSummary } from '../api/types'
 import { useMediaQuery } from '../lib/useMediaQuery'
 import { Icon } from './Icon'
@@ -136,6 +136,7 @@ export function Headword({ topics, value, onChange, onSubmit, size, autoFocus }:
     <form
       role="search"
       className={`${styles.form} ${styles[size]}`}
+      style={{ '--chars': longest.length + 1 } as CSSProperties}
       onSubmit={(e) => {
         e.preventDefault()
         if (query) choose(query)
