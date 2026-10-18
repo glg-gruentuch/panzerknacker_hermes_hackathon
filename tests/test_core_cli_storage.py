@@ -5,10 +5,16 @@ import json
 import httpx
 import pytest
 
+from nemotron_challenge import tasks
 from nemotron_challenge.cli import doctor, main
 from nemotron_challenge.config import ConfigurationError, Settings
 from nemotron_challenge.contracts import ArtifactRecord, SourceReference
 from nemotron_challenge.storage import LanceArtifactStore
+
+
+def _stage_summary() -> str:
+    implemented = sorted(tasks.IMPLEMENTED)
+    return "implemented: " + ", ".join(implemented) if implemented else "not implemented"
 
 
 def test_offline_doctor_needs_no_secrets_or_network(monkeypatch, capsys):
@@ -18,7 +24,7 @@ def test_offline_doctor_needs_no_secrets_or_network(monkeypatch, capsys):
     assert main(["doctor", "--offline"]) == 0
     data = json.loads(capsys.readouterr().out)
     assert data["inference"] == "not tested"
-    assert data["challenge_stages"] == "not implemented"
+    assert data["challenge_stages"] == _stage_summary()
     assert all(row["status"] == "not_tested" for row in data["checks"] if "configured" in row)
 
 
@@ -31,18 +37,18 @@ def test_live_doctor_reports_missing_resources(monkeypatch):
     assert report["inference"] == "not tested"
 
 
-@pytest.mark.parametrize("stage", ["extract", "match", "compare", "agent", "site", "evaluate"])
-def test_unfinished_stage_fails_with_guide_and_creates_no_result(stage, tmp_path, capsys):
+def test_implemented_stage_fails_cleanly_without_artifacts(tmp_path, capsys):
     path = tmp_path / "team-artifacts"
-    assert main(["run", stage, "--work-dir", str(path)]) == 2
-    assert f"docs/milestones.md#{stage}" in capsys.readouterr().err
-    assert not path.exists()
+    assert main(["run", "compare", "--work-dir", str(path)]) == 1
+    assert "run the match stage first" in capsys.readouterr().err
 
 
-def test_stages_list_has_todos(capsys):
+def test_stages_list_reports_status(capsys):
     assert main(["stages"]) == 0
     rows = json.loads(capsys.readouterr().out)
-    assert len(rows) == 6 and all(row["status"] == "TODO" for row in rows)
+    assert len(rows) == 6
+    for row in rows:
+        assert row["status"] == ("implemented" if row["stage"] in tasks.IMPLEMENTED else "TODO")
 
 
 def test_keys_are_not_exposed_by_settings_repr():

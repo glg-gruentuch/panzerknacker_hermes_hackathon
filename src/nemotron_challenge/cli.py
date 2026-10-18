@@ -47,9 +47,11 @@ def doctor(settings: Settings, *, live: bool) -> tuple[dict[str, Any], int]:
             except (ServiceError, ConfigurationError, ValueError) as exc:
                 checks.append({"name": name, "status": "failed", "detail": str(exc)})
     failed = any(check["status"] in {"failed", "missing"} for check in checks)
+    implemented = sorted(tasks.IMPLEMENTED)
+    stage_summary = "implemented: " + ", ".join(implemented) if implemented else "not implemented"
     return {
         "mode": "live" if live else "offline", "checks": checks,
-        "challenge_stages": "not implemented", "inference": "not tested",
+        "challenge_stages": stage_summary, "inference": "not tested",
     }, int(failed)
 
 
@@ -77,7 +79,12 @@ def main(argv: list[str] | None = None) -> int:
     args = parser().parse_args(argv)
     try:
         if args.command == "stages":
-            result = [{"stage": stage, "status": "TODO", "guide": f"docs/milestones.md#{stage}"} for stage in tasks.STAGES]
+            result = [
+                {"stage": stage,
+                 "status": "implemented" if stage in tasks.IMPLEMENTED else "TODO",
+                 "guide": f"docs/milestones.md#{stage}"}
+                for stage in tasks.STAGES
+            ]
         elif args.command == "data":
             from .data import fetch_sample, load_manifest
 

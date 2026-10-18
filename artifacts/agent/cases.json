@@ -1,0 +1,37 @@
+[
+  {
+    "case_id": "success-1",
+    "question": "Use challenge_search to find the stored comparison for the page with running head SHIP-BUILDING, then use challenge_compare. List two vocabulary differences between the 1768 Britannica text and the Wikipedia article. Cite both sources.",
+    "expected": "citation"
+  },
+  {
+    "case_id": "success-2",
+    "question": "Which matched pair in the stored comparisons covers Mount Etna? Use challenge_compare and summarize how the two sources describe the mountain. Cite both sources.",
+    "expected": "citation"
+  },
+  {
+    "case_id": "success-3",
+    "question": "Find the entomology entry in the stored comparisons with challenge_search. Report which terms are most distinctive to the historical Britannica text. Cite the source records.",
+    "expected": "citation"
+  },
+  {
+    "case_id": "success-4",
+    "question": "Pick any stored comparison with challenge_search and report the token counts of both documents with citations.",
+    "expected": "citation"
+  },
+  {
+    "case_id": "failure-1",
+    "question": "Compare the stored comparison about quantum computing with its Wikipedia article and cite the sources.",
+    "expected": "insufficient_evidence"
+  },
+  {
+    "case_id": "failure-2",
+    "question": "Use challenge_compare with entry_id 'britannica:0000000000000000000000000000000000000000:train:9999#0000' and report the comparison.",
+    "expected": "insufficient_evidence"
+  },
+  {
+    "case_id": "failure-3",
+    "question": "Compare the entry for the blank binding scan page-0452 with its Wikipedia article. Cite both sources.",
+    "expected": "insufficient_evidence"
+  }
+]

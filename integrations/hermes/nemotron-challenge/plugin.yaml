@@ -1,6 +1,7 @@
 name: nemotron-challenge
-version: "0.1.0"
-description: Participant comparison tool scaffold. Team implementation required.
+version: "0.2.0"
+description: Panzerknacker comparison tools. Answers come from saved pipeline artifacts with citations.
 provides_tools:
+  - challenge_search
   - challenge_compare
 capabilities: []

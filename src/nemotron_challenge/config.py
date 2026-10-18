@@ -17,6 +17,9 @@ RERANK_REVISION = "b8a9987b05b75db5ad949c825cbcbf6eb7c48b5a"
 SUPER_MODEL = "nvidia/Nemotron-3.5-Super-VL"
 DEFAULT_PARSE_PROMPT = "</s><s><predict_bbox><predict_classes><output_markdown><predict_text_in_pic>"
 EMBED_DIMENSIONS = 2048
+# Accept threshold on the reranker raw logit. Provisional until the W2.1
+# calibration run against the live retrieval service; see artifacts/match/calibration.md.
+MATCH_LOGIT_THRESHOLD = 0.0
 DEFAULT_WIKIPEDIA_URL = "https://port8000-rks0xavparpzq59.tunnel.applications.uk-south2.nebius.cloud"
 DEFAULT_PARSE_URL = "https://port8000-kh2kceraevwe0k1.tunnel.applications.uk-south2.nebius.cloud/v1"
 

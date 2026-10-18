@@ -1,0 +1,44 @@
+{
+  "stage": "evaluate",
+  "coverage": {
+    "pages_total": 100,
+    "pages_ok": 98,
+    "pages_failed": 2,
+    "entries": 155,
+    "joins": 0,
+    "failures": [
+      {
+        "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:452",
+        "error": "ProtocolError: chat response is incomplete; inspect the token budget and finish_reason"
+      },
+      {
+        "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2243",
+        "error": "ProtocolError: chat response is incomplete; inspect the token budget and finish_reason"
+      }
+    ]
+  },
+  "matching": {
+    "entries_processed": null,
+    "matched": 0,
+    "unmatched": null,
+    "unique_articles": null,
+    "repeats": [],
+    "threshold": null
+  },
+  "comparison": {
+    "pairs": null,
+    "top_britannica": [],
+    "top_wikipedia": []
+  },
+  "agent": {
+    "cases": [],
+    "passed": null,
+    "total": null
+  },
+  "limits": [
+    "The fixed 100-scan manifest defines the source sample; extraction failures stay listed.",
+    "Match thresholds are calibrated on samples; unmatched entries are reported, not forced.",
+    "OCR errors in the scans and historical spelling are documented, not corrected in place.",
+    "Wikipedia text is quoted under CC BY-SA 4.0 with article revisions recorded."
+  ]
+}
