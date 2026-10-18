@@ -1,0 +1,3 @@
+No stored comparison about quantum computing exists in the challenge corpus. I searched for "quantum computing" and "quantum" with `challenge_search`, and both returned no matching entries (status: insufficient_evidence). Without a stored Britannica-to-Wikipedia comparison entry ID, `challenge_compare` has nothing to retrieve, and there are no sources to cite.
+
+If you have a specific entry ID from this corpus (e.g., `britannica:...:quantum:...#0000`), I can pull the stored comparison with its citations directly.

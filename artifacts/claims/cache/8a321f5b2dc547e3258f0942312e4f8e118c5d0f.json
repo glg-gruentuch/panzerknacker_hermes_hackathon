@@ -1,0 +1,52 @@
+{
+  "id": "chatcmpl-99e9203e5f5b94c7",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\"verdict\": \"not_in_wikipedia\", \"wikipedia_quote\": \"\", \"explanation\": None of the passages mention a pultive riding in a coach or \"on behalfbody\"; they concern psychomotor agitation symptoms such as pacing, hand-wringing, and pulling at clothes.\"}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null,
+        "reasoning_content": "The user wants me to compare a Britannica claim with Wikipedia passages.\n\nClaim (Britannica, historical): \"The pultive is riding in a coach, on behalfbody, or in any other manner.\"\n\nThis claim seems garbled/nonsensical. \"The pultive is riding in a coach, on behalfbody, or in any other manner.\" This doesn't match any of the Wikipedia passages which are about psychomotor agitation.\n\nW1: About psychomotor agitation - pacing, wringing hands, etc. Not about riding in a coach.\nW8: \"desperate to find a comfortable position\" - not about riding in a coach.\nW22: \"pulling at clothes or hair\" - not about riding in a coach.\n\nNone of the passages cover the claim about \"pultive riding in a coach\". The claim appears to be OCR garbage or unrelated to the passages. So verdict should be \"not_in_wikipedia\".\n\nwikipedia_quote: \"\" (empty since not_in_wikipedia)\nexplanation: The passages discuss psychomotor agitation symptoms (pacing, hand-wringing, pulling clothes) but none mention a \"pultive,\" riding in a coach, or \"on behalfbody,\" so the claim is not covered.\n\nWait, let me reconsider. Could \"pultive\" be related to something? The claim seems completely unrelated to the given passages. The passages are about psychomotor agitation. The claim mentions riding in a coach. None match.\n\nVerdict: not_in_wikipedia\nwikipedia_quote: \"\"\nexplanation: None of the Wikipedia passages mention a pultive riding in a coach or \"on behalfbody\"; they concern psychomotor agitation symptoms such as pacing and pulling at clothes.\n\nReply with JSON only."
+      },
+      "stop_reason": null,
+      "token_ids": null,
+      "routed_experts": null
+    }
+  ],
+  "created": 1792332512,
+  "model": "nvidia/Nemotron-3.5-Super-VL",
+  "object": "chat.completion",
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "vllm-0.1.dev1+g1bed5fc81-tp2-9705eecb",
+  "usage": {
+    "completion_tokens": 424,
+    "prompt_tokens": 441,
+    "total_tokens": 865,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 361,
+      "rejected_prediction_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0,
+      "created_cache_tokens": 0,
+      "multimodal_tokens": null
+    }
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "prompt_text": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null,
+  "metrics": null
+}

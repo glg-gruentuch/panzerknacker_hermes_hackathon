@@ -1,0 +1,18 @@
+{"entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:681#0000", "error": "ServiceError: service request reached its timeout", "stage": "extract"}
+{"entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:403#0000", "error": "ServiceError: service request reached its timeout", "stage": "extract"}
+{"entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:499#0000", "error": "ServiceError: service request reached its timeout", "stage": "extract"}
+{"entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:261#0000", "error": "ServiceError: service request reached its timeout", "stage": "extract"}
+{"entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1166#0000", "error": "ServiceError: service request reached its timeout", "stage": "judge"}
+{"claim_index": 7, "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1166#0000", "error": "ServiceError: service request reached its timeout", "stage": "judge"}
+{"entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1430#0000", "error": "ServiceError: service request reached its timeout", "stage": "judge"}
+{"claim_index": 3, "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1430#0000", "error": "ServiceError: service request reached its timeout", "stage": "judge"}
+{"entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1250#0001", "error": "ServiceError: service request reached its timeout", "stage": "judge"}
+{"claim_index": 5, "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1250#0001", "error": "ServiceError: service request reached its timeout", "stage": "judge"}
+{"entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1422#0000", "error": "ServiceError: service request reached its timeout", "stage": "judge"}
+{"claim_index": 1, "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1422#0000", "error": "ServiceError: service request reached its timeout", "stage": "judge"}
+{"entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1422#0000", "error": "ServiceError: service request reached its timeout", "stage": "judge"}
+{"claim_index": 7, "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1422#0000", "error": "ServiceError: service request reached its timeout", "stage": "judge"}
+{"entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1580#0000", "error": "ServiceError: service request reached its timeout", "stage": "judge"}
+{"claim_index": 0, "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1580#0000", "error": "ServiceError: service request reached its timeout", "stage": "judge"}
+{"entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1680#0000", "error": "ServiceError: service request reached its timeout", "stage": "judge"}
+{"claim_index": 4, "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1680#0000", "error": "ServiceError: service request reached its timeout", "stage": "judge"}

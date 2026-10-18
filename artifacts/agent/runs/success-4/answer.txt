@@ -1,0 +1,6 @@
+Entry: "Howard Jarvis Taxpayers Association" (britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1166#0000)
+
+- Britannica: 1318 tokens — citation: page_id britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1166, scan page-1166-ec9dc1d6c2c9.jpg (sha256 ec9dc1d6c2c96661593803f1cde606a6c27b453bccb4803b9562db602f4c0c69)
+- Wikipedia: 581 tokens — citation: page_id 12251120, revision_id 1350466616, https://en.wikipedia.org/wiki/Howard_Jarvis_Taxpayers_Association (sha256 2e392436ac56cd128ef3c80e24ccddb2bbc463cc1e5f50371bf9b6bf09771163)
+
+Token counts come from the challenge_compare result's `tokens` field for each document; citations are the `citations` array entries from the same result.

@@ -1,0 +1,19 @@
+{
+  "matches_total": 76,
+  "entries_done": 76,
+  "entries_added_this_run": 4,
+  "entries_failed": 0,
+  "claims_total": 421,
+  "claims_downgraded": 129,
+  "verdict_counts": {
+    "agrees": 27,
+    "differs": 14,
+    "contradicts": 0,
+    "not_in_wikipedia": 380
+  },
+  "failures": 0,
+  "entries_skipped_by_time_cap": 0,
+  "time_cap_reached": false,
+  "runtime_seconds": 52.2,
+  "note": "claims for 76 of 76 matches"
+}

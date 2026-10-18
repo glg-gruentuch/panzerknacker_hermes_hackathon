@@ -1,0 +1,52 @@
+{
+  "id": "chatcmpl-bd75cec2db615a75",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\"claims\": [{\"quote\": \"BUZZARD, in anthology\", \"type\": \"definition\"}, {\"quote\": \"the English name of fever-ral species of the hawk kind\", \"type\": \"definition\"}, {\"quote\": \"See Paxo.\", \"type\": \"practice\"}]}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null,
+        "reasoning_content": "The user wants me to extract up to 8 atomic factual claims from the provided text.\n\nText: \"BUZZARD, in anthology, the English name of fever-ral species of the hawk kind. See Paxo.\"\n\nWait, \"in anthology\" and \"fever-ral\" look like OCR errors or typos, but I must copy quotes exactly from the text.\n\nLet me parse possible claims:\n1. \"BUZZARD\" is in anthology. (place/type definition?) Actually \"BUZZARD, in anthology\" - maybe \"BUZZARD, in anthology\" means the entry is in an anthology? Or maybe it's \"BUZZARD, in [something]\". The text says \"BUZZARD, in anthology, the English name of fever-ral species of the hawk kind.\"\n\nClaims:\n- \"BUZZARD\" is the English name of fever-ral species of the hawk kind. (definition)\n- \"in anthology\" relates to BUZZARD? Not sure.\n- \"See Paxo.\" is a reference.\n\nSince I need exact substrings under 200 chars.\n\nPossible quotes:\n- \"BUZZARD, in anthology, the English name of fever-ral species of the hawk kind.\"\n- \"in anthology\"\n- \"the English name of fever-ral species of the hawk kind\"\n- \"fever-ral species of the hawk kind\"\n- \"See Paxo.\"\n\nAtomic claims should be one per sentence or clause.\n\nSentence 1: \"BUZZARD, in anthology, the English name of fever-ral species of the hawk kind.\"\nThis can be broken into:\n- BUZZARD is in anthology. (quote: \"BUZZARD, in anthology\")\n- BUZZARD is the English name of fever-ral species of the hawk kind. (quote: \"the English name of fever-ral species of the hawk kind\" or the whole clause)\n\nSentence 2: \"See Paxo.\" -> reference to Paxo.\n\nLet's create up to 8 claims, but text is short so maybe 3-4.\n\n1. Quote: \"BUZZARD, in anthology\" type: place? Or definition? It says \"in anthology\" which might be a place/source. Type: place? Or just definition. Let's use definition. Actually \"in anthology\" indicates where it appears, so place might work but it's not a geographic place. Maybe just omit? No, type is required. Let's use \"definition\".\n\nWait, rules say type: \"definition|quantity|place|date|cause|practice\". So I must choose one.\n\nClaim 1: \"BUZZARD, in anthology\" - definition? It's stating what BUZZARD is in anthology. Maybe definition.\n\nClaim 2: \"the English name of fever-ral species of the hawk kind\" - definition.\n\nClaim 3: \"fever-ral species of the hawk kind\" - quantity? \"fever-ral\" looks like \"several\" OCR'd. But I shouldn't interpret. It's not clearly a quantity. Maybe definition.\n\nClaim 4: \"See Paxo.\" - practice? It's a cross-reference. Maybe practice? Or just omit since it's not really a factual claim about buzzard. But the text states it.\n\nLet's keep it simple and accurate.\n\nClaim 1:\nquote: \"BUZZARD, in anthology\"\ntype: definition\n(no value/unit)\n\nClaim 2:\nquote: \"the English name of fever-ral species of the hawk kind\"\ntype: definition\n\nClaim 3:\nquote: \"See Paxo.\"\ntype: practice? Hmm \"See Paxo\" is a direction to see another entry. Could be \"practice\" (referencing practice). But maybe better not to include if it's not a factual claim. However the instruction says extract atomic factual claims from the text. \"See Paxo\" is a statement in the text.\n\nActually, looking at the text again: \"BUZZARD, in anthology, the English name of fever-ral species of the hawk kind. See Paxo.\"\n\nMaybe:\n- \"BUZZARD\" is the subject.\n- \"in anthology\" - it's in an anthology.\n- \"the English name of fever-ral species of the hawk kind\" - definition.\n\nI'll extract:\n\n1. quote: \"BUZZARD, in anthology\" type: definition\n2. quote: \"the English name of fever-ral species of the hawk kind\" type: definition\n3. quote: \"fever-ral species of the hawk kind\" type: definition (maybe redundant)\n\nBetter to keep distinct clauses.\n\nLet's do:\n\n[\n  {\"quote\": \"BUZZARD, in anthology\", \"type\": \"definition\"},\n  {\"quote\": \"the English name of fever-ral species of the hawk kind\", \"type\": \"definition\"},\n  {\"quote\": \"See Paxo.\", \"type\": \"practice\"}\n]\n\nWait, value and unit only for quantity. For others, omit them. The example shows them but rules say omit otherwise. So my JSON should not have value/unit keys for non-quantity.\n\nLet's check quote lengths: all under 200 chars. Good.\n\nAre they exact substrings?\n- \"BUZZARD, in anthology\" - yes, from start.\n- \"the English name of fever-ral species of the hawk kind\" - yes, exact substring.\n- \"See Paxo.\" - yes, exact substring.\n\nOne claim per sentence or clause. The first sentence has two clauses. I split them. The second sentence is \"See Paxo.\"\n\nThis gives 3 claims. That's fine (up to 8).\n\nLet me make sure JSON is valid and nothing else.\n\n{\"claims\": [{\"quote\": \"BUZZARD, in anthology\", \"type\": \"definition\"}, {\"quote\": \"the English name of fever-ral species of the hawk kind\", \"type\": \"definition\"}, {\"quote\": \"See Paxo.\", \"type\": \"practice\"}]}\n\nShould \"in anthology\" be type place? Anthology is a book/collection, not really a place. Definition is safer.\n\n\"See Paxo.\" as practice? It's a cross-reference. Maybe just definition? But it's not defining buzzard. I'll leave it as practice or definition. Actually, maybe it's better to not include \"See Paxo.\" because it's not really a factual claim about the subject, but the instruction says extract claims from the text. It is a statement in the text. I'll include it with type \"practice\" since it's a referencing practice. Or maybe omit it to be safe. But I have room. Let's include it.\n\nWait, the text says \"fever-ral\" which is likely \"several\" but I must copy exactly. Good.\n\nFinal JSON only."
+      },
+      "stop_reason": null,
+      "token_ids": null,
+      "routed_experts": null
+    }
+  ],
+  "created": 1792332546,
+  "model": "nvidia/Nemotron-3.5-Super-VL",
+  "object": "chat.completion",
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "vllm-0.1.dev1+g1bed5fc81-tp2-9705eecb",
+  "usage": {
+    "completion_tokens": 1498,
+    "prompt_tokens": 204,
+    "total_tokens": 1702,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 1434,
+      "rejected_prediction_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0,
+      "created_cache_tokens": 0,
+      "multimodal_tokens": null
+    }
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "prompt_text": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null,
+  "metrics": null
+}

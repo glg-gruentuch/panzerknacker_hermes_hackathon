@@ -1,0 +1,52 @@
+{
+  "id": "chatcmpl-9cfab161b4b747c2",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\"claims\": [{\"quote\": \"ERASED, in heraldry.\", \"type\": \"definition\"}, {\"quote\": \"See ARRACHE.\", \"type\": \"practice\"}]}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null,
+        "reasoning_content": "The user wants me to extract up to 8 atomic factual claims from the given Britannica text.\n\nText: \"ERASED, in heraldry. See ARRACHE.\"\n\nLet me analyze the text:\n1. \"ERASED, in heraldry.\" - This is a definition/heading stating that ERASED is a term in heraldry.\n2. \"See ARRACHE.\" - This is a cross-reference directing to another entry.\n\nPossible claims:\n- Type: definition, quote: \"ERASED, in heraldry.\" - This defines ERASED as a heraldry term.\n- Type: practice (or maybe definition?), quote: \"See ARRACHE.\" - This is a cross-reference instruction.\n\nWait, the types allowed are: definition|quantity|place|date|cause|practice\n\n\"ERASED, in heraldry.\" - This is a definition (defining what ERASED is in the context of heraldry).\n\"See ARRACHE.\" - This could be considered a practice (referencing practice) or maybe just a cross-reference. But it's not really a factual claim about the world, it's an instruction to the reader.\n\nActually, looking at the text, there are essentially two clauses:\n1. \"ERASED, in heraldry.\" - states that ERASED is a term in heraldry.\n2. \"See ARRACHE.\" - instructs to see ARRACHE.\n\nSince I need atomic factual claims, and the text is very short, I should extract what's there.\n\nClaim 1:\n- quote: \"ERASED, in heraldry.\"\n- type: definition\n- No value/unit needed.\n\nClaim 2:\n- quote: \"See ARRACHE.\"\n- type: practice? Or maybe definition? Actually \"See ARRACHE\" is a cross-reference. The type list doesn't have \"cross-reference\". The closest might be \"practice\" but that's a stretch. However, I must choose from the given types. Let me think... \"See ARRACHE\" is an editorial instruction. Maybe I can skip it if it doesn't fit well, but the rules say extract up to 8. I can extract just the definition claim.\n\nActually, the text \"ERASED, in heraldry.\" is an entry header indicating the subject. It's stating that ERASED is a heraldry term. That's a definition-type claim.\n\n\"See ARRACHE.\" is a reference. I could classify it as \"practice\" (referencing practice) or just omit it. But to be safe, I'll include it as type \"practice\" since it's an instruction to consult another entry, which is part of encyclopedia practice. Or maybe better to just include the first one.\n\nWait, let me re-read the rules: \"Extract up to 8 atomic factual claims\". So I can extract 1 or 2. The text is minimal.\n\nLet me check if \"ERASED, in heraldry.\" is exactly 200 characters or under. Yes, it's 19 characters.\n\"See ARRACHE.\" is 12 characters.\n\nFor the second one, what type? The available types are definition, quantity, place, date, cause, practice. \"See ARRACHE\" doesn't really fit any perfectly, but \"practice\" might be the closest as it's a reference practice. However, it might be safer to not include it if it's not a factual claim. But the instruction says extract claims from the text. The text does state \"See ARRACHE\" as a directive.\n\nI think I'll include both. For \"See ARRACHE.\", I'll use type \"practice\" as it's an editorial practice/reference. Or maybe I should only include the first one since it's the only clear factual claim.\n\nActually, looking at similar tasks, usually every sentence/clause gets a claim. Let me provide both.\n\nClaim 1: quote \"ERASED, in heraldry.\" type definition\nClaim 2: quote \"See ARRACHE.\" type practice\n\nWait, is \"See ARRACHE.\" a factual claim? It's more of an instruction. But the user asked to extract atomic factual claims from the text. The text contains this statement. I'll include it.\n\nJSON format:\n{\"claims\": [{\"quote\": \"ERASED, in heraldry.\", \"type\": \"definition\"}, {\"quote\": \"See ARRACHE.\", \"type\": \"practice\"}]}\n\nI need to make sure quotes are exact substrings. Yes.\n\nLet me double check character counts:\n\"ERASED, in heraldry.\" = 19 chars\n\"See ARRACHE.\" = 12 chars\n\nBoth under 200.\n\nNo value/unit since types are not quantity.\n\nFinal JSON only."
+      },
+      "stop_reason": null,
+      "token_ids": null,
+      "routed_experts": null
+    }
+  ],
+  "created": 1792332623,
+  "model": "nvidia/Nemotron-3.5-Super-VL",
+  "object": "chat.completion",
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "vllm-0.1.dev1+g1bed5fc81-tp2-9705eecb",
+  "usage": {
+    "completion_tokens": 1042,
+    "prompt_tokens": 192,
+    "total_tokens": 1234,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 1000,
+      "rejected_prediction_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0,
+      "created_cache_tokens": 0,
+      "multimodal_tokens": null
+    }
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "prompt_text": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null,
+  "metrics": null
+}

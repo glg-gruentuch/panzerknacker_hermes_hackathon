@@ -1,0 +1,22 @@
+{
+  "stage": "site",
+  "out_dir": "deliverables/website",
+  "pages": 98,
+  "pdfs_compiled": 98,
+  "compile_failures": [],
+  "broken_links": [
+    "compare.html -> assets/pair-217#0000.png",
+    "compare.html -> assets/pair-220#0000.png",
+    "compare.html -> assets/pair-251#0001.png",
+    "compare.html -> assets/pair-258#0002.png",
+    "compare.html -> assets/pair-261#0000.png",
+    "compare.html -> assets/pair-270#0000.png",
+    "compare.html -> assets/pair-403#0000.png",
+    "compare.html -> assets/pair-499#0000.png",
+    "compare.html -> assets/pair-523#0000.png",
+    "compare.html -> assets/pair-523#0012.png",
+    "compare.html -> assets/pair-546#0000.png",
+    "compare.html -> assets/pair-651#0000.png"
+  ],
+  "compare_pairs": 76
+}

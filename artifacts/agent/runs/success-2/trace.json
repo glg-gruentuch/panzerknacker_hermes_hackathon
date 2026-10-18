@@ -1,0 +1,48 @@
+{
+  "session_id": "20261018_134532_05051e",
+  "model": "nvidia/Nemotron-3.5-Super-VL",
+  "steps": [
+    {
+      "step": "Tool call: tool_search",
+      "model": "Hermes Agent tools",
+      "detail": "{\"queries\": [\"Mount Etna comparison Britannica Wikipedia\"], \"total_available\": 2, \"results\": [{\"query\": \"Mount Etna comparison Britannica Wi",
+      "ms": 103
+    },
+    {
+      "step": "Tool call: tool_search",
+      "model": "Hermes Agent tools",
+      "detail": "{\"queries\": [\"Etna\"], \"total_available\": 2, \"results\": [{\"query\": \"Etna\", \"matches\": [], \"available_sources\": [{\"name\": \"nemotron_challenge\"",
+      "ms": 17
+    },
+    {
+      "step": "Tool call: tool_describe",
+      "model": "Hermes Agent tools",
+      "detail": "{\"tools\": {\"challenge_search\": {\"description\": \"Search the stored Britannica-to-Wikipedia comparisons. Returns the best matching entries wit",
+      "ms": 16
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"name\": \"challenge_search\", \"arguments\": {\"query\": \"Mount Etna\"}}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"error\": \"Local tools require one entry per tool_call; mixed and multi-local batches are not supported.\"}",
+      "ms": 11
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"volcano\"}, \"name\": \"challenge_search\"}]}",
+      "ms": null
+    },
+    {
+      "step": "Tool call: tool_call",
+      "model": "Hermes Agent tools",
+      "detail": "{\"calls\": [{\"arguments\": {\"query\": \"mountain\"}, \"name\": \"challenge_search\"}]}",
+      "ms": null
+    }
+  ]
+}

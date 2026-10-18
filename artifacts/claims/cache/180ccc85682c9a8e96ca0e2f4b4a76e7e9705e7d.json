@@ -1,0 +1,52 @@
+{
+  "id": "chatcmpl-bee6504265537b3f",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\"verdict\": \"not_in_wikipedia\", \"wikipedia_quote\": \"\", \"explanation\": \"None of the Wikipedia passages mention ARRACHE; they all concern the term \\\"Erased\\\" and unrelated works.\"}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null,
+        "reasoning_content": "The user wants me to compare a Britannica claim \"See ARRACHE.\" with Wikipedia passages. The passages are about \"Erased\" (disambiguation, song, film). None of them cover \"ARRACHE\". So the verdict is not_in_wikipedia. Wikipedia quote should be \"\". Explanation: none of the passages mention ARRACHE; they are about \"Erased\".\n\nNeed to output JSON only."
+      },
+      "stop_reason": null,
+      "token_ids": null,
+      "routed_experts": null
+    }
+  ],
+  "created": 1792332629,
+  "model": "nvidia/Nemotron-3.5-Super-VL",
+  "object": "chat.completion",
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "vllm-0.1.dev1+g1bed5fc81-tp2-9705eecb",
+  "usage": {
+    "completion_tokens": 135,
+    "prompt_tokens": 277,
+    "total_tokens": 412,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 87,
+      "rejected_prediction_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0,
+      "created_cache_tokens": 0,
+      "multimodal_tokens": null
+    }
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "prompt_text": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null,
+  "metrics": null
+}

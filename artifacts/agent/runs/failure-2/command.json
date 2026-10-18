@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/hermes/.venv/bin/hermes",
+    "chat",
+    "-q",
+    "Use challenge_compare with entry_id 'britannica:0000000000000000000000000000000000000000:train:9999#0000' and report the comparison.",
+    "--toolsets",
+    "nemotron_challenge"
+  ],
+  "returncode": 0,
+  "question": "Use challenge_compare with entry_id 'britannica:0000000000000000000000000000000000000000:train:9999#0000' and report the comparison.",
+  "expected": "insufficient_evidence"
+}

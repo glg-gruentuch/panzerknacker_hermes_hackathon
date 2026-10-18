@@ -83,7 +83,7 @@ def compare_pair(entry: dict[str, Any], match: dict[str, Any], article: dict[str
     ][:OBSOLETE_TERM_LIMIT]
     return {
         "entry_id": match["entry_id"],
-        "entry_title": match["entry_title"],
+        "entry_title": match.get("entry_title") or "(untitled)",
         "article_title": match["article_title"],
         "match_confidence": match["match_confidence"],
         "method": METHOD,

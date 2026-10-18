@@ -1,0 +1,52 @@
+{
+  "id": "chatcmpl-a079744b5193a58c",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\n  \"verdict\": \"not_in_wikipedia\",\n  \"wikipedia_quote\": \"\",\n  \"explanation\": The Wikipedia passages only list heraldic elements (mantle and pavilion, torse or cap of maintenance, slogan or war-cry) and contain no statement about anything being marshalled in order, so the claim is not covered.\"\n}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null,
+        "reasoning_content": "The user wants me to compare a Britannica claim with Wikipedia passages.\n\nClaim: \"all marhalled in order\" (note: \"marhalled\" is likely a typo for \"marshalled\" or \"marshaled\")\n\nPassages:\n[W3] Mantle and pavilion\n[W5] Torse (or cap of maintenance as a special honour)\n[W2] Slogan or war-cry, if possessed\n\nNone of these passages contain the claim \"all marhalled in order\" or anything about marshaling things in order. The passages are just fragmentary headings about heraldry elements (mantle/pavilion, torse/cap of maintenance, slogan/war-cry). They don't cover the claim.\n\nTherefore verdict: not_in_wikipedia.\nwikipedia_quote: \"\"\nexplanation: The Wikipedia passages only list heraldic components (mantle/pavilion, torse/cap of maintenance, slogan/war-cry) and contain no statement about anything being marshalled in order, so the claim is not covered.\n\nNeed to output JSON only."
+      },
+      "stop_reason": null,
+      "token_ids": null,
+      "routed_experts": null
+    }
+  ],
+  "created": 1792332539,
+  "model": "nvidia/Nemotron-3.5-Super-VL",
+  "object": "chat.completion",
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "vllm-0.1.dev1+g1bed5fc81-tp2-9705eecb",
+  "usage": {
+    "completion_tokens": 301,
+    "prompt_tokens": 259,
+    "total_tokens": 560,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 225,
+      "rejected_prediction_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0,
+      "created_cache_tokens": 0,
+      "multimodal_tokens": null
+    }
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "prompt_text": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null,
+  "metrics": null
+}

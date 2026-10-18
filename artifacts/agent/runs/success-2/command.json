@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/hermes/.venv/bin/hermes",
+    "chat",
+    "-q",
+    "Which matched pair in the stored comparisons covers Mount Etna? Use challenge_compare and summarize how the two sources describe the mountain. Cite both sources.",
+    "--toolsets",
+    "nemotron_challenge"
+  ],
+  "returncode": 0,
+  "question": "Which matched pair in the stored comparisons covers Mount Etna? Use challenge_compare and summarize how the two sources describe the mountain. Cite both sources.",
+  "expected": "citation"
+}
