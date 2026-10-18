@@ -1,0 +1,496 @@
+{
+  "query": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:546#0000",
+  "topic": {
+    "slug": "page-0546-fragment",
+    "label": "Fragment (page-0546)",
+    "headword": "",
+    "edition": "Not recorded",
+    "year": null,
+    "match": "partial",
+    "wikipediaTitle": "Speech-generating device"
+  },
+  "britannica": {
+    "pageId": "page-0546-7c6f39d92d2b",
+    "headword": "",
+    "edition": "Not recorded",
+    "year": null,
+    "volume": "546",
+    "meta": "nls page britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:546 · scan 7c6f39d92d2b",
+    "imageUrl": "/api/scans/page-0546-7c6f39d92d2b.jpg",
+    "sourceUrl": null,
+    "rawText": "This means that the number of users are available to the same as they do not have a few times. The number of users can be used in the case where the number of users are able to use the number of users. However, the number of users are also used to generate the number of users and the number of users are able to use the number of users. For example, the number of users are used to compute the number of users and the number of users are able to use the number of users. As mentioned, the number of users are used to compute the number of users and the number of users are able to use the number of users. In addition, the number of users are used to compute the number of users and the number of users are able to use the number of users.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "(fragment)",
+        "text": "This means that the number of users are available to the same as they do not have a few times. The number of users can be used in the case where the number of users are able to use the number of users. However, the number of users are also used to generate the number of users and the number of users are able to use the number of users. For example, the number of users are used to compute the number of users and the number of users are able to use the number of users. As mentioned, the number of users are used to compute the number of users and the number of users are able to use the number of users. In addition, the number of users are used to compute the number of users and the number of users are able to use the number of users."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "13111724",
+    "title": "Speech-generating device",
+    "url": "https://en.wikipedia.org/wiki/Speech-generating_device",
+    "dateModified": "",
+    "passages": [
+      {
+        "id": "W1",
+        "text": "Speech-generating devices (SGDs), also known as voice output communication aids, are electronic augmentative and alternative communication (AAC) systems used to supplement or replace speech or writing for individuals with severe speech impairments, enabling them to verbally communicate. SGDs are important for people who have limited means of interacting verbally, as they allow individuals to become active participants in communication interactions. They are particularly helpful for patients with amyotrophic lateral sclerosis (ALS) but recently have been used for children with predicted speech deficiencies."
+      },
+      {
+        "id": "W2",
+        "text": "There are several input and display methods for users of varying abilities to make use of SGDs. Some SGDs have multiple pages of symbols to accommodate a large number of utterances, and thus only a portion of the symbols available are visible at any one time, with the communicator navigating the various pages. Speech-generating devices can produce electronic voice output by using digitized recordings of natural speech or through speech synthesis —which may carry less emotional information but can permit the user to speak novel messages."
+      },
+      {
+        "id": "W3",
+        "text": "The content, organization, and updating of the vocabulary on an SGD is influenced by a number of factors, such as the user's needs and the contexts that the device will be used in. The development of techniques to improve the available vocabulary and rate of speech production is an active research area. Vocabulary items should be of high interest to the user, be frequently applicable, have a range of meanings, and be pragmatic in functionality."
+      },
+      {
+        "id": "W4",
+        "text": "There are multiple methods of accessing messages on devices: directly or indirectly, or using specialized access devices—although the specific access method will depend on the skills and abilities of the user. SGD output is typically much slower than speech, although rate enhancement strategies can increase the user's rate of output, resulting in enhanced efficiency of communication."
+      },
+      {
+        "id": "W5",
+        "text": "The first known SGD was prototyped in the mid-1970s, and rapid progress in hardware and software development has meant that SGD capabilities can now be integrated into devices like smartphones. Notable users of SGDs include Stephen Hawking, Roger Ebert, Tony Proudfoot, and Pete Frates (founder of the ALS Ice Bucket Challenge)."
+      },
+      {
+        "id": "W6",
+        "text": "Speech-generating systems may be dedicated devices developed solely for AAC, or non-dedicated devices such as computers running additional software to allow them to function as AAC devices."
+      },
+      {
+        "id": "W7",
+        "text": "SGDs have their roots in early electronic communication aids. The first such aid was a sip-and-puff typewriter controller named the patient-operated selector mechanism (Naman) prototyped by Reg Maling in the United Kingdom in 1960. POSSUM scanned through a set of symbols on an illuminated display. Researchers at Delft University in the Netherlands created the lightspot-operated typewriter (LOT) in 1970, which made use of small movements of the head to point a small spot of light at a matrix of characters, each equipped with a photoelectric cell. Although it was commercially unsuccessful, the LOT was well received by its users."
+      },
+      {
+        "id": "W8",
+        "text": "In 1966, Barry Romich, a freshman engineering student at Case Western Reserve University, and Ed Prentke, an engineer at Highland View Hospital in Cleveland, Ohio, formed a partnership, creating the Prentke Romich Company. In 1969, the company produced its first communication device, a typing system based on a discarded Teletype machine."
+      },
+      {
+        "id": "W9",
+        "text": "In 1979, Mark Dahmke developed software for a vocal communication aid program using the Computalker CT-1 analog speech synthesizer with a microcomputer. The software utilized phonemes to generate speech, assisting individuals with communication impairments in constructing words and sentences. Dahmke's work contributed to the advancement of assistive technology for people with disabilities. Notably, he designed the \"Vocabulary Management System\" for Bill Rush, a student with cerebral palsy. This early speech synthesis technology facilitated improved communication for Rush and was featured in a 1980 issue of LIFE Magazine. Dahmke's contributions have influenced the development of augmentative and alternative communication (AAC) technologies."
+      },
+      {
+        "id": "W10",
+        "text": "During the 1970s and early 1980s, several other companies emerged that have since become prominent manufacturers of SGDs. Toby Churchill founded Toby Churchill Ltd in 1973, after losing his speech following encephalitis. In the US, Dynavox (then known as Sentient Systems Technology) grew out of a student project at Carnegie-Mellon University, created in 1982 to help a young woman with cerebral palsy to communicate. Beginning in the 1980s, improvements in technology led to a greatly increased number, variety, and performance of commercially available communication devices, and a reduction in their size and price. Alternative methods of access such as Target Scanning (also known as eye pointing) calibrate the movement of a user's eyes to direct an SGD to produce the desired speech. Scanning, in which alternatives are presented to the user sequentially, became available on communication devices. Speech output possibilities included both digitized and synthesized speech."
+      },
+      {
+        "id": "W11",
+        "text": "Rapid progress in hardware and software development continued, including projects funded by the European Community. The first commercially available dynamic screen speech-generating devices were developed in the 1990s. Software was developed that allowed the computer-based production of communication boards. High-tech devices have continued to become smaller and lighter, while increasing accessibility and capability; communication devices can be accessed using eye-tracking systems, perform as a computer for word-processing and Internet use, and as an environmental control device for independent access to other equipment such as TV, radio and telephones."
+      },
+      {
+        "id": "W12",
+        "text": "Stephen Hawking came to be associated with the unique voice of his particular synthesis equipment. Hawking was unable to speak due to a combination of disabilities caused by ALS, and an emergency tracheotomy. In the past 20 or so years SGD have gained popularity amongst young children with speech deficiencies, such as autism, Down syndrome, and predicted brain damage due to surgery."
+      },
+      {
+        "id": "W13",
+        "text": "Starting in the early 2000s, specialists saw the benefit of using SGDs not only for adults but for children, as well. Neuro-linguists found that SGDs were just as effective in helping children who were at risk for temporary language deficits after undergoing brain surgery as it is for patients with ALS. In particular, digitized SGDs have been used as communication aids for pediatric patients during the recovery process."
+      },
+      {
+        "id": "W14",
+        "text": "There are many methods of accessing messages on devices: directly, indirectly, and with specialized access devices. Direct access methods involve physical contact with the system, by using a keyboard or a touch screen. Users accessing SGDs indirectly and through specialized devices must manipulate an object in order to access the system, such as maneuvering a joystick, head mouse, optical head pointer, light pointer, infrared pointer, or switch access scanner."
+      },
+      {
+        "id": "W15",
+        "text": "The specific access method will depend on the skills and abilities of the user. With direct selection a body part, pointer, adapted mouse, joystick, or eye tracking could be used, whereas switch access scanning is often used for indirect selection. Unlike direct selection (e.g., typing on a keyboard, touching a screen), users of Target Scanning can only make selections when the scanning indicator (or cursor) of the electronic device is on the desired choice. Those who are unable to point typically calibrate their eyes to use eye gaze as a way to point and blocking as a way to select desired words and phrases. The speed and pattern of scanning, as well as the way items are selected, are individualized to the physical, visual and cognitive capabilities of the user."
+      },
+      {
+        "id": "W16",
+        "text": "Augmentative and alternative communication is typically much slower than speech, with users generally producing 8–10 words per minute. Rate enhancement strategies can increase the user's rate of output to around 12–15 words per minute, and as a result enhance the efficiency of communication."
+      },
+      {
+        "id": "W17",
+        "text": "In any given SGD there may be a large number of vocal expressions that facilitate efficient and effective communication, including greetings, expressing desires, and asking questions. Some SGDs have multiple pages of symbols to accommodate a large number of vocal expressions, and thus only a portion of the symbols available are visible at any one time, with the communicator navigating the various pages. Speech-generating devices generally display a set of selections either using a dynamically changing screen, or a fixed display."
+      },
+      {
+        "id": "W18",
+        "text": "There are two main options for increasing the rate of communication for an SGD: encoding, and prediction."
+      },
+      {
+        "id": "W19",
+        "text": "Encoding permits a user to produce a word, sentence or phrase using only one or two activations of their SGD. Iconic encoding strategies such as Semantic compaction combine sequences of icons (picture symbols) to produce words or phrases. In numeric, alpha-numeric, and letter encoding (also known as Abbreviation-Expansion), words and sentences are coded as sequences of letters and numbers. For example, typing \"HH\" or \"G1\" (for Greeting 1) may retrieve \"Hello, how are you?\"."
+      },
+      {
+        "id": "W20",
+        "text": "Prediction is a rate enhancement strategy in which the SGD attempts to reduce the number of keystrokes used by predicting the word or phrase being written by the user. The user can then select the correct prediction without needing to write the entire word. Word prediction software may determine the choices to be offered based on their frequency in language, association with other words, past choices of the user, or grammatical suitability. However, users have been shown to produce more words per minute (using a scanning interface) with a static keyboard layout than with a predictive grid layout, suggesting that the cognitive overhead of reviewing a new arrangement cancels out the benefits of the predictive layout when using a scanning interface."
+      },
+      {
+        "id": "W21",
+        "text": "Another approach to rate-enhancement is Dasher, which uses language models and arithmetic coding to present alternative letter targets on the screen with size relative to their likelihood given the history."
+      },
+      {
+        "id": "W22",
+        "text": "The rate of words produced can depend greatly on the conceptual level of the system: the TALK system, which allows users to choose between large numbers of sentence-level utterances, demonstrated output rates in excess of 60 wpm."
+      },
+      {
+        "id": "W23",
+        "text": "Fixed display devices refer to those in which the symbols and items are \"fixed\" in a particular format; some sources refer to these as \"static\" displays. Such display devices have a simpler learning curve than some other devices."
+      },
+      {
+        "id": "W24",
+        "text": "Fixed display devices replicate the typical arrangement of low-tech AAC devices (low-tech is defined as those devices that do not need batteries, electricity or electronics), like communication boards. They share some of disadvantages; for example they are typically restricted to a limited number of symbols and hence messages. It is important to note that with technological advances made in the twenty-first century, fixed-display SGDs are not commonly used anymore."
+      },
+      {
+        "id": "W25",
+        "text": "Dynamic displays devices are usually also touchscreen devices. They typically generate electronically produced visual symbols that, when pressed, change the set of selections that is displayed. The user can change the symbols available using page links to navigate to appropriate pages of vocabulary and messages."
+      },
+      {
+        "id": "W26",
+        "text": "The \"home\" page of a dynamic display device may show symbols related to many different contexts or conversational topics. Pressing any one of these symbols may open a different screen with messages related to that topic. For example, when watching a volleyball game, a user may press the \"sport\" symbol to open a page with messages relating to sport, then press the symbol showing a scoreboard to utter the phrase \"What's the score?\"."
+      },
+      {
+        "id": "W27",
+        "text": "Advantages of dynamic display devices include the availability of a much larger vocabulary, and the ability to see the sentence under construction A further advantage of dynamic display devices is that the underlying operating system is capable of providing options for multiple communication channels, including cell phone, text messaging and e-mail. Work by Linköping University has shown that such email writing practices allowed children who were SGD users to develop new social skills and increase their social participation."
+      },
+      {
+        "id": "W28",
+        "text": "Low-cost systems can also include a keyboard and audio speaker combination without a dynamic display or visual screen. This type of keyboard sends typed text direct to an audio speaker. It can permit any phrase to be spoken without the need for a visual screen that is not always required. One simple benefit is that a talking keyboard, when used with a standard telephone or speakerphone, can enable a voice-impaired individual have two-way conversation over a telephone."
+      },
+      {
+        "id": "W29",
+        "text": "The output of a SGD may be digitized and/or synthesized: digitized systems play directly recorded words or phrases while synthesized speech uses text-to-speech software that can carry less emotional information but permits the user to speak novel messages by typing new words. Today, individuals use a combination of recorded messages and text-to-speech techniques on their SGDs. However, some devices are limited to only one type of output."
+      },
+      {
+        "id": "W30",
+        "text": "Words, phrases or entire messages can be digitized and stored onto the device for playback to be activated by the user. This process is formally known as Voice Banking. Advantages of recorded speech include that (a) it provides natural prosody and speech naturalness for the listener (e.g., person of the same age and gender as the AAC user can be selected to record the messages), and (b) it provides for additional sounds that may be important for the user such as laughing or whistling. Moreover, digitized SGDs provide a degree of normalcy both for the patient and for their families when they lose their ability to speak on their own."
+      },
+      {
+        "id": "W31",
+        "text": "A major disadvantage of using only recorded speech is that users are unable to produce novel messages; they are limited to the messages pre-recorded into the device. Depending on the device, there may be a limit to the length of the recordings."
+      },
+      {
+        "id": "W32",
+        "text": "SGDs that use synthesized speech apply the phonetic rules of the language to translate the user's message into voice output (speech synthesis). Users have the freedom to create novel words and messages and are not limited to those that have been pre-recorded on their device by others."
+      },
+      {
+        "id": "W33",
+        "text": "The use of synthesized speech has increased due to the creation of software that takes advantage of the user's existing computers and smartphones. AAC apps like Spoken or Avaz are available on Android and iOS, providing a way to use a speech-generating device without having to visit a doctor's office or learn to use specialized machinery. In many cases, these options are also more affordable than a dedicated device."
+      },
+      {
+        "id": "W34",
+        "text": "Synthesized SGDs may allow multiple methods of message creation that can be used individually or in combination: messages can be created from letters, words, phrases, sentences, pictures, or symbols. With synthesized speech there is virtually unlimited storage capacity for messages with few demands on memory space."
+      },
+      {
+        "id": "W35",
+        "text": "Synthesized speech engines are available in many languages, and the engine's parameters, such as speech rate, pitch range, gender, stress patterns, pauses, and pronunciation exceptions, can be manipulated by the user."
+      },
+      {
+        "id": "W36",
+        "text": "The selection set of a SGD is the set of all messages, symbols and codes that are available to a person using that device. The content, organization, and updating of this selection set are areas of active research and are influenced by a number of factors, including the user's ability, interests and age. The selection set for an AAC system may include words that the user does not know yet – they are included for the user to \"grow into\". The content installed on any given SGD may include a large number of preset pages provided by the manufacturer, with a number of additional pages produced by the user or the user's care team depending on the user's needs and the contexts that the device will be used in."
+      },
+      {
+        "id": "W37",
+        "text": "Researchers Beukelman and Mirenda list a number of possible sources (such as family members, friends, teachers, and care staff) for the selection of initial content for a SGD. A range of sources is required because, in general, one individual would not have the knowledge and experience to generate all the vocal expressions needed in any given environment. For example, parents and therapists might not think to add slang terms, such as \" innit \"."
+      },
+      {
+        "id": "W38",
+        "text": "Previous work has analyzed both vocabulary use of typically developing speakers and word use of AAC users to generate content for new AAC devices. Such processes work well for generating a core set of utterances or vocal expressions but are less effective in situations where a particular vocabulary is needed (for example, terms related directly to a user's interest in horse riding). The term \"fringe vocabulary\" refers to vocabulary that is specific or unique to the individual's personal interests or needs. A typical technique to develop fringe vocabulary for a device is to conduct interviews with multiple \"informants\": siblings, parents, teachers, co-workers and other involved persons."
+      },
+      {
+        "id": "W39",
+        "text": "Other researchers, such as Musselwhite and St. Louis, suggest that initial vocabulary items should be of high interest to the user, be frequently applicable, have a range of meanings and be pragmatic in functionality. These criteria have been widely used in the AAC field as an ecological check of SGD content."
+      },
+      {
+        "id": "W40",
+        "text": "Beukelman and Mirenda emphasize that vocabulary selection also involves ongoing vocabulary maintenance; however, a difficulty in AAC is that users or their carers must program in any new utterances manually (e.g. names of new friends or personal stories) and there are no existing commercial solutions for automatically adding content. A number of research approaches have attempted to overcome this difficulty; these range from \"inferred input\", such as generating content based on a log of conversation with a user's friends and family, to data mined from the Internet to find language materials, such as the Webcrawler Project. Moreover, by making use of Lifelogging based approaches, a device's content can be changed based on events that occur to a user during their day. By accessing more of a user's data, more high-quality messages can be generated at a risk of exposing sensitive user data. For example, by making use of global positioning systems, a device's content can be changed based on geographical location."
+      },
+      {
+        "id": "W41",
+        "text": "Many recently developed SGDs include performance measurement and analysis tools to help monitor the content used by an individual. This raises concerns about privacy, and some argue that the device user should be involved in the decision to monitor use in this way. Similar concerns have been raised regarding the proposals for devices with automatic content generation, and privacy is increasingly a factor in design of SGDs. As AAC devices are designed to be used in all areas of a user's life, there are sensitive legal, social, and technical issues centred on a wide family of personal data management problems that can be found in contexts of AAC use. For example, SGDs may have to be designed so that they support the user's right to delete logs of conversations or content that has been added automatically."
+      },
+      {
+        "id": "W42",
+        "text": "Programming of Dynamic Speech Generating devices is usually done by augmentative communication specialists. Specialists are required to cater to the needs of the patients because the patients usually choose what kinds of words/ phrases they want. For example, patients use different phrases based on their age, disability, interests, etc. Therefore, content organization is extremely time-consuming. Additionally, SGDs are rarely covered by health insurance companies. As a result, resources are very limited with regards to both funding and staffing. Dr. John Costello of Boston Children's Hospital has been the driving force soliciting donations to keep these program running and well-staffed both within his hospital and in hospitals across the country."
+      }
+    ]
+  },
+  "match": {
+    "strength": "partial",
+    "embedScore": 0.171099003095037,
+    "rerankScore": -5.2109375,
+    "reasons": [
+      "Speech-generating device accepted at reranker logit -5.21, threshold -5.5.",
+      "Funnel among 30 candidates: BM25 rank 12, embed rank 5, rerank rank 1.",
+      "Reranker nvidia/llama-nemotron-rerank-vl-1b-v2; Wikipedia text CC BY-SA 4.0."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Speech-generating device",
+      "url": "https://en.wikipedia.org/wiki/Speech-generating_device",
+      "embedScore": 0.171099003095037,
+      "rerankScore": -5.2109375
+    },
+    {
+      "title": "Ergodic literature",
+      "url": "https://en.wikipedia.org/wiki/Ergodic_literature",
+      "embedScore": 0.12335116950930569,
+      "rerankScore": -5.41796875
+    },
+    {
+      "title": "Password strength",
+      "url": "https://en.wikipedia.org/wiki/Password_strength",
+      "embedScore": 0.1579303077551799,
+      "rerankScore": -5.42578125
+    },
+    {
+      "title": "End-user development",
+      "url": "https://en.wikipedia.org/wiki/End-user_development",
+      "embedScore": 0.1880430706044791,
+      "rerankScore": -5.44140625
+    },
+    {
+      "title": "Nord Modular",
+      "url": "https://en.wikipedia.org/wiki/Nord_Modular",
+      "embedScore": 0.12818809889182603,
+      "rerankScore": -5.46484375
+    },
+    {
+      "title": "Language creation in artificial intelligence",
+      "url": "https://en.wikipedia.org/wiki/Language_creation_in_artificial_intelligence",
+      "embedScore": 0.1736719098038293,
+      "rerankScore": -5.48828125
+    },
+    {
+      "title": "Text Encoding Initiative",
+      "url": "https://en.wikipedia.org/wiki/Text_Encoding_Initiative",
+      "embedScore": 0.10332475871405222,
+      "rerankScore": -5.50390625
+    },
+    {
+      "title": "Default (computer science)",
+      "url": "https://en.wikipedia.org/wiki/Default_(computer_science)",
+      "embedScore": 0.2098439087492352,
+      "rerankScore": -5.5234375
+    },
+    {
+      "title": "Fog computing",
+      "url": "https://en.wikipedia.org/wiki/Fog_computing",
+      "embedScore": 0.2211467230499693,
+      "rerankScore": -5.546875
+    },
+    {
+      "title": "Adware",
+      "url": "https://en.wikipedia.org/wiki/Adware",
+      "embedScore": 0.09916509705988119,
+      "rerankScore": -5.56640625
+    }
+  ],
+  "alignments": [
+    {
+      "id": "a1",
+      "kind": "inference",
+      "verdict": "not_in_wikipedia",
+      "label": "practice",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the number of users are available to the same as they do not have a few times"
+      },
+      "wikipedia": null,
+      "note": "The judge reply was unusable: no JSON object returned.",
+      "type": "practice",
+      "value": null,
+      "unit": null,
+      "downgraded": true
+    },
+    {
+      "id": "a2",
+      "kind": "inference",
+      "verdict": "not_in_wikipedia",
+      "label": "practice",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "The number of users can be used in the case where the number of users are able to use the number of users"
+      },
+      "wikipedia": null,
+      "note": "The judge reply was unusable: no JSON object returned.",
+      "type": "practice",
+      "value": null,
+      "unit": null,
+      "downgraded": true
+    },
+    {
+      "id": "a3",
+      "kind": "inference",
+      "verdict": "not_in_wikipedia",
+      "label": "practice",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the number of users are also used to generate the number of users"
+      },
+      "wikipedia": null,
+      "note": "None of the passages mention using the number of users to generate the number of users; they concern speech-generating devices, AAC vocabulary selection, and content generation methods.",
+      "type": "practice",
+      "value": null,
+      "unit": null,
+      "downgraded": false
+    },
+    {
+      "id": "a4",
+      "kind": "inference",
+      "verdict": "not_in_wikipedia",
+      "label": "practice",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the number of users are able to use the number of users"
+      },
+      "wikipedia": null,
+      "note": "None of the passages address the claim that 'the number of users are able to use the number of users.' They discuss speech-generating devices, recorded speech limitations, and output rates instead.",
+      "type": "practice",
+      "value": null,
+      "unit": null,
+      "downgraded": false
+    },
+    {
+      "id": "a5",
+      "kind": "inference",
+      "verdict": "not_in_wikipedia",
+      "label": "practice",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the number of users are used to compute the number of users"
+      },
+      "wikipedia": null,
+      "note": "The judge reply was unusable: no JSON object returned.",
+      "type": "practice",
+      "value": null,
+      "unit": null,
+      "downgraded": true
+    }
+  ],
+  "vocabulary": {
+    "britannica": [
+      {
+        "term": "able",
+        "count": 5,
+        "per1k": 33.33
+      },
+      {
+        "term": "compute",
+        "count": 3,
+        "per1k": 20.0
+      },
+      {
+        "term": "addition",
+        "count": 1,
+        "per1k": 6.67
+      },
+      {
+        "term": "times",
+        "count": 1,
+        "per1k": 6.67
+      },
+      {
+        "term": "mentioned",
+        "count": 1,
+        "per1k": 6.67
+      },
+      {
+        "term": "number",
+        "count": 20,
+        "per1k": 133.33
+      },
+      {
+        "term": "users",
+        "count": 20,
+        "per1k": 133.33
+      },
+      {
+        "term": "case",
+        "count": 1,
+        "per1k": 6.67
+      },
+      {
+        "term": "means",
+        "count": 1,
+        "per1k": 6.67
+      },
+      {
+        "term": "greeting",
+        "count": 0,
+        "per1k": 0.0
+      }
+    ],
+    "wikipedia": [
+      {
+        "term": "able",
+        "count": 5,
+        "per1k": 1.63
+      },
+      {
+        "term": "compute",
+        "count": 3,
+        "per1k": 0.98
+      },
+      {
+        "term": "addition",
+        "count": 1,
+        "per1k": 0.33
+      },
+      {
+        "term": "times",
+        "count": 1,
+        "per1k": 0.33
+      },
+      {
+        "term": "mentioned",
+        "count": 1,
+        "per1k": 0.33
+      },
+      {
+        "term": "number",
+        "count": 20,
+        "per1k": 6.53
+      },
+      {
+        "term": "users",
+        "count": 20,
+        "per1k": 6.53
+      },
+      {
+        "term": "case",
+        "count": 1,
+        "per1k": 0.33
+      },
+      {
+        "term": "means",
+        "count": 1,
+        "per1k": 0.33
+      },
+      {
+        "term": "greeting",
+        "count": 0,
+        "per1k": 0.0
+      }
+    ],
+    "shared": [
+      "available",
+      "number",
+      "use",
+      "used",
+      "users"
+    ]
+  },
+  "coverage": [
+    {
+      "topic": "Article",
+      "britannica": 0.0,
+      "wikipedia": 0.0
+    }
+  ],
+  "stats": {
+    "britannica": {
+      "words": 151,
+      "sentences": 6,
+      "avgSentenceLength": 25.2,
+      "distinctTerms": 36
+    },
+    "wikipedia": {
+      "words": 3142,
+      "sentences": 135,
+      "avgSentenceLength": 23.3,
+      "distinctTerms": 969
+    }
+  },
+  "suggestedQuestions": [],
+  "pending": []
+}

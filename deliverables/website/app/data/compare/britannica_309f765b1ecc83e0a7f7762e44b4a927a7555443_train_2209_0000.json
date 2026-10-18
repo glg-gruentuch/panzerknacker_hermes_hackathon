@@ -1,0 +1,314 @@
+{
+  "query": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2209#0000",
+  "topic": {
+    "slug": "page-2209-fragment",
+    "label": "Fragment (page-2209)",
+    "headword": "",
+    "edition": "Not recorded",
+    "year": null,
+    "match": "strong",
+    "wikipediaTitle": "Kebon Kopi I inscription"
+  },
+  "britannica": {
+    "pageId": "page-2209-1ee9bc409f67",
+    "headword": "",
+    "edition": "Not recorded",
+    "year": null,
+    "volume": "2209",
+    "meta": "nls page britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2209 · scan 1ee9bc409f67",
+    "imageUrl": "/api/scans/page-2209-1ee9bc409f67.jpg",
+    "sourceUrl": null,
+    "rawText": "Plate. XLVI",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "(fragment)",
+        "text": "Plate. XLVI"
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "59205109",
+    "title": "Kebon Kopi I inscription",
+    "url": "https://en.wikipedia.org/wiki/Kebon_Kopi_I_inscription",
+    "dateModified": "",
+    "passages": [
+      {
+        "id": "W1",
+        "text": "6°31′40″S 106°40′20″E / 6.5278048°S 106.6721078°E"
+      },
+      {
+        "id": "W2",
+        "text": "Kebon Kopi I also known as Tapak Gajah inscription (elephant footprint inscription), is one of several inscriptions dated from the era of Tarumanagara Kingdom circa 5th century. The inscription bearing the image of elephant footprint, which was copied from the elephant ride of King Purnawarman of Tarumanagara, which is equated with Airavata, the elephant vahana (vehicle) of Indra.: 16"
+      },
+      {
+        "id": "W3",
+        "text": "The inscription was discovered in Kebon Kopi village, Bogor, near Kebon Kopi II inscription, and named as such to differ it from this later inscription dated from Sunda Kingdom era."
+      },
+      {
+        "id": "W4",
+        "text": "This inscription is written with Pallawa script in Sanskrit which are arranged into the form of the Anustubh metrum Shloka, which is flanked by a pair of carved images of the elephant's foot."
+      },
+      {
+        "id": "W5",
+        "text": "Transcription: ~ ~ jayavisalasya Tarumendrasya hastinah ~ ~ Airwavatabhasya vibhatidam ~ padadvayam"
+      },
+      {
+        "id": "W6",
+        "text": "Translation: \"Behold, here it looks like a pair of feet...like Airavata, the elephant ride of the great Taruma ruler in... and (?) glory\""
+      },
+      {
+        "id": "W7",
+        "text": "H.P. Hoepermans \"Hindoe-Oudheden va Java (1864)\" ROD 1913:74"
+      },
+      {
+        "id": "W8",
+        "text": "J.F.G. Brumund \"Bijdragen tot de kennis va het Hindoeisme op Java\" VBG. XXXIII 1868:63-64"
+      },
+      {
+        "id": "W9",
+        "text": "A.B. Cohen Stuart \"Heilige Voetsporen op Java\" BKI 3(X) 1875:163-168. Juga di bahasa Inggris berjudul: \"Sacred Footprints in Java\" Indian AntiQuary IV. 1875:355-dst"
+      },
+      {
+        "id": "W10",
+        "text": "H. Kern \"Eenige Oude Sanskrit-Opschrifte n van 't Maleische-schiereil and\" VMKAWL 3(1).1884:9"
+      },
+      {
+        "id": "W11",
+        "text": "P.J. Veth, Java II. 1878:46; I.1896:27"
+      },
+      {
+        "id": "W12",
+        "text": "R.D.M. Verbeek \"Oudheden van Java\" VBG. XLVI. 1891:30-31."
+      },
+      {
+        "id": "W13",
+        "text": "J. Ph. Vogel \"the Earliest Sanskrit Inscription opsachriften of Java\" POD. I. 1925:27-28. Plate 32,33."
+      },
+      {
+        "id": "W14",
+        "text": "Bambang Soemadio (et.al. editor) Sejarah Nasional Indonesia II, Jaman Kuno. Jakarta: Departemen Pendidikan dan Kebudayaan 1975: 39-40; 1984: 40"
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.09906785640828275,
+    "rerankScore": -4.359375,
+    "reasons": [
+      "Kebon Kopi I inscription accepted at reranker logit -4.36, threshold -5.5.",
+      "Funnel among 30 candidates: BM25 rank 4, embed rank 11, rerank rank 1.",
+      "Reranker nvidia/llama-nemotron-rerank-vl-1b-v2; Wikipedia text CC BY-SA 4.0."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Kebon Kopi I inscription",
+      "url": "https://en.wikipedia.org/wiki/Kebon_Kopi_I_inscription",
+      "embedScore": 0.09906785640828275,
+      "rerankScore": -4.359375
+    },
+    {
+      "title": "Travis Beckum",
+      "url": "https://en.wikipedia.org/wiki/Travis_Beckum",
+      "embedScore": 0.018985745371779217,
+      "rerankScore": -5.23046875
+    },
+    {
+      "title": "Philip Lake",
+      "url": "https://en.wikipedia.org/wiki/Philip_Lake",
+      "embedScore": 0.15612784162682658,
+      "rerankScore": -5.3515625
+    },
+    {
+      "title": "Leopoldo Ortega",
+      "url": "https://en.wikipedia.org/wiki/Leopoldo_Ortega",
+      "embedScore": 0.1122131898885641,
+      "rerankScore": -5.4921875
+    },
+    {
+      "title": "Orlando del Fierro",
+      "url": "https://en.wikipedia.org/wiki/Orlando_del_Fierro",
+      "embedScore": 0.08327679012887756,
+      "rerankScore": -5.68359375
+    },
+    {
+      "title": "Oscar Schleyer",
+      "url": "https://en.wikipedia.org/wiki/Oscar_Schleyer",
+      "embedScore": 0.09640405980407252,
+      "rerankScore": -5.703125
+    },
+    {
+      "title": "Manuel Ferreira Guzmán",
+      "url": "https://en.wikipedia.org/wiki/Manuel_Ferreira_Guzm%C3%A1n",
+      "embedScore": 0.11011221710259633,
+      "rerankScore": -5.70703125
+    },
+    {
+      "title": "Herbert Hall Turner",
+      "url": "https://en.wikipedia.org/wiki/Herbert_Hall_Turner",
+      "embedScore": 0.12001729457830734,
+      "rerankScore": -5.73046875
+    },
+    {
+      "title": "Christian Hopkins",
+      "url": "https://en.wikipedia.org/wiki/Christian_Hopkins",
+      "embedScore": 0.08451888497988591,
+      "rerankScore": -5.75390625
+    },
+    {
+      "title": "Edmundo Salinas",
+      "url": "https://en.wikipedia.org/wiki/Edmundo_Salinas",
+      "embedScore": 0.11700975385269885,
+      "rerankScore": -5.77734375
+    }
+  ],
+  "alignments": [
+    {
+      "id": "a1",
+      "kind": "inference",
+      "verdict": "not_in_wikipedia",
+      "label": "definition",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "Plate. XLVI"
+      },
+      "wikipedia": null,
+      "note": "The judge reply was unusable: no JSON object returned.",
+      "type": "definition",
+      "value": null,
+      "unit": null,
+      "downgraded": true
+    }
+  ],
+  "vocabulary": {
+    "britannica": [
+      {
+        "term": "xlvi",
+        "count": 1,
+        "per1k": 500.0
+      },
+      {
+        "term": "plate",
+        "count": 1,
+        "per1k": 500.0
+      },
+      {
+        "term": "looks",
+        "count": 0,
+        "per1k": 0.0
+      },
+      {
+        "term": "cohen",
+        "count": 0,
+        "per1k": 0.0
+      },
+      {
+        "term": "image",
+        "count": 0,
+        "per1k": 0.0
+      },
+      {
+        "term": "discovered",
+        "count": 0,
+        "per1k": 0.0
+      },
+      {
+        "term": "dst",
+        "count": 0,
+        "per1k": 0.0
+      },
+      {
+        "term": "anustubh",
+        "count": 0,
+        "per1k": 0.0
+      },
+      {
+        "term": "village",
+        "count": 0,
+        "per1k": 0.0
+      },
+      {
+        "term": "oude",
+        "count": 0,
+        "per1k": 0.0
+      }
+    ],
+    "wikipedia": [
+      {
+        "term": "xlvi",
+        "count": 1,
+        "per1k": 4.31
+      },
+      {
+        "term": "plate",
+        "count": 1,
+        "per1k": 4.31
+      },
+      {
+        "term": "looks",
+        "count": 0,
+        "per1k": 0.0
+      },
+      {
+        "term": "cohen",
+        "count": 0,
+        "per1k": 0.0
+      },
+      {
+        "term": "image",
+        "count": 0,
+        "per1k": 0.0
+      },
+      {
+        "term": "discovered",
+        "count": 0,
+        "per1k": 0.0
+      },
+      {
+        "term": "dst",
+        "count": 0,
+        "per1k": 0.0
+      },
+      {
+        "term": "anustubh",
+        "count": 0,
+        "per1k": 0.0
+      },
+      {
+        "term": "village",
+        "count": 0,
+        "per1k": 0.0
+      },
+      {
+        "term": "oude",
+        "count": 0,
+        "per1k": 0.0
+      }
+    ],
+    "shared": []
+  },
+  "coverage": [
+    {
+      "topic": "Article",
+      "britannica": 0.0,
+      "wikipedia": 0.0
+    }
+  ],
+  "stats": {
+    "britannica": {
+      "words": 2,
+      "sentences": 1,
+      "avgSentenceLength": 2.0,
+      "distinctTerms": 2
+    },
+    "wikipedia": {
+      "words": 255,
+      "sentences": 25,
+      "avgSentenceLength": 10.2,
+      "distinctTerms": 167
+    }
+  },
+  "suggestedQuestions": [],
+  "pending": []
+}

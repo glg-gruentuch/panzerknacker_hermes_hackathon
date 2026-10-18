@@ -4,7 +4,7 @@ from typing import Any
 
 from .config import Settings
 
-STAGES = ("extract", "match", "compare", "claims", "agent", "site", "evaluate")
+STAGES = ("extract", "match", "compare", "claims", "agent", "site", "evaluate", "export")
 
 # Stages with a working implementation. The CLI and doctor report this set.
 IMPLEMENTED: set[str] = set(STAGES)
@@ -57,3 +57,10 @@ def evaluate(settings: Settings, work_dir: Path) -> dict[str, Any]:
     from .evaluate import run_evaluate
 
     return run_evaluate(settings, work_dir)
+
+
+def export(settings: Settings, work_dir: Path) -> dict[str, Any]:
+    """Write the static app data for the React UI. See handoff 2, item B10."""
+    from .site_export import run_export
+
+    return run_export(settings, work_dir)
