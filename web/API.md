@@ -2,16 +2,18 @@
 
 The site runs on Cloudflare Workers. It needs a live backend for one call only:
 
-- **Four static files.** `topics`, `compare`, `cases` and `meta` do not change
-  while someone uses the site. The pipeline writes them as JSON files to
-  [`public/data/`](public/data/README.md), and Cloudflare serves them with the
-  site. The sections below still name them `GET /api/...`; each file holds the
-  body that endpoint would return.
+- **Articles are files.** Each article is one JSON file in
+  [`articles/`](articles/README.md), bundled with the site at build time. The
+  site does not ask the backend for articles. To publish selected backend
+  results, export them in that format and add the files. The sections below
+  describe the shapes as `GET /api/...` responses, because `topics` and
+  `compare` are what the UI builds from each file.
 - **One live endpoint.** `POST /api/chat` goes to the chat backend on Nebius,
   where Hermes, the models and LanceDB run. On Cloudflare,
-  [`worker/index.ts`](worker/index.ts) forwards it. In
-  development, Vite proxies `/api/*` to `VITE_BACKEND_URL` (default
-  `http://localhost:8000`).
+  [`worker/index.ts`](worker/index.ts) forwards it. In development, Vite
+  proxies `/api/*` to `VITE_BACKEND_URL` (default `http://localhost:8000`).
+  Without `VITE_API_MODE=live`, the chat answers in the browser from the
+  article files.
 
 The TypeScript source of truth is [`src/api/types.ts`](src/api/types.ts).
 Example payloads are in [`api-examples/`](api-examples/) (regenerate with
@@ -20,17 +22,13 @@ Example payloads are in [`api-examples/`](api-examples/) (regenerate with
 Chat errors: return a non-2xx status with JSON `{"detail": "..."}` (FastAPI's
 default shape). The UI shows `detail` to the user, so write it as a sentence.
 
-| Data | Where it lives | Purpose | Example |
+| Shape | Comes from | Purpose | Example |
 |---|---|---|---|
-| `GET /api/topics` | `public/data/topics.json` | Every indexed Britannica page, for search suggestions and the landing index | [topics.json](api-examples/topics.json) |
-| `GET /api/compare?q=blood` | `public/data/compare/<slug>.json` | The pair of texts, match scores, aligned claims, vocabulary, coverage | [compare_q-blood.json](api-examples/compare_q-blood.json) |
+| `GET /api/topics` | The `summary` of each article file | Every article, for search suggestions and the landing index | [topics.json](api-examples/topics.json) |
+| `GET /api/compare?q=blood` | One article file, plus computed vocabulary and stats | The pair of texts, match scores, aligned claims, vocabulary, coverage | [compare_q-blood.json](api-examples/compare_q-blood.json) |
 | `POST /api/chat` | Chat backend on Nebius | One question to the agent, answered with citations | [chat.json](api-examples/chat.json) |
-| `GET /api/cases` | `public/data/cases.json` | The six documented agent cases (3 work, 3 fail) | [cases.json](api-examples/cases.json) |
-| `GET /api/meta` | `public/data/meta.json` | Dataset versions, models, how the 100 pages were sampled | [meta.json](api-examples/meta.json) |
-
-The UI finds the compare file itself: it matches the search against each
-topic's `slug`, `label` and `headword` in `topics.json`, then loads
-`compare/<slug>.json`. Give every topic in `topics.json` a compare file.
+| `GET /api/cases` | `src/api/demo/index.ts` | The six documented agent cases (3 work, 3 fail) | [cases.json](api-examples/cases.json) |
+| `GET /api/meta` | `src/api/demo/index.ts` | Dataset versions, models, how the 100 pages were sampled | [meta.json](api-examples/meta.json) |
 
 ## Where each required model shows up
 

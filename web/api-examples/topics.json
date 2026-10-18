@@ -1,54 +1,6 @@
 {
   "topics": [
     {
-      "slug": "blood",
-      "label": "Blood",
-      "headword": "BLOOD",
-      "edition": "Third edition",
-      "year": 1797,
-      "match": "strong",
-      "wikipediaTitle": "Blood",
-      "area": "anatomy",
-      "teaser": "Physicians at this day relieve a plethora, or too great fulness of blood, by opening a vein.",
-      "verdicts": {
-        "correct": 5,
-        "partly": 1,
-        "wrong": 4
-      }
-    },
-    {
-      "slug": "smallpox",
-      "label": "Smallpox",
-      "headword": "SMALL-POX",
-      "edition": "Second edition",
-      "year": 1778,
-      "match": "strong",
-      "wikipediaTitle": "Smallpox",
-      "area": "infectious-disease",
-      "teaser": "It was first described by the Arabian physicians, and is now so universal, that scarce one in a thousand escapes it at some period of life.",
-      "verdicts": {
-        "correct": 5,
-        "partly": 1,
-        "wrong": 2
-      }
-    },
-    {
-      "slug": "consumption",
-      "label": "Consumption",
-      "headword": "CONSUMPTION",
-      "edition": "Seventh edition",
-      "year": 1842,
-      "match": "strong",
-      "wikipediaTitle": "Tuberculosis",
-      "area": "infectious-disease",
-      "teaser": "Whether it be contagious has been much disputed.",
-      "verdicts": {
-        "correct": 4,
-        "partly": 3,
-        "wrong": 3
-      }
-    },
-    {
       "slug": "animal-magnetism",
       "label": "Animal magnetism",
       "headword": "ANIMAL MAGNETISM",
@@ -58,6 +10,7 @@
       "wikipediaTitle": "Animal magnetism",
       "area": "natural-sciences",
       "teaser": "In 1784 commissioners appointed by the King of France, among whom was Dr Franklin, reported that the effects were owing to the imagination alone, and that the supposed fluid had no existence.",
+      "demo": true,
       "verdicts": {
         "correct": 3,
         "partly": 0,
@@ -74,6 +27,7 @@
       "wikipediaTitle": null,
       "area": "anatomy",
       "teaser": "Their existence has never been demonstrated, for no fluid has been found in the nerves even by the best microscopes; yet the hypothesis is retained by many as the easiest explanation of the phenomena.",
+      "demo": true,
       "verdicts": null
     },
     {
@@ -86,10 +40,45 @@
       "wikipediaTitle": "Basalt",
       "area": "geology",
       "teaser": "Concerning the origin of this stone naturalists are much divided.",
+      "demo": true,
       "verdicts": {
         "correct": 4,
         "partly": 1,
         "wrong": 1
+      }
+    },
+    {
+      "slug": "blood",
+      "label": "Blood",
+      "headword": "BLOOD",
+      "edition": "Third edition",
+      "year": 1797,
+      "match": "strong",
+      "wikipediaTitle": "Blood",
+      "area": "anatomy",
+      "teaser": "Physicians at this day relieve a plethora, or too great fulness of blood, by opening a vein.",
+      "demo": true,
+      "verdicts": {
+        "correct": 5,
+        "partly": 1,
+        "wrong": 4
+      }
+    },
+    {
+      "slug": "consumption",
+      "label": "Consumption",
+      "headword": "CONSUMPTION",
+      "edition": "Seventh edition",
+      "year": 1842,
+      "match": "strong",
+      "wikipediaTitle": "Tuberculosis",
+      "area": "infectious-disease",
+      "teaser": "Whether it be contagious has been much disputed.",
+      "demo": true,
+      "verdicts": {
+        "correct": 4,
+        "partly": 3,
+        "wrong": 3
       }
     },
     {
@@ -102,6 +91,7 @@
       "wikipediaTitle": "Earthquake",
       "area": "geology",
       "teaser": "The cause is commonly ascribed to subterraneous fires, or to vapours and exhalations which, being rarefied by heat and wanting room, burst forth with violence and shake the ground above them.",
+      "demo": true,
       "verdicts": {
         "correct": 2,
         "partly": 1,
@@ -118,10 +108,28 @@
       "wikipediaTitle": "Electricity",
       "area": "natural-sciences",
       "teaser": "Some philosophers suppose that the nervous fluid itself may be of the same nature with the electric fluid.",
+      "demo": true,
       "verdicts": {
         "correct": 5,
         "partly": 2,
         "wrong": 0
+      }
+    },
+    {
+      "slug": "smallpox",
+      "label": "Smallpox",
+      "headword": "SMALL-POX",
+      "edition": "Second edition",
+      "year": 1778,
+      "match": "strong",
+      "wikipediaTitle": "Smallpox",
+      "area": "infectious-disease",
+      "teaser": "It was first described by the Arabian physicians, and is now so universal, that scarce one in a thousand escapes it at some period of life.",
+      "demo": true,
+      "verdicts": {
+        "correct": 5,
+        "partly": 1,
+        "wrong": 2
       }
     }
   ]

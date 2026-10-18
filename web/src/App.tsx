@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState, type ReactNode } from 'react'
-import { API_MODE, api } from './api/client'
+import { api } from './api/client'
 import type { AgentCase, Comparison, TopicSummary } from './api/types'
 import { AgentPanel } from './components/AgentPanel'
 import { CasesPage } from './components/CasesPage'
@@ -196,8 +196,8 @@ export default function App() {
         )}
 
         <nav className={styles.nav} aria-label="Pages">
-          {API_MODE === 'demo' && (
-            <span className={styles.demo} title="Built-in demo data. Set VITE_API_MODE=live to use the backend.">
+          {topics.some((t) => t.demo) && (
+            <span className={styles.demo} title="Some articles are invented demo text. They are marked demo in web/articles/.">
               Demo data
             </span>
           )}

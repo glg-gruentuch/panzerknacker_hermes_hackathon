@@ -1,0 +1,276 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "animal-magnetism",
+    "label": "Animal magnetism",
+    "headword": "ANIMAL MAGNETISM",
+    "edition": "Supplement to the 4th–6th editions",
+    "year": 1824,
+    "match": "partial",
+    "wikipediaTitle": "Animal magnetism",
+    "area": "natural-sciences",
+    "teaser": "In 1784 commissioners appointed by the King of France, among whom was Dr Franklin, reported that the effects were owing to the imagination alone, and that the supposed fluid had no existence."
+  },
+  "aliases": [
+    "animal magnetism",
+    "mesmerism",
+    "magnetism"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0004",
+    "headword": "ANIMAL MAGNETISM",
+    "edition": "Supplement to the 4th–6th editions",
+    "year": 1824,
+    "volume": "Volume 1",
+    "meta": "Supplement to the fourth, fifth and sixth editions of the Encyclopaedia Britannica - Volume 1 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "ANIMAL MAGNETISM.                    329\n\n  ANIMAL MAGNETISM, a pretended power, by which\none person, through certain motions of the hands, is\nsaid to produce extraordinary effects upon the body of\nanother, and even to cure diseases. It was brought into\nnotice at Vienna, and afterwards at Paris, by Mesmer,\nabout the year 1778, whence it is also called Mesmerism.\n  In 1784 commissioners appointed by the King of France,\namong whom was Dr Franklin, reported that the effects\nwere owing to the imagination alone, and that the sup-\nposed fluid had no existence. Its partisans are never-\ntheless still numerous in Germany, where it is employed\nby some physicians in the treatment of nervous com-\nplaints.\n  ANIMALCULE, a name given to animals so small as\nto be invisible to the naked eye. See Microscope.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "ANIMAL MAGNETISM",
+        "text": "ANIMAL MAGNETISM, a pretended power, by which one person, through certain motions of the hands, is said to produce extraordinary effects upon the body of another, and even to cure diseases."
+      },
+      {
+        "id": "B2",
+        "section": "ANIMAL MAGNETISM",
+        "text": "It was brought into notice at Vienna, and afterwards at Paris, by Mesmer, about the year 1778, whence it is also called Mesmerism."
+      },
+      {
+        "id": "B3",
+        "section": "ANIMAL MAGNETISM",
+        "text": "In 1784 commissioners appointed by the King of France, among whom was Dr Franklin, reported that the effects were owing to the imagination alone, and that the supposed fluid had no existence."
+      },
+      {
+        "id": "B4",
+        "section": "ANIMAL MAGNETISM",
+        "text": "Its partisans are nevertheless still numerous in Germany, where it is employed by some physicians in the treatment of nervous complaints."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-animal-magnetism",
+    "title": "Animal magnetism",
+    "url": "https://en.wikipedia.org/wiki/Animal_magnetism",
+    "dateModified": "2026-08-14",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Animal magnetism, also called mesmerism, was a theory put forward by Franz Mesmer in the 18th century that an invisible natural force passes between living things."
+      },
+      {
+        "id": "W2",
+        "section": "Investigation",
+        "text": "A French royal commission in 1784, which included Benjamin Franklin and Antoine Lavoisier, found no evidence of the fluid and attributed the effects to imagination."
+      },
+      {
+        "id": "W3",
+        "section": "Legacy",
+        "text": "The theory is regarded as pseudoscience. Some of its techniques fed into the later practice of hypnosis."
+      },
+      {
+        "id": "W4",
+        "section": "Explanation",
+        "text": "Researchers now attribute the reported effects to suggestion and the placebo effect."
+      }
+    ]
+  },
+  "match": {
+    "strength": "partial",
+    "embedScore": 0.81,
+    "rerankScore": 0.64,
+    "reasons": [
+      "Same title, but Wikipedia treats animal magnetism as history, not as current medicine.",
+      "There is no modern medical article on this subject, so the differences are mostly about framing, not new medical knowledge.",
+      "Hypnosis (0.52) and Placebo (0.41) cover what the effects are now thought to be."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Franz Mesmer",
+      "url": "https://en.wikipedia.org/wiki/Franz_Mesmer",
+      "embedScore": 0.77,
+      "rerankScore": 0.6
+    },
+    {
+      "title": "Hypnosis",
+      "url": "https://en.wikipedia.org/wiki/Hypnosis",
+      "embedScore": 0.69,
+      "rerankScore": 0.52
+    },
+    {
+      "title": "Placebo",
+      "url": "https://en.wikipedia.org/wiki/Placebo",
+      "embedScore": 0.61,
+      "rerankScore": 0.41
+    }
+  ],
+  "alignments": [
+    {
+      "id": "m1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "What it is",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a pretended power"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "regarded as pseudoscience"
+      },
+      "note": "Both texts doubt it. 1824 says \"pretended\"; the modern word is \"pseudoscience\"."
+    },
+    {
+      "id": "m2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Mesmer",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "by Mesmer, about the year 1778"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "put forward by Franz Mesmer in the 18th century"
+      },
+      "note": "Same origin story."
+    },
+    {
+      "id": "m3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "The 1784 commission",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the effects were owing to the imagination alone"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "attributed the effects to imagination"
+      },
+      "note": "The verdict is reported the same way in both."
+    },
+    {
+      "id": "m4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Medical use",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "employed by some physicians in the treatment of nervous complaints"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "suggestion and the placebo effect"
+      },
+      "note": "A treatment some doctors still used in 1824; now an example of suggestion."
+    },
+    {
+      "id": "m5",
+      "kind": "added",
+      "verdict": null,
+      "label": "Hypnosis",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "fed into the later practice of hypnosis"
+      },
+      "note": "The link to hypnosis came after 1824."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What it claims",
+      "britannica": 0.3,
+      "wikipedia": 0.22
+    },
+    {
+      "topic": "Origin",
+      "britannica": 0.22,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "1784 commission",
+      "britannica": 0.26,
+      "wikipedia": 0.24
+    },
+    {
+      "topic": "Medical use",
+      "britannica": 0.22,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Scientific status",
+      "britannica": 0,
+      "wikipedia": 0.18
+    },
+    {
+      "topic": "Hypnosis and placebo",
+      "britannica": 0,
+      "wikipedia": 0.16
+    }
+  ],
+  "suggestedQuestions": [
+    "Did the 1824 entry believe animal magnetism was real?",
+    "What is the modern medical treatment that replaced animal magnetism?"
+  ],
+  "answers": {
+    "Did the 1824 entry believe animal magnetism was real?": {
+      "answer": "No. It calls animal magnetism \"a pretended power\" [B1] and reports the 1784 French commission, including Benjamin Franklin, finding the effects due to imagination alone [B3]. Wikipedia gives the same verdict [W2] and calls the theory pseudoscience [W3].\n\nSo the scepticism is not new. What changed is the explanation: suggestion and the placebo effect [W4].",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.82
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.78
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What is the modern medical treatment that replaced animal magnetism?": {
+      "answer": "The sources do not support an answer. The 1824 entry mentions use for \"nervous complaints\" [B4], but the Wikipedia article treats animal magnetism as history and names no treatment that replaced it. Hypnosis is mentioned only as a later practice its techniques fed into [W3].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "unsupported"
+    }
+  }
+}

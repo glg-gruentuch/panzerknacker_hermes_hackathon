@@ -10,6 +10,7 @@
     "wikipediaTitle": "Blood",
     "area": "anatomy",
     "teaser": "Physicians at this day relieve a plethora, or too great fulness of blood, by opening a vein.",
+    "demo": true,
     "verdicts": {
       "correct": 5,
       "partly": 1,

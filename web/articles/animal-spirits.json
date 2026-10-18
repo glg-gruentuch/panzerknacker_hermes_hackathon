@@ -1,0 +1,132 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "animal-spirits",
+    "label": "Animal spirits",
+    "headword": "ANIMAL SPIRITS",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "none",
+    "wikipediaTitle": null,
+    "area": "anatomy",
+    "teaser": "Their existence has never been demonstrated, for no fluid has been found in the nerves even by the best microscopes; yet the hypothesis is retained by many as the easiest explanation of the phenomena."
+  },
+  "aliases": [
+    "animal spirits",
+    "spirits",
+    "nervous fluid",
+    "nervous power"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0005",
+    "headword": "ANIMAL SPIRITS",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 17",
+    "meta": "Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 17 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "SPI                    [ 712 ]                    SPI\n\n  SPIRITS, ANIMAL, a fine ſubtile fluid, ſuppoſed to be\nſeparated from the blood in the brain, and conveyed\nby the nerves to every part of the body, as the inſtru-\nment of ſenſation and muſcular motion.\n  Their exiſtence has never been demonſtrated, for no\nfluid has been found in the nerves even by the beſt mi-\ncroſcopes; yet the hypotheſis is retained by many as\nthe eaſieſt explanation of the phenomena. Some late\nauthors have ſuppoſed the nervous power to be of the\nſame nature with the electric fluid. See Nerves.\n  SPIRITS of WINE. See Alcohol.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "SPIRITS, ANIMAL",
+        "text": "ANIMAL SPIRITS, a fine subtile fluid, supposed to be separated from the blood in the brain, and conveyed by the nerves to every part of the body, as the instrument of sensation and muscular motion."
+      },
+      {
+        "id": "B2",
+        "section": "SPIRITS, ANIMAL",
+        "text": "Their existence has never been demonstrated, for no fluid has been found in the nerves even by the best microscopes; yet the hypothesis is retained by many as the easiest explanation of the phenomena."
+      },
+      {
+        "id": "B3",
+        "section": "SPIRITS, ANIMAL",
+        "text": "Some late authors have supposed the nervous power to be of the same nature with the electric fluid."
+      }
+    ]
+  },
+  "wikipedia": null,
+  "match": {
+    "strength": "none",
+    "embedScore": 0.71,
+    "rerankScore": 0.12,
+    "reasons": [
+      "The title match, Animal spirits (Keynes), is about economics. The reranker scores it 0.12.",
+      "Pneuma covers the ancient idea, but not the 18th-century medical theory.",
+      "No candidate passes the 0.5 rerank threshold, so no comparison is drawn."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Animal spirits (Keynes)",
+      "url": "https://en.wikipedia.org/wiki/Animal_spirits_(Keynes)",
+      "embedScore": 0.71,
+      "rerankScore": 0.12
+    },
+    {
+      "title": "Pneuma",
+      "url": "https://en.wikipedia.org/wiki/Pneuma",
+      "embedScore": 0.62,
+      "rerankScore": 0.38
+    },
+    {
+      "title": "Nervous system",
+      "url": "https://en.wikipedia.org/wiki/Nervous_system",
+      "embedScore": 0.6,
+      "rerankScore": 0.35
+    }
+  ],
+  "alignments": [],
+  "coverage": [
+    {
+      "topic": "What the spirits are",
+      "britannica": 0.45,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Evidence",
+      "britannica": 0.35,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Electricity",
+      "britannica": 0.2,
+      "wikipedia": 0
+    }
+  ],
+  "suggestedQuestions": [
+    "What is the modern view of animal spirits?",
+    "What did the 1797 entry think carried sensation along the nerves?"
+  ],
+  "answers": {
+    "What is the modern view of animal spirits?": {
+      "answer": "Today \"animal spirits\" describes the emotions and instincts that drive economic decisions, such as consumer confidence and investment.\n\nNo Wikipedia article on this page is a credible counterpart; this answer came from the economics article that the reranker scored 0.12.",
+      "citations": [],
+      "grounding": "unsupported"
+    },
+    "What did the 1797 entry think carried sensation along the nerves?": {
+      "answer": "A \"fine subtile fluid\" separated from the blood in the brain and sent along the nerves [B1]. The entry admits no such fluid had ever been found [B2], and notes that some authors thought the nervous power was electrical [B3].\n\nThere is no matched Wikipedia article to compare against, so the agent cannot say from the sources how this changed.",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.86
+        }
+      ],
+      "grounding": "partial"
+    }
+  }
+}

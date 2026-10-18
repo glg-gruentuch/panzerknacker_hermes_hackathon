@@ -1,0 +1,327 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "basalt",
+    "label": "Basalt",
+    "headword": "BASALTES",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Basalt",
+    "area": "geology",
+    "teaser": "Concerning the origin of this stone naturalists are much divided."
+  },
+  "aliases": [
+    "basalt",
+    "basaltes",
+    "giant's causeway"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0006",
+    "headword": "BASALTES",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 2",
+    "meta": "Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 2 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "BAS                    [ 112 ]                    BAS\n\nthe ſea-coaſt, where the town is ſituated. Long. 9. 30. E.\n  BASALTES, in natural hiſtory, a heavy and hard ſtone,\nof a black or dark grey colour, which is found in co-\nlumns of three, four, five, ſix or ſeven ſides, ſtanding\ncloſe together. The moſt remarkable collection of theſe\ncolumns is the Giant's Cauſeway, in the county of An-\ntrim in Ireland, where many thouſands of them ſtand\nſide by ſide, as if ſet there by art.\n  Concerning the origin of this ſtone naturaliſts are\nmuch divided. Some hold it to be a production of fire,\nand the columns to have been formed by the cooling\nof a melted maſs; others, with greater probability, a\ncryſtallization from water.\n  It ſtrikes fire with ſteel, does not effervesce with\nacids, and melts in a ſtrong fire into a black glaſs. It\nis uſed by the jewellers as a touchſtone for trying gold\nand ſilver, and for mortars, and the ancients made ſta-\ntues of it.\n  BASANITES. See Basaltes.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "BASALTES",
+        "text": "BASALTES, in natural history, a heavy and hard stone, of a black or dark grey colour, which is found in columns of three, four, five, six or seven sides, standing close together."
+      },
+      {
+        "id": "B2",
+        "section": "BASALTES",
+        "text": "The most remarkable collection of these columns is the Giant's Causeway, in the county of Antrim in Ireland, where many thousands of them stand side by side, as if set there by art."
+      },
+      {
+        "id": "B3",
+        "section": "BASALTES",
+        "text": "Concerning the origin of this stone naturalists are much divided. Some hold it to be a production of fire, and the columns to have been formed by the cooling of a melted mass; others, with greater probability, a crystallization from water."
+      },
+      {
+        "id": "B4",
+        "section": "BASALTES",
+        "text": "It strikes fire with steel, does not effervesce with acids, and melts in a strong fire into a black glass."
+      },
+      {
+        "id": "B5",
+        "section": "BASALTES",
+        "text": "It is used by the jewellers as a touchstone for trying gold and silver, and for mortars, and the ancients made statues of it."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-basalt",
+    "title": "Basalt",
+    "url": "https://en.wikipedia.org/wiki/Basalt",
+    "dateModified": "2026-09-12",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Basalt is a fine-grained volcanic rock formed from the rapid cooling of lava rich in magnesium and iron. It is the most common volcanic rock on Earth."
+      },
+      {
+        "id": "W2",
+        "section": "Columnar jointing",
+        "text": "When a thick lava flow cools, it contracts and cracks into polygonal columns, usually with five or six sides. The Giant's Causeway in Northern Ireland is a well-known example."
+      },
+      {
+        "id": "W3",
+        "section": "History",
+        "text": "In the late 18th century, Neptunists argued that basalt had crystallized from an ancient ocean, while Plutonists held that it formed from molten rock. Field studies of extinct volcanoes settled the question in favour of a volcanic origin."
+      },
+      {
+        "id": "W4",
+        "section": "Properties",
+        "text": "Basalt is dark grey to black. It melts at roughly 1,000 to 1,250 °C, and basalt that cools very fast forms a black volcanic glass."
+      },
+      {
+        "id": "W5",
+        "section": "Distribution",
+        "text": "Basalt makes up most of the ocean floor, and large basalt plains cover parts of the Moon and Mars."
+      },
+      {
+        "id": "W6",
+        "section": "Uses",
+        "text": "Crushed basalt is used as aggregate in roads, railway ballast and concrete, and polished basalt as building stone."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.83,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same headword once the Latin ending is dropped: BASALTES and Basalt.",
+      "Both describe the columns and name the Giant's Causeway.",
+      "Columnar jointing scores close behind, but covers only the columns, not the rock."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Columnar jointing",
+      "url": "https://en.wikipedia.org/wiki/Columnar_jointing",
+      "embedScore": 0.8,
+      "rerankScore": 0.7
+    },
+    {
+      "title": "Giant's Causeway",
+      "url": "https://en.wikipedia.org/wiki/Giant's_Causeway",
+      "embedScore": 0.76,
+      "rerankScore": 0.6
+    },
+    {
+      "title": "Neptunism",
+      "url": "https://en.wikipedia.org/wiki/Neptunism",
+      "embedScore": 0.7,
+      "rerankScore": 0.52
+    }
+  ],
+  "alignments": [
+    {
+      "id": "b1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Columns",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "found in columns of three, four, five, six or seven sides"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "cracks into polygonal columns, usually with five or six sides"
+      },
+      "note": "The same columns, described the same way. Today they have a name: columnar jointing."
+    },
+    {
+      "id": "b2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Giant's Causeway",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the Giant's Causeway, in the county of Antrim in Ireland"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "The Giant's Causeway in Northern Ireland"
+      },
+      "note": "The example both texts reach for first."
+    },
+    {
+      "id": "b3",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Where it comes from",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "others, with greater probability, a crystallization from water"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "settled the question in favour of a volcanic origin"
+      },
+      "note": "The entry backs the water theory. Fieldwork on old volcanoes proved it wrong."
+    },
+    {
+      "id": "b4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "A product of fire",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "Some hold it to be a production of fire"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "formed from the rapid cooling of lava"
+      },
+      "note": "The minority view on the 1797 page is the modern account."
+    },
+    {
+      "id": "b5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Black glass",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "melts in a strong fire into a black glass"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "forms a black volcanic glass"
+      },
+      "note": "The same observation, from the furnace then and the volcano now."
+    },
+    {
+      "id": "b6",
+      "kind": "reworded",
+      "verdict": "partly",
+      "label": "What it is used for",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "used by the jewellers as a touchstone for trying gold and silver"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Crushed basalt is used as aggregate in roads"
+      },
+      "note": "The uses followed the trades: the jeweller’s touchstone gave way to road building."
+    },
+    {
+      "id": "b7",
+      "kind": "added",
+      "verdict": null,
+      "label": "The ocean floor and other planets",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Basalt makes up most of the ocean floor"
+      },
+      "note": "Unknown in 1797: most of the sea floor, and parts of the Moon and Mars, are basalt."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Form and columns",
+      "britannica": 0.3,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Where it is found",
+      "britannica": 0.2,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Origin",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Properties",
+      "britannica": 0.1,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Uses",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Ocean floor and planets",
+      "britannica": 0,
+      "wikipedia": 0.25
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1797 entry think basalt was made from?",
+    "Which descriptions of basalt still hold today?"
+  ],
+  "answers": {
+    "What did the 1797 entry think basalt was made from?": {
+      "answer": "It reports a split. Some held basalt to be \"a production of fire\", others, \"with greater probability, a crystallization from water\" [B3]. Wikipedia says basalt forms from cooling lava [W1], and that field studies of extinct volcanoes settled the 18th-century dispute in favour of a volcanic origin [W3].\n\nSo the entry backed the losing side, but it recorded the view that turned out right.",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.89
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.85
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Which descriptions of basalt still hold today?": {
+      "answer": "The physical descriptions hold. The columns of several sides [B1] are today's columnar jointing, usually with five or six sides [W2]. The Giant's Causeway is the example in both texts [B2] [W2]. The black glass it melts into [B4] matches Wikipedia's volcanic glass [W4].",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.89
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.85
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.81
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.77
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

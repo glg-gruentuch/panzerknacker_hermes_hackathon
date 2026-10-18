@@ -1,0 +1,376 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "electricity",
+    "label": "Electricity",
+    "headword": "ELECTRICITY",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Electricity",
+    "area": "natural-sciences",
+    "teaser": "Some philosophers suppose that the nervous fluid itself may be of the same nature with the electric fluid."
+  },
+  "aliases": [
+    "electricity",
+    "electric",
+    "lightning"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0008",
+    "headword": "ELECTRICITY",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 6",
+    "meta": "Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 6 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "ELE                    [ 418 ]                    ELE\n\n  ELECTRICITY, the operations of a very ſubtile fluid,\nwhich is excited by the friction of glaſs, amber, ſeal-\ning-wax and other bodies, and cauſes them to attract\nand repel light ſubſtances.\n  Bodies are divided into electrics, which may be ex-\ncited by friction, as glaſs and reſin, and conductors, as\nmetals and water, which tranſmit the fluid freely.\n  Dr Franklin has ſhown that lightning is the ſame with\nelectricity, by drawing it from the clouds with a kite,\nand has taught the method of ſecuring buildings by\npointed rods of iron.\n  Electricity has been applied with ſucceſs in medicine,\nin palſies, rheumatiſms and other diſorders. Some phi-\nloſophers ſuppoſe that the nervous fluid itſelf may be\nof the ſame nature with the electric fluid.\n  ELECTRUM, amber. See Amber.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "ELECTRICITY",
+        "text": "ELECTRICITY, the operations of a very subtile fluid, which is excited by the friction of glass, amber, sealing-wax and other bodies, and causes them to attract and repel light substances."
+      },
+      {
+        "id": "B2",
+        "section": "ELECTRICITY",
+        "text": "Bodies are divided into electrics, which may be excited by friction, as glass and resin, and conductors, as metals and water, which transmit the fluid freely."
+      },
+      {
+        "id": "B3",
+        "section": "ELECTRICITY",
+        "text": "Dr Franklin has shown that lightning is the same with electricity, by drawing it from the clouds with a kite, and has taught the method of securing buildings by pointed rods of iron."
+      },
+      {
+        "id": "B4",
+        "section": "ELECTRICITY",
+        "text": "Electricity has been applied with success in medicine, in palsies, rheumatisms and other disorders."
+      },
+      {
+        "id": "B5",
+        "section": "ELECTRICITY",
+        "text": "Some philosophers suppose that the nervous fluid itself may be of the same nature with the electric fluid."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-electricity",
+    "title": "Electricity",
+    "url": "https://en.wikipedia.org/wiki/Electricity",
+    "dateModified": "2026-09-27",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Electricity is the set of physical phenomena associated with the presence and motion of electric charge. In metals, the charge is carried by electrons."
+      },
+      {
+        "id": "W2",
+        "section": "Static electricity",
+        "text": "Rubbing two materials together can transfer electrons from one to the other, leaving both charged. Charged objects attract or repel each other."
+      },
+      {
+        "id": "W3",
+        "section": "Conductors and insulators",
+        "text": "Materials are classed as conductors, such as metals, which let charge flow freely, or insulators, such as glass and rubber, which do not."
+      },
+      {
+        "id": "W4",
+        "section": "Lightning",
+        "text": "In 1752 Benjamin Franklin's kite experiment showed that lightning is electrical. Lightning rods, which he invented, still protect buildings."
+      },
+      {
+        "id": "W5",
+        "section": "In the body",
+        "text": "Nerve cells send signals as electrical impulses called action potentials."
+      },
+      {
+        "id": "W6",
+        "section": "Medicine",
+        "text": "Electricity is used in medicine in devices such as defibrillators and pacemakers. Early electrotherapy claims for many disorders were mostly unfounded."
+      },
+      {
+        "id": "W7",
+        "section": "Current",
+        "text": "An electric current is a flow of charge. It drives motors, lighting and electronics."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.88,
+    "rerankScore": 0.94,
+    "reasons": [
+      "Same headword: ELECTRICITY and Electricity.",
+      "Both cover friction, conductors and Franklin's lightning experiment.",
+      "Static electricity scores close behind but leaves out current, nerves and medicine."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Static electricity",
+      "url": "https://en.wikipedia.org/wiki/Static_electricity",
+      "embedScore": 0.83,
+      "rerankScore": 0.74
+    },
+    {
+      "title": "Electrostatics",
+      "url": "https://en.wikipedia.org/wiki/Electrostatics",
+      "embedScore": 0.8,
+      "rerankScore": 0.66
+    },
+    {
+      "title": "Lightning rod",
+      "url": "https://en.wikipedia.org/wiki/Lightning_rod",
+      "embedScore": 0.72,
+      "rerankScore": 0.55
+    }
+  ],
+  "alignments": [
+    {
+      "id": "x1",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "What electricity is",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the operations of a very subtile fluid"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "the presence and motion of electric charge"
+      },
+      "note": "Something does flow, as the fluid theory said, but it is charge carried by particles, not a fluid of its own."
+    },
+    {
+      "id": "x2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Friction",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "excited by the friction of glass, amber, sealing-wax and other bodies"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Rubbing two materials together can transfer electrons"
+      },
+      "note": "Rubbing still charges things. Today we know it moves electrons."
+    },
+    {
+      "id": "x3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Attract and repel",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "causes them to attract and repel light substances"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Charged objects attract or repel each other"
+      },
+      "note": "The same observation in both texts."
+    },
+    {
+      "id": "x4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Electrics and conductors",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "electrics, which may be excited by friction, as glass and resin, and conductors, as metals and water"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "conductors, such as metals, which let charge flow freely, or insulators, such as glass"
+      },
+      "note": "The same division under a new name: the \"electrics\" are today’s insulators."
+    },
+    {
+      "id": "x5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Franklin and lightning",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "Dr Franklin has shown that lightning is the same with electricity"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Benjamin Franklin's kite experiment showed that lightning is electrical"
+      },
+      "note": "Recent science in 1797, still standing."
+    },
+    {
+      "id": "x6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Electricity in medicine",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "applied with success in medicine, in palsies, rheumatisms and other disorders"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Early electrotherapy claims for many disorders were mostly unfounded"
+      },
+      "note": "Electricity did find a place in medicine, but not for the palsies and rheumatisms named here."
+    },
+    {
+      "id": "x7",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Nerves are electrical",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the nervous fluid itself may be of the same nature with the electric fluid"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Nerve cells send signals as electrical impulses"
+      },
+      "note": "A guess in 1797, confirmed since: nerve signals are electrical."
+    },
+    {
+      "id": "x8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Current and its uses",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "An electric current is a flow of charge"
+      },
+      "note": "The 1797 entry knows sparks and shocks, not steady current or electric power."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What it is",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Friction and charge",
+      "britannica": 0.25,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Conductors",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Lightning",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Medicine",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Nerves",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Current and power",
+      "britannica": 0,
+      "wikipedia": 0.3
+    }
+  ],
+  "suggestedQuestions": [
+    "Which of the 1797 claims about electricity turned out right?",
+    "What did the 1797 entry get wrong about electricity?"
+  ],
+  "answers": {
+    "Which of the 1797 claims about electricity turned out right?": {
+      "answer": "Most of them. Friction excites it [B1], as rubbing transfers electrons [W2]. The split into electrics and conductors [B2] survives as insulators and conductors [W3]. Franklin’s proof that lightning is electrical [B3] still stands [W4].\n\nEven the guess that the nervous fluid is electrical [B5] is now established: nerve cells signal with electrical impulses [W5].",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.89
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.85
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.81
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.77
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.73
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.69
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.65
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What did the 1797 entry get wrong about electricity?": {
+      "answer": "Nothing outright, but two claims are only partly right. It calls electricity \"a very subtile fluid\" [B1]; today it is charge carried by electrons [W1]. And it says electricity was applied \"with success\" for palsies and rheumatisms [B4], while Wikipedia calls most early electrotherapy claims unfounded [W6].",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.89
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.85
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.81
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "smallpox",
+    "label": "Smallpox",
+    "headword": "SMALL-POX",
+    "edition": "Second edition",
+    "year": 1778,
+    "match": "strong",
+    "wikipediaTitle": "Smallpox",
+    "area": "infectious-disease",
+    "teaser": "It was first described by the Arabian physicians, and is now so universal, that scarce one in a thousand escapes it at some period of life."
+  },
+  "aliases": [
+    "smallpox",
+    "small-pox",
+    "small pox",
+    "variola",
+    "inoculation"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0002",
+    "headword": "SMALL-POX",
+    "edition": "Second edition",
+    "year": 1778,
+    "volume": "Volume 9",
+    "meta": "Encyclopaedia Britannica; or, A dictionary of arts, sciences, &c. - Second edition, Volume 9 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "SMA                    [ 7012 ]                    SMA\n\nSMALT, a kind of glaſs of a deep blue colour, made\nof zaffre, potaſh, and calcined flints.\n  SMALL-POX, a contagious diſeaſe, attended with an\neruption of puſtules upon the ſkin, which, coming to\nmaturity, dry up and fall off in ſcabs. It was firſt de-\nſcribed by the Arabian phyſicians, and is now ſo uni-\nverſal, that ſcarce one in a thouſand eſcapes it at ſome\nperiod of life.\n  Phyſicians divide it into the diſtinct and the con-\nfluent kind. The confluent is by far the moſt dange-\nrous, and carries off a great part of thoſe whom it ſeizes.\n  The cauſe is ſuppoſed to be a peculiar ferment, re-\nceived into the blood, which, aſſimilating the humours\nto its own nature, is at length thrown out upon the ſkin.\n  The cure conſiſts chiefly in a cool regimen, frefh air,\nand gentle pnrging; the hot method formerly in uſe, of\nheaping clothes upon the patient, being now juſtly ex-\nploded. A perſon who has once had the diſeaſe is ſel-\ndom or never ſeized with it a ſecond time.\n  INOCULATION, or the ingrafting of the ſmall-pox, was\nbrought into England from Turkey by Lady Mary\nWortley Montagu about the year 1721; and experi-\nence has ſhown that of thoſe inoculated, ſcarce one in\nſeveral hundred dies.\n  SMARAGDUS, the emerald. See Emerald.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "SMALL-POX",
+        "text": "SMALL-POX, a contagious disease, attended with an eruption of pustules upon the skin, which, coming to maturity, dry up and fall off in scabs."
+      },
+      {
+        "id": "B2",
+        "section": "SMALL-POX",
+        "text": "It was first described by the Arabian physicians, and is now so universal, that scarce one in a thousand escapes it at some period of life."
+      },
+      {
+        "id": "B3",
+        "section": "SMALL-POX",
+        "text": "Physicians divide it into the distinct and the confluent kind. The confluent is by far the most dangerous, and carries off a great part of those whom it seizes."
+      },
+      {
+        "id": "B4",
+        "section": "SMALL-POX",
+        "text": "The cause is supposed to be a peculiar ferment, received into the blood, which, assimilating the humours to its own nature, is at length thrown out upon the skin."
+      },
+      {
+        "id": "B5",
+        "section": "SMALL-POX",
+        "text": "The cure consists chiefly in a cool regimen, fresh air, and gentle purging; the hot method formerly in use, of heaping clothes upon the patient, being now justly exploded."
+      },
+      {
+        "id": "B6",
+        "section": "SMALL-POX",
+        "text": "A person who has once had the disease is seldom or never seized with it a second time."
+      },
+      {
+        "id": "B7",
+        "section": "INOCULATION",
+        "text": "Inoculation, or the ingrafting of the small-pox, was brought into England from Turkey by Lady Mary Wortley Montagu about the year 1721; and experience has shown that of those inoculated, scarce one in several hundred dies."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-smallpox",
+    "title": "Smallpox",
+    "url": "https://en.wikipedia.org/wiki/Smallpox",
+    "dateModified": "2026-09-21",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Smallpox was an infectious disease caused by variola virus. The last natural case was diagnosed in 1977, and the World Health Organization certified the disease eradicated in 1980."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "The illness began with fever and vomiting, followed by a rash that became fluid-filled blisters and then scabbed over, often leaving deep scars."
+      },
+      {
+        "id": "W3",
+        "section": "Classification",
+        "text": "Variola major killed about 30% of those infected. Its flat and haemorrhagic forms were usually fatal."
+      },
+      {
+        "id": "W4",
+        "section": "Transmission",
+        "text": "The virus spread between people in respiratory droplets and through contact with contaminated bedding and clothing."
+      },
+      {
+        "id": "W5",
+        "section": "Variolation",
+        "text": "Variolation, deliberately infecting a person with material from a smallpox sore, was practised in Asia and Africa and was introduced to Britain in 1721 by Lady Mary Wortley Montagu. It killed far fewer people than natural smallpox, but some still died."
+      },
+      {
+        "id": "W6",
+        "section": "Vaccination",
+        "text": "In 1796 Edward Jenner showed that inoculation with cowpox protected against smallpox. It was the first vaccine; the word comes from the Latin vacca, cow."
+      },
+      {
+        "id": "W7",
+        "section": "Treatment",
+        "text": "No treatment was proven to cure smallpox; care was supportive. Survivors had lasting immunity."
+      },
+      {
+        "id": "W8",
+        "section": "Eradication",
+        "text": "A worldwide vaccination campaign led by the WHO ended natural transmission. Smallpox is one of only two infectious diseases to have been eradicated, the other being rinderpest."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.84,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same headword once the hyphen is dropped: SMALL-POX and Smallpox.",
+      "Rare terms appear in both: scabs, inoculation, Montagu, 1721.",
+      "Variolation also scores well, but only for the INOCULATION sub-entry, so it is listed as a second candidate."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Variolation",
+      "url": "https://en.wikipedia.org/wiki/Variolation",
+      "embedScore": 0.81,
+      "rerankScore": 0.72
+    },
+    {
+      "title": "Smallpox vaccine",
+      "url": "https://en.wikipedia.org/wiki/Smallpox_vaccine",
+      "embedScore": 0.73,
+      "rerankScore": 0.58
+    },
+    {
+      "title": "Edward Jenner",
+      "url": "https://en.wikipedia.org/wiki/Edward_Jenner",
+      "embedScore": 0.66,
+      "rerankScore": 0.41
+    }
+  ],
+  "alignments": [
+    {
+      "id": "s1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "The rash",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "an eruption of pustules upon the skin, which, coming to maturity, dry up and fall off in scabs"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "a rash that became fluid-filled blisters and then scabbed over"
+      },
+      "note": "The visible course of the disease is described the same way in both."
+    },
+    {
+      "id": "s2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Inoculation",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "Inoculation, or the ingrafting of the small-pox"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Variolation"
+      },
+      "note": "Same practice, new name. \"Inoculation\" now means any vaccine, so the smallpox-on-smallpox method is called variolation."
+    },
+    {
+      "id": "s3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Lady Mary Wortley Montagu",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "brought into England from Turkey by Lady Mary Wortley Montagu about the year 1721"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "introduced to Britain in 1721 by Lady Mary Wortley Montagu"
+      },
+      "note": "Same person, same year."
+    },
+    {
+      "id": "s4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Two kinds of smallpox",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "The confluent is by far the most dangerous"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Its flat and haemorrhagic forms were usually fatal"
+      },
+      "note": "Both sort cases by severity. The categories have new names and now come with a death rate."
+    },
+    {
+      "id": "s5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The cause",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "a peculiar ferment, received into the blood"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "caused by variola virus"
+      },
+      "note": "A \"ferment\" that turns the humours is replaced by a virus. Germ theory arrived about a century after this edition."
+    },
+    {
+      "id": "s6",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Immunity",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "seldom or never seized with it a second time"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Survivors had lasting immunity"
+      },
+      "note": "The same observation. \"Immunity\" names the mechanism behind it."
+    },
+    {
+      "id": "s7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The cure",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "The cure consists chiefly in a cool regimen, fresh air, and gentle purging"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "No treatment was proven to cure smallpox"
+      },
+      "note": "In 1778 a cooling regimen was thought to cure it. Nothing ever did; prevention is what worked."
+    },
+    {
+      "id": "s8",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "How common it is",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "scarce one in a thousand escapes it"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "certified the disease eradicated in 1980"
+      },
+      "note": "True in 1778, no longer: the disease was eradicated in 1980. The world changed more than the knowledge."
+    },
+    {
+      "id": "s9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Vaccination",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "In 1796 Edward Jenner showed that inoculation with cowpox protected against smallpox"
+      },
+      "note": "Jenner's work came 18 years after this edition."
+    },
+    {
+      "id": "s10",
+      "kind": "added",
+      "verdict": null,
+      "label": "How it spreads",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "spread between people in respiratory droplets"
+      },
+      "note": "The 1778 entry calls it contagious but never says how it passes between people."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Symptoms",
+      "britannica": 0.2,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Kinds and severity",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.15,
+      "wikipedia": 0.08
+    },
+    {
+      "topic": "Immunity",
+      "britannica": 0.08,
+      "wikipedia": 0.06
+    },
+    {
+      "topic": "Inoculation",
+      "britannica": 0.2,
+      "wikipedia": 0.14
+    },
+    {
+      "topic": "How common it is",
+      "britannica": 0.07,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Vaccination",
+      "britannica": 0,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Transmission",
+      "britannica": 0,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Eradication",
+      "britannica": 0,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "How did people try to prevent smallpox in 1778, and what replaced it?",
+    "What did the 1778 entry believe caused smallpox?",
+    "Is 'inoculation' in 1778 the same thing as a vaccine today?"
+  ],
+  "answers": {
+    "How did people try to prevent smallpox in 1778, and what replaced it?": {
+      "answer": "In 1778 the method was inoculation, also called ingrafting: giving a healthy person matter from a smallpox case so they caught a milder form [B7]. Wikipedia calls the same practice variolation and, like the 1778 entry, credits Lady Mary Wortley Montagu with bringing it to Britain in 1721 [W5].\n\nIt was replaced by vaccination. In 1796, after this edition, Edward Jenner showed that cowpox gave protection [W6], and a worldwide vaccination campaign later ended the disease [W8].",
+      "citations": [
+        {
+          "id": "B7",
+          "source": "britannica",
+          "passageId": "B7",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "W8",
+          "source": "wikipedia",
+          "passageId": "W8",
+          "rerankScore": 0.82
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What did the 1778 entry believe caused smallpox?": {
+      "answer": "A \"peculiar ferment\" received into the blood, which turned the humours to its own nature and was then pushed out through the skin [B4]. Wikipedia names a virus, variola, as the cause [W1].\n\nThis is a change in knowledge, not in wording: the ferment and the humours have no modern counterpart.",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Is 'inoculation' in 1778 the same thing as a vaccine today?": {
+      "answer": "No. In 1778 \"inoculation\" meant ingrafting real smallpox matter [B7], which still killed some patients [W5]. The first vaccine used cowpox instead [W6].\n\nThe word stayed while what it describes changed, so a reader who sees \"inoculation\" in both texts may assume a continuity that is not there.",
+      "citations": [
+        {
+          "id": "B7",
+          "source": "britannica",
+          "passageId": "B7",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.86
+        }
+      ],
+      "grounding": "supported"
+    },
+    "How was smallpox treated in 1778?": {
+      "answer": "The 1778 entry does not describe a treatment for smallpox. Wikipedia says no treatment was ever proven to cure it and care was supportive [W7].",
+      "citations": [
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.94
+        }
+      ],
+      "grounding": "partial"
+    }
+  }
+}

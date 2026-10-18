@@ -1,33 +1,60 @@
 import type { AgentCase, ChatRequest, ChatResponse, Comparison, Meta, TopicSummary, TraceStep } from '../types'
-import { DEMO_TOPICS, type DemoTopic } from './topics'
+import { validateArticles, type ArticleFile } from './article'
 import { keywordRank, stats, vocabulary } from './text'
+
+// Every web/articles/*.json file, bundled at build time as text. `npm run build`
+// stops on a broken file; if one slips through anyway, the page leaves it out
+// and logs why, so one bad file never takes the site down.
+const files = import.meta.glob<string>('/articles/*.json', { eager: true, query: '?raw', import: 'default' })
+
+function load(): ArticleFile[] {
+  const entries: [string, ArticleFile][] = []
+  const broken = new Map<string, string[]>()
+  for (const [path, text] of Object.entries(files)) {
+    const slug = path.slice(path.lastIndexOf('/') + 1, -'.json'.length)
+    try {
+      entries.push([slug, JSON.parse(text) as ArticleFile])
+    } catch (err) {
+      broken.set(slug, [`not valid JSON (${(err as Error).message})`])
+    }
+  }
+  const problems = new Map([...broken, ...validateArticles(entries)])
+  for (const [slug, errors] of problems) console.warn(`Left out articles/${slug}.json:\n  ${errors.join('\n  ')}`)
+  return entries.filter(([slug]) => !problems.has(slug)).map(([, data]) => data)
+}
+
+const ARTICLES = load()
 
 const wait = (ms: number) => new Promise((r) => setTimeout(r, ms))
 
 const normalise = (s: string) => s.toLowerCase().replace(/[^a-z]+/g, ' ').trim()
 
-function find(query: string): DemoTopic | undefined {
+/** The label and aliases a search can match, normalised. */
+const names = (t: ArticleFile) => [t.summary.label, ...(t.aliases ?? [])].map(normalise).filter(Boolean)
+
+function find(query: string): ArticleFile | undefined {
   const q = normalise(query)
   if (!q) return undefined
   return (
-    DEMO_TOPICS.find((t) => t.summary.slug === q.replace(/ /g, '-') || t.aliases.some((a) => normalise(a) === q)) ??
-    DEMO_TOPICS.find((t) => t.aliases.some((a) => normalise(a).startsWith(q) || q.startsWith(normalise(a))))
+    ARTICLES.find((t) => t.summary.slug === q.replace(/ /g, '-') || names(t).some((a) => a === q)) ??
+    ARTICLES.find((t) => names(t).some((a) => a.startsWith(q) || q.startsWith(a)))
   )
 }
 
 /** The summary as the API serves it, with verdict counts taken from the claims. */
-function summary(t: DemoTopic): TopicSummary {
+function summary(t: ArticleFile): TopicSummary {
   const judged = t.alignments.filter((a) => a.verdict !== null)
   const count = (v: string) => judged.filter((a) => a.verdict === v).length
   return {
     ...t.summary,
+    demo: t.demo === true,
     verdicts: judged.length ? { correct: count('correct'), partly: count('partly'), wrong: count('wrong') } : null,
   }
 }
 
 export async function topics(): Promise<TopicSummary[]> {
   await wait(150)
-  return DEMO_TOPICS.map(summary)
+  return ARTICLES.map(summary)
 }
 
 export async function compare(query: string): Promise<Comparison | null> {
@@ -66,7 +93,7 @@ export async function ask(req: ChatRequest): Promise<ChatResponse> {
     return { answer: 'There is no indexed page for this topic, so the agent has nothing to compare.', citations: [], grounding: 'unsupported', trace: DEMO_TRACE }
   }
 
-  const canned = Object.entries(t.answers).find(([q]) => normalise(q) === normalise(req.question))
+  const canned = Object.entries(t.answers ?? {}).find(([q]) => normalise(q) === normalise(req.question))
   if (canned) return { ...canned[1], trace: DEMO_TRACE }
 
   // Unscripted question: quote the best keyword match from each side.

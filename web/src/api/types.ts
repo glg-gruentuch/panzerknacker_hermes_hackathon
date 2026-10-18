@@ -20,6 +20,8 @@ export interface TopicSummary {
   area: AreaSlug | null
   /** One short, striking sentence from the Britannica entry, quoted exactly. */
   teaser: string | null
+  /** True for invented demo text. The header shows "Demo data" while any topic has it. */
+  demo?: boolean
   /** How many Britannica claims hold up today. Null when no claims were compared. */
   verdicts: { correct: number; partly: number; wrong: number } | null
 }

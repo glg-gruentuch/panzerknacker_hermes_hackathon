@@ -1,0 +1,437 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "consumption",
+    "label": "Consumption",
+    "headword": "CONSUMPTION",
+    "edition": "Seventh edition",
+    "year": 1842,
+    "match": "strong",
+    "wikipediaTitle": "Tuberculosis",
+    "area": "infectious-disease",
+    "teaser": "Whether it be contagious has been much disputed."
+  },
+  "aliases": [
+    "consumption",
+    "phthisis",
+    "tuberculosis",
+    "tb",
+    "phthisis pulmonalis"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0003",
+    "headword": "CONSUMPTION",
+    "edition": "Seventh edition",
+    "year": 1842,
+    "volume": "Volume 7",
+    "meta": "Encyclopaedia Britannica - Seventh edition, Volume 7 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "CONSUMPTION.                    621\n\nſtated, that the produce of the duty on spirits con-\nsumed in Scotland\n  CONSUMPTION, or PHTHISIS PULMONALIS, a wast-\ning of the body, attended with hectic fever, cough, and\nan expectoration of purulent matter from the lungs. It\nis the most fatal of all the diseases of tliis climate; it\nhas been computed that nearly one-fourth of the deaths\nin Britain arise from it.\n  On dissection the lungs are found studded with tu-\nbercles, small hard bodies which afterwards soften and\nform ulcers, or vomicæ. The disease is very frequently\nhereditary; and persons of a fair complexion, a long\nneck, and a narrow chest are thought especially dis-\nposed to it.\n  Whether it be contagious has been much disputed.\nIn Italy and Spain the clothes of consumptive persons\nare burned; but in this country the opinion is gene-\nrally rejected. The stethoscope of Laennec enables the\nphysician to detect the cavities of the lungs by the\nsounds of the breath and of the voice.\n  Change of climate, a sea voyage, exercise on horse-\nback, and a diet of milk are recommended; but when\nthe disease is confirmed it is seldom cured.\n  See MEDICINE, Index.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "CONSUMPTION",
+        "text": "CONSUMPTION, or PHTHISIS PULMONALIS, a wasting of the body, attended with hectic fever, cough, and an expectoration of purulent matter from the lungs."
+      },
+      {
+        "id": "B2",
+        "section": "CONSUMPTION",
+        "text": "It is the most fatal of all the diseases of this climate; it has been computed that nearly one-fourth of the deaths in Britain arise from it."
+      },
+      {
+        "id": "B3",
+        "section": "CONSUMPTION",
+        "text": "On dissection the lungs are found studded with tubercles, small hard bodies which afterwards soften and form ulcers, or vomicae."
+      },
+      {
+        "id": "B4",
+        "section": "CONSUMPTION",
+        "text": "The disease is very frequently hereditary; and persons of a fair complexion, a long neck, and a narrow chest are thought especially disposed to it."
+      },
+      {
+        "id": "B5",
+        "section": "CONSUMPTION",
+        "text": "Whether it be contagious has been much disputed. In Italy and Spain the clothes of consumptive persons are burned; but in this country the opinion is generally rejected."
+      },
+      {
+        "id": "B6",
+        "section": "CONSUMPTION",
+        "text": "The stethoscope of Laennec enables the physician to detect the cavities of the lungs by the sounds of the breath and of the voice."
+      },
+      {
+        "id": "B7",
+        "section": "CONSUMPTION",
+        "text": "Change of climate, a sea voyage, exercise on horseback, and a diet of milk are recommended; but when the disease is confirmed it is seldom cured."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-tuberculosis",
+    "title": "Tuberculosis",
+    "url": "https://en.wikipedia.org/wiki/Tuberculosis",
+    "dateModified": "2026-10-02",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis bacteria. It mainly affects the lungs. It was historically called consumption because of the weight loss it causes."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "Active TB causes a chronic cough with blood-containing mucus, fever, night sweats and weight loss."
+      },
+      {
+        "id": "W3",
+        "section": "Transmission",
+        "text": "It spreads through the air when people with active TB in their lungs cough, speak or sneeze. Robert Koch identified the bacterium in 1882."
+      },
+      {
+        "id": "W4",
+        "section": "Latent infection",
+        "text": "Most infections cause no symptoms, a state called latent tuberculosis. About one in ten latent infections progresses to active disease."
+      },
+      {
+        "id": "W5",
+        "section": "Risk factors",
+        "text": "Risk factors include HIV, malnutrition, smoking, diabetes and crowded housing. Genes affect susceptibility, but the disease itself is not inherited."
+      },
+      {
+        "id": "W6",
+        "section": "Pathology",
+        "text": "The body walls off the bacteria in granulomas, small nodules called tubercles, which can break down and leave cavities in the lung."
+      },
+      {
+        "id": "W7",
+        "section": "Diagnosis",
+        "text": "Diagnosis relies on chest X-rays, sputum microscopy and culture, and molecular tests."
+      },
+      {
+        "id": "W8",
+        "section": "Treatment",
+        "text": "Treatment is a course of several antibiotics taken for months. Streptomycin, introduced in the 1940s, was the first effective drug. Drug-resistant TB is a growing problem."
+      },
+      {
+        "id": "W9",
+        "section": "History",
+        "text": "Before antibiotics, patients were sent to sanatoria for rest, fresh air and good food."
+      },
+      {
+        "id": "W10",
+        "section": "Epidemiology",
+        "text": "It remains one of the leading infectious causes of death worldwide."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.78,
+    "rerankScore": 0.88,
+    "reasons": [
+      "Different headwords: CONSUMPTION and Tuberculosis. Matched on content, not title.",
+      "The Wikipedia introduction says the disease was historically called consumption.",
+      "Consumption (economics) shares the title but the reranker scores it 0.04."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "History of tuberculosis",
+      "url": "https://en.wikipedia.org/wiki/History_of_tuberculosis",
+      "embedScore": 0.8,
+      "rerankScore": 0.81
+    },
+    {
+      "title": "Cachexia",
+      "url": "https://en.wikipedia.org/wiki/Cachexia",
+      "embedScore": 0.64,
+      "rerankScore": 0.29
+    },
+    {
+      "title": "Consumption (economics)",
+      "url": "https://en.wikipedia.org/wiki/Consumption_(economics)",
+      "embedScore": 0.58,
+      "rerankScore": 0.04
+    }
+  ],
+  "alignments": [
+    {
+      "id": "c1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "The name",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "CONSUMPTION, or PHTHISIS PULMONALIS"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "It was historically called consumption"
+      },
+      "note": "The same disease under its old names. The modern name comes from the tubercles described on this page."
+    },
+    {
+      "id": "c2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Symptoms",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "hectic fever, cough, and an expectoration of purulent matter"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "a chronic cough with blood-containing mucus, fever, night sweats and weight loss"
+      },
+      "note": "The symptoms are described alike."
+    },
+    {
+      "id": "c3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Tubercles",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the lungs are found studded with tubercles"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "small nodules called tubercles"
+      },
+      "note": "Same word, same finding. Wikipedia adds that they are the body walling off bacteria."
+    },
+    {
+      "id": "c4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Is it inherited?",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "The disease is very frequently hereditary"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "the disease itself is not inherited"
+      },
+      "note": "Families shared the disease because they shared air and housing, not because it was inherited."
+    },
+    {
+      "id": "c5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Is it contagious?",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "in this country the opinion is generally rejected"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "It spreads through the air"
+      },
+      "note": "The biggest reversal on the page. Britain rejected contagion in 1842; Koch's bacterium settled it forty years later."
+    },
+    {
+      "id": "c6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Can it be cured?",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "when the disease is confirmed it is seldom cured"
+      },
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "Treatment is a course of several antibiotics taken for months"
+      },
+      "note": "True in 1842, when there was no cure. Curable since the 1940s, though drug resistance is eroding that."
+    },
+    {
+      "id": "c7",
+      "kind": "reworded",
+      "verdict": "partly",
+      "label": "Rest and fresh air",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "Change of climate, a sea voyage, exercise on horseback, and a diet of milk"
+      },
+      "wikipedia": {
+        "passageId": "W9",
+        "quote": "sanatoria for rest, fresh air and good food"
+      },
+      "note": "Rest and food helped, but cured no one. The same regimen later moved into sanatoria."
+    },
+    {
+      "id": "c8",
+      "kind": "revised",
+      "verdict": "correct",
+      "label": "Diagnosis",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "The stethoscope of Laennec"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "chest X-rays, sputum microscopy and culture, and molecular tests"
+      },
+      "note": "Listening to the chest gave way to seeing the lungs and the bacterium."
+    },
+    {
+      "id": "c9",
+      "kind": "retained",
+      "verdict": "partly",
+      "label": "How deadly it is",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "nearly one-fourth of the deaths in Britain"
+      },
+      "wikipedia": {
+        "passageId": "W10",
+        "quote": "one of the leading infectious causes of death worldwide"
+      },
+      "note": "Still a leading killer, but no longer of Britain: the burden moved, the fact did not."
+    },
+    {
+      "id": "c10",
+      "kind": "dropped",
+      "verdict": "wrong",
+      "label": "Who is disposed to it",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "persons of a fair complexion, a long neck, and a narrow chest"
+      },
+      "wikipedia": null,
+      "note": "This body-type profile has no place among modern risk factors."
+    },
+    {
+      "id": "c11",
+      "kind": "added",
+      "verdict": null,
+      "label": "Latent infection",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Most infections cause no symptoms"
+      },
+      "note": "Infection without disease could not be seen before the bacterium was known."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Symptoms",
+      "britannica": 0.18,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "How deadly it is",
+      "britannica": 0.12,
+      "wikipedia": 0.06
+    },
+    {
+      "topic": "Pathology",
+      "britannica": 0.14,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Heredity and body type",
+      "britannica": 0.16,
+      "wikipedia": 0.05
+    },
+    {
+      "topic": "Contagion",
+      "britannica": 0.14,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Diagnosis",
+      "britannica": 0.12,
+      "wikipedia": 0.08
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.14,
+      "wikipedia": 0.16
+    },
+    {
+      "topic": "Cause (bacterium)",
+      "britannica": 0,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Latent infection",
+      "britannica": 0,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Drug resistance",
+      "britannica": 0,
+      "wikipedia": 0.11
+    }
+  ],
+  "suggestedQuestions": [
+    "Did people in 1842 think consumption was contagious?",
+    "Who did the 1842 entry say gets consumption, and is that still true?",
+    "How did treatment change between 1842 and today?"
+  ],
+  "answers": {
+    "Did people in 1842 think consumption was contagious?": {
+      "answer": "Mostly not, in Britain. The entry says contagion \"has been much disputed\": in Italy and Spain the clothes of consumptive people were burned, but in Britain the idea was generally rejected [B5].\n\nWikipedia states that the disease spreads through the air, and that Robert Koch identified the bacterium in 1882 [W3], forty years after this edition.",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Who did the 1842 entry say gets consumption, and is that still true?": {
+      "answer": "It says the disease is very often hereditary, and that people with a fair complexion, a long neck and a narrow chest are especially prone to it [B4].\n\nNeither holds. Wikipedia lists HIV, malnutrition, smoking, diabetes and crowded housing as risk factors, and says genes affect susceptibility but the disease is not inherited [W5]. Families were sharing air, not genes, which is how the 1842 view could form from honest observation.",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    },
+    "How did treatment change between 1842 and today?": {
+      "answer": "In 1842 the advice was a change of climate, a sea voyage, riding and a milk diet, with the warning that confirmed cases were seldom cured [B7]. The same idea of rest and fresh air later moved into sanatoria [W9].\n\nReal treatment arrived with antibiotics: a months-long course of several drugs, starting with streptomycin in the 1940s [W8].",
+      "citations": [
+        {
+          "id": "B7",
+          "source": "britannica",
+          "passageId": "B7",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W9",
+          "source": "wikipedia",
+          "passageId": "W9",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W8",
+          "source": "wikipedia",
+          "passageId": "W8",
+          "rerankScore": 0.86
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

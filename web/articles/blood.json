@@ -1,0 +1,530 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "blood",
+    "label": "Blood",
+    "headword": "BLOOD",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Blood",
+    "area": "anatomy",
+    "teaser": "Physicians at this day relieve a plethora, or too great fulness of blood, by opening a vein."
+  },
+  "aliases": [
+    "blood",
+    "sanguis",
+    "circulation of the blood"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0001",
+    "headword": "BLOOD",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 3",
+    "meta": "Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 3 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "BLO                    [ 302 ]                    BLO\n\nwere it not that the ſeeds are often deſtroyed by the\nbirds. See Botany, Index.\n  BLOOD, in anatomy, a red fluid, which circulates\nthrough the arteries and veins of animals, and is the\nimmediate nouriſhment of every part of the body.\n  When drawn from a vein and ſuffered to reſt, it ſe-\nparates into two parts: a red maſs called the craſſa-\nmentum, or cake, and a thin yellowiſh liquor named the\nſerum. The redneſs is owing to an infinite number of\nminute red globules, firſt diſcovered by the micro-\nſcope of Leeuwenhoeck, which ſwim in the ſerum and\nare thought to be compreſſible.\n  The blood is made from the chyle, which, being pre-\npared from the aliment in the ſtomach and inteſtines,\nis conveyed by the lacteal vefſels into the thoracic\nduct, and thence into the ſubclavian vein. Its motion\nwas firſt demonſtrated by our countryman Dr Harvey,\nwho ſhewed that the heart, by its contraction, drives\nthe blood through the arteries to every part, from\nwhence it returns by the veins.\n  Of the heat of the blood authors are not agreed;\nſome aſcribing it to a fermentation, others to the fric-\ntion of its parts againſt the ſides of the veſſels.\n  The ancients reckoned the blood one of the four\nhumours, and aſcribed to its abundance the ſanguine\ntemperament. Phyſicians at this day relieve a ple-\nthora, or too great fulneſs of blood, by opening a vein.\n  TRANSFUSION of blood from one animal into another\nwas attempted in the laſt century both in England and\nFrance; but the experiments, having ſometimes proved\nfatal, were forbidden by authority.\n  BLOOD-HOUND, a ſpecies of dog, remarkable for the\nacuteneſs of its ſmell. See Canis.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "BLOOD",
+        "text": "BLOOD, in anatomy, a red fluid, which circulates through the arteries and veins of animals, and is the immediate nourishment of every part of the body."
+      },
+      {
+        "id": "B2",
+        "section": "BLOOD",
+        "text": "When drawn from a vein and suffered to rest, it separates into two parts: a red mass called the crassamentum, or cake, and a thin yellowish liquor named the serum."
+      },
+      {
+        "id": "B3",
+        "section": "BLOOD",
+        "text": "The redness is owing to an infinite number of minute red globules, first discovered by the microscope of Leeuwenhoek, which swim in the serum and are thought to be compressible."
+      },
+      {
+        "id": "B4",
+        "section": "BLOOD",
+        "text": "The blood is made from the chyle, which, being prepared from the aliment in the stomach and intestines, is conveyed by the lacteal vessels into the thoracic duct, and thence into the subclavian vein."
+      },
+      {
+        "id": "B5",
+        "section": "BLOOD",
+        "text": "Its motion was first demonstrated by our countryman Dr Harvey, who shewed that the heart, by its contraction, drives the blood through the arteries to every part, from whence it returns by the veins."
+      },
+      {
+        "id": "B6",
+        "section": "BLOOD",
+        "text": "Of the heat of the blood authors are not agreed; some ascribing it to a fermentation, others to the friction of its parts against the sides of the vessels."
+      },
+      {
+        "id": "B7",
+        "section": "BLOOD",
+        "text": "The ancients reckoned the blood one of the four humours, and ascribed to its abundance the sanguine temperament. Physicians at this day relieve a plethora, or too great fulness of blood, by opening a vein."
+      },
+      {
+        "id": "B8",
+        "section": "TRANSFUSION",
+        "text": "The transfusion of blood from one animal into another was attempted in the last century both in England and France; but the experiments, having sometimes proved fatal, were forbidden by authority."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-blood",
+    "title": "Blood",
+    "url": "https://en.wikipedia.org/wiki/Blood",
+    "dateModified": "2026-09-30",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Blood is a body fluid that delivers oxygen and nutrients to the cells and carries metabolic waste away from them. In vertebrates it is made up of blood cells suspended in plasma."
+      },
+      {
+        "id": "W2",
+        "section": "Composition",
+        "text": "Plasma makes up about 55% of blood volume. It is mostly water and carries dissolved proteins, glucose, mineral ions, hormones and carbon dioxide. The rest is red blood cells (erythrocytes), white blood cells (leukocytes) and platelets."
+      },
+      {
+        "id": "W3",
+        "section": "Red blood cells",
+        "text": "Red blood cells contain haemoglobin, an iron-containing protein that binds oxygen in the lungs and releases it in the tissues. Haemoglobin gives blood its red colour."
+      },
+      {
+        "id": "W4",
+        "section": "Production",
+        "text": "Blood cells are produced in the bone marrow, a process called haematopoiesis. Red blood cells circulate for about 120 days before the spleen and liver remove them."
+      },
+      {
+        "id": "W5",
+        "section": "Circulation",
+        "text": "The heart pumps blood around a closed system of arteries, capillaries and veins. The pulmonary circuit carries blood through the lungs, where it picks up oxygen; the systemic circuit carries it to the rest of the body."
+      },
+      {
+        "id": "W6",
+        "section": "Clotting",
+        "text": "When a vessel is injured, platelets and clotting factors form a clot. Strands of fibrin trap red cells into a solid mass, and the clear fluid left behind is called serum."
+      },
+      {
+        "id": "W7",
+        "section": "Body temperature",
+        "text": "Heat is produced mainly by metabolism in the liver and muscles. Blood carries that heat around the body and helps keep its temperature stable."
+      },
+      {
+        "id": "W8",
+        "section": "Transfusion",
+        "text": "Blood transfusion became routine after Karl Landsteiner discovered the ABO blood groups in 1901. Matching the donor's group to the recipient's prevents fatal reactions."
+      },
+      {
+        "id": "W9",
+        "section": "History",
+        "text": "Bloodletting, justified by the theory of the four humours, was common until the late 19th century. Today it is used only for a few conditions, such as haemochromatosis and polycythaemia."
+      },
+      {
+        "id": "W10",
+        "section": "Disorders",
+        "text": "Disorders of the blood include anaemia, haemophilia, leukaemia and sickle cell disease."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.86,
+    "rerankScore": 0.93,
+    "reasons": [
+      "Same headword: BLOOD and Blood.",
+      "Eight of the ten Wikipedia sections have a counterpart passage on the Britannica page.",
+      "The reranker puts it well ahead of the next candidate, Blood plasma (0.61)."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Blood plasma",
+      "url": "https://en.wikipedia.org/wiki/Blood_plasma",
+      "embedScore": 0.79,
+      "rerankScore": 0.61
+    },
+    {
+      "title": "Circulatory system",
+      "url": "https://en.wikipedia.org/wiki/Circulatory_system",
+      "embedScore": 0.74,
+      "rerankScore": 0.55
+    },
+    {
+      "title": "Bloodletting",
+      "url": "https://en.wikipedia.org/wiki/Bloodletting",
+      "embedScore": 0.7,
+      "rerankScore": 0.48
+    }
+  ],
+  "alignments": [
+    {
+      "id": "a1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Blood circulates",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "circulates through the arteries and veins"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "a closed system of arteries, capillaries and veins"
+      },
+      "note": "Both describe the same circuit. Wikipedia also names the capillaries that join arteries to veins."
+    },
+    {
+      "id": "a2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "The heart drives it",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the heart, by its contraction, drives the blood through the arteries"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "The heart pumps blood"
+      },
+      "note": "Harvey's account from 1628 still stands; only the wording is plainer."
+    },
+    {
+      "id": "a3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Red globules",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "minute red globules"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "red blood cells (erythrocytes)"
+      },
+      "note": "The same objects. \"Globules\" was the microscope-era name; they became \"cells\" once cell theory arrived in the 1830s."
+    },
+    {
+      "id": "a4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "The clot",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "a red mass called the crassamentum, or cake"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "form a clot"
+      },
+      "note": "Crassamentum is Latin for \"thickening\". The observation is unchanged; the word has gone."
+    },
+    {
+      "id": "a5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Serum",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "a thin yellowish liquor named the serum"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "the clear fluid left behind is called serum"
+      },
+      "note": "Same word, same meaning, in both texts."
+    },
+    {
+      "id": "a6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Where blood is made",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "The blood is made from the chyle"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Blood cells are produced in the bone marrow"
+      },
+      "note": "In 1797, blood is made from digested food. Today, food supplies the plasma, but the cells come from the bone marrow."
+    },
+    {
+      "id": "a7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Why blood is warm",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "some ascribing it to a fermentation, others to the friction of its parts"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Heat is produced mainly by metabolism in the liver and muscles"
+      },
+      "note": "Neither 1797 theory survived. Heat comes from the tissues; blood only carries it."
+    },
+    {
+      "id": "a8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Bloodletting",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "relieve a plethora, or too great fulness of blood, by opening a vein"
+      },
+      "wikipedia": {
+        "passageId": "W9",
+        "quote": "Today it is used only for a few conditions"
+      },
+      "note": "Routine treatment in 1797. Now kept for a few disorders where the body holds too much iron or too many red cells."
+    },
+    {
+      "id": "a9",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Transfusion",
+      "britannica": {
+        "passageId": "B8",
+        "quote": "having sometimes proved fatal, were forbidden by authority"
+      },
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "Karl Landsteiner discovered the ABO blood groups in 1901"
+      },
+      "note": "Right that it was dangerous, wrong about why: the deaths came from mismatched blood groups."
+    },
+    {
+      "id": "a10",
+      "kind": "dropped",
+      "verdict": "wrong",
+      "label": "Blood and temperament",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "ascribed to its abundance the sanguine temperament"
+      },
+      "wikipedia": null,
+      "note": "The idea that blood shapes character has left medicine entirely."
+    },
+    {
+      "id": "a11",
+      "kind": "added",
+      "verdict": null,
+      "label": "Carrying oxygen",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "binds oxygen in the lungs and releases it in the tissues"
+      },
+      "note": "The 1797 entry never says what blood carries. Oxygen transport by haemoglobin is entirely new."
+    },
+    {
+      "id": "a12",
+      "kind": "added",
+      "verdict": null,
+      "label": "Blood disorders",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W10",
+        "quote": "anaemia, haemophilia, leukaemia and sickle cell disease"
+      },
+      "note": "None of these is named on the 1797 page."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Composition",
+      "britannica": 0.22,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Clotting",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Circulation",
+      "britannica": 0.18,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Where blood is made",
+      "britannica": 0.14,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Body heat",
+      "britannica": 0.1,
+      "wikipedia": 0.06
+    },
+    {
+      "topic": "Humours and temperament",
+      "britannica": 0.1,
+      "wikipedia": 0.04
+    },
+    {
+      "topic": "Bloodletting",
+      "britannica": 0.08,
+      "wikipedia": 0.06
+    },
+    {
+      "topic": "Transfusion",
+      "britannica": 0.08,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Oxygen transport",
+      "britannica": 0,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Disorders",
+      "britannica": 0,
+      "wikipedia": 0.08
+    }
+  ],
+  "suggestedQuestions": [
+    "What did people in 1797 get wrong about blood?",
+    "Which facts about blood survived from 1797 to today?",
+    "Is 'red globules' becoming 'red blood cells' new knowledge or just new words?"
+  ],
+  "answers": {
+    "What did people in 1797 get wrong about blood?": {
+      "answer": "Three claims in the 1797 entry no longer hold.\n\n- Blood was thought to be made from chyle, the milky fluid of digestion [B4]. The cells are now known to be made in the bone marrow [W4].\n- Its warmth was put down to fermentation or friction [B6]. Heat actually comes from metabolism in the liver and muscles; blood only carries it [W7].\n- Bleeding a patient was routine treatment for \"too great fulness of blood\" [B7]. It is now kept for a few conditions [W9].\n\nThe entry is also silent on what blood carries. Oxygen transport by haemoglobin [W3] has no counterpart on the 1797 page.",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.82
+        },
+        {
+          "id": "B7",
+          "source": "britannica",
+          "passageId": "B7",
+          "rerankScore": 0.78
+        },
+        {
+          "id": "W9",
+          "source": "wikipedia",
+          "passageId": "W9",
+          "rerankScore": 0.74
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.7
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Which facts about blood survived from 1797 to today?": {
+      "answer": "The core anatomy has held up. Harvey's account of the heart driving blood out through the arteries and back by the veins [B5] matches the modern description of the circulation [W5].\n\nThe observation that drawn blood separates into a clot and a yellowish serum [B2] is still how serum is defined, under the same name [W6].\n\nThe red globules seen through Leeuwenhoek's microscope [B3] are today's red blood cells [W2]: the fact survived, the name did not.",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.82
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.78
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.74
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Is 'red globules' becoming 'red blood cells' new knowledge or just new words?": {
+      "answer": "Mostly new words. The 1797 entry already knew the globules were tiny, red and floating in serum [B3]; Wikipedia describes the same objects as red blood cells, or erythrocytes [W2].\n\nWhat is new is the knowledge attached to the name: the cells carry haemoglobin, which binds oxygen [W3], and they are made in the bone marrow and live about 120 days [W4]. The renaming is a change in language; what we know about the cells is a change in knowledge.",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.82
+        }
+      ],
+      "grounding": "supported"
+    },
+    "When was blood transfusion first tried?": {
+      "answer": "According to the 1797 entry, transfusion was first attempted in the 18th century, in England and France, and was stopped after some patients died [B8]. It became routine after the discovery of blood groups in 1901 [W8].",
+      "citations": [
+        {
+          "id": "B8",
+          "source": "britannica",
+          "passageId": "B8",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W8",
+          "source": "wikipedia",
+          "passageId": "W8",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

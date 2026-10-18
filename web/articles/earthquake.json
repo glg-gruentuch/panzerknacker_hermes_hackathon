@@ -1,0 +1,302 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "earthquake",
+    "label": "Earthquake",
+    "headword": "EARTHQUAKE",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Earthquake",
+    "area": "geology",
+    "teaser": "The cause is commonly ascribed to subterraneous fires, or to vapours and exhalations which, being rarefied by heat and wanting room, burst forth with violence and shake the ground above them."
+  },
+  "aliases": [
+    "earthquake",
+    "earthquakes",
+    "lisbon"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0007",
+    "headword": "EARTHQUAKE",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 6",
+    "meta": "Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 6 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "EAR                    [ 214 ]                    EAR\n\n  EARTHQUAKE, a violent agitation or trembling of\nſome conſiderable part of the earth, generally attended\nwith a terrible noiſe like thunder, and ſometimes with\nan eruption of fire, water or wind.\n  The cauſe is commonly aſcribed to ſubterraneous fires,\nor to vapours and exhalations which, being rarefied by\nheat and wanting room, burſt forth with violence and\nſhake the ground above them. Dr Stukeley has ſup-\npoſed that earthquakes are owing to electricity, the\nſhock being communicated through the earth as through\nother conductors.\n  They are moſt frequent in countries abounding with\nvolcanoes, as Italy, Sicily, and the iſlands of the In-\ndian ocean. The moſt dreadful of late years was that\nwhich deſtroyed great part of Liſbon on the firſt of\nNovember 1755, when many thouſands of the inhabi-\ntants periſhed.\n  EARWIG. See Forficula.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "EARTHQUAKE",
+        "text": "EARTHQUAKE, a violent agitation or trembling of some considerable part of the earth, generally attended with a terrible noise like thunder, and sometimes with an eruption of fire, water or wind."
+      },
+      {
+        "id": "B2",
+        "section": "EARTHQUAKE",
+        "text": "The cause is commonly ascribed to subterraneous fires, or to vapours and exhalations which, being rarefied by heat and wanting room, burst forth with violence and shake the ground above them."
+      },
+      {
+        "id": "B3",
+        "section": "EARTHQUAKE",
+        "text": "Dr Stukeley has supposed that earthquakes are owing to electricity, the shock being communicated through the earth as through other conductors."
+      },
+      {
+        "id": "B4",
+        "section": "EARTHQUAKE",
+        "text": "They are most frequent in countries abounding with volcanoes, as Italy, Sicily, and the islands of the Indian ocean."
+      },
+      {
+        "id": "B5",
+        "section": "EARTHQUAKE",
+        "text": "The most dreadful of late years was that which destroyed great part of Lisbon on the first of November 1755, when many thousands of the inhabitants perished."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-earthquake",
+    "title": "Earthquake",
+    "url": "https://en.wikipedia.org/wiki/Earthquake",
+    "dateModified": "2026-10-04",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "An earthquake is the shaking of the Earth's surface caused by a sudden release of energy in the lithosphere that creates seismic waves."
+      },
+      {
+        "id": "W2",
+        "section": "Causes",
+        "text": "Most earthquakes happen when rock breaks and slips along a geological fault, as the tectonic plates move against each other. Volcanic activity and human activity, such as mining, cause smaller earthquakes."
+      },
+      {
+        "id": "W3",
+        "section": "Distribution",
+        "text": "Earthquakes concentrate along the boundaries of tectonic plates, such as the Pacific Ring of Fire, where many volcanoes also form."
+      },
+      {
+        "id": "W4",
+        "section": "Measurement",
+        "text": "Seismometers record seismic waves. The size of an earthquake is reported on the moment magnitude scale."
+      },
+      {
+        "id": "W5",
+        "section": "History",
+        "text": "The 1755 Lisbon earthquake, followed by a tsunami and fires, killed tens of thousands of people and is often seen as the start of the scientific study of earthquakes."
+      },
+      {
+        "id": "W6",
+        "section": "Effects",
+        "text": "Earthquakes under the sea can cause tsunamis."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.85,
+    "rerankScore": 0.92,
+    "reasons": [
+      "Same headword: EARTHQUAKE and Earthquake.",
+      "Both name the 1755 Lisbon earthquake.",
+      "The article on the Lisbon earthquake scores close behind but covers one event only."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "1755 Lisbon earthquake",
+      "url": "https://en.wikipedia.org/wiki/1755_Lisbon_earthquake",
+      "embedScore": 0.79,
+      "rerankScore": 0.71
+    },
+    {
+      "title": "Seismology",
+      "url": "https://en.wikipedia.org/wiki/Seismology",
+      "embedScore": 0.74,
+      "rerankScore": 0.6
+    },
+    {
+      "title": "Plate tectonics",
+      "url": "https://en.wikipedia.org/wiki/Plate_tectonics",
+      "embedScore": 0.68,
+      "rerankScore": 0.5
+    }
+  ],
+  "alignments": [
+    {
+      "id": "e1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "What an earthquake is",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a violent agitation or trembling of some considerable part of the earth"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "the shaking of the Earth's surface"
+      },
+      "note": "The same event in plainer words. Wikipedia adds what travels through the ground: seismic waves."
+    },
+    {
+      "id": "e2",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The cause",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "commonly ascribed to subterraneous fires, or to vapours and exhalations"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "rock breaks and slips along a geological fault"
+      },
+      "note": "Underground fire and trapped vapour gave way to moving plates and breaking rock."
+    },
+    {
+      "id": "e3",
+      "kind": "dropped",
+      "verdict": "wrong",
+      "label": "Earthquakes as electricity",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "earthquakes are owing to electricity"
+      },
+      "wikipedia": null,
+      "note": "Stukeley’s electrical theory has no place in the modern account."
+    },
+    {
+      "id": "e4",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Near volcanoes",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "most frequent in countries abounding with volcanoes"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "where many volcanoes also form"
+      },
+      "note": "The pattern was right, the reason was not: earthquakes and volcanoes both follow plate boundaries."
+    },
+    {
+      "id": "e5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Lisbon, 1755",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "destroyed great part of Lisbon on the first of November 1755"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "The 1755 Lisbon earthquake"
+      },
+      "note": "Recent news in 1797, and the start of earthquake science today."
+    },
+    {
+      "id": "e6",
+      "kind": "added",
+      "verdict": null,
+      "label": "Measuring them",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Seismometers record seismic waves"
+      },
+      "note": "In 1797 there was no way to measure an earthquake, only to describe its damage."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What it is",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Causes",
+      "britannica": 0.3,
+      "wikipedia": 0.3
+    },
+    {
+      "topic": "Where they happen",
+      "britannica": 0.15,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Notable earthquakes",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Electrical theory",
+      "britannica": 0.15,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Measurement",
+      "britannica": 0,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Tsunamis",
+      "britannica": 0,
+      "wikipedia": 0.05
+    }
+  ],
+  "suggestedQuestions": [
+    "What did people in 1797 think caused earthquakes?",
+    "Was the 1797 entry right that earthquakes happen near volcanoes?"
+  ],
+  "answers": {
+    "What did people in 1797 think caused earthquakes?": {
+      "answer": "Most blamed \"subterraneous fires, or vapours and exhalations\" that burst out and shook the ground [B2]. Dr Stukeley proposed electricity instead [B3].\n\nWikipedia explains earthquakes as rock breaking and slipping along faults as tectonic plates move [W2]. Neither 1797 cause survives.",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.89
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.85
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Was the 1797 entry right that earthquakes happen near volcanoes?": {
+      "answer": "Partly. It says earthquakes are most frequent where volcanoes abound [B4], and Wikipedia agrees that both cluster along plate boundaries such as the Ring of Fire [W3].\n\nThe pattern was right, but the entry took it as cause and effect. Today both are seen as results of moving plates [W2].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.89
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.85
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

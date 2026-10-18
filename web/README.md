@@ -19,13 +19,12 @@ npm install
 npm run dev          # http://localhost:5173
 ```
 
-By default the UI runs on **built-in demo data** (five medical topics), so it
-works before the backend exists. To use real results:
+The site shows the articles in [`articles/`](articles/), one JSON file per
+article. The site needs no backend for them. To add an article, add one file
+there. [`articles/README.md`](articles/README.md) explains how.
 
-1. Export the pipeline results to `public/data/` (see
-   [its README](public/data/README.md)).
-2. Start the chat backend.
-3. Run the UI in live mode:
+The chat runs in the browser on the demo data by default. To send chat
+questions to the real backend instead:
 
 ```bash
 cp .env.example .env
@@ -33,15 +32,15 @@ cp .env.example .env
 npm run dev
 ```
 
-In live mode the UI reads the four data files from `public/data/` and sends
-chat questions to `/api/chat`. The dev server proxies `/api/*` to the backend.
-**[API.md](API.md) is the contract for the backend team**, with example
-payloads in [`api-examples/`](api-examples/).
+The dev server proxies `/api/*` to the backend. **[API.md](API.md) is the
+contract for the backend team**, with example payloads in
+[`api-examples/`](api-examples/).
 
 | Script | What it does |
 |---|---|
 | `npm run dev` | Dev server with hot reload |
-| `npm run build` | Typecheck, then production build into `dist/` |
+| `npm run check-articles` | Check every file in `articles/` |
+| `npm run build` | Check the articles, typecheck, then build into `dist/` |
 | `npm run typecheck` | TypeScript only |
 | `npm run examples` | Rewrite `api-examples/` from the demo data |
 
@@ -69,12 +68,13 @@ Set these variables in the Worker settings:
 
 | Variable | When | Value |
 |---|---|---|
-| `VITE_API_MODE` | Build | `live` to show the files in `public/data/`. Leave it out to deploy the demo data. |
+| `VITE_API_MODE` | Build | `live` to send chat to the backend. Leave it out to keep the demo chat. |
 | `CHAT_BACKEND_URL` | Runtime | Origin of the chat backend on Nebius, for example `https://chat.example.org` |
 | `CHAT_BACKEND_TOKEN` | Runtime, optional | The Worker sends it as a bearer token, so the backend can refuse calls that skip the site. |
 
-To update the articles, export new files to `public/data/`, commit them and
-push.
+To add or change articles, change the files in `articles/`, commit and push.
+If an article file has a problem, `npm run build` stops, Cloudflare does not
+deploy, and the current site stays online.
 
 ## What's on screen
 
@@ -136,12 +136,12 @@ push.
 src/
   api/types.ts        the data contract (mirrors API.md)
   api/client.ts       data files and chat calls; demo or live by VITE_API_MODE
-  api/demo/           sample topics, keyword fallback for chat, example cases
+  api/demo/           loads the article files; demo chat, example cases
   components/         one component + one CSS module each
   lib/                change kinds, text highlighting, chat state, breakpoints
   styles/tokens.css   colours, type, spacing
 worker/index.ts       Cloudflare Worker: static files, forwards /api/chat
-public/data/          the pipeline's JSON files for live mode
+articles/             one JSON file per article (see its README)
 ```
 
 Breakpoints: ≥ 1200px puts the agent beside the texts; 760–1199px opens it as
@@ -190,6 +190,7 @@ uv run --with pillow python web/scripts/prepare-plates.py
 
 The demo Britannica passages (eight topics) are written in period style.
 They are **not** text from the dataset. The Wikipedia passages paraphrase the real
-articles. The six agent cases are placeholders that show the format. All of it
-is replaced once the backend runs in live mode. The "Demo data" badge in the
-header shows while demo data is in use.
+articles. Each of these files in `articles/` carries `"demo": true`. The six
+agent cases are placeholders that show the format. Replace the demo articles
+with selected articles from the backend, one file at a time. The "Demo data"
+badge in the header shows while any article has `"demo": true`.
