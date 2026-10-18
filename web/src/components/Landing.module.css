@@ -144,9 +144,7 @@
 .areaButton {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto auto;
-  grid-template-areas:
-    'label count chevron'
-    'blurb blurb .';
+  grid-template-areas: 'label count chevron';
   align-items: baseline;
   column-gap: var(--space-4);
   row-gap: 2px;
@@ -185,12 +183,6 @@
   color: var(--ink);
 }
 
-.areaBlurb {
-  grid-area: blurb;
-  font-size: var(--text-sm);
-  color: var(--muted);
-}
-
 .areaButton:hover .areaLabel {
   color: var(--ink-2);
 }
@@ -211,49 +203,24 @@
   border-top: 1px solid var(--rule);
 }
 
-.featured,
-.compact {
-  width: 100%;
-  border: 0;
-  background: none;
-  text-align: left;
-  border-radius: 0;
-}
-
-.featured {
+/* One row per article: name, edition, verdict counts. */
+.article {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: var(--space-1);
-  padding: var(--space-4) 0;
-}
-
-.compact {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  grid-template-areas:
-    'headword verdicts'
-    'meta verdicts';
-  align-items: center;
-  column-gap: var(--space-4);
+  width: 100%;
   padding: var(--space-3) 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  text-align: left;
 }
 
-.compact .headword {
-  grid-area: headword;
-}
-
-.compact .meta {
-  grid-area: meta;
-}
-
-.compact .verdicts {
-  grid-area: verdicts;
-}
-
-.headword {
-  font-family: var(--font-caslon);
+.articleName {
   font-size: var(--text-md);
-  letter-spacing: 0.08em;
+  font-weight: 500;
+  color: var(--ink);
 }
 
 .meta {
@@ -261,31 +228,7 @@
   color: var(--muted);
 }
 
-.featuredFoot {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-4);
-  margin-top: var(--space-1);
-}
-
-.open {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: var(--text-sm);
-  font-weight: 600;
-  color: var(--ink-2);
-  transition: color 150ms var(--ease-out), gap 150ms var(--ease-out);
-}
-
-.featured:hover .open {
-  color: var(--ink);
-  gap: 9px;
-}
-
-.featured:hover .headword,
-.compact:hover .headword {
+.article:hover .articleName {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
@@ -306,11 +249,24 @@
   font-weight: 500;
 }
 
-.empty,
+.empty {
+  margin-top: var(--space-4);
+}
+
+/* "Show all" sits under the list as a quiet text link. */
 .more {
-  padding-top: var(--space-3);
-  font-size: var(--text-sm);
+  margin-top: var(--space-2);
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: var(--text-xs);
   color: var(--muted);
+}
+
+.more:hover {
+  color: var(--ink-2);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* Medium screens: the plate sits further back behind the text. */
@@ -361,21 +317,7 @@
     grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas:
       'label chevron'
-      'blurb blurb'
       'count count';
-  }
-
-  .compact {
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-areas:
-      'headword'
-      'meta'
-      'verdicts';
-    row-gap: var(--space-1);
-  }
-
-  .featuredFoot {
-    flex-wrap: wrap;
   }
 
   .credit {

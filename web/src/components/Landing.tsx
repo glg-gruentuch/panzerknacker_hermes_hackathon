@@ -106,7 +106,9 @@ interface SubjectProps {
 
 function Subject({ area, topics, open, onToggle, onPreview, onSearch }: SubjectProps) {
   const listId = `subject-${area.slug}`
-  const shown = topics.slice(0, LIST_LIMIT)
+  // The list starts with the first LIST_LIMIT articles; the reader can show the rest.
+  const [all, setAll] = useState(false)
+  const shown = all ? topics : topics.slice(0, LIST_LIMIT)
   return (
     <li className={styles.area} data-open={open}>
       <button
@@ -127,7 +129,6 @@ function Subject({ area, topics, open, onToggle, onPreview, onSearch }: SubjectP
         <span className={styles.chevron} aria-hidden="true">
           <Icon name="next" size={14} />
         </span>
-        <span className={styles.areaBlurb}>{area.blurb}</span>
       </button>
 
       <div id={listId} className={styles.articles} hidden={!open}>
@@ -135,50 +136,27 @@ function Subject({ area, topics, open, onToggle, onPreview, onSearch }: SubjectP
           <p className={styles.empty}>No articles are tagged with this subject yet. Search above to find any page in the index.</p>
         ) : (
           <ul className={styles.articleList}>
-            {shown.map((t) =>
-              area.featured.includes(t.slug) ? (
-                <Featured key={t.slug} topic={t} onSearch={onSearch} />
-              ) : (
-                <Compact key={t.slug} topic={t} onSearch={onSearch} />
-              ),
-            )}
+            {shown.map((t) => (
+              <Article key={t.slug} topic={t} onSearch={onSearch} />
+            ))}
           </ul>
         )}
         {topics.length > LIST_LIMIT && (
-          <p className={styles.more}>
-            {topics.length - LIST_LIMIT} more in this subject. Search above to find them.
-          </p>
+          <button type="button" className={styles.more} aria-controls={listId} onClick={() => setAll((a) => !a)}>
+            {all ? 'Show fewer' : `Show all ${topics.length} articles`}
+          </button>
         )}
       </div>
     </li>
   )
 }
 
-function Featured({ topic: t, onSearch }: { topic: TopicSummary; onSearch: (q: string) => void }) {
+/** One article in a subject: its name, the edition it comes from, and the verdict counts. */
+function Article({ topic: t, onSearch }: { topic: TopicSummary; onSearch: (q: string) => void }) {
   return (
     <li>
-      <button type="button" className={styles.featured} onClick={() => onSearch(t.label)}>
-        <span className={styles.headword}>{t.headword}</span>
-        <span className={`${styles.meta} num`}>
-          {t.edition}, {t.year}
-          {t.wikipediaTitle && <> · today “{t.wikipediaTitle}”</>}
-        </span>
-        <span className={styles.featuredFoot}>
-          <Verdicts topic={t} />
-          <span className={styles.open}>
-            Compare <Icon name="arrow" size={14} />
-          </span>
-        </span>
-      </button>
-    </li>
-  )
-}
-
-function Compact({ topic: t, onSearch }: { topic: TopicSummary; onSearch: (q: string) => void }) {
-  return (
-    <li>
-      <button type="button" className={styles.compact} onClick={() => onSearch(t.label)}>
-        <span className={styles.headword}>{t.headword}</span>
+      <button type="button" className={styles.article} onClick={() => onSearch(t.label)}>
+        <span className={styles.articleName}>{t.label}</span>
         <span className={`${styles.meta} num`}>
           {t.edition}, {t.year}
         </span>

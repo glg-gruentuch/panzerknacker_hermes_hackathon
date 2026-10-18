@@ -21,10 +21,8 @@ export interface Plate {
 export interface Area {
   slug: AreaSlug
   label: string
-  /** One plain sentence on what the area covers. */
-  blurb: string
   plate: Plate
-  /** Topic slugs to show first, with today's title and a Compare link. The rest follow in index order. */
+  /** Topic slugs to show first. The rest follow in index order. */
   featured: string[]
 }
 
@@ -38,35 +36,30 @@ export const AREAS: Area[] = [
   {
     slug: 'infectious-disease',
     label: 'Infectious disease and fevers',
-    blurb: 'How contagion, fevers and parasites were explained before germs were known.',
     plate: plate('helminthology'),
     featured: ['consumption', 'smallpox'],
   },
   {
     slug: 'anatomy',
     label: 'Anatomy and physiology',
-    blurb: 'The parts of the body, and what people thought made them work.',
     plate: plate('anatomy'),
     featured: ['blood'],
   },
   {
     slug: 'geology',
     label: 'Geology',
-    blurb: 'Rocks, earthquakes and the forces that shape the earth.',
     plate: plate('geyser'),
     featured: ['basalt'],
   },
   {
     slug: 'natural-sciences',
     label: 'Natural sciences',
-    blurb: 'Electricity, magnetism and the experiments of natural philosophy.',
     plate: plate('electricity'),
     featured: ['electricity'],
   },
   {
     slug: 'astronomy',
     label: 'Astronomy',
-    blurb: 'The sun, the moon and the planets, and how people explained what they saw in the sky.',
     plate: plate('astronomy'),
     featured: ['sun'],
   },
