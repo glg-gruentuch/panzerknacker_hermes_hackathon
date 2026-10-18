@@ -237,7 +237,8 @@ class ClaimsRun:
 
         def call_budget(budget: int) -> dict[str, Any]:
             self.chat_calls += 1
-            return retry_call(lambda: chat.complete(messages, max_tokens=budget))
+            return retry_call(lambda: chat.complete(messages, max_tokens=budget,
+                                                    extra_body={"temperature": 0}))
 
         try:
             try:
@@ -245,7 +246,7 @@ class ClaimsRun:
             except ProtocolError as exc:
                 if "incomplete" not in str(exc):
                     raise
-                reply = call_budget(min(max_tokens + 1500, 16384))
+                reply = call_budget(min(max_tokens + 2000, 16384))
         except (ServiceError, ValueError) as exc:
             with _append_lock:
                 self.failures.append({"entry_id": entry_id, "stage": stage,
@@ -273,13 +274,17 @@ class ClaimsRun:
         if not paragraph_texts:
             raise ValueError("the article has no paragraph text")
 
-        # Stage 1: extract claims.
+        # Stage 1: extract claims. Super VL spends reasoning tokens before the
+        # visible reply; long bodies need a large output budget (observed: a
+        # 8,000-character body used about 5,000 completion tokens).
         messages = [
             {"role": "system", "content": EXTRACT_SYSTEM},
             {"role": "user", "content": EXTRACT_TEMPLATE.format(maximum=MAX_CLAIMS,
                                                                 body=body[:BODY_CHAR_LIMIT])},
         ]
-        reply = self.cached_chat(chat, entry_id, revision_id, messages, max_tokens=2500, stage="extract")
+        extract_budget = min(8000 + len(body[:BODY_CHAR_LIMIT]) // 2, 16000)
+        reply = self.cached_chat(chat, entry_id, revision_id, messages, max_tokens=extract_budget,
+                                 stage="extract")
         claims, drops = valid_claims(parse_json_object(self.reply_content(reply)), body)
 
         # Stage 2: embed the paragraphs once per entry.
@@ -354,7 +359,7 @@ class ClaimsRun:
             {"role": "system", "content": JUDGE_SYSTEM},
             {"role": "user", "content": JUDGE_TEMPLATE.format(quote=claim["quote"], passages=passages)},
         ]
-        reply = self.cached_chat(chat, entry_id, revision_id, messages, max_tokens=1500, stage="judge")
+        reply = self.cached_chat(chat, entry_id, revision_id, messages, max_tokens=6000, stage="judge")
         judged = judged_claim(claim, parse_json_object(self.reply_content(reply)), kept_texts)
         judged["evidence"] = evidence
         return judged
@@ -435,7 +440,8 @@ def run_claims(settings: Settings, work_dir: Path, *, limit: int | None = None,
     started = time.time()
     processed = 0
     store = LanceArtifactStore(settings.db_path)
-    with ChatClient(settings.super_base_url, settings.super_api_key, settings.super_model) as chat, \
+    with ChatClient(settings.super_base_url, settings.super_api_key, settings.super_model,
+                    timeout=420) as chat, \
             RetrievalClient(settings.retrieval_base_url, settings.retrieval_api_key) as retrieval, \
             ThreadPoolExecutor(max_workers=run.workers) as pool:
         pending = []

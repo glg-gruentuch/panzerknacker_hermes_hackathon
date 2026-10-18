@@ -156,6 +156,45 @@ def test_segment_drops_entries_without_content_blocks():
     assert entries[0]["heading"] == "ACT"
 
 
+# Fixtures for B1, taken from real raw replies. page-0257 is a paragraph of
+# running text with no headword; 0374 is a full-page picture with no text.
+TEXT_ONLY_PAGE = "\n\n".join(
+    [
+        "<x_0.04><y_0.0375>_Swift_ in his power to provide him indarwify. Swift that person (10/3) in different, having previously taken his matter's degree at Oxford.<x_0.53><y_0.11><class_Text>",
+        "<x_0.0986><y_0.1992>This day is generally believed to have been the daughter of Sir William Temple flower, whom he never, a Mrs Hierans, met.<x_0.53><y_0.26><class_Text>",
+    ]
+)
+PICTURE_ONLY_PAGE = "<x_0.0><y_0.0><x_0.998><y_0.9984><class_Picture>"
+
+
+def test_segment_gives_a_text_only_page_exactly_one_fragment():
+    entries, header = segment(TEXT_ONLY_PAGE)
+    assert header == ""
+    assert len(entries) == 1
+    assert entries[0]["fragment"] is True
+    assert entries[0]["heading"] is None
+    assert entries[0]["body"].startswith("_Swift_ in his power")
+    assert "Sir William Temple" in entries[0]["body"]
+
+
+def test_segment_gives_a_picture_only_page_one_empty_fragment():
+    entries, header = segment(PICTURE_ONLY_PAGE)
+    assert header == ""
+    assert len(entries) == 1
+    assert entries[0]["fragment"] is True
+    assert entries[0]["heading"] is None
+    assert entries[0]["body"] == ""
+    assert entries[0]["continued"] is True
+
+
+def test_segment_keeps_subsection_only_pages_as_a_fragment():
+    entries, _ = segment("<x_0.05><y_0.06>3. Eyes placed thus<x_0.65><y_0.07><class_Section-header>")
+    assert len(entries) == 1
+    assert entries[0]["fragment"] is True
+    assert entries[0]["subsections"] == ["3. Eyes placed thus"]
+    assert entries[0]["body"] == ""
+
+
 def test_join_continuations_joins_running_head_pages():
     page_a = ("britannica:rev:train:13", [
         {"heading": "Fractical Building", "heading_class": "Section-header", "page_header": "292 SHIP-BUILDING",
@@ -376,7 +415,13 @@ def test_run_derive_keeps_v1_and_writes_the_segment_summary(tmp_path, monkeypatc
     summary = json.loads((work_dir / "extract" / "segment-summary.json").read_text(encoding="utf-8"))
     assert summary["entries"] == 1 and summary["fragments"] == 1 and summary["headwords"] == 0
     assert summary["pages_derived"] == 1 and summary["pages_failed"] == 1
+    assert summary["pages_with_entries"] == 1
+    assert summary["pages_without_entries"] == []
     assert summary["failures"][0]["page_id"] == "britannica:rev:train:1"
+    coverage = json.loads((work_dir / "extract" / "coverage.json").read_text(encoding="utf-8"))
+    assert coverage["entries"] == 1 and coverage["pages_ok"] == 1
+    assert coverage["failures"][0]["error"] == "ProtocolError: incomplete"
+    assert "refreshed_by" in coverage
     assert result["stage"] == "derive"
 
 

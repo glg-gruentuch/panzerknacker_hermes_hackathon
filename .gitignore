@@ -14,9 +14,10 @@ data/raw/
 data/hermes/
 data/*.lancedb/
 reports/
-runs/
+/runs/
 .venv-model-contract/
-site/
+/site/
+.omc/
 .DS_Store
 .secrets/
 *.key

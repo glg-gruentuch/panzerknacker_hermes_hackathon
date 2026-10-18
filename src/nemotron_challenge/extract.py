@@ -127,7 +127,8 @@ def segment(markdown: str) -> tuple[list[dict[str, Any]], str]:
     running heads: they stay in page_header only. Text before the first
     headword on a page becomes one entry with ``fragment`` true and
     ``heading`` null. Headers, footers, and page numbers stay out of the
-    entry text. Entries without content blocks are dropped.
+    entry text. Entries without content blocks are dropped, but a page that
+    would otherwise have no entry keeps one empty fragment (B1).
     """
     blocks = parse_blocks(markdown)
     header = page_header(blocks)
@@ -171,6 +172,18 @@ def segment(markdown: str) -> tuple[list[dict[str, Any]], str]:
             CONTINUATION.search(entry["heading"] or "")
         ) or bool(CONTINUATION.search(entry["body"][:120]))
         kept.append(entry)
+    if not kept:
+        # Every parsed page gets at least one entry (handoff 2, B1). A page
+        # with no headword and no running head, for example a full-page
+        # picture whose blocks carry no text, keeps one empty fragment. A
+        # lone subsection heading keeps that subsection.
+        entry = entries[0] if entries else {
+            "heading": None, "heading_class": None, "fragment": True,
+            "subsections": [], "blocks": []}
+        entry["page_header"] = header
+        entry["body"] = ""
+        entry["continued"] = True
+        return [entry], header
     return kept, header
 
 
@@ -256,10 +269,13 @@ def derive_outputs(
     flat = [EntryRecord.model_validate(flat_entry(entry)).model_dump() for entry in entries]
     write_json(derived_dir / "entries.json", flat)
     write_json(derived_dir / "joins.json", joins)
+    pages_with = {entry["page_id"] for entry in entries}
     summary = {
         "pages_total": pages_total,
         "pages_derived": len(page_meta),
         "pages_failed": len(failures),
+        "pages_with_entries": len(pages_with),
+        "pages_without_entries": sorted(set(page_meta) - pages_with),
         "entries": len(flat),
         "headwords": sum(1 for row in flat if row["heading"]),
         "fragments": sum(1 for row in flat if row["fragment"]),
@@ -316,6 +332,20 @@ def run_derive(work_dir: Path) -> dict[str, Any]:
         page_meta[page["page_id"]] = {"filename": page["filename"], "page_header": header}
     result = derive_outputs(work_dir, pages, page_meta, failures=failures, pages_total=len(manifest["pages"]))
     summary = result["summary"]
+    # Keep coverage.json current after a re-derive: the evaluate stage and the
+    # site read it, and stale counts from segmentation v1 misreported entries.
+    coverage = {
+        "pages_total": summary["pages_total"],
+        "pages_ok": summary["pages_derived"],
+        "pages_failed": summary["pages_failed"],
+        "entries": summary["entries"],
+        "headwords": summary["headwords"],
+        "fragments": summary["fragments"],
+        "joins": summary["joins"],
+        "failures": failures,
+        "refreshed_by": "run extract --derive-only (segmentation v2; no model calls)",
+    }
+    write_json(work_dir / "extract" / "coverage.json", coverage)
     print(f"[derive] entries={summary['entries']} headwords={summary['headwords']} "
           f"fragments={summary['fragments']} pages={summary['pages_derived']}/{summary['pages_total']}",
           file=sys.stderr, flush=True)
