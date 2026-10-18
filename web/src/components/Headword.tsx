@@ -1,4 +1,4 @@
-import { useEffect, useId, useMemo, useState, type CSSProperties, type KeyboardEvent } from 'react'
+import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type KeyboardEvent, type RefObject } from 'react'
 import type { TopicSummary } from '../api/types'
 import { useMediaQuery } from '../lib/useMediaQuery'
 import { Icon } from './Icon'
@@ -57,6 +57,41 @@ function useTypewriter(names: string[], running: boolean) {
   return { text: name.slice(0, length), name }
 }
 
+/**
+ * The names that fit on the field's dotted line (its ::before), measured in the field's font.
+ * Null until measured, or when the field has no such line.
+ */
+function useNamesThatFit(names: string[], field: RefObject<HTMLSpanElement | null>, enabled: boolean) {
+  const [fit, setFit] = useState<string[] | null>(null)
+
+  useLayoutEffect(() => {
+    if (!enabled) {
+      setFit(null)
+      return
+    }
+    let cancelled = false
+    const measure = () => {
+      const el = field.current
+      const ctx = document.createElement('canvas').getContext('2d')
+      if (cancelled || !el || !ctx) return
+      const line = parseFloat(getComputedStyle(el, '::before').width)
+      if (!line) return
+      const cs = getComputedStyle(el)
+      ctx.font = `${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`
+      const spacing = parseFloat(cs.letterSpacing) || 0
+      setFit(names.filter((n) => ctx.measureText(n.toUpperCase()).width + spacing * n.length <= line))
+    }
+    measure()
+    // Measure again once the display font has loaded.
+    document.fonts.ready.then(measure)
+    return () => {
+      cancelled = true
+    }
+  }, [names, field, enabled])
+
+  return fit
+}
+
 /** The search field, set like an encyclopaedia headword. It only suggests articles the site has. */
 export function Headword({ topics, value, onChange, onSubmit, size, autoFocus }: Props) {
   const id = useId()
@@ -66,8 +101,12 @@ export function Headword({ topics, value, onChange, onSubmit, size, autoFocus }:
 
   const names = useMemo(() => topics.map((t) => t.label), [topics])
   const longest = useMemo(() => names.reduce((a, b) => (b.length > a.length ? b : a), ''), [names])
-  const typewriter = useTypewriter(names, !value && !reduceMotion)
-  const placeholder = reduceMotion ? (names[0] ?? '') : typewriter.text
+  // In the hero the animation only types names that fit on the dotted line. Every name can still be searched.
+  const fieldRef = useRef<HTMLSpanElement>(null)
+  const fitting = useNamesThatFit(names, fieldRef, size === 'hero')
+  const animated = fitting?.length ? fitting : names
+  const typewriter = useTypewriter(animated, !value && !reduceMotion)
+  const placeholder = reduceMotion ? (animated[0] ?? '') : typewriter.text
 
   // Suggestions appear once the reader types. Names that start with the text come first.
   const options = useMemo(() => {
@@ -84,11 +123,12 @@ export function Headword({ topics, value, onChange, onSubmit, size, autoFocus }:
   const ghost = completion ? completion.slice(value.length) : ''
 
   // In the hero an empty field searches for the name it is typing out, so the first click works.
-  const fallback = size === 'hero' ? typewriter.name || names[0] || '' : ''
+  const fallback = size === 'hero' ? typewriter.name || animated[0] || '' : ''
   const query = completion ?? (value.trim() || fallback)
 
-  // The ::after mirror sizes the field. In the masthead it holds the longest name, so the button does not move.
-  const mirror = value ? (completion ?? value) : size === 'hero' ? placeholder : longest
+  // The ::after mirror sizes the field. It holds the longest name, so the dotted line keeps one length.
+  // Only text longer than every name widens it.
+  const mirror = value.length > longest.length ? value : longest
 
   // In the hero the button sits on its own line under the headword; in the masthead it follows it.
   const go = (
@@ -146,7 +186,7 @@ export function Headword({ topics, value, onChange, onSubmit, size, autoFocus }:
         Article
       </label>
       <div className={styles.line}>
-        <span className={styles.field} data-value={mirror}>
+        <span ref={fieldRef} className={styles.field} data-value={mirror}>
           {ghost && (
             <span className={styles.ghost} aria-hidden="true">
               <span className={styles.ghostTyped}>{value}</span>

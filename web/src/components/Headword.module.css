@@ -108,6 +108,25 @@
   font-size: min(5.5rem, 8vw, calc(100cqi / (var(--chars, 6) * 0.68)));
 }
 
+/* In the hero the dotted line is its own layer, 80% of the field. Long names may run past it. */
+.hero .field::before {
+  content: '';
+  grid-area: 1 / 1;
+  align-self: end;
+  width: 80%;
+  border-bottom: 1.5px dotted var(--rule-strong);
+  pointer-events: none;
+}
+
+.hero .field:focus-within::before {
+  border-bottom-color: var(--ink);
+}
+
+.hero .input,
+.hero .input:focus {
+  border-bottom-color: transparent;
+}
+
 .hero .go {
   height: 44px;
   margin-top: var(--space-5);
