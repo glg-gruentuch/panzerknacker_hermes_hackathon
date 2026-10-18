@@ -1,0 +1,381 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "glacier",
+    "label": "Glacier",
+    "headword": "GLACIERS",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "match": "strong",
+    "wikipediaTitle": "Glacier",
+    "area": "geology",
+    "teaser": "are thought to have been carried thither by the waters of the deluge, or by violent currents of the sea"
+  },
+  "aliases": [
+    "glacier",
+    "glaciers",
+    "ice-valley",
+    "moraine",
+    "moraines",
+    "erratic boulder"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0052",
+    "headword": "GLACIERS",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "volume": "Volume 9",
+    "meta": "Encyclopaedia Britannica - Fourth edition, Volume 9 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "GLA                    [ 642 ]                    GLA\n\nGLACIS, in fortification, a ſloping bank of earth.\n  GLACIERS, or ICE-VALLEYS, vaſt fields or maſſes of\nice, formed in the valleys and on the ſides of the high\nAlps, chiefly in Savoy and Switzerland. They do not\nkeep always the ſame bounds; in ſome years they advance\ninto the valleys, overtuming trees and covering the\nfields, and in others they retreat.\n  Some writers ſuppoſe that the whole maſs of ice\nſlides ſlowly down the ſlope upon its bed, being urged\nby its own weight, and looſened beneath by the water\nwhich flows from the heat of the earth. Upon the ſurf-\nace of the ice are carried great quantities of ſtones\nand earth, fallen from the rocks above; and theſe,\nbeing left at the ſides and lower end of the glacier,\nform long ridges, which the people of the country call\nmoraines.\n  The great blocks of granite which are found ſcattered\nover the plains of tbe north of Germany, far from any\nmountain of the ſame ſtone, are thought to have been\ncarried thither by the waters of the deluge, or by vio-\nlent currents of the ſea. The glaciers are perpetual;\nfor the ſummer heat melts only their ſurface, and the\nſnows of each winter repair the loſs.\n  GLADIATORS, among the Romans, men who fought in the arena.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "GLACIERS",
+        "text": "GLACIERS, or ICE-VALLEYS, vast fields or masses of ice, formed in the valleys and on the sides of the high Alps, chiefly in Savoy and Switzerland."
+      },
+      {
+        "id": "B2",
+        "section": "GLACIERS",
+        "text": "They do not keep always the same bounds; in some years they advance into the valleys, overturning trees and covering the fields, and in others they retreat."
+      },
+      {
+        "id": "B3",
+        "section": "GLACIERS",
+        "text": "Some writers suppose that the whole mass of ice slides slowly down the slope upon its bed, being urged by its own weight, and loosened beneath by the water which flows from the heat of the earth."
+      },
+      {
+        "id": "B4",
+        "section": "GLACIERS",
+        "text": "Upon the surface of the ice are carried great quantities of stones and earth, fallen from the rocks above; and these, being left at the sides and lower end of the glacier, form long ridges, which the people of the country call moraines."
+      },
+      {
+        "id": "B5",
+        "section": "GLACIERS",
+        "text": "The great blocks of granite which are found scattered over the plains of the north of Germany, far from any mountain of the same stone, are thought to have been carried thither by the waters of the deluge, or by violent currents of the sea."
+      },
+      {
+        "id": "B6",
+        "section": "GLACIERS",
+        "text": "The glaciers are perpetual; for the summer heat melts only their surface, and the snows of each winter repair the loss."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-glacier",
+    "title": "Glacier",
+    "url": "https://en.wikipedia.org/wiki/Glacier",
+    "dateModified": "2026-08-27",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "A glacier is a persistent body of dense ice that is constantly moving downhill under its own weight. It forms where snow builds up over many years faster than it melts."
+      },
+      {
+        "id": "W2",
+        "section": "Motion",
+        "text": "Glaciers move in two ways: the ice deforms and flows inside the glacier, and the whole glacier can slide over its bed, helped by meltwater at the base."
+      },
+      {
+        "id": "W3",
+        "section": "Mass balance",
+        "text": "A glacier advances when more snow is added in its upper part than is lost by melting in its lower part, and it retreats when melting is greater than the supply."
+      },
+      {
+        "id": "W4",
+        "section": "Moraines",
+        "text": "Rock debris that falls onto a glacier or is torn from its bed is carried along and left in ridges called moraines at the sides and end of the ice."
+      },
+      {
+        "id": "W5",
+        "section": "Ice ages",
+        "text": "Large boulders called glacial erratics were carried long distances by ice sheets during the ice ages and left far from the rock they came from. The erratics of northern Germany came from Scandinavia. In 1837 Louis Agassiz proposed that great sheets of ice had once covered much of northern Europe."
+      },
+      {
+        "id": "W6",
+        "section": "Retreat",
+        "text": "Most glaciers in the world have been retreating since the late 19th century, and the retreat has become faster in recent decades because of climate change."
+      },
+      {
+        "id": "W7",
+        "section": "Little Ice Age",
+        "text": "Alpine glaciers grew during the Little Ice Age, a cool period that ended in the mid-19th century, and some advanced over farms and villages."
+      },
+      {
+        "id": "W8",
+        "section": "Introduction",
+        "text": "Glaciers and ice sheets together hold about 69 percent of the world's fresh water."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.86,
+    "rerankScore": 0.88,
+    "reasons": [
+      "Same headword: GLACIERS and Glacier.",
+      "Rare terms appear in both: moraines, advance and retreat, slides on its bed, boulders far from their source.",
+      "Glacial erratic scores well but covers only the boulders."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Glacial erratic",
+      "url": "https://en.wikipedia.org/wiki/Glacial_erratic",
+      "embedScore": 0.74,
+      "rerankScore": 0.55
+    },
+    {
+      "title": "Moraine",
+      "url": "https://en.wikipedia.org/wiki/Moraine",
+      "embedScore": 0.72,
+      "rerankScore": 0.5
+    },
+    {
+      "title": "Ice sheet",
+      "url": "https://en.wikipedia.org/wiki/Ice_sheet",
+      "embedScore": 0.73,
+      "rerankScore": 0.48
+    }
+  ],
+  "alignments": [
+    {
+      "id": "gl1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Masses of ice",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "vast fields or masses of ice, formed in the valleys and on the sides of the high Alps"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a persistent body of dense ice that is constantly moving downhill under its own weight"
+      },
+      "note": "A change in language. The 1810 entry describes Alpine glaciers. Wikipedia defines a glacier anywhere by how it forms and moves."
+    },
+    {
+      "id": "gl2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Advance and retreat",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "in some years they advance into the valleys"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "A glacier advances when more snow is added in its upper part than is lost by melting"
+      },
+      "note": "The observation holds. Wikipedia adds the cause: the balance of snowfall and melting."
+    },
+    {
+      "id": "gl3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Fields overrun by ice",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "overturning trees and covering the fields"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "some advanced over farms and villages"
+      },
+      "note": "Both texts report damage to farm land. Inference: the 1810 writers saw the glaciers near their largest size of the Little Ice Age."
+    },
+    {
+      "id": "gl4",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Sliding on the bed",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the whole mass of ice slides slowly down the slope upon its bed, being urged by its own weight"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "the ice deforms and flows inside the glacier, and the whole glacier can slide over its bed"
+      },
+      "note": "A change in knowledge. Sliding under its own weight is right, but the ice also flows inside the glacier. The 1810 entry does not know this second motion."
+    },
+    {
+      "id": "gl5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Water under the ice",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "loosened beneath by the water which flows from the heat of the earth"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "helped by meltwater at the base"
+      },
+      "note": "Water at the base does help the ice slide. The 1810 entry gives only one source for that water."
+    },
+    {
+      "id": "gl6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Stones form moraines",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "these, being left at the sides and lower end of the glacier, form long ridges, which the people of the country call moraines"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "left in ridges called moraines at the sides and end of the ice"
+      },
+      "note": "The same fact and the same word. Moraine came into science from the local Alpine name."
+    },
+    {
+      "id": "gl7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Boulders moved by water",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "carried thither by the waters of the deluge, or by violent currents of the sea"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "were carried long distances by ice sheets during the ice ages"
+      },
+      "note": "A change in knowledge. Ice, not water, carried the granite blocks. The 1810 entry knew that glaciers carry stones but did not link the two."
+    },
+    {
+      "id": "gl8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Glaciers are perpetual",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "The glaciers are perpetual"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Most glaciers in the world have been retreating since the late 19th century"
+      },
+      "note": "Glaciers are not permanent. Many have shrunk a great deal since 1810, and some have gone."
+    },
+    {
+      "id": "gl9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Theory of ice ages",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "In 1837 Louis Agassiz proposed that great sheets of ice had once covered much of northern Europe"
+      },
+      "note": "New knowledge from after 1810. It explains the boulders that the 1810 entry gave to the sea."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What glaciers are",
+      "britannica": 0.15,
+      "wikipedia": 0.13
+    },
+    {
+      "topic": "Advance and retreat",
+      "britannica": 0.25,
+      "wikipedia": 0.17
+    },
+    {
+      "topic": "How ice moves",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Moraines",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Erratic boulders",
+      "britannica": 0.15,
+      "wikipedia": 0.17
+    },
+    {
+      "topic": "Melting today",
+      "britannica": 0.1,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Fresh water store",
+      "britannica": 0,
+      "wikipedia": 0.13
+    }
+  ],
+  "suggestedQuestions": [
+    "How did the 1810 entry explain the boulders on the plains of northern Germany?",
+    "Was the 1810 entry right that glaciers slide on their beds?",
+    "Are glaciers perpetual, as the 1810 entry said?"
+  ],
+  "answers": {
+    "How did the 1810 entry explain the boulders on the plains of northern Germany?": {
+      "answer": "It said the deluge or strong sea currents carried them [B5]. Wikipedia says ice sheets carried these erratics from Scandinavia during the ice ages [W5]. Agassiz proposed the ice-age idea in 1837, after the 1810 entry [W5].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Was the 1810 entry right that glaciers slide on their beds?": {
+      "answer": "Partly. It said the ice slides down under its own weight, helped by water underneath [B3]. Wikipedia agrees that glaciers slide, helped by meltwater, but adds that the ice also deforms and flows inside the glacier [W2].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Are glaciers perpetual, as the 1810 entry said?": {
+      "answer": "No. The entry said winter snow repairs the summer loss [B6], though it also saw glaciers advance and retreat [B2]. Wikipedia says most glaciers have been retreating since the late 19th century, and faster in recent decades [W6].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.82
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

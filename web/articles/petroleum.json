@@ -1,0 +1,378 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "petroleum",
+    "label": "Petroleum",
+    "headword": "PETROLEUM",
+    "edition": "Second edition",
+    "year": 1778,
+    "match": "strong",
+    "wikipediaTitle": "Petroleum",
+    "area": "geology",
+    "teaser": "produced by subterraneous fires, which distil the oily part of coal and other bituminous matter lying deep in the earth"
+  },
+  "aliases": [
+    "petroleum",
+    "rock oil",
+    "rock-oil",
+    "crude oil",
+    "oil seep"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0055",
+    "headword": "PETROLEUM",
+    "edition": "Second edition",
+    "year": 1778,
+    "volume": "Volume 8",
+    "meta": "Encyclopaedia Britannica - Second edition, Volume 8 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "PET                    [ 5986 ]                    PET\n\nPETRARCH, Francis, a celebrated Italian poet.\n  PETROLEUM, or ROCK-OIL, a liquid bitumen, of a ſtrong\nſmell, which oozes out of the clefts of rocks, or riſes\nwith the water of certain ſprings. It is found in great\nplenty in Perſia, near Baku on the Caſpian ſea, where\nthe people draw it from wells; and alſo in Italy, in\nthe duchy of Modcna. Naturaliſts think it is produced\nby ſubterraneous fires, which diſtil the oily part of\ncoal and other bituminous matter lying deep in the\nearth.\n  It is uſed outwardly in medicine for bruiſes, numhn-\neſs of the limbs, and pains of the joints. Some phyſi-\ncians alſo give it inwardly, a few drops in wine, agai-\nnſt worms, coughs, and diſorders of the breaſt and kid-\nneys. In the countries where it abounds, it is burnt in\nlamps inſtead of oil, and the poor uſe it to dreſs\ntheir food.\n  PETTY, Sir William, a writer on political arithmetic.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "PETROLEUM",
+        "text": "PETROLEUM, or ROCK-OIL, a liquid bitumen, of a strong smell, which oozes out of the clefts of rocks, or rises with the water of certain springs."
+      },
+      {
+        "id": "B2",
+        "section": "PETROLEUM",
+        "text": "It is found in great plenty in Persia, near Baku on the Caspian sea, where the people draw it from wells; and also in Italy, in the duchy of Modena."
+      },
+      {
+        "id": "B3",
+        "section": "PETROLEUM",
+        "text": "Naturalists think it is produced by subterraneous fires, which distil the oily part of coal and other bituminous matter lying deep in the earth."
+      },
+      {
+        "id": "B4",
+        "section": "PETROLEUM",
+        "text": "It is used outwardly in medicine for bruises, numbness of the limbs, and pains of the joints."
+      },
+      {
+        "id": "B5",
+        "section": "PETROLEUM",
+        "text": "Some physicians also give it inwardly, a few drops in wine, against worms, coughs, and disorders of the breast and kidneys."
+      },
+      {
+        "id": "B6",
+        "section": "PETROLEUM",
+        "text": "In the countries where it abounds, it is burnt in lamps instead of oil, and the poor use it to dress their food."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-petroleum",
+    "title": "Petroleum",
+    "url": "https://en.wikipedia.org/wiki/Petroleum",
+    "dateModified": "2026-09-21",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Petroleum, also called crude oil, is a naturally occurring yellowish-black liquid mixture of mainly hydrocarbons, found in rock formations beneath the Earth's surface."
+      },
+      {
+        "id": "W2",
+        "section": "Formation",
+        "text": "Petroleum forms from the remains of ancient marine organisms, such as plankton and algae, buried under sediment and changed by heat and pressure over millions of years."
+      },
+      {
+        "id": "W3",
+        "section": "Formation",
+        "text": "The buried organic matter first becomes a waxy material called kerogen. With more heat, within a range of temperature called the oil window, the kerogen is cooked into oil and gas."
+      },
+      {
+        "id": "W4",
+        "section": "History",
+        "text": "People have used oil from natural seeps for thousands of years, for lighting, for waterproofing boats and as a medicine. Oil was collected from hand-dug pits near Baku long before the modern industry."
+      },
+      {
+        "id": "W5",
+        "section": "Health",
+        "text": "Crude oil contains compounds that harm health, and some of them, such as benzene, cause cancer."
+      },
+      {
+        "id": "W6",
+        "section": "Refining",
+        "text": "Refineries separate crude oil into products such as gasoline, diesel, jet fuel, kerosene and heating oil."
+      },
+      {
+        "id": "W7",
+        "section": "Uses",
+        "text": "Oil is the world's largest source of primary energy and supplies about a third of it."
+      },
+      {
+        "id": "W8",
+        "section": "History",
+        "text": "In the 19th century kerosene refined from petroleum replaced whale oil as the main lamp fuel."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.84,
+    "rerankScore": 0.86,
+    "reasons": [
+      "Same headword: PETROLEUM and Petroleum.",
+      "Rare terms appear in both: rock oil, seeps from rocks, Baku, lamps, medicine.",
+      "Bitumen scores well but covers the solid tar, not the liquid."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Bitumen",
+      "url": "https://en.wikipedia.org/wiki/Bitumen",
+      "embedScore": 0.78,
+      "rerankScore": 0.55
+    },
+    {
+      "title": "Naphtha",
+      "url": "https://en.wikipedia.org/wiki/Naphtha",
+      "embedScore": 0.7,
+      "rerankScore": 0.45
+    }
+  ],
+  "alignments": [
+    {
+      "id": "pe1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Liquid from the rocks",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a liquid bitumen, of a strong smell, which oozes out of the clefts of rocks"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "liquid mixture of mainly hydrocarbons, found in rock formations beneath the Earth's surface"
+      },
+      "note": "A change in language. Liquid bitumen now reads as a mixture of hydrocarbons. Oozing from rocks is what Wikipedia calls a natural seep."
+    },
+    {
+      "id": "pe2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Oil wells near Baku",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "near Baku on the Caspian sea, where the people draw it from wells"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Oil was collected from hand-dug pits near Baku long before the modern industry"
+      },
+      "note": "The fact holds. Baku is now the capital of Azerbaijan, not part of Persia."
+    },
+    {
+      "id": "pe3",
+      "kind": "dropped",
+      "verdict": "correct",
+      "label": "Oil in Modena",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "in Italy, in the duchy of Modena"
+      },
+      "wikipedia": null,
+      "note": "Northern Italy has natural oil seeps. The Wikipedia passages do not name this region."
+    },
+    {
+      "id": "pe4",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Made by heat below ground",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "produced by subterraneous fires, which distil"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "the kerogen is cooked into oil and gas"
+      },
+      "note": "A change in knowledge. Heat deep in the earth does make oil, but there is no fire. The heat comes from deep burial."
+    },
+    {
+      "id": "pe5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Made from coal",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the oily part of coal and other bituminous matter"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "the remains of ancient marine organisms, such as plankton and algae"
+      },
+      "note": "A change in knowledge. Most oil comes from marine plankton and algae, not from coal."
+    },
+    {
+      "id": "pe6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Used on the skin",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "It is used outwardly in medicine for bruises"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "as a medicine"
+      },
+      "note": "The use is real and old. The Wikipedia passages do not say that it worked."
+    },
+    {
+      "id": "pe7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Taken as a cure",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "give it inwardly, a few drops in wine, against worms, coughs"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Crude oil contains compounds that harm health"
+      },
+      "note": "A change in knowledge. Oil taken by mouth is harmful, and some of its compounds cause cancer."
+    },
+    {
+      "id": "pe8",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Burned in lamps",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "it is burnt in lamps instead of oil"
+      },
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "kerosene refined from petroleum replaced whale oil as the main lamp fuel"
+      },
+      "note": "The use in lamps holds. In 1778 it was local; in the 19th century refined kerosene made it common."
+    },
+    {
+      "id": "pe9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Main source of energy",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Oil is the world's largest source of primary energy"
+      },
+      "note": "New knowledge. In 1778 rock oil was a local curiosity, not a world fuel."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What petroleum is",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Where it is found",
+      "britannica": 0.25,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Origin",
+      "britannica": 0.2,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Medicine and health",
+      "britannica": 0.3,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Lamps and fuels",
+      "britannica": 0.1,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "World energy",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "How did the 1778 entry think petroleum was formed?",
+    "Was petroleum a good medicine?",
+    "Where did the 1778 entry say petroleum was found?"
+  ],
+  "answers": {
+    "How did the 1778 entry think petroleum was formed?": {
+      "answer": "It said fires under the ground distil the oily part of coal and other bitumen [B3]. Wikipedia says oil forms from the remains of marine plankton and algae [W2], which deep burial heats until the organic matter is cooked into oil [W3]. Heat is right; fire and coal are not.",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.92
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Was petroleum a good medicine?": {
+      "answer": "The 1778 entry lists it for bruises and joint pain on the skin [B4], and as a drink in wine against worms and coughs [B5]. People did use it as a medicine for a long time [W4]. Wikipedia says crude oil contains compounds that harm health, and some cause cancer [W5].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.84
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Where did the 1778 entry say petroleum was found?": {
+      "answer": "Near Baku on the Caspian Sea and in the duchy of Modena in Italy [B2]. Wikipedia confirms that oil was collected from hand-dug pits near Baku long before the modern industry [W4].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

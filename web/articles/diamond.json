@@ -1,0 +1,405 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "diamond",
+    "label": "Diamond",
+    "headword": "DIAMOND",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Diamond",
+    "area": "geology",
+    "teaser": "exposed diamonds to the focus of a great burning-glass, and saw them consumed so that nothing remained"
+  },
+  "aliases": [
+    "diamond",
+    "diamonds",
+    "adamant",
+    "kimberlite"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0054",
+    "headword": "DIAMOND",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 6",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 6 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "DIA                    [ 23 ]                    DIA\n\nDIAMETER, in geometry, a right line paſſing through the centre of a circle.\n  DIAMOND, the moſt valuable and the hardeſt of all\nprecious ſtones, which cuts and ſcratches all others,\nand is itſelf cut only by its own duſt. Diamonds are\nfound only in the Eaſt Indies, chiefly in the kingdoms\nof Golconda and Viſapour, and in Brazil, where they\nwere firſt diſcovered in the preſent century. They are\nfound in the earth, or in the ſand of rivers; and it is\nſaid that a mine, when worked out, yields new diamonds\nafter ſome years, as if they grew again.\n  Sir Iſaac Newton, obſerving its great power of refra-\ncting light, conjectured that the diamond is an unctu-\nous ſubſtance coagulated, and therefore probably combu-\nſtible. This was confirmed by the Florentine academi-\ncians, who in 1694 expoſed diamonds to the focus of a\ngreat buming-glaſs, and ſaw them conſumed ſo that noth-\ning remained.\n  Mr Lavoiſier afterwards found that a diamond, burned\nin a cloſe veſſel, yields fixed air, as cbarcoal does.\nYet its nature is ſtill unknown; moſt writers rank it\namong the cryſtals, as a ſtone formed of an earth pecu-\nliar to itſelf.\n  DIANA, in heathen mythology, the goddeſs of hunting.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "DIAMOND",
+        "text": "DIAMOND, the most valuable and the hardest of all precious stones, which cuts and scratches all others, and is itself cut only by its own dust."
+      },
+      {
+        "id": "B2",
+        "section": "DIAMOND",
+        "text": "Diamonds are found only in the East Indies, chiefly in the kingdoms of Golconda and Visapour, and in Brazil, where they were first discovered in the present century."
+      },
+      {
+        "id": "B3",
+        "section": "DIAMOND",
+        "text": "They are found in the earth, or in the sand of rivers; and it is said that a mine, when worked out, yields new diamonds after some years, as if they grew again."
+      },
+      {
+        "id": "B4",
+        "section": "DIAMOND",
+        "text": "Sir Isaac Newton, observing its great power of refracting light, conjectured that the diamond is an unctuous substance coagulated, and therefore probably combustible."
+      },
+      {
+        "id": "B5",
+        "section": "DIAMOND",
+        "text": "This was confirmed by the Florentine academicians, who in 1694 exposed diamonds to the focus of a great burning-glass, and saw them consumed so that nothing remained."
+      },
+      {
+        "id": "B6",
+        "section": "DIAMOND",
+        "text": "Mr Lavoisier afterwards found that a diamond, burned in a close vessel, yields fixed air, as charcoal does."
+      },
+      {
+        "id": "B7",
+        "section": "DIAMOND",
+        "text": "Yet its nature is still unknown; most writers rank it among the crystals, as a stone formed of an earth peculiar to itself."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-diamond",
+    "title": "Diamond",
+    "url": "https://en.wikipedia.org/wiki/Diamond",
+    "dateModified": "2026-10-08",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Diamond is a solid form of the element carbon with its atoms arranged in a crystal structure called diamond cubic. It has the highest hardness of any natural material."
+      },
+      {
+        "id": "W2",
+        "section": "History",
+        "text": "Diamonds were first mined in India, which was the main source for centuries. Brazil became a major source after diamonds were found there in the 1720s."
+      },
+      {
+        "id": "W3",
+        "section": "Production",
+        "text": "Today the largest producers of diamonds include Russia, Botswana, Canada and the Democratic Republic of the Congo. Large deposits were found in South Africa from 1867."
+      },
+      {
+        "id": "W4",
+        "section": "Formation",
+        "text": "Most natural diamonds form at high temperature and pressure in the Earth's mantle, about 150 to 250 kilometres deep. Most are between 1 billion and 3.5 billion years old."
+      },
+      {
+        "id": "W5",
+        "section": "Formation",
+        "text": "Volcanic rocks called kimberlites carry diamonds to the surface. Erosion frees the diamonds, and rivers carry them into gravel and sand, where many have been found."
+      },
+      {
+        "id": "W6",
+        "section": "History of science",
+        "text": "Isaac Newton noted that diamond bends light very strongly, as oily substances do, and suggested that it could burn. In 1694 scientists in Florence made a diamond vanish with the heat of a large burning lens."
+      },
+      {
+        "id": "W7",
+        "section": "History of science",
+        "text": "In 1772 Antoine Lavoisier showed that burning diamond produces carbon dioxide. In 1797 Smithson Tennant showed that diamond is made of carbon alone."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.86,
+    "rerankScore": 0.87,
+    "reasons": [
+      "Same headword: DIAMOND and Diamond.",
+      "Rare terms appear in both: hardest, India, Brazil, burning-glass, Newton.",
+      "Carbon scores well but covers the element, not the stone."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Carbon",
+      "url": "https://en.wikipedia.org/wiki/Carbon",
+      "embedScore": 0.74,
+      "rerankScore": 0.5
+    },
+    {
+      "title": "Diamond cutting",
+      "url": "https://en.wikipedia.org/wiki/Diamond_cutting",
+      "embedScore": 0.72,
+      "rerankScore": 0.45
+    }
+  ],
+  "alignments": [
+    {
+      "id": "di1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Hardest of stones",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the hardest of all precious stones"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "It has the highest hardness of any natural material"
+      },
+      "note": "The claim holds. Wikipedia extends it from precious stones to all natural materials."
+    },
+    {
+      "id": "di2",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Only India and Brazil",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "Diamonds are found only in the East Indies"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Today the largest producers of diamonds include Russia, Botswana, Canada and the Democratic Republic of the Congo"
+      },
+      "note": "True for what Europeans knew in 1797. The large finds in Africa, Russia and Canada came later."
+    },
+    {
+      "id": "di3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Found in river sand",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "in the sand of rivers"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "rivers carry them into gravel and sand, where many have been found"
+      },
+      "note": "The observation holds. Wikipedia adds how the diamonds got there: erosion of the rock that carried them up."
+    },
+    {
+      "id": "di4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Diamonds grow again",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "a mine, when worked out, yields new diamonds after some years, as if they grew again"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Most are between 1 billion and 3.5 billion years old"
+      },
+      "note": "A change in knowledge. Diamonds do not grow back in a mine. Inference: new stones in an old mine came from more digging or from rain washing out loose ground."
+    },
+    {
+      "id": "di5",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Newton's guess",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "conjectured that the diamond is an unctuous substance coagulated, and therefore probably combustible"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "suggested that it could burn"
+      },
+      "note": "A change in language. An unctuous substance is an oily one. Newton's guess proved right."
+    },
+    {
+      "id": "di6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Burned by a burning-glass",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "in 1694 exposed diamonds to the focus of a great burning-glass, and saw them consumed"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "In 1694 scientists in Florence made a diamond vanish with the heat of a large burning lens"
+      },
+      "note": "The same experiment, with the same date and place."
+    },
+    {
+      "id": "di7",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Yields fixed air",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "yields fixed air, as charcoal does"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "burning diamond produces carbon dioxide"
+      },
+      "note": "A change in language. Fixed air is the old name for carbon dioxide."
+    },
+    {
+      "id": "di8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "A peculiar earth",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "a stone formed of an earth peculiar to itself"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "diamond is made of carbon alone"
+      },
+      "note": "A change in knowledge. Tennant published his result in 1797, too late for this entry. Diamond is pure carbon, the same element as charcoal."
+    },
+    {
+      "id": "di9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Formed in the mantle",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "form at high temperature and pressure in the Earth's mantle, about 150 to 250 kilometres deep"
+      },
+      "note": "New knowledge. The 1797 entry says nothing about how or where diamonds form."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Hardness and value",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Where diamonds are found",
+      "britannica": 0.25,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "What diamond is made of",
+      "britannica": 0.15,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Burning experiments",
+      "britannica": 0.4,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "How diamonds form",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1797 entry know about what diamond is made of?",
+    "Where did the 1797 entry say diamonds are found?",
+    "Who first showed that diamond burns?"
+  ],
+  "answers": {
+    "What did the 1797 entry know about what diamond is made of?": {
+      "answer": "It knew that diamond burns [B5] and that it gives fixed air when burned, as charcoal does [B6]. But it still called its nature unknown and ranked it among crystals [B7]. Wikipedia says diamond is a form of carbon [W1]. Tennant showed this in 1797 [W7].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "B7",
+          "source": "britannica",
+          "passageId": "B7",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Where did the 1797 entry say diamonds are found?": {
+      "answer": "Only in the East Indies and Brazil [B2], in the earth or in river sand [B3]. Wikipedia agrees that India and then Brazil were the early sources [W2], but today the largest producers include Russia, Botswana, Canada and the Democratic Republic of the Congo [W3].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.82
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.91
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Who first showed that diamond burns?": {
+      "answer": "Newton guessed it could burn [B4] [W6]. Scientists in Florence burned diamonds with a large burning-glass in 1694 [B5] [W6]. Lavoisier then showed that the burning gives fixed air, which is carbon dioxide [B6] [W7].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.88
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

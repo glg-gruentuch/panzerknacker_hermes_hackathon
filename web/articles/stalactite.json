@@ -1,0 +1,356 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "stalactite",
+    "label": "Stalactite",
+    "headword": "STALACTITES",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Stalactite",
+    "area": "geology",
+    "teaser": "the water, dropping slowly, leaves these particles behind, which harden into stone"
+  },
+  "aliases": [
+    "stalactite",
+    "stalactites",
+    "stalagmite",
+    "stalagmites",
+    "dripstone"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0053",
+    "headword": "STALACTITES",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 17",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 17 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "STA                    [ 702 ]                    STA\n\nSTAGE, the floor of a theatre on which the actors perform.\n  STALACTITES, in natural hiſtory, ſtony bodies hanging\nfrom the roofs and ſides of cavems, in the form of ici-\ncles. They are formed by water, which, filtering thro-\nugh the rock above, carries with it particles of calca-\nreous earth or ſpar; and the water, dropping ſlowly,\nleaves theſe particles behind, which harden into ſtone.\n  The drops which fall to the floor depoſit the ſame\nmatter there, and raiſe up ſtony cones or pillars\ncalled ſtalagmites; and theſe, meeting with the ſtala-\nctites from above, often form entire colurnns. Some of\nthe older naturaliſts conſidered them as a kind of veg-\netation of ſtone, which grows from a ſeed like a plant,\nand draws its nouriſhment from the rock.\n  They grow ſo quickly in ſome caves, that a paſſage\nwhich was open within the memory of man is now cloſed\nup by them in a few years. The moſt remarkable are\nthoſe of the grotto of Antiparos in the Archipelago,\nand of Pool's Hole in Derbyſhire.\n  STALBRIDGE, a market-town of Dorſetſhire.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "STALACTITES",
+        "text": "STALACTITES, in natural history, stony bodies hanging from the roofs and sides of caverns, in the form of icicles."
+      },
+      {
+        "id": "B2",
+        "section": "STALACTITES",
+        "text": "They are formed by water, which, filtering through the rock above, carries with it particles of calcareous earth or spar; and the water, dropping slowly, leaves these particles behind, which harden into stone."
+      },
+      {
+        "id": "B3",
+        "section": "STALACTITES",
+        "text": "The drops which fall to the floor deposit the same matter there, and raise up stony cones or pillars called stalagmites; and these, meeting with the stalactites from above, often form entire columns."
+      },
+      {
+        "id": "B4",
+        "section": "STALACTITES",
+        "text": "Some of the older naturalists considered them as a kind of vegetation of stone, which grows from a seed like a plant, and draws its nourishment from the rock."
+      },
+      {
+        "id": "B5",
+        "section": "STALACTITES",
+        "text": "They grow so quickly in some caves, that a passage which was open within the memory of man is now closed up by them in a few years."
+      },
+      {
+        "id": "B6",
+        "section": "STALACTITES",
+        "text": "The most remarkable are those of the grotto of Antiparos in the Archipelago, and of Pool's Hole in Derbyshire."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-stalactite",
+    "title": "Stalactite",
+    "url": "https://en.wikipedia.org/wiki/Stalactite",
+    "dateModified": "2026-09-02",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "A stalactite is a mineral formation that hangs from the ceiling of a cave or a similar place. The most common stalactites are speleothems, which form in limestone caves."
+      },
+      {
+        "id": "W2",
+        "section": "Formation",
+        "text": "Rainwater takes up carbon dioxide and becomes weakly acidic, so it dissolves limestone as it seeps through the rock. When the water reaches the air of a cave, it gives off carbon dioxide and deposits calcium carbonate."
+      },
+      {
+        "id": "W3",
+        "section": "Formation",
+        "text": "Each drop leaves a thin ring of calcite. The rings build up into a hollow tube called a soda straw, which can later grow into a cone."
+      },
+      {
+        "id": "W4",
+        "section": "Stalagmites",
+        "text": "A stalagmite is the matching formation that rises from the cave floor where the drops land. When a stalactite and a stalagmite meet, they form a column."
+      },
+      {
+        "id": "W5",
+        "section": "Growth rate",
+        "text": "Most stalactites grow very slowly, often a fraction of a millimetre a year. Similar formations can grow much faster from concrete, for example under bridges and in tunnels."
+      },
+      {
+        "id": "W6",
+        "section": "Climate records",
+        "text": "Speleothems, mainly stalagmites, can be dated, and the chemistry of their layers records past climate. Scientists use them to study changes in rainfall and temperature over thousands of years."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.87,
+    "rerankScore": 0.88,
+    "reasons": [
+      "Same headword: STALACTITES and Stalactite.",
+      "Rare terms appear in both: caverns, icicle shape, stalagmites, columns.",
+      "Speleothem scores well but covers all cave deposits."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Speleothem",
+      "url": "https://en.wikipedia.org/wiki/Speleothem",
+      "embedScore": 0.8,
+      "rerankScore": 0.6
+    },
+    {
+      "title": "Stalagmite",
+      "url": "https://en.wikipedia.org/wiki/Stalagmite",
+      "embedScore": 0.79,
+      "rerankScore": 0.58
+    }
+  ],
+  "alignments": [
+    {
+      "id": "st1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Stone icicles in caves",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "stony bodies hanging from the roofs and sides of caverns, in the form of icicles"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a mineral formation that hangs from the ceiling of a cave"
+      },
+      "note": "The description holds. Only the words changed."
+    },
+    {
+      "id": "st2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Drops leave stone behind",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the water, dropping slowly, leaves these particles behind, which harden into stone"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "deposits calcium carbonate"
+      },
+      "note": "A change in language. Calcareous earth is the old name for lime, which is calcium carbonate."
+    },
+    {
+      "id": "st3",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "How water takes up stone",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "carries with it particles of calcareous earth or spar"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "it dissolves limestone as it seeps through the rock"
+      },
+      "note": "A change in knowledge. The water carries the lime dissolved, not as particles. The role of carbon dioxide is not in the 1797 entry."
+    },
+    {
+      "id": "st4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Stalagmites from the floor",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "raise up stony cones or pillars called stalagmites"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "rises from the cave floor where the drops land"
+      },
+      "note": "The same fact in both texts."
+    },
+    {
+      "id": "st5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Joined into columns",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "these, meeting with the stalactites from above, often form entire columns"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "When a stalactite and a stalagmite meet, they form a column"
+      },
+      "note": "The same fact and nearly the same words."
+    },
+    {
+      "id": "st6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "A vegetation of stone",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "a kind of vegetation of stone, which grows from a seed like a plant"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a mineral formation"
+      },
+      "note": "Stalactites are not alive and have no seed. The 1797 entry gives this as the view of older writers, not as its own."
+    },
+    {
+      "id": "st7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Quick growth",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "closed up by them in a few years"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Most stalactites grow very slowly, often a fraction of a millimetre a year"
+      },
+      "note": "Growth is usually very slow. Inference: the 1797 report may describe a cave with unusual water, or it may exaggerate."
+    },
+    {
+      "id": "st8",
+      "kind": "dropped",
+      "verdict": "correct",
+      "label": "Famous caves",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "the grotto of Antiparos in the Archipelago, and of Pool's Hole in Derbyshire"
+      },
+      "wikipedia": null,
+      "note": "Both caves are real and known for their formations. The Wikipedia passages do not name single caves."
+    },
+    {
+      "id": "st9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Records of past climate",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "the chemistry of their layers records past climate"
+      },
+      "note": "New knowledge. Dating methods for cave deposits came long after 1797."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What they are",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "How they form",
+      "britannica": 0.3,
+      "wikipedia": 0.35
+    },
+    {
+      "topic": "Stalagmites and columns",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Growth rate",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Famous caves",
+      "britannica": 0.2,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Past climate",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "How did the 1797 entry explain how stalactites form?",
+    "Do stalactites grow as fast as the 1797 entry said?",
+    "Did people think stalactites were alive?"
+  ],
+  "answers": {
+    "How did the 1797 entry explain how stalactites form?": {
+      "answer": "Water filters through the rock, carries particles of calcareous earth, and leaves them behind as it drops [B2]. Wikipedia agrees on the dripping water but says the water dissolves the limestone and then deposits calcium carbonate when it gives off carbon dioxide in the cave [W2].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Do stalactites grow as fast as the 1797 entry said?": {
+      "answer": "Usually not. The entry said some close a passage in a few years [B5]. Wikipedia says most grow a fraction of a millimetre a year, though similar formations on concrete grow much faster [W5].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did people think stalactites were alive?": {
+      "answer": "Some older naturalists did. The 1797 entry reports that they saw stalactites as a vegetation of stone that grows from a seed [B4]. Wikipedia describes a stalactite as a mineral formation [W1], built from calcium carbonate left by water [W2].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.85
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.82
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

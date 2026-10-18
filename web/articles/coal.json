@@ -1,0 +1,392 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "coal",
+    "label": "Coal",
+    "headword": "COAL",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Coal",
+    "area": "geology",
+    "teaser": "the slate or shale which lies above the coal often bears the impressions of ferns and other plants"
+  },
+  "aliases": [
+    "coal",
+    "pit-coal",
+    "pit coal",
+    "coal seam",
+    "fire-damp",
+    "firedamp"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0051",
+    "headword": "COAL",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 5",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 5 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "COA                    [ 121 ]                    COA\n\nCOAGULATION, the thickening of a fluid into a ſolid maſs.\n  COAL, or PIT-COAL, a black inflammable foſſil, dug\nout of the earth in beds or ſeams, and much uſed for\nfuel. Naturaliſts are divided about its origin. Some\nhold it to be a mineral bitumen, which, having penetra-\nted a ſtratum of earth, has hardened with it into a\nſtone; others think it is formed of trees and other\nvegetables, buried in the earth and changed by length\nof time. In favour of the laſt opinion it is obſerved,\nthat the ſlate or ſhale which lies above tbe coal often\nbears the impreſſions of ferns and other plants.\n  The beds of coal, with the ſtrata of ſtone between\nthem, are ſuppoſed by many to have been laid down by\nthe waters of the deluge, which tore up the foreſts of\nthe old world and buried them. Coal is found in great\nplenty in Britain, chiefly about Newcaſtle, in Sco-\ntland, and in Wales; and the ſtock is ſo great that it\nmay be thought inexhauſtible.\n  The miners are much expoſed to an inflammable vapour\ncalled fire-damp, which, taking fire from their cand-\nles, explodes with great vio1ence, and often kills many\nof them. Pit-coal yields, by diſtillation, a tar, an\noil, and a volatile alkali; and what remains is called\ncoke, which is now uſed for ſmelting iron.\n  COAST, the border of the land next the ſea.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "COAL",
+        "text": "COAL, or PIT-COAL, a black inflammable fossil, dug out of the earth in beds or seams, and much used for fuel."
+      },
+      {
+        "id": "B2",
+        "section": "COAL",
+        "text": "Naturalists are divided about its origin. Some hold it to be a mineral bitumen, which, having penetrated a stratum of earth, has hardened with it into a stone; others think it is formed of trees and other vegetables, buried in the earth and changed by length of time."
+      },
+      {
+        "id": "B3",
+        "section": "COAL",
+        "text": "In favour of the last opinion it is observed, that the slate or shale which lies above the coal often bears the impressions of ferns and other plants."
+      },
+      {
+        "id": "B4",
+        "section": "COAL",
+        "text": "The beds of coal, with the strata of stone between them, are supposed by many to have been laid down by the waters of the deluge, which tore up the forests of the old world and buried them."
+      },
+      {
+        "id": "B5",
+        "section": "COAL",
+        "text": "Coal is found in great plenty in Britain, chiefly about Newcastle, in Scotland, and in Wales; and the stock is so great that it may be thought inexhaustible."
+      },
+      {
+        "id": "B6",
+        "section": "COAL",
+        "text": "The miners are much exposed to an inflammable vapour called fire-damp, which, taking fire from their candles, explodes with great violence, and often kills many of them."
+      },
+      {
+        "id": "B7",
+        "section": "COAL",
+        "text": "Pit-coal yields, by distillation, a tar, an oil, and a volatile alkali; and what remains is called coke, which is now used for smelting iron."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-coal",
+    "title": "Coal",
+    "url": "https://en.wikipedia.org/wiki/Coal",
+    "dateModified": "2026-09-14",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Coal is a combustible black or brownish-black sedimentary rock, formed as rock strata called coal seams. It is mostly carbon, with variable amounts of hydrogen, sulfur, oxygen and nitrogen."
+      },
+      {
+        "id": "W2",
+        "section": "Formation",
+        "text": "Coal forms when dead plant matter decays into peat and is converted into coal by the heat and pressure of deep burial over millions of years."
+      },
+      {
+        "id": "W3",
+        "section": "Formation",
+        "text": "Many large coal deposits come from wetland forests that grew during the Carboniferous and Permian periods, hundreds of millions of years ago."
+      },
+      {
+        "id": "W4",
+        "section": "Formation",
+        "text": "Fossils of plants, such as ferns and giant club mosses, are common in the shale beds that lie with coal seams."
+      },
+      {
+        "id": "W5",
+        "section": "History",
+        "text": "British coal output reached its peak in 1913 and then declined. Most British coal mines are now closed, and the last coal-fired power station in the United Kingdom closed in 2024."
+      },
+      {
+        "id": "W6",
+        "section": "Hazards",
+        "text": "Firedamp, a gas that is mostly methane, collects in coal mines and can explode when it meets a flame. Such explosions have killed many miners."
+      },
+      {
+        "id": "W7",
+        "section": "Uses",
+        "text": "Coke, made by heating coal without air, is used to smelt iron ore in blast furnaces. Coal tar is a by-product of making coke."
+      },
+      {
+        "id": "W8",
+        "section": "Environmental effects",
+        "text": "Burning coal releases carbon dioxide. Coal is the largest single source of the carbon dioxide emissions that cause climate change."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.88,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same headword: COAL and Coal.",
+      "Rare terms appear in both: seams, shale, ferns, fire-damp, coke.",
+      "Coal mining scores well but covers the mines, not the rock."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Coal mining",
+      "url": "https://en.wikipedia.org/wiki/Coal_mining",
+      "embedScore": 0.79,
+      "rerankScore": 0.61
+    },
+    {
+      "title": "Coke (fuel)",
+      "url": "https://en.wikipedia.org/wiki/Coke_(fuel)",
+      "embedScore": 0.7,
+      "rerankScore": 0.47
+    }
+  ],
+  "alignments": [
+    {
+      "id": "co1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Black fuel from the earth",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a black inflammable fossil, dug out of the earth in beds or seams"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a combustible black or brownish-black sedimentary rock, formed as rock strata called coal seams"
+      },
+      "note": "A change in language. In 1797 a fossil was anything dug out of the earth, and inflammable now reads as combustible."
+    },
+    {
+      "id": "co2",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Hardened mineral bitumen",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "Some hold it to be a mineral bitumen"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "dead plant matter decays into peat"
+      },
+      "note": "A change in knowledge. Coal is not a mineral liquid that hardened. It is the remains of plants."
+    },
+    {
+      "id": "co3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Made from buried plants",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "others think it is formed of trees and other vegetables, buried in the earth and changed by length of time"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "converted into coal by the heat and pressure of deep burial over millions of years"
+      },
+      "note": "The second 1797 opinion holds. Wikipedia adds heat and pressure, and gives the time as millions of years."
+    },
+    {
+      "id": "co4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Fern impressions in shale",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the slate or shale which lies above the coal often bears the impressions of ferns and other plants"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Fossils of plants, such as ferns and giant club mosses, are common in the shale beds"
+      },
+      "note": "The same observation in both texts. The 1797 entry used it as evidence for a plant origin, which was the right conclusion."
+    },
+    {
+      "id": "co5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Laid down by the deluge",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "supposed by many to have been laid down by the waters of the deluge"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "wetland forests that grew during the Carboniferous and Permian periods, hundreds of millions of years ago"
+      },
+      "note": "A change in knowledge. The plants grew and died where the coal is now, over a very long time, not in one flood."
+    },
+    {
+      "id": "co6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "An inexhaustible stock",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the stock is so great that it may be thought inexhaustible"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "British coal output reached its peak in 1913 and then declined"
+      },
+      "note": "Output fell for a century after 1913. Inference: cost and policy closed the mines as well as the loss of easy seams, but the stock did not prove endless."
+    },
+    {
+      "id": "co7",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Fire-damp explodes",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "an inflammable vapour called fire-damp, which, taking fire from their candles, explodes with great violence"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Firedamp, a gas that is mostly methane, collects in coal mines and can explode when it meets a flame"
+      },
+      "note": "The danger is the same. Wikipedia names the gas: methane."
+    },
+    {
+      "id": "co8",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Coke for smelting iron",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "what remains is called coke, which is now used for smelting iron"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Coke, made by heating coal without air, is used to smelt iron ore in blast furnaces"
+      },
+      "note": "The use of coke for iron was new in 1797 and still holds. Both texts also name coal tar."
+    },
+    {
+      "id": "co9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Coal and climate",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "Coal is the largest single source of the carbon dioxide emissions that cause climate change"
+      },
+      "note": "New knowledge. The 1797 entry treats burning coal only as a benefit."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What coal is",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Origin",
+      "britannica": 0.3,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Plant fossils",
+      "britannica": 0.12,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Supply in Britain",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Dangers in mines",
+      "britannica": 0.14,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Coke and tar",
+      "britannica": 0.14,
+      "wikipedia": 0.14
+    },
+    {
+      "topic": "Climate",
+      "britannica": 0,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1797 entry say about the origin of coal?",
+    "Was the 1797 entry right about fire-damp?",
+    "Did the 1797 entry think British coal would run out?"
+  ],
+  "answers": {
+    "What did the 1797 entry say about the origin of coal?": {
+      "answer": "It gave two opinions: a mineral bitumen that hardened in the earth, or trees and plants changed by time [B2]. It used fern impressions in the shale as evidence for plants [B3]. Wikipedia confirms the plant origin: peat buried and changed by heat and pressure over millions of years [W2]. The 1797 idea that the deluge laid down the beds [B4] is wrong; the plants grew in ancient wetland forests [W3].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.88
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.84
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.86
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Was the 1797 entry right about fire-damp?": {
+      "answer": "Yes. It described an inflammable vapour that takes fire from candles and kills miners [B6]. Wikipedia describes the same danger and names the gas as mostly methane [W6].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did the 1797 entry think British coal would run out?": {
+      "answer": "No. It said the stock in Britain might be thought inexhaustible [B5]. Wikipedia says British output peaked in 1913 and then declined, and most mines are now closed [W5].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}
