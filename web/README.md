@@ -43,25 +43,20 @@ Link straight to a topic with `?q=`, for example `http://localhost:5173/?q=consu
 
 ## Deploy to Cloudflare
 
-The site is static, so Cloudflare Workers serves `dist/` as static assets.
-`wrangler.jsonc` holds the config. The deployed site uses the built-in sample
-data, because Cloudflare does not run the Python backend.
+Cloudflare Workers builds and serves the site from this repository. Each push
+to `landing-page` starts a new deploy. The dashboard settings are:
 
-Deploy from your machine:
+| Setting | Value |
+|---|---|
+| Production branch | `landing-page` |
+| Root directory | `/web/` |
+| Build command | `npm ci && npm run build` |
+| Deploy command | `npx wrangler deploy` |
 
-```bash
-npx wrangler login   # once
-npm run deploy       # builds, then uploads dist/
-```
-
-Wrangler prints the URL, for example `https://panzerknacker-hermes-hackathon.<account>.workers.dev`.
-
-The workflow `.github/workflows/deploy-web.yml` deploys on each push to `main`
-that changes `web/`. You can also start it by hand from the Actions tab. Add
-these repository secrets first:
-
-- `CLOUDFLARE_API_TOKEN`: an API token made from the "Edit Cloudflare Workers" template.
-- `CLOUDFLARE_ACCOUNT_ID`: shown on the Workers and Pages overview page.
+`wrangler.jsonc` names the Worker and tells it to serve the built files in
+`dist/`. The name in that file must match the Worker name in Cloudflare. The
+deployed site uses the built-in sample data, because Cloudflare does not run
+the Python backend.
 
 ## What's on screen
 

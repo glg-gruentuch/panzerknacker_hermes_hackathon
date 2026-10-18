@@ -8,8 +8,7 @@
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview",
-    "examples": "node scripts/export-examples.mjs",
-    "deploy": "npm run build && npx --yes wrangler@4 deploy"
+    "examples": "node scripts/export-examples.mjs"
   },
   "dependencies": {
     "react": "^19.3.1",
