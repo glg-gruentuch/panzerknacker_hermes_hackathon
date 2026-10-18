@@ -25,6 +25,7 @@ PLATES = [
     ("helminthology", 651, "Helminthology", None),
     ("geyser", 1369, "Hver, or boiling fountain", (0.0, 0.0, 1.0, 0.55)),
     ("electricity", 1446, "Electricity", (0.0, 0.17, 1.0, 1.0)),
+    ("astronomy", 2176, "Astronomy", None),
 ]
 
 ROOT = Path(__file__).resolve().parents[2]

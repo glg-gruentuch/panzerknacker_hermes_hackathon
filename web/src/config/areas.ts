@@ -63,6 +63,13 @@ export const AREAS: Area[] = [
     plate: plate('electricity'),
     featured: ['electricity'],
   },
+  {
+    slug: 'astronomy',
+    label: 'Astronomy',
+    blurb: 'The sun, the moon and the planets, and how people explained what they saw in the sky.',
+    plate: plate('astronomy'),
+    featured: ['sun'],
+  },
 ]
 
 /** The plate behind the landing page before a subject is chosen. */

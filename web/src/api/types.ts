@@ -2,7 +2,7 @@
 // shapes for the backend team; keep the two in step.
 
 /** The subject areas the landing page groups articles into. Defined in src/config/areas.ts. */
-export type AreaSlug = 'infectious-disease' | 'anatomy' | 'geology' | 'natural-sciences'
+export type AreaSlug = 'infectious-disease' | 'anatomy' | 'geology' | 'natural-sciences' | 'astronomy'
 
 /** A topic the index can answer for (one of the sampled Britannica pages). */
 export interface TopicSummary {

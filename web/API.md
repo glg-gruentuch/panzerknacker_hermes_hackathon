@@ -50,7 +50,7 @@ The landing page groups them by subject, so fill these fields:
 
 | Field | What to send |
 |---|---|
-| `area` | One of `infectious-disease`, `anatomy`, `geology`, `natural-sciences`, or `null` to keep the page out of the subject lists (search still finds it). |
+| `area` | One of `infectious-disease`, `anatomy`, `geology`, `natural-sciences`, `astronomy`, or `null` to keep the page out of the subject lists (search still finds it). |
 | `teaser` | One short sentence from the Britannica entry, quoted exactly. Featured articles show it. |
 | `verdicts` | Counts of the claims in `/compare`: `{ "correct": 4, "partly": 1, "wrong": 1 }`. `null` when no claims were compared. |
 

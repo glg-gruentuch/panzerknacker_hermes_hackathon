@@ -46,5 +46,17 @@
     "volumeId": "149979622",
     "meta": "Encyclopaedia Britannica - Third edition, Volume 6, DIA-ETH - EB.5",
     "sourceSha256": "d5471506d9cc58aa7fd3b38eeb6e03d97b2c5efbe7c9978c2e39b38fb7f6443a"
+  },
+  {
+    "slug": "astronomy",
+    "title": "Astronomy",
+    "src": "/plates/astronomy.jpg",
+    "width": 572,
+    "height": 764,
+    "pageId": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2176",
+    "row": 2176,
+    "volumeId": "144850373",
+    "meta": "Encyclopaedia Britannica - Second edition, Volume 2, Astronomy-BZO - EB.4",
+    "sourceSha256": "10d820aa535dc4bc25fa09feb6af8f72c1f6661a10d5c81805c27908b1a7d909"
   }
 ]

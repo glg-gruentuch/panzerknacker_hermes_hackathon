@@ -31,7 +31,7 @@ export interface ArticleFile {
   answers?: Record<string, Omit<ChatResponse, 'trace'>>
 }
 
-const AREAS = ['infectious-disease', 'anatomy', 'geology', 'natural-sciences']
+const AREAS = ['infectious-disease', 'anatomy', 'geology', 'natural-sciences', 'astronomy']
 const KEYS = ['demo', 'summary', 'aliases', 'britannica', 'wikipedia', 'match', 'candidates', 'alignments', 'coverage', 'suggestedQuestions', 'answers']
 
 type Obj = Record<string, unknown>
