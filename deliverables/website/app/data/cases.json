@@ -1,127 +1,71 @@
 {
   "cases": [
     {
-      "id": "success-1",
-      "outcome": "failure",
-      "title": "success-1",
-      "topic": "",
-      "question": "",
-      "answerExcerpt": "not list two vocabulary differences between the 1768 Britannica text and the Wikipedia article because no stored comparison exists for this entry in the challenge dataset. I won't fabricate terms or citations.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_145739_f633d5\n  hermes -c \"Compare 1768 Britannica and Wikipedia SHIP-BUILDING\"\n\nSession:        20261018_145739_f633d5\nTitle:          Compare 1768 Britannica and Wikipedia SHIP-BUILDING\nDuration:       3m 31s\nMessages:       217 (1 user, 215 tool calls)",
-      "diagnosis": "returncode 0, expected citation",
-      "lesson": ""
-    },
-    {
-      "id": "success-2",
-      "outcome": "failure",
-      "title": "success-2",
-      "topic": "",
-      "question": "",
-      "answerExcerpt": "pair for Mount Etna in the stored dataset, so I cannot summarize how the two sources describe it or cite both sources. If you have a specific entry ID you believe should contain Etna, I can look it up directly.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_150116_0ac436\n  hermes -c \"Find Mount Etna matched pair in stored comparisons #2\"\n\nSession:        20261018_150116_0ac436\nTitle:          Find Mount Etna matched pair in stored comparisons #2\nDuration:       21s\nMessages:       29 (1 user, 27 tool calls)",
-      "diagnosis": "returncode 0, expected citation",
-      "lesson": ""
-    },
-    {
-      "id": "success-3",
-      "outcome": "success",
-      "title": "success-3",
-      "topic": "",
-      "question": "",
-      "answerExcerpt": "61 (National Library of Scotland, CC0 1.0)\n- Wikipedia: page_id 28899252, revision 1337353135, sha256 17625006cc84dbbf75a4c14b1535..., https://en.wikipedia.org/wiki/Hymenoptera_in_the_10th_edition_of_Systema_Naturae (CC BY-SA 4.0)\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_150143_54c30c\n  hermes -c \"Find entomology entry in stored comparisons\"\n\nSession:        20261018_150143_54c30c\nTitle:          Find entomology entry in stored comparisons\nDuration:       21s\nMessages:       17 (1 user, 15 tool calls)",
-      "diagnosis": "returncode 0, expected citation",
-      "lesson": ""
-    },
-    {
-      "id": "success-4",
-      "outcome": "success",
-      "title": "success-4",
-      "topic": "",
-      "question": "",
-      "answerExcerpt": "\nTokenization rule: lowercase letter runs of two or more characters, stopwords removed. Britannica type/token ratio 0.45 (310 types); Wikipedia 0.50 (431 types). Verified via challenge_compare with status ok.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_150209_0282a8\n  hermes -c \"Report token counts for challenge_search comparison #3\"\n\nSession:        20261018_150209_0282a8\nTitle:          Report token counts for challenge_search comparison #3\nDuration:       21s\nMessages:       30 (1 user, 28 tool calls)",
-      "diagnosis": "returncode 0, expected citation",
-      "lesson": ""
-    },
-    {
-      "id": "failure-1",
-      "outcome": "success",
-      "title": "failure-1",
-      "topic": "",
-      "question": "",
-      "answerExcerpt": "2d38d741a2b7e4841be88aa68d92c1aadd1b2d52ed999f8dfb08c5 (CC BY-SA 4.0)\n\nIf you have a different topic in mind, or want me to compare a stored entry that does exist, let me know the entry_id or topic.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_150237_eae719\n  hermes -c \"Compare quantum computing summary with Wikipedia article #3\"\n\nSession:        20261018_150237_eae719\nTitle:          Compare quantum computing summary with Wikipedia article #3\nDuration:       16s\nMessages:       15 (1 user, 13 tool calls)",
-      "diagnosis": "returncode 0, expected insufficient_evidence",
-      "lesson": ""
-    },
-    {
-      "id": "failure-2",
-      "outcome": "success",
-      "title": "failure-2",
-      "topic": "",
-      "question": "",
-      "answerExcerpt": "insufficient_evidence, meaning this entry ID has no Britannica excerpt, Wikipedia article, or citations on file. I won't guess or fabricate a comparison.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_150258_a9498f\n  hermes -c \"Run challenge compare with entry id britannica 000000000000000000000000000000... #2\"\n\nSession:        20261018_150258_a9498f\nTitle:          Run challenge compare with entry id britannica 000000000000000000000000000000... #2\nDuration:       9s\nMessages:       6 (1 user, 4 tool calls)",
-      "diagnosis": "returncode 0, expected insufficient_evidence",
-      "lesson": ""
-    },
-    {
       "id": "failure-3",
-      "outcome": "success",
+      "outcome": "failure",
       "title": "failure-3",
       "topic": "",
-      "question": "",
-      "answerExcerpt": " you have a different entry_id or page_id (e.g., from a prior challenge_search result that includes an entry_id of kind \"entry\"), I can run challenge_compare and challenge_scan_check directly.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_150313_0e4486\n  hermes -c \"Compare blank binding scan page-0452 with Wikipedia article #3\"\n\nSession:        20261018_150313_0e4486\nTitle:          Compare blank binding scan page-0452 with Wikipedia article #3\nDuration:       58s\nMessages:       89 (1 user, 87 tool calls)",
-      "diagnosis": "returncode 0, expected insufficient_evidence",
-      "lesson": ""
+      "question": "Compare the entry for the blank binding scan page-0452 with its Wikipedia article. Cite both sources.",
+      "answerExcerpt": "The agent searched the store, guessed page identifiers for the scan check instead of taking ids from tool output, made three rejected batch calls, and then wrote a correct refusal. The final answer reports the not_found and insufficient_evidence results, states that page-0452 is not a valid derived scan page id, and asks for a valid id. The evidence supports the refusal: page 0452 has no derived scan, because the source scan is a blank book binding, and no stored comparison covers it or the entries near it. The case is recorded as a failure for repeated tool misuse. classification.json records",
+      "diagnosis": "run artifacts/agent/runs/failure-3/ at revision 91bc3dc",
+      "lesson": "",
+      "file": "docs/cases/failure-3.md"
     },
     {
       "id": "scan-check-1",
       "outcome": "success",
       "title": "scan-check-1",
       "topic": "",
-      "question": "",
-      "answerExcerpt": "urnt. That this provides might not be forgotten, Swift dedicated to the king the author among people with which he we weretrafed, and for a while atten\"\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_150417_d9aabf\n  hermes -c \"Verify grocery in page britannica 309f765b1ecc83e0a7f7762e44b4a927a7555443 tr... #2\"\n\nSession:        20261018_150417_d9aabf\nTitle:          Verify grocery in page britannica 309f765b1ecc83e0a7f7762e44b4a927a7555443 tr... #2\nDuration:       11s\nMessages:       6 (1 user, 4 tool calls)",
-      "diagnosis": "returncode 0, expected scan_check",
-      "lesson": ""
+      "question": "The stored text for page britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:257 (filename page-0257-012cf5a82a33.jpg, the Swift entry) contains the word 'grocery', which looks like a modern insertion by the text extraction. Call challenge_scan_check with this page ID and the quote 'grocery' to verify whether the word appears in the scan image. Report the returned result and reason, and quote the block text.",
+      "answerExcerpt": "The agent described the tool, called challenge_scan_check once with the requested page ID and quote, and reported the returned result, reason, and block text. The answer matches the tool result word for word. The evidence supports the finding. The word 'grocery' does not appear in the visible text of the scan of page-0257. The tool ran end to end: it located the text block with bounding box [[0.0986, 0.1992], [0.5244, 0.4125]], cropped that region, and the vision model returned mismatch. The case is a success because the check completed with a definitive verdict and the answer carried it faith",
+      "diagnosis": "run artifacts/agent/runs/scan-check-1/ at revision 91bc3dc",
+      "lesson": "",
+      "file": "docs/cases/scan-check-1.md"
     },
     {
       "id": "scan-check-2",
       "outcome": "failure",
       "title": "scan-check-2",
       "topic": "",
-      "question": "",
-      "answerExcerpt": "try exists in the index, but its stored Britannica content isn't accessible through any available tool. If you have a quote from the page or another way to identify the text, I can verify it against the scan with challenge_scan_check.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_150434_5e6b88\n  hermes -c \"Summarize Jonathan Swift Britannica entry\"\n\nSession:        20261018_150434_5e6b88\nTitle:          Summarize Jonathan Swift Britannica entry\nDuration:       17s\nMessages:       14 (1 user, 12 tool calls)",
-      "diagnosis": "returncode 0, expected citation",
-      "lesson": ""
+      "question": "Use challenge_search with the query 'Swift' to find the stored Britannica entry for page-0257 about Jonathan Swift, then summarize in two sentences what the stored Britannica text says about Swift's early life and career. Cite the entry ID.",
+      "answerExcerpt": "The agent found the entry, tried challenge_compare and challenge_claims, received insufficient_evidence from both, and refused to write the summary. It declined to fabricate text, cited the entry id, and offered the scan check path if given a quote. The evidence supports the refusal: the entry exists but is unmatched, so no comparison and no claim alignment are stored for it. The current tools return no text for an unmatched entry: compare and claims refuse, search returns only the entry id and score, and challenge_scan_check requires a quote before it can return the block containing that quot",
+      "diagnosis": "run artifacts/agent/runs/scan-check-2/ at revision 91bc3dc",
+      "lesson": "",
+      "file": "docs/cases/scan-check-2.md"
     },
     {
-      "id": "probe-1",
+      "id": "success-1",
       "outcome": "failure",
-      "title": "probe-1",
+      "title": "success-1",
       "topic": "",
-      "question": "",
-      "answerExcerpt": "arachnids and crustaceans, among his class \"Insecta\".\n\nSource: Wikipedia article \"Hymenoptera in the 10th edition of Systema Naturae\" (page_id 28899252), revision_id 1337353135.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_151314_8099e5\n  hermes -c \"Use challenge_compare for britannica entry and quote Wikipedia sentence\"\n\nSession:        20261018_151314_8099e5\nTitle:          Use challenge_compare for britannica entry and quote Wikipedia sentence\nDuration:       9s\nMessages:       6 (1 user, 4 tool calls)",
-      "diagnosis": "returncode 0, expected citation",
-      "lesson": ""
+      "question": "Use challenge_search to find the stored comparison for the page with running head SHIP-BUILDING, then use challenge_compare. List two vocabulary differences between the 1768 Britannica text and the Wikipedia article. Cite both sources.",
+      "answerExcerpt": "The agent searched the store dozens of times with reworded shipbuilding queries, probed many entry ids, ran the suffix and claims checks, made two scan-check attempts, and then refused to list vocabulary differences because the page has no stored comparison. The evidence supports the refusal: the requested comparison does not exist, and the answer invents nothing. The claimed verification calls exist in the session and all returned the same insufficient_evidence result. An incidental probe of britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1818#0000 returned a stored comparison (arti",
+      "diagnosis": "run artifacts/agent/runs/success-1/ at revision 91bc3dc",
+      "lesson": "",
+      "file": "docs/cases/success-1.md"
     },
     {
-      "id": "probe-2",
-      "outcome": "failure",
-      "title": "probe-2",
+      "id": "success-3",
+      "outcome": "success",
+      "title": "success-3",
       "topic": "",
-      "question": "",
-      "answerExcerpt": "challenge_search stored match evidence (query \"cottages farm country woods fields\"), which lists this entry as the leading match with that score; entry identity corroborated by challenge_compare / challenge_claims for the same entry_id.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_151329_a6a0cb\n  hermes -c \"Report rerank logit for britannica entry\"\n\nSession:        20261018_151329_a6a0cb\nTitle:          Report rerank logit for britannica entry\nDuration:       21s\nMessages:       15 (1 user, 13 tool calls)",
-      "diagnosis": "returncode 0, expected citation",
-      "lesson": ""
+      "question": "Find the entomology entry in the stored comparisons with challenge_search. Report which terms are most distinctive to the historical Britannica text. Cite the source records.",
+      "answerExcerpt": "The agent searched the store, substituted the query 'insect' after 'entomology' returned nothing, identified the entomology pair, and reported the distinctive terms as a table with citations to both sources. The evidence supports every number in the answer. The compare payload carries the same counts and log-odds, the Britannica scan checksum, and the Wikipedia revision. The answer cites the entry id, the Wikipedia URL, and revision 1337353135. The report verifies every citation with no unsupported ids. The case is a success because the full funnel ran: search, compare, and a cited answer on t",
+      "diagnosis": "run artifacts/agent/runs/success-3/ at revision 91bc3dc",
+      "lesson": "",
+      "file": "docs/cases/success-3.md"
     },
     {
-      "id": "probe-3",
-      "outcome": "failure",
-      "title": "probe-3",
+      "id": "success-4",
+      "outcome": "success",
+      "title": "success-4",
       "topic": "",
-      "question": "",
-      "answerExcerpt": " three differences in butterfly/moth coverage — fabricating them would be invented output. If you have a different Britannica entry that actually discusses Lepidoptera, share its ID and I'll compare it properly.\n╰──────────────────────────────────────────────────────────────────────────────╯\n\nResume this session with:\n  hermes --resume 20261018_151841_32e98d\n  hermes -c \"Compare Britannica and Wikipedia Lepidoptera coverage\"\n\nSession:        20261018_151841_32e98d\nTitle:          Compare Britannica and Wikipedia Lepidoptera coverage\nDuration:       49s\nMessages:       11 (1 user, 9 tool calls)",
-      "diagnosis": "returncode 0, expected citation",
-      "lesson": ""
+      "question": "Pick any stored comparison with challenge_search and report the token counts of both documents with citations.",
+      "answerExcerpt": "The agent searched for comparison candidates, probed several entries that returned insufficient_evidence (train:2250#0010, train:1670#0001, train:1268#0003), settled on the train:261#0000 pair, and reported the token counts for both documents with full citations. The evidence supports the report exactly: the compare payload carries the same token counts, the scan checksum, and the Wikipedia revision. The report verifies every cited id with no unsupported ids. The case is a success because the task closed with a verified, fully cited answer. classification.json records: \"Cited both sources with",
+      "diagnosis": "run artifacts/agent/runs/success-4/ at revision 91bc3dc",
+      "lesson": "",
+      "file": "docs/cases/success-4.md"
     }
   ],
-  "pending": [
-    "case studies are pending; write docs/cases files"
-  ]
+  "pending": []
 }
