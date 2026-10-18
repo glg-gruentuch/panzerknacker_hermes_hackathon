@@ -108,17 +108,27 @@
   font-size: min(5.5rem, 8vw, calc(100cqi / (var(--chars, 6) * 0.68)));
 }
 
-/* In the hero the dotted line is its own layer, 80% of the field. Long names may run past it. */
-.hero .field::before {
-  content: '';
+/*
+ * In the hero the dotted line is its own layer: a hidden copy of the text on show.
+ * It is 40% of the field by default, grows with the text, and stops at 80%.
+ * Keep 80% in step with MAX_LINE in Headword.tsx. Long names may run past it.
+ */
+.rule {
   grid-area: 1 / 1;
+  justify-self: start;
   align-self: end;
-  width: 80%;
+  min-width: 40%;
+  max-width: 80%;
+  padding: 0 0 0.06em;
   border-bottom: 1.5px dotted var(--rule-strong);
+  white-space: pre;
+  overflow: hidden;
+  color: transparent;
   pointer-events: none;
+  user-select: none;
 }
 
-.hero .field:focus-within::before {
+.field:focus-within .rule {
   border-bottom-color: var(--ink);
 }
 

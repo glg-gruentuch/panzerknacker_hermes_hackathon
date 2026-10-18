@@ -17,6 +17,9 @@ interface Props {
 const TYPE_MS = 90
 const DELETE_MS = 40
 const HOLD_MS = 1600
+
+/** The longest the hero's dotted line gets, as a share of the field. Keep in step with .rule in the CSS. */
+const MAX_LINE = 0.8
 const GAP_MS = 400
 
 /**
@@ -58,7 +61,7 @@ function useTypewriter(names: string[], running: boolean) {
 }
 
 /**
- * The names that fit on the field's dotted line (its ::before), measured in the field's font.
+ * The names that fit on the longest dotted line (MAX_LINE of the field), measured in the field's font.
  * Null until measured, or when the field has no such line.
  */
 function useNamesThatFit(names: string[], field: RefObject<HTMLSpanElement | null>, enabled: boolean) {
@@ -74,7 +77,7 @@ function useNamesThatFit(names: string[], field: RefObject<HTMLSpanElement | nul
       const el = field.current
       const ctx = document.createElement('canvas').getContext('2d')
       if (cancelled || !el || !ctx) return
-      const line = parseFloat(getComputedStyle(el, '::before').width)
+      const line = el.getBoundingClientRect().width * MAX_LINE
       if (!line) return
       const cs = getComputedStyle(el)
       ctx.font = `${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`
@@ -187,6 +190,11 @@ export function Headword({ topics, value, onChange, onSubmit, size, autoFocus }:
       </label>
       <div className={styles.line}>
         <span ref={fieldRef} className={styles.field} data-value={mirror}>
+          {size === 'hero' && (
+            <span className={styles.rule} aria-hidden="true">
+              {value ? value + ghost : placeholder}
+            </span>
+          )}
           {ghost && (
             <span className={styles.ghost} aria-hidden="true">
               <span className={styles.ghostTyped}>{value}</span>
