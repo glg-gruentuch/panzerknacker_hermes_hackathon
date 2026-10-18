@@ -46,7 +46,7 @@ def test_implemented_stage_fails_cleanly_without_artifacts(tmp_path, capsys):
 def test_stages_list_reports_status(capsys):
     assert main(["stages"]) == 0
     rows = json.loads(capsys.readouterr().out)
-    assert len(rows) == 6
+    assert [row["stage"] for row in rows] == ["extract", "match", "compare", "claims", "agent", "site", "evaluate"]
     for row in rows:
         assert row["status"] == ("implemented" if row["stage"] in tasks.IMPLEMENTED else "TODO")
 
