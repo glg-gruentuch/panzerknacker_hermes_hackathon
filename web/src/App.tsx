@@ -2,7 +2,6 @@ import { useCallback, useEffect, useState, type ReactNode } from 'react'
 import { api } from './api/client'
 import type { AgentCase, Comparison, TopicSummary } from './api/types'
 import { AgentPanel } from './components/AgentPanel'
-import { CasesPage } from './components/CasesPage'
 import { ChangesView } from './components/ChangesView'
 import { Headword } from './components/Headword'
 import { Icon } from './components/Icon'
@@ -16,18 +15,18 @@ import styles from './App.module.css'
 
 type Status = 'idle' | 'loading' | 'ready' | 'notfound' | 'error'
 type Panel = 'read' | 'changes' | 'ask'
-type Page = 'compare' | 'cases' | 'sources'
+type Page = 'compare' | 'sources'
 
 const PAGES: { id: Page; label: string; short?: string }[] = [
   { id: 'compare', label: 'Compare' },
-  { id: 'cases', label: 'Agent cases', short: 'Cases' },
   { id: 'sources', label: 'Data and models', short: 'Data' },
 ]
 
 const params = () => new URLSearchParams(window.location.search)
 const pageFromUrl = (): Page => {
   const p = params().get('page')
-  return p === 'cases' || p === 'sources' ? p : 'compare'
+  // The agent cases are now a section of the sources page; old links to ?page=cases still land there.
+  return p === 'cases' || p === 'sources' ? 'sources' : 'compare'
 }
 
 const COLLAPSE_KEY = 'kat.agentHidden'
@@ -216,8 +215,7 @@ export default function App() {
         </nav>
       </header>
 
-      {page === 'cases' && <CasesPage onReplay={replay} />}
-      {page === 'sources' && <SourcesPage />}
+      {page === 'sources' && <SourcesPage onReplay={replay} />}
 
       {page === 'compare' && !inWorkspace && <Landing topics={topics} input={input} onInput={setInput} onSearch={search} />}
 

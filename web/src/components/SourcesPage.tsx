@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
 import { api } from '../api/client'
-import type { Meta } from '../api/types'
+import type { AgentCase, Meta } from '../api/types'
+import { AgentCases } from './AgentCases'
 import { Icon } from './Icon'
 import styles from './Pages.module.css'
 
-/** The datasets and the models in the pipeline. */
-export function SourcesPage() {
+/** The datasets, the models in the pipeline, and the documented agent cases. */
+export function SourcesPage({ onReplay }: { onReplay: (c: AgentCase) => void }) {
   const [meta, setMeta] = useState<Meta | null>(null)
   const [error, setError] = useState('')
 
@@ -52,6 +53,8 @@ export function SourcesPage() {
           </section>
         </>
       )}
+
+      <AgentCases onReplay={onReplay} />
     </main>
   )
 }
