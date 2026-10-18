@@ -45,8 +45,10 @@
 }
 
 .panel {
+  max-height: 42vh;
+  overflow-y: auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
   gap: var(--space-2) var(--space-6);
   padding: var(--space-2) 0 var(--space-4);
   font-size: var(--text-sm);
@@ -83,7 +85,19 @@
 .table td:not(:first-child),
 .table th:not(:first-child) {
   text-align: right;
-  width: 84px;
+  white-space: nowrap;
+}
+
+.tableWrap {
+  min-width: 0;
+  overflow-x: auto;
+}
+
+.pendingLine {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
 }
 
 .chosen td {

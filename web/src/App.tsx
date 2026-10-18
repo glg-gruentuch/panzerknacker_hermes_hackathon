@@ -12,6 +12,7 @@ import { ReadingPane, type PassageFocus, type Side } from './components/ReadingP
 import { SourcesPage } from './components/SourcesPage'
 import { NARROW, WIDE, useMediaQuery } from './lib/useMediaQuery'
 import { useAgentChat } from './lib/useAgentChat'
+import { thenName } from './lib/when'
 import styles from './App.module.css'
 
 type Status = 'idle' | 'loading' | 'ready' | 'notfound' | 'error'
@@ -197,8 +198,13 @@ export default function App() {
 
         <nav className={styles.nav} aria-label="Pages">
           {API_MODE === 'mock' && (
-            <span className={styles.mock} title="Built-in sample data. Set VITE_API_MODE=live to use the backend.">
+            <span className={styles.mock} title="Built-in sample data. Run without VITE_API_MODE=mock to use the backend.">
               Sample data
+            </span>
+          )}
+          {API_MODE === 'static' && (
+            <span className={styles.mock} title="Exported data and recorded agent runs. No server is involved.">
+              Static export
             </span>
           )}
           {PAGES.map((p) => (
@@ -240,7 +246,7 @@ export default function App() {
                   {narrow ? (
                     <>
                       <Tab selected={panel === 'read' && side === 'britannica'} onClick={() => (setPanel('read'), setSide('britannica'))}>
-                        <span className="num">{comparison.britannica.year}</span>
+                        <span className="num">{thenName(comparison.britannica)}</span>
                       </Tab>
                       <Tab selected={panel === 'read' && side === 'wikipedia'} onClick={() => (setPanel('read'), setSide('wikipedia'))}>
                         Today

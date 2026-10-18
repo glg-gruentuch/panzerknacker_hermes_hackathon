@@ -64,18 +64,6 @@
   font-size: var(--text-sm);
 }
 
-[data-tone='correct'] {
-  --tone-text: var(--correct-text);
-}
-
-[data-tone='partly'] {
-  --tone-text: var(--partly-text);
-}
-
-[data-tone='wrong'] {
-  --tone-text: var(--wrong-text);
-}
-
 .grounding,
 .errorHead {
   display: inline-flex;
@@ -88,6 +76,7 @@
 
 .text {
   line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 .text p + p,
@@ -300,4 +289,17 @@ button.cite:hover {
 .composer :global(.btn) {
   height: 40px;
   padding: 0 var(--space-4);
+}
+
+.staticNote {
+  padding: var(--space-3) var(--space-5);
+  border-top: 1px solid var(--rule);
+  font-size: var(--text-xs);
+  color: var(--muted);
+}
+
+.runDir {
+  font-size: var(--text-xs);
+  color: var(--muted);
+  overflow-wrap: anywhere;
 }

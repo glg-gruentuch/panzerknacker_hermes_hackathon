@@ -102,19 +102,19 @@
   text-decoration-skip-ink: none;
 }
 
-.sample[data-tone='wrong'] {
-  text-decoration-color: var(--wrong-line);
+.sample[data-tone='contradicts'] {
+  text-decoration-color: var(--red-line);
   text-decoration-style: wavy;
   text-decoration-thickness: 1.25px;
 }
 
-.sample[data-tone='partly'] {
-  text-decoration-color: var(--partly-line);
+.sample[data-tone='differs'] {
+  text-decoration-color: var(--amber-line);
   text-decoration-style: dashed;
 }
 
-.sample[data-tone='correct'] {
-  text-decoration-color: var(--correct-line);
+.sample[data-tone='agrees'] {
+  text-decoration-color: var(--green-line);
 }
 
 /* Subjects */

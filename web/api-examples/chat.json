@@ -48,25 +48,19 @@
     "trace": [
       {
         "step": "Embed question",
-        "model": "Nemotron-3-Embed-VL",
+        "model": "nvidia/llama-nemotron-embed-vl-1b-v2",
         "detail": "Mock: skipped",
         "ms": null
       },
       {
-        "step": "Search both collections",
-        "model": "LanceDB",
-        "detail": "Mock: keyword match",
-        "ms": null
-      },
-      {
         "step": "Rerank passages",
-        "model": "Nemotron 3-Rerank-VL",
+        "model": "nvidia/llama-nemotron-rerank-vl-1b-v2",
         "detail": "Mock: skipped",
         "ms": null
       },
       {
         "step": "Write answer",
-        "model": "Hermes Agent · Nemotron 3.5 Super VL",
+        "model": "nvidia/Nemotron-3.5-Super-VL via Hermes Agent",
         "detail": "Mock: canned answer",
         "ms": null
       }

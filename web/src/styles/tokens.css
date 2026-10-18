@@ -1,6 +1,6 @@
 /*
   Restrained palette: ink on white, hairlines, and one colour system.
-  Colour means one thing only: whether a Britannica claim holds up today.
+  Colour means one thing only: how a Britannica claim compares with Wikipedia.
   The two sources are told apart by typeface and position, not colour.
 */
 :root {
@@ -16,18 +16,23 @@
   --rule: #e8e9ed;
   --rule-strong: #d3d5db;
 
-  /* Verdicts. -line is for underlines and marks, -text for words, -tint for highlights. */
-  --correct-line: #2e9447;
-  --correct-text: #1f7a37;
-  --correct-tint: #e7f4ea;
+  /* Verdict colours. -line for underlines and marks, -text for words, -tint for highlights.
+     Which verdict uses which colour is set once, in base.css ([data-tone]). */
+  --green-line: #2e9447;
+  --green-text: #1f7a37;
+  --green-tint: #e7f4ea;
 
-  --partly-line: #b27c00;
-  --partly-text: #94600a;
-  --partly-tint: #fdf3da;
+  --amber-line: #b27c00;
+  --amber-text: #94600a;
+  --amber-tint: #fdf3da;
 
-  --wrong-line: #c23434;
-  --wrong-text: #c23434;
-  --wrong-tint: #fbe9e9;
+  --red-line: #c23434;
+  --red-text: #c23434;
+  --red-tint: #fbe9e9;
+
+  --grey-line: #8b8d97;
+  --grey-text: #5d5f6b;
+  --grey-tint: #eef0f3;
 
   --font-caslon: 'Libre Caslon Text', 'Iowan Old Style', Georgia, serif;
   --font-display: 'Libre Caslon Display', 'Libre Caslon Text', Georgia, serif;

@@ -10,10 +10,12 @@
     "wikipediaTitle": "Blood",
     "area": "anatomy",
     "teaser": "Physicians at this day relieve a plethora, or too great fulness of blood, by opening a vein.",
+    "fragment": false,
     "verdicts": {
-      "correct": 5,
-      "partly": 1,
-      "wrong": 4
+      "agrees": 5,
+      "differs": 1,
+      "contradicts": 3,
+      "not_in_wikipedia": 1
     }
   },
   "britannica": {
@@ -67,7 +69,229 @@
         "section": "TRANSFUSION",
         "text": "The transfusion of blood from one animal into another was attempted in the last century both in England and France; but the experiments, having sometimes proved fatal, were forbidden by authority."
       }
-    ]
+    ],
+    "entryId": "sample:blood",
+    "scanSha256": null,
+    "fragment": false,
+    "pageHeader": "BLO  [ 302 ]  BLO",
+    "blocks": [],
+    "normalized": {
+      "text": "BLO                    [ 302 ]                    BLO\n\nwere it not that the seeds are often destroyed by the birds. See Botany, Index.\n  BLOOD, in anatomy, a red fluid, which circulates through the arteries and veins of animals, and is the immediate nourishment of every part of the body.\n  When drawn from a vein and suffered to rest, it separates into two parts: a red mass called the crassamentum, or cake, and a thin yellowish liquor named the serum. The redness is owing to an infinite number of minute red globules, first discovered by the microscope of Leeuwenhoeck, which swim in the serum and are thought to be compressible.\n  The blood is made from the chyle, which, being prepared from the aliment in the stomach and intestines, is conveyed by the lacteal vessels into the thoracic duct, and thence into the subclavian vein. Its motion was first demonstrated by our countryman Dr Harvey, who shewed that the heart, by its contraction, drives the blood through the arteries to every part, from whence it returns by the veins.\n  Of the heat of the blood authors are not agreed; some ascribing it to a fermentation, others to the friction of its parts against the sides of the vessels.\n  The ancients reckoned the blood one of the four humours, and ascribed to its abundance the sanguine temperament. Physicians at this day relieve a plethora, or too great fulness of blood, by opening a vein.\n  TRANSFUSION of blood from one animal into another was attempted in the last century both in England and France; but the experiments, having sometimes proved fatal, were forbidden by authority.\n  BLOOD-HOUND, a species of dog, remarkable for the acuteness of its smell. See Canis.",
+      "fixes": [
+        {
+          "start": 76,
+          "end": 81,
+          "original": "ſeeds"
+        },
+        {
+          "start": 92,
+          "end": 101,
+          "original": "deſtroyed"
+        },
+        {
+          "start": 250,
+          "end": 261,
+          "original": "nouriſhment"
+        },
+        {
+          "start": 318,
+          "end": 326,
+          "original": "ſuffered"
+        },
+        {
+          "start": 330,
+          "end": 334,
+          "original": "reſt"
+        },
+        {
+          "start": 339,
+          "end": 348,
+          "original": "ſe-\nparates"
+        },
+        {
+          "start": 371,
+          "end": 375,
+          "original": "maſs"
+        },
+        {
+          "start": 387,
+          "end": 399,
+          "original": "craſſa-\nmentum"
+        },
+        {
+          "start": 421,
+          "end": 430,
+          "original": "yellowiſh"
+        },
+        {
+          "start": 448,
+          "end": 453,
+          "original": "ſerum"
+        },
+        {
+          "start": 459,
+          "end": 466,
+          "original": "redneſs"
+        },
+        {
+          "start": 522,
+          "end": 527,
+          "original": "firſt"
+        },
+        {
+          "start": 528,
+          "end": 538,
+          "original": "diſcovered"
+        },
+        {
+          "start": 546,
+          "end": 556,
+          "original": "micro-\nſcope"
+        },
+        {
+          "start": 580,
+          "end": 584,
+          "original": "ſwim"
+        },
+        {
+          "start": 592,
+          "end": 597,
+          "original": "ſerum"
+        },
+        {
+          "start": 620,
+          "end": 632,
+          "original": "compreſſible"
+        },
+        {
+          "start": 683,
+          "end": 691,
+          "original": "pre-\npared"
+        },
+        {
+          "start": 716,
+          "end": 723,
+          "original": "ſtomach"
+        },
+        {
+          "start": 728,
+          "end": 738,
+          "original": "inteſtines"
+        },
+        {
+          "start": 767,
+          "end": 774,
+          "original": "vefſels"
+        },
+        {
+          "start": 819,
+          "end": 829,
+          "original": "ſubclavian"
+        },
+        {
+          "start": 851,
+          "end": 856,
+          "original": "firſt"
+        },
+        {
+          "start": 857,
+          "end": 869,
+          "original": "demonſtrated"
+        },
+        {
+          "start": 903,
+          "end": 909,
+          "original": "ſhewed"
+        },
+        {
+          "start": 1087,
+          "end": 1091,
+          "original": "ſome"
+        },
+        {
+          "start": 1092,
+          "end": 1101,
+          "original": "aſcribing"
+        },
+        {
+          "start": 1138,
+          "end": 1146,
+          "original": "fric-\ntion"
+        },
+        {
+          "start": 1160,
+          "end": 1167,
+          "original": "againſt"
+        },
+        {
+          "start": 1172,
+          "end": 1177,
+          "original": "ſides"
+        },
+        {
+          "start": 1185,
+          "end": 1192,
+          "original": "veſſels"
+        },
+        {
+          "start": 1257,
+          "end": 1265,
+          "original": "aſcribed"
+        },
+        {
+          "start": 1287,
+          "end": 1295,
+          "original": "ſanguine"
+        },
+        {
+          "start": 1309,
+          "end": 1319,
+          "original": "Phyſicians"
+        },
+        {
+          "start": 1342,
+          "end": 1350,
+          "original": "ple-\nthora"
+        },
+        {
+          "start": 1365,
+          "end": 1372,
+          "original": "fulneſs"
+        },
+        {
+          "start": 1475,
+          "end": 1479,
+          "original": "laſt"
+        },
+        {
+          "start": 1544,
+          "end": 1553,
+          "original": "ſometimes"
+        },
+        {
+          "start": 1614,
+          "end": 1621,
+          "original": "ſpecies"
+        },
+        {
+          "start": 1649,
+          "end": 1658,
+          "original": "acuteneſs"
+        },
+        {
+          "start": 1666,
+          "end": 1671,
+          "original": "ſmell"
+        }
+      ]
+    },
+    "quality": {
+      "dictionaryShare": 0.867,
+      "issues": [
+        "38 words printed with the long s (ſ); normalized to s."
+      ],
+      "pdfUrl": null
+    }
   },
   "wikipedia": {
     "identifier": "mock-blood",
@@ -125,12 +349,15 @@
         "section": "Disorders",
         "text": "Disorders of the blood include anaemia, haemophilia, leukaemia and sickle cell disease."
       }
-    ]
+    ],
+    "revisionId": "sample",
+    "revisionUrl": "https://en.wikipedia.org/wiki/Blood",
+    "license": "CC BY-SA 4.0"
   },
   "match": {
     "strength": "strong",
-    "embedScore": 0.86,
-    "rerankScore": 0.93,
+    "rerankLogit": 2.59,
+    "threshold": 0,
     "reasons": [
       "Same headword: BLOOD and Blood.",
       "Eight of the ten Wikipedia sections have a counterpart passage on the Britannica page.",
@@ -139,29 +366,47 @@
   },
   "candidates": [
     {
+      "title": "Blood",
+      "url": "https://en.wikipedia.org/wiki/Blood",
+      "bm25Rank": 1,
+      "embedSimilarity": 0.86,
+      "embedRank": 1,
+      "rerankLogit": 2.59,
+      "rerankRank": 1
+    },
+    {
       "title": "Blood plasma",
       "url": "https://en.wikipedia.org/wiki/Blood_plasma",
-      "embedScore": 0.79,
-      "rerankScore": 0.61
+      "bm25Rank": 2,
+      "embedSimilarity": 0.79,
+      "embedRank": 2,
+      "rerankLogit": 0.45,
+      "rerankRank": 2
     },
     {
       "title": "Circulatory system",
       "url": "https://en.wikipedia.org/wiki/Circulatory_system",
-      "embedScore": 0.74,
-      "rerankScore": 0.55
+      "bm25Rank": 4,
+      "embedSimilarity": 0.74,
+      "embedRank": 3,
+      "rerankLogit": 0.2,
+      "rerankRank": 3
     },
     {
       "title": "Bloodletting",
       "url": "https://en.wikipedia.org/wiki/Bloodletting",
-      "embedScore": 0.7,
-      "rerankScore": 0.48
+      "bm25Rank": 3,
+      "embedSimilarity": 0.7,
+      "embedRank": 4,
+      "rerankLogit": -0.08,
+      "rerankRank": 4
     }
   ],
   "alignments": [
     {
       "id": "a1",
-      "kind": "retained",
-      "verdict": "correct",
+      "verdict": "agrees",
+      "claimType": null,
       "label": "Blood circulates",
       "britannica": {
         "passageId": "B1",
@@ -171,12 +416,16 @@
         "passageId": "W5",
         "quote": "a closed system of arteries, capillaries and veins"
       },
-      "note": "Both describe the same circuit. Wikipedia also names the capillaries that join arteries to veins."
+      "explanation": "Both describe the same circuit. Wikipedia also names the capillaries that join arteries to veins.",
+      "downgraded": false,
+      "quantity": null,
+      "scores": null,
+      "kind": "retained"
     },
     {
       "id": "a2",
-      "kind": "retained",
-      "verdict": "correct",
+      "verdict": "agrees",
+      "claimType": null,
       "label": "The heart drives it",
       "britannica": {
         "passageId": "B5",
@@ -186,12 +435,16 @@
         "passageId": "W5",
         "quote": "The heart pumps blood"
       },
-      "note": "Harvey's account from 1628 still stands; only the wording is plainer."
+      "explanation": "Harvey's account from 1628 still stands; only the wording is plainer.",
+      "downgraded": false,
+      "quantity": null,
+      "scores": null,
+      "kind": "retained"
     },
     {
       "id": "a3",
-      "kind": "reworded",
-      "verdict": "correct",
+      "verdict": "agrees",
+      "claimType": null,
       "label": "Red globules",
       "britannica": {
         "passageId": "B3",
@@ -201,12 +454,16 @@
         "passageId": "W2",
         "quote": "red blood cells (erythrocytes)"
       },
-      "note": "The same objects. \"Globules\" was the microscope-era name; they became \"cells\" once cell theory arrived in the 1830s."
+      "explanation": "The same objects. \"Globules\" was the microscope-era name; they became \"cells\" once cell theory arrived in the 1830s.",
+      "downgraded": false,
+      "quantity": null,
+      "scores": null,
+      "kind": "reworded"
     },
     {
       "id": "a4",
-      "kind": "reworded",
-      "verdict": "correct",
+      "verdict": "agrees",
+      "claimType": null,
       "label": "The clot",
       "britannica": {
         "passageId": "B2",
@@ -216,12 +473,16 @@
         "passageId": "W6",
         "quote": "form a clot"
       },
-      "note": "Crassamentum is Latin for \"thickening\". The observation is unchanged; the word has gone."
+      "explanation": "Crassamentum is Latin for \"thickening\". The observation is unchanged; the word has gone.",
+      "downgraded": false,
+      "quantity": null,
+      "scores": null,
+      "kind": "reworded"
     },
     {
       "id": "a5",
-      "kind": "retained",
-      "verdict": "correct",
+      "verdict": "agrees",
+      "claimType": null,
       "label": "Serum",
       "britannica": {
         "passageId": "B2",
@@ -231,12 +492,16 @@
         "passageId": "W6",
         "quote": "the clear fluid left behind is called serum"
       },
-      "note": "Same word, same meaning, in both texts."
+      "explanation": "Same word, same meaning, in both texts.",
+      "downgraded": false,
+      "quantity": null,
+      "scores": null,
+      "kind": "retained"
     },
     {
       "id": "a6",
-      "kind": "revised",
-      "verdict": "wrong",
+      "verdict": "contradicts",
+      "claimType": null,
       "label": "Where blood is made",
       "britannica": {
         "passageId": "B4",
@@ -246,12 +511,16 @@
         "passageId": "W4",
         "quote": "Blood cells are produced in the bone marrow"
       },
-      "note": "In 1797, blood is made from digested food. Today, food supplies the plasma, but the cells come from the bone marrow."
+      "explanation": "In 1797, blood is made from digested food. Today, food supplies the plasma, but the cells come from the bone marrow.",
+      "downgraded": false,
+      "quantity": null,
+      "scores": null,
+      "kind": "revised"
     },
     {
       "id": "a7",
-      "kind": "revised",
-      "verdict": "wrong",
+      "verdict": "contradicts",
+      "claimType": null,
       "label": "Why blood is warm",
       "britannica": {
         "passageId": "B6",
@@ -261,12 +530,16 @@
         "passageId": "W7",
         "quote": "Heat is produced mainly by metabolism in the liver and muscles"
       },
-      "note": "Neither 1797 theory survived. Heat comes from the tissues; blood only carries it."
+      "explanation": "Neither 1797 theory survived. Heat comes from the tissues; blood only carries it.",
+      "downgraded": false,
+      "quantity": null,
+      "scores": null,
+      "kind": "revised"
     },
     {
       "id": "a8",
-      "kind": "revised",
-      "verdict": "wrong",
+      "verdict": "contradicts",
+      "claimType": null,
       "label": "Bloodletting",
       "britannica": {
         "passageId": "B7",
@@ -276,12 +549,16 @@
         "passageId": "W9",
         "quote": "Today it is used only for a few conditions"
       },
-      "note": "Routine treatment in 1797. Now kept for a few disorders where the body holds too much iron or too many red cells."
+      "explanation": "Routine treatment in 1797. Now kept for a few disorders where the body holds too much iron or too many red cells.",
+      "downgraded": false,
+      "quantity": null,
+      "scores": null,
+      "kind": "revised"
     },
     {
       "id": "a9",
-      "kind": "revised",
-      "verdict": "partly",
+      "verdict": "differs",
+      "claimType": null,
       "label": "Transfusion",
       "britannica": {
         "passageId": "B8",
@@ -291,43 +568,27 @@
         "passageId": "W8",
         "quote": "Karl Landsteiner discovered the ABO blood groups in 1901"
       },
-      "note": "Right that it was dangerous, wrong about why: the deaths came from mismatched blood groups."
+      "explanation": "Right that it was dangerous, wrong about why: the deaths came from mismatched blood groups.",
+      "downgraded": false,
+      "quantity": null,
+      "scores": null,
+      "kind": "revised"
     },
     {
       "id": "a10",
-      "kind": "dropped",
-      "verdict": "wrong",
+      "verdict": "not_in_wikipedia",
+      "claimType": null,
       "label": "Blood and temperament",
       "britannica": {
         "passageId": "B7",
         "quote": "ascribed to its abundance the sanguine temperament"
       },
       "wikipedia": null,
-      "note": "The idea that blood shapes character has left medicine entirely."
-    },
-    {
-      "id": "a11",
-      "kind": "added",
-      "verdict": null,
-      "label": "Carrying oxygen",
-      "britannica": null,
-      "wikipedia": {
-        "passageId": "W3",
-        "quote": "binds oxygen in the lungs and releases it in the tissues"
-      },
-      "note": "The 1797 entry never says what blood carries. Oxygen transport by haemoglobin is entirely new."
-    },
-    {
-      "id": "a12",
-      "kind": "added",
-      "verdict": null,
-      "label": "Blood disorders",
-      "britannica": null,
-      "wikipedia": {
-        "passageId": "W10",
-        "quote": "anaemia, haemophilia, leukaemia and sickle cell disease"
-      },
-      "note": "None of these is named on the 1797 page."
+      "explanation": "The idea that blood shapes character has left medicine entirely.",
+      "downgraded": false,
+      "quantity": null,
+      "scores": null,
+      "kind": "dropped"
     }
   ],
   "vocabulary": {
@@ -452,72 +713,84 @@
       "serum"
     ]
   },
-  "coverage": [
+  "obsoleteTerms": [
+    "anatomy",
+    "circulates",
+    "animals",
+    "immediate",
+    "nourishment",
+    "drawn",
+    "vein",
+    "suffered",
+    "separates",
+    "two",
+    "crassamentum",
+    "cake",
+    "thin",
+    "yellowish",
+    "liquor",
+    "named",
+    "redness",
+    "owing",
+    "infinite",
+    "number",
+    "minute",
+    "globules",
+    "microscope",
+    "leeuwenhoek"
+  ],
+  "sectionCoverage": [
     {
-      "topic": "Composition",
-      "britannica": 0.22,
-      "wikipedia": 0.2
+      "section": "Introduction",
+      "covered": false,
+      "claims": 0
     },
     {
-      "topic": "Clotting",
-      "britannica": 0.1,
-      "wikipedia": 0.1
+      "section": "Composition",
+      "covered": true,
+      "claims": 1
     },
     {
-      "topic": "Circulation",
-      "britannica": 0.18,
-      "wikipedia": 0.12
+      "section": "Red blood cells",
+      "covered": false,
+      "claims": 0
     },
     {
-      "topic": "Where blood is made",
-      "britannica": 0.14,
-      "wikipedia": 0.12
+      "section": "Production",
+      "covered": true,
+      "claims": 1
     },
     {
-      "topic": "Body heat",
-      "britannica": 0.1,
-      "wikipedia": 0.06
+      "section": "Circulation",
+      "covered": true,
+      "claims": 2
     },
     {
-      "topic": "Humours and temperament",
-      "britannica": 0.1,
-      "wikipedia": 0.04
+      "section": "Clotting",
+      "covered": true,
+      "claims": 2
     },
     {
-      "topic": "Bloodletting",
-      "britannica": 0.08,
-      "wikipedia": 0.06
+      "section": "Body temperature",
+      "covered": true,
+      "claims": 1
     },
     {
-      "topic": "Transfusion",
-      "britannica": 0.08,
-      "wikipedia": 0.1
+      "section": "Transfusion",
+      "covered": true,
+      "claims": 1
     },
     {
-      "topic": "Oxygen transport",
-      "britannica": 0,
-      "wikipedia": 0.12
+      "section": "History",
+      "covered": true,
+      "claims": 1
     },
     {
-      "topic": "Disorders",
-      "britannica": 0,
-      "wikipedia": 0.08
+      "section": "Disorders",
+      "covered": false,
+      "claims": 0
     }
   ],
-  "stats": {
-    "britannica": {
-      "words": 249,
-      "sentences": 9,
-      "avgSentenceLength": 27.7,
-      "distinctTerms": 91
-    },
-    "wikipedia": {
-      "words": 279,
-      "sentences": 20,
-      "avgSentenceLength": 14,
-      "distinctTerms": 118
-    }
-  },
   "suggestedQuestions": [
     "What did people in 1797 get wrong about blood?",
     "Which facts about blood survived from 1797 to today?",

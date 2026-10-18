@@ -10,10 +10,12 @@
       "wikipediaTitle": "Blood",
       "area": "anatomy",
       "teaser": "Physicians at this day relieve a plethora, or too great fulness of blood, by opening a vein.",
+      "fragment": false,
       "verdicts": {
-        "correct": 5,
-        "partly": 1,
-        "wrong": 4
+        "agrees": 5,
+        "differs": 1,
+        "contradicts": 3,
+        "not_in_wikipedia": 1
       }
     },
     {
@@ -26,10 +28,12 @@
       "wikipediaTitle": "Smallpox",
       "area": "infectious-disease",
       "teaser": "It was first described by the Arabian physicians, and is now so universal, that scarce one in a thousand escapes it at some period of life.",
+      "fragment": false,
       "verdicts": {
-        "correct": 5,
-        "partly": 1,
-        "wrong": 2
+        "agrees": 5,
+        "differs": 1,
+        "contradicts": 2,
+        "not_in_wikipedia": 0
       }
     },
     {
@@ -42,10 +46,12 @@
       "wikipediaTitle": "Tuberculosis",
       "area": "infectious-disease",
       "teaser": "Whether it be contagious has been much disputed.",
+      "fragment": false,
       "verdicts": {
-        "correct": 4,
-        "partly": 3,
-        "wrong": 3
+        "agrees": 4,
+        "differs": 3,
+        "contradicts": 2,
+        "not_in_wikipedia": 1
       }
     },
     {
@@ -58,10 +64,12 @@
       "wikipediaTitle": "Animal magnetism",
       "area": "natural-sciences",
       "teaser": "In 1784 commissioners appointed by the King of France, among whom was Dr Franklin, reported that the effects were owing to the imagination alone, and that the supposed fluid had no existence.",
+      "fragment": false,
       "verdicts": {
-        "correct": 3,
-        "partly": 0,
-        "wrong": 1
+        "agrees": 3,
+        "differs": 0,
+        "contradicts": 1,
+        "not_in_wikipedia": 0
       }
     },
     {
@@ -74,6 +82,7 @@
       "wikipediaTitle": null,
       "area": "anatomy",
       "teaser": "Their existence has never been demonstrated, for no fluid has been found in the nerves even by the best microscopes; yet the hypothesis is retained by many as the easiest explanation of the phenomena.",
+      "fragment": false,
       "verdicts": null
     },
     {
@@ -86,10 +95,12 @@
       "wikipediaTitle": "Basalt",
       "area": "geology",
       "teaser": "Concerning the origin of this stone naturalists are much divided.",
+      "fragment": false,
       "verdicts": {
-        "correct": 4,
-        "partly": 1,
-        "wrong": 1
+        "agrees": 4,
+        "differs": 1,
+        "contradicts": 1,
+        "not_in_wikipedia": 0
       }
     },
     {
@@ -102,10 +113,12 @@
       "wikipediaTitle": "Earthquake",
       "area": "geology",
       "teaser": "The cause is commonly ascribed to subterraneous fires, or to vapours and exhalations which, being rarefied by heat and wanting room, burst forth with violence and shake the ground above them.",
+      "fragment": false,
       "verdicts": {
-        "correct": 2,
-        "partly": 1,
-        "wrong": 2
+        "agrees": 2,
+        "differs": 1,
+        "contradicts": 1,
+        "not_in_wikipedia": 1
       }
     },
     {
@@ -118,11 +131,26 @@
       "wikipediaTitle": "Electricity",
       "area": "natural-sciences",
       "teaser": "Some philosophers suppose that the nervous fluid itself may be of the same nature with the electric fluid.",
+      "fragment": false,
       "verdicts": {
-        "correct": 5,
-        "partly": 2,
-        "wrong": 0
+        "agrees": 5,
+        "differs": 2,
+        "contradicts": 0,
+        "not_in_wikipedia": 0
       }
+    },
+    {
+      "slug": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:13#0000",
+      "label": "Ship-building (fragment, page 13)",
+      "headword": null,
+      "fragment": true,
+      "edition": "Seventh edition",
+      "year": 1842,
+      "match": "pending",
+      "wikipediaTitle": null,
+      "area": null,
+      "teaser": null,
+      "verdicts": null
     }
   ]
 }

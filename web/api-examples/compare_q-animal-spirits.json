@@ -10,6 +10,7 @@
     "wikipediaTitle": null,
     "area": "anatomy",
     "teaser": "Their existence has never been demonstrated, for no fluid has been found in the nerves even by the best microscopes; yet the hypothesis is retained by many as the easiest explanation of the phenomena.",
+    "fragment": false,
     "verdicts": null
   },
   "britannica": {
@@ -38,13 +39,100 @@
         "section": "SPIRITS, ANIMAL",
         "text": "Some late authors have supposed the nervous power to be of the same nature with the electric fluid."
       }
-    ]
+    ],
+    "entryId": "sample:animal-spirits",
+    "scanSha256": null,
+    "fragment": false,
+    "pageHeader": "SPI  [ 712 ]  SPI",
+    "blocks": [],
+    "normalized": {
+      "text": "SPI                    [ 712 ]                    SPI\n\n  SPIRITS, ANIMAL, a fine subtile fluid, supposed to be separated from the blood in the brain, and conveyed by the nerves to every part of the body, as the instrument of sensation and muscular motion.\n  Their existence has never been demonstrated, for no fluid has been found in the nerves even by the best microscopes; yet the hypothesis is retained by many as the easiest explanation of the phenomena. Some late authors have supposed the nervous power to be of the same nature with the electric fluid. See Nerves.\n  SPIRITS of WINE. See Alcohol.",
+      "fixes": [
+        {
+          "start": 81,
+          "end": 88,
+          "original": "ſubtile"
+        },
+        {
+          "start": 96,
+          "end": 104,
+          "original": "ſuppoſed"
+        },
+        {
+          "start": 111,
+          "end": 120,
+          "original": "ſeparated"
+        },
+        {
+          "start": 211,
+          "end": 221,
+          "original": "inſtru-\nment"
+        },
+        {
+          "start": 225,
+          "end": 234,
+          "original": "ſenſation"
+        },
+        {
+          "start": 239,
+          "end": 247,
+          "original": "muſcular"
+        },
+        {
+          "start": 264,
+          "end": 273,
+          "original": "exiſtence"
+        },
+        {
+          "start": 289,
+          "end": 301,
+          "original": "demonſtrated"
+        },
+        {
+          "start": 357,
+          "end": 361,
+          "original": "beſt"
+        },
+        {
+          "start": 362,
+          "end": 373,
+          "original": "mi-\ncroſcopes"
+        },
+        {
+          "start": 383,
+          "end": 393,
+          "original": "hypotheſis"
+        },
+        {
+          "start": 421,
+          "end": 428,
+          "original": "eaſieſt"
+        },
+        {
+          "start": 482,
+          "end": 490,
+          "original": "ſuppoſed"
+        },
+        {
+          "start": 522,
+          "end": 526,
+          "original": "ſame"
+        }
+      ]
+    },
+    "quality": {
+      "dictionaryShare": 0.857,
+      "issues": [
+        "14 words printed with the long s (ſ); normalized to s."
+      ],
+      "pdfUrl": null
+    }
   },
   "wikipedia": null,
   "match": {
     "strength": "none",
-    "embedScore": 0.71,
-    "rerankScore": 0.12,
+    "rerankLogit": -1.99,
+    "threshold": 0,
     "reasons": [
       "The title match, Animal spirits (Keynes), is about economics. The reranker scores it 0.12.",
       "Pneuma covers the ancient idea, but not the 18th-century medical theory.",
@@ -53,22 +141,31 @@
   },
   "candidates": [
     {
-      "title": "Animal spirits (Keynes)",
-      "url": "https://en.wikipedia.org/wiki/Animal_spirits_(Keynes)",
-      "embedScore": 0.71,
-      "rerankScore": 0.12
-    },
-    {
       "title": "Pneuma",
       "url": "https://en.wikipedia.org/wiki/Pneuma",
-      "embedScore": 0.62,
-      "rerankScore": 0.38
+      "bm25Rank": 1,
+      "embedSimilarity": 0.62,
+      "embedRank": 2,
+      "rerankLogit": -0.49,
+      "rerankRank": 1
     },
     {
       "title": "Nervous system",
       "url": "https://en.wikipedia.org/wiki/Nervous_system",
-      "embedScore": 0.6,
-      "rerankScore": 0.35
+      "bm25Rank": 2,
+      "embedSimilarity": 0.6,
+      "embedRank": 3,
+      "rerankLogit": -0.62,
+      "rerankRank": 2
+    },
+    {
+      "title": "Animal spirits (Keynes)",
+      "url": "https://en.wikipedia.org/wiki/Animal_spirits_(Keynes)",
+      "bm25Rank": 3,
+      "embedSimilarity": 0.71,
+      "embedRank": 1,
+      "rerankLogit": -1.99,
+      "rerankRank": 3
     }
   ],
   "alignments": [],
@@ -128,32 +225,8 @@
     "wikipedia": [],
     "shared": []
   },
-  "coverage": [
-    {
-      "topic": "What the spirits are",
-      "britannica": 0.45,
-      "wikipedia": 0
-    },
-    {
-      "topic": "Evidence",
-      "britannica": 0.35,
-      "wikipedia": 0
-    },
-    {
-      "topic": "Electricity",
-      "britannica": 0.2,
-      "wikipedia": 0
-    }
-  ],
-  "stats": {
-    "britannica": {
-      "words": 87,
-      "sentences": 3,
-      "avgSentenceLength": 29,
-      "distinctTerms": 32
-    },
-    "wikipedia": null
-  },
+  "obsoleteTerms": null,
+  "sectionCoverage": null,
   "suggestedQuestions": [
     "What is the modern view of animal spirits?",
     "What did the 1797 entry think carried sensation along the nerves?"

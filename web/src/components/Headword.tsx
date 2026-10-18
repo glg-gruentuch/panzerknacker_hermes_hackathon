@@ -1,6 +1,7 @@
 import { useId, useMemo, useState, type KeyboardEvent } from 'react'
 import type { TopicSummary } from '../api/types'
 import { fieldFor } from '../config/areas'
+import { editionLine } from '../lib/when'
 import { Icon } from './Icon'
 import { MatchMark } from './MatchMark'
 import styles from './Headword.module.css'
@@ -12,24 +13,28 @@ interface Props {
   onSubmit: (query: string) => void
   size: 'hero' | 'compact'
   autoFocus?: boolean
+  /** The word the empty field shows and searches for, e.g. "Blood". */
+  example?: string
 }
 
 /** The search field, set like an encyclopaedia headword: "BLOOD, in anatomy." The field follows the topic's subject area. */
-export function Headword({ topics, value, onChange, onSubmit, size, autoFocus }: Props) {
+export function Headword({ topics, value, onChange, onSubmit, size, autoFocus, example = 'Blood' }: Props) {
   const id = useId()
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState(-1)
 
   const options = useMemo(() => {
     const q = value.trim().toLowerCase()
-    if (!q) return topics
-    return topics.filter((t) => t.label.toLowerCase().includes(q) || t.headword.toLowerCase().includes(q) || t.wikipediaTitle?.toLowerCase().includes(q))
+    if (!q) return topics.slice(0, 12)
+    return topics
+      .filter((t) => t.label.toLowerCase().includes(q) || (t.headword ?? '').toLowerCase().includes(q) || t.wikipediaTitle?.toLowerCase().includes(q))
+      .slice(0, 12)
   }, [topics, value])
 
-  const field = fieldFor(value || 'Blood', topics)
+  const field = fieldFor(value || example, topics)
 
   // In the hero an empty field searches for the word it shows ("Blood"), so the first click works.
-  const fallback = size === 'hero' ? 'Blood' : ''
+  const fallback = size === 'hero' ? example : ''
   const query = value.trim() || fallback
 
   // In the hero the button sits on its own line under the headword; in the masthead it follows it.
@@ -60,7 +65,7 @@ export function Headword({ topics, value, onChange, onSubmit, size, autoFocus }:
       setActive(-1)
     } else if (e.key === 'Enter' && open && active >= 0 && options[active]) {
       e.preventDefault()
-      choose(options[active].label)
+      choose(options[active].slug)
     }
   }
 
@@ -77,13 +82,13 @@ export function Headword({ topics, value, onChange, onSubmit, size, autoFocus }:
         Medical topic
       </label>
       <div className={styles.line}>
-        <span className={styles.field} data-value={value || 'Blood'}>
+        <span className={styles.field} data-value={value || example}>
           <input
             id={`${id}-input`}
             className={styles.input}
             size={1}
             value={value}
-            placeholder="Blood"
+            placeholder={example}
             autoComplete="off"
             spellCheck={false}
             autoFocus={autoFocus}
@@ -120,12 +125,10 @@ export function Headword({ topics, value, onChange, onSubmit, size, autoFocus }:
               className={styles.option}
               onMouseDown={(e) => e.preventDefault()}
               onMouseEnter={() => setActive(i)}
-              onClick={() => choose(t.label)}
+              onClick={() => choose(t.slug)}
             >
-              <span className={styles.optHead}>{t.headword}</span>
-              <span className={`${styles.optMeta} num`}>
-                {t.edition}, {t.year}
-              </span>
+              <span className={styles.optHead}>{t.headword ?? t.label}</span>
+              <span className={`${styles.optMeta} num`}>{editionLine(t)}</span>
               <span className={styles.optMatch}>
                 <MatchMark strength={t.match} />
                 {t.wikipediaTitle ?? 'No clear match'}

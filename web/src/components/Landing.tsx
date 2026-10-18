@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react'
 import type { AreaSlug, TopicSummary } from '../api/types'
 import { AREAS, HERO_PLATE, areaOf, type Area, type Plate } from '../config/areas'
+import { VERDICTS, VERDICT_ORDER } from '../lib/kinds'
+import { editionLine } from '../lib/when'
 import { Headword } from './Headword'
 import { Icon, VerdictIcon } from './Icon'
 import { MATCH_LABEL, MatchMark } from './MatchMark'
@@ -23,6 +25,12 @@ export function Landing({ topics, input, onInput, onSearch }: Props) {
   const [open, setOpen] = useState<AreaSlug | null>(null)
   const [preview, setPreview] = useState<AreaSlug | null>(null)
   const plate = areaOf(preview ?? open)?.plate ?? HERO_PLATE
+  // Suggest a word that is really in the index: the first clearly matched headword.
+  const example = useMemo(() => {
+    const same = (x: TopicSummary) => !!x.headword && x.headword.toLowerCase() === x.wikipediaTitle?.toLowerCase()
+    const t = topics.find((x) => x.match === 'strong' && same(x)) ?? topics.find((x) => x.match === 'strong' && x.headword) ?? topics.find((x) => x.headword)
+    return t?.headword ? t.headword[0] + t.headword.slice(1).toLowerCase() : 'Blood'
+  }, [topics])
 
   // Topics per subject: featured ones first, in the order the config lists them.
   const byArea = useMemo(() => {
@@ -49,21 +57,22 @@ export function Landing({ topics, input, onInput, onSearch }: Props) {
       <div className={styles.scroll}>
         <div className={styles.content}>
           <section className={styles.hero} aria-label="Search">
-            <Headword topics={topics} value={input} onChange={onInput} onSubmit={onSearch} size="hero" autoFocus />
+            <Headword topics={topics} value={input} onChange={onInput} onSubmit={onSearch} size="hero" autoFocus example={example} />
             <p className={styles.lede}>
-              Compare a medical entry from the Encyclopaedia Britannica of 1768–1860 with today’s Wikipedia, claim by claim. Each old claim is underlined as{' '}
-              <span className={styles.sample} data-tone="wrong">
-                wrong
+              Compare a medical entry from the Encyclopaedia Britannica of 1768–1860 with today’s Wikipedia, claim by claim. Each old claim is underlined by
+              whether Wikipedia{' '}
+              <span className={styles.sample} data-tone="contradicts">
+                contradicts
               </span>
               ,{' '}
-              <span className={styles.sample} data-tone="partly">
-                partly correct
+              <span className={styles.sample} data-tone="differs">
+                differs from
               </span>{' '}
               or{' '}
-              <span className={styles.sample} data-tone="correct">
-                correct
-              </span>
-              .
+              <span className={styles.sample} data-tone="agrees">
+                agrees with
+              </span>{' '}
+              it.
             </p>
           </section>
 
@@ -157,10 +166,10 @@ function Subject({ area, topics, open, onToggle, onPreview, onSearch }: SubjectP
 function Featured({ topic: t, onSearch }: { topic: TopicSummary; onSearch: (q: string) => void }) {
   return (
     <li>
-      <button type="button" className={styles.featured} onClick={() => onSearch(t.label)}>
-        <span className={styles.headword}>{t.headword}</span>
+      <button type="button" className={styles.featured} onClick={() => onSearch(t.slug)}>
+        <span className={styles.headword}>{t.headword ?? t.label}</span>
         <span className={`${styles.meta} num`}>
-          {t.edition}, {t.year}
+          {editionLine(t)}
           {t.wikipediaTitle && <> · today “{t.wikipediaTitle}”</>}
         </span>
         {t.teaser && <q className={styles.teaser}>{t.teaser}</q>}
@@ -178,11 +187,9 @@ function Featured({ topic: t, onSearch }: { topic: TopicSummary; onSearch: (q: s
 function Compact({ topic: t, onSearch }: { topic: TopicSummary; onSearch: (q: string) => void }) {
   return (
     <li>
-      <button type="button" className={styles.compact} onClick={() => onSearch(t.label)}>
-        <span className={styles.headword}>{t.headword}</span>
-        <span className={`${styles.meta} num`}>
-          {t.edition}, {t.year}
-        </span>
+      <button type="button" className={styles.compact} onClick={() => onSearch(t.slug)}>
+        <span className={styles.headword}>{t.headword ?? t.label}</span>
+        <span className={`${styles.meta} num`}>{editionLine(t)}</span>
         <Verdicts topic={t} />
       </button>
     </li>
@@ -200,10 +207,10 @@ function Verdicts({ topic: t }: { topic: TopicSummary }) {
     )
   }
   const v = t.verdicts
-  const label = `${v.wrong} wrong, ${v.partly} partly correct, ${v.correct} correct`
+  const label = VERDICT_ORDER.map((k) => `${v[k]} ${VERDICTS[k].label.toLowerCase()}`).join(', ')
   return (
     <span className={styles.verdicts} aria-label={label} title={label}>
-      {(['wrong', 'partly', 'correct'] as const).map((k) => (
+      {VERDICT_ORDER.map((k) => (
         <span key={k} className={`${styles.count} num`} data-tone={k}>
           <VerdictIcon verdict={k} size={12} />
           {v[k]}

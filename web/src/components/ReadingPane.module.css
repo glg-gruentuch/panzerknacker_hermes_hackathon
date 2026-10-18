@@ -20,7 +20,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   grid-template-areas:
-    'title title'
+    'title chip'
     'meta views';
   align-items: end;
   column-gap: var(--space-4);
@@ -191,29 +191,6 @@
 
 /* Linked phrases. The underline style carries the verdict as well as its colour. */
 
-[data-tone='wrong'] {
-  --tone-line: var(--wrong-line);
-  --tone-tint: var(--wrong-tint);
-  --tone-text: var(--wrong-text);
-}
-
-[data-tone='partly'] {
-  --tone-line: var(--partly-line);
-  --tone-tint: var(--partly-tint);
-  --tone-text: var(--partly-text);
-}
-
-[data-tone='correct'] {
-  --tone-line: var(--correct-line);
-  --tone-tint: var(--correct-tint);
-  --tone-text: var(--correct-text);
-}
-
-[data-tone='neutral'] {
-  --tone-line: var(--rule-strong);
-  --tone-tint: var(--hover);
-}
-
 .mark {
   padding: 0 1px;
   margin: 0 -1px;
@@ -235,12 +212,12 @@
   outline-offset: 1px;
 }
 
-.mark[data-tone='wrong'] {
+.mark[data-tone='contradicts'] {
   text-decoration-style: wavy;
   text-decoration-thickness: 1.25px;
 }
 
-.mark[data-tone='partly'] {
+.mark[data-tone='differs'] {
   text-decoration-style: dashed;
 }
 
@@ -463,6 +440,7 @@
 .narrow .head {
   grid-template-areas:
     'title'
+    'chip'
     'meta'
     'views';
   grid-template-columns: minmax(0, 1fr);
@@ -520,4 +498,125 @@
   .title {
     font-size: 1.25rem;
   }
+}
+
+/* Task 6 additions: fragment title, quality chip, normalized fixes, scan boxes, pending states. */
+
+.fragmentTitle {
+  grid-area: title;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--ink-2);
+}
+
+.fragmentNote {
+  margin-bottom: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+
+.chip {
+  grid-area: chip;
+  justify-self: end;
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 22px;
+  white-space: nowrap;
+  padding: 0 8px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: var(--text-xs);
+  color: var(--ink-2);
+}
+
+.chip[aria-expanded='true'] {
+  border-color: var(--ink-2);
+}
+
+.chipCount {
+  color: var(--muted);
+}
+
+.quality {
+  padding: var(--space-3) 0 var(--space-3) 36px;
+  border-bottom: 1px solid var(--rule);
+  font-size: var(--text-sm);
+  color: var(--ink-2);
+}
+
+.quality ul {
+  margin: var(--space-2) 0 0;
+  padding-left: 18px;
+}
+
+.dim {
+  color: var(--muted);
+}
+
+.revision {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.fix {
+  background: var(--amber-tint);
+  color: inherit;
+  border-radius: 2px;
+  text-decoration: underline dotted var(--amber-line);
+  text-underline-offset: 0.2em;
+}
+
+.mark[data-tone='not_in_wikipedia'] {
+  text-decoration-style: dotted;
+}
+
+.scanFrame {
+  position: relative;
+}
+
+.scanFrame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.block {
+  position: absolute;
+  border: 1px solid rgb(22 23 29 / 18%);
+  border-radius: 2px;
+}
+
+.blockOn {
+  border: 2px solid var(--ink);
+  background: rgb(253 243 218 / 45%);
+}
+
+.sha {
+  color: var(--faint);
+}
+
+.pending {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+
+.barHint {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+
+.narrow .chip {
+  justify-self: start;
 }

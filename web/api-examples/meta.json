@@ -18,30 +18,26 @@
   "models": [
     {
       "role": "Reads the page scans",
-      "name": "Nemotron Parse 3.5",
+      "name": "nvidia/nemotron-3.5-parse",
       "host": "Organisers’ shared endpoint"
     },
     {
       "role": "Embeds passages and questions",
-      "name": "Nemotron-3-Embed-VL",
+      "name": "nvidia/llama-nemotron-embed-vl-1b-v2",
       "host": "Nebius AI Cloud"
     },
     {
       "role": "Reranks candidates",
-      "name": "Nemotron 3-Rerank-VL",
+      "name": "nvidia/llama-nemotron-rerank-vl-1b-v2",
       "host": "Nebius AI Cloud"
     },
     {
-      "role": "Stores and searches vectors",
-      "name": "LanceDB",
-      "host": "Backend"
-    },
-    {
       "role": "Answers questions",
-      "name": "Hermes Agent · Nemotron 3.5 Super VL",
+      "name": "nvidia/Nemotron-3.5-Super-VL via Hermes Agent",
       "host": "Nebius Token Factory"
     }
   ],
+  "matchLogitThreshold": 0,
   "sample": {
     "size": 100,
     "method": "Random, without replacement, from all 2,573 scans with seed 20261016 (src/nemotron_challenge/resources/britannica-manifest.json)."

@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from 'react'
-import type { Alignment, Comparison, Passage } from '../api/types'
+import type { Alignment, Comparison, Passage, ScanBlock, TextFix } from '../api/types'
 import { KINDS, VERDICTS, VERDICT_ORDER } from '../lib/kinds'
 import { locate, segment } from '../lib/segments'
+import { editionLine, thenName } from '../lib/when'
 import { Icon, UnderlineSample, VerdictIcon } from './Icon'
 import styles from './ReadingPane.module.css'
 
 export type Side = 'britannica' | 'wikipedia'
-type OldView = 'summary' | 'original' | 'scan'
+type OldView = 'summary' | 'normalized' | 'original' | 'scan'
 
 /** Ask the pane to scroll to a passage and flash it. `nonce` lets the same passage be asked for twice. */
 export interface PassageFocus {
@@ -34,9 +35,19 @@ const sideOf = (passageId: string): Side => (passageId.startsWith('W') ? 'wikipe
 
 const OLD_VIEWS: { id: OldView; label: string }[] = [
   { id: 'summary', label: 'Summary' },
+  { id: 'normalized', label: 'Normalized' },
   { id: 'original', label: 'Original text' },
-  { id: 'scan', label: 'Page scan' },
+  { id: 'scan', label: 'Scan' },
 ]
+
+const squash = (s: string) => s.toLowerCase().replace(/\s+/g, ' ').trim()
+
+/** The Parse block that holds a piece of text, matched on the text's opening words. */
+function blockFor(blocks: ScanBlock[], text: string | undefined): ScanBlock | undefined {
+  if (!text) return undefined
+  const q = squash(text)
+  return blocks.find((b) => squash(b.text).includes(q)) ?? blocks.find((b) => squash(b.text).includes(q.slice(0, 48)))
+}
 
 export function ReadingPane({ comparison: c, activeId, onActivate, focus, narrow, side, onSideChange }: Props) {
   const paneRef = useRef<HTMLDivElement>(null)
@@ -47,10 +58,14 @@ export function ReadingPane({ comparison: c, activeId, onActivate, focus, narrow
   const [bridge, setBridge] = useState<Bridge | null>(null)
   const [seamX, setSeamX] = useState<[number, number]>([0, 0])
   const [oldView, setOldView] = useState<OldView>('summary')
+  const [focusedPassage, setFocusedPassage] = useState<string | null>(null)
+  const [qualityOpen, setQualityOpen] = useState(false)
 
-  const byId = useMemo(() => new Map(c.alignments.map((a) => [a.id, a])), [c.alignments])
+  const alignments = c.alignments ?? []
+  const byId = useMemo(() => new Map(alignments.map((a) => [a.id, a])), [alignments])
   const active = activeId ? (byId.get(activeId) ?? null) : null
   const shownId = hoverId ?? activeId
+  const b = c.britannica
 
   // Draw one line across the seam, between the two halves of the hovered or selected pair.
   const measure = useCallback(() => {
@@ -59,7 +74,7 @@ export function ReadingPane({ comparison: c, activeId, onActivate, focus, narrow
     const L = leftRef.current
     const R = rightRef.current
     const a = shownId ? byId.get(shownId) : undefined
-    if (narrow || !pane || !seam || !L || !R || !a?.britannica || !a.wikipedia || oldView !== 'summary') {
+    if (narrow || !pane || !seam || !L || !R || !a?.wikipedia || oldView !== 'summary') {
       setBridge(null)
       return
     }
@@ -106,10 +121,10 @@ export function ReadingPane({ comparison: c, activeId, onActivate, focus, narrow
     }
   }, [measure])
 
-  // Selecting a pair brings both halves into view, in the Summary.
+  // Selecting a pair brings both halves into view, unless the scan is open (it boxes the claim there).
   useEffect(() => {
     if (!activeId) return
-    setOldView('summary')
+    setOldView((v) => (v === 'scan' ? v : 'summary'))
     requestAnimationFrame(() => {
       for (const body of [leftRef.current, rightRef.current]) {
         const el = body?.querySelector<HTMLElement>(`[data-align="${activeId}"]`)
@@ -129,7 +144,8 @@ export function ReadingPane({ comparison: c, activeId, onActivate, focus, narrow
       return
     }
     handled.current = focus.nonce
-    setOldView('summary')
+    if (target === 'britannica') setFocusedPassage(focus.passageId)
+    setOldView((v) => (v === 'scan' && target === 'britannica' ? v : 'summary'))
     requestAnimationFrame(() => {
       const body = target === 'britannica' ? leftRef.current : rightRef.current
       const el = body?.querySelector<HTMLElement>(`[data-pid="${focus.passageId}"]`)
@@ -142,24 +158,31 @@ export function ReadingPane({ comparison: c, activeId, onActivate, focus, narrow
   }, [focus, narrow, side, onSideChange])
 
   const markProps = { byId, activeId, shownId, onHover: setHoverId, onActivate }
-  const index = active ? c.alignments.indexOf(active) : -1
+  const index = active ? alignments.indexOf(active) : -1
   const step = (delta: number) => {
-    const n = c.alignments.length
+    const n = alignments.length
     if (n === 0) return
     const from = index < 0 ? (delta > 0 ? -1 : 0) : index
-    onActivate(c.alignments[(from + delta + n) % n].id)
+    onActivate(alignments[(from + delta + n) % n].id)
   }
 
-  const b = c.britannica
+  // What the scan view should box: the selected claim, else the last cited passage.
+  const boxed = active
+    ? blockFor(b.blocks, active.britannica?.quote)
+    : blockFor(b.blocks, b.passages.find((p) => p.id === focusedPassage)?.text)
 
   return (
     <div ref={paneRef} className={`${styles.pane} ${narrow ? styles.narrow : ''}`}>
-      <article className={styles.col} aria-label={`Britannica, ${b.year}`} hidden={narrow && side !== 'britannica'}>
+      <article className={styles.col} aria-label={`Britannica, ${editionLine(b)}`} hidden={narrow && side !== 'britannica'}>
         <header className={styles.head}>
-          <h2 className={styles.headword}>{b.headword}</h2>
-          <p className={`${styles.meta} num`}>
-            Britannica, {b.edition.toLowerCase()}, {b.year}
-          </p>
+          <h2 className={b.headword ? styles.headword : styles.fragmentTitle}>{b.headword ?? 'Fragment'}</h2>
+          {b.quality && (
+            <button type="button" className={styles.chip} aria-expanded={qualityOpen} onClick={() => setQualityOpen((o) => !o)}>
+              {b.quality.dictionaryShare !== null ? `${Math.round(b.quality.dictionaryShare * 100)}% dictionary words` : 'Extraction'}
+              {b.quality.issues.length > 0 && <span className={styles.chipCount}>{b.quality.issues.length} issues</span>}
+            </button>
+          )}
+          <p className={`${styles.meta} num`}>Britannica, {editionLine(b).toLowerCase()}</p>
           <div className={styles.views} role="tablist" aria-label="How to show the Britannica page">
             {OLD_VIEWS.map((v) => (
               <button key={v.id} type="button" role="tab" aria-selected={oldView === v.id} onClick={() => setOldView(v.id)}>
@@ -168,20 +191,64 @@ export function ReadingPane({ comparison: c, activeId, onActivate, focus, narrow
             ))}
           </div>
         </header>
+        {qualityOpen && b.quality && (
+          <div className={styles.quality}>
+            <p>
+              {b.quality.dictionaryShare !== null && (
+                <>
+                  <b className="num">{Math.round(b.quality.dictionaryShare * 100)}%</b> of words are in a dictionary after normalization.{' '}
+                </>
+              )}
+              {b.quality.pdfUrl && (
+                <a href={b.quality.pdfUrl} target="_blank" rel="noreferrer">
+                  Compiled PDF <Icon name="external" size={12} />
+                </a>
+              )}
+            </p>
+            {b.quality.issues.length > 0 ? (
+              <ul>
+                {b.quality.issues.map((issue) => (
+                  <li key={issue}>{issue}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className={styles.dim}>No known OCR issues on this page.</p>
+            )}
+          </div>
+        )}
         <div ref={leftRef} className={styles.body} tabIndex={0} aria-label={`Britannica ${OLD_VIEWS.find((v) => v.id === oldView)!.label}`}>
+          {b.fragment && (
+            <p className={styles.fragmentNote}>
+              This text continues an entry that started on an earlier page, outside the sample.
+              {b.pageHeader && <> Running head: “{b.pageHeader}”.</>}
+            </p>
+          )}
           {oldView === 'summary' && (
             <>
               <Passages passages={b.passages} side="britannica" headword={b.headword} {...markProps} />
               <p className={styles.note}>The entry, cleaned from the parsed page. Passage numbers are what the agent cites.</p>
             </>
           )}
+          {oldView === 'normalized' &&
+            (b.normalized ? (
+              <>
+                <p className={styles.noteTop}>
+                  {b.normalized.fixes.length
+                    ? `${b.normalized.fixes.length} long-s and OCR fixes, marked. Point at one to see what the scan had.`
+                    : 'No long-s or OCR fixes were needed on this entry.'}
+                </p>
+                <Normalized text={b.normalized.text} fixes={b.normalized.fixes} />
+              </>
+            ) : (
+              <Pending what="Normalization" />
+            ))}
           {oldView === 'original' && (
             <>
               <p className={styles.noteTop}>Everything Nemotron Parse read from the page, unedited.</p>
               <div className={styles.raw}>{b.rawText}</div>
             </>
           )}
-          {oldView === 'scan' && <Scan comparison={c} />}
+          {oldView === 'scan' && <Scan comparison={c} boxed={boxed} claimSelected={!!active} />}
         </div>
       </article>
 
@@ -193,16 +260,23 @@ export function ReadingPane({ comparison: c, activeId, onActivate, focus, narrow
             <header className={styles.head}>
               <h2 className={styles.title}>{c.wikipedia.title}</h2>
               <p className={`${styles.meta} num`}>
-                Wikipedia, {formatDate(c.wikipedia.dateModified)}{' '}
-                <a href={c.wikipedia.url} target="_blank" rel="noreferrer" className={styles.ext} aria-label="Open the article on Wikipedia">
-                  <Icon name="external" size={13} />
+                Wikipedia,{' '}
+                <a href={c.wikipedia.revisionUrl ?? c.wikipedia.url} target="_blank" rel="noreferrer" className={styles.revision}>
+                  {c.wikipedia.revisionId ? `revision ${c.wikipedia.revisionId}` : 'revision pending'}
+                  <Icon name="external" size={12} />
                 </a>
+                {c.wikipedia.dateModified && <>, {formatDate(c.wikipedia.dateModified)}</>}
               </p>
             </header>
             <div ref={rightRef} className={styles.body} tabIndex={0} aria-label="Wikipedia text">
               <Passages passages={c.wikipedia.passages} side="wikipedia" {...markProps} />
+              <p className={styles.note}>
+                Text from Wikipedia, available under {c.wikipedia.license}. Quoted for comparison; the article may have changed since this revision.
+              </p>
             </div>
           </>
+        ) : c.match.strength === 'pending' ? (
+          <MatchPending comparison={c} />
         ) : (
           <NoCounterpart comparison={c} />
         )}
@@ -215,20 +289,28 @@ export function ReadingPane({ comparison: c, activeId, onActivate, focus, narrow
             d={`M${seamX[0]},${bridge.left.y} C${(seamX[0] + seamX[1]) / 2},${bridge.left.y} ${(seamX[0] + seamX[1]) / 2},${bridge.right.y} ${seamX[1]},${bridge.right.y}`}
             strokeDasharray={bridge.left.out || bridge.right.out ? '3 4' : undefined}
           />
-          <circle cx={seamX[0]} cy={bridge.left.y} r="3.5" style={{ fill: bridge.verdict ? `var(--${bridge.verdict}-line)` : 'var(--ink)' }} />
+          <circle cx={seamX[0]} cy={bridge.left.y} r="3.5" data-tone={bridge.verdict} style={{ fill: 'var(--tone-line)' }} />
           <circle cx={seamX[1]} cy={bridge.right.y} r="3.5" className={styles.dotNow} />
         </svg>
       )}
 
-      {c.alignments.length > 0 && (
-        <BridgeBar alignment={active} index={index} total={c.alignments.length} narrow={narrow} side={side} year={b.year} onStep={step} onClose={() => onActivate(null)} onShow={onSideChange} />
-      )}
+      <BridgeBar
+        comparison={c}
+        alignment={active}
+        index={index}
+        narrow={narrow}
+        side={side}
+        onStep={step}
+        onClose={() => onActivate(null)}
+        onShow={onSideChange}
+      />
     </div>
   )
 }
 
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+  const d = new Date(iso)
+  return Number.isNaN(d.getTime()) ? iso : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
 }
 
 function revealIn(body: HTMLElement, el: HTMLElement) {
@@ -247,7 +329,8 @@ interface MarkProps {
   onActivate: (id: string | null) => void
 }
 
-function Passages({ passages, side, headword, ...marks }: { passages: Passage[]; side: Side; headword?: string } & MarkProps) {
+function Passages({ passages, side, headword, ...marks }: { passages: Passage[]; side: Side; headword?: string | null } & MarkProps) {
+  const lead = headword ?? undefined
   const anchors = useMemo(() => {
     const byPassage = new Map<string, { quote: string; key: string }[]>()
     for (const a of marks.byId.values()) {
@@ -265,7 +348,7 @@ function Passages({ passages, side, headword, ...marks }: { passages: Passage[];
   for (const p of passages) {
     if (p.section && p.section !== section) {
       section = p.section
-      const isLead = side === 'wikipedia' ? p.section === 'Introduction' : p.section === headword
+      const isLead = side === 'wikipedia' ? p.section === 'Introduction' : p.section === lead || p.section === '(fragment)'
       if (!isLead) {
         out.push(
           <h3 key={`h-${p.id}`} className={side === 'britannica' ? styles.subentry : styles.section}>
@@ -288,9 +371,8 @@ function Passages({ passages, side, headword, ...marks }: { passages: Passage[];
 function Mark({ id, text, side, byId, activeId, shownId, onHover, onActivate }: { id: string; text: string; side: Side } & MarkProps) {
   const a = byId.get(id)
   if (!a) return text
-  // Old claims carry their verdict; modern phrases stay neutral, because they are the reference.
-  const tone = side === 'britannica' && a.verdict ? a.verdict : 'neutral'
-  const label = a.verdict ? VERDICTS[a.verdict].label : KINDS[a.kind].label
+  // Old claims carry their verdict; modern phrases stay neutral, because they are the comparison text.
+  const tone = side === 'britannica' ? a.verdict : 'neutral'
   const toggle = () => onActivate(activeId === id ? null : id)
   return (
     <mark
@@ -300,7 +382,7 @@ function Mark({ id, text, side, byId, activeId, shownId, onHover, onActivate }: 
       role="button"
       tabIndex={0}
       aria-pressed={activeId === id}
-      title={`${label}: ${a.label}`}
+      title={`${VERDICTS[a.verdict].label}: ${a.label ?? a.claimType ?? 'claim'}`}
       onMouseEnter={() => onHover(id)}
       onMouseLeave={() => onHover(null)}
       onFocus={() => onHover(id)}
@@ -314,38 +396,67 @@ function Mark({ id, text, side, byId, activeId, shownId, onHover, onActivate }: 
       }}
     >
       {text}
-      {side === 'britannica' && <span className="visually-hidden">, {label}</span>}
+      {side === 'britannica' && <span className="visually-hidden">, {VERDICTS[a.verdict].label}</span>}
     </mark>
   )
 }
 
+/** The normalized entry, with each long-s or OCR fix marked and its original on hover. */
+function Normalized({ text, fixes }: { text: string; fixes: TextFix[] }) {
+  const out: ReactNode[] = []
+  let at = 0
+  for (const [i, f] of [...fixes].sort((x, y) => x.start - y.start).entries()) {
+    if (f.start < at) continue
+    out.push(text.slice(at, f.start))
+    out.push(
+      <mark key={i} className={styles.fix} title={`The scan reads “${f.original.replace(/\n/g, '⏎')}”`}>
+        {text.slice(f.start, f.end)}
+        <span className="visually-hidden"> (OCR: {f.original})</span>
+      </mark>,
+    )
+    at = f.end
+  }
+  out.push(text.slice(at))
+  return <div className={styles.raw}>{out}</div>
+}
+
 interface BarProps {
+  comparison: Comparison
   alignment: Alignment | null
   index: number
-  total: number
   narrow: boolean
   side: Side
-  year: number
   onStep: (delta: number) => void
   onClose: () => void
   onShow: (side: Side) => void
 }
 
-function BridgeBar({ alignment: a, index, total, narrow, side, year, onStep, onClose, onShow }: BarProps) {
+function BridgeBar({ comparison: c, alignment: a, index, narrow, side, onStep, onClose, onShow }: BarProps) {
+  const total = c.alignments?.length ?? 0
   if (!a) {
     return (
       <div className={styles.bar}>
-        <ul className={styles.legend} aria-label="What the underlines mean">
-          {VERDICT_ORDER.map((v) => (
-            <li key={v}>
-              <UnderlineSample verdict={v} />
-              {VERDICTS[v].label}
-            </li>
-          ))}
-        </ul>
-        <button type="button" className="btn" onClick={() => onStep(1)}>
-          Step through {total} claims <Icon name="arrow" size={14} />
-        </button>
+        {c.alignments === null ? (
+          <p className={styles.barHint}>
+            <Icon name="pending" size={14} /> Claims pending: this entry has not been compared claim by claim yet.
+          </p>
+        ) : total === 0 ? (
+          <p className={styles.barHint}>No claims were extracted from this entry.</p>
+        ) : (
+          <>
+            <ul className={styles.legend} aria-label="What the underlines mean">
+              {VERDICT_ORDER.map((v) => (
+                <li key={v}>
+                  <UnderlineSample verdict={v} />
+                  {VERDICTS[v].label}
+                </li>
+              ))}
+            </ul>
+            <button type="button" className="btn" onClick={() => onStep(1)}>
+              Step through {total} claims <Icon name="arrow" size={14} />
+            </button>
+          </>
+        )}
       </div>
     )
   }
@@ -355,21 +466,26 @@ function BridgeBar({ alignment: a, index, total, narrow, side, year, onStep, onC
     <div className={`${styles.bar} ${styles.barActive}`} role="status" aria-live="polite">
       <div className={styles.barText}>
         <p className={styles.barHead}>
-          {a.verdict ? (
-            <span className={styles.verdict} data-tone={a.verdict}>
-              <VerdictIcon verdict={a.verdict} />
-              {VERDICTS[a.verdict].label}
-            </span>
-          ) : (
-            <span className={styles.verdict}>{KINDS[a.kind].label}</span>
-          )}
-          <span className={styles.barLabel}>{a.label}</span>
-          {a.verdict && <span className={styles.kind}>{KINDS[a.kind].label}</span>}
+          <span className={styles.verdict} data-tone={a.verdict}>
+            <VerdictIcon verdict={a.verdict} />
+            {VERDICTS[a.verdict].label}
+          </span>
+          <span className={styles.barLabel}>{a.label ?? (a.claimType ? `A ${a.claimType} claim` : 'Claim')}</span>
+          {a.kind && <span className={styles.kind}>{KINDS[a.kind].label}</span>}
+          {a.downgraded && <span className={styles.kind}>Lowered: the model’s Wikipedia quote was not in the article</span>}
         </p>
-        <p className={styles.barNote}>{a.note}</p>
+        <p className={styles.barNote}>
+          <span className="inference-tag">Inference</span> {a.explanation}
+        </p>
+        {a.quantity && (
+          <p className={`${styles.barOther} num`}>
+            {thenName(c.britannica)}: {a.quantity.britannica.value} {a.quantity.britannica.unit}
+            {' · '}Today: {a.quantity.wikipedia ? `${a.quantity.wikipedia.value} ${a.quantity.wikipedia.unit}` : 'no figure'}
+          </p>
+        )}
         {narrow && otherAnchor && (
           <p className={styles.barOther}>
-            <span className="num">{other === 'britannica' ? year : 'Today'}:</span> “{otherAnchor.quote}”{' '}
+            <span className="num">{other === 'britannica' ? thenName(c.britannica) : 'Today'}:</span> “{otherAnchor.quote}”{' '}
             <button type="button" className={styles.linkBtn} onClick={() => onShow(other)}>
               Show
             </button>
@@ -394,20 +510,68 @@ function BridgeBar({ alignment: a, index, total, narrow, side, year, onStep, onC
   )
 }
 
-function Scan({ comparison: c }: { comparison: Comparison }) {
+/** The page scan, with every Parse block outlined and the selected text boxed. */
+function Scan({ comparison: c, boxed, claimSelected }: { comparison: Comparison; boxed: ScanBlock | undefined; claimSelected: boolean }) {
   const b = c.britannica
-  if (b.imageUrl) {
+  if (!b.imageUrl) {
     return (
-      <figure className={styles.scan}>
-        <img src={b.imageUrl} alt={`Page scan: ${b.headword}, ${b.edition} ${b.year}`} />
-        <figcaption>{b.meta}</figcaption>
-      </figure>
+      <div className={styles.scanEmpty}>
+        <p>The page scan appears here once the backend sends an image for this page.</p>
+        <p className={styles.scanMeta}>{b.meta}</p>
+      </div>
     )
   }
   return (
-    <div className={styles.scanEmpty}>
-      <p>The page scan appears here once the backend sends an image for this page.</p>
-      <p className={styles.scanMeta}>{b.meta}</p>
+    <figure className={styles.scan}>
+      <p className={styles.noteTop}>
+        {boxed
+          ? claimSelected
+            ? 'The selected claim’s block is boxed on the scan.'
+            : 'The cited passage’s block is boxed on the scan.'
+          : b.blocks.length
+            ? `Nemotron Parse found ${b.blocks.length} blocks on this page. Select a claim or a citation to box its block.`
+            : 'No block positions are available for this page.'}
+      </p>
+      <div className={styles.scanFrame}>
+        <img src={b.imageUrl} alt={`Page scan: ${b.headword ?? 'fragment'}, ${editionLine(b)}`} />
+        {b.blocks.map((block, i) => (
+          <span
+            key={i}
+            className={`${styles.block} ${block === boxed ? styles.blockOn : ''}`}
+            title={`${block.kind}: ${block.text.slice(0, 80)}${block.text.length > 80 ? '…' : ''}`}
+            style={{
+              left: `${block.bbox[0][0] * 100}%`,
+              top: `${block.bbox[0][1] * 100}%`,
+              width: `${(block.bbox[1][0] - block.bbox[0][0]) * 100}%`,
+              height: `${(block.bbox[1][1] - block.bbox[0][1]) * 100}%`,
+            }}
+          />
+        ))}
+      </div>
+      <figcaption>
+        {b.meta}
+        {b.scanSha256 && <span className={styles.sha}> · scan sha256 {b.scanSha256.slice(0, 12)}…</span>}
+      </figcaption>
+    </figure>
+  )
+}
+
+function Pending({ what }: { what: string }) {
+  return (
+    <p className={styles.pending}>
+      <Icon name="pending" size={14} /> {what} pending: this stage has not run for this entry yet.
+    </p>
+  )
+}
+
+function MatchPending({ comparison: c }: { comparison: Comparison }) {
+  return (
+    <div className={styles.none}>
+      <h2 className={styles.title}>Matching pending</h2>
+      <p>
+        This {c.britannica.fragment ? 'fragment' : 'entry'} has not been matched to a Wikipedia article yet. The comparison appears here once the match stage
+        has run.
+      </p>
     </div>
   )
 }
@@ -417,8 +581,8 @@ function NoCounterpart({ comparison: c }: { comparison: Comparison }) {
     <div className={styles.none}>
       <h2 className={styles.title}>No clear modern counterpart</h2>
       <p>
-        No Wikipedia article is a credible match for this {c.britannica.year} entry, so nothing is compared. The closest candidates, with their rerank
-        scores (0.5 needed):
+        No Wikipedia article passed the rerank threshold for this entry, so nothing is compared. The closest candidates and their reranker logits
+        {c.match.threshold !== null && <> (threshold {c.match.threshold})</>}:
       </p>
       <ul className={styles.noneList}>
         {c.candidates.map((k) => (
@@ -426,7 +590,7 @@ function NoCounterpart({ comparison: c }: { comparison: Comparison }) {
             <a href={k.url} target="_blank" rel="noreferrer">
               {k.title}
             </a>
-            <span className="num">{k.rerankScore.toFixed(2)}</span>
+            <span className="num">{k.rerankLogit !== null ? k.rerankLogit.toFixed(2) : '–'}</span>
           </li>
         ))}
       </ul>

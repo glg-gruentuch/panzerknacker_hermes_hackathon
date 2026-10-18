@@ -70,6 +70,53 @@ h3 {
   display: none !important;
 }
 
+/* Verdict tones: the one place that maps meaning to colour. */
+[data-tone='agrees'] {
+  --tone-line: var(--green-line);
+  --tone-text: var(--green-text);
+  --tone-tint: var(--green-tint);
+}
+
+[data-tone='differs'] {
+  --tone-line: var(--amber-line);
+  --tone-text: var(--amber-text);
+  --tone-tint: var(--amber-tint);
+}
+
+[data-tone='contradicts'] {
+  --tone-line: var(--red-line);
+  --tone-text: var(--red-text);
+  --tone-tint: var(--red-tint);
+}
+
+[data-tone='not_in_wikipedia'] {
+  --tone-line: var(--grey-line);
+  --tone-text: var(--grey-text);
+  --tone-tint: var(--grey-tint);
+}
+
+[data-tone='neutral'] {
+  --tone-line: var(--rule-strong);
+  --tone-tint: var(--hover);
+}
+
+/* Model-written text: explanations and answers. Source quotes never use this. */
+.inference-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 18px;
+  padding: 0 6px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--muted);
+  vertical-align: 1px;
+  white-space: nowrap;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

@@ -1,4 +1,4 @@
-import type { Passage, TermFrequency, TextStats } from '../types'
+import type { Passage, TermFrequency } from '../types'
 
 // Small text statistics so mock comparisons get real vocabulary numbers.
 // The backend computes its own; this only exists so the UI has honest data offline.
@@ -26,18 +26,6 @@ function counts(passages: Passage[]): { freq: Map<string, number>; total: number
     for (const t of tokens(p.text)) freq.set(t, (freq.get(t) ?? 0) + 1)
   }
   return { freq, total }
-}
-
-export function stats(passages: Passage[]): TextStats {
-  const text = passages.map((p) => p.text).join(' ')
-  const words = (text.match(/[A-Za-zæœ]+/g) ?? []).length
-  const sentences = Math.max(1, (text.match(/[.!?](\s|$)/g) ?? []).length)
-  return {
-    words,
-    sentences,
-    avgSentenceLength: Math.round((words / sentences) * 10) / 10,
-    distinctTerms: new Set(tokens(text)).size,
-  }
 }
 
 /**

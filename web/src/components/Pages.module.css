@@ -28,14 +28,6 @@
   color: var(--muted);
 }
 
-[data-tone='correct'] {
-  --tone-text: var(--correct-text);
-}
-
-[data-tone='wrong'] {
-  --tone-text: var(--wrong-text);
-}
-
 /* Cases */
 
 .columns {

@@ -33,7 +33,8 @@ export interface Area {
 const plate = (slug: string): Plate => {
   const p = (plates as Plate[]).find((x) => x.slug === slug)
   if (!p) throw new Error(`Plate "${slug}" is missing from plates.json. Run web/scripts/prepare-plates.py.`)
-  return p
+  // Resolve against the app's base path, so the static build works from any folder.
+  return { ...p, src: `${import.meta.env.BASE_URL}${p.src.replace(/^\//, '')}` }
 }
 
 export const AREAS: Area[] = [
@@ -83,7 +84,7 @@ export const areaOf = (slug: AreaSlug | null | undefined) => AREAS.find((a) => a
 export function fieldFor(value: string, topics: TopicSummary[]): string | null {
   const q = value.trim().toLowerCase()
   if (!q) return null
-  const exact = topics.find((t) => t.label.toLowerCase() === q || t.headword.toLowerCase() === q)
-  const partial = exact ?? topics.find((t) => t.label.toLowerCase().startsWith(q) || t.headword.toLowerCase().startsWith(q))
+  const exact = topics.find((t) => t.label.toLowerCase() === q || (t.headword ?? '').toLowerCase() === q)
+  const partial = exact ?? topics.find((t) => t.label.toLowerCase().startsWith(q) || (t.headword ?? '').toLowerCase().startsWith(q))
   return areaOf(partial?.area)?.field ?? null
 }

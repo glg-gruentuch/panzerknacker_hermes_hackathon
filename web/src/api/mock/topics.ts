@@ -1,29 +1,51 @@
-import type {
-  Alignment,
-  BritannicaPage,
-  ChatResponse,
-  CoverageRow,
-  MatchInfo,
-  TopicSummary,
-  WikipediaArticle,
-  WikipediaCandidate,
-} from '../types'
+import type { Anchor, AreaSlug, ChatResponse, MatchStrength, Passage, Quantity } from '../types'
 import { MORE_TOPICS } from './more-topics'
 
 // MOCK DATA. The Britannica passages are written in period style for the demo;
 // they are not OCR from the dataset. The Wikipedia passages paraphrase the
 // articles' content. Replace both by running the backend (VITE_API_MODE=live).
 
+// The sample data keeps the shape it was written in; mock/index.ts converts it
+// to the API contract (claims, verdicts, funnel ranks, normalization).
 export interface MockTopic {
-  /** Verdict counts are computed from the alignments in mock/index.ts. */
-  summary: Omit<TopicSummary, 'verdicts'>
+  summary: {
+    slug: string
+    label: string
+    headword: string
+    edition: string
+    year: number
+    match: Exclude<MatchStrength, 'pending'>
+    wikipediaTitle: string | null
+    area: AreaSlug | null
+    teaser: string | null
+  }
   aliases: string[]
-  britannica: BritannicaPage
-  wikipedia: WikipediaArticle | null
-  match: MatchInfo
-  candidates: WikipediaCandidate[]
-  alignments: Alignment[]
-  coverage: CoverageRow[]
+  britannica: {
+    pageId: string
+    headword: string
+    edition: string
+    year: number
+    volume: string
+    meta: string
+    imageUrl: string | null
+    sourceUrl: string | null
+    rawText: string
+    passages: Passage[]
+  }
+  wikipedia: { identifier: string; title: string; url: string; dateModified: string; passages: Passage[] } | null
+  match: { strength: Exclude<MatchStrength, 'pending'>; embedScore: number; rerankScore: number; reasons: string[] }
+  candidates: { title: string; url: string; embedScore: number; rerankScore: number }[]
+  alignments: {
+    id: string
+    kind: 'retained' | 'reworded' | 'revised' | 'dropped' | 'added'
+    /** Written as correct / partly / wrong; mapped to agrees / differs / contradicts. */
+    verdict: 'correct' | 'partly' | 'wrong' | null
+    label: string
+    britannica: Anchor | null
+    wikipedia: Anchor | null
+    note: string
+    quantity?: { britannica: Quantity; wikipedia: Quantity | null }
+  }[]
   suggestedQuestions: string[]
   answers: Record<string, Omit<ChatResponse, 'trace'>>
 }
@@ -152,18 +174,6 @@ acuteneſs of its ſmell. See Canis.`,
     { id: 'a10', kind: 'dropped', verdict: 'wrong', label: 'Blood and temperament', britannica: { passageId: 'B7', quote: 'ascribed to its abundance the sanguine temperament' }, wikipedia: null, note: 'The idea that blood shapes character has left medicine entirely.' },
     { id: 'a11', kind: 'added', verdict: null, label: 'Carrying oxygen', britannica: null, wikipedia: { passageId: 'W3', quote: 'binds oxygen in the lungs and releases it in the tissues' }, note: 'The 1797 entry never says what blood carries. Oxygen transport by haemoglobin is entirely new.' },
     { id: 'a12', kind: 'added', verdict: null, label: 'Blood disorders', britannica: null, wikipedia: { passageId: 'W10', quote: 'anaemia, haemophilia, leukaemia and sickle cell disease' }, note: 'None of these is named on the 1797 page.' },
-  ],
-  coverage: [
-    { topic: 'Composition', britannica: 0.22, wikipedia: 0.2 },
-    { topic: 'Clotting', britannica: 0.1, wikipedia: 0.1 },
-    { topic: 'Circulation', britannica: 0.18, wikipedia: 0.12 },
-    { topic: 'Where blood is made', britannica: 0.14, wikipedia: 0.12 },
-    { topic: 'Body heat', britannica: 0.1, wikipedia: 0.06 },
-    { topic: 'Humours and temperament', britannica: 0.1, wikipedia: 0.04 },
-    { topic: 'Bloodletting', britannica: 0.08, wikipedia: 0.06 },
-    { topic: 'Transfusion', britannica: 0.08, wikipedia: 0.1 },
-    { topic: 'Oxygen transport', britannica: 0, wikipedia: 0.12 },
-    { topic: 'Disorders', britannica: 0, wikipedia: 0.08 },
   ],
   suggestedQuestions: [
     'What did people in 1797 get wrong about blood?',
@@ -307,18 +317,6 @@ ence has ſhown that of thoſe inoculated, ſcarce one in
     { id: 's9', kind: 'added', verdict: null, label: 'Vaccination', britannica: null, wikipedia: { passageId: 'W6', quote: 'In 1796 Edward Jenner showed that inoculation with cowpox protected against smallpox' }, note: "Jenner's work came 18 years after this edition." },
     { id: 's10', kind: 'added', verdict: null, label: 'How it spreads', britannica: null, wikipedia: { passageId: 'W4', quote: 'spread between people in respiratory droplets' }, note: 'The 1778 entry calls it contagious but never says how it passes between people.' },
   ],
-  coverage: [
-    { topic: 'Symptoms', britannica: 0.2, wikipedia: 0.12 },
-    { topic: 'Kinds and severity', britannica: 0.15, wikipedia: 0.1 },
-    { topic: 'Cause', britannica: 0.15, wikipedia: 0.1 },
-    { topic: 'Treatment', britannica: 0.15, wikipedia: 0.08 },
-    { topic: 'Immunity', britannica: 0.08, wikipedia: 0.06 },
-    { topic: 'Inoculation', britannica: 0.2, wikipedia: 0.14 },
-    { topic: 'How common it is', britannica: 0.07, wikipedia: 0 },
-    { topic: 'Vaccination', britannica: 0, wikipedia: 0.15 },
-    { topic: 'Transmission', britannica: 0, wikipedia: 0.1 },
-    { topic: 'Eradication', britannica: 0, wikipedia: 0.15 },
-  ],
   suggestedQuestions: [
     'How did people try to prevent smallpox in 1778, and what replaced it?',
     'What did the 1778 entry believe caused smallpox?',
@@ -454,21 +452,9 @@ the disease is confirmed it is seldom cured.
     { id: 'c6', kind: 'revised', verdict: 'partly', label: 'Can it be cured?', britannica: { passageId: 'B7', quote: 'when the disease is confirmed it is seldom cured' }, wikipedia: { passageId: 'W8', quote: 'Treatment is a course of several antibiotics taken for months' }, note: 'True in 1842, when there was no cure. Curable since the 1940s, though drug resistance is eroding that.' },
     { id: 'c7', kind: 'reworded', verdict: 'partly', label: 'Rest and fresh air', britannica: { passageId: 'B7', quote: 'Change of climate, a sea voyage, exercise on horseback, and a diet of milk' }, wikipedia: { passageId: 'W9', quote: 'sanatoria for rest, fresh air and good food' }, note: 'Rest and food helped, but cured no one. The same regimen later moved into sanatoria.' },
     { id: 'c8', kind: 'revised', verdict: 'correct', label: 'Diagnosis', britannica: { passageId: 'B6', quote: 'The stethoscope of Laennec' }, wikipedia: { passageId: 'W7', quote: 'chest X-rays, sputum microscopy and culture, and molecular tests' }, note: 'Listening to the chest gave way to seeing the lungs and the bacterium.' },
-    { id: 'c9', kind: 'retained', verdict: 'partly', label: 'How deadly it is', britannica: { passageId: 'B2', quote: 'nearly one-fourth of the deaths in Britain' }, wikipedia: { passageId: 'W10', quote: 'one of the leading infectious causes of death worldwide' }, note: 'Still a leading killer, but no longer of Britain: the burden moved, the fact did not.' },
+    { id: 'c9', kind: 'retained', verdict: 'partly', label: 'How deadly it is', britannica: { passageId: 'B2', quote: 'nearly one-fourth of the deaths in Britain' }, wikipedia: { passageId: 'W10', quote: 'one of the leading infectious causes of death worldwide' }, quantity: { britannica: { value: 'nearly 1/4', unit: 'of deaths in Britain' }, wikipedia: null }, note: 'Still a leading killer, but no longer of Britain: the burden moved, the fact did not.' },
     { id: 'c10', kind: 'dropped', verdict: 'wrong', label: 'Who is disposed to it', britannica: { passageId: 'B4', quote: 'persons of a fair complexion, a long neck, and a narrow chest' }, wikipedia: null, note: 'This body-type profile has no place among modern risk factors.' },
     { id: 'c11', kind: 'added', verdict: null, label: 'Latent infection', britannica: null, wikipedia: { passageId: 'W4', quote: 'Most infections cause no symptoms' }, note: 'Infection without disease could not be seen before the bacterium was known.' },
-  ],
-  coverage: [
-    { topic: 'Symptoms', britannica: 0.18, wikipedia: 0.1 },
-    { topic: 'How deadly it is', britannica: 0.12, wikipedia: 0.06 },
-    { topic: 'Pathology', britannica: 0.14, wikipedia: 0.1 },
-    { topic: 'Heredity and body type', britannica: 0.16, wikipedia: 0.05 },
-    { topic: 'Contagion', britannica: 0.14, wikipedia: 0.12 },
-    { topic: 'Diagnosis', britannica: 0.12, wikipedia: 0.08 },
-    { topic: 'Treatment', britannica: 0.14, wikipedia: 0.16 },
-    { topic: 'Cause (bacterium)', britannica: 0, wikipedia: 0.12 },
-    { topic: 'Latent infection', britannica: 0, wikipedia: 0.1 },
-    { topic: 'Drug resistance', britannica: 0, wikipedia: 0.11 },
   ],
   suggestedQuestions: [
     'Did people in 1842 think consumption was contagious?',
@@ -580,14 +566,6 @@ to be invisible to the naked eye. See Microscope.`,
     { id: 'm4', kind: 'revised', verdict: 'wrong', label: 'Medical use', britannica: { passageId: 'B4', quote: 'employed by some physicians in the treatment of nervous complaints' }, wikipedia: { passageId: 'W4', quote: 'suggestion and the placebo effect' }, note: 'A treatment some doctors still used in 1824; now an example of suggestion.' },
     { id: 'm5', kind: 'added', verdict: null, label: 'Hypnosis', britannica: null, wikipedia: { passageId: 'W3', quote: 'fed into the later practice of hypnosis' }, note: 'The link to hypnosis came after 1824.' },
   ],
-  coverage: [
-    { topic: 'What it claims', britannica: 0.3, wikipedia: 0.22 },
-    { topic: 'Origin', britannica: 0.22, wikipedia: 0.2 },
-    { topic: '1784 commission', britannica: 0.26, wikipedia: 0.24 },
-    { topic: 'Medical use', britannica: 0.22, wikipedia: 0 },
-    { topic: 'Scientific status', britannica: 0, wikipedia: 0.18 },
-    { topic: 'Hypnosis and placebo', britannica: 0, wikipedia: 0.16 },
-  ],
   suggestedQuestions: [
     'Did the 1824 entry believe animal magnetism was real?',
     'What is the modern medical treatment that replaced animal magnetism?',
@@ -667,11 +645,6 @@ authors have ſuppoſed the nervous power to be of the
     { title: 'Nervous system', url: wiki('Nervous system'), embedScore: 0.6, rerankScore: 0.35 },
   ],
   alignments: [],
-  coverage: [
-    { topic: 'What the spirits are', britannica: 0.45, wikipedia: 0 },
-    { topic: 'Evidence', britannica: 0.35, wikipedia: 0 },
-    { topic: 'Electricity', britannica: 0.2, wikipedia: 0 },
-  ],
   suggestedQuestions: ['What is the modern view of animal spirits?', 'What did the 1797 entry think carried sensation along the nerves?'],
   answers: {
     'What is the modern view of animal spirits?': {

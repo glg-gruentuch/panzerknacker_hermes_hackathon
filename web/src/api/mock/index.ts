@@ -1,10 +1,11 @@
 import type { AgentCase, ChatRequest, ChatResponse, Comparison, Meta, TopicSummary, TraceStep } from '../types'
 import { MOCK_TOPICS, type MockTopic } from './topics'
-import { keywordRank, stats, vocabulary } from './text'
+import { REAL_ALIASES, comparisonOf, realComparison, realSummary, summaryOf } from './adapt'
+import { keywordRank } from './text'
 
 const wait = (ms: number) => new Promise((r) => setTimeout(r, ms))
 
-const normalise = (s: string) => s.toLowerCase().replace(/[^a-z]+/g, ' ').trim()
+const normalise = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
 
 function find(query: string): MockTopic | undefined {
   const q = normalise(query)
@@ -15,55 +16,39 @@ function find(query: string): MockTopic | undefined {
   )
 }
 
-/** The summary as the API serves it, with verdict counts taken from the claims. */
-function summary(t: MockTopic): TopicSummary {
-  const judged = t.alignments.filter((a) => a.verdict !== null)
-  const count = (v: string) => judged.filter((a) => a.verdict === v).length
-  return {
-    ...t.summary,
-    verdicts: judged.length ? { correct: count('correct'), partly: count('partly'), wrong: count('wrong') } : null,
-  }
+const isReal = (query: string) => {
+  const q = normalise(query)
+  return q.length > 2 && REAL_ALIASES.some((a) => normalise(a) === q || normalise(a).startsWith(q))
 }
 
 export async function topics(): Promise<TopicSummary[]> {
   await wait(150)
-  return MOCK_TOPICS.map(summary)
+  return [...MOCK_TOPICS.map(summaryOf), realSummary()]
 }
 
 export async function compare(query: string): Promise<Comparison | null> {
   await wait(450)
+  if (isReal(query)) return realComparison(query)
   const t = find(query)
-  if (!t) return null
-  return {
-    query,
-    topic: summary(t),
-    britannica: t.britannica,
-    wikipedia: t.wikipedia,
-    match: t.match,
-    candidates: t.candidates,
-    alignments: t.alignments,
-    vocabulary: vocabulary(t.britannica.passages, t.wikipedia?.passages ?? null, [t.summary.label, t.summary.headword, t.wikipedia?.title ?? '']),
-    coverage: t.coverage,
-    stats: {
-      britannica: stats(t.britannica.passages),
-      wikipedia: t.wikipedia ? stats(t.wikipedia.passages) : null,
-    },
-    suggestedQuestions: t.suggestedQuestions,
-  }
+  return t ? comparisonOf(t, query) : null
 }
 
 const MOCK_TRACE: TraceStep[] = [
-  { step: 'Embed question', model: 'Nemotron-3-Embed-VL', detail: 'Mock: skipped', ms: null },
-  { step: 'Search both collections', model: 'LanceDB', detail: 'Mock: keyword match', ms: null },
-  { step: 'Rerank passages', model: 'Nemotron 3-Rerank-VL', detail: 'Mock: skipped', ms: null },
-  { step: 'Write answer', model: 'Hermes Agent · Nemotron 3.5 Super VL', detail: 'Mock: canned answer', ms: null },
+  { step: 'Embed question', model: 'nvidia/llama-nemotron-embed-vl-1b-v2', detail: 'Mock: skipped', ms: null },
+  { step: 'Rerank passages', model: 'nvidia/llama-nemotron-rerank-vl-1b-v2', detail: 'Mock: skipped', ms: null },
+  { step: 'Write answer', model: 'nvidia/Nemotron-3.5-Super-VL via Hermes Agent', detail: 'Mock: canned answer', ms: null },
 ]
 
 export async function ask(req: ChatRequest): Promise<ChatResponse> {
   await wait(900 + Math.random() * 600)
   const t = find(req.topic)
   if (!t) {
-    return { answer: 'There is no indexed page for this topic, so the agent has nothing to compare.', citations: [], grounding: 'unsupported', trace: MOCK_TRACE }
+    return {
+      answer: 'There is no matched Wikipedia article for this entry yet, so the agent has nothing to compare it with.',
+      citations: [],
+      grounding: 'unsupported',
+      trace: MOCK_TRACE,
+    }
   }
 
   const canned = Object.entries(t.answers).find(([q]) => normalise(q) === normalise(req.question))
@@ -191,12 +176,12 @@ export async function meta(): Promise<Meta> {
       },
     ],
     models: [
-      { role: 'Reads the page scans', name: 'Nemotron Parse 3.5', host: 'Organisers’ shared endpoint' },
-      { role: 'Embeds passages and questions', name: 'Nemotron-3-Embed-VL', host: 'Nebius AI Cloud' },
-      { role: 'Reranks candidates', name: 'Nemotron 3-Rerank-VL', host: 'Nebius AI Cloud' },
-      { role: 'Stores and searches vectors', name: 'LanceDB', host: 'Backend' },
-      { role: 'Answers questions', name: 'Hermes Agent · Nemotron 3.5 Super VL', host: 'Nebius Token Factory' },
+      { role: 'Reads the page scans', name: 'nvidia/nemotron-3.5-parse', host: 'Organisers’ shared endpoint' },
+      { role: 'Embeds passages and questions', name: 'nvidia/llama-nemotron-embed-vl-1b-v2', host: 'Nebius AI Cloud' },
+      { role: 'Reranks candidates', name: 'nvidia/llama-nemotron-rerank-vl-1b-v2', host: 'Nebius AI Cloud' },
+      { role: 'Answers questions', name: 'nvidia/Nemotron-3.5-Super-VL via Hermes Agent', host: 'Nebius Token Factory' },
     ],
+    matchLogitThreshold: 0,
     sample: { size: 100, method: 'Random, without replacement, from all 2,573 scans with seed 20261016 (src/nemotron_challenge/resources/britannica-manifest.json).' },
   }
 }

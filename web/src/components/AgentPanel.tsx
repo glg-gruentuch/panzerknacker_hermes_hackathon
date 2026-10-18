@@ -1,6 +1,9 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
-import type { ChatResponse, Comparison, Grounding, Passage, Verdict } from '../api/types'
+import { API_MODE, api } from '../api/client'
+import type { ChatResponse, Comparison, Grounding, Passage, RecordedRun, Verdict } from '../api/types'
 import type { ChatMessage } from '../lib/useAgentChat'
+import { GROUNDING_TONE } from '../lib/kinds'
+import { theEntry } from '../lib/when'
 import { Icon, VerdictIcon } from './Icon'
 import styles from './AgentPanel.module.css'
 
@@ -17,11 +20,11 @@ interface Props {
   onClose?: () => void
 }
 
-/** How well the sources back an answer, in the same red / yellow / green as the claims. */
+/** How well the sources back an answer, on the same green / amber / red scale as the claims. */
 const GROUNDING: Record<Grounding, { label: string; verdict: Verdict }> = {
-  supported: { label: 'Supported by the sources', verdict: 'correct' },
-  partial: { label: 'Partly supported', verdict: 'partly' },
-  unsupported: { label: 'Not supported by the sources', verdict: 'wrong' },
+  supported: { label: 'Supported by the sources', verdict: GROUNDING_TONE.supported },
+  partial: { label: 'Partly supported', verdict: GROUNDING_TONE.partial },
+  unsupported: { label: 'Not supported by the sources', verdict: GROUNDING_TONE.unsupported },
 }
 
 export function AgentPanel({ comparison: c, messages, pending, onAsk, onClear, onCite, onCollapse, onClose }: Props) {
@@ -33,8 +36,18 @@ export function AgentPanel({ comparison: c, messages, pending, onAsk, onClear, o
     return new Map(all.map((p) => [p.id, p]))
   }, [c])
 
+  const [recorded, setRecorded] = useState<RecordedRun[]>([])
+  const staticMode = API_MODE === 'static'
+  useEffect(() => {
+    if (staticMode) api.recordedRuns().then(setRecorded, () => setRecorded([]))
+  }, [staticMode])
+
   const asked = new Set(messages.flatMap((m) => (m.role === 'user' ? [m.content] : [])))
-  const suggestions = c.suggestedQuestions.filter((q) => !asked.has(q))
+  // Static mode can only replay recorded runs, so it offers their questions instead of free text.
+  const offered = staticMode
+    ? recorded.filter((r) => !r.topic || r.topic.toLowerCase() === c.topic.label.toLowerCase()).map((r) => r.question)
+    : c.suggestedQuestions
+  const suggestions = offered.filter((q) => !asked.has(q))
 
   useEffect(() => {
     const log = logRef.current
@@ -52,7 +65,7 @@ export function AgentPanel({ comparison: c, messages, pending, onAsk, onClear, o
       <header className={styles.head}>
         <div className={styles.headText}>
           <h2 className={styles.title}>Ask the agent</h2>
-          <p className={styles.model}>Hermes Agent, Nemotron 3.5 Super VL</p>
+          <p className={styles.model}>nvidia/Nemotron-3.5-Super-VL via Hermes Agent</p>
         </div>
         {messages.length > 0 && (
           <button type="button" className="btn btn-quiet" onClick={onClear}>
@@ -74,7 +87,7 @@ export function AgentPanel({ comparison: c, messages, pending, onAsk, onClear, o
       <div ref={logRef} className={styles.log} aria-live="polite">
         {messages.length === 0 && (
           <p className={styles.intro}>
-            Ask how the {c.britannica.year} entry and {c.wikipedia ? 'Wikipedia' : 'modern sources'} differ. Answers cite passages, B for Britannica and W for
+            Ask how {theEntry(c.britannica)} and {c.wikipedia ? 'Wikipedia' : 'modern sources'} differ. Answers cite passages, B for Britannica and W for
             Wikipedia; select one to see it in the text.
           </p>
         )}
@@ -88,8 +101,8 @@ export function AgentPanel({ comparison: c, messages, pending, onAsk, onClear, o
             <Answer key={m.id} response={m.response} passages={passages} onCite={onCite} />
           ) : (
             <div key={m.id} className={styles.error} role="alert">
-              <p className={styles.errorHead} data-tone="wrong">
-                <VerdictIcon verdict="wrong" />
+              <p className={styles.errorHead} data-tone="contradicts">
+                <VerdictIcon verdict="contradicts" />
                 The agent did not answer
               </p>
               <p>{m.content}</p>
@@ -108,7 +121,7 @@ export function AgentPanel({ comparison: c, messages, pending, onAsk, onClear, o
 
         {suggestions.length > 0 && !pending && (
           <div className={styles.suggestions}>
-            <h3 className={styles.suggestHead}>{messages.length === 0 ? 'Try asking' : 'Also worth asking'}</h3>
+            <h3 className={styles.suggestHead}>{staticMode ? 'Recorded questions' : messages.length === 0 ? 'Try asking' : 'Also worth asking'}</h3>
             {suggestions.map((q) => (
               <button key={q} type="button" className={styles.suggestion} onClick={() => send(q)}>
                 {q}
@@ -118,6 +131,13 @@ export function AgentPanel({ comparison: c, messages, pending, onAsk, onClear, o
         )}
       </div>
 
+      {staticMode ? (
+        <p className={styles.staticNote}>
+          {recorded.length
+            ? 'This static site replays recorded agent runs. Pick a recorded question above.'
+            : 'No recorded agent runs are in this export.'}
+        </p>
+      ) : (
       <form
         className={styles.composer}
         onSubmit={(e) => {
@@ -133,7 +153,7 @@ export function AgentPanel({ comparison: c, messages, pending, onAsk, onClear, o
           className={styles.input}
           value={draft}
           rows={2}
-          placeholder={`Ask about ${c.topic.label.toLowerCase()}, then and now`}
+          placeholder={c.topic.headword ? `Ask about ${c.topic.headword.toLowerCase()}, then and now` : 'Ask about this entry, then and now'}
           onChange={(e) => setDraft(e.target.value)}
           onKeyDown={(e) => {
             if (e.key === 'Enter' && !e.shiftKey) {
@@ -146,6 +166,7 @@ export function AgentPanel({ comparison: c, messages, pending, onAsk, onClear, o
           Ask
         </button>
       </form>
+      )}
     </section>
   )
 }
@@ -158,7 +179,14 @@ function Answer({ response: r, passages, onCite }: { response: ChatResponse; pas
       <p className={styles.grounding} data-tone={g.verdict}>
         <VerdictIcon verdict={g.verdict} />
         {g.label}
+        {r.recorded && <span className="inference-tag">Recorded run</span>}
       </p>
+      {r.recorded && (r.runDir || r.error) && (
+        <p className={styles.runDir}>
+          {r.runDir && <>From {r.runDir}. </>}
+          {r.error && <>The live agent did not run: {r.error}</>}
+        </p>
+      )}
 
       <AnswerText text={r.answer} passages={passages} onCite={onCite} />
 
