@@ -1,14 +1,12 @@
 # Knowledge Across Time: web UI
 
-The front end for *Britannica Meets Wikipedia*, our project for the medicine
-challenge. Type a medical topic and the app shows the historical Encyclopaedia
-Britannica entry (1768–1860) beside its closest Wikipedia article. It marks
-which claims held, which only changed their wording, and which turned out to
-be wrong, and an agent answers questions about the differences with citations
-into both texts.
+The front end for *Britannica Meets Wikipedia*. Type a topic and the app shows
+a historical Encyclopaedia Britannica entry (1768 to 1860) beside its matched
+Wikipedia article. Each Britannica claim is marked by how the article compares
+with it, and an agent answers questions with citations into both texts.
 
-React + TypeScript + Vite. No UI kit, no CSS framework: plain CSS modules on a
-small token set.
+React, TypeScript and Vite. No UI kit and no CSS framework: plain CSS modules
+on a small token set.
 
 ## Run it
 
@@ -16,99 +14,96 @@ Run these commands in the `web/` folder.
 
 ```bash
 npm install
-npm run dev          # http://localhost:5173
+npm run dev          # http://localhost:5173, reads the backend at /api
 ```
 
-By default the UI runs on **built-in sample data** (five medical topics), so it
-works before the backend exists. To use the real backend:
+`npm run dev` reads the FastAPI backend. Start it from the repository root
+with `uv run uvicorn nemotron_challenge.api:app --port 8000`, or point
+`VITE_BACKEND_URL` at another host. Without a backend, use the sample data:
 
 ```bash
-cp .env.example .env
-# set VITE_API_MODE=live and VITE_BACKEND_URL=http://localhost:8000
-npm run dev
+npm run dev:mock
 ```
-
-The dev server proxies `/api/*` to the backend. **[API.md](API.md) is the
-contract for the backend team**, with example payloads in
-[`api-examples/`](api-examples/).
 
 | Script | What it does |
 |---|---|
-| `npm run dev` | Dev server with hot reload |
-| `npm run build` | Typecheck, then production build into `dist/` |
+| `npm run dev` | Dev server on live data (`VITE_API_MODE=live`, the default) |
+| `npm run dev:mock` | Dev server on built-in sample data |
+| `npm run build` | Typecheck, then a live build into `dist/`. CI runs this. |
+| `npm run build:static` | Static build into `../deliverables/website/app/`, read from exported JSON |
 | `npm run typecheck` | TypeScript only |
 | `npm run examples` | Rewrite `api-examples/` from the mock data |
 
-Link straight to a topic with `?q=`, for example `http://localhost:5173/?q=consumption`.
+[API.md](API.md) lists what the UI reads from each route, with saved live
+replies in `artifacts/web/`. Only `npm run dev:mock` includes the sample data;
+the live and static builds leave it out.
+
+Link straight to an entry with `?q=`, for example `http://localhost:5173/?q=coinage`.
 
 ## What's on screen
 
 - **Landing page.** An engraved plate from the Britannica sits behind the
-  page. The search field is set like an encyclopaedia headword ("BLOOD,
-  *in anatomy.*"), and its field follows the topic's subject. Below it, four
-  subjects (infectious disease and fevers, anatomy and physiology, geology,
-  natural sciences) open into short lists of articles. Featured articles show
-  a quoted line and how many of their claims are wrong, partly correct or
-  correct. Pointing at or opening a subject swaps in that subject's plate.
+  page. The search field is set like an encyclopaedia headword. Below it, four
+  subjects open into short lists of articles once the backend tags them.
 - **Side by side.** Britannica on the left, Wikipedia on the right. The
-  Britannica column switches between **Summary** (the entry, cleaned and split
-  into the passages the agent cites), **Original text** (everything Nemotron
-  Parse read off the page, unedited) and **Page scan**. Select an underlined
-  phrase to draw a line to its modern counterpart and read what changed, or
-  step through every claim in order.
-- **Colour means one thing: does the old claim hold up today?**
+  Britannica column has four views: **Summary** (the entry's passages, which
+  the agent cites), **Normalized** (long-s and OCR fixes marked), **Original
+  text** (everything Nemotron Parse read off the page) and **Scan** (the page,
+  with Parse's blocks outlined and the selected claim's block boxed). A quality
+  chip shows the share of dictionary words, known OCR issues and the compiled
+  PDF when the backend sends them. Fragments, which continue an entry from a
+  page outside the sample, are labelled as such.
+- **Verdicts.** Colour means one thing: how the Wikipedia article compares with
+  a Britannica claim. Wikipedia is a comparison source, not ground truth.
 
-  | Underline | Verdict | Meaning |
-  |---|---|---|
-  | red, wavy | Wrong | Contradicted by current knowledge |
-  | yellow, dashed | Partly correct | Half right, or true then but not now |
-  | green, solid | Correct | Still true |
+  | Underline | Verdict |
+  |---|---|
+  | red, wavy | Contradicts |
+  | amber, dashed | Differs |
+  | green, solid | Agrees |
+  | grey, dotted | Not in Wikipedia |
 
-  The agent's answers use the same scale (supported, partly supported, not
-  supported), and so do the agent cases (works, fails).
-- **Match.** One line above the texts says how sure the pairing is. Details
-  show the embedding and rerank scores, why the pair was matched, and the
-  other candidates. A doubtful match opens its reasons by default, and a page
-  with no credible counterpart says so instead of forcing a comparison.
-- **What changed.** How many old claims are wrong, partly correct or correct,
-  then every claim grouped by verdict, each tagged as new words (a change in
-  language) or new knowledge. Below: the words that mark each text, topic
-  coverage and sentence statistics.
-- **Ask the agent.** Docked on the right on wide screens; hide it to a thin
-  rail with the button in its header (the choice is remembered). A drawer on
-  tablets, a tab on phones. Citations (B = Britannica, W = Wikipedia) jump to
-  the passage.
+  Every model-written explanation carries an "Inference" tag. Source quotes
+  never do.
+- **Match.** The bar above the texts shows the match strength and the raw
+  reranker logit. Details show the funnel for every candidate: BM25 rank,
+  embedder rank and similarity, reranker rank and logit, and the change in
+  rank. The threshold comes from `/api/meta`.
+- **What changed.** Verdict counts, the claims grouped by verdict with both
+  quotes, quantity drift, distinctive vocabulary, obsolete terms and section
+  coverage. A stage that has not run shows "pending".
+- **Ask the agent.** Docked on the right on wide screens, or hidden to a thin
+  rail. A recorded run is marked "Recorded run" with its run directory. In the
+  static build the panel offers only recorded questions.
 - **Agent cases** and **Data and models** are their own pages
-  (`?page=cases`, `?page=sources`).
+  (`?page=cases`, `?page=sources`). They list exactly what the backend sends.
 
-## Demo path (for the 5-minute video)
+## Demo path
 
-1. Landing: point at the claim key and at the index grouped by match strength.
-2. Search **Blood**, select the red "The blood is made from the chyle" to
-   show the line to "bone marrow", then **Step through** a few claims.
-   Switch the left column to **Original text** to show the raw parse.
-3. **What changed**: "4 of 10 claims from 1797 are wrong", then the
-   vocabulary (vein, aliment versus cells, haemoglobin).
-4. Ask "What did people in 1797 get wrong about blood?" and click a citation.
-5. Search **Consumption**: the headword differs (Tuberculosis), yet it matches
-   on content. Ask whether 1842 thought it was contagious.
-6. Search **Animal spirits**: no clear counterpart, so the uncertainty shows.
-7. **Agent cases**, then replay a failure.
+1. Landing: the plate, the search, the subjects.
+2. Search **coinage**: a clear match. Select a claim, step through the claims,
+   then open **Scan** to show the claim's block boxed on the page.
+3. **What changed**: verdict counts and the claims with both quotes.
+4. **Details**: the retrieval funnel and the reranker logits.
+5. Search **page-0013-fragment**: a fragment with no clear match.
+6. Search **willin**: an unmatched entry and its closest candidates.
+7. **Agent cases**.
 
 ## Layout
 
 ```
 src/
-  api/types.ts        the data contract (mirrors API.md)
-  api/client.ts       fetch wrapper; mock or live by VITE_API_MODE
-  api/mock/           sample topics, keyword fallback for chat, example cases
+  api/types.ts        the UI's data model
+  api/normalize.ts    maps backend replies onto it; missing data becomes "pending"
+  api/client.ts       live, static or mock, by VITE_API_MODE
+  api/mock/           sample topics and one real entry (page 13), only in dev:mock
   components/         one component + one CSS module each
   lib/                change kinds, text highlighting, chat state, breakpoints
   styles/tokens.css   colours, type, spacing
 ```
 
 Breakpoints: ≥ 1200px puts the agent beside the texts; 760–1199px opens it as
-a drawer; below 760px the app switches to tabs (year · Today · Changes · Ask).
+a drawer; below 760px the app switches to tabs (Britannica, Today, Changes, Ask).
 
 ### Design notes
 
@@ -151,8 +146,9 @@ uv run --with pillow python web/scripts/prepare-plates.py
 
 ## About the sample data
 
-The mock Britannica passages (eight topics) are written in period style for
-the demo. They are **not** text from the dataset. The Wikipedia passages paraphrase the real
-articles. The six agent cases are placeholders that show the format. All of it
-is replaced once the backend runs in live mode. The "Sample data" badge in the
-header shows while mock data is in use.
+`npm run dev:mock` serves eight sample topics and one real entry. The sample
+Britannica passages are written in period style for UI work; they are **not**
+text from the dataset, and the Wikipedia passages paraphrase the articles. The
+real entry is page 13 (a SHIP-BUILDING fragment), built from the committed
+Parse output, QA notes and scan; its match and claims are pending. The "Sample
+data" badge in the header shows while mock data is in use.
