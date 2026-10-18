@@ -1,0 +1,353 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "diphtheria",
+    "label": "Diphtheria",
+    "headword": "CYNANCHE MALIGNA, or PUTRID SORE THROAT",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Diphtheria",
+    "area": "infectious-disease",
+    "teaser": "The cause is supposed to be a putrid ferment, received from the air or from the breath of the sick, which corrupts the humours and produces a gangrene of the parts."
+  },
+  "aliases": [
+    "diphtheria",
+    "putrid sore throat",
+    "malignant sore throat",
+    "cynanche maligna",
+    "ulcerous sore throat"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0061",
+    "headword": "CYNANCHE MALIGNA, or PUTRID SORE THROAT",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 5",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 5 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "CYN                    [ 612 ]                    CYN\n\nCYMBAL, a muſical inſtrument of braſs, hollow and round.\n  CYNANCHE MALIGNA, or PUTRID SORE THROAT, a diſeaſe in\nwhich the throat and tonfils are covered with ulcers\nand with ſloughs of a whitiſh or aſh colour, attended\nwith fever, great weakneſs, and a fetid breath. It is\ncontagious, and often appears as an epidemic; and it is\nmoſt fatal to children, many of whom it carries off in\na few days.\n  It differs from the common inflammatory quinſy, in\nwhich the throat is red and ſwelled but without\nſloughs, and which yields to bleeding; whereas in this\ndiſeaſe bleeding is very hurtful. Dr Fothergill of Lon-\ndon publiſhed an account of this diſeaſe in 1748, and\nit has ſince been deſcribed by Dr Huxham and Dr Cullen.\n  The cauſe is ſuppoſed to be a putrid ferment,\nreceived from the air or from the breath of the ſick,\nwhich corrupts the humours and produces a gangrene of\nthe parts. The cure conſiſts in ſupporting tbe ſtrength\nwith Peruvian bark and wine, and in cleanſing the\nulcers with gargles of capſicum, or of vinegar and\nhoney.\n  CYNIC, a philoſopher of the ſect of Diogenes.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "CYNANCHE MALIGNA, or PUTRID SORE THROAT",
+        "text": "CYNANCHE MALIGNA, or PUTRID SORE THROAT, a disease in which the throat and tonsils are covered with ulcers and with sloughs of a whitish or ash colour, attended with fever, great weakness, and a fetid breath."
+      },
+      {
+        "id": "B2",
+        "section": "CYNANCHE MALIGNA, or PUTRID SORE THROAT",
+        "text": "It is contagious, and often appears as an epidemic; and it is most fatal to children, many of whom it carries off in a few days."
+      },
+      {
+        "id": "B3",
+        "section": "CYNANCHE MALIGNA, or PUTRID SORE THROAT",
+        "text": "It differs from the common inflammatory quinsy, in which the throat is red and swelled but without sloughs, and which yields to bleeding; whereas in this disease bleeding is very hurtful."
+      },
+      {
+        "id": "B4",
+        "section": "CYNANCHE MALIGNA, or PUTRID SORE THROAT",
+        "text": "Dr Fothergill of London published an account of this disease in 1748, and it has since been described by Dr Huxham and Dr Cullen."
+      },
+      {
+        "id": "B5",
+        "section": "CYNANCHE MALIGNA, or PUTRID SORE THROAT",
+        "text": "The cause is supposed to be a putrid ferment, received from the air or from the breath of the sick, which corrupts the humours and produces a gangrene of the parts."
+      },
+      {
+        "id": "B6",
+        "section": "CYNANCHE MALIGNA, or PUTRID SORE THROAT",
+        "text": "The cure consists in supporting the strength with Peruvian bark and wine, and in cleansing the ulcers with gargles of capsicum, or of vinegar and honey."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-diphtheria",
+    "title": "Diphtheria",
+    "url": "https://en.wikipedia.org/wiki/Diphtheria",
+    "dateModified": "2026-09-21",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Diphtheria is an infection caused by the bacterium Corynebacterium diphtheriae. Symptoms often come on gradually, beginning with a sore throat and fever."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "In severe cases, a grey or white patch called a pseudomembrane forms in the throat. It can block the airway and cause a barking cough as in croup."
+      },
+      {
+        "id": "W3",
+        "section": "Cause",
+        "text": "Diphtheria usually spreads between people by direct contact or through the air. Most of the harm comes from a toxin that the bacterium makes, which can also damage the heart and nerves."
+      },
+      {
+        "id": "W4",
+        "section": "Epidemiology",
+        "text": "Before vaccination, diphtheria was a major cause of death in children. The disease kills between 5 and 10 percent of those infected."
+      },
+      {
+        "id": "W5",
+        "section": "Treatment",
+        "text": "Treatment is with diphtheria antitoxin and antibiotics such as erythromycin or penicillin."
+      },
+      {
+        "id": "W6",
+        "section": "History",
+        "text": "The French physician Pierre Bretonneau named the disease in the 1820s, from the Greek word for leather, after the tough membrane in the throat. Edwin Klebs and Friedrich Loeffler identified the bacterium in 1883 and 1884, and Emil von Behring developed an antitoxin in the 1890s."
+      },
+      {
+        "id": "W7",
+        "section": "Prevention",
+        "text": "A diphtheria vaccine is effective and is usually given together with tetanus and pertussis vaccines."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.82,
+    "rerankScore": 0.8,
+    "reasons": [
+      "The old headword names the disease by its signs, but the description matches diphtheria: sloughs in the throat, high death rate in children, epidemics.",
+      "Rare terms appear in both: sloughs and membrane, fetid breath, croup-like signs, antitoxin history.",
+      "Scarlet fever also scores, because some 18th-century accounts of the ulcerous sore throat may describe it."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Scarlet fever",
+      "url": "https://en.wikipedia.org/wiki/Scarlet_fever",
+      "embedScore": 0.74,
+      "rerankScore": 0.55
+    },
+    {
+      "title": "Peritonsillar abscess",
+      "url": "https://en.wikipedia.org/wiki/Peritonsillar_abscess",
+      "embedScore": 0.68,
+      "rerankScore": 0.41
+    }
+  ],
+  "alignments": [
+    {
+      "id": "di1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Sloughs in the throat",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "covered with ulcers and with sloughs of a whitish or ash colour"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "a grey or white patch called a pseudomembrane forms in the throat"
+      },
+      "note": "Same sign in new words. The sloughs of 1797 are the pseudomembrane of today."
+    },
+    {
+      "id": "di2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Fatal to children",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "it is most fatal to children"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "a major cause of death in children"
+      },
+      "note": "Both texts say children suffered most. The fact did not change."
+    },
+    {
+      "id": "di3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Contagious",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "It is contagious, and often appears as an epidemic"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "usually spreads between people by direct contact or through the air"
+      },
+      "note": "Both say it passes from person to person. Wikipedia names the routes."
+    },
+    {
+      "id": "di4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Not the common quinsy",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "It differs from the common inflammatory quinsy"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "a grey or white patch called a pseudomembrane"
+      },
+      "note": "The 1797 entry uses the sloughs to tell the two apart, and so does the modern sign. Inference: the quinsy of the period is close to what Wikipedia calls a peritonsillar abscess."
+    },
+    {
+      "id": "di5",
+      "kind": "dropped",
+      "verdict": "correct",
+      "label": "Fothergill, 1748",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "Dr Fothergill of London published an account of this disease in 1748"
+      },
+      "wikipedia": null,
+      "note": "Wikipedia does not name Fothergill. Inference: some 18th-century epidemics of ulcerous sore throat may have mixed diphtheria with scarlet fever."
+    },
+    {
+      "id": "di6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Putrid ferment",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "a putrid ferment"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "caused by the bacterium Corynebacterium diphtheriae"
+      },
+      "note": "A change in knowledge. A bacterium causes the disease, not a ferment from putrid air."
+    },
+    {
+      "id": "di7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Gangrene of the parts",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "corrupts the humours and produces a gangrene of the parts"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Most of the harm comes from a toxin that the bacterium makes"
+      },
+      "note": "The 1797 entry saw dead tissue in the throat. Wikipedia explains it by a toxin, which can also harm the heart and nerves."
+    },
+    {
+      "id": "di8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Bark, wine and capsicum",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "supporting the strength with Peruvian bark and wine"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Treatment is with diphtheria antitoxin and antibiotics"
+      },
+      "note": "A change in knowledge. Antitoxin came in the 1890s and antibiotics later. Bark and capsicum gargles do not act on the infection."
+    },
+    {
+      "id": "di9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Vaccine",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "A diphtheria vaccine is effective"
+      },
+      "note": "The 1797 entry has no prevention. The vaccine made the disease rare where it is used."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Signs in the throat",
+      "britannica": 0.25,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Who dies and how often",
+      "britannica": 0.12,
+      "wikipedia": 0.13
+    },
+    {
+      "topic": "Contagion",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.18,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.2,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "History and names",
+      "britannica": 0.15,
+      "wikipedia": 0.18
+    },
+    {
+      "topic": "Vaccine",
+      "britannica": 0,
+      "wikipedia": 0.12
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1797 entry think caused the putrid sore throat?",
+    "How was the disease treated in 1797 and how is it treated now?"
+  ],
+  "answers": {
+    "What did the 1797 entry think caused the putrid sore throat?": {
+      "answer": "It blamed a putrid ferment taken in from the air or from the breath of the sick [B5]. Wikipedia says a bacterium, Corynebacterium diphtheriae, causes it [W1], and that most of the harm comes from the toxin the bacterium makes [W3]. The 1797 entry was right that the breath of the sick passes it on [B5] [W3].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.88
+        }
+      ],
+      "grounding": "supported"
+    },
+    "How was the disease treated in 1797 and how is it treated now?": {
+      "answer": "In 1797 the cure was Peruvian bark and wine, with gargles of capsicum or of vinegar and honey [B6]. Today treatment is with diphtheria antitoxin and antibiotics [W5], and a vaccine prevents the disease [W7].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.8
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

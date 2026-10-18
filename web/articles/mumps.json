@@ -1,0 +1,366 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "mumps",
+    "label": "Mumps",
+    "headword": "MUMPS",
+    "edition": "Fifth edition",
+    "year": 1817,
+    "match": "strong",
+    "wikipediaTitle": "Mumps",
+    "area": "infectious-disease",
+    "teaser": "The cause is supposed to be a peculiar acrimony of the lymph, which settles in the glands."
+  },
+  "aliases": [
+    "mumps",
+    "parotitis",
+    "epidemic parotitis",
+    "cynanche parotidaea"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0064",
+    "headword": "MUMPS",
+    "edition": "Fifth edition",
+    "year": 1817,
+    "volume": "Volume 14",
+    "meta": "Encyclopaedia Britannica - Fifth edition, Volume 14 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "MUM                    [ 158 ]                    MUN\n\nMUMMY, a human body embalmed after the manner of the ancient Egyptians.\n  MUMPS, called by Dr Cullen cynanche parotidaea, a\nſwelling of the glands under the ears and about the\nangle of tlie jaw, which often extends to the neck, and\nmakes the motion of the jaw painful. It is contagious,\nattacks chiefly children and young perfons, and often\ngoes through a whole ſchool or village as an epidemic.\n  As the ſwelling of the neck goes down, it often hap-\npens that the teſticles in males, or the breaſts in\nfemales, ſwell in its place; and this tranſlation of\nthe diſeaſe was called a metaſtaſis. The diſeaſe is\nſeldom dangerous, and commonly goes off in a few days\nwith a gentle ſweat.\n  The cauſe is ſuppoſed to be a peculiar acrimony of\nthe lymph, which ſettles in the glands. The cure requi-\nres only that the patient keep warm and avoid cold,\nwith a gentle purge; and if the ſwelling ſhould leave\nthe neck ſuddenly, it is to be recalled by warm appli-\ncations to the part.\n  MUNICH, a city of Germany, the capital of Bavaria.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "MUMPS",
+        "text": "MUMPS, called by Dr Cullen cynanche parotidaea, a swelling of the glands under the ears and about the angle of the jaw, which often extends to the neck, and makes the motion of the jaw painful."
+      },
+      {
+        "id": "B2",
+        "section": "MUMPS",
+        "text": "It is contagious, attacks chiefly children and young persons, and often goes through a whole school or village as an epidemic."
+      },
+      {
+        "id": "B3",
+        "section": "MUMPS",
+        "text": "As the swelling of the neck goes down, it often happens that the testicles in males, or the breasts in females, swell in its place; and this translation of the disease was called a metastasis."
+      },
+      {
+        "id": "B4",
+        "section": "MUMPS",
+        "text": "The disease is seldom dangerous, and commonly goes off in a few days with a gentle sweat."
+      },
+      {
+        "id": "B5",
+        "section": "MUMPS",
+        "text": "The cause is supposed to be a peculiar acrimony of the lymph, which settles in the glands."
+      },
+      {
+        "id": "B6",
+        "section": "MUMPS",
+        "text": "The cure requires only that the patient keep warm and avoid cold, with a gentle purge; and if the swelling should leave the neck suddenly, it is to be recalled by warm applications to the part."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-mumps",
+    "title": "Mumps",
+    "url": "https://en.wikipedia.org/wiki/Mumps",
+    "dateModified": "2026-10-02",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Mumps is a highly contagious viral disease caused by the mumps virus. The most typical sign is painful swelling of the parotid glands, the salivary glands in front of and below the ears."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "Early symptoms include fever, headache and tiredness. Swelling of one or both parotid glands usually follows."
+      },
+      {
+        "id": "W3",
+        "section": "Transmission",
+        "text": "The virus spreads through respiratory droplets and saliva. Before vaccination, mumps was a common childhood disease worldwide."
+      },
+      {
+        "id": "W4",
+        "section": "Complications",
+        "text": "Complications include inflammation of the testicles (orchitis), of the ovaries, of the breasts and of the pancreas, as well as meningitis and deafness."
+      },
+      {
+        "id": "W5",
+        "section": "Prognosis",
+        "text": "Most people recover fully. Death from mumps is rare."
+      },
+      {
+        "id": "W6",
+        "section": "Treatment",
+        "text": "There is no specific treatment. Care aims at relieving the symptoms, for example with pain medicine."
+      },
+      {
+        "id": "W7",
+        "section": "Prevention",
+        "text": "Mumps can be prevented with a vaccine, usually given as part of the MMR vaccine together with measles and rubella. Vaccination has made the disease much less common."
+      },
+      {
+        "id": "W8",
+        "section": "Pathophysiology",
+        "text": "After it multiplies in the throat and nearby lymph nodes, the virus spreads through the blood to other glands and organs, such as the testicles, ovaries, pancreas and brain."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.89,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same headword in both: MUMPS and Mumps.",
+      "Rare terms appear in both: glands under the ears, testicles, breasts, contagious in children.",
+      "Parotitis scores well but covers every swelling of the parotid gland, not only mumps."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Parotitis",
+      "url": "https://en.wikipedia.org/wiki/Parotitis",
+      "embedScore": 0.78,
+      "rerankScore": 0.6
+    },
+    {
+      "title": "MMR vaccine",
+      "url": "https://en.wikipedia.org/wiki/MMR_vaccine",
+      "embedScore": 0.66,
+      "rerankScore": 0.42
+    }
+  ],
+  "alignments": [
+    {
+      "id": "mu1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Glands below the ears",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a swelling of the glands under the ears"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "painful swelling of the parotid glands"
+      },
+      "note": "Same sign. Wikipedia names the glands: the parotid glands."
+    },
+    {
+      "id": "mu2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Contagious",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "It is contagious"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "highly contagious"
+      },
+      "note": "Same fact, almost the same words."
+    },
+    {
+      "id": "mu3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Chiefly children",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "attacks chiefly children and young persons"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "mumps was a common childhood disease worldwide"
+      },
+      "note": "Same fact in new words. Wikipedia adds that this was before vaccination."
+    },
+    {
+      "id": "mu4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Testicles and breasts",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the testicles in males, or the breasts in females, swell"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "inflammation of the testicles (orchitis), of the ovaries, of the breasts"
+      },
+      "note": "The 1817 observation holds. Wikipedia lists the same organs and more."
+    },
+    {
+      "id": "mu5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Metastasis",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "this translation of the disease was called a metastasis"
+      },
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "the virus spreads through the blood to other glands and organs"
+      },
+      "note": "Right observation, wrong mechanism. The disease does not move from the neck to the testicles. The virus reaches both through the blood. Today metastasis means the spread of a cancer."
+    },
+    {
+      "id": "mu6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Seldom dangerous",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "The disease is seldom dangerous"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "as well as meningitis and deafness"
+      },
+      "note": "Death is still rare, but Wikipedia lists serious complications such as meningitis and deafness that the 1817 entry does not mention."
+    },
+    {
+      "id": "mu7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Acrimony of the lymph",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "a peculiar acrimony of the lymph"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "caused by the mumps virus"
+      },
+      "note": "A change in knowledge. A virus causes the disease, not a fault of the lymph."
+    },
+    {
+      "id": "mu8",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Keep warm",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "keep warm and avoid cold, with a gentle purge"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "There is no specific treatment"
+      },
+      "note": "Care for comfort is still the only treatment. The purge and the warm applications to recall the swelling have no basis today."
+    },
+    {
+      "id": "mu9",
+      "kind": "added",
+      "verdict": null,
+      "label": "MMR vaccine",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "usually given as part of the MMR vaccine"
+      },
+      "note": "The 1817 entry has no prevention. The vaccine made the disease much less common."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Signs",
+      "britannica": 0.25,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Contagion and who gets it",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Spread to other organs",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Danger",
+      "britannica": 0.1,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.1,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Vaccine",
+      "britannica": 0,
+      "wikipedia": 0.18
+    }
+  ],
+  "suggestedQuestions": [
+    "Why did the 1817 entry call the swelling of the testicles a metastasis?",
+    "Is mumps as harmless as the 1817 entry says?"
+  ],
+  "answers": {
+    "Why did the 1817 entry call the swelling of the testicles a metastasis?": {
+      "answer": "The entry saw the swelling of the neck go down as the testicles or breasts swelled, and thought the disease moved from one place to the other [B3]. Wikipedia confirms that the testicles, ovaries and breasts can be affected [W4], but explains that the virus spreads through the blood to these organs [W8]. The observation holds; the idea that the disease moves does not.",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W8",
+          "source": "wikipedia",
+          "passageId": "W8",
+          "rerankScore": 0.92
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Is mumps as harmless as the 1817 entry says?": {
+      "answer": "Mostly. The entry calls it seldom dangerous [B4], and Wikipedia says most people recover fully and death is rare [W5]. But Wikipedia also lists meningitis and deafness among the complications [W4], and a vaccine now prevents the disease [W7].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.88
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.75
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}
