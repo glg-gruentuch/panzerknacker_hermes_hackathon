@@ -51,7 +51,7 @@ export function Landing({ topics, input, onInput, onSearch }: Props) {
           <section className={styles.hero} aria-label="Search">
             <Headword topics={topics} value={input} onChange={onInput} onSubmit={onSearch} size="hero" autoFocus />
             <p className={styles.lede}>
-              Compare a medical entry from the Encyclopaedia Britannica of 1768–1860 with today’s Wikipedia, claim by claim. Each old claim is underlined as{' '}
+              Compare an entry from the Encyclopaedia Britannica of 1768–1860 with today’s Wikipedia, claim by claim. Each old claim is underlined as{' '}
               <span className={styles.sample} data-tone="wrong">
                 wrong
               </span>
