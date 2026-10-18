@@ -1,0 +1,362 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "geyser",
+    "label": "Geyser",
+    "headword": "GEYSER",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Geyser",
+    "area": "geology",
+    "teaser": "The heat of the water is ascribed to subterraneous fires, the same that feed the volcanoes of the island, and the force that throws it up to the elastic steam confined in caverns below."
+  },
+  "aliases": [
+    "geyser",
+    "geysir",
+    "hver",
+    "boiling fountain",
+    "boiling spring"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0019",
+    "headword": "GEYSER",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 7",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 7 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "GEY                    [ 704 ]                    GEY\n\nGEUM, avens, a genus of plants. See BOTANY.\n  GEYSER, the name of the moſt remarkable of the boil-\ning fountains of Iceland, ſituated in a plain near Skal-\nholt. The word is from the Icelandic geyſa, to rage or\ngnſh. At intervals it throws up a column of boiling\nwater, with great noiſe, to the height of ſixty feet and\nupwards, after which the water ſinks again into the baſon.\n  The heat of the water is aſcribed to ſubterraneous\nfires, the ſame that feed the volcanoes of the iſland, and\nthe force that throws it up to the elaſtic ſteam con-\nfined in caverns below. The water depoſits a white ſtony\ncruſt upon every thing it touches, ſo that leaves and\nmoſs dropped into it are in time turned to ſtone.\n  Such fountains are found in no other country ſo re-\nmarkable as in Iceland.\n  GHERKIN, a ſmall cucumber. See CUCUMIS.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "GEYSER",
+        "text": "GEYSER, the name of the most remarkable of the boiling fountains of Iceland, situated in a plain near Skalholt."
+      },
+      {
+        "id": "B2",
+        "section": "GEYSER",
+        "text": "The word is from the Icelandic geysa, to rage or gush."
+      },
+      {
+        "id": "B3",
+        "section": "GEYSER",
+        "text": "At intervals it throws up a column of boiling water, with great noise, to the height of sixty feet and upwards, after which the water sinks again into the basin."
+      },
+      {
+        "id": "B4",
+        "section": "GEYSER",
+        "text": "The heat of the water is ascribed to subterraneous fires, the same that feed the volcanoes of the island, and the force that throws it up to the elastic steam confined in caverns below."
+      },
+      {
+        "id": "B5",
+        "section": "GEYSER",
+        "text": "The water deposits a white stony crust upon every thing it touches, so that leaves and moss dropped into it are in time turned to stone."
+      },
+      {
+        "id": "B6",
+        "section": "GEYSER",
+        "text": "Such fountains are found in no other country so remarkable as in Iceland."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-geyser",
+    "title": "Geyser",
+    "url": "https://en.wikipedia.org/wiki/Geyser",
+    "dateModified": "2026-09-08",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "A geyser is a spring with an intermittent discharge of water ejected turbulently and accompanied by steam. Geysers are rare: they need water, a heat source and a particular underground plumbing system."
+      },
+      {
+        "id": "W2",
+        "section": "Etymology",
+        "text": "The term geyser comes from Geysir, the name of an erupting spring at Haukadalur, Iceland. That name comes from the Icelandic verb geysa, 'to gush'."
+      },
+      {
+        "id": "W3",
+        "section": "Formation and function",
+        "text": "Groundwater is heated by hot rock above magma. In a narrow channel the water becomes superheated under pressure; when some of it boils, the pressure drops and the water column flashes to steam and erupts."
+      },
+      {
+        "id": "W4",
+        "section": "Formation and function",
+        "text": "The erupted water carries dissolved silica, which is deposited around the vent as geyserite, also called siliceous sinter."
+      },
+      {
+        "id": "W5",
+        "section": "Distribution",
+        "text": "About 1,000 geysers exist worldwide, and about half of them are in Yellowstone National Park in the United States."
+      },
+      {
+        "id": "W6",
+        "section": "Changes in activity",
+        "text": "Earthquakes can start, change or stop geyser eruptions, as they have at the Great Geysir in Iceland."
+      },
+      {
+        "id": "W7",
+        "section": "Extraterrestrial geysers",
+        "text": "Eruptions of nitrogen gas seen on Neptune's moon Triton in 1989 are described as cryogeysers."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.85,
+    "rerankScore": 0.88,
+    "reasons": [
+      "Same headword: GEYSER and Geyser.",
+      "Both explain the name from the Icelandic geysa.",
+      "The Geysir article scores close behind; it covers the single Icelandic spring the entry is about, so it is a second candidate."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Geysir",
+      "url": "https://en.wikipedia.org/wiki/Geysir",
+      "embedScore": 0.84,
+      "rerankScore": 0.82
+    },
+    {
+      "title": "Hot spring",
+      "url": "https://en.wikipedia.org/wiki/Hot_spring",
+      "embedScore": 0.74,
+      "rerankScore": 0.51
+    },
+    {
+      "title": "Geyserite",
+      "url": "https://en.wikipedia.org/wiki/Geyserite",
+      "embedScore": 0.62,
+      "rerankScore": 0.4
+    }
+  ],
+  "alignments": [
+    {
+      "id": "g1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "The name",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "from the Icelandic geysa, to rage or gush"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "the Icelandic verb geysa, 'to gush'"
+      },
+      "note": "Same word, same meaning. Wikipedia adds that one spring's name became the word for all of them."
+    },
+    {
+      "id": "g2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "The eruption",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "At intervals it throws up a column of boiling water"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "an intermittent discharge of water ejected turbulently and accompanied by steam"
+      },
+      "note": "The same behaviour, in technical words."
+    },
+    {
+      "id": "g3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Heat from below",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "ascribed to subterraneous fires, the same that feed the volcanoes"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "heated by hot rock above magma"
+      },
+      "note": "Subterranean fire becomes magma. The link to volcanoes holds."
+    },
+    {
+      "id": "g4",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "What drives it",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "the elastic steam confined in caverns below"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "the water column flashes to steam and erupts"
+      },
+      "note": "Steam is the force in both. Wikipedia replaces a cavern of trapped steam with superheated water in a narrow channel."
+    },
+    {
+      "id": "g5",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Turned to stone",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "deposits a white stony crust upon every thing it touches"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "deposited around the vent as geyserite"
+      },
+      "note": "The white crust is silica. It now has a name, geyserite."
+    },
+    {
+      "id": "g6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Iceland the greatest",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "found in no other country so remarkable as in Iceland"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "about half of them are in Yellowstone National Park"
+      },
+      "note": "True of the world Europeans knew in 1797. Inference: Yellowstone's geysers were not yet known to European science."
+    },
+    {
+      "id": "g7",
+      "kind": "added",
+      "verdict": null,
+      "label": "Earthquakes",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Earthquakes can start, change or stop geyser eruptions"
+      },
+      "note": "The 1797 entry treats the Geyser as unchanging."
+    },
+    {
+      "id": "g8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Beyond Earth",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Eruptions of nitrogen gas seen on Neptune's moon Triton"
+      },
+      "note": "Neptune itself was found 49 years after this edition."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Location",
+      "britannica": 0.2,
+      "wikipedia": 0.08
+    },
+    {
+      "topic": "The name",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Eruptions",
+      "britannica": 0.25,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Heat and mechanism",
+      "britannica": 0.25,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Mineral deposits",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Where geysers occur",
+      "britannica": 0.05,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Earthquakes",
+      "britannica": 0,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Other worlds",
+      "britannica": 0,
+      "wikipedia": 0.1
+    }
+  ],
+  "suggestedQuestions": [
+    "How did the 1797 entry explain why the Geyser erupts?",
+    "Where does the word geyser come from?",
+    "Is Iceland still the most remarkable place for geysers?"
+  ],
+  "answers": {
+    "How did the 1797 entry explain why the Geyser erupts?": {
+      "answer": "It said the water is heated by the same subterranean fires that feed Iceland's volcanoes, and thrown up by elastic steam confined in caverns below [B4]. Wikipedia agrees on the heat and on steam as the force: groundwater is heated by hot rock above magma, becomes superheated in a narrow channel, and flashes to steam [W3].\n\nThe difference is the plumbing: a narrow channel of superheated water, not a cavern of trapped steam.",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Where does the word geyser come from?": {
+      "answer": "From the Icelandic geysa, 'to gush'; both texts agree [B2] [W2]. Wikipedia adds that the word came from Geysir, one spring at Haukadalur in Iceland [W2], which the 1797 entry describes as the most remarkable of the Icelandic fountains [B1].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.82
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Is Iceland still the most remarkable place for geysers?": {
+      "answer": "Not by number. The 1797 entry says no other country has such remarkable fountains [B6]. Wikipedia says about half of the world's roughly 1,000 geysers are in Yellowstone National Park [W5].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

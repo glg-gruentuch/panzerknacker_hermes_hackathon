@@ -1,0 +1,351 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "fossils",
+    "label": "Fossils",
+    "headword": "FOSSILS",
+    "edition": "Second edition",
+    "year": 1778,
+    "match": "strong",
+    "wikipediaTitle": "Fossil",
+    "area": "geology",
+    "teaser": "Sea shells are found buried in great quantities in the highest mountains, at a vast distance from the sea; which most naturalists ascribe to the universal deluge."
+  },
+  "aliases": [
+    "fossils",
+    "fossil",
+    "extraneous fossils",
+    "petrifaction",
+    "petrifactions"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0020",
+    "headword": "FOSSILS",
+    "edition": "Second edition",
+    "year": 1778,
+    "volume": "Volume 4",
+    "meta": "Encyclopaedia Britannica - Second edition, Volume 4 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "FOS                    [ 3092 ]                    FOS\n\nFOSSE, in fortification, a ditch or moat.\n  FOSSILS, in natural hiſtory, denote in general all\nbodies whatſoever dug out of the earth, whether ſtones,\nearths, ſalts, or metals. Thoſe which are the remains\nof animals and vegetables, as ſhells, bones, and the im-\npreſſions of leaves, are called extraneous foſſils.\n  Sea ſhells are found buried in great quantities in the\nhigheſt mountains, at a vaſt diſtance from the ſea;\nwhich moſt naturaliſts aſcribe to the univerſal deluge.\nSome have ſuppoſed them to be mere ſports of nature,\nformed in the earth by a plaſtic virtue; but this opi-\nnion is now generally exploded.\n  In the extraneous foſſil the original ſubſtance of the\nſhell or wood is often changed into ſtone, the ſtony mat-\nter filling its pores while the form remains.\n  Some bones dug up are of animals now no where to\nbe found, as the great bones found on the Ohio, which\nmany ſuppoſe to belong to an animal ſtill living in the\nunexplored parts of America.\n  FOSSOMBRONE, a town of Italy.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "FOSSILS",
+        "text": "FOSSILS, in natural history, denote in general all bodies whatsoever dug out of the earth, whether stones, earths, salts, or metals."
+      },
+      {
+        "id": "B2",
+        "section": "FOSSILS",
+        "text": "Those which are the remains of animals and vegetables, as shells, bones, and the impressions of leaves, are called extraneous fossils."
+      },
+      {
+        "id": "B3",
+        "section": "FOSSILS",
+        "text": "Sea shells are found buried in great quantities in the highest mountains, at a vast distance from the sea; which most naturalists ascribe to the universal deluge."
+      },
+      {
+        "id": "B4",
+        "section": "FOSSILS",
+        "text": "Some have supposed them to be mere sports of nature, formed in the earth by a plastic virtue; but this opinion is now generally exploded."
+      },
+      {
+        "id": "B5",
+        "section": "FOSSILS",
+        "text": "In the extraneous fossil the original substance of the shell or wood is often changed into stone, the stony matter filling its pores while the form remains."
+      },
+      {
+        "id": "B6",
+        "section": "FOSSILS",
+        "text": "Some bones dug up are of animals now no where to be found, as the great bones found on the Ohio, which many suppose to belong to an animal still living in the unexplored parts of America."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-fossil",
+    "title": "Fossil",
+    "url": "https://en.wikipedia.org/wiki/Fossil",
+    "dateModified": "2026-09-22",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "A fossil is any preserved remains, impression or trace of any once-living thing from a past geological age. Examples include bones, shells, exoskeletons, stone imprints of animals or microbes, and footprints."
+      },
+      {
+        "id": "W2",
+        "section": "Etymology",
+        "text": "The word comes from the Latin fossilis, 'obtained by digging'. It was once used for any object dug from the ground, including minerals, before it came to mean only the remains of living things."
+      },
+      {
+        "id": "W3",
+        "section": "Fossilization processes",
+        "text": "In permineralization, minerals carried by groundwater fill the spaces inside an organism's tissues, preserving its shape in stone."
+      },
+      {
+        "id": "W4",
+        "section": "Fossilization processes",
+        "text": "Marine fossils found high in mountains, such as the Himalayas, were laid down on ancient sea floors that were later raised by the movement of tectonic plates."
+      },
+      {
+        "id": "W5",
+        "section": "History of study",
+        "text": "In the 17th century, Robert Hooke and Nicolas Steno argued that fossils were the remains of once-living organisms, against the older idea that they grew inside rocks."
+      },
+      {
+        "id": "W6",
+        "section": "History of study",
+        "text": "Around 1796, Georges Cuvier compared the bones of mammoths and the American mastodon with living elephants and showed that they belonged to extinct species, establishing extinction as a fact."
+      },
+      {
+        "id": "W7",
+        "section": "Dating",
+        "text": "Fossils are dated by radiometric methods and by their position in rock layers. The oldest known fossils are more than 3 billion years old."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.83,
+    "rerankScore": 0.86,
+    "reasons": [
+      "Same headword once the plural is dropped: FOSSILS and Fossil.",
+      "Rare terms appear in both: shells, bones, impressions, turned to stone, the Ohio bones and the mastodon.",
+      "Mineral also scores, because the 1778 definition includes metals and salts; the reranker ranks it below Fossil."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Mastodon",
+      "url": "https://en.wikipedia.org/wiki/Mastodon",
+      "embedScore": 0.7,
+      "rerankScore": 0.55
+    },
+    {
+      "title": "Mineral",
+      "url": "https://en.wikipedia.org/wiki/Mineral",
+      "embedScore": 0.66,
+      "rerankScore": 0.34
+    },
+    {
+      "title": "Flood geology",
+      "url": "https://en.wikipedia.org/wiki/Flood_geology",
+      "embedScore": 0.64,
+      "rerankScore": 0.47
+    }
+  ],
+  "alignments": [
+    {
+      "id": "f1",
+      "kind": "reworded",
+      "verdict": "partly",
+      "label": "What a fossil is",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "all bodies whatsoever dug out of the earth, whether stones, earths, salts, or metals"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "It was once used for any object dug from the ground, including minerals"
+      },
+      "note": "A change in language. In 1778 a metal was a fossil; today the word means only remains of living things."
+    },
+    {
+      "id": "f2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Extraneous fossils",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the remains of animals and vegetables, as shells, bones, and the impressions of leaves"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "preserved remains, impression or trace of any once-living thing"
+      },
+      "note": "The 1778 'extraneous fossils' are what the word alone means today."
+    },
+    {
+      "id": "f3",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Shells on mountains",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "which most naturalists ascribe to the universal deluge"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "laid down on ancient sea floors that were later raised by the movement of tectonic plates"
+      },
+      "note": "The observation holds; the explanation changed from a flood to rising land."
+    },
+    {
+      "id": "f4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Not sports of nature",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "this opinion is now generally exploded"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "against the older idea that they grew inside rocks"
+      },
+      "note": "Both reject the idea that fossils grow in the rock."
+    },
+    {
+      "id": "f5",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Turned to stone",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the stony matter filling its pores while the form remains"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "minerals carried by groundwater fill the spaces inside an organism's tissues"
+      },
+      "note": "The same process. It now has a name, permineralization."
+    },
+    {
+      "id": "f6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "The Ohio bones",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "many suppose to belong to an animal still living in the unexplored parts of America"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "showed that they belonged to extinct species, establishing extinction as a fact"
+      },
+      "note": "Right that no such animal was known; wrong that it still lived. Cuvier showed the mastodon was extinct 18 years later."
+    },
+    {
+      "id": "f7",
+      "kind": "added",
+      "verdict": null,
+      "label": "Dating fossils",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "The oldest known fossils are more than 3 billion years old"
+      },
+      "note": "The 1778 entry gives no age for fossils. A flood implies they are only a few thousand years old (inference)."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Definition",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Shells on mountains",
+      "britannica": 0.2,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Origin debate",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "How they form",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Extinct animals",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Dating and age",
+      "britannica": 0,
+      "wikipedia": 0.16
+    },
+    {
+      "topic": "Plate tectonics",
+      "britannica": 0,
+      "wikipedia": 0.1
+    }
+  ],
+  "suggestedQuestions": [
+    "Did 'fossil' mean the same thing in 1778?",
+    "How did the 1778 entry explain sea shells on mountains?",
+    "Did the 1778 entry know that animals could go extinct?"
+  ],
+  "answers": {
+    "Did 'fossil' mean the same thing in 1778?": {
+      "answer": "No. In 1778 a fossil was anything dug out of the earth, including stones, salts and metals [B1]; the remains of plants and animals were a subgroup called extraneous fossils [B2]. Wikipedia says the word once covered any object dug from the ground and now means only the remains or traces of living things [W2] [W1].\n\nThis is a change in language, not in knowledge.",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.85
+        }
+      ],
+      "grounding": "supported"
+    },
+    "How did the 1778 entry explain sea shells on mountains?": {
+      "answer": "Most naturalists, it says, ascribed them to the universal deluge [B3]. Wikipedia says such shells were laid down on ancient sea floors that the movement of tectonic plates later raised [W4].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.94
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did the 1778 entry know that animals could go extinct?": {
+      "answer": "Not yet. It notes bones of animals found nowhere, such as the great bones on the Ohio, but reports that many thought the animal still lived in unexplored America [B6]. Wikipedia says Georges Cuvier showed around 1796 that the mastodon and mammoth were extinct species, establishing extinction as a fact [W6].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}
