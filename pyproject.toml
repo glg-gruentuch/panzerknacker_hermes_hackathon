@@ -17,6 +17,8 @@ dependencies = [
   "pyarrow==21.0.0",
   "huggingface-hub==2.2.0",
   "matplotlib>=3.11.2",
+  "fastapi>=0.144.0",
+  "uvicorn>=0.54.0",
 ]
 
 [project.scripts]
