@@ -1,0 +1,317 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "rainbow",
+    "label": "Rainbow",
+    "headword": "RAINBOW",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Rainbow",
+    "area": "natural-sciences",
+    "teaser": "Every spectator sees his own rainbow, since it depends on the position of his eye."
+  },
+  "aliases": [
+    "rainbow",
+    "rainbows",
+    "iris"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0032",
+    "headword": "RAINBOW",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 16",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 16 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "RAI                    [ 6 ]                    RAI\n\nRAIN, water falling in drops from the clouds.\n  RAINBOW, a meteor in form of a party-coloured arch,\nappearing in the heavens when the ſun ſhines upon rain\nfalling oppoſite to it. It is cauſed by the refraction of\nthe ſun's rays in the drops of rain, and their reflection\nfrom the back of the drops to the eye of the ſpectator,\nas was explained by Des Cartes and more fully by Sir\nIſaac Newton.\n  The colours are ſeven: red, orange, yellow, green,\nblue, indigo, and violet; the red being outermoſt in the\nprincipal bow, which is ſeen at an angle of about forty-\ntwo degrees from the point oppoſite the ſun.\n  A ſecondary bow is often ſeen above the firſt, fainter,\nand with its colours in reverſed order, being made by\ntwo reflections within the drop. Every ſpectator ſees\nhis own rainbow, ſince it depends on the poſition of his\neye.\n  RAISIN, a dried grape.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "RAINBOW",
+        "text": "RAINBOW, a meteor in form of a party-coloured arch, appearing in the heavens when the sun shines upon rain falling opposite to it."
+      },
+      {
+        "id": "B2",
+        "section": "RAINBOW",
+        "text": "It is caused by the refraction of the sun's rays in the drops of rain, and their reflection from the back of the drops to the eye of the spectator, as was explained by Des Cartes and more fully by Sir Isaac Newton."
+      },
+      {
+        "id": "B3",
+        "section": "RAINBOW",
+        "text": "The colours are seven: red, orange, yellow, green, blue, indigo, and violet; the red being outermost in the principal bow, which is seen at an angle of about forty-two degrees from the point opposite the sun."
+      },
+      {
+        "id": "B4",
+        "section": "RAINBOW",
+        "text": "A secondary bow is often seen above the first, fainter, and with its colours in reversed order, being made by two reflections within the drop."
+      },
+      {
+        "id": "B5",
+        "section": "RAINBOW",
+        "text": "Every spectator sees his own rainbow, since it depends on the position of his eye."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-rainbow",
+    "title": "Rainbow",
+    "url": "https://en.wikipedia.org/wiki/Rainbow",
+    "dateModified": "2026-09-16",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "A rainbow is an optical phenomenon caused by refraction, internal reflection and dispersion of light in water droplets, producing a spectrum of light in the sky. It appears opposite the Sun."
+      },
+      {
+        "id": "W2",
+        "section": "Colours",
+        "text": "The colours form a continuous spectrum. Newton divided it into seven colours, red, orange, yellow, green, blue, indigo and violet, partly by analogy with the seven notes of a musical scale."
+      },
+      {
+        "id": "W3",
+        "section": "Geometry",
+        "text": "In the primary rainbow, red is on the outside. The bow forms a circle about 42 degrees from the point directly opposite the Sun."
+      },
+      {
+        "id": "W4",
+        "section": "Variations",
+        "text": "A secondary rainbow, caused by two reflections inside the droplets, appears outside the primary bow; it is fainter and its colours are reversed."
+      },
+      {
+        "id": "W5",
+        "section": "History",
+        "text": "Rene Descartes explained the rainbow's angle in 1637, and Isaac Newton explained its colours as the separation of white light."
+      },
+      {
+        "id": "W6",
+        "section": "Geometry",
+        "text": "A rainbow is not located at a particular distance; each observer sees a different rainbow, formed by different droplets."
+      },
+      {
+        "id": "W7",
+        "section": "Variations",
+        "text": "Supernumerary bands, faint pastel arcs inside the primary bow, can only be explained by the wave nature of light."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.89,
+    "rerankScore": 0.93,
+    "reasons": [
+      "Same headword: RAINBOW and Rainbow.",
+      "Rare terms appear in both: forty-two degrees, secondary bow, Descartes, Newton, seven colours.",
+      "No other candidate comes close."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Dispersion (optics)",
+      "url": "https://en.wikipedia.org/wiki/Dispersion_(optics)",
+      "embedScore": 0.67,
+      "rerankScore": 0.39
+    }
+  ],
+  "alignments": [
+    {
+      "id": "ra1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "A meteor",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a meteor in form of a party-coloured arch"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "an optical phenomenon"
+      },
+      "note": "A change in language: in 1797 a meteor was any appearance in the sky. The word now means a shooting star."
+    },
+    {
+      "id": "ra2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Refraction and reflection",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the refraction of the sun's rays in the drops of rain, and their reflection from the back of the drops"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "caused by refraction, internal reflection and dispersion of light in water droplets"
+      },
+      "note": "Same explanation."
+    },
+    {
+      "id": "ra3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Descartes and Newton",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "explained by Des Cartes and more fully by Sir Isaac Newton"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Rene Descartes explained the rainbow's angle in 1637, and Isaac Newton explained its colours"
+      },
+      "note": "Same credit to the same two people."
+    },
+    {
+      "id": "ra4",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Seven colours",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "The colours are seven"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "The colours form a continuous spectrum"
+      },
+      "note": "Seven is Newton's choice, made partly by analogy with music. The spectrum has no fixed number of colours."
+    },
+    {
+      "id": "ra5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Red outside, 42 degrees",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the red being outermost in the principal bow, which is seen at an angle of about forty-two degrees"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "red is on the outside. The bow forms a circle about 42 degrees"
+      },
+      "note": "Same geometry."
+    },
+    {
+      "id": "ra6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "The secondary bow",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "fainter, and with its colours in reversed order, being made by two reflections within the drop"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "caused by two reflections inside the droplets"
+      },
+      "note": "Same explanation."
+    },
+    {
+      "id": "ra7",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Your own rainbow",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "Every spectator sees his own rainbow"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "each observer sees a different rainbow"
+      },
+      "note": "Same insight."
+    },
+    {
+      "id": "ra8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Supernumerary bands",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "can only be explained by the wave nature of light"
+      },
+      "note": "Newton's particle view of light could not explain these faint bands."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What a rainbow is",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.25,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Colours",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Geometry",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Secondary bow",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Wave effects",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "Why did the 1797 entry call a rainbow a meteor?",
+    "Does a rainbow really have seven colours?"
+  ],
+  "answers": {
+    "Why did the 1797 entry call a rainbow a meteor?": {
+      "answer": "In 1797 'meteor' meant any appearance in the sky, so a rainbow counted [B1]. Wikipedia calls it an optical phenomenon [W1]. This is a change in language: the explanation of the rainbow itself is the same in both texts [B2] [W1].",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.82
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Does a rainbow really have seven colours?": {
+      "answer": "Not as a fact of nature. The 1797 entry lists seven [B3]. Wikipedia says the colours form a continuous spectrum, and that Newton chose seven partly by analogy with the seven notes of a musical scale [W2].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.97
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

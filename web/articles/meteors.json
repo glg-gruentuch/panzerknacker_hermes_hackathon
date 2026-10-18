@@ -1,0 +1,313 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "meteors",
+    "label": "Meteors",
+    "headword": "METEORS",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "partial",
+    "wikipediaTitle": "Meteoroid",
+    "area": "natural-sciences",
+    "teaser": "It has been reported that stones have fallen from the sky, accompanied by such meteors; but these accounts are generally disbelieved by philosophers, and the stones are thought to have been struck by lightning or thrown up by volcanoes."
+  },
+  "aliases": [
+    "meteors",
+    "meteor",
+    "meteorite",
+    "meteorites",
+    "shooting star",
+    "shooting stars",
+    "fire-ball",
+    "fireball"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0035",
+    "headword": "METEORS",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 11",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 11 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "MET                    [ 512 ]                    MET\n\nMETEMPSYCHOSIS, the paſſing of the ſoul.\n  METEORS, in phyſiology, are the various appearances\nin the air, whether watery, as rain, hail, and ſnow; or\nfiery, as lightning, fire-balls, and ſhooting ſtars.\n  Shooting ſtars are ſuppoſed to be ſmall portions of\ninflammable vapour, raiſed from the earth, which take\nfire in the upper air and are quickly conſumed. Fire-\nballs are larger, and have been ſeen to paſs over whole\ncountries at the height of many miles, ſometimes burſt-\ning with a noiſe like cannon.\n  It has been reported that ſtones have fallen from the\nſky, accompanied by ſuch meteors; but theſe accounts\nare generally diſbelieved by philoſophers, and the ſtones\nare thought to have been ſtruck by lightning or thrown\nup by volcanoes. Mr Chladni has lately maintained that\nfire-balls are maſſes of matter from beyond the atmo-\nſphere, which take fire on entering it; but this opinion\nis thought extravagant.\n  METHOD, the arrangement of ideas.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "METEORS",
+        "text": "METEORS, in physiology, are the various appearances in the air, whether watery, as rain, hail, and snow; or fiery, as lightning, fire-balls, and shooting stars."
+      },
+      {
+        "id": "B2",
+        "section": "METEORS",
+        "text": "Shooting stars are supposed to be small portions of inflammable vapour, raised from the earth, which take fire in the upper air and are quickly consumed."
+      },
+      {
+        "id": "B3",
+        "section": "METEORS",
+        "text": "Fire-balls are larger, and have been seen to pass over whole countries at the height of many miles, sometimes bursting with a noise like cannon."
+      },
+      {
+        "id": "B4",
+        "section": "METEORS",
+        "text": "It has been reported that stones have fallen from the sky, accompanied by such meteors; but these accounts are generally disbelieved by philosophers, and the stones are thought to have been struck by lightning or thrown up by volcanoes."
+      },
+      {
+        "id": "B5",
+        "section": "METEORS",
+        "text": "Mr Chladni has lately maintained that fire-balls are masses of matter from beyond the atmosphere, which take fire on entering it; but this opinion is thought extravagant."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-meteoroid",
+    "title": "Meteoroid",
+    "url": "https://en.wikipedia.org/wiki/Meteoroid",
+    "dateModified": "2026-09-24",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "A meteoroid is a small rocky or metallic body travelling through space. When it enters Earth's atmosphere at high speed it heats up and glows, producing a streak of light called a meteor, or shooting star."
+      },
+      {
+        "id": "W2",
+        "section": "Meteors",
+        "text": "Most meteors come from particles no bigger than a grain of sand and burn up completely at heights of about 75 to 120 kilometres."
+      },
+      {
+        "id": "W3",
+        "section": "Fireballs",
+        "text": "A very bright meteor is called a fireball or bolide; some explode in the air, and their sound can be heard on the ground."
+      },
+      {
+        "id": "W4",
+        "section": "Meteorites",
+        "text": "A meteoroid that survives its passage and lands on the ground is called a meteorite."
+      },
+      {
+        "id": "W5",
+        "section": "History",
+        "text": "In 1794 Ernst Chladni argued that meteorites came from space. The idea was widely rejected until a shower of stones fell at L'Aigle in France in 1803 and was investigated by Jean-Baptiste Biot."
+      },
+      {
+        "id": "W6",
+        "section": "Meteor showers",
+        "text": "Meteor showers, such as the Perseids, occur when the Earth passes through streams of debris left by comets."
+      },
+      {
+        "id": "W7",
+        "section": "Etymology",
+        "text": "The word meteor comes from the Greek meteoros, 'high in the air'."
+      }
+    ]
+  },
+  "match": {
+    "strength": "partial",
+    "embedScore": 0.77,
+    "rerankScore": 0.71,
+    "reasons": [
+      "In 1797 METEORS covered rain, snow and lightning as well as shooting stars, so no single Wikipedia article matches the whole entry.",
+      "Meteoroid matches the fiery part: shooting stars, fire-balls, stones from the sky and Chladni.",
+      "Rerank 0.71 is below our 0.75 threshold for a strong match; Meteorology scores on the watery part but much lower."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Meteorite",
+      "url": "https://en.wikipedia.org/wiki/Meteorite",
+      "embedScore": 0.78,
+      "rerankScore": 0.69
+    },
+    {
+      "title": "Meteorology",
+      "url": "https://en.wikipedia.org/wiki/Meteorology",
+      "embedScore": 0.7,
+      "rerankScore": 0.34
+    }
+  ],
+  "alignments": [
+    {
+      "id": "me1",
+      "kind": "reworded",
+      "verdict": "partly",
+      "label": "What a meteor is",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the various appearances in the air, whether watery, as rain, hail, and snow"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "The word meteor comes from the Greek meteoros, 'high in the air'"
+      },
+      "note": "A change in language: in 1797 rain and snow were meteors. Today only the fiery kind keeps the name."
+    },
+    {
+      "id": "me2",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Shooting stars",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "small portions of inflammable vapour, raised from the earth, which take fire in the upper air"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "When it enters Earth's atmosphere at high speed it heats up and glows"
+      },
+      "note": "Right that they burn high in the air. They come from space, not from the earth."
+    },
+    {
+      "id": "me3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Quickly consumed",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "are quickly consumed"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "burn up completely"
+      },
+      "note": "Same observation."
+    },
+    {
+      "id": "me4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Bursting fire-balls",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "sometimes bursting with a noise like cannon"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "some explode in the air, and their sound can be heard on the ground"
+      },
+      "note": "Same event, described the same way."
+    },
+    {
+      "id": "me5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Stones from the sky",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "these accounts are generally disbelieved by philosophers"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "A meteoroid that survives its passage and lands on the ground is called a meteorite"
+      },
+      "note": "The witnesses were right and the philosophers wrong. Stones do fall from the sky."
+    },
+    {
+      "id": "me6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Chladni",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "masses of matter from beyond the atmosphere, which take fire on entering it"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "In 1794 Ernst Chladni argued that meteorites came from space"
+      },
+      "note": "The view the 1797 entry calls extravagant was proved six years later, at L'Aigle."
+    },
+    {
+      "id": "me7",
+      "kind": "added",
+      "verdict": null,
+      "label": "Meteor showers",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "streams of debris left by comets"
+      },
+      "note": "The link between comets and shooting stars was made in the 1860s."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What a meteor is",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Shooting stars",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Fireballs",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Stones from the sky",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Chladni and proof",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Meteor showers",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "Did people in 1797 believe stones could fall from the sky?",
+    "Was Chladni right about fire-balls?"
+  ],
+  "answers": {
+    "Did people in 1797 believe stones could fall from the sky?": {
+      "answer": "Mostly not. The 1797 entry says such reports were generally disbelieved, and the stones thought to be struck by lightning or thrown up by volcanoes [B4]. Wikipedia says stones that survive their fall are meteorites [W4], and that the question was settled by the shower of stones at L'Aigle in 1803 [W5].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.94
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Was Chladni right about fire-balls?": {
+      "answer": "Yes. The 1797 entry reports his view that fire-balls are masses from beyond the atmosphere that take fire on entering it, and calls it extravagant [B5]. Wikipedia says Chladni argued in 1794 that meteorites came from space, and that the idea was accepted after L'Aigle in 1803 [W5].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

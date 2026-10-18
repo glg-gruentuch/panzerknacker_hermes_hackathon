@@ -1,0 +1,343 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "planet",
+    "label": "Planet",
+    "headword": "PLANET",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Planet",
+    "area": "natural-sciences",
+    "teaser": "From the analogy of our earth, it is probable that the planets are inhabited by living creatures."
+  },
+  "aliases": [
+    "planet",
+    "planets",
+    "georgium sidus",
+    "solar system"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0036",
+    "headword": "PLANET",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 15",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 15 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "PLA                    [ 76 ]                    PLA\n\nPLANE, in geometry, a plain ſurface.\n  PLANET, a celeſtial body revolving about the ſun as\nits centre, and ſhining not by its own light but by that\nwhich it receives from the ſun. The planets are ſeven:\nMercury, Venus, the Earth, Mars, Jupiter, Saturn, and\nthe Georgium Sidus, diſcovered by Dr Herſchel in 1781.\n  They move in elliptical orbits, the ſun being in one\nof the foci, and the ſquares of their periodic times are\nas the cubes of their mean diſtances from the ſun, as\nKepler diſcovered. Between Mars and Jupiter the diſ-\ntance is ſo great that ſome aſtronomers ſuſpect a planet\nmay yet be found there.\n  From the analogy of our earth, it is probable that the\nplanets are inhabited by living creatures. The ſecondary\nplanets, or moons, revolve about their primaries; the\nearth has one, Jupiter four, Saturn ſeven, and the Geor-\ngium Sidus two.\n  PLANETARIUM. See ORRERY.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "PLANET",
+        "text": "PLANET, a celestial body revolving about the sun as its centre, and shining not by its own light but by that which it receives from the sun."
+      },
+      {
+        "id": "B2",
+        "section": "PLANET",
+        "text": "The planets are seven: Mercury, Venus, the Earth, Mars, Jupiter, Saturn, and the Georgium Sidus, discovered by Dr Herschel in 1781."
+      },
+      {
+        "id": "B3",
+        "section": "PLANET",
+        "text": "They move in elliptical orbits, the sun being in one of the foci, and the squares of their periodic times are as the cubes of their mean distances from the sun, as Kepler discovered."
+      },
+      {
+        "id": "B4",
+        "section": "PLANET",
+        "text": "Between Mars and Jupiter the distance is so great that some astronomers suspect a planet may yet be found there."
+      },
+      {
+        "id": "B5",
+        "section": "PLANET",
+        "text": "From the analogy of our earth, it is probable that the planets are inhabited by living creatures."
+      },
+      {
+        "id": "B6",
+        "section": "PLANET",
+        "text": "The secondary planets, or moons, revolve about their primaries; the earth has one, Jupiter four, Saturn seven, and the Georgium Sidus two."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-planet",
+    "title": "Planet",
+    "url": "https://en.wikipedia.org/wiki/Planet",
+    "dateModified": "2026-10-08",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "A planet is a large, rounded astronomical body that orbits a star and has cleared its orbit of other bodies. Planets shine by reflecting the light of their star."
+      },
+      {
+        "id": "W2",
+        "section": "Solar System",
+        "text": "The Solar System has eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune. Uranus was discovered by William Herschel in 1781, who named it Georgium Sidus after King George III."
+      },
+      {
+        "id": "W3",
+        "section": "Orbits",
+        "text": "Johannes Kepler's laws state that planets move in ellipses with the Sun at one focus, and that the square of a planet's orbital period is proportional to the cube of its average distance from the Sun."
+      },
+      {
+        "id": "W4",
+        "section": "History",
+        "text": "Ceres, found between Mars and Jupiter in 1801, was first counted as a planet; it is now classed as a dwarf planet in the asteroid belt."
+      },
+      {
+        "id": "W5",
+        "section": "Life",
+        "text": "No life has been found on any planet other than Earth, although Mars and some moons of Jupiter and Saturn are studied as possible places for it."
+      },
+      {
+        "id": "W6",
+        "section": "Moons",
+        "text": "Natural satellites, or moons, orbit most of the planets. Jupiter and Saturn each have dozens of known moons."
+      },
+      {
+        "id": "W7",
+        "section": "Exoplanets",
+        "text": "Thousands of planets have been found orbiting other stars since the 1990s."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.87,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same headword: PLANET and Planet.",
+      "Rare terms appear in both: Georgium Sidus, Herschel, 1781, Kepler, the gap between Mars and Jupiter.",
+      "Solar System scores well but covers the Sun and smaller bodies too."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Solar System",
+      "url": "https://en.wikipedia.org/wiki/Solar_System",
+      "embedScore": 0.83,
+      "rerankScore": 0.7
+    },
+    {
+      "title": "Uranus",
+      "url": "https://en.wikipedia.org/wiki/Uranus",
+      "embedScore": 0.68,
+      "rerankScore": 0.44
+    }
+  ],
+  "alignments": [
+    {
+      "id": "pl1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Borrowed light",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "shining not by its own light but by that which it receives from the sun"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "Planets shine by reflecting the light of their star"
+      },
+      "note": "Same fact."
+    },
+    {
+      "id": "pl2",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Seven planets",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "The planets are seven"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "The Solar System has eight planets"
+      },
+      "note": "True in 1797, no longer: Neptune was found in 1846."
+    },
+    {
+      "id": "pl3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Georgium Sidus",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the Georgium Sidus, discovered by Dr Herschel in 1781"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Uranus was discovered by William Herschel in 1781"
+      },
+      "note": "A change in language: Herschel's 'George's Star' is now called Uranus."
+    },
+    {
+      "id": "pl4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Kepler's laws",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the squares of their periodic times are as the cubes of their mean distances"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "the square of a planet's orbital period is proportional to the cube of its average distance"
+      },
+      "note": "Same law."
+    },
+    {
+      "id": "pl5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "The gap after Mars",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "some astronomers suspect a planet may yet be found there"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Ceres, found between Mars and Jupiter in 1801"
+      },
+      "note": "Something was found four years later, but it is now a dwarf planet in the asteroid belt."
+    },
+    {
+      "id": "pl6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Inhabited planets",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "it is probable that the planets are inhabited by living creatures"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "No life has been found on any planet other than Earth"
+      },
+      "note": "Reasoning by analogy, with no evidence. None has been found since."
+    },
+    {
+      "id": "pl7",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Secondary planets",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "The secondary planets, or moons"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Natural satellites, or moons"
+      },
+      "note": "A change in language: 'secondary planet' is no longer used for a moon."
+    },
+    {
+      "id": "pl8",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Counting moons",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "Jupiter four, Saturn seven"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Jupiter and Saturn each have dozens of known moons"
+      },
+      "note": "Right for the telescopes of 1797. Far more have been found since."
+    },
+    {
+      "id": "pl9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Other suns' planets",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Thousands of planets have been found orbiting other stars"
+      },
+      "note": "Planets beyond the Solar System were first confirmed in the 1990s."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Definition",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "The planets",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Orbits",
+      "britannica": 0.2,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Mars to Jupiter",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Life",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Moons",
+      "britannica": 0.2,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Exoplanets",
+      "britannica": 0,
+      "wikipedia": 0.24
+    }
+  ],
+  "suggestedQuestions": [
+    "What is the Georgium Sidus?",
+    "Did the 1797 entry think there was life on other planets?"
+  ],
+  "answers": {
+    "What is the Georgium Sidus?": {
+      "answer": "The seventh planet of the 1797 entry, discovered by Herschel in 1781 [B2]. Wikipedia says Herschel named it after King George III, and that it is now called Uranus [W2].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.97
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did the 1797 entry think there was life on other planets?": {
+      "answer": "Yes. It calls it probable, from the analogy of our earth, that the planets are inhabited [B5]. Wikipedia says no life has been found on any planet other than Earth, though Mars and some moons are studied as possible places for it [W5].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

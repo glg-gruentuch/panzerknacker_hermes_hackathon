@@ -1,0 +1,344 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "tides",
+    "label": "Tides",
+    "headword": "TIDES",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Tide",
+    "area": "natural-sciences",
+    "teaser": "Sir Isaac Newton has shown that they are caused by the attraction of the moon, and in a less degree of the sun, upon the waters of the ocean."
+  },
+  "aliases": [
+    "tides",
+    "tide",
+    "spring tide",
+    "neap tide",
+    "ebb and flow"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0033",
+    "headword": "TIDES",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 18",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 18 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "TID                    [ 612 ]                    TID\n\nTIDE-WAITERS, officers of the cuſtoms.\n  TIDES, the regular flowing and ebbing of the ſea,\nwhich happen twice in about twenty-five hours. Sir\nIſaac Newton has ſhown that they are cauſed by the\nattraction of the moon, and in a leſs degree of the ſun,\nupon the waters of the ocean.\n  The waters are raiſed not only on the ſide of the earth\nnext the moon, but alſo on the oppoſite ſide, ſo that there\nare two high waters every lunar day. The higheſt, or\nſpring tides, happen at the new and full moon, when the\nſun and moon act together; the loweſt, or neap tides,\nat the quarters.\n  Before Newton, Galileo aſcribed the tides to the mo-\ntion of the earth. The tides are greateſt in narrow ſeas\nand bays, as in the Briſtol Channel, where they riſe forty\nfeet and more.\n  TIGER, a beaſt of prey. See FELIS.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "TIDES",
+        "text": "TIDES, the regular flowing and ebbing of the sea, which happen twice in about twenty-five hours."
+      },
+      {
+        "id": "B2",
+        "section": "TIDES",
+        "text": "Sir Isaac Newton has shown that they are caused by the attraction of the moon, and in a less degree of the sun, upon the waters of the ocean."
+      },
+      {
+        "id": "B3",
+        "section": "TIDES",
+        "text": "The waters are raised not only on the side of the earth next the moon, but also on the opposite side, so that there are two high waters every lunar day."
+      },
+      {
+        "id": "B4",
+        "section": "TIDES",
+        "text": "The highest, or spring tides, happen at the new and full moon, when the sun and moon act together; the lowest, or neap tides, at the quarters."
+      },
+      {
+        "id": "B5",
+        "section": "TIDES",
+        "text": "Before Newton, Galileo ascribed the tides to the motion of the earth."
+      },
+      {
+        "id": "B6",
+        "section": "TIDES",
+        "text": "The tides are greatest in narrow seas and bays, as in the Bristol Channel, where they rise forty feet and more."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-tide",
+    "title": "Tide",
+    "url": "https://en.wikipedia.org/wiki/Tide",
+    "dateModified": "2026-09-03",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Tides are the rise and fall of sea levels caused by the gravitational forces of the Moon and the Sun and the rotation of the Earth."
+      },
+      {
+        "id": "W2",
+        "section": "Characteristics",
+        "text": "Most places have two high tides a day; because the Moon moves along its orbit, the cycle takes about 24 hours and 50 minutes."
+      },
+      {
+        "id": "W3",
+        "section": "Physics",
+        "text": "There is a tidal bulge on the side of the Earth facing the Moon and another on the opposite side."
+      },
+      {
+        "id": "W4",
+        "section": "Range",
+        "text": "Spring tides, with the largest range, occur at new and full moon when the Sun and Moon are aligned; neap tides, with the smallest range, occur at the first and third quarter."
+      },
+      {
+        "id": "W5",
+        "section": "History",
+        "text": "Isaac Newton gave the first explanation of tides from gravity in his Principia of 1687. Galileo had wrongly argued that tides were caused by the Earth's motion."
+      },
+      {
+        "id": "W6",
+        "section": "Range",
+        "text": "The tidal range is largest in funnel-shaped bays and estuaries, such as the Bay of Fundy and the Bristol Channel, where it can exceed 12 metres."
+      },
+      {
+        "id": "W7",
+        "section": "Effects",
+        "text": "Tidal friction gradually slows the Earth's rotation and makes the Moon move slowly away from the Earth."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.88,
+    "rerankScore": 0.92,
+    "reasons": [
+      "Same headword once the plural is dropped: TIDES and Tide.",
+      "Rare terms appear in both: spring and neap tides, Newton, Galileo, Bristol Channel.",
+      "Tidal range scores well but covers only the height of the tides."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Tidal range",
+      "url": "https://en.wikipedia.org/wiki/Tidal_range",
+      "embedScore": 0.76,
+      "rerankScore": 0.57
+    },
+    {
+      "title": "Tidal force",
+      "url": "https://en.wikipedia.org/wiki/Tidal_force",
+      "embedScore": 0.74,
+      "rerankScore": 0.55
+    }
+  ],
+  "alignments": [
+    {
+      "id": "ti1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Twice a day",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "happen twice in about twenty-five hours"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "the cycle takes about 24 hours and 50 minutes"
+      },
+      "note": "Same rhythm."
+    },
+    {
+      "id": "ti2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Moon and sun",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the attraction of the moon, and in a less degree of the sun"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "the gravitational forces of the Moon and the Sun"
+      },
+      "note": "Newton's explanation, unchanged."
+    },
+    {
+      "id": "ti3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Two bulges",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "but also on the opposite side"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "another on the opposite side"
+      },
+      "note": "Same fact."
+    },
+    {
+      "id": "ti4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Spring and neap tides",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "spring tides, happen at the new and full moon"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "occur at new and full moon when the Sun and Moon are aligned"
+      },
+      "note": "Same names, same timing."
+    },
+    {
+      "id": "ti5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Galileo's error",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "Galileo ascribed the tides to the motion of the earth"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Galileo had wrongly argued that tides were caused by the Earth's motion"
+      },
+      "note": "Both record the same superseded theory."
+    },
+    {
+      "id": "ti6",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Bristol Channel",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "where they rise forty feet and more"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "where it can exceed 12 metres"
+      },
+      "note": "Forty feet is about 12 metres."
+    },
+    {
+      "id": "ti7",
+      "kind": "added",
+      "verdict": null,
+      "label": "Slowing the earth",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Tidal friction gradually slows the Earth's rotation"
+      },
+      "note": "The long-term effects of tides were worked out in the 19th century."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Daily cycle",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Two bulges",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Spring and neap tides",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "History",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Range",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Long-term effects",
+      "britannica": 0,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "Has the explanation of the tides changed since 1797?",
+    "Why are there two high tides a day?"
+  ],
+  "answers": {
+    "Has the explanation of the tides changed since 1797?": {
+      "answer": "Very little. Both texts credit Newton and the attraction of the moon and sun [B2] [W5] [W1], and both record that Galileo's earlier theory was wrong [B5] [W5]. Wikipedia adds long-term effects, such as tides slowing the Earth's rotation [W7].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.84
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.78
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Why are there two high tides a day?": {
+      "answer": "Because the water rises on the side of the earth facing the moon and also on the opposite side [B3] [W3]. As the moon moves along its orbit, the cycle takes about 24 hours and 50 minutes [W2], which the 1797 entry gives as about twenty-five hours [B1].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.88
+        },
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.85
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

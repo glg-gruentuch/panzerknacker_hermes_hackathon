@@ -1,0 +1,346 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "aurora-borealis",
+    "label": "Aurora borealis",
+    "headword": "AURORA BOREALIS",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Aurora",
+    "area": "natural-sciences",
+    "teaser": "But the most probable opinion is that they are electrical, the electric fluid passing through the rarefied air of the upper atmosphere and shining, as it does in an exhausted glass tube."
+  },
+  "aliases": [
+    "aurora borealis",
+    "aurora",
+    "northern lights",
+    "merry dancers",
+    "aurora australis"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0034",
+    "headword": "AURORA BOREALIS",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 2",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 2 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "AUR                    [ 618 ]                    AUR\n\nAURORA, the morning twilight.\n  AURORA BOREALIS, or NORTHERN LIGHTS, a luminous\nmeteor appearing in the northern part of the heavens,\nchiefly in winter, in ſtreams of light ſhooting upward\ntoward the zenith. In the Shetland Iſles they are called\nthe merry dancers.\n  Dr Halley aſcribed them to the magnetic effluvia of\nthe earth, ſince the ſtreamers are obſerved to lie in the\ndirection of the magnetic needle. But the moſt probable\nopinion is that they are electrical, the electric fluid paſ-\nſing through the rarefied air of the upper atmoſphere\nand ſhining, as it does in an exhauſted glaſs tube.\n  Their height is thought by ſome to be many hundred\nmiles above the earth. A like appearance has been ob-\nſerved toward the ſouth pole by navigators in the ſouth-\nern ſeas.\n  AURUM, gold. See CHEMISTRY.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "AURORA BOREALIS",
+        "text": "AURORA BOREALIS, or NORTHERN LIGHTS, a luminous meteor appearing in the northern part of the heavens, chiefly in winter, in streams of light shooting upward toward the zenith."
+      },
+      {
+        "id": "B2",
+        "section": "AURORA BOREALIS",
+        "text": "In the Shetland Isles they are called the merry dancers."
+      },
+      {
+        "id": "B3",
+        "section": "AURORA BOREALIS",
+        "text": "Dr Halley ascribed them to the magnetic effluvia of the earth, since the streamers are observed to lie in the direction of the magnetic needle."
+      },
+      {
+        "id": "B4",
+        "section": "AURORA BOREALIS",
+        "text": "But the most probable opinion is that they are electrical, the electric fluid passing through the rarefied air of the upper atmosphere and shining, as it does in an exhausted glass tube."
+      },
+      {
+        "id": "B5",
+        "section": "AURORA BOREALIS",
+        "text": "Their height is thought by some to be many hundred miles above the earth."
+      },
+      {
+        "id": "B6",
+        "section": "AURORA BOREALIS",
+        "text": "A like appearance has been observed toward the south pole by navigators in the southern seas."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-aurora",
+    "title": "Aurora",
+    "url": "https://en.wikipedia.org/wiki/Aurora",
+    "dateModified": "2026-10-12",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "An aurora, also called the northern lights or southern lights, is a natural light display in the sky, seen mainly in high-latitude regions around the Arctic and Antarctic."
+      },
+      {
+        "id": "W2",
+        "section": "Cause",
+        "text": "Auroras are caused by charged particles from the Sun, carried by the solar wind, which are guided by Earth's magnetic field into the upper atmosphere."
+      },
+      {
+        "id": "W3",
+        "section": "Cause",
+        "text": "There the particles strike oxygen and nitrogen atoms, which give off light, much as the gas in a neon lamp glows when an electric current passes through it."
+      },
+      {
+        "id": "W4",
+        "section": "Height",
+        "text": "Auroral displays usually occur between about 90 and 150 kilometres above the ground, but can extend higher."
+      },
+      {
+        "id": "W5",
+        "section": "History",
+        "text": "Edmond Halley suggested in 1716 that auroras follow the lines of the Earth's magnetic field."
+      },
+      {
+        "id": "W6",
+        "section": "Southern lights",
+        "text": "The southern lights, aurora australis, are seen around Antarctica; James Cook's expedition observed them in 1773."
+      },
+      {
+        "id": "W7",
+        "section": "Frequency",
+        "text": "Auroras are more frequent when the Sun is most active, near the peak of the roughly 11-year solar cycle."
+      },
+      {
+        "id": "W8",
+        "section": "Names",
+        "text": "In Shetland the northern lights are known as the mirrie dancers."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.85,
+    "rerankScore": 0.88,
+    "reasons": [
+      "The 1797 headword AURORA BOREALIS is covered by the Wikipedia article Aurora.",
+      "Rare terms appear in both: northern lights, Shetland dancers, Halley, magnetic needle, southern lights.",
+      "Solar wind scores on the cause but is not about the lights themselves."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Solar wind",
+      "url": "https://en.wikipedia.org/wiki/Solar_wind",
+      "embedScore": 0.66,
+      "rerankScore": 0.41
+    },
+    {
+      "title": "Geomagnetic storm",
+      "url": "https://en.wikipedia.org/wiki/Geomagnetic_storm",
+      "embedScore": 0.68,
+      "rerankScore": 0.48
+    }
+  ],
+  "alignments": [
+    {
+      "id": "au1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Northern lights",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "AURORA BOREALIS, or NORTHERN LIGHTS"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "also called the northern lights"
+      },
+      "note": "Same names."
+    },
+    {
+      "id": "au2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Merry dancers",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "called the merry dancers"
+      },
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "known as the mirrie dancers"
+      },
+      "note": "Same Shetland name, in dialect spelling."
+    },
+    {
+      "id": "au3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Along the magnetic field",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the streamers are observed to lie in the direction of the magnetic needle"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "auroras follow the lines of the Earth's magnetic field"
+      },
+      "note": "Halley's observation holds."
+    },
+    {
+      "id": "au4",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Magnetic effluvia",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the magnetic effluvia of the earth"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "charged particles from the Sun"
+      },
+      "note": "The magnetic field guides the particles, but they come from the Sun, not the earth."
+    },
+    {
+      "id": "au5",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Glowing like a tube",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "shining, as it does in an exhausted glass tube"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "much as the gas in a neon lamp glows"
+      },
+      "note": "The 1797 analogy is close to the modern one."
+    },
+    {
+      "id": "au6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Height",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "many hundred miles above the earth"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "between about 90 and 150 kilometres above the ground"
+      },
+      "note": "Too high: most auroras are under 100 miles up."
+    },
+    {
+      "id": "au7",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Southern lights",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "observed toward the south pole by navigators in the southern seas"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "James Cook's expedition observed them in 1773"
+      },
+      "note": "The navigators were probably Cook's crew (inference)."
+    },
+    {
+      "id": "au8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Solar cycle",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "more frequent when the Sun is most active"
+      },
+      "note": "The 1797 entry does not link auroras to the Sun at all."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Appearance",
+      "britannica": 0.2,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Names",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Magnetism",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Cause of the light",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Height",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Southern lights",
+      "britannica": 0.15,
+      "wikipedia": 0.13
+    },
+    {
+      "topic": "The Sun",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "Was the 1797 entry right that the northern lights are electrical?",
+    "What did Halley think caused the aurora?"
+  ],
+  "answers": {
+    "Was the 1797 entry right that the northern lights are electrical?": {
+      "answer": "Largely. It calls the electrical opinion the most probable, with the light shining as in an exhausted glass tube [B4]. Wikipedia says charged particles from the Sun strike gases in the upper atmosphere, which glow much as a neon lamp does [W2] [W3]. What the 1797 entry lacks is the Sun as the source.",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What did Halley think caused the aurora?": {
+      "answer": "The 1797 entry says Halley blamed magnetic effluvia from the earth, because the streamers line up with the magnetic needle [B3]. Wikipedia credits Halley with seeing that auroras follow the Earth's magnetic field lines [W5], and says the particles themselves come from the Sun [W2].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.85
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}
