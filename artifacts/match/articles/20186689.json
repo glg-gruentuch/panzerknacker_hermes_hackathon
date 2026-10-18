@@ -1,0 +1,26 @@
+{
+  "page_id": "20186689",
+  "revision_id": "1322330041",
+  "title": "Chalcidian helmet",
+  "url": "https://en.wikipedia.org/wiki/Chalcidian_helmet",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "4b7d691093ef49a7024939bd4d06e8c27d57fb02a3f4d50b2c67cc810329b8a3",
+    "source_row_idx": 53203,
+    "source_shard": "enwiki/data/enwiki_namespace_0_39.parquet",
+    "text_sha256": "7eb7731a8954dd9499ac83ebda856a02848c7a8f89afff356e171f26fedff0c5",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1322330041"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 2897,
+  "text": "A Chalcidian helmet or Chalcidian type helmet was a helmet made of bronze and worn by ancient warriors of the Hellenic world, especially popular in Greece in the fifth and fourth centuries BC. The helmet was also worn extensively in the Greek (southern) parts of Italy in the same period.\n\nThe helmet is so-called because it was first, and is most commonly, depicted on pottery once thought to derive from the Euboean city of Chalcis. In fact, it is not known whether the helmet originated in Chalcis; indeed, it is not even known whether the pottery in question was Chalcidian.\n\nThe helmet appears to have been a development of the Corinthian helmet, its improvements in design giving the wearer better hearing and vision, resulting in a lighter and less bulky helmet.\n\nIt consisted of a hemispherical dome, and below that, generally inset from the top dome, a pair of cheek pieces and a neck guard, with a substantial loop on either side for the wearer's ears. In the front, between the two cheek pieces, was a small nasal bar to protect the wearer's nose. The helmet could be entirely one piece, or the cheek pieces could be attached separately by hinges, which eased construction and made putting the helmet on easier. In Italy, the helmet with fixed cheek pieces is referred to as Chalcidian, its variant with hinged cheek pieces is called a Lucanian helmet because it was widely used in Lucania.\n\nThe helmet would commonly have a hole pierced on each cheek piece or elsewhere in order to accept an inner lining which was made of leather. Adornments such as combs and other protuberances were usually placed on the top of the helmet.\n\nBy the time of Alexander the Great, the helmet was still worn by armoured soldiers, especially hoplites, the spear-armed heavy infantrymen (other than those of the Spartans, who instead wore the much plainer pilos helmet). It is likely that some of the Macedonian soldiers who ruled the rest of Greece and went on to forge a substantial Hellenistic empire also wore the Chalcidian helmet. The helmet is thought to have developed in turn into the Attic helmet, which is iconic of classical soldiers.\n\nISBN 1-84176-950-9\n\nHelle W. Horsnaes The Cultural Development in North Western Lucania C. 600-273 BC. L'Erma di Bretschneider, 2002. ISBN 88-8265-194-0\n\nRaimon Graells i Fabregat, Alberto José Lorrio Alvarado & Fernando Quesada Sanz, Cascos hispano-calcídicos: Símbolo de las elites guerreras celtibéricas, Katalogue Vor- und Frühgeschichtlicher Altertümer, 46, Mainz, RGZM, Verlag des Römisch-Germanischen Zentralmuseums, Mainz 2014. ISBN 978-3-88467-230-3\n\nRaimon Graells i Fabregat, Alberto José Lorrio Alvarado & Fernando Quesada Sanz, Los cascos protohistóricos de Aranda de Moncayo: Una necesidad científica y patrimonial, VII Simposio sobre los Celtíberos, Nuevos Hallazgos, Nuevas Interpretaciones, Teruel 2014. ISBN 978-84-616-2453-9, pp. 213-221."
+}

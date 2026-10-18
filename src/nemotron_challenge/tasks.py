@@ -4,7 +4,7 @@ from typing import Any
 
 from .config import Settings
 
-STAGES = ("extract", "match", "compare", "agent", "site", "evaluate")
+STAGES = ("extract", "match", "compare", "claims", "agent", "site", "evaluate")
 
 # Stages with a working implementation. The CLI and doctor report this set.
 IMPLEMENTED: set[str] = set(STAGES)
@@ -29,6 +29,13 @@ def compare(settings: Settings, work_dir: Path) -> dict[str, Any]:
     from .compare import run_compare
 
     return run_compare(settings, work_dir)
+
+
+def claims(settings: Settings, work_dir: Path) -> dict[str, Any]:
+    """Align claims between matched texts with Super VL. See docs/milestones.md#claims."""
+    from .claims import run_claims
+
+    return run_claims(settings, work_dir)
 
 
 def agent(settings: Settings, work_dir: Path) -> dict[str, Any]:

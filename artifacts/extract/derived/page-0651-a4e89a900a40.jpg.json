@@ -4,8 +4,10 @@
   "page_header": "HELMINTHOLOGY. Plate CCLI",
   "entries": [
     {
-      "heading": "HELMINTHOLOGY. Plate CCLI",
-      "heading_class": "Page-header",
+      "heading": null,
+      "heading_class": null,
+      "fragment": true,
+      "subsections": [],
       "blocks": [
         {
           "class": "Caption",
@@ -150,7 +152,7 @@
       ],
       "page_header": "HELMINTHOLOGY. Plate CCLI",
       "body": "Fig 1\nFig.2.\nFig.2.\nFig.1.\nO\nFig.3. Fig.3.\nFig.8.\nFig.7.\nFig.9.\nFig.9.",
-      "continued": false,
+      "continued": true,
       "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:651#0000",
       "filename": "page-0651-a4e89a900a40.jpg",
       "scan_sha256": "a4e89a900a4041b934828dcc5c677df6edf0de903ab97d097948b7b17427da7d",

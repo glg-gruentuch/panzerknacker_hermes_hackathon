@@ -1,0 +1,23 @@
+{
+  "pages_total": 100,
+  "pages_derived": 98,
+  "pages_failed": 2,
+  "pages_with_entries": 98,
+  "pages_without_entries": [],
+  "entries": 232,
+  "headwords": 135,
+  "fragments": 97,
+  "subsections": 97,
+  "joins": 0,
+  "headings_matching_running_head_pattern": 0,
+  "failures": [
+    {
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:452",
+      "error": "ProtocolError: chat response is incomplete; inspect the token budget and finish_reason"
+    },
+    {
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2243",
+      "error": "ProtocolError: chat response is incomplete; inspect the token budget and finish_reason"
+    }
+  ]
+}

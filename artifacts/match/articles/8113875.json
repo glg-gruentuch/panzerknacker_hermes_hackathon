@@ -1,0 +1,26 @@
+{
+  "page_id": "8113875",
+  "revision_id": "1185608460",
+  "title": "The Refreshments",
+  "url": "https://en.wikipedia.org/wiki/The_Refreshments",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "ce840e1dbebaa350816afefeccba6536b7b8c285d737ab31530fa282af303c7c",
+    "source_row_idx": 203258,
+    "source_shard": "enwiki/data/enwiki_namespace_0_2.parquet",
+    "text_sha256": "8adacbc88dd7ff9409c60f35851b940cb209b215196175032c54780be145aa9f",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1185608460"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 153,
+  "text": "The Refreshments may refer to:\n\nThe Refreshments (American band), a band from Arizona, United States\n\nThe Refreshments (Swedish band), a band from Sweden"
+}

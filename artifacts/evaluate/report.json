@@ -18,22 +18,328 @@
     ]
   },
   "matching": {
-    "entries_processed": null,
-    "matched": 0,
-    "unmatched": null,
-    "unique_articles": null,
+    "entries_processed": 229,
+    "matched": 76,
+    "unmatched": 153,
+    "unique_articles": 76,
     "repeats": [],
-    "threshold": null
+    "threshold": -5.5
   },
   "comparison": {
-    "pairs": null,
-    "top_britannica": [],
-    "top_wikipedia": []
+    "pairs": 76,
+    "top_britannica": [
+      [
+        "people",
+        51
+      ],
+      [
+        "rays",
+        47
+      ],
+      [
+        "time",
+        37
+      ],
+      [
+        "great",
+        36
+      ],
+      [
+        "see",
+        33
+      ],
+      [
+        "mr",
+        33
+      ],
+      [
+        "water",
+        31
+      ],
+      [
+        "long",
+        30
+      ],
+      [
+        "body",
+        30
+      ],
+      [
+        "man",
+        29
+      ],
+      [
+        "number",
+        29
+      ],
+      [
+        "heat",
+        29
+      ],
+      [
+        "equal",
+        27
+      ],
+      [
+        "would",
+        26
+      ],
+      [
+        "captain",
+        25
+      ],
+      [
+        "called",
+        25
+      ],
+      [
+        "half",
+        23
+      ],
+      [
+        "parallel",
+        23
+      ],
+      [
+        "air",
+        23
+      ],
+      [
+        "part",
+        22
+      ],
+      [
+        "however",
+        20
+      ],
+      [
+        "well",
+        20
+      ],
+      [
+        "users",
+        20
+      ],
+      [
+        "many",
+        19
+      ],
+      [
+        "made",
+        19
+      ],
+      [
+        "though",
+        19
+      ],
+      [
+        "point",
+        19
+      ],
+      [
+        "country",
+        18
+      ],
+      [
+        "form",
+        18
+      ],
+      [
+        "native",
+        18
+      ]
+    ],
+    "top_wikipedia": [
+      [
+        "diving",
+        297
+      ],
+      [
+        "lightning",
+        241
+      ],
+      [
+        "buxton",
+        137
+      ],
+      [
+        "used",
+        114
+      ],
+      [
+        "thomas",
+        108
+      ],
+      [
+        "diver",
+        107
+      ],
+      [
+        "underwater",
+        102
+      ],
+      [
+        "coin",
+        100
+      ],
+      [
+        "th",
+        98
+      ],
+      [
+        "coins",
+        94
+      ],
+      [
+        "cloud",
+        93
+      ],
+      [
+        "dive",
+        83
+      ],
+      [
+        "century",
+        83
+      ],
+      [
+        "decompression",
+        81
+      ],
+      [
+        "geometry",
+        81
+      ],
+      [
+        "water",
+        79
+      ],
+      [
+        "christians",
+        76
+      ],
+      [
+        "thistle",
+        75
+      ],
+      [
+        "ichneumon",
+        70
+      ],
+      [
+        "st",
+        67
+      ],
+      [
+        "city",
+        66
+      ],
+      [
+        "roman",
+        65
+      ],
+      [
+        "divers",
+        61
+      ],
+      [
+        "air",
+        61
+      ],
+      [
+        "die",
+        61
+      ],
+      [
+        "ground",
+        58
+      ],
+      [
+        "town",
+        57
+      ],
+      [
+        "gold",
+        57
+      ],
+      [
+        "obol",
+        55
+      ],
+      [
+        "known",
+        54
+      ]
+    ]
   },
   "agent": {
-    "cases": [],
-    "passed": null,
-    "total": null
+    "cases": [
+      {
+        "case_id": "success-1",
+        "returncode": 0,
+        "expected": "citation",
+        "passed": true,
+        "session_id": "20261018_134445_121e62",
+        "has_citation": true,
+        "admits_missing": true
+      },
+      {
+        "case_id": "success-2",
+        "returncode": 0,
+        "expected": "citation",
+        "passed": false,
+        "session_id": "20261018_134532_05051e",
+        "has_citation": false,
+        "admits_missing": true
+      },
+      {
+        "case_id": "success-3",
+        "returncode": 0,
+        "expected": "citation",
+        "passed": true,
+        "session_id": "20261018_134555_55d17b",
+        "has_citation": true,
+        "admits_missing": true
+      },
+      {
+        "case_id": "success-4",
+        "returncode": 0,
+        "expected": "citation",
+        "passed": true,
+        "session_id": "20261018_134635_527596",
+        "has_citation": true,
+        "admits_missing": false
+      },
+      {
+        "case_id": "failure-1",
+        "returncode": 0,
+        "expected": "insufficient_evidence",
+        "passed": true,
+        "session_id": "20261018_134659_3b092f",
+        "has_citation": false,
+        "admits_missing": true
+      },
+      {
+        "case_id": "failure-2",
+        "returncode": 0,
+        "expected": "insufficient_evidence",
+        "passed": true,
+        "session_id": "20261018_134717_8750aa",
+        "has_citation": true,
+        "admits_missing": true
+      },
+      {
+        "case_id": "failure-3",
+        "returncode": 0,
+        "expected": "insufficient_evidence",
+        "passed": false,
+        "session_id": "20261018_134733_785228",
+        "has_citation": false,
+        "admits_missing": false
+      }
+    ],
+    "passed": 5,
+    "total": 7
   },
   "limits": [
     "The fixed 100-scan manifest defines the source sample; extraction failures stay listed.",

@@ -1,0 +1,26 @@
+{
+  "page_id": "1417172",
+  "revision_id": "1304347595",
+  "title": "LIF",
+  "url": "https://en.wikipedia.org/wiki/LIF",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "0bc1ee9e9d08835ce06949b29bac55f866c09308371256f12cc297da89312464",
+    "source_row_idx": 139138,
+    "source_shard": "enwiki/data/enwiki_namespace_0_6.parquet",
+    "text_sha256": "e98d8cbbe4eb150dfec86d28c1a995d2d064e99f568b5d09e7768f99a0558383",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1304347595"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 1123,
+  "text": "LIF, LiF or Lif may refer to:\n\n\"Lif\" (song), a 2022 song by SCH\n\nMr. Lif (Jeffrey Haynes), a rapper\n\n\"Lif\", the last track on Horse the Band's album A Natural Death\n\n\"Líf\", a song by Hildur Vala Einarsdóttir\n\nLeukemia inhibitory factor, a cytokine that affects cell growth and development\n\nLaser-induced fluorescence, a spectroscopic method\n\nLow insertion force sockets\n\nLithium fluoride, a chemical compound used for windows, prisms, and lenses from vacuum UV to near IR range\n\nLeft Iliac fossa, a part of human and primate anatomy\n\nLocal inertial frame, a concept in general relativity\n\nLiquid Impact Forming, metalworking process\n\nLiberal Forum, a former Austrian political party\n\nLife Income Fund, is registered retirement savings vehicle used in Canada, particularly for funds transferred from employer pension plans. A LIF is used to draw retirement income from funds.\n\nLeirvík ÍF (LÍF Leirvík) a Faroese football club\n\nLif Island, an island of Papua New Guinea\n\nLíf and Lífþrasir, characters from Norse mythology\n\nLughat al-Ishārā al-Filisṭīniyya (LIF), the Modern Standard Arabic name for Palestinian Levantine Sign"
+}

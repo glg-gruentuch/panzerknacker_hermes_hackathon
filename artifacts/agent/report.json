@@ -1,0 +1,70 @@
+{
+  "model": "nvidia/Nemotron-3.5-Super-VL",
+  "cases": [
+    {
+      "case_id": "success-1",
+      "returncode": 0,
+      "expected": "citation",
+      "passed": true,
+      "session_id": "20261018_134445_121e62",
+      "has_citation": true,
+      "admits_missing": true
+    },
+    {
+      "case_id": "success-2",
+      "returncode": 0,
+      "expected": "citation",
+      "passed": false,
+      "session_id": "20261018_134532_05051e",
+      "has_citation": false,
+      "admits_missing": true
+    },
+    {
+      "case_id": "success-3",
+      "returncode": 0,
+      "expected": "citation",
+      "passed": true,
+      "session_id": "20261018_134555_55d17b",
+      "has_citation": true,
+      "admits_missing": true
+    },
+    {
+      "case_id": "success-4",
+      "returncode": 0,
+      "expected": "citation",
+      "passed": true,
+      "session_id": "20261018_134635_527596",
+      "has_citation": true,
+      "admits_missing": false
+    },
+    {
+      "case_id": "failure-1",
+      "returncode": 0,
+      "expected": "insufficient_evidence",
+      "passed": true,
+      "session_id": "20261018_134659_3b092f",
+      "has_citation": false,
+      "admits_missing": true
+    },
+    {
+      "case_id": "failure-2",
+      "returncode": 0,
+      "expected": "insufficient_evidence",
+      "passed": true,
+      "session_id": "20261018_134717_8750aa",
+      "has_citation": true,
+      "admits_missing": true
+    },
+    {
+      "case_id": "failure-3",
+      "returncode": 0,
+      "expected": "insufficient_evidence",
+      "passed": false,
+      "session_id": "20261018_134733_785228",
+      "has_citation": false,
+      "admits_missing": false
+    }
+  ],
+  "passed": 5,
+  "total": 7
+}

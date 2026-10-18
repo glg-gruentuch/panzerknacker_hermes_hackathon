@@ -1,0 +1,52 @@
+{
+  "id": "chatcmpl-9cfd6a28ebeacb42",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\"claims\": [{\"quote\": \"Plate. XLVI\", \"type\": \"definition\"}]}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null,
+        "reasoning_content": "The user wants me to extract up to 8 atomic factual claims from the provided text.\n\nThe text is: \"Plate. XLVI\"\n\nThis is just a plate label/number. Let me analyze what claims can be extracted:\n\n1. \"Plate. XLVI\" - This indicates there is a plate numbered XLVI (46).\n\nPossible claims:\n- Type: definition? It's identifying a plate.\n- The text says \"Plate. XLVI\" - this is a label indicating Plate 46.\n\nLet me think about atomic factual claims:\n- There is a plate designated XLVI.\n- The plate number is XLVI.\n\nBut the text is extremely minimal. \"Plate. XLVI\" likely means \"Plate XLVI\" or \"Plate. XLVI\" as a caption.\n\nAtomic claims:\n1. Quote: \"Plate. XLVI\" - This is the entire text. Type could be definition or identifier. But the rules say one claim per sentence or clause. This is one fragment.\n\nActually, looking at the text, it's just \"Plate. XLVI\". I can extract:\n- Claim: The text identifies \"Plate. XLVI\". But that's meta.\n\nLet me think about what factual claim exists in \"Plate. XLVI\":\n- It states/indicates a plate labeled XLVI.\n\nSince the text is so short, I should probably just extract one claim about the plate designation.\n\nQuote: \"Plate. XLVI\"\nType: definition (it's defining/labeling a plate)\nOr maybe just omit value/unit since it's not a quantity.\n\nWait, the schema requires:\n{\"claims\": [{\"quote\": \"...\", \"type\": \"definition|quantity|place|date|cause|practice\", \"value\": 0, \"unit\": \"\"}]}\n\nRules say: \"value\" and \"unit\" only for type \"quantity\"; omit them otherwise.\n\nSo for non-quantity types, I should omit value and unit? Or include them with empty/default? The rule says \"omit them otherwise\". So I should not include value and unit keys if type is not quantity.\n\nBut the example shows them. Let me re-read: \"value\" and \"unit\" only for type \"quantity\"; omit them otherwise.\n\nSo for type \"definition\", I should have: {\"quote\": \"...\", \"type\": \"definition\"}\n\nNow, what claim can I make?\nThe text \"Plate. XLVI\" asserts that there is a Plate XLVI.\n\nQuote: \"Plate. XLVI\" (exact substring, same spelling and punctuation)\nType: definition (it defines/identifies the plate)\n\nIs there anything else? No, the text is just that.\n\nSo I'll output:\n{\"claims\": [{\"quote\": \"Plate. XLVI\", \"type\": \"definition\"}]}\n\nWait, should I include value and unit as empty strings? The rule says omit them otherwise. So I'll omit them.\n\nBut let me double check - can I split \"Plate.\" and \"XLVI\"? No, that would be weird. The quote must be exact substring. \"Plate. XLVI\" is the whole text.\n\nActually, maybe I can do:\n- Quote: \"Plate.\" Type: definition? No, that's incomplete.\n\nI'll just do one claim.\n\nLet me verify: \"up to 8 atomic factual claims\". I have 1. That's fine.\n\nJSON format:\n{\"claims\": [{\"quote\": \"Plate. XLVI\", \"type\": \"definition\"}]}\n\nWait, is \"Plate. XLVI\" a definition? It's more of a label/identifier. The available types are: definition|quantity|place|date|cause|practice. \"Definition\" seems closest since it's defining what the plate is. Or maybe it's not really any of these perfectly, but I have to choose one. \"Definition\" is the best fit among the options for a label/identification.\n\nActually, looking at it again, \"Plate. XLVI\" could be interpreted as stating that this is Plate XLVI. That's a definitional claim about the image/plate.\n\nI'll go with that.\n\nOne more check: The quote must be copied exactly. \"Plate. XLVI\" - yes, that's exactly the text.\n\nFinal JSON:\n{\"claims\": [{\"quote\": \"Plate. XLVI\", \"type\": \"definition\"}]}"
+      },
+      "stop_reason": null,
+      "token_ids": null,
+      "routed_experts": null
+    }
+  ],
+  "created": 1792332534,
+  "model": "nvidia/Nemotron-3.5-Super-VL",
+  "object": "chat.completion",
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "vllm-0.1.dev1+g1bed5fc81-tp2-9705eecb",
+  "usage": {
+    "completion_tokens": 924,
+    "prompt_tokens": 183,
+    "total_tokens": 1107,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 901,
+      "rejected_prediction_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0,
+      "created_cache_tokens": 0,
+      "multimodal_tokens": null
+    }
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "prompt_text": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null,
+  "metrics": null
+}

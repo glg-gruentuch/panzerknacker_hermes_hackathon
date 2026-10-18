@@ -1,0 +1,52 @@
+{
+  "id": "chatcmpl-b082d6d50044881d",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\"claims\":[{\"quote\":\"HEMEROBIUS, in zoology, a genus of deficits of the temperature\",\"type\":\"definition\"},{\"quote\":\"The mouth is furnished with two teeth\",\"type\":\"quantity\",\"value\":2,\"unit\":\"teeth\"},{\"quote\":\"the pulpit are four\",\"type\":\"quantity\",\"value\":4,\"unit\":\"pulpit\"},{\"quote\":\"the wings are dellected, but not planted\",\"type\":\"definition\"}]}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null,
+        "reasoning_content": "The user wants me to extract up to 8 atomic factual claims from the provided Britannica text. The text is:\n\n\"HEMEROBIUS, in zoology, a genus of deficits of the temperature, the characters of which are thefe. The mouth is furnished with two teeth; the pulpit are four; the wings are dellected, but not planted ; and:\"\n\nWait, this text seems OCR-garbled (the \"f\" for \"s\", \"deficits\" maybe \"defects\"? \"thefe\" = \"these\", \"dellected\" = \"reflected\"? \"planted\" = \"plaited\"? But I must extract claims based on the text as given, using exact substrings.\n\nLet me identify sentences/clauses:\n1. \"HEMEROBIUS, in zoology, a genus of deficits of the temperature\" - This is a definition/place? It says HEMEROBIUS is a genus in zoology. Type: definition. Quote exact.\n2. \"the characters of which are thefe\" - Not very factual/atomic, maybe skip or it's a clause. Could be part of first sentence. Actually the first sentence is: \"HEMEROBIUS, in zoology, a genus of deficits of the temperature, the characters of which are thefe.\" That's one sentence. But the rules say one claim per sentence or clause. I can split into clauses.\n3. \"The mouth is furnished with two teeth\" - quantity? It's a quantity (two teeth). But type quantity with value and unit. Value 2, unit \"teeth\"? Or it's a practice/anatomy. The types allowed: definition|quantity|place|date|cause|practice. \"two teeth\" is a quantity. value: 2, unit: \"teeth\".\n4. \"the pulpit are four\" - quantity (pulpit are four). value 4, unit \"pulpit\"? Probably \"four\" count of palpi (OCR pulpit). Unit maybe \"\" or \"pulpit\". Since it's a count, unit can be \"\" or the noun. I'll put unit as \"\"? Rules: value and unit only for type quantity. I'll include value 4, unit \"\" maybe. But better unit \"pulpit\"? Hmm. Let's keep unit as \"\" to be safe? Actually examples might expect unit. The rule says value and unit only for type quantity. It doesn't say unit is required. I'll include value and unit where sensible.\n5. \"the wings are dellected, but not planted\" - This is a practice/anatomy claim. Type: practice? Or definition. It's a characteristic. Could be \"practice\" but that's odd. Maybe type \"definition\" for characteristics. But allowed types are limited. \"the wings are dellected, but not planted\" is a factual claim about wing state. Type could be \"practice\"? Not really. Maybe just omit type? No, type is required. I'll classify anatomical characteristics as \"definition\"? Hmm. The available types: definition, quantity, place, date, cause, practice. For biological characteristics, \"definition\" fits best (defining characters). But \"two teeth\" is quantity. Let's assign:\n   - Claim 1: definition - \"HEMEROBIUS, in zoology, a genus of deficits of the temperature\" (value omitted)\n   - Claim 2: quantity - \"The mouth is furnished with two teeth\" value 2 unit \"teeth\"\n   - Claim 3: quantity - \"the pulpit are four\" value 4 unit \"\" or \"pulpit\". I'll use unit \"\"? Let's use unit \"pulpit\"? Actually \"the pulpit are four\" - four pulpits. Unit could be \"pulpit\". But the text says \"the pulpit are four\". I'll set value 4, unit \"\" to avoid inventing. Hmm, but unit is encouraged? Not required. I'll set unit \"\".\n   - Claim 4: definition/practice - \"the wings are dellected, but not planted\". Type: practice? I'd say definition (it's a character). But we already have definition. Let's use \"practice\"? No. Maybe type \"definition\" is fine for multiple. The rules don't prohibit repeating types.\n   - The trailing \"and:\" is incomplete, no claim.\n\nAlso \"the characters of which are thefe\" - could be a claim but vague. Skip or include as definition? It says characters are \"thefe\" (these). Not atomic factual. Skip.\n\nNeed up to 8. I have about 4-5.\n\nLet's ensure quotes are exact substrings from text.\n\nText exact: \"HEMEROBIUS, in zoology, a genus of deficits of the temperature, the characters of which are thefe. The mouth is furnished with two teeth; the pulpit are four; the wings are dellected, but not planted ; and:\"\n\nQuote 1: \"HEMEROBIUS, in zoology, a genus of deficits of the temperature\" - exact substring? The text starts with \"HEMEROBIUS, in zoology, a genus of deficits of the temperature, the characters...\" Yes substring ends before \", the characters\". Exact.\n\nQuote 2: \"The mouth is furnished with two teeth\" - exact substring after \". \". Yes.\n\nQuote 3: \"the pulpit are four\" - exact substring. Yes.\n\nQuote 4: \"the wings are dellected, but not planted\" - exact substring (there's a space before ; but quote ends at \"planted\"). Text: \"the wings are dellected, but not planted ; and:\". So substring \"the wings are dellected, but not planted\" is exact.\n\nMaybe also: \"the characters of which are thefe\" as a claim? It's vague. Could include as definition: quote \"the characters of which are thefe\". But it's not very factual. The instruction: \"Do not add claims the text does not state.\" The text states that the characters are \"thefe\" (these). It's not atomic useful. I'll skip to keep quality.\n\nCould include \"in zoology\" as place? No.\n\nLet's produce JSON with 4 claims.\n\nTypes: \n1. definition\n2. quantity (value 2, unit \"teeth\")\n3. quantity (value 4, unit \"\") — maybe unit should be omitted? Rule says value and unit only for type quantity. It implies for quantity include them. I'll include unit \"pulpit\"? The quote says \"the pulpit are four\". Unit \"pulpit\" is odd but it's the counted thing. However the text uses \"pulpit\" (likely \"palpi\"). I'll use unit \"\" to not over-specify. Hmm, but for \"two teeth\" unit \"teeth\" is directly from quote. For consistency, for \"the pulpit are four\", unit \"pulpit\" is directly from quote. I'll use unit \"pulpit\". Actually \"pulpit\" is the noun. value 4. Fine.\n\nBut wait, \"pulpit\" is likely OCR for \"palpi\" (palps). But must copy exactly. Value 4, unit \"pulpit\".\n\nQuote 4 type: The wings are dellected but not planted — this is a characteristic. Type \"definition\" seems okay, or \"practice\". I'll use \"definition\" since it's defining characters. Actually \"practice\" is for practices/customs. Anatomy isn't practice. \"definition\" is best.\n\nWait, can a claim have type definition and also be a characteristic? Yes.\n\nLet's also consider \"a genus of deficits of the temperature\" — this is weird but it's a definition of what Hemerobius is. Good.\n\nNeed to output JSON only, no extra text. Ensure valid JSON. Omit value/unit for non-quantity.\n\nLet's construct:\n\n{\"claims\":[\n{\"quote\":\"HEMEROBIUS, in zoology, a genus of deficits of the temperature\",\"type\":\"definition\"},\n{\"quote\":\"The mouth is furnished with two teeth\",\"type\":\"quantity\",\"value\":2,\"unit\":\"teeth\"},\n{\"quote\":\"the pulpit are four\",\"type\":\"quantity\",\"value\":4,\"unit\":\"pulpit\"},\n{\"quote\":\"the wings are dellected, but not planted\",\"type\":\"definition\"}\n]}\n\nCheck quotes exact:\n- \"HEMEROBIUS, in zoology, a genus of deficits of the temperature\" — in text: \"HEMEROBIUS, in zoology, a genus of deficits of the temperature, the characters...\" Yes matches exactly (capital H, comma after HEMEROBIUS). Good.\n- \"The mouth is furnished with two teeth\" — text: \"The mouth is furnished with two teeth;\" Yes.\n- \"the pulpit are four\" — text: \"the pulpit are four;\" Yes (lowercase t). Good.\n- \"the wings are dellected, but not planted\" — text: \"the wings are dellected, but not planted ;\" Yes. Note there is a space before semicolon in text but not in quote; quote ends at \"planted\" which is exact substring. Good.\n\nShould I include value/unit for quantity only. Good.\n\nNumber of claims: 4, up to 8. Fine.\n\nNeed to reply with JSON only. No markdown? The user said reply with one JSON object and nothing else. I'll output raw JSON. Ensure no trailing commas.\n\nDouble-check value should be number not string. Yes 2 and 4.\n\nOne concern: \"unit\" for \"teeth\" — quote is \"two teeth\". Unit \"teeth\". Good.\n\nFinal answer."
+      },
+      "stop_reason": null,
+      "token_ids": null,
+      "routed_experts": null
+    }
+  ],
+  "created": 1792332260,
+  "model": "nvidia/Nemotron-3.5-Super-VL",
+  "object": "chat.completion",
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "vllm-0.1.dev1+g1bed5fc81-tp2-9705eecb",
+  "usage": {
+    "completion_tokens": 2142,
+    "prompt_tokens": 231,
+    "total_tokens": 2373,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 2046,
+      "rejected_prediction_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0,
+      "created_cache_tokens": 0,
+      "multimodal_tokens": null
+    }
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "prompt_text": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null,
+  "metrics": null
+}

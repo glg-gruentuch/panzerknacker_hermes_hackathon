@@ -1,0 +1,26 @@
+{
+  "page_id": "21438094",
+  "revision_id": "1302174188",
+  "title": "Dama",
+  "url": "https://en.wikipedia.org/wiki/Dama",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "ffc5856c64bf1c31a0ed219624f6ef4a28347e774241d9d2d32b453c7b86e006",
+    "source_row_idx": 30653,
+    "source_shard": "enwiki/data/enwiki_namespace_0_23.parquet",
+    "text_sha256": "022d36286a6b73badd8d8ab1bfc3303f25c4983392c8eefb85e18edc43000ae6",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1302174188"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 1499,
+  "text": "Dama or DAMA may refer to:\n\nDama gazelle (Nanger dama)\n\nDama (genus) (fallow deer)\n\nFallow deer (Dama dama)\n\nPersian fallow deer (Dama mesopotamica)\n\nTammar wallaby or Dama wallaby (Macropus eugenii)\n\nDAMA, abbreviation for \"discharged against medical advice \"\n\nDemand Assigned Multiple Access, a bandwidth allocation strategy\n\nDAMA/NaI, an experiment to detect dark matter\n\nDAMA/LIBRA, successor experiment to DAMA/NaI\n\nData Management Association, also known as the Global Data Management Community (Dama International); see Data administration\n\nDAMA protocol (\"Document, Assess, Monitor, Act\"), a principle used in taxonomy, infectious disease, and parasitology\n\nDama, a name for Turkish draughts\n\nDama, stage name of Rasolofondraosolo Zafimahaleo, founding member of the Madagascar folk-pop band Mahaleo\n\nDama (Dune), a fictional character in Chapterhouse Dune (1985) by Frank Herbert\n\nDama-fruit, a fictional fruit in Dorothy and the Wizard in Oz, which renders its eaters invisible\n\nD.A.M.A, a Portuguese band\n\nChinese Dama, a group of middle-aged Chinese women who rushed to purchase gold as investment in 2013\n\nDama Chiefdom, a chiefdom in Sierra Leone\n\nDama, Suwayda, a village in Suwayda Governorate, Syria\n\nDama, Tongxiang, a town in Tongxiang, Zhejiang Province, China\n\nDama in Casentino, little stone village \"borgo\" in Casentino, Tuscany, Italy\n\nDama ceremony, a ceremony venerating the dead in the Dogon religion\n\nDama, or temperance, a Hindu virtue of self-control and self-restraint"
+}

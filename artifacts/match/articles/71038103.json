@@ -1,0 +1,26 @@
+{
+  "page_id": "71038103",
+  "revision_id": "1094569776",
+  "title": "Finali (surname)",
+  "url": "https://en.wikipedia.org/wiki/Finali_(surname)",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "aae21d20fa0f7fa9b5a4a96cca721df876831d9d55ab4f79a5a3daebc2a59ebd",
+    "source_row_idx": 147195,
+    "source_shard": "enwiki/data/enwiki_namespace_0_1.parquet",
+    "text_sha256": "cc976b81d1458b19c5bf3829cd23214f189d01c655a4aece83a1d59ee8f7e059",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1094569776"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 179,
+  "text": "Finali is an Italian-origin surname. Notable people with the surname include:\n\nGaspare Finali (1829–1914), Italian politician\n\nGiovanni Angelo Finali (1709–1772), Italian sculptor"
+}

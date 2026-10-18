@@ -1,0 +1,26 @@
+{
+  "page_id": "524631",
+  "revision_id": "1284643549",
+  "title": "Offender Assessment System",
+  "url": "https://en.wikipedia.org/wiki/Offender_Assessment_System",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "2b12656a53ecc79fd53d61a3d7d839badd41786193fd34793325fe802617e14c",
+    "source_row_idx": 48016,
+    "source_shard": "enwiki/data/enwiki_namespace_0_21.parquet",
+    "text_sha256": "e11d9e77adb65c3da92bf9eff0a2347edbaaa40baf36020e9106df0e26a3c20c",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1284643549"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 1804,
+  "text": "OASys is the abbreviated term for the Offender Assessment System, used in England and Wales by His Majesty's Prison Service and the National Probation Service to measure the risks and needs of criminal offenders under their supervision. Initially developed in 2001, it was built upon the existing ‘What Works’ evidence base.\n\nOASys is designed to enable a properly trained and qualified individual; often a Probation Officer, to:\n\nassess how likely an offender is to be re-convicted\n\nidentify and classify offending-related needs, including basic personality characteristics and cognitive behavioural problems\n\nassess risk of serious harm, risks to the individual and other risks\n\nassist with management of risk of harm\n\nlinks the assessment to the supervision or sentence plan\n\nindicate the need for further specialist assessments\n\nmeasure change during the period of supervision / sentence.\n\nOASys comprises a series of computer -based forms on which clinical evaluations are made by staff of Offenders, and supervision and sentence plans for the forthcoming period of supervision are recorded on a periodic basis - typically every 16 weeks for offenders in the community, and less frequently for imprisoned offenders.\n\nOASys supports the What Works? initiative of the Prison and Probation Services, by providing metrics by which the characteristics of offenders and their offences (inputs) can be analysed alongside information on interventions made (inputs) to the offender, and re-conviction data for offenders (outcomes), in order to enable refinement to be made to interventions (based on a consideration of the relation between inputs and outcomes) as to improve outcomes - in other words, to decrease recidivism rates by ensuring that interventions are as appropriate and purposeful as possible."
+}

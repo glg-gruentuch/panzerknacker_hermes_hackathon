@@ -1,0 +1,9 @@
+{
+  "stage": "site",
+  "out_dir": "deliverables/website",
+  "pages": 98,
+  "pdfs_compiled": 98,
+  "compile_failures": [],
+  "broken_links": [],
+  "compare_pairs": 0
+}

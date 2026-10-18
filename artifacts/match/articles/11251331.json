@@ -1,0 +1,26 @@
+{
+  "page_id": "11251331",
+  "revision_id": "1279125465",
+  "title": "Hippocrates, father of Peisistratos",
+  "url": "https://en.wikipedia.org/wiki/Hippocrates,_father_of_Peisistratos",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "ce840e1dbebaa350816afefeccba6536b7b8c285d737ab31530fa282af303c7c",
+    "source_row_idx": 101204,
+    "source_shard": "enwiki/data/enwiki_namespace_0_2.parquet",
+    "text_sha256": "df6ea9da7921f080a7b22ed90ab90926840d26f91830077fab7173f7ffad5e46",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1279125465"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 727,
+  "text": "Hippocrates (Ancient Greek: Ἱπποκράτης, Hippokrátēs) was the father of Peisistratos, the tyrant of Athens. According to Herodotus, he received an omen when he was at Olympia to see the ancient Olympic Games. Vessels filled with meat and water spontaneously boiled over after he offered the sacrifice, though the vessels were not placed over fire. Chilon the Lacedaemonian (one of the Seven Sages of Greece) advised him that he should disown his son, or if he did not have one, send his wife away, or else if he was not married, not to marry a wife who could bear children. Hippocrates ignored his advice, later having Peisistratos. Hippocrates claimed to be descended from the Homeric chief and legendary King of Pylos, Nestor."
+}

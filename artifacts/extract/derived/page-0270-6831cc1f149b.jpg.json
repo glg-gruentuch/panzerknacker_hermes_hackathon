@@ -2,5 +2,35 @@
   "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:270",
   "filename": "page-0270-6831cc1f149b.jpg",
   "page_header": "",
-  "entries": []
+  "entries": [
+    {
+      "heading": null,
+      "heading_class": null,
+      "fragment": true,
+      "subsections": [],
+      "blocks": [
+        {
+          "class": "Picture",
+          "text": "HYDROSTATICS. Plate CCXXXIX.",
+          "bbox": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.998,
+              0.9984
+            ]
+          ]
+        }
+      ],
+      "page_header": "",
+      "body": "HYDROSTATICS. Plate CCXXXIX.",
+      "continued": true,
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:270#0000",
+      "filename": "page-0270-6831cc1f149b.jpg",
+      "scan_sha256": "6831cc1f149b50ecdf07b3af7ab3e4ef10572a486faafa06481061973c4100f8",
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:270"
+    }
+  ]
 }

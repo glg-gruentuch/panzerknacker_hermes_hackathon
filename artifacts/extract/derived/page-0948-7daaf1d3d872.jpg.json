@@ -2,5 +2,31 @@
   "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:948",
   "filename": "page-0948-7daaf1d3d872.jpg",
   "page_header": "",
-  "entries": []
+  "entries": [
+    {
+      "heading": null,
+      "heading_class": null,
+      "fragment": true,
+      "subsections": [],
+      "blocks": [
+        {
+          "class": null,
+          "text": "Lava.",
+          "bbox": null
+        },
+        {
+          "class": "Picture",
+          "text": "Plate CCLXXIV.",
+          "bbox": null
+        }
+      ],
+      "page_header": "",
+      "body": "Lava.\nPlate CCLXXIV.",
+      "continued": true,
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:948#0000",
+      "filename": "page-0948-7daaf1d3d872.jpg",
+      "scan_sha256": "7daaf1d3d872629a521dadf0381158556417d41f436b00ed4fbd44d78123473c",
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:948"
+    }
+  ]
 }

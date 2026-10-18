@@ -1,0 +1,26 @@
+{
+  "page_id": "35619484",
+  "revision_id": "1332352382",
+  "title": "William Walbe",
+  "url": "https://en.wikipedia.org/wiki/William_Walbe",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "0c6fe80c983049fc2c9f795d6a557d47da0122de995ad5f93fa91c0ff4397992",
+    "source_row_idx": 34080,
+    "source_shard": "enwiki/data/enwiki_namespace_0_29.parquet",
+    "text_sha256": "f687947a994ebf75c9ea9dd0a5aa795c488fff4d16d760217d97dda7fbbbdcff",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1332352382"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 1646,
+  "text": "William Walbe (13 July 1943 – 27 June 2011), was a colonel in the Nigerian Army who served as the military aide-de-camp (ADC) to General Yakubu Gowon, the third Nigerian Head of State.\n\nBorn William Godang Walbe on July 13, 1943, in Plateau State, Nigeria, Walbe received his secondary education at the Nigerian Military School (NMS) in Zaria. He was commissioned as a second lieutenant in 1962 and served as Anti-Tank Platoon Commander, 2nd Battalion, General Staff Officer III, 2nd Brigade in the Nigerian Army.\n\nWalbe gained notoriety as a conspirator in the Nigerian counter-coup of 1966 which resulted in the murder of the second Nigerian Head of State, General Aguiyi Ironsi, and the Military Governor of the Western Region, Lt Colonel Adekunle Fajuyi. Walbe (then a lieutenant) along with then Major Theophilus Danjuma were moles in General Ironsi's camp as they were the lead officers charged with Ironsi's security detail. Unknown to Ironsi, Major Danjuma and Lieutenant Walbe were part of a core group of northern military officers who conspired to overthrow Ironsi's government for what they perceived as the inadequate punishment of the leaders of the January 1966 coup that saw the murder of the Nigerian Prime Minister (Abubakar Tafawa Balewa), the Sardauna of Sokoto (Ahmadu Bello) and many northern military officers. Among the group of the July 1966 coup conspirators were officers such as Joe Garba, Murtala Muhammed (the fourth Nigerian Head of State), Martin Adamu, Muhammadu Buhari (the seventh Nigerian Head of State), Paul Tarfa, Jerry Useni and Shehu Musa Yar'Adua (older brother of the thirteenth Nigerian Head of State)."
+}

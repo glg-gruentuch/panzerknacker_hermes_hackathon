@@ -1,5 +1,6 @@
 """Matching policy: query limits, batch limits, thresholds, pagination."""
 import json
+from collections import Counter
 from types import SimpleNamespace
 
 from nemotron_challenge.config import Settings
@@ -7,10 +8,14 @@ from nemotron_challenge.match import (
     build_query,
     decide,
     embed_documents,
+    entry_query,
     fetch_article,
+    rarest_query_words,
+    rerank_candidates,
     run_match,
     shortlist,
     summary_of,
+    word_frequencies,
 )
 
 
@@ -18,8 +23,43 @@ def test_build_query_respects_service_limits():
     entry = {"heading": "SHIP BUILDING", "body": "word " * 500}
     query = build_query(entry)
     assert len(query) <= 512
-    assert len(query.split()) <= 64
+    assert len(query.split()) <= 48
     assert query.startswith("SHIP BUILDING")
+
+
+def test_build_query_uses_headword_and_first_sentence():
+    entry = {"heading": "VOLCANOES", "body": "Aetna burns. It also smokes.", "fragment": False}
+    assert build_query(entry) == "VOLCANOES Aetna burns."
+
+
+def test_build_query_deduplicates_the_heading_at_the_body_start():
+    entry = {"heading": "ETNA", "body": "ETNA, or Mount Etna, is a volcano of Sicily.", "fragment": False}
+    query = build_query(entry)
+    assert query.startswith("ETNA, or Mount Etna")
+    assert not query.startswith("ETNA ETNA")
+
+
+def test_fragment_query_uses_the_rarest_content_words():
+    body = "brimstone brimstone the mountain the fire the fire of sicily"
+    frequencies = Counter({"the": 9, "fire": 5, "mountain": 4, "of": 9, "sicily": 3})
+    query = build_query({"heading": None, "body": body, "fragment": True}, frequencies)
+    assert query == "brimstone sicily mountain fire"
+
+
+def test_rarest_query_words_prefers_lower_document_frequency():
+    assert rarest_query_words("fossil ship ship", Counter({"ship": 7})) == ["fossil", "ship"]
+
+
+def test_rarest_query_words_breaks_ties_by_length_then_order():
+    assert rarest_query_words("alpha zephyr", Counter()) == ["zephyr", "alpha"]
+
+
+def test_word_frequencies_counts_each_entry_once():
+    entries = [{"body": "ship ship vessel"}, {"body": "ship sea"}, {"body": "vessel ship"}]
+    frequencies = word_frequencies(entries)
+    assert frequencies["ship"] == 3
+    assert frequencies["vessel"] == 2
+    assert frequencies["sea"] == 1
 
 
 def test_embed_documents_chunks_at_16():
@@ -51,6 +91,44 @@ def test_shortlist_orders_by_dot_product():
     rows = shortlist(FakeRetrieval(), "query", hits, keep=2)
     assert [row["hit"].page_id for row in rows] == ["2", "1"]
     assert rows[0]["similarity"] == 1.0
+
+
+def test_shortlist_keeps_unscored_candidates_without_excerpt_text():
+    hits = [SimpleNamespace(page_id="1", excerpt="a"), SimpleNamespace(page_id="2", excerpt="")]
+
+    class FakeRetrieval:
+        vectors = {"query": [1.0, 0.0], "a": [1.0, 0.0]}
+
+        def embed(self, inputs, input_type):
+            if input_type == "query":
+                return [self.vectors["query"]]
+            return [self.vectors[text] for text in inputs]
+
+    rows = shortlist(FakeRetrieval(), "query", hits)
+    assert [row["hit"].page_id for row in rows] == ["1", "2"]
+    assert rows[0]["embed_rank"] == 1
+    assert rows[1]["similarity"] is None and rows[1]["embed_rank"] is None
+
+
+def test_rerank_returns_rows_without_excerpt_text_unscored():
+    rows = [
+        {"hit": SimpleNamespace(page_id="1", excerpt="a"), "similarity": 0.5, "embed_rank": 1},
+        {"hit": SimpleNamespace(page_id="2", excerpt=""), "similarity": None, "embed_rank": None},
+    ]
+
+    class FakeRetrieval:
+        def rerank(self, query, documents, top_n=None):
+            assert documents == ["a"]
+            return [{"index": 0, "relevance_score": 1.5}]
+
+    result = {row["row"]["hit"].page_id: row for row in rerank_candidates(FakeRetrieval(), "query", rows)}
+    assert result["1"]["rerank_rank"] == 1 and result["1"]["logit"] == 1.5
+    assert result["2"]["rerank_rank"] is None and result["2"]["logit"] is None
+
+
+def test_decide_ignores_unscored_rows():
+    assert decide([{"row": {}, "logit": None}], 0.0) is None
+    assert decide([{"row": {}, "logit": None}, {"row": {}, "logit": -1.0}], -2.0)["logit"] == -1.0
 
 
 def test_decide_uses_threshold_on_raw_logits():
@@ -163,6 +241,13 @@ def test_run_match_end_to_end_with_stubs(tmp_path, monkeypatch):
     decisions = {(row["entry_id"], row["candidate_page_id"]): row["decision"] for row in evidence}
     assert decisions[("b:train:1#0000", "101")] == "matched"
     assert decisions[("b:train:1#0001", "101")] == "unmatched"
+    # The evidence keeps the full funnel for every candidate.
+    funnel = [row for row in evidence if row["entry_id"] == "b:train:1#0000"]
+    assert [row["bm25_rank"] for row in funnel] == [1, 2]
+    assert all(row["embed_similarity"] is not None for row in funnel)
+    assert sorted(row["embed_rank"] for row in funnel) == [1, 2]
+    assert all(row["rerank_logit"] is not None for row in funnel)
+    assert sorted(row["rerank_rank"] for row in funnel) == [1, 2]
     matches = [json.loads(line) for line in (work / "match" / "matches.jsonl").read_text(encoding="utf-8").splitlines()]
     assert matches[0]["article_page_id"] == "101"
     assert matches[0]["article_text_sha256"] == "b" * 64
@@ -175,3 +260,65 @@ def test_run_match_end_to_end_with_stubs(tmp_path, monkeypatch):
     again = run_match(settings, work, threshold=0.0)
     assert again["matched"] == 1
     assert len([json.loads(line) for line in (work / "match" / "evidence.jsonl").read_text(encoding="utf-8").splitlines()]) == len(evidence)
+
+
+def test_entry_query_prefers_body_and_falls_back_to_heading():
+    assert entry_query({"heading": "SHIPS", "body": "A vessel at sea."}) == "A vessel at sea."
+    assert entry_query({"heading": "SHIPS", "body": "   "}) == "SHIPS"
+    assert entry_query({"heading": " SHIPS ", "body": ""}) == "SHIPS"
+
+
+def test_run_match_uses_heading_when_body_is_empty(tmp_path, monkeypatch):
+    """Heading-only entries must reach retrieval instead of failing on empty text."""
+    work = tmp_path / "artifacts"
+    entries = [
+        {"entry_id": "b:train:1#0000", "page_id": "b:train:1", "filename": "page-1.jpg", "scan_sha256": "c" * 64,
+         "heading": "SHIP BUILDING", "heading_class": "Title", "page_header": "", "continued": False,
+         "continued_on": None, "n_blocks": 1, "body": ""},
+    ]
+    derived = work / "extract" / "derived"
+    derived.mkdir(parents=True)
+    (derived / "entries.json").write_text(json.dumps(entries), encoding="utf-8")
+    manifest = {"dataset": "NationalLibraryOfScotland/encyclopaedia_britannica_illustrated",
+                "revision": "309f765b1ecc83e0a7f7762e44b4a927a7555443",
+                "source_url": "https://example.com", "license": "CC0-1.0", "pages": []}
+    monkeypatch.setattr("nemotron_challenge.match.load_manifest", lambda: manifest)
+    monkeypatch.setattr("nemotron_challenge.match.WikiClient", _StubWiki)
+    monkeypatch.setattr("nemotron_challenge.match.RetrievalClient", _StubRetrieval)
+
+    settings = Settings(wikipedia_api_url="http://stub", retrieval_base_url="http://stub", db_path=tmp_path / "db.lancedb")
+    result = run_match(settings, work, threshold=0.0)
+
+    assert result["matched"] == 1
+    summary = json.loads((work / "match" / "summary.json").read_text(encoding="utf-8"))
+    assert summary["failures"] == []
+
+
+def test_run_match_skips_entries_with_no_text(tmp_path, monkeypatch):
+    """B1 empty fragments carry no query text; record them, do not fail."""
+    work = tmp_path / "artifacts"
+    entries = [
+        {"entry_id": "b:train:1#0000", "page_id": "b:train:1", "filename": "page-1.jpg", "scan_sha256": "c" * 64,
+         "heading": None, "heading_class": None, "fragment": True, "page_header": "", "continued": True,
+         "continued_on": None, "n_blocks": 0, "body": ""},
+    ]
+    derived = work / "extract" / "derived"
+    derived.mkdir(parents=True)
+    (derived / "entries.json").write_text(json.dumps(entries), encoding="utf-8")
+    manifest = {"dataset": "NationalLibraryOfScotland/encyclopaedia_britannica_illustrated",
+                "revision": "309f765b1ecc83e0a7f7762e44b4a927a7555443",
+                "source_url": "https://example.com", "license": "CC0-1.0", "pages": []}
+    monkeypatch.setattr("nemotron_challenge.match.load_manifest", lambda: manifest)
+    monkeypatch.setattr("nemotron_challenge.match.WikiClient", _StubWiki)
+    monkeypatch.setattr("nemotron_challenge.match.RetrievalClient", _StubRetrieval)
+
+    settings = Settings(wikipedia_api_url="http://stub", retrieval_base_url="http://stub", db_path=tmp_path / "db.lancedb")
+    result = run_match(settings, work, threshold=0.0)
+
+    assert result["unmatched"] == 1
+    summary = json.loads((work / "match" / "summary.json").read_text(encoding="utf-8"))
+    assert summary["failures"] == []
+    evidence = [json.loads(line) for line in (work / "match" / "evidence.jsonl").read_text(encoding="utf-8").splitlines()]
+    assert len(evidence) == 1
+    assert evidence[0]["decision"] == "no-candidates"
+    assert evidence[0]["note"] == "the entry has no text to query"

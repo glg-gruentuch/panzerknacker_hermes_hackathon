@@ -1,0 +1,57 @@
+{
+  "mode": "live",
+  "checks": [
+    {
+      "name": "httpx",
+      "status": "ok",
+      "version": "0.28.1"
+    },
+    {
+      "name": "pydantic",
+      "status": "ok",
+      "version": "2.14.1"
+    },
+    {
+      "name": "python-dotenv",
+      "status": "ok",
+      "version": "1.2.4"
+    },
+    {
+      "name": "lancedb",
+      "status": "ok",
+      "version": "0.40.0"
+    },
+    {
+      "name": "pyarrow",
+      "status": "ok",
+      "version": "21.0.0"
+    },
+    {
+      "name": "huggingface-hub",
+      "status": "ok",
+      "version": "2.2.0"
+    },
+    {
+      "name": "wikipedia",
+      "status": "ok",
+      "scope": "catalog/readiness; inference not tested"
+    },
+    {
+      "name": "parse",
+      "status": "ok",
+      "scope": "catalog/readiness; inference not tested"
+    },
+    {
+      "name": "retrieval",
+      "status": "ok",
+      "scope": "catalog/readiness; inference not tested"
+    },
+    {
+      "name": "super",
+      "status": "ok",
+      "scope": "catalog/readiness; inference not tested"
+    }
+  ],
+  "challenge_stages": "implemented: agent, compare, evaluate, extract, match, site",
+  "inference": "not tested"
+}

@@ -69,6 +69,16 @@ def test_compare_pair_carries_citations_and_counts():
     assert any(term == "veffel" for term, _ in row["britannica"]["top_terms"]) or True
 
 
+def test_compare_pair_lists_obsolete_terms_after_normalization():
+    row = compare_pair(ENTRY, MATCH, ARTICLE)
+    terms = {term for term, _ in row["obsolete_terms"]}
+    assert "veffel" in terms          # only in the Britannica text
+    assert "fhip" in terms            # long-s OCR variant, absent from the article
+    assert "float" not in terms       # present in both texts
+    assert "ship" in terms            # the exact token is absent (the article says "ships")
+    assert all(count >= 1 for _, count in row["obsolete_terms"])
+
+
 def test_chart_rows_count_the_intended_documents():
     rows = chart_rows([compare_pair(ENTRY, MATCH, ARTICLE), compare_pair(ENTRY, MATCH, ARTICLE)])
     assert len(rows) == 2

@@ -1,0 +1,26 @@
+{
+  "page_id": "11796844",
+  "revision_id": "1062661759",
+  "title": "De tous biens plaine",
+  "url": "https://en.wikipedia.org/wiki/De_tous_biens_plaine",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "ce840e1dbebaa350816afefeccba6536b7b8c285d737ab31530fa282af303c7c",
+    "source_row_idx": 254928,
+    "source_shard": "enwiki/data/enwiki_namespace_0_2.parquet",
+    "text_sha256": "cc1aa04aad63bd7461d78be6653dfbd5d1ddb5a6670027be327b235e75b1728b",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1062661759"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 891,
+  "text": "\" De tous biens plaine \" is a French chanson, usually credited to Hayne van Ghizeghem, who wrote a 3-part version, published by Ottaviano Petrucci in 1501. Amongst other reworkings are a four-part version by Josquin and two 3-part versions by Alexander Agricola.\n\nFull words and music are here\n\nand of an Agricola version at the Choral Wiki here\n\nA version of the first verse and its translation are given by David Munrow in The Art of the Netherlands as\n\nDe tous biens plaine est ma maistresse\n\nChascun lui doit tribut d'onneur;\n\nCar assouvye est en valeur\n\nAutant que jamais fut deesse.\n\nMy mistress possesses every virtue.\n\nEverybody pays her homage,\n\nfor she is as full of worth\n\nas ever any goddess was.\n\nLoyset Compere used the tune as a basis for a mass setting, and the Credo survives of a setting by Josquin.\n\nSome sources have claimed this to be the most famous chanson of the age."
+}

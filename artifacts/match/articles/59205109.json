@@ -1,0 +1,26 @@
+{
+  "page_id": "59205109",
+  "revision_id": "1352627268",
+  "title": "Kebon Kopi I inscription",
+  "url": "https://en.wikipedia.org/wiki/Kebon_Kopi_I_inscription",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "e04c1ffd6e1eccaac31c68476c45bee1de0717f69d8b547b7b3c5e8e2ffa8255",
+    "source_row_idx": 35623,
+    "source_shard": "enwiki/data/enwiki_namespace_0_68.parquet",
+    "text_sha256": "455624ccef2c7d45a3a1be65ba044684abae08208ad1042ba97c075f3889134a",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1352627268"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 1816,
+  "text": "6°31′40″S 106°40′20″E / 6.5278048°S 106.6721078°E\n\nKebon Kopi I also known as Tapak Gajah inscription (elephant footprint inscription), is one of several inscriptions dated from the era of Tarumanagara Kingdom circa 5th century. The inscription bearing the image of elephant footprint, which was copied from the elephant ride of King Purnawarman of Tarumanagara, which is equated with Airavata, the elephant vahana (vehicle) of Indra.: 16\n\nThe inscription was discovered in Kebon Kopi village, Bogor, near Kebon Kopi II inscription, and named as such to differ it from this later inscription dated from Sunda Kingdom era.\n\nThis inscription is written with Pallawa script in Sanskrit which are arranged into the form of the Anustubh metrum Shloka, which is flanked by a pair of carved images of the elephant's foot.\n\nTranscription: ~ ~ jayavisalasya Tarumendrasya hastinah ~ ~ Airwavatabhasya vibhatidam ~ padadvayam\n\nTranslation: \"Behold, here it looks like a pair of feet...like Airavata, the elephant ride of the great Taruma ruler in... and (?) glory\"\n\nH.P. Hoepermans \"Hindoe-Oudheden va Java (1864)\" ROD 1913:74\n\nJ.F.G. Brumund \"Bijdragen tot de kennis va het Hindoeisme op Java\" VBG. XXXIII 1868:63-64\n\nA.B. Cohen Stuart \"Heilige Voetsporen op Java\" BKI 3(X) 1875:163-168. Juga di bahasa Inggris berjudul: \"Sacred Footprints in Java\" Indian AntiQuary IV. 1875:355-dst\n\nH. Kern \"Eenige Oude Sanskrit-Opschrifte n van 't Maleische-schiereil and\" VMKAWL 3(1).1884:9\n\nP.J. Veth, Java II. 1878:46; I.1896:27\n\nR.D.M. Verbeek \"Oudheden van Java\" VBG. XLVI. 1891:30-31.\n\nJ. Ph. Vogel \"the Earliest Sanskrit Inscription opsachriften of Java\" POD. I. 1925:27-28. Plate 32,33.\n\nBambang Soemadio (et.al. editor) Sejarah Nasional Indonesia II, Jaman Kuno. Jakarta: Departemen Pendidikan dan Kebudayaan 1975: 39-40; 1984: 40"
+}

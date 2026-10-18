@@ -1,0 +1,26 @@
+{
+  "page_id": "22873162",
+  "revision_id": "1350753661",
+  "title": "Barleycorn (unit)",
+  "url": "https://en.wikipedia.org/wiki/Barleycorn_(unit)",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "cb1f23182061a449568a2d80e0b37881a2055db9ea3954928d31c2735cd53759",
+    "source_row_idx": 25134,
+    "source_shard": "enwiki/data/enwiki_namespace_0_57.parquet",
+    "text_sha256": "a900ced5fd6d1dbde6b015fb6fe29e2d7118a65d7bc7f1820f517727cb8133f1",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1350753661"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 1220,
+  "text": "The barleycorn is an English unit of length equal to 1 ⁄ 3 of an inch (i.e. about 8.47 mm). It is still used as the basis of shoe sizes in some English-speaking countries.\n\nUnder the 1300 Composition of Yards and Perches, one of the statutes of uncertain date that was notionally in force until the 1824 Weights and Measures Act, \"3 barly cornes dry and rounde \" were to serve as the basis for the inch and thence the larger units of feet, yards, perches and thus of the acre, an important unit of area. The notion of three barleycorns composing an inch certainly predates this statute, however, appearing in the 10th-century Welsh Laws of Hywel Dda.\n\nIn practice, various weights and measures acts of the English kings were standardized with reference to some particular yard-length iron, brass, or bronze bar held by the king or the Royal Exchequer. The formal barleycorn was 1 ⁄ 108 of its length.\n\nAs modern studies show, the actual length of a kernel of barley varies from as short as 0.16–0.28 in (4–7 mm) to as long as 0.47–0.59 in (12–15 mm) depending on the cultivar. Older sources claimed the average length of a grain of barley was 0.345 in (8.8 mm), while that of a grain of \" bigg \" was 0.3245 in (8.24 mm)."
+}

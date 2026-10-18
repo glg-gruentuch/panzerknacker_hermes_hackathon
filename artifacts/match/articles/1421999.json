@@ -1,0 +1,26 @@
+{
+  "page_id": "1421999",
+  "revision_id": "1271992402",
+  "title": "Swoon",
+  "url": "https://en.wikipedia.org/wiki/Swoon",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "2035812c382e7e022c4a93233ab97639e6645c182ea6fff87893c1609659e455",
+    "source_row_idx": 82141,
+    "source_shard": "enwiki/data/enwiki_namespace_0_9.parquet",
+    "text_sha256": "d44f24d3ecb01ead6e6f7027d6db5f3e472597df923c3ff2d3f5acabb72b69ab",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1271992402"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 492,
+  "text": "Swoon may refer to:\n\nSwoon hypothesis, a number of theories about the resurrection of Jesus Christ\n\nSwoon (film), a film on the 1924 Leopold and Loeb murder case\n\nSwoon (artist), a graffiti artist from New York City\n\nDJ Swoon, former stage name of American musician Slushii\n\nTom Swoon, Polish musician\n\nSwoon (Silversun Pickups album), the second album by Silversun Pickups\n\nSwoon (Prefab Sprout album), the debut album by Prefab Sprout\n\n\"Swoon\" (song), a 2010 single by The Chemical Brothers"
+}

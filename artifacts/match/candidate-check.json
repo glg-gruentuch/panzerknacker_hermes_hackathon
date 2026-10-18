@@ -1,0 +1,895 @@
+{
+  "note": "BM25 candidate coverage check on 7 spread entries. Read-only; no retrieval service needed.",
+  "corpus_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+  "entries": [
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:13#0000",
+      "heading": "Fractical Building",
+      "query": "Fractical Building ends in close contact with, and cooked or dowelled to, the sides of the diagonal timbers. In this state the frame--on in the hold presents various compartments, each representing the figure of a method. A T reads—timber is then introduced into each rhombed, with an inclination",
+      "hits": [
+        {
+          "rank": 1,
+          "page_id": "28385839",
+          "title": "Brettstapel",
+          "bm25_score": 56.18253707885742
+        },
+        {
+          "rank": 2,
+          "page_id": "2784287",
+          "title": "Butt joint",
+          "bm25_score": 52.26931381225586
+        },
+        {
+          "rank": 3,
+          "page_id": "45710594",
+          "title": "St George's Anglican Church, Beenleigh",
+          "bm25_score": 50.20707702636719
+        },
+        {
+          "rank": 4,
+          "page_id": "55710889",
+          "title": "The Cottage in Thorpe, Surrey",
+          "bm25_score": 50.13164520263672
+        },
+        {
+          "rank": 5,
+          "page_id": "23672633",
+          "title": "Wattle and daub",
+          "bm25_score": 49.801124572753906
+        },
+        {
+          "rank": 6,
+          "page_id": "61181487",
+          "title": "The Little Thatch",
+          "bm25_score": 49.61219787597656
+        },
+        {
+          "rank": 7,
+          "page_id": "699422",
+          "title": "Timber framing",
+          "bm25_score": 49.37621307373047
+        },
+        {
+          "rank": 8,
+          "page_id": "10240256",
+          "title": "Dog (engineering)",
+          "bm25_score": 47.968788146972656
+        },
+        {
+          "rank": 9,
+          "page_id": "42451997",
+          "title": "American historic carpentry",
+          "bm25_score": 47.78739929199219
+        },
+        {
+          "rank": 10,
+          "page_id": "58611154",
+          "title": "Boonah Post Office",
+          "bm25_score": 47.78396224975586
+        },
+        {
+          "rank": 11,
+          "page_id": "56537874",
+          "title": "Wilston State School",
+          "bm25_score": 46.97096252441406
+        },
+        {
+          "rank": 12,
+          "page_id": "43801258",
+          "title": "Glas Hirfryn",
+          "bm25_score": 46.54291915893555
+        },
+        {
+          "rank": 13,
+          "page_id": "47099061",
+          "title": "Ipswich West State School",
+          "bm25_score": 46.282501220703125
+        },
+        {
+          "rank": 14,
+          "page_id": "50682795",
+          "title": "Old Laura Homestead",
+          "bm25_score": 46.1239128112793
+        },
+        {
+          "rank": 15,
+          "page_id": "2980969",
+          "title": "Shoring",
+          "bm25_score": 45.98457336425781
+        },
+        {
+          "rank": 16,
+          "page_id": "45711884",
+          "title": "Fachwerk Farmhouse",
+          "bm25_score": 45.55986785888672
+        },
+        {
+          "rank": 17,
+          "page_id": "46700829",
+          "title": "Yangan School of Arts",
+          "bm25_score": 45.52821731567383
+        },
+        {
+          "rank": 18,
+          "page_id": "15990281",
+          "title": "Post-and-plank",
+          "bm25_score": 45.238372802734375
+        },
+        {
+          "rank": 19,
+          "page_id": "50963971",
+          "title": "Croydon Police Station",
+          "bm25_score": 45.063297271728516
+        },
+        {
+          "rank": 20,
+          "page_id": "2071443",
+          "title": "Framing (construction)",
+          "bm25_score": 45.0329475402832
+        }
+      ]
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:493#0001",
+      "heading": "IIN. No Getta",
+      "query": "IIN. No Getta REENLD STREET, one of the four famous ways which the Romanes made in England, called _Stretim Rescrown_, because it began in the country of the _Leon_ who inhabited Norfolk, Suffolk, and Gaulridgeshire. HEL, Levy _For Eddy_, one of the chief of the Hebrides or Western",
+      "hits": [
+        {
+          "rank": 1,
+          "page_id": "3227806",
+          "title": "Amicable Grant",
+          "bm25_score": 40.552642822265625
+        },
+        {
+          "rank": 2,
+          "page_id": "293608",
+          "title": "Icknield Way",
+          "bm25_score": 40.43513488769531
+        },
+        {
+          "rank": 3,
+          "page_id": "144198",
+          "title": "Peddars Way",
+          "bm25_score": 39.405330657958984
+        },
+        {
+          "rank": 4,
+          "page_id": "1419669",
+          "title": "History of Suffolk, Virginia",
+          "bm25_score": 39.20267105102539
+        },
+        {
+          "rank": 5,
+          "page_id": "4084778",
+          "title": "Long Stratton",
+          "bm25_score": 37.85602951049805
+        },
+        {
+          "rank": 6,
+          "page_id": "40943294",
+          "title": "Norfolk and Suffolk NHS Foundation Trust",
+          "bm25_score": 36.88200378417969
+        },
+        {
+          "rank": 7,
+          "page_id": "46379",
+          "title": "East Anglia",
+          "bm25_score": 36.81037139892578
+        },
+        {
+          "rank": 8,
+          "page_id": "3227845",
+          "title": "Belton with Browston",
+          "bm25_score": 36.68429946899414
+        },
+        {
+          "rank": 9,
+          "page_id": "12106828",
+          "title": "USS Suffolk County",
+          "bm25_score": 36.43293380737305
+        },
+        {
+          "rank": 10,
+          "page_id": "18104770",
+          "title": "Montford Scott",
+          "bm25_score": 36.38810348510742
+        },
+        {
+          "rank": 11,
+          "page_id": "5329460",
+          "title": "Owen Suffolk",
+          "bm25_score": 35.803951263427734
+        },
+        {
+          "rank": 12,
+          "page_id": "30334759",
+          "title": "John Bacon (English judge)",
+          "bm25_score": 35.4930305480957
+        },
+        {
+          "rank": 13,
+          "page_id": "83393",
+          "title": "Melanesia",
+          "bm25_score": 35.41022872924805
+        },
+        {
+          "rank": 14,
+          "page_id": "46746764",
+          "title": "Healthcare in Suffolk",
+          "bm25_score": 35.36018753051758
+        },
+        {
+          "rank": 15,
+          "page_id": "27886",
+          "title": "Suffolk",
+          "bm25_score": 35.20427703857422
+        },
+        {
+          "rank": 16,
+          "page_id": "35895315",
+          "title": "The Great British Story: A People's History",
+          "bm25_score": 35.023677825927734
+        },
+        {
+          "rank": 17,
+          "page_id": "16126727",
+          "title": "Robert Ufford, 1st Earl of Suffolk",
+          "bm25_score": 34.982547760009766
+        },
+        {
+          "rank": 18,
+          "page_id": "3212851",
+          "title": "Religion of the Yellow Stick",
+          "bm25_score": 34.96263885498047
+        },
+        {
+          "rank": 19,
+          "page_id": "4587545",
+          "title": "Virginia State Route 337",
+          "bm25_score": 34.87240219116211
+        },
+        {
+          "rank": 20,
+          "page_id": "1906341",
+          "title": "History of Norfolk",
+          "bm25_score": 34.85427474975586
+        }
+      ]
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1017#0000",
+      "heading": "HEM",
+      "query": "HEM the fixth for the pigans, and the feventh for the hy- pocrites of all religions. Among Christians, there are two controverted quindices in regard to hell; is the one orchestra locality: the other the duration of its moments. The healthy of hell, and the reality of its",
+      "hits": [
+        {
+          "rank": 1,
+          "page_id": "334725",
+          "title": "Problem of Hell",
+          "bm25_score": 39.47205352783203
+        },
+        {
+          "rank": 2,
+          "page_id": "31902",
+          "title": "Universalism",
+          "bm25_score": 38.20299530029297
+        },
+        {
+          "rank": 3,
+          "page_id": "77205321",
+          "title": "Hell Is a World Without You",
+          "bm25_score": 38.16779708862305
+        },
+        {
+          "rank": 4,
+          "page_id": "1058131",
+          "title": "How Could Hell Be Any Worse?",
+          "bm25_score": 37.90688705444336
+        },
+        {
+          "rank": 5,
+          "page_id": "5098574",
+          "title": "Hell",
+          "bm25_score": 36.98836135864258
+        },
+        {
+          "rank": 6,
+          "page_id": "17005961",
+          "title": "Soteriology",
+          "bm25_score": 36.4231071472168
+        },
+        {
+          "rank": 7,
+          "page_id": "1986025",
+          "title": "Natural religion",
+          "bm25_score": 34.742122650146484
+        },
+        {
+          "rank": 8,
+          "page_id": "1981506",
+          "title": "Francesca da Rimini (Tchaikovsky)",
+          "bm25_score": 34.70330047607422
+        },
+        {
+          "rank": 9,
+          "page_id": "607906",
+          "title": "Jahannam",
+          "bm25_score": 34.59286117553711
+        },
+        {
+          "rank": 10,
+          "page_id": "36826675",
+          "title": "Hell of a Life (Kanye West song)",
+          "bm25_score": 34.56526565551758
+        },
+        {
+          "rank": 11,
+          "page_id": "29834836",
+          "title": "23 Minutes in Hell",
+          "bm25_score": 34.360511779785156
+        },
+        {
+          "rank": 12,
+          "page_id": "7702152",
+          "title": "Live from Golgotha: The Gospel According to Gore Vidal",
+          "bm25_score": 34.24235534667969
+        },
+        {
+          "rank": 13,
+          "page_id": "5736112",
+          "title": "Hell's Kitchen (British TV series)",
+          "bm25_score": 34.07982635498047
+        },
+        {
+          "rank": 14,
+          "page_id": "174601",
+          "title": "Demonology",
+          "bm25_score": 33.985496520996094
+        },
+        {
+          "rank": 15,
+          "page_id": "76333588",
+          "title": "73 Sects (Hadith)",
+          "bm25_score": 33.95302200317383
+        },
+        {
+          "rank": 16,
+          "page_id": "4779542",
+          "title": "Trinitarian universalism",
+          "bm25_score": 33.924842834472656
+        },
+        {
+          "rank": 17,
+          "page_id": "14005745",
+          "title": "Ole Hallesby",
+          "bm25_score": 33.917057037353516
+        },
+        {
+          "rank": 18,
+          "page_id": "79494509",
+          "title": "Hinduism and Christianity",
+          "bm25_score": 33.868064880371094
+        },
+        {
+          "rank": 19,
+          "page_id": "4959248",
+          "title": "Saṃsāra (Buddhism)",
+          "bm25_score": 33.742919921875
+        },
+        {
+          "rank": 20,
+          "page_id": "1542788",
+          "title": "Heaven and Hell (essay)",
+          "bm25_score": 33.62577438354492
+        }
+      ]
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1473#0000",
+      "heading": "ESC 1723 I ESC",
+      "query": "ESC 1723 I ESC ESARHADDON, the fen of Sennacherib, and his favorite in the Baylorion of Alfryen. He is faid have reigned to 9 years at Church, from the year 1904 to 3322; believe which he reigned 13 years at Baby- ton, in all 8 years. He died",
+      "hits": [
+        {
+          "rank": 1,
+          "page_id": "63082736",
+          "title": "Tašmētu-šarrat",
+          "bm25_score": 58.07787322998047
+        },
+        {
+          "rank": 2,
+          "page_id": "40631380",
+          "title": "Naqiʾa",
+          "bm25_score": 57.4550895690918
+        },
+        {
+          "rank": 3,
+          "page_id": "160315",
+          "title": "Taharqa",
+          "bm25_score": 55.0626220703125
+        },
+        {
+          "rank": 4,
+          "page_id": "188740",
+          "title": "Esarhaddon",
+          "bm25_score": 54.547969818115234
+        },
+        {
+          "rank": 5,
+          "page_id": "69229996",
+          "title": "Šarru-lu-dari",
+          "bm25_score": 54.0713996887207
+        },
+        {
+          "rank": 6,
+          "page_id": "51273211",
+          "title": "Sargonid dynasty",
+          "bm25_score": 53.80404281616211
+        },
+        {
+          "rank": 7,
+          "page_id": "69819240",
+          "title": "Ana-Tašmētum-taklāk",
+          "bm25_score": 53.65685272216797
+        },
+        {
+          "rank": 8,
+          "page_id": "28334",
+          "title": "Sennacherib",
+          "bm25_score": 52.63924026489258
+        },
+        {
+          "rank": 9,
+          "page_id": "51353",
+          "title": "680s BC",
+          "bm25_score": 51.947792053222656
+        },
+        {
+          "rank": 10,
+          "page_id": "473715",
+          "title": "Manasseh of Judah",
+          "bm25_score": 51.80081558227539
+        },
+        {
+          "rank": 11,
+          "page_id": "62406980",
+          "title": "Arda-Mulissu",
+          "bm25_score": 50.37873077392578
+        },
+        {
+          "rank": 12,
+          "page_id": "54547062",
+          "title": "2 Kings 20",
+          "bm25_score": 49.74152374267578
+        },
+        {
+          "rank": 13,
+          "page_id": "14005",
+          "title": "Hezekiah",
+          "bm25_score": 49.33930206298828
+        },
+        {
+          "rank": 14,
+          "page_id": "62396607",
+          "title": "2013–14 IIHF European Women's Champions Cup",
+          "bm25_score": 48.518829345703125
+        },
+        {
+          "rank": 15,
+          "page_id": "77868254",
+          "title": "Ḫazaʾil",
+          "bm25_score": 48.46173095703125
+        },
+        {
+          "rank": 16,
+          "page_id": "2713553",
+          "title": "Aššur-nādin-šumi",
+          "bm25_score": 47.48762512207031
+        },
+        {
+          "rank": 17,
+          "page_id": "30689836",
+          "title": "Bodashtart",
+          "bm25_score": 47.231956481933594
+        },
+        {
+          "rank": 18,
+          "page_id": "51352",
+          "title": "670s BC",
+          "bm25_score": 47.16326904296875
+        },
+        {
+          "rank": 19,
+          "page_id": "53330750",
+          "title": "2 Kings 19",
+          "bm25_score": 46.69717788696289
+        },
+        {
+          "rank": 20,
+          "page_id": "67511458",
+          "title": "2 Chronicles 33",
+          "bm25_score": 46.311161041259766
+        }
+      ]
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1910#0000",
+      "heading": "L I G [ 4230 ] L I G",
+      "query": "L I G [ 4230 ] L I G Lightning, we have few always; it is _mattematically couldn’t_, that, when a _returning firele_ comes to be produced by the _fuddro_ removal of the very frong elafic electrical prefi-fore of the electrical atmosphere of a thunder-cloud powerfully charged; the",
+      "hits": [
+        {
+          "rank": 1,
+          "page_id": "61344",
+          "title": "Lightning",
+          "bm25_score": 62.93196487426758
+        },
+        {
+          "rank": 2,
+          "page_id": "2222635",
+          "title": "Atmospheric electricity",
+          "bm25_score": 58.89482116699219
+        },
+        {
+          "rank": 3,
+          "page_id": "11033525",
+          "title": "Radio atmospheric signal",
+          "bm25_score": 55.10216522216797
+        },
+        {
+          "rank": 4,
+          "page_id": "60880",
+          "title": "List of electrical phenomena",
+          "bm25_score": 54.370792388916016
+        },
+        {
+          "rank": 5,
+          "page_id": "75471646",
+          "title": "List of lightning phenomena",
+          "bm25_score": 54.02943420410156
+        },
+        {
+          "rank": 6,
+          "page_id": "240778",
+          "title": "Heat lightning",
+          "bm25_score": 53.662349700927734
+        },
+        {
+          "rank": 7,
+          "page_id": "194422",
+          "title": "Ball lightning",
+          "bm25_score": 53.15154266357422
+        },
+        {
+          "rank": 8,
+          "page_id": "11059653",
+          "title": "Sprite (lightning)",
+          "bm25_score": 52.85371017456055
+        },
+        {
+          "rank": 9,
+          "page_id": "1667261",
+          "title": "Terrestrial gamma-ray flash",
+          "bm25_score": 51.09052658081055
+        },
+        {
+          "rank": 10,
+          "page_id": "27486376",
+          "title": "Ionized-air glow",
+          "bm25_score": 51.07668685913086
+        },
+        {
+          "rank": 11,
+          "page_id": "75893889",
+          "title": "Plasmalysis",
+          "bm25_score": 49.64008331298828
+        },
+        {
+          "rank": 12,
+          "page_id": "16742858",
+          "title": "Liquid water content",
+          "bm25_score": 48.396995544433594
+        },
+        {
+          "rank": 13,
+          "page_id": "54252470",
+          "title": "Thor experiment",
+          "bm25_score": 48.34440231323242
+        },
+        {
+          "rank": 14,
+          "page_id": "62714703",
+          "title": "Shower (precipitation)",
+          "bm25_score": 47.942447662353516
+        },
+        {
+          "rank": 15,
+          "page_id": "200136",
+          "title": "Static electricity",
+          "bm25_score": 47.75703430175781
+        },
+        {
+          "rank": 16,
+          "page_id": "10813277",
+          "title": "Upper-atmospheric lightning",
+          "bm25_score": 47.69981002807617
+        },
+        {
+          "rank": 17,
+          "page_id": "2449741",
+          "title": "Lightning strike",
+          "bm25_score": 47.17179489135742
+        },
+        {
+          "rank": 18,
+          "page_id": "9601",
+          "title": "Electrochemistry",
+          "bm25_score": 46.95426559448242
+        },
+        {
+          "rank": 19,
+          "page_id": "89547",
+          "title": "Water vapor",
+          "bm25_score": 46.60245895385742
+        },
+        {
+          "rank": 20,
+          "page_id": "77326503",
+          "title": "Negative air ions",
+          "bm25_score": 46.41018295288086
+        }
+      ]
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2277#0003",
+      "heading": "Sect. II. _Of Teife._",
+      "query": "Sect. II. _Of Teife._ This feeds of safe is faced chiefly in the tongue, the fixation and figure of which are sufficiently known. On the upper further of this organ was may observe a great number of pupils, which, on occasion of their difference in free and hays,",
+      "hits": [
+        {
+          "rank": 1,
+          "page_id": "63216402",
+          "title": "Ceratothoa oestroides",
+          "bm25_score": 35.92100143432617
+        },
+        {
+          "rank": 2,
+          "page_id": "8128856",
+          "title": "Eye movement in reading",
+          "bm25_score": 35.14254379272461
+        },
+        {
+          "rank": 3,
+          "page_id": "1331269",
+          "title": "Vision span",
+          "bm25_score": 34.21744155883789
+        },
+        {
+          "rank": 4,
+          "page_id": "39748772",
+          "title": "Gosains",
+          "bm25_score": 33.82096481323242
+        },
+        {
+          "rank": 5,
+          "page_id": "20072722",
+          "title": "Anableps anableps",
+          "bm25_score": 33.144920349121094
+        },
+        {
+          "rank": 6,
+          "page_id": "3746108",
+          "title": "Timycha",
+          "bm25_score": 33.08120346069336
+        },
+        {
+          "rank": 7,
+          "page_id": "26823832",
+          "title": "Psalm 52",
+          "bm25_score": 32.492801666259766
+        },
+        {
+          "rank": 8,
+          "page_id": "967933",
+          "title": "Prehensility",
+          "bm25_score": 32.369449615478516
+        },
+        {
+          "rank": 9,
+          "page_id": "4223137",
+          "title": "Reed pipe",
+          "bm25_score": 32.25465393066406
+        },
+        {
+          "rank": 10,
+          "page_id": "38532297",
+          "title": "Aurora Borealis (painting)",
+          "bm25_score": 32.0703125
+        },
+        {
+          "rank": 11,
+          "page_id": "372239",
+          "title": "Tucuxi",
+          "bm25_score": 32.06426239013672
+        },
+        {
+          "rank": 12,
+          "page_id": "78117246",
+          "title": "Tactical deception in animals",
+          "bm25_score": 31.83124542236328
+        },
+        {
+          "rank": 13,
+          "page_id": "12538013",
+          "title": "Leach's single leaf bat",
+          "bm25_score": 31.557674407958984
+        },
+        {
+          "rank": 14,
+          "page_id": "79645854",
+          "title": "Marine nitrogen fixation",
+          "bm25_score": 31.35570526123047
+        },
+        {
+          "rank": 15,
+          "page_id": "1558717",
+          "title": "Boethusians",
+          "bm25_score": 31.284942626953125
+        },
+        {
+          "rank": 16,
+          "page_id": "6218109",
+          "title": "Cover test",
+          "bm25_score": 31.26482391357422
+        },
+        {
+          "rank": 17,
+          "page_id": "41730523",
+          "title": "Phyllodiscus",
+          "bm25_score": 31.19988250732422
+        },
+        {
+          "rank": 18,
+          "page_id": "24021",
+          "title": "Place of articulation",
+          "bm25_score": 31.155040740966797
+        },
+        {
+          "rank": 19,
+          "page_id": "37149",
+          "title": "Cranial nerves",
+          "bm25_score": 31.059635162353516
+        },
+        {
+          "rank": 20,
+          "page_id": "8599670",
+          "title": "All-Hallows-the-Great",
+          "bm25_score": 31.05931282043457
+        }
+      ]
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2524#0000",
+      "heading": "408",
+      "query": "408 _Hindustan as the most shocking of crimes, by burning on a heated plate of iron; or against the lower tubes, in whom adultery with a Brahmann woman is considered as the climax of bitumen depetty, centrally to be arranged by any punishment, however dreadful. On the ever",
+      "hits": [
+        {
+          "rank": 1,
+          "page_id": "20391548",
+          "title": "Flued boiler",
+          "bm25_score": 44.28643798828125
+        },
+        {
+          "rank": 2,
+          "page_id": "27273712",
+          "title": "Spiral watertube boiler",
+          "bm25_score": 42.3449592590332
+        },
+        {
+          "rank": 3,
+          "page_id": "58809",
+          "title": "Adultery",
+          "bm25_score": 41.99024200439453
+        },
+        {
+          "rank": 4,
+          "page_id": "48656448",
+          "title": "Adultery in Classical Athens",
+          "bm25_score": 41.47434997558594
+        },
+        {
+          "rank": 5,
+          "page_id": "2056590",
+          "title": "Stoning in Islam",
+          "bm25_score": 41.18309783935547
+        },
+        {
+          "rank": 6,
+          "page_id": "713098",
+          "title": "Crime and punishment in the Torah",
+          "bm25_score": 39.795135498046875
+        },
+        {
+          "rank": 7,
+          "page_id": "657897",
+          "title": "Zina",
+          "bm25_score": 39.53091049194336
+        },
+        {
+          "rank": 8,
+          "page_id": "64577716",
+          "title": "Adultery laws",
+          "bm25_score": 39.11375427246094
+        },
+        {
+          "rank": 9,
+          "page_id": "50762887",
+          "title": "Adultery law in India",
+          "bm25_score": 39.06029510498047
+        },
+        {
+          "rank": 10,
+          "page_id": "23892113",
+          "title": "Thou shalt not commit adultery",
+          "bm25_score": 38.829715728759766
+        },
+        {
+          "rank": 11,
+          "page_id": "12483272",
+          "title": "Iron chair",
+          "bm25_score": 38.70993423461914
+        },
+        {
+          "rank": 12,
+          "page_id": "2704841",
+          "title": "Air preheater",
+          "bm25_score": 37.84846496582031
+        },
+        {
+          "rank": 13,
+          "page_id": "35825867",
+          "title": "Log Kya Kahenge (film)",
+          "bm25_score": 37.66880416870117
+        },
+        {
+          "rank": 14,
+          "page_id": "4328146",
+          "title": "Council of Nablus",
+          "bm25_score": 37.55628967285156
+        },
+        {
+          "rank": 15,
+          "page_id": "38380122",
+          "title": "Capital punishment in the United Arab Emirates",
+          "bm25_score": 37.22500228881836
+        },
+        {
+          "rank": 16,
+          "page_id": "786558",
+          "title": "Capital punishment in Judaism",
+          "bm25_score": 37.19940948486328
+        },
+        {
+          "rank": 17,
+          "page_id": "54705603",
+          "title": "Rape in Islamic law",
+          "bm25_score": 37.127620697021484
+        },
+        {
+          "rank": 18,
+          "page_id": "9437868",
+          "title": "Honor killing",
+          "bm25_score": 36.772560119628906
+        },
+        {
+          "rank": 19,
+          "page_id": "2185562",
+          "title": "Human branding",
+          "bm25_score": 36.67573165893555
+        },
+        {
+          "rank": 20,
+          "page_id": "12293642",
+          "title": "Boiler (power generation)",
+          "bm25_score": 36.28604507446289
+        }
+      ]
+    }
+  ]
+}

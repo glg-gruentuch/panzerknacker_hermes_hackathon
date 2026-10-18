@@ -1,0 +1,26 @@
+{
+  "page_id": "48984539",
+  "revision_id": "1346597079",
+  "title": "Erased",
+  "url": "https://en.wikipedia.org/wiki/Erased",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "0710c536dc264c461ca78f84cfccd3a76e5a097537b128227897481154409b19",
+    "source_row_idx": 11050,
+    "source_shard": "enwiki/data/enwiki_namespace_0_38.parquet",
+    "text_sha256": "cc7da075d7bb021ecf1dbc51cd6d55cad332d58663df0ae6dd8b0f13d0fc9943",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1346597079"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 843,
+  "text": "Erased may refer to:\n\n\"Erased\", a 2002 song by Paradise Lost from Symbol of Life\n\n\"Erased\", a 2005 song by Trust Company from True Parallels\n\n\"Erased\", a 2009 song by Dead by April from Dead by April\n\n\"Erased\", a 2014 song by Volumes from No Sleep\n\n\"Erased\", a 2018 song by Cane Hill from Too Far Gone\n\n\"Erased\", a 2026 song by Sylosis from The New Flesh\n\nErased (manga), a 2012 Japanese manga series by Kei Sanbe which received an anime television adaptation in 2016 and a live-action television adaptation in 2017\n\nErased (2012 film), an action-thriller film directed by Philipp Stölzl\n\nErased (2016 film), the 2016 Japanese live-action film based on the manga\n\nErased (2018 film), a Slovenian drama film directed by Miha Mazzini\n\nErased (heraldry), a blazonry term\n\nThe Erased, a term for people in Slovenia without legal citizenship status"
+}

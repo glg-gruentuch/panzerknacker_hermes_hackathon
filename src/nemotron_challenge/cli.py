@@ -4,8 +4,8 @@ from __future__ import annotations
 import argparse
 import importlib.metadata
 import json
-from pathlib import Path
 import sys
+from pathlib import Path
 from typing import Any
 
 from . import tasks
@@ -63,9 +63,14 @@ def parser() -> argparse.ArgumentParser:
     mode.add_argument("--offline", action="store_true", help="check packages without network access")
     mode.add_argument("--live", action="store_true", help="check resource catalogs and readiness; does not run inference")
     sub.add_parser("stages", help="list unfinished challenge milestones")
+    gateway = sub.add_parser("gateway", help="serve the retrieval contract from NVIDIA hosted NIM")
+    gateway.add_argument("--host", default="127.0.0.1")
+    gateway.add_argument("--port", type=int, default=8001)
     run = sub.add_parser("run", help="run a team milestone")
     run.add_argument("stage", choices=tasks.STAGES)
     run.add_argument("--work-dir", type=Path, default=Path("artifacts"))
+    run.add_argument("--derive-only", action="store_true",
+                     help="extract only: re-derive segmentation from saved raw replies without model calls")
     data = sub.add_parser("data", help="inspect or fetch the pinned source scans")
     data_sub = data.add_subparsers(dest="data_command", required=True)
     data_sub.add_parser("show")
@@ -89,13 +94,23 @@ def main(argv: list[str] | None = None) -> int:
             from .data import fetch_sample, load_manifest
 
             result = load_manifest() if args.data_command == "show" else fetch_sample(args.output_dir, args.cache_dir)
+        elif args.command == "gateway":
+            from .nim_gateway import serve_from_env
+
+            serve_from_env(args.host, args.port)
+            return 0
         else:
-            settings = Settings.from_env()
-            if args.command == "doctor":
-                result, status = doctor(settings, live=args.live)
-                print(json.dumps(result, indent=2))
-                return status
-            result = getattr(tasks, args.stage)(settings, args.work_dir)
+            if args.command == "run" and args.stage == "extract" and args.derive_only:
+                from .extract import run_derive
+
+                result = run_derive(args.work_dir)
+            else:
+                settings = Settings.from_env()
+                if args.command == "doctor":
+                    result, status = doctor(settings, live=args.live)
+                    print(json.dumps(result, indent=2))
+                    return status
+                result = getattr(tasks, args.stage)(settings, args.work_dir)
         print(json.dumps(result, indent=2))
         return 0
     except NotImplementedError as exc:

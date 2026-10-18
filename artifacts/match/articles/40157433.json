@@ -1,0 +1,26 @@
+{
+  "page_id": "40157433",
+  "revision_id": "1294435005",
+  "title": "Populin",
+  "url": "https://en.wikipedia.org/wiki/Populin",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "410a156c1ce38b724c15b0ac7555df6f9a70e980a7cd695e23c40779abff88c1",
+    "source_row_idx": 79252,
+    "source_shard": "enwiki/data/enwiki_namespace_0_5.parquet",
+    "text_sha256": "b20884e70df54b862c52f11aa77c47fb975aa6a4d5914343582aac300d2756fc",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1294435005"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 169,
+  "text": "Populin is a glucoside occurring in the bark, buds and leaves of certain species of poplar. The alkaline cleavage of populin produces benzoate and the glucoside salicin."
+}

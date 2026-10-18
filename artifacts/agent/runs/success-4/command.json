@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/hermes/.venv/bin/hermes",
+    "chat",
+    "-q",
+    "Pick any stored comparison with challenge_search and report the token counts of both documents with citations.",
+    "--toolsets",
+    "nemotron_challenge"
+  ],
+  "returncode": 0,
+  "question": "Pick any stored comparison with challenge_search and report the token counts of both documents with citations.",
+  "expected": "citation"
+}

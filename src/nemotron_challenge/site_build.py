@@ -29,7 +29,9 @@ def tex_escape(text: str) -> str:
 
 
 def html_escape(text: str) -> str:
-    return html.escape(text, quote=True)
+    if text is None:
+        return ""
+    return html.escape(str(text), quote=True)
 
 
 def render_page_tex(page: dict[str, Any], checksum: str, volume_id: str) -> str:

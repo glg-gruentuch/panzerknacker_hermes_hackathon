@@ -1,0 +1,5 @@
+No matched pair in the stored comparisons covers Mount Etna.
+
+I searched the comparison store with the terms "Mount Etna," "Etna," "volcano," "Sicily," "Italy," and "mountain." Each returned "insufficient_evidence — No stored comparison matches the query terms." Since no entry exists, I cannot call challenge_compare or provide excerpts and citations from Britannica and Wikipedia for this topic.
+
+If you have a specific entry ID (e.g. britannica:...:train:...) for an Etna comparison, I can pass it to challenge_compare directly.

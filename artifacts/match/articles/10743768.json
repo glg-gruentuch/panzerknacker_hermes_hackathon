@@ -1,0 +1,26 @@
+{
+  "page_id": "10743768",
+  "revision_id": "1352497195",
+  "title": "Englos",
+  "url": "https://en.wikipedia.org/wiki/Englos",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "86bbf7cab491a2555b89e129d4fe82f4ee49fb8ac437d3dec936e83ed11c4b2b",
+    "source_row_idx": 17186,
+    "source_shard": "enwiki/data/enwiki_namespace_0_65.parquet",
+    "text_sha256": "1f663db97aee235dfa4b068a52125653d05c95a1887de8da5fe457a0e9615ce8",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1352497195"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 1220,
+  "text": "Englos (French pronunciation:; Dutch: Engelo) is a commune in the Nord department in northern France.\n\nEnglos is located west of Lille and about 10 km from the Belgian -French border. The village is surrounded by undeveloped land. The built up area is not continuous with the centre of Lille.\n\nThe name, Englos, is of uncertain origin but may have derive from the d'Englos family, which owned some of the land before the 15th century. Subsequently, it fell into the control of the Ghent (Belgium) government until around the time of the French Revolution. It had a church built by the Benedictine monk in the 16th century which was later owned by Jesuits. The church was designated a historic building in 1921.\n\nLater, the Duhamel family managed the largest farm in the village. The farm ceased production in 1969 when a commercial zone was established east of the village. Englos was a small agricultural village until the end of the 20th century. The development of the A25 highway contributed to its development as a residential community.\n\nThe area is known for its Auchan hypermarket and attached stores. There is an Opel car dealer across the road from the shopping centre. There is also a Novotel hotel in Englos."
+}

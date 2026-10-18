@@ -1,0 +1,52 @@
+{
+  "id": "chatcmpl-b38dbd617c8026cb",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\"claims\": [{\"quote\": \"ERIDANUS, in altonomy.\", \"type\": \"definition\"}]}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null,
+        "reasoning_content": "The user wants me to extract atomic factual claims from the given text and reply with a JSON object.\n\nText: \"ERIDANUS, in altonomy. See Vol. I. p. 487.\"\n\nWait, \"altonomy\" might be \"astronomy\" but it says \"altonomy\" in the text. Let me look carefully.\n\n\"ERIDANUS, in altonomy. See Vol. I. p. 487.\"\n\nClaims:\n1. \"ERIDANUS\" is related to \"altonomy\" (likely astronomy but text says altonomy).\n2. Reference to Vol. I. p. 487.\n\nBut the rules say: Do not add claims the text does not state. One claim per sentence or clause.\n\nPossible claims:\n- \"ERIDANUS, in altonomy.\" - This states Eridanus is in altonomy.\n- \"See Vol. I. p. 487.\" - This is a reference, not really a factual claim about the world, but it states a location/reference.\n\nHowever, the text is very short. Let me see if I can extract up to 8 claims, but there's really only 1-2 sentences.\n\nQuote must be exact substring.\n\nSentence 1: \"ERIDANUS, in altonomy.\"\nSentence 2: \"See Vol. I. p. 487.\"\n\nTypes: definition, quantity, place, date, cause, practice.\n\n\"ERIDANUS, in altonomy.\" could be a definition or practice? It's an encyclopedia entry. Maybe \"definition\"? Or just factual claim. But I have to choose from the given types. \"definition\" seems appropriate for an encyclopedia entry stating what something is.\n\n\"See Vol. I. p. 487.\" - This is a place? Or reference? Not really fitting well. Maybe omit it if it doesn't fit the types. But the user wants claims. The types are limited. A cross-reference might not be a factual claim about reality.\n\nActually, the text says \"in altonomy\" which is likely a typo for \"astronomy\" in the source, but I must treat the text as given.\n\nLet me extract:\n1. Quote: \"ERIDANUS, in altonomy.\" type: definition (it's defining where Eridanus is / what it pertains to).\n\nCan I extract more? \"Vol. I.\" and \"p. 487\" are quantities/places? \"Vol. I.\" could be a volume number. \"p. 487\" is a page number. But the sentence \"See Vol. I. p. 487.\" is an instruction, not a factual claim about Eridanus.\n\nGiven the constraints, I should probably only include the clear factual claim.\n\nWait, the text might be OCR'd from Britannica. \"ERIDANUS, in astronomy.\" But it says \"altonomy\". I must copy exactly.\n\nLet's provide one claim.\n\nJSON:\n{\"claims\": [{\"quote\": \"ERIDANUS, in altonomy.\", \"type\": \"definition\", \"value\": 0, \"unit\": \"\"}]}\n\nWait, rule: \"value\" and \"unit\" only for type \"quantity\"; omit them otherwise. So for definition, omit value and unit.\n\nSo:\n{\"claims\": [{\"quote\": \"ERIDANUS, in altonomy.\", \"type\": \"definition\"}]}\n\nIs that all? The user said \"up to 8\". It's okay to have fewer.\n\nBut maybe I can also extract the reference as a place? \"Vol. I. p. 487.\" as a place? That seems like a stretch. The instruction says \"Do not add claims the text does not state.\" The text states \"See Vol. I. p. 487.\" which is a directive, not a factual claim.\n\nI'll stick with one claim.\n\nDouble check exact substring: \"ERIDANUS, in altonomy.\" includes the period? The text has \"ERIDANUS, in altonomy. See...\" So yes, the substring \"ERIDANUS, in altonomy.\" exists.\n\nType: definition.\n\nFinal JSON only."
+      },
+      "stop_reason": null,
+      "token_ids": null,
+      "routed_experts": null
+    }
+  ],
+  "created": 1792332660,
+  "model": "nvidia/Nemotron-3.5-Super-VL",
+  "object": "chat.completion",
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "vllm-0.1.dev1+g1bed5fc81-tp2-9705eecb",
+  "usage": {
+    "completion_tokens": 927,
+    "prompt_tokens": 201,
+    "total_tokens": 1128,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 899,
+      "rejected_prediction_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0,
+      "created_cache_tokens": 0,
+      "multimodal_tokens": null
+    }
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "prompt_text": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null,
+  "metrics": null
+}
