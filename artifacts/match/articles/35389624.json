@@ -1,0 +1,26 @@
+{
+  "page_id": "35389624",
+  "revision_id": "1308094613",
+  "title": "XVII Corps (German Empire)",
+  "url": "https://en.wikipedia.org/wiki/XVII_Corps_(German_Empire)",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "ffc5856c64bf1c31a0ed219624f6ef4a28347e774241d9d2d32b453c7b86e006",
+    "source_row_idx": 79164,
+    "source_shard": "enwiki/data/enwiki_namespace_0_23.parquet",
+    "text_sha256": "d5a0b7f334d4f7e8a6ffec36bd53414e93cef7d6e5d29df67e885316a8e1ab03",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1308094613"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 3527,
+  "text": "The XVII Army Corps / XVII AK (German: XVII. Armee-Korps) was a corps level command of the German Army before and during World War I.\n\nAs the German Army expanded in the latter part of the 19th century, the XVII Army Corps was set up on 1 April 1890 in Danzig as the Generalkommando (headquarters) for West Prussia. It took command of two divisions formed on the same date: 35th Division and 36th Division. It was assigned to the I Army Inspectorate, which became the 8th Army at the start of the First World War.\n\nXVII Corps served on the Eastern Front from the start of the war. It was still in existence at the end of the war in the 7th Army, Heeresgruppe Deutscher Kronprinz on the Western Front. In 1919, the corps served with the Grenzschutz Ost (border protection east) in Danzig, West Prussia.\n\nBy a law of 27 January 1890, it was decided to separate the Province of West Prussia from the Province of East Prussia in military affairs. It stipulated that, from 1 April 1890, the entire power of the Army of the German Empire should be 20 army corps (Guards, I - XVII, I and II Bavarian).\n\nThe All-highest Cabinet Order (Allerhöchste Kabinettsorder, AKO) of 1 February 1890 authorised the formation of the XVI and XVII Army Corps. The latter was assigned to the I Army Inspectorate and included the territory of the Landwehr districts Schlawe, Stolp, Konitz, Thorn, Graudenz, Danzig, Preußisch Stargard, Neustadt, Osterode, Deutsch-Eylau and Marienburg.\n\nLater, the districts of Osterode, Deutsch-Eylau and Marienburg would be reassigned to the XX Corps.\n\nThe 25 peacetime Corps of the German Army (Guards, I - XXI, I - III Bavarian) had a reasonably standardised organisation. Each consisted of two divisions with usually two infantry brigades, one field artillery brigade and a cavalry brigade each. Each brigade normally consisted of two regiments of the appropriate type, so each Corps normally commanded 8 infantry, 4 field artillery and 4 cavalry regiments. There were exceptions to this rule:\n\nV, VI, VII, IX and XIV Corps each had a 5th infantry brigade (so 10 infantry regiments)\n\nII, XIII, XVIII and XXI Corps had a 9th infantry regiment\n\nI, VI and XVI Corps had a 3rd cavalry brigade (so 6 cavalry regiments)\n\nthe Guards Corps had 11 infantry regiments (in 5 brigades) and 8 cavalry regiments (in 4 brigades).\n\nEach Corps also directly controlled a number of other units. This could include one or more\n\nFoot Artillery Regiment\n\nJäger Battalion\n\nPioneer Battalion\n\nTrain Battalion\n\nOn mobilization on 2 August 1914, the Corps was restructured. The Leib Hussar Brigade was withdrawn to form part of the 2nd Cavalry Division and the 35th Cavalry Brigade was broken up and its regiments assigned to the divisions as reconnaissance units. Divisions received engineer companies and other support units from the Corps headquarters. In summary, XVII Corps mobilised with 25 infantry battalions, 9 machine gun companies (54 machine guns), 8 cavalry squadrons, 24 field artillery batteries (144 guns), 4 heavy artillery batteries (16 guns), 3 pioneer companies and an aviation detachment.\n\nOn mobilisation, XVII Corps was assigned to the 8th Army to defend East Prussia, while the rest of the Army executed the Schlieffen Plan offensive in August 1914. It took part in the battles of Gumbinnen, Tannenberg and 1st Masurian Lakes. Immediately after the latter, it joined the 9th Army in Lower Silesia, where it fought at the Battle of the Vistula River.\n\nThe XVII Corps had the following commanders during its existence:"
+}

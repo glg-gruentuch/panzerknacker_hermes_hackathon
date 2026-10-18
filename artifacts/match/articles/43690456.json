@@ -1,0 +1,26 @@
+{
+  "page_id": "43690456",
+  "revision_id": "1344420862",
+  "title": "Christianismi Restitutio",
+  "url": "https://en.wikipedia.org/wiki/Christianismi_Restitutio",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "e58eec2ce1e24d1b1daed4a5e5e166e4830e1fe87799033016ab5342f3687842",
+    "source_row_idx": 49828,
+    "source_shard": "enwiki/data/enwiki_namespace_0_16.parquet",
+    "text_sha256": "7e3108371664e7da05b07861bba57feaccb06b9a3213446629baff73a590f125",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1344420862"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 2287,
+  "text": "Christianismi Restitutio (The Restoration of Christianity) was a book published anonymously in a clandestine workshop in 1553 by Michael Servetus, after it had been rejected by a publisher in Basel. It rejected the Christian doctrine of the Trinity and the concept of predestination, which had both been considered fundamental since the time of St. Augustine and emphasized by John Calvin in his magnum opus, Institutio Christianae Religionis. Servetus argued that God condemns no one who does not condemn himself through thought, word or deed. It also contained, incidentally and by way of illustration, groundbreaking views on pulmonary circulation, a discovery Servetus made independent of the Arab Muslim physician Ibn Al Nafis, and one which challenged the incorrect teachings of Galen.\n\nAfter Jean Frellon, a Lyon bookseller, sent a copy of Christianismi Restitutio to the theologian John Calvin, Servetus was arrested by the Inquisition in Vienne, but he managed to escape from prison. With the continued help of John Calvin —whose doctrines had been criticized in letters published in the book and who thought him a delirious braggart —Servetus was later captured in Geneva and found guilty of spreading heresies. On October 27, 1553, he was burned at the stake in Geneva.\n\nAlmost all copies of his book were burned shortly after its publication, although some copies survived and are currently kept in Bibliothèque nationale de France, Edinburgh University Library, Austrian National Library and the Royal Library of Belgium.\n\nServetus' discussion of the pulmonary circulation in Christianismi Restitutio in the middle of the 16th century is often recognized as the most accurate and complete description at that time. However, it is conjectured that his work was based on the work of Ibn al-Nafis (1213-1288) who was the first to accurately describe the human pulmonary circulation and theorize the existence of capillary networks, some 300 years earlier, though there is little evidence to substantiate this definitively. Since the information on pulmonary circulation was embedded in his theological work, it was suppressed, and the function of the pulmonary circulation was forgotten until published by Sir William Harvey seventy-five years later in his work De Motu Cordis."
+}

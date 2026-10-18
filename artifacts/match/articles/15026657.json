@@ -1,0 +1,26 @@
+{
+  "page_id": "15026657",
+  "revision_id": "1333087359",
+  "title": "Sidewalk cafe",
+  "url": "https://en.wikipedia.org/wiki/Sidewalk_cafe",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "7ee8776102611461cf56b645118eb884e9eb89aecd2870b94684ef1eef393bf0",
+    "source_row_idx": 102003,
+    "source_shard": "enwiki/data/enwiki_namespace_0_12.parquet",
+    "text_sha256": "56c2f203fd0ab164f5f955cc796cddb9a66b38c3c8415e61de51c5d2c7963449",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1333087359"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 2552,
+  "text": "A sidewalk café or pavement café is a waiter-served portion of an eating or drinking place located on or adjacent to a public sidewalk.\n\nMost sidewalk cafés contain removable tables and chairs, and many have railings. Both food and drink are served.\n\nSidewalk cafés and al fresco dining are common across Europe, forming an important part of street life in many countries such as Spain, Greece, France and Italy. Multiple sidewalk cafes often share a common plaza or court. The Parisian café, which typically has both indoor and al fresco seating, is a renown example of the form.\n\nNew York City regulations specify the places sidewalk where cafés (as defined by the American Planning Association based upon the New York City planning regulations) can exist, their construction, and what parts of a sidewalk they can occupy. Proprietors pay a license fee, which is effectively rent paid to the city for the use of the sidewalk.\n\nFrom 1988 these regulations were a zoning resolution of the New York City Department of City Planning. The 1988 resolution prohibited sidewalk cafés in residential areas and on major thoroughfares, permitting them in malls and (conditionally) \"in Historic Districts or in designated Landmark Buildings\". The stated purposes are to balance the café proprietors' interests against the needs of pedestrians; to conserve the value of land; and to preserve the characters of neighborhoods.\n\nUntil 2003 the process for obtaining a license for a sidewalk café involved so many city agencies and such a long wait time that the law was regularly flouted, with restaurateurs considering it cheaper to just erect sidewalk cafés and pay the fines after the fact. New approval processes were adopted in that year, shortening the process to 140 days and making it the sole responsibility of the city's Department of Consumer Affairs.\n\nThe COVID-19 pandemic in New York City forced restaurants to close their dining rooms. They received emergency permission to operate al fresco dining areas in streets. By September 2020, 10,600 restaurants had enrolled in the city's outdoor dining program, compared to just 1,023 sidewalk cafés that existed before the pandemic.\n\nMany restaurants installed outdoor dining enclosures called bubble pods to promote social distancing. These hemispherical or igloo shaped structures became common during the pandemic. They were criticized for poor ventilation and for safety concerns but some experts believe that if properly ventilated and cleaned between diners these enclosures could be considered safe."
+}

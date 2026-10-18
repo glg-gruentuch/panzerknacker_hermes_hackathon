@@ -1,0 +1,26 @@
+{
+  "page_id": "3385544",
+  "revision_id": "1166615995",
+  "title": "Siliceous rock",
+  "url": "https://en.wikipedia.org/wiki/Siliceous_rock",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "7ee8776102611461cf56b645118eb884e9eb89aecd2870b94684ef1eef393bf0",
+    "source_row_idx": 92149,
+    "source_shard": "enwiki/data/enwiki_namespace_0_12.parquet",
+    "text_sha256": "b2ab82bca7338cedc9ca7932124161c21cf395942c61eb08453ada6458d29898",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1166615995"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 270,
+  "text": "Siliceous rocks are sedimentary rocks that have silica (SiO) as the principal constituent. The most common siliceous rock is chert; other types include diatomite. They commonly form from silica-secreting organisms such as radiolarians, diatoms, or some types of sponges."
+}

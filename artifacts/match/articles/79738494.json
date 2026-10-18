@@ -1,0 +1,26 @@
+{
+  "page_id": "79738494",
+  "revision_id": "1352338994",
+  "title": "1917 Wisconsin Supreme Court election",
+  "url": "https://en.wikipedia.org/wiki/1917_Wisconsin_Supreme_Court_election",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "c50a7e38e1a11a53f6d8dbe73a403145ce937ad5dbf1c14bcf0850f855e584bc",
+    "source_row_idx": 50628,
+    "source_shard": "enwiki/data/enwiki_namespace_0_62.parquet",
+    "text_sha256": "74e09540bc6de3a63a4dbdd217a8e548567dbeee6afb8c63d73c05e67d984aa7",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1352338994"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 1550,
+  "text": "The 1917 Wisconsin Supreme Court election was held on Tuesday, April 3, 1907, to elect a justice to the Wisconsin Supreme Court for a ten-year term. Walter C. Owen (the attorney general of Wisconsin) defeated incumbent justice Roujet D. Marshall. This was only the third instance in the state's history in which an incumbent Supreme Court justice lost an election. Marshall's defeat was largely attributed to a controversial ruling he authored striking down the state's forestry law.\n\nMarshall had held his seat since 1895, when Governor William Upham appointed him to fill a vacancy on the court. He was thereafter elected to the seat three times, first in the special election of 1896, being re-elected in the regular elections held in 1897 and 1907. He faced no opposition in those elections.\n\nOwen defeated Marshall. This was only the third instance in which an incumbent justice lost an election to the state's supreme court (the previous instances being in 1855 and 1908). As of 2026 this has only occurred five further times (in 1947, 1958, 1967, 2008, and 2020).\n\nMarshall's defeat has been largely attributed to a then-controversial 1915 majority opinion that he had authored regarding the state's Forestry Law (a law championed by the state's progressive). Marshall had found that the violated state's constitution. The law had established a state forest preserve and created a state commission tasked with conservation of lands that had been cleared by lumbering. Contrarily, as attorney general Owen had defended the law before the court."
+}

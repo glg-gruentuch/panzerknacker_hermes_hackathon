@@ -1,0 +1,26 @@
+{
+  "page_id": "2605237",
+  "revision_id": "1338199480",
+  "title": "Eridanos (Athens)",
+  "url": "https://en.wikipedia.org/wiki/Eridanos_(Athens)",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "d639c0231da579b1bebda2db063593e5ff50b3dacea8a45ded9f0c09cb81be84",
+    "source_row_idx": 31379,
+    "source_shard": "enwiki/data/enwiki_namespace_0_13.parquet",
+    "text_sha256": "ad0db72ca4029e1e82b8adc3a7f75f85a5543857e58787a5d7345559bdb43550",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1338199480"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 1652,
+  "text": "The Eridanos / ə ˈ r ɪ d ə ˌ n ɒ s / or Eridanus (/ ə ˈ r ɪ d ə n ə s /; Ancient Greek: Ἠριδανός) was a river in Athens mentioned in Greek mythology and historiography.\n\nEridanus was the 'deep-swirling' river-god son of the Titans Oceanus and his sister-wife Tethys. He was the father of Zeuxippe, mother of the Argonauts Butes and Eribotes by Teleon.\n\nEridanus may be the same or different from another river-god of the same name.\n\nEridanus was the small stream that flowed from a source in the foothills of the Lykabettos, through the Agora of ancient Athens in Greece to the archaeological site of the Kerameikos, where its bed is still visible. In this area lives a population of Greek tortoise.\n\nIts course has been for the most part covered since ancient times, and was only visible outside the ancient walls in the district of Kerameikos.\n\nThe river was rediscovered during the excavations for the Athens Metro subway in the late 1990s, and its waters caused considerable technical problems at times. Because of the Metro works, its seasonal flow through the Kerameikos cemetery was disrupted, as the waters were apparently and inadvertently redirected to some new underground path.\n\nAs of April 2007, the stream of the river, as it flows through Monastiraki Square, has been excavated. It had been covered with a brickwork tunnel since classical times, and the brickwork had been repaired at least twice, in the imperial Roman and early Byzantine eras. The brick tunnel now forms part of a small open-air museum at Monastiraki Square, from Ermou to Ifaistou, next to the Metro station, and the waters of the Eridanos are from inside the tunnel."
+}

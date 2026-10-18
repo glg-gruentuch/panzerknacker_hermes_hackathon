@@ -1,0 +1,156 @@
+{
+  "threshold": -5.5,
+  "sample_size": 20,
+  "label_source": "agent",
+  "note": "human_label in calibration.csv is empty for the team to override; this report uses agent labels judged against the stored article text. Fragments (no headword on the page) dominate the incorrect rows: their queries come from mid-entry text only. The API reports per-pair strength bands: strong at >= -4.5, partial at >= -5.5.",
+  "labels": {
+    "correct": 7,
+    "partial": 2,
+    "incorrect": 11
+  },
+  "precision": 0.35,
+  "precision_headwords": 0.667,
+  "precision_fragments": 0.091,
+  "rows": [
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:217#0000",
+      "fragment": true,
+      "match_title": "The Refreshments",
+      "rerank_logit": -5.47,
+      "agent_label": "incorrect"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:261#0000",
+      "fragment": true,
+      "match_title": "Hymenoptera in the 10th edition of Systema Naturae",
+      "rerank_logit": -5.44,
+      "agent_label": "partial"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:523#0000",
+      "fragment": true,
+      "match_title": "Englos",
+      "rerank_logit": 6.07,
+      "agent_label": "correct"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:681#0000",
+      "fragment": true,
+      "match_title": "LIF",
+      "rerank_logit": -4.67,
+      "agent_label": "incorrect"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:851#0000",
+      "fragment": true,
+      "match_title": "Strong convergence",
+      "rerank_logit": -3.65,
+      "agent_label": "incorrect"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1017#0007",
+      "fragment": false,
+      "match_title": "Aa (Meuse)",
+      "rerank_logit": -3.34,
+      "agent_label": "partial"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1102#0000",
+      "fragment": true,
+      "match_title": "De tous biens plaine",
+      "rerank_logit": -4.72,
+      "agent_label": "incorrect"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1214#0003",
+      "fragment": false,
+      "match_title": "Charon's obol",
+      "rerank_logit": -5.22,
+      "agent_label": "correct"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1344#0000",
+      "fragment": true,
+      "match_title": "Hippocrates, father of Peisistratos",
+      "rerank_logit": -4.76,
+      "agent_label": "incorrect"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1614#0002",
+      "fragment": false,
+      "match_title": "Thistle",
+      "rerank_logit": -3.87,
+      "agent_label": "correct"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1765#0000",
+      "fragment": true,
+      "match_title": "Transmigration",
+      "rerank_logit": -5.49,
+      "agent_label": "incorrect"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1845#0000",
+      "fragment": true,
+      "match_title": "XVII Corps (German Empire)",
+      "rerank_logit": -1.8,
+      "agent_label": "incorrect"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2001#0003",
+      "fragment": false,
+      "match_title": "Silex",
+      "rerank_logit": -2.46,
+      "agent_label": "correct"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2155#0000",
+      "fragment": true,
+      "match_title": "Jack's Reef pentagonal projectile point",
+      "rerank_logit": -4.75,
+      "agent_label": "incorrect"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2171#0014",
+      "fragment": false,
+      "match_title": "Athanasia",
+      "rerank_logit": -4.37,
+      "agent_label": "correct"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2250#0005",
+      "fragment": false,
+      "match_title": "Buzzard",
+      "rerank_logit": -5.15,
+      "agent_label": "correct"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2250#0014",
+      "fragment": false,
+      "match_title": "BZO",
+      "rerank_logit": -4.79,
+      "agent_label": "incorrect"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2464#0010",
+      "fragment": false,
+      "match_title": "Nautical cable",
+      "rerank_logit": -3.82,
+      "agent_label": "correct"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2473#0012",
+      "fragment": false,
+      "match_title": "Eridanos (Athens)",
+      "rerank_logit": -4.16,
+      "agent_label": "incorrect"
+    },
+    {
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:258#0000",
+      "fragment": true,
+      "match_title": "Finali (surname)",
+      "rerank_logit": -5.21,
+      "agent_label": "incorrect"
+    }
+  ]
+}

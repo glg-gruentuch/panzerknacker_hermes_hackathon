@@ -1,0 +1,26 @@
+{
+  "page_id": "152661",
+  "revision_id": "1315100511",
+  "title": "Nazareth (disambiguation)",
+  "url": "https://en.wikipedia.org/wiki/Nazareth_(disambiguation)",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "0710c536dc264c461ca78f84cfccd3a76e5a097537b128227897481154409b19",
+    "source_row_idx": 17871,
+    "source_shard": "enwiki/data/enwiki_namespace_0_38.parquet",
+    "text_sha256": "6207740345a21692a8d48911b342bb7c10b9cb1386f438aa1ed985d21a1c6039",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1315100511"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 1090,
+  "text": "Nazareth is a city in Israel, described in the New Testament as the childhood home of Jesus.\n\nNazareth may also refer to:\n\nNazareth (surname)\n\nNazareth, Ethiopia, now Adama\n\nNazareth, Lesotho\n\nNazareth, Tamil Nadu, India\n\nRoman Catholic Archbishopric of Nazareth, a former residential metropolitan see, and successor Latin and a Maronite titular sees\n\nNazareth, Belgium\n\nNazareth in Barletta, Italy, home of the Archbishops of Nazareth in exile from 1327\n\nNazareth, Kentucky, United States\n\nNazareth, Pennsylvania, United States\n\nNazareth Historic District\n\nLower Nazareth Township, Pennsylvania\n\nUpper Nazareth Township, Pennsylvania\n\nNazareth, Texas, United States\n\nNazareth, U.S. Virgin Islands\n\nNazareth (Asunción), Paraguay\n\nNazareth, Pentecost Island, Vanuatu\n\nNazareth, Peru\n\nNazareth (band), a Scottish rock band\n\nNazareth (album), 1971\n\nNazareth Speedway, a former auto racing facility near Nazareth, Pennsylvania, U.S.\n\nNazareth Bank, a large submerged bank in the Indian Ocean\n\n\"Nazareth\", short for Jésus de Nazareth (song) by Charles Gounod\n\nWaters Of Nazareth, song by Justice"
+}

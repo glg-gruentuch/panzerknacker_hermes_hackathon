@@ -1,0 +1,26 @@
+{
+  "page_id": "3653435",
+  "revision_id": "1294011027",
+  "title": "Gaelic Storm (album)",
+  "url": "https://en.wikipedia.org/wiki/Gaelic_Storm_(album)",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "a67b6526c068d50f9f1abe41e18d572b4ead5ff5b08784da9143555ee2e4e957",
+    "source_row_idx": 125981,
+    "source_shard": "enwiki/data/enwiki_namespace_0_4.parquet",
+    "text_sha256": "38c4b4e105eb6d285664ffa4544db93a3fb00ed726467f2ad2f3ed8567547a17",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1294011027"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 1239,
+  "text": "Gaelic Storm is a 1998 album by Gaelic Storm.\n\n\" The Hills of Connemara \"\n\n\"Bonnie Ship the Diamond / Tamlinn\"\n\n\"The Farmer's Frolic\"\n\n\" Johnny Jump Up / Morrison's Jig\"\n\n\"The Storm\"\n\n\" Tell Me Ma \"\n\n\" Rocky Road to Dublin / Kid On The Mountain\"\n\n\"Sight Of Land\"\n\n\" The Leaving of Liverpool \"\n\n\"Sammy's Fancy\"\n\n\"McCloud's Reel / Whup Jamboree\"\n\n\"The Road To Liskeard\"\n\n\"Hills of Connemara\" may be the song most recognizable, as it is the song that Rose and Jack dance to in the 1997 film Titanic. Gaelic Storm is the actual band seen playing for the steerage passengers on the ship. \"Bonnie Ship the Diamond\" has a jam at the end typical of ceilidh type Irish music. \"The Farmer's Frolic\", \"The Storm\" (the only original composition on the CD), \"Sight of Land\", \"Sammy's Fancy\" and \"The Road to Liskeard\" are instrumentals on the CD. The music in \"Sight of Land\" is fitting for the title the band has chosen to play the pieces. The end of the song brings to mind the jumping for joy excitement immigrants must have felt when pulling into the harbor in NYC. \"Johnny Jump Up\" and \"The Leaving of Liverpool\" are typical of rousing pub sing-alongs. \"Tell \"Me Ma\" and \"Rocky Road to Dublin\" are recognizable standards.\n\nGaelic Storm at AllMusic"
+}

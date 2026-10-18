@@ -1,0 +1,26 @@
+{
+  "page_id": "7448041",
+  "revision_id": "1137093108",
+  "title": "Oregonite",
+  "url": "https://en.wikipedia.org/wiki/Oregonite",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "a37cd1a7963d2615a61cfc75852f62baab05b49e81a4818ad6a1003a71793454",
+    "source_row_idx": 18496,
+    "source_shard": "enwiki/data/enwiki_namespace_0_22.parquet",
+    "text_sha256": "5cc8808df0254323f557da40957242346423aaa0d9497a1ed4f228b41fa4ce03",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1137093108"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 558,
+  "text": "Oregonite, Ni Fe As is a nickel iron arsenide mineral first described from Josephine Creek, Oregon, United States.\n\nOregonite crystallises in the hexagonal crystal system and has a Mohs hardness of 5.\n\nOregonite is known, apart from its type locality, from the Chirnaisky Massif, Russia, associated with hydrothermal nickel minerals (millerite, heazelwoodite) in a metamorphosed ultramafic; from the Skouriatissa mine, Cyprus, associated with VMS mineralisation; and from the Kidd Mine, Timmins, Ontario, Canada within serpentinite -hosted chromite deposits."
+}

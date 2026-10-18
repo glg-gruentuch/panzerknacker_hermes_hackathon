@@ -1,0 +1,26 @@
+{
+  "page_id": "24594939",
+  "revision_id": "1302690796",
+  "title": "Jack's Reef pentagonal projectile point",
+  "url": "https://en.wikipedia.org/wiki/Jack%27s_Reef_pentagonal_projectile_point",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "0bc1ee9e9d08835ce06949b29bac55f866c09308371256f12cc297da89312464",
+    "source_row_idx": 44585,
+    "source_shard": "enwiki/data/enwiki_namespace_0_6.parquet",
+    "text_sha256": "6d23c3aafbc2578dcaab1896a08dea9e5d6cfe69f9449a54bb83f629ebd9e31f",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1302690796"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 1384,
+  "text": "Jacks Reef Pentagonal is the name for small (1\" to 1 ½\"), broad projectiles and specialized knives. They were named by William A. Ritchie based on examples recovered from the Point Peninsula Jack's Reef archaeological site in Onondaga County, New York. The projectiles have mostly been dated to within a few hundred years of 900 AD, in the early era of the Owasco culture.\n\nThe knives are thin, five-sided points with sharp tips. Jack's Reef Corner Notched and Jack's Reef Pentagonal are related and contemporary points, with The Corner Notched points rarer than the Pentagonal ones. The hafting areas are usually contracted, with slightly concave or straight bases. The overall outline of the point is typically pentagonal, with straight sides. The blades were in use during the Late Woodland period. The Jack's Reef Pentagonal points also appear in the Brewerton complex (Middle Archaic) in a much thicker, cruder, and larger form.\n\nA few smaller but crude examples appear in the Point Peninsula 2 complex (later Middle Woodland). They were also present in the Intrusive Mound Culture graves, especially at the Mound City Hopewell group in Ross County, Ohio. Blade distribution runs from Missouri to the west, southward to Alabama, and eastward to the coast, then northward through New York and back west through Illinois. Examples have also been found in Pennsylvania and Virginia."
+}

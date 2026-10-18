@@ -1,0 +1,26 @@
+{
+  "page_id": "8111588",
+  "revision_id": "1259904971",
+  "title": "Lansing (disambiguation)",
+  "url": "https://en.wikipedia.org/wiki/Lansing_(disambiguation)",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "d639c0231da579b1bebda2db063593e5ff50b3dacea8a45ded9f0c09cb81be84",
+    "source_row_idx": 39715,
+    "source_shard": "enwiki/data/enwiki_namespace_0_13.parquet",
+    "text_sha256": "191222dddd1a5f4eace5654acb5eaeba5eca2e997eb3a9f4e4f4fbc612fe11d6",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1259904971"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 1098,
+  "text": "Lansing is the capital of the U.S. state of Michigan.\n\nLansing may also refer to:\n\nLansing, Florida, an unincorporated community\n\nLansing, Illinois, a village\n\nLansing, Iowa, a city in Lansing Township\n\nLansing, Kansas, a city\n\nLansing, New York, a town\n\nLansing (village), New York, a village in the town\n\nLansing, North Carolina, a town\n\nLansing, Ohio, an unincorporated community\n\nLansing, Salem, Oregon, a neighborhood of Salem\n\nLansing, West Virginia, an unincorporated community\n\nLansing Township, Allamakee County, Iowa\n\nLansing Township, Mower County, Minnesota\n\nLansing, Michigan the capital of Michigan\n\nLansing Charter Township, Michigan\n\nLake Lansing, Michigan\n\nRoman Catholic Diocese of Lansing, Michigan\n\nLansing, Toronto, Ontario, a neighbourhood\n\nformer name of Willowdale, Toronto\n\nLansing (name)\n\nUSS Lansing (DE-388), a U.S. Navy destroyer escort named after William Henry Lansing\n\nAltec Lansing, a line of audio products\n\nLansing Bagnall, British former forklift manufacturer\n\nLansing Oldsmobile, an American football team (1919–1920, returned in 1922 as the Durants, 1922–1923)"
+}

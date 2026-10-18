@@ -1,0 +1,26 @@
+{
+  "page_id": "66069903",
+  "revision_id": "1325895141",
+  "title": "Hypochondriac (disambiguation)",
+  "url": "https://en.wikipedia.org/wiki/Hypochondriac_(disambiguation)",
+  "provenance": {
+    "dataset": "wikimedia/structured-wikipedia",
+    "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+    "dataset_url": "https://huggingface.co/datasets/wikimedia/structured-wikipedia/tree/417c267bb457fa645c22eb3b5c77764963194c70",
+    "source_key": "cacae19fb31422686a69ff2a03b924132b6a1dcf77399192890f0e114e1d7f1f",
+    "source_row_idx": 88111,
+    "source_shard": "enwiki/data/enwiki_namespace_0_8.parquet",
+    "text_sha256": "f995135299cc67e810cb9cc09fa8ec9ae57eb41b6317a996491394777f70d5ae",
+    "extraction": "sections",
+    "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1325895141"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikipedia contributors",
+    "notice": "Article text is extracted from the cited snapshot; excerpts and pagination change its presentation."
+  },
+  "total_chars": 404,
+  "text": "Hypochondriac may refer to:\n\nHypochondriac (The Frights album), 2018\n\nHypochondriac (Brakence album), 2022\n\n\"Hypochondriac\", a 2020 song by Fenne Lily\n\nHypochondriac (film), a 1979 Italian comedy film\n\nHypochondriasis, a condition in which a person is excessively and unduly worried about having a serious illness.\n\nHypochondrium, an anatomical term referring to regions in the upper third of the abdomen"
+}
