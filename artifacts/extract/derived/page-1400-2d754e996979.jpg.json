@@ -2,5 +2,41 @@
   "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1400",
   "filename": "page-1400-2d754e996979.jpg",
   "page_header": "",
-  "entries": []
+  "entries": [
+    {
+      "heading": null,
+      "heading_class": null,
+      "fragment": true,
+      "subsections": [],
+      "blocks": [
+        {
+          "class": null,
+          "text": "MIDWIFERY PLATE CCCXLVII.",
+          "bbox": null
+        },
+        {
+          "class": null,
+          "text": "Fig. 1.",
+          "bbox": null
+        },
+        {
+          "class": null,
+          "text": "Fig. 2.",
+          "bbox": null
+        },
+        {
+          "class": "Picture",
+          "text": "Fig. 3.",
+          "bbox": null
+        }
+      ],
+      "page_header": "",
+      "body": "MIDWIFERY PLATE CCCXLVII.\nFig. 1.\nFig. 2.\nFig. 3.",
+      "continued": true,
+      "entry_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1400#0000",
+      "filename": "page-1400-2d754e996979.jpg",
+      "scan_sha256": "2d754e996979c6641f694d6cedb375295f8581717f69010bf705075f8dd5de9a",
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1400"
+    }
+  ]
 }

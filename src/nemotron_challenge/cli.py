@@ -4,8 +4,8 @@ from __future__ import annotations
 import argparse
 import importlib.metadata
 import json
-from pathlib import Path
 import sys
+from pathlib import Path
 from typing import Any
 
 from . import tasks
@@ -69,6 +69,8 @@ def parser() -> argparse.ArgumentParser:
     run = sub.add_parser("run", help="run a team milestone")
     run.add_argument("stage", choices=tasks.STAGES)
     run.add_argument("--work-dir", type=Path, default=Path("artifacts"))
+    run.add_argument("--derive-only", action="store_true",
+                     help="extract only: re-derive segmentation from saved raw replies without model calls")
     data = sub.add_parser("data", help="inspect or fetch the pinned source scans")
     data_sub = data.add_subparsers(dest="data_command", required=True)
     data_sub.add_parser("show")
@@ -98,12 +100,17 @@ def main(argv: list[str] | None = None) -> int:
             serve_from_env(args.host, args.port)
             return 0
         else:
-            settings = Settings.from_env()
-            if args.command == "doctor":
-                result, status = doctor(settings, live=args.live)
-                print(json.dumps(result, indent=2))
-                return status
-            result = getattr(tasks, args.stage)(settings, args.work_dir)
+            if args.command == "run" and args.stage == "extract" and args.derive_only:
+                from .extract import run_derive
+
+                result = run_derive(args.work_dir)
+            else:
+                settings = Settings.from_env()
+                if args.command == "doctor":
+                    result, status = doctor(settings, live=args.live)
+                    print(json.dumps(result, indent=2))
+                    return status
+                result = getattr(tasks, args.stage)(settings, args.work_dir)
         print(json.dumps(result, indent=2))
         return 0
     except NotImplementedError as exc:

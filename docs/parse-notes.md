@@ -29,17 +29,28 @@ flattened list used by the match stage.
 
 ## Segmentation rules (decided 2026-10-18)
 
-1. `Title` and `Section-header` blocks start an entry.
-2. `Text`, `List-item`, and `Caption` blocks attach to the entry above them.
-3. `Page-header`, `Page-footer`, and `Page-number` blocks stay out of the
-   entry text. The running head is kept per page.
-4. A page that opens with text and no heading starts a continuation entry
-   named after the running head.
-5. Markdown artifacts inside headings (`#`, `**`, `_`, trailing `, :`) are
+1. A `Text` block that opens with an upper-case headword starts an entry. A
+   headword holds two or more capital letters; hyphens and spaces are
+   allowed. It is followed by a comma or a period. Example: `ETNA, or Mount
+   Etna, ...`. The headword becomes the entry heading.
+2. `Title` and `Section-header` blocks are sub-section or running-head
+   material. They never start an entry. They merge into the current parent
+   entry as `subsections`.
+3. `Page-header` blocks are running heads. They stay in `page_header` only.
+4. `Text`, `List-item`, `Caption`, and other content blocks attach to the
+   entry above them.
+5. Text before the first headword on a page becomes one entry with
+   `fragment: true` and `heading: null`. The text continues an entry that
+   started on an earlier page.
+6. `Page-footer` and `Page-number` blocks stay out of the entry text.
+7. Markdown artifacts inside headings (`#`, `**`, `_`, trailing `, :`) are
    cleaned.
-6. Continuation joining happens only across page boundaries and only for the
+8. Continuation joining happens only across page boundaries and only for the
    first entry of a page: a running head that matches the previous page, or a
    repeated heading with identical words and numbers.
+
+Re-run the segmentation without new Parse calls:
+`uv run nemotron-challenge run extract --derive-only`.
 
 ## Failure modes seen
 

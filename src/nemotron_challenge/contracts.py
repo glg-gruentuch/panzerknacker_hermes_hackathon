@@ -37,6 +37,31 @@ class ArtifactRecord(Contract):
     metadata: dict[str, Any] = Field(default_factory=dict)
 
 
+class EntryRecord(BaseModel):
+    """One segmented entry, flattened for the entry list and downstream stages.
+
+    The ``fragment`` and ``subsections`` fields carry defaults, so entries
+    saved before the segmentation fix still load. Readers that do not know the
+    two fields ignore them.
+    """
+
+    model_config = ConfigDict(extra="ignore")
+
+    entry_id: str = Field(min_length=1)
+    page_id: str
+    filename: str = ""
+    scan_sha256: str = ""
+    heading: str | None = None
+    heading_class: str | None = None
+    fragment: bool = False
+    subsections: list[str] = Field(default_factory=list)
+    page_header: str = ""
+    continued: bool = False
+    continued_on: str | None = None
+    n_blocks: int = Field(default=0, ge=0)
+    body: str = ""
+
+
 class WikiProvenance(BaseModel):
     model_config = ConfigDict(extra="ignore", strict=True)
     dataset: str
