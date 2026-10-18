@@ -71,8 +71,12 @@ def render_page_tex(page: dict[str, Any], checksum: str, volume_id: str) -> str:
 
 def compile_tex(tex_path: Path, out_dir: Path) -> tuple[bool, str]:
     """Compile one LaTeX document with tectonic. Returns (ok, detail)."""
+    tex_path = Path(tex_path).resolve()
+    out_dir = Path(out_dir).resolve()
     if not TECTONIC.exists():
         return False, "tectonic not found at ~/.local/bin/tectonic"
+    if not tex_path.exists():
+        return False, f"LaTeX source missing: {tex_path}"
     out_dir.mkdir(parents=True, exist_ok=True)
     result = subprocess.run(
         [str(TECTONIC), "--outdir", str(out_dir), str(tex_path)],
