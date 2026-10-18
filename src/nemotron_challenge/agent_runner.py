@@ -53,9 +53,13 @@ def hermes_env() -> dict[str, str]:
     env = os.environ.copy()
     env["HERMES_HOME"] = str(REPO / "data" / "hermes")
     env["PANZERKNACKER_ARTIFACTS"] = str(REPO / "artifacts")
-    super_key = dotenv_values(REPO / ".env").get("SUPER_API_KEY")
+    values = dotenv_values(REPO / ".env")
+    super_key = values.get("SUPER_API_KEY")
     if super_key:
         env["SUPER_API_KEY"] = super_key
+    api_url = os.environ.get("CHALLENGE_API_URL") or values.get("CHALLENGE_API_URL")
+    if api_url:
+        env["CHALLENGE_API_URL"] = api_url.strip()
     return env
 
 

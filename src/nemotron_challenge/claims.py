@@ -223,6 +223,62 @@ class ClaimsRun:
         self.failures: list[dict[str, Any]] = []
         self.chat_calls = 0
         self.skipped = 0
+        self.db_handle: Any = False  # False = not tried yet; None = unavailable (B2)
+
+    def document_db(self) -> Any:
+        """Lazily connect the shared LanceDB database; None when unavailable."""
+        if self.db_handle is False:
+            try:
+                from .lancedb_sync import connect
+
+                self.db_handle = connect(self.settings.db_path)
+            except Exception:
+                self.db_handle = None
+        return self.db_handle
+
+    def paragraph_vectors(self, retrieval: RetrievalClient, article: dict[str, Any], revision_id: str,
+                          paragraph_texts: list[str]) -> list[list[float]]:
+        """Vectors for the article paragraphs, embedding only the missing rows (B2).
+
+        The LanceDB store keeps paragraphs keyed by (revision_id, index, text
+        hash). A re-run embeds only paragraphs whose text or vector is missing
+        and updates the stored row. Without a database the run falls back to
+        embedding everything, exactly as before.
+        """
+        import hashlib
+
+        from .lancedb_sync import VECTOR_DIM
+
+        stored: dict[tuple[int, str], list[float] | None] = {}
+        db = self.document_db()
+        if db is not None:
+            try:
+                from .lancedb_sync import fetch_paragraph_vectors
+
+                stored = fetch_paragraph_vectors(db, revision_id)
+            except Exception:
+                stored = {}
+        vectors: list[list[float] | None] = [None] * len(paragraph_texts)
+        need: list[int] = []
+        for index, text in enumerate(paragraph_texts):
+            key = (index, hashlib.sha256(text.encode("utf-8")).hexdigest())
+            vector = stored.get(key)
+            if vector is not None and len(vector) == VECTOR_DIM:
+                vectors[index] = vector
+            else:
+                need.append(index)
+        if need:
+            fresh = embed_paragraphs(retrieval, [paragraph_texts[index] for index in need])
+            for index, vector in zip(need, fresh):
+                vectors[index] = vector
+        if db is not None:
+            try:
+                from .lancedb_sync import paragraph_rows, store_paragraph_rows
+
+                store_paragraph_rows(db, paragraph_rows(article, [v for v in vectors]))
+            except Exception:
+                pass
+        return [vector for vector in vectors]
 
     def cached_chat(self, chat: ChatClient, entry_id: str, revision_id: str, messages: list[dict[str, Any]],
                     *, max_tokens: int, stage: str) -> dict[str, Any]:
@@ -287,14 +343,15 @@ class ClaimsRun:
                                  stage="extract")
         claims, drops = valid_claims(parse_json_object(self.reply_content(reply)), body)
 
-        # Stage 2: embed the paragraphs once per entry.
-        vectors = embed_paragraphs(retrieval, paragraph_texts)
+        # Stage 2: paragraph vectors, cached in LanceDB so a re-run embeds
+        # only the paragraphs that are missing (B2).
+        vectors = self.paragraph_vectors(retrieval, article, revision_id, paragraph_texts)
 
         judged: list[dict[str, Any]] = []
         for index, claim in enumerate(claims):
             try:
                 judged.append(self._judge_claim(chat, retrieval, entry_id, revision_id, claim,
-                                                paragraph_texts, vectors))
+                                                paragraph_texts, vectors, match["article_page_id"]))
             except (ServiceError, ValueError) as exc:
                 with _append_lock:
                     self.failures.append({"entry_id": entry_id, "stage": "judge", "claim_index": index,
@@ -331,13 +388,30 @@ class ClaimsRun:
 
     def _judge_claim(self, chat: ChatClient, retrieval: RetrievalClient, entry_id: str, revision_id: str,
                      claim: dict[str, Any], paragraph_texts: list[str],
-                     vectors: list[list[float]]) -> dict[str, Any]:
-        """Retrieve passages for one claim and judge it."""
+                     vectors: list[list[float]], article_page_id: str) -> dict[str, Any]:
+        """Retrieve passages for one claim and judge it.
+
+        The top paragraphs come from LanceDB when the store holds vectors for
+        this article (B2); otherwise the in-memory dot product runs as before.
+        """
         claim_vector = retry_call(lambda: retrieval.embed([claim["quote"][:2000]], input_type="query"))[0]
-        scored = sorted(
-            ((sum(a * b for a, b in zip(claim_vector, vector)), index) for index, vector in enumerate(vectors)),
-            key=lambda row: -row[0],
-        )[:EMBED_DEPTH]
+        scored: list[tuple[float, int]] = []
+        db = self.document_db()
+        if db is not None:
+            try:
+                from .lancedb_sync import search_paragraphs
+
+                hits = search_paragraphs(db, article_page_id, claim_vector, limit=EMBED_DEPTH)
+                if hits:
+                    scored = sorted(((float(hit["similarity"]), int(hit["paragraph_index"])) for hit in hits),
+                                    key=lambda row: -row[0])[:EMBED_DEPTH]
+            except Exception:
+                scored = []
+        if not scored:
+            scored = sorted(
+                ((sum(a * b for a, b in zip(claim_vector, vector)), index) for index, vector in enumerate(vectors)),
+                key=lambda row: -row[0],
+            )[:EMBED_DEPTH]
         documents = [paragraph_texts[index][:32000] for _, index in scored]
         reranked = retry_call(lambda: retrieval.rerank(claim["quote"][:2000], documents))
         logits = {item["index"]: item["relevance_score"] for item in reranked}

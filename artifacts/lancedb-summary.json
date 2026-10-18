@@ -1,0 +1,12 @@
+{
+  "tables": {
+    "artifact_provenance": 250,
+    "match_evidence": 6796,
+    "britannica_entries": 232,
+    "wiki_articles": 76,
+    "wiki_paragraphs": 2674
+  },
+  "fts_indexes": true,
+  "vector_state": "runtime stages store embedder vectors; rows rebuilt from disk keep the column empty",
+  "note": "rebuilt from saved JSONL artifacts (B2); vector columns fill on later stage runs"
+}

@@ -17,7 +17,8 @@ from typing import Any
 from urllib.parse import quote
 
 from .compare import STOPWORDS, log_odds, normalize, top_terms
-from .config import MATCH_LOGIT_THRESHOLD, WIKIPEDIA_REVISION
+from .config import (EMBED_MODEL, EMBED_REVISION, MATCH_LOGIT_THRESHOLD, PARSE_MODEL, RERANK_MODEL,
+                     RERANK_REVISION, SUPER_MODEL, WIKIPEDIA_REVISION)
 from .data import load_manifest
 
 # Match strength on the reranker raw logit for the hosted-NIM backend. The
@@ -83,9 +84,11 @@ class WebAdapter:
     """Read-only view over one artifacts directory."""
 
     def __init__(self, work_dir: Path | str = Path("artifacts"),
-                 scan_dir: Path | str = Path("data/raw/britannica")):
+                 scan_dir: Path | str = Path("data/raw/britannica"),
+                 db_path: Path | str | None = None):
         self.work_dir = Path(work_dir)
         self.scan_dir = Path(scan_dir)
+        self.db_path = Path(db_path) if db_path is not None else None
         self._cache: dict[str, Any] = {}
 
     # -- loading ---------------------------------------------------------
@@ -513,9 +516,76 @@ class WebAdapter:
 
     # -- meta and cases --------------------------------------------------
 
+    def search(self, query: str, limit: int = 10) -> dict[str, Any]:
+        """Full-text search over the LanceDB tables (B3). No model call.
+
+        Reads ``britannica_entries.body`` and ``wiki_paragraphs.text`` through
+        their FTS indexes and returns ids, headings, and scores. When the store
+        is missing, reports an empty result with a note instead of an error.
+        """
+        if not query.strip():
+            return {"query": query, "results": [], "note": "empty query"}
+        if self.db_path is None or not self.db_path.exists():
+            return {"query": query, "results": [],
+                    "note": "the LanceDB store is not configured for this app"}
+        try:
+            from .lancedb_sync import connect, search_entries_fts, search_paragraphs_fts
+
+            db = connect(self.db_path)
+            matches = search_entries_fts(db, query, limit=limit)
+            paragraphs_hits = search_paragraphs_fts(db, query, limit=limit)
+        except Exception as exc:
+            return {"query": query, "results": [], "note": f"the LanceDB store is unavailable: {exc}"}
+        if matches is None or paragraphs_hits is None:
+            return {"query": query, "results": [],
+                    "note": "the LanceDB store carries no full-text index yet; rerun the match stage"}
+        results = [{"kind": "entry", "entry_id": row["entry_id"], "heading": row.get("heading"),
+                    "score": row["score"]} for row in matches]
+        results += [{"kind": "paragraph", "page_id": row["page_id"], "revision_id": row["revision_id"],
+                     "paragraph_index": row["paragraph_index"], "score": row["score"]}
+                    for row in paragraphs_hits]
+        results.sort(key=lambda row: -row["score"])
+        return {"query": query, "results": results[:limit]}
+
     def meta(self) -> dict[str, Any]:
+        """Evidence-driven project meta (B4).
+
+        A model or store appears only when a saved artifact shows that the
+        pipeline used it; each row names its evidence path. The mock list in
+        web/src/api/mock/ is not copied.
+        """
         manifest = load_manifest()
         revision = manifest.get("revision", "")
+        lancedb = self._json("lancedb-summary.json") or {}
+        tables = lancedb.get("tables", {}) if isinstance(lancedb.get("tables"), dict) else {}
+
+        def exists(relative: str) -> bool:
+            return (self.work_dir / relative).exists()
+
+        models: list[dict[str, Any]] = []
+        if exists("extract/coverage.json") or any((self.work_dir / "extract" / "raw").glob("*.json")):
+            models.append({"role": "Reads the page scans", "name": PARSE_MODEL,
+                           "host": "Organiser shared endpoint",
+                           "evidence": "artifacts/extract/coverage.json"})
+        if exists("match/evidence.jsonl") or tables.get("match_evidence"):
+            models.append({"role": "Embeds passages and questions",
+                           "name": f"{EMBED_MODEL} (pinned revision {EMBED_REVISION[:7]})",
+                           "host": "Team Nebius deployment",
+                           "evidence": "artifacts/match/evidence.jsonl"})
+            models.append({"role": "Reranks candidates",
+                           "name": f"{RERANK_MODEL} (pinned revision {RERANK_REVISION[:7]})",
+                           "host": "Team Nebius deployment",
+                           "evidence": "artifacts/match/evidence.jsonl"})
+        if exists("lancedb-summary.json") and any(count for count in tables.values() if count):
+            models.append({"role": "Stores and searches evidence", "name": "LanceDB",
+                           "host": f"Backend ({self.db_path or 'data/team.lancedb'})",
+                           "evidence": "artifacts/lancedb-summary.json"})
+        if exists("claims/claims.jsonl"):
+            models.append({"role": "Extracts and judges claims", "name": SUPER_MODEL,
+                           "host": "Nebius Token Factory", "evidence": "artifacts/claims/summary.json"})
+        if exists("agent/report.json"):
+            models.append({"role": "Answers questions", "name": f"{SUPER_MODEL} via Hermes Agent",
+                           "host": "Nebius Token Factory", "evidence": "artifacts/agent/report.json"})
         return {
             "datasets": [
                 {
@@ -533,13 +603,8 @@ class WebAdapter:
                     "downloaded": "queried live on 2026-10-18",
                 },
             ],
-            "models": [
-                {"role": "Reads the page scans", "name": "nvidia/nemotron-3.5-parse", "host": "Organizer shared endpoint"},
-                {"role": "Embeds passages and questions", "name": "nvidia/llama-nemotron-embed-vl-1b-v2", "host": "NVIDIA hosted NIM relay (team Nebius GPU pending)"},
-                {"role": "Reranks candidates", "name": "nvidia/llama-nemotron-rerank-vl-1b-v2", "host": "NVIDIA hosted NIM relay (team Nebius GPU pending)"},
-                {"role": "Stores and searches evidence", "name": "LanceDB", "host": "Backend (data/team.lancedb)"},
-                {"role": "Answers questions", "name": "nvidia/Nemotron-3.5-Super-VL via Hermes Agent", "host": "Nebius Token Factory"},
-            ],
+            "models": models,
+            "matchLogitThreshold": MATCH_LOGIT_THRESHOLD,
             "sample": {
                 "size": manifest.get("sample_size", 100),
                 "method": ("random_without_replacement, seed 20261016, sorted by source row index; "

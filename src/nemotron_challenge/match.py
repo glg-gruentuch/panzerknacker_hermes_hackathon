@@ -105,14 +105,16 @@ def embed_documents(retrieval: RetrievalClient, texts: list[str]) -> list[list[f
 
 
 def shortlist(retrieval: RetrievalClient, entry_text: str, hits: list[Any],
-              keep: int | None = None) -> list[dict[str, Any]]:
+              keep: int | None = None, query_vector: list[float] | None = None) -> list[dict[str, Any]]:
     """Rank every candidate by embedding similarity. ``keep`` optionally cuts the list.
 
     The embedder sees each excerpt as a document and the entry text as the
     query. Similarity is the dot product of unit vectors. A candidate without
     excerpt text cannot be scored; it stays in the list with a null similarity.
+    The caller may pass the query vector in (match persists it for the LanceDB
+    entry table, B2); otherwise it is computed here.
     """
-    query_vector = retry_call(lambda: retrieval.embed([entry_text[:2000]], input_type="query"))[0]
+    vector = query_vector or retry_call(lambda: retrieval.embed([entry_text[:2000]], input_type="query"))[0]
     scored: list[dict[str, Any]] = []
     embeddable = []
     texts = []
@@ -124,8 +126,8 @@ def shortlist(retrieval: RetrievalClient, entry_text: str, hits: list[Any],
         else:
             scored.append({"hit": hit, "similarity": None, "embed_rank": None})
     vectors = embed_documents(retrieval, texts) if texts else []
-    for hit, vector in zip(embeddable, vectors):
-        scored.append({"hit": hit, "similarity": sum(a * b for a, b in zip(query_vector, vector))})
+    for hit, doc_vector in zip(embeddable, vectors):
+        scored.append({"hit": hit, "similarity": sum(a * b for a, b in zip(vector, doc_vector))})
     scored.sort(key=lambda row: (row["similarity"] is None, -(row["similarity"] or 0.0)))
     for rank, row in enumerate((row for row in scored if row["similarity"] is not None), start=1):
         row["embed_rank"] = rank
@@ -225,6 +227,26 @@ def match_tables(db_path: str | Path) -> tuple[Any, Any]:
     return evidence, articles
 
 
+def _persist_evidence(store: Any, entry_id: str, rows: list[dict[str, Any]]) -> None:
+    """Mirror evidence rows into LanceDB. A write problem must not fail the run (B2)."""
+    try:
+        from .lancedb_sync import write_evidence_entry
+
+        write_evidence_entry(store.db, entry_id, rows)
+    except Exception as exc:
+        print(f"[match] LanceDB evidence write skipped for {entry_id}: {exc}", file=sys.stderr, flush=True)
+
+
+def _persist_entry(store: Any, entry: dict[str, Any], vector: list[float] | None) -> None:
+    """Store the entry with its query vector so the embedder output is kept (B2)."""
+    try:
+        from .lancedb_sync import entry_row, write_entries
+
+        write_entries(store.db, [entry_row(entry, vector)])
+    except Exception as exc:
+        print(f"[match] LanceDB entry write skipped for {entry['entry_id']}: {exc}", file=sys.stderr, flush=True)
+
+
 def summary_of(rows: list[dict[str, Any]]) -> dict[str, Any]:
     """Count unique articles and repeated article selections."""
     by_article: dict[str, list[str]] = {}
@@ -276,24 +298,34 @@ def run_match(
                 if not query:
                     # B1 pages can carry no text (full-page pictures). Querying
                     # the wiki API with an empty string fails; record the fact.
-                    append_jsonl(evidence_path, [{"entry_id": entry_id, "page_id": entry["page_id"],
-                                                  "candidate_page_id": None, "candidate_title": None,
-                                                  "bm25_rank": None, "bm25_score": None, "embed_similarity": None,
-                                                  "embed_rank": None, "rerank_logit": None, "rerank_rank": None,
-                                                  "decision": "no-candidates",
-                                                  "note": "the entry has no text to query"}])
+                    no_text_rows = [{"entry_id": entry_id, "page_id": entry["page_id"],
+                                     "candidate_page_id": None, "candidate_title": None,
+                                     "bm25_rank": None, "bm25_score": None, "embed_similarity": None,
+                                     "embed_rank": None, "rerank_logit": None, "rerank_rank": None,
+                                     "decision": "no-candidates",
+                                     "note": "the entry has no text to query"}]
+                    append_jsonl(evidence_path, no_text_rows)
+                    _persist_evidence(store, entry_id, no_text_rows)
+                    _persist_entry(store, entry, None)
                     continue
                 search = retry_call(lambda: wiki.search(query, top_k=CANDIDATES, excerpt_chars=1200))
                 hits = search.hits
                 if not hits:
-                    append_jsonl(evidence_path, [{"entry_id": entry_id, "page_id": entry["page_id"],
-                                                  "candidate_page_id": None, "candidate_title": None,
-                                                  "bm25_rank": None, "bm25_score": None, "embed_similarity": None,
-                                                  "embed_rank": None, "rerank_logit": None, "rerank_rank": None,
-                                                  "decision": "no-candidates"}])
+                    no_hits_rows = [{"entry_id": entry_id, "page_id": entry["page_id"],
+                                     "candidate_page_id": None, "candidate_title": None,
+                                     "bm25_rank": None, "bm25_score": None, "embed_similarity": None,
+                                     "embed_rank": None, "rerank_logit": None, "rerank_rank": None,
+                                     "decision": "no-candidates"}]
+                    append_jsonl(evidence_path, no_hits_rows)
+                    _persist_evidence(store, entry_id, no_hits_rows)
+                    _persist_entry(store, entry, None)
                     continue
                 query_text = entry_query(entry)
-                rows = shortlist(retrieval, query_text, hits)
+                # B2: the query vector is persisted with the entry row instead
+                # of being thrown away after the shortlist call.
+                query_vector = retry_call(
+                    lambda: retrieval.embed([query_text[:2000]], input_type="query"))[0]
+                rows = shortlist(retrieval, query_text, hits, query_vector=query_vector)
                 reranked = rerank_candidates(retrieval, query_text, rows)
                 best = decide(reranked, threshold)
                 similarity_by_id = {row["hit"].page_id: row["similarity"] for row in rows}
@@ -322,6 +354,8 @@ def run_match(
                         "decision": decision,
                     })
                 append_jsonl(evidence_path, evidence_rows)
+                _persist_evidence(store, entry_id, evidence_rows)
+                _persist_entry(store, entry, query_vector)
                 if best is None:
                     continue
                 hit = best["row"]["hit"]

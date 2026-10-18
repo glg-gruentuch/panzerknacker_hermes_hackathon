@@ -26,6 +26,7 @@ from .web_adapter import WebAdapter
 
 DEFAULT_WORK_DIR = Path(os.environ.get("PANZERKNACKER_ARTIFACTS", "artifacts"))
 DEFAULT_SCAN_DIR = Path(os.environ.get("CHALLENGE_SCAN_DIR", "data/raw/britannica"))
+DEFAULT_DB_PATH = Path(os.environ.get("CHALLENGE_DB_PATH", "data/team.lancedb"))
 
 
 class ChatRequest(BaseModel):
@@ -34,15 +35,21 @@ class ChatRequest(BaseModel):
     history: list[dict[str, Any]] = Field(default_factory=list)
 
 
-def create_app(work_dir: Path | str | None = None, scan_dir: Path | str | None = None) -> FastAPI:
+def create_app(work_dir: Path | str | None = None, scan_dir: Path | str | None = None,
+               db_path: Path | str | None = None) -> FastAPI:
     """Build the app over one artifacts directory. Tests pass small fixtures."""
     app = FastAPI(title="Panzerknacker Britannica-Wikipedia API", version="1.0")
-    adapter = WebAdapter(work_dir or DEFAULT_WORK_DIR, scan_dir or DEFAULT_SCAN_DIR)
+    adapter = WebAdapter(work_dir or DEFAULT_WORK_DIR, scan_dir or DEFAULT_SCAN_DIR,
+                         db_path if db_path is not None else DEFAULT_DB_PATH)
     app.state.adapter = adapter
 
     @app.get("/api/topics")
     def topics() -> dict[str, Any]:
         return adapter.topics()
+
+    @app.get("/api/search")
+    def search(q: str = "") -> dict[str, Any]:
+        return adapter.search(q)
 
     @app.get("/api/compare")
     def compare(q: str = "") -> dict[str, Any]:

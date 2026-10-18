@@ -5,6 +5,7 @@ from pathlib import Path
 from fastapi.testclient import TestClient
 
 from nemotron_challenge.api import create_app
+from nemotron_challenge.config import MATCH_LOGIT_THRESHOLD
 
 ENTRY_MATCHED = {
     "entry_id": "britannica:rev:train:13#0000",
@@ -246,13 +247,25 @@ def test_scan_routes_serve_image_and_blocks(tmp_path):
 
 def test_meta_and_cases_shapes(tmp_path):
     work = make_artifacts(tmp_path)
-    client = TestClient(create_app(work, make_scans(tmp_path)))
+    client = TestClient(create_app(work, make_scans(tmp_path), tmp_path / "db.lancedb"))
     meta = client.get("/api/meta").json()
     assert meta["sample"]["size"] == 100
-    assert {row["name"] for row in meta["models"]} == {
-        "nvidia/nemotron-3.5-parse", "nvidia/llama-nemotron-embed-vl-1b-v2",
-        "nvidia/llama-nemotron-rerank-vl-1b-v2", "LanceDB", "nvidia/Nemotron-3.5-Super-VL via Hermes Agent",
-    }
+    names = {row["name"] for row in meta["models"]}
+    # B4: every row comes from a saved artifact; no mock list is copied.
+    assert any("nemotron-3.5-parse" in name for name in names)
+    assert any("embed-vl" in name for name in names)
+    assert any("rerank-vl" in name for name in names)
+    assert not any(name.startswith("LanceDB") for name in names)  # no lancedb-summary.json yet
+    assert not any("Hermes Agent" in name for name in names)  # no agent report yet
+    assert all(row.get("evidence") for row in meta["models"])
+    assert meta["matchLogitThreshold"] == MATCH_LOGIT_THRESHOLD
+    # Write a lancedb summary and the LanceDB row appears; meta stays truthful.
+    (work / "lancedb-summary.json").write_text(json.dumps(
+        {"tables": {"match_evidence": 2, "britannica_entries": 2}, "fts_indexes": True}), encoding="utf-8")
+    meta = client.get("/api/meta").json()
+    lancedb_rows = [row for row in meta["models"] if row["name"] == "LanceDB"]
+    assert len(lancedb_rows) == 1
+    assert lancedb_rows[0]["evidence"] == "artifacts/lancedb-summary.json"
     cases = client.get("/api/cases").json()
     assert cases["cases"] == []
     assert cases["pending"]
@@ -277,3 +290,35 @@ def test_chat_delegates_to_the_agent_runner(tmp_path, monkeypatch):
     assert response.json()["grounding"] == "supported"
     assert calls == {"question": "What changed?", "topic": "ship-building"}
     assert client.post("/api/chat", json={"question": ""}).status_code == 422
+
+
+def test_search_reads_the_lancedb_store(tmp_path):
+    work = make_artifacts(tmp_path)
+    db_path = tmp_path / "db.lancedb"
+    from nemotron_challenge.lancedb_sync import connect, ensure_fts_indexes, ensure_tables
+
+    db = connect(db_path)
+    tables = ensure_tables(db)
+    tables["britannica_entries"].add([{
+        "entry_id": ENTRY_MATCHED["entry_id"], "page_id": ENTRY_MATCHED["page_id"],
+        "heading": "SHIP-BUILDING", "fragment": False, "body": ENTRY_MATCHED["body"],
+        "scan_sha256": "a" * 64, "vector": None}])
+    tables["wiki_paragraphs"].add([{
+        "page_id": "101", "revision_id": "777", "section": None, "paragraph_index": 0,
+        "text": "Shipbuilding is the construction of ships.", "text_sha256": "d" * 64, "vector": None}])
+    assert ensure_fts_indexes(db) is True
+
+    client = TestClient(create_app(work, make_scans(tmp_path), db_path))
+    payload = client.get("/api/search", params={"q": "ship"}).json()
+    kinds = {row["kind"] for row in payload["results"]}
+    assert kinds == {"entry", "paragraph"}
+    entry_hits = [row for row in payload["results"] if row["kind"] == "entry"]
+    assert entry_hits[0]["entry_id"] == ENTRY_MATCHED["entry_id"]
+
+
+def test_search_without_a_store_returns_a_note(tmp_path):
+    work = make_artifacts(tmp_path)
+    client = TestClient(create_app(work, make_scans(tmp_path), tmp_path / "missing.lancedb"))
+    payload = client.get("/api/search", params={"q": "ship"}).json()
+    assert payload["results"] == []
+    assert payload["note"]
