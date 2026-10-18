@@ -1,0 +1,347 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "teeth",
+    "label": "Teeth",
+    "headword": "TEETH",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Human tooth",
+    "area": "anatomy",
+    "teaser": "the vulgar opinion that it is caused by a worm in the tooth has no foundation."
+  },
+  "aliases": [
+    "tooth",
+    "dentition",
+    "toothache",
+    "enamel",
+    "milk teeth"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0068",
+    "headword": "TEETH",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 18",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 18 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "TEE                    [ 302 ]                    TEE\n\nTEESDALE, a valley in the north of England.\n  TEETH, in anatomy, the hard bodies fixed in the foc-\nkets of the jaws, which ſerve to divide and grind the\nfood. In an adult there are commonly thirty-two teeth,\nſixteen in each jaw; the firſt or milk teeth are twenty\nin number, and are ſhed between the ſeventh and the\nfourteenth year. Each tooth is covered on its body with\nthe enamel, which is the hardeſt ſubſtance of the whole\nbody.\n  Toothache ariſes moſt often from a carlous tooth,\nwhen the nerve is laid bare; the vulgar opinion that it\nis cauſed by a worm in the tooth has no foundation. The\ndecay of the teeth proceeds from ſweet things, from\nacrid humours of the blood, and from want of cleanli-\nneſs; and the teeth ſhould therefore be cleaned daily\nwith a ſoft bruſh.\n  Mr John Hunter has ſhown that a ſound tooth drawn\nfrom one perſon may be tranſplanted into the ſocket of\nanother, where it often takes root and becomes firm.\nThe laſt grinders, called dentes ſapientiae, or wiſdom\nteeth, appear about the twentieth year, and ſometimes\nmuch later.\n  TEETOTUM, a toy.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "TEETH",
+        "text": "TEETH, in anatomy, the hard bodies fixed in the sockets of the jaws, which serve to divide and grind the food."
+      },
+      {
+        "id": "B2",
+        "section": "TEETH",
+        "text": "In an adult there are commonly thirty-two teeth, sixteen in each jaw; the first or milk teeth are twenty in number, and are shed between the seventh and the fourteenth year."
+      },
+      {
+        "id": "B3",
+        "section": "TEETH",
+        "text": "Each tooth is covered on its body with the enamel, which is the hardest substance of the whole body."
+      },
+      {
+        "id": "B4",
+        "section": "TEETH",
+        "text": "Toothache arises most often from a carious tooth, when the nerve is laid bare; the vulgar opinion that it is caused by a worm in the tooth has no foundation."
+      },
+      {
+        "id": "B5",
+        "section": "TEETH",
+        "text": "The decay of the teeth proceeds from sweet things, from acrid humours of the blood, and from want of cleanliness; and the teeth should therefore be cleaned daily with a soft brush."
+      },
+      {
+        "id": "B6",
+        "section": "TEETH",
+        "text": "Mr John Hunter has shown that a sound tooth drawn from one person may be transplanted into the socket of another, where it often takes root and becomes firm."
+      },
+      {
+        "id": "B7",
+        "section": "TEETH",
+        "text": "The last grinders, called dentes sapientiae, or wisdom teeth, appear about the twentieth year, and sometimes much later."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-teeth",
+    "title": "Human tooth",
+    "url": "https://en.wikipedia.org/wiki/Human_tooth",
+    "dateModified": "2026-09-30",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Humans have two sets of teeth. The primary or baby teeth number 20; the permanent set of an adult numbers 32. The primary teeth are replaced from about age 6 to about age 12."
+      },
+      {
+        "id": "W2",
+        "section": "Structure",
+        "text": "The crown of a tooth is covered by enamel, the hardest substance in the human body. Below it lies dentin, and the pulp in the centre holds nerves and blood vessels."
+      },
+      {
+        "id": "W3",
+        "section": "Tooth decay",
+        "text": "Tooth decay is caused by bacteria in dental plaque. They make acid from sugars in food, and the acid dissolves the enamel and dentin."
+      },
+      {
+        "id": "W4",
+        "section": "Tooth decay",
+        "text": "When decay reaches the pulp, the tooth can become painful and infected."
+      },
+      {
+        "id": "W5",
+        "section": "Prevention",
+        "text": "Brushing the teeth, limiting sugary food and using fluoride help to prevent decay. Fluoride makes the enamel more resistant to acid."
+      },
+      {
+        "id": "W6",
+        "section": "Development",
+        "text": "The third molars, or wisdom teeth, usually appear between the ages of about 17 and 25. In some people they never come through."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.85,
+    "rerankScore": 0.86,
+    "reasons": [
+      "Same subject: TEETH and Human tooth.",
+      "Rare terms appear in both: enamel, wisdom teeth, thirty-two, twenty.",
+      "Tooth decay scores well but covers only part of the entry."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Tooth decay",
+      "url": "https://en.wikipedia.org/wiki/Tooth_decay",
+      "embedScore": 0.79,
+      "rerankScore": 0.64
+    },
+    {
+      "title": "Tooth",
+      "url": "https://en.wikipedia.org/wiki/Tooth",
+      "embedScore": 0.81,
+      "rerankScore": 0.6
+    }
+  ],
+  "alignments": [
+    {
+      "id": "te1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "32 and 20 teeth",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "thirty-two teeth, sixteen in each jaw; the first or milk teeth are twenty in number"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "The primary or baby teeth number 20; the permanent set of an adult numbers 32"
+      },
+      "note": "The same numbers. Milk teeth are now called primary or baby teeth."
+    },
+    {
+      "id": "te2",
+      "kind": "reworded",
+      "verdict": "partly",
+      "label": "When milk teeth go",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "are shed between the seventh and the fourteenth year"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "replaced from about age 6 to about age 12"
+      },
+      "note": "The 1797 ages are a little late, but the span is close."
+    },
+    {
+      "id": "te3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Hardest substance",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the enamel, which is the hardest substance of the whole body"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "enamel, the hardest substance in the human body"
+      },
+      "note": "Same fact, almost the same words."
+    },
+    {
+      "id": "te4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Worm in the tooth",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "the vulgar opinion that it is caused by a worm in the tooth has no foundation"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "When decay reaches the pulp, the tooth can become painful"
+      },
+      "note": "The 1797 entry rejected the old tooth worm and blamed decay that reaches the nerve. That view still holds."
+    },
+    {
+      "id": "te5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Causes of decay",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "proceeds from sweet things, from acrid humours of the blood, and from want of cleanliness"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "They make acid from sugars in food"
+      },
+      "note": "Sugar and poor cleaning are still causes. Acrid humours are not. Bacteria that make acid were unknown in 1797."
+    },
+    {
+      "id": "te6",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Daily cleaning",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the teeth should therefore be cleaned daily with a soft brush"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Brushing the teeth, limiting sugary food and using fluoride help to prevent decay"
+      },
+      "note": "Same advice. Wikipedia adds fluoride."
+    },
+    {
+      "id": "te7",
+      "kind": "dropped",
+      "verdict": "wrong",
+      "label": "Transplanted teeth",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "where it often takes root and becomes firm"
+      },
+      "wikipedia": null,
+      "note": "Hunter did transplant teeth, but most transplants failed and some passed on disease. Wikipedia does not describe the practice."
+    },
+    {
+      "id": "te8",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Wisdom teeth",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "appear about the twentieth year, and sometimes much later"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "usually appear between the ages of about 17 and 25"
+      },
+      "note": "The ages agree."
+    },
+    {
+      "id": "te9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Fluoride",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Fluoride makes the enamel more resistant to acid"
+      },
+      "note": "Fluoride as a protection against decay was unknown in 1797."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Number of teeth",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Structure and enamel",
+      "britannica": 0.1,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Toothache",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Causes of decay",
+      "britannica": 0.15,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Care and prevention",
+      "britannica": 0.1,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Transplanting",
+      "britannica": 0.2,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Wisdom teeth",
+      "britannica": 0.1,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "Did the 1797 entry believe in the tooth worm?",
+    "What causes tooth decay?"
+  ],
+  "answers": {
+    "Did the 1797 entry believe in the tooth worm?": {
+      "answer": "No. It says toothache comes most often from a carious tooth with the nerve laid bare, and calls the worm a vulgar opinion with no foundation [B4]. Wikipedia says pain comes when decay reaches the pulp [W4].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.86
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What causes tooth decay?": {
+      "answer": "The 1797 entry names sweet things, acrid humours of the blood and want of cleanliness [B5]. Wikipedia says bacteria in plaque make acid from sugars, and the acid dissolves the enamel [W3]. Fluoride helps to resist that acid [W5].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.82
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

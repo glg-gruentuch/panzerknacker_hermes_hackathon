@@ -1,0 +1,336 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "kidney",
+    "label": "Kidney",
+    "headword": "KIDNEYS",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Kidney",
+    "area": "anatomy",
+    "teaser": "The stone is formed in the kidneys from an earthy matter contained in the urine, which by degrees concretes into a hard body, and causes violent pain in its passage."
+  },
+  "aliases": [
+    "kidneys",
+    "reins",
+    "renal",
+    "nephritic"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0066",
+    "headword": "KIDNEYS",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 9",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 9 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "KID                    [ 482 ]                    KID\n\nKID, the young of a goat.\n  KIDNEYS, in anatomy, two glands ſituated in the\nloins, one on each ſide of the ſpine, which ſeparate\nthe urine from the blood. The blood is brought to them\nby the emulgeut arteries, and the urine, being ſepara-\nted in their ſmall tubes, paſſes by the ureters into\nthe bladder.\n  The ſtone is formed in the kidneys from an earthy\nmatter contained in the urine, which by degrees concre-\ntes into a hard body, and cauſes vio1ent pain in its\npaſſage. Mrs Stephens's medicine, prepared of calcined\negg-ſhells, ſnails, and ſoap, was purchaſed by the Par-\nliament in the year 1739 for five thouſand pounds, and\nis held to diſſolve the ſtone in the bladder and kid-\nneys.\n  The ancient writers made the kidneys the ſeat of\ndeſire and of the paſſions; and ſome phyſicians ſtill\nhold that the reins are weakened by exceſs of the paſ-\nſions. When the kidneys are obſtructed or deſtroyed,\nthe urine is retained, and the patient ſoon dies.\n  KILDARE, a county of Ireland.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "KIDNEYS",
+        "text": "KIDNEYS, in anatomy, two glands situated in the loins, one on each side of the spine, which separate the urine from the blood."
+      },
+      {
+        "id": "B2",
+        "section": "KIDNEYS",
+        "text": "The blood is brought to them by the emulgent arteries, and the urine, being separated in their small tubes, passes by the ureters into the bladder."
+      },
+      {
+        "id": "B3",
+        "section": "KIDNEYS",
+        "text": "The stone is formed in the kidneys from an earthy matter contained in the urine, which by degrees concretes into a hard body, and causes violent pain in its passage."
+      },
+      {
+        "id": "B4",
+        "section": "KIDNEYS",
+        "text": "Mrs Stephens's medicine, prepared of calcined egg-shells, snails, and soap, was purchased by the Parliament in the year 1739 for five thousand pounds, and is held to dissolve the stone in the bladder and kidneys."
+      },
+      {
+        "id": "B5",
+        "section": "KIDNEYS",
+        "text": "The ancient writers made the kidneys the seat of desire and of the passions; and some physicians still hold that the reins are weakened by excess of the passions."
+      },
+      {
+        "id": "B6",
+        "section": "KIDNEYS",
+        "text": "When the kidneys are obstructed or destroyed, the urine is retained, and the patient soon dies."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-kidney",
+    "title": "Kidney",
+    "url": "https://en.wikipedia.org/wiki/Kidney",
+    "dateModified": "2026-09-14",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "The kidneys are two bean-shaped organs found in vertebrates. In humans they lie at the back of the abdomen, one on each side of the spine. They remove waste products from the blood and produce urine."
+      },
+      {
+        "id": "W2",
+        "section": "Structure",
+        "text": "Each kidney contains about one million small filtering units called nephrons. Urine leaves each kidney through a ureter and is stored in the urinary bladder."
+      },
+      {
+        "id": "W3",
+        "section": "Function",
+        "text": "The kidneys control the balance of water and salts in the body. They also help to regulate blood pressure, in part through the hormone renin."
+      },
+      {
+        "id": "W4",
+        "section": "Clinical significance",
+        "text": "Kidney stones are hard deposits that form from minerals in the urine. Many pass by themselves; larger stones can be broken up with shock waves or removed by surgery."
+      },
+      {
+        "id": "W5",
+        "section": "Clinical significance",
+        "text": "When the kidneys fail, waste builds up in the blood. Dialysis or a kidney transplant can replace their work."
+      },
+      {
+        "id": "W6",
+        "section": "History",
+        "text": "In older English the kidneys were called the reins. Some ancient texts linked the kidneys with feelings and the conscience."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.87,
+    "rerankScore": 0.89,
+    "reasons": [
+      "Same headword: KIDNEYS and Kidney.",
+      "Rare terms appear in both: ureters, bladder, urine, stone.",
+      "Kidney stone scores well but covers only one part of the entry."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Kidney stone disease",
+      "url": "https://en.wikipedia.org/wiki/Kidney_stone_disease",
+      "embedScore": 0.78,
+      "rerankScore": 0.61
+    },
+    {
+      "title": "Urinary system",
+      "url": "https://en.wikipedia.org/wiki/Urinary_system",
+      "embedScore": 0.74,
+      "rerankScore": 0.55
+    }
+  ],
+  "alignments": [
+    {
+      "id": "ki1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Two organs in the loins",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "two glands situated in the loins, one on each side of the spine"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "one on each side of the spine"
+      },
+      "note": "Same place. Today the kidneys are called organs, not glands. This is a change in language."
+    },
+    {
+      "id": "ki2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "They make urine",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "which separate the urine from the blood"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "They remove waste products from the blood and produce urine"
+      },
+      "note": "Same function, almost the same words."
+    },
+    {
+      "id": "ki3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Ureters to the bladder",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "passes by the ureters into the bladder"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Urine leaves each kidney through a ureter and is stored in the urinary bladder"
+      },
+      "note": "The route of the urine has not changed."
+    },
+    {
+      "id": "ki4",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "How a stone forms",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "formed in the kidneys from an earthy matter contained in the urine"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "hard deposits that form from minerals in the urine"
+      },
+      "note": "The idea holds: stones come from minerals in the urine. The 1797 word \"earthy matter\" is vague. Inference: it corresponds to the calcium salts found in most stones."
+    },
+    {
+      "id": "ki5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "A medicine to dissolve stones",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "is held to dissolve the stone in the bladder and kidneys"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "larger stones can be broken up with shock waves or removed by surgery"
+      },
+      "note": "The purchase in 1739 is historical, but the medicine did not dissolve stones. Today large stones are broken up or removed."
+    },
+    {
+      "id": "ki6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Seat of desire",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "some physicians still hold that the reins are weakened by excess of the passions"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Some ancient texts linked the kidneys with feelings and the conscience"
+      },
+      "note": "Wikipedia reports the link only as an old belief. The 1797 claim that the passions harm the kidneys has no support today."
+    },
+    {
+      "id": "ki7",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Failure is fatal",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "the urine is retained, and the patient soon dies"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "When the kidneys fail, waste builds up in the blood"
+      },
+      "note": "Kidney failure is still fatal without treatment. Treatment is new."
+    },
+    {
+      "id": "ki8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Nephrons",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "about one million small filtering units called nephrons"
+      },
+      "note": "1797 knew the small tubes, but not the nephron as the working unit."
+    },
+    {
+      "id": "ki9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Salt, water and pressure",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "help to regulate blood pressure, in part through the hormone renin"
+      },
+      "note": "1797 gave the kidneys only the work of making urine."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Position and structure",
+      "britannica": 0.25,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Making urine",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Stones",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Remedies and treatment",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Old beliefs",
+      "britannica": 0.2,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Water, salt and blood pressure",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "Did the medicine Parliament bought in 1739 work?",
+    "What do the kidneys do that the 1797 entry does not mention?"
+  ],
+  "answers": {
+    "Did the medicine Parliament bought in 1739 work?": {
+      "answer": "No. The 1797 entry says Mrs Stephens's medicine of egg-shells, snails and soap was bought for five thousand pounds and is held to dissolve stones [B4]. Wikipedia says stones form from minerals in the urine and large ones are broken up with shock waves or removed by surgery [W4].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What do the kidneys do that the 1797 entry does not mention?": {
+      "answer": "The 1797 entry gives the kidneys one task: to separate the urine from the blood [B1]. Wikipedia adds that they control the balance of water and salts and help to regulate blood pressure [W3], and that each holds about one million nephrons [W2].",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.8
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.85
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

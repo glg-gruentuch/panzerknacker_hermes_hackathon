@@ -1,0 +1,383 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "generation",
+    "label": "Generation",
+    "headword": "GENERATION",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "partial",
+    "wikipediaTitle": "Preformationism",
+    "area": "anatomy",
+    "teaser": "The greater number now hold that the young animal exists ready formed, though in miniature, in the egg of the mother; others, since the microscope of Leeuwenhoek, place it in the animalcules of the male seed."
+  },
+  "aliases": [
+    "reproduction",
+    "conception",
+    "preformation",
+    "epigenesis",
+    "animalculists"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0070",
+    "headword": "GENERATION",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 7",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 7 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "GEN                    [ 641 ]                    GEN\n\nGENEALOGY, an account of the deſcent of a family.\n  GENERATION, in phyſiology, the production of a living\ncreature like its parents; a ſubject on which the moſt\neminent phyſiologiſts have differed greatly. The grea-\nter number now hold that the young animal exiſts ready\nformed, though in miniature, in the egg of the mother;\nothers, ſince the microſcope of Leeuwenhoeck, place it\nin the animalcules of the male ſeed. On either opinion\nthe embryo is not formed anew, but only unfolds and\ngrows; for it is held that the germs of all future\ngenerations were created together at the beginning.\n  Wolff, and ſome others, maintain that the parts are\nformed one after another out of a fluid matter; but\nthis opinion has as yet few followers. The Abbe Spal-\nlanzani has ſhown by many experiments that the eggs of\nfrogs and toads do not grow unleſs the ſeed of the male\ntouches them; and he has even impreguated a female dog\nby art.\n  It is hard to explain on any of theſe ſyſtems how the\nchild reſembles both the father and the mother, or how\nthe mule partakes of the horſe and the aſs. Many ſtill\nbelieve that a ſtrong impreſſion on the imagination of\nthe mother may mark or deform the child in the womb;\nbut the beſt anatomiſts doubt it.\n  GENERATOR, in muſic, the principal ſound.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "GENERATION",
+        "text": "GENERATION, in physiology, the production of a living creature like its parents; a subject on which the most eminent physiologists have differed greatly."
+      },
+      {
+        "id": "B2",
+        "section": "GENERATION",
+        "text": "The greater number now hold that the young animal exists ready formed, though in miniature, in the egg of the mother; others, since the microscope of Leeuwenhoek, place it in the animalcules of the male seed."
+      },
+      {
+        "id": "B3",
+        "section": "GENERATION",
+        "text": "On either opinion the embryo is not formed anew, but only unfolds and grows; for it is held that the germs of all future generations were created together at the beginning."
+      },
+      {
+        "id": "B4",
+        "section": "GENERATION",
+        "text": "Wolff, and some others, maintain that the parts are formed one after another out of a fluid matter; but this opinion has as yet few followers."
+      },
+      {
+        "id": "B5",
+        "section": "GENERATION",
+        "text": "The Abbe Spallanzani has shown by many experiments that the eggs of frogs and toads do not grow unless the seed of the male touches them; and he has even impregnated a female dog by art."
+      },
+      {
+        "id": "B6",
+        "section": "GENERATION",
+        "text": "It is hard to explain on any of these systems how the child resembles both the father and the mother, or how the mule partakes of the horse and the ass."
+      },
+      {
+        "id": "B7",
+        "section": "GENERATION",
+        "text": "Many still believe that a strong impression on the imagination of the mother may mark or deform the child in the womb; but the best anatomists doubt it."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-generation",
+    "title": "Preformationism",
+    "url": "https://en.wikipedia.org/wiki/Preformationism",
+    "dateModified": "2026-09-09",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Preformationism is the former theory that organisms develop from miniature versions of themselves that already exist before development. It was widely held in the 17th and 18th centuries."
+      },
+      {
+        "id": "W2",
+        "section": "Ovism and spermism",
+        "text": "Ovists held that the miniature organism lay in the egg. Spermists, also called animalculists, placed it in the sperm cell, which Antonie van Leeuwenhoek saw with the microscope in the 1670s."
+      },
+      {
+        "id": "W3",
+        "section": "Preexistence",
+        "text": "Some preformationists held that all future generations were already present, nested one inside another, from the creation."
+      },
+      {
+        "id": "W4",
+        "section": "Epigenesis",
+        "text": "The opposing theory, epigenesis, holds that the organism forms step by step from an unformed beginning. Caspar Friedrich Wolff argued for it in 1759. Epigenesis replaced preformation in the 19th century."
+      },
+      {
+        "id": "W5",
+        "section": "Experiments",
+        "text": "Lazzaro Spallanzani showed in the 1780s that frog eggs do not develop unless they meet the male's semen. He also made an early artificial insemination of a dog. He remained an ovist."
+      },
+      {
+        "id": "W6",
+        "section": "Criticism",
+        "text": "Preformation could not easily explain why children resemble both parents, or how hybrids combine features of two species."
+      },
+      {
+        "id": "W7",
+        "section": "Modern view",
+        "text": "In modern biology, fertilization joins a sperm cell and an egg cell. The new organism receives DNA from both parents and develops by cell division and differentiation."
+      }
+    ]
+  },
+  "match": {
+    "strength": "partial",
+    "embedScore": 0.8,
+    "rerankScore": 0.72,
+    "reasons": [
+      "GENERATION is a broad headword; Preformationism matches the main theory in the entry.",
+      "Rare terms appear in both: animalcules, Leeuwenhoek, Wolff, Spallanzani.",
+      "Human reproduction scores close but has little on the history of the theories."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Human reproduction",
+      "url": "https://en.wikipedia.org/wiki/Human_reproduction",
+      "embedScore": 0.78,
+      "rerankScore": 0.66
+    },
+    {
+      "title": "Epigenesis (biology)",
+      "url": "https://en.wikipedia.org/wiki/Epigenesis_(biology)",
+      "embedScore": 0.74,
+      "rerankScore": 0.6
+    },
+    {
+      "title": "Maternal impression",
+      "url": "https://en.wikipedia.org/wiki/Maternal_impression",
+      "embedScore": 0.62,
+      "rerankScore": 0.45
+    }
+  ],
+  "alignments": [
+    {
+      "id": "ge1",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Ready-formed young",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the young animal exists ready formed, though in miniature, in the egg of the mother"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Ovists held that the miniature organism lay in the egg"
+      },
+      "note": "Wikipedia reports ovism only as a former theory. No miniature organism exists in the egg."
+    },
+    {
+      "id": "ge2",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Animalcules of the seed",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "place it in the animalcules of the male seed"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Spermists, also called animalculists, placed it in the sperm cell"
+      },
+      "note": "The animalcules are sperm cells. They carry half of the genetic material, not a whole small animal."
+    },
+    {
+      "id": "ge3",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Unfolding, not forming",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the embryo is not formed anew, but only unfolds and grows"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "the organism forms step by step from an unformed beginning"
+      },
+      "note": "This is a change in knowledge: the embryo forms step by step."
+    },
+    {
+      "id": "ge4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Germs from the creation",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the germs of all future generations were created together at the beginning"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "all future generations were already present, nested one inside another, from the creation"
+      },
+      "note": "Both describe the same old doctrine. The 1797 entry holds it; Wikipedia only reports it."
+    },
+    {
+      "id": "ge5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Wolff and epigenesis",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "this opinion has as yet few followers"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Epigenesis replaced preformation in the 19th century"
+      },
+      "note": "The 1797 report of few followers was fair for its time. Its implied judgement against Wolff did not hold."
+    },
+    {
+      "id": "ge6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Spallanzani and frogs",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the eggs of frogs and toads do not grow unless the seed of the male touches them"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "frog eggs do not develop unless they meet the male's semen"
+      },
+      "note": "Same experiment and result. Spallanzani himself still read it as an ovist."
+    },
+    {
+      "id": "ge7",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Likeness to both parents",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "how the child resembles both the father and the mother"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "why children resemble both parents"
+      },
+      "note": "The 1797 entry saw the main weakness of the theory. Inference: inheritance from both parents now explains it."
+    },
+    {
+      "id": "ge8",
+      "kind": "dropped",
+      "verdict": "wrong",
+      "label": "Maternal impression",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "a strong impression on the imagination of the mother may mark or deform the child"
+      },
+      "wikipedia": null,
+      "note": "The mother's thoughts do not mark the child. Wikipedia's article on preformation does not discuss this belief."
+    },
+    {
+      "id": "ge9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Sperm and egg fuse",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "The new organism receives DNA from both parents"
+      },
+      "note": "Fertilization as the joining of two cells was not known in 1797."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Preformation theories",
+      "britannica": 0.35,
+      "wikipedia": 0.3
+    },
+    {
+      "topic": "Epigenesis",
+      "britannica": 0.1,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Experiments",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Likeness to parents",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Maternal impression",
+      "britannica": 0.15,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Fertilization and DNA",
+      "britannica": 0,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Definitions",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    }
+  ],
+  "suggestedQuestions": [
+    "Where did the 1797 entry think the young animal comes from?",
+    "What replaced the idea of preformation?",
+    "Did anyone in 1797 see a problem with preformation?"
+  ],
+  "answers": {
+    "Where did the 1797 entry think the young animal comes from?": {
+      "answer": "Most physiologists of 1797 held that it exists ready formed in miniature in the mother's egg; others placed it in the animalcules of the male seed [B2]. Wikipedia calls both views forms of the former theory of preformationism [W1] [W2].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.85
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.92
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What replaced the idea of preformation?": {
+      "answer": "Epigenesis: the view that the organism forms step by step, argued by Wolff in 1759 [W4]. The 1797 entry knew of Wolff but said his opinion had few followers [B4]. Today a sperm cell and an egg cell join, and the new organism receives DNA from both parents [W7].",
+      "citations": [
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.86
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did anyone in 1797 see a problem with preformation?": {
+      "answer": "Yes. The entry says it is hard to explain how a child resembles both parents, or how a mule partakes of the horse and the ass [B6]. Wikipedia names the same weakness [W6].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

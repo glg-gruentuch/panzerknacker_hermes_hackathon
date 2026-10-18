@@ -1,0 +1,360 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "skin",
+    "label": "Skin",
+    "headword": "SKIN",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "match": "strong",
+    "wikipediaTitle": "Human skin",
+    "area": "anatomy",
+    "teaser": "When the pores are suddenly closed by cold, the perspiration is retained in the body, and becomes the cause of fevers, rheumatisms, and catarrhs."
+  },
+  "aliases": [
+    "cuticle",
+    "epidermis",
+    "dermis",
+    "perspiration",
+    "scarf-skin"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0067",
+    "headword": "SKIN",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "volume": "Volume 19",
+    "meta": "Encyclopaedia Britannica - Fourth edition, Volume 19 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "SKI                    [ 236 ]                    SKI\n\nSKIFF, a ſmall boat.\n  SKIN, in anatomy, the general covering of the body,\ncompoſed of the cuticle, or ſcarf-ſkin, and the true\nſkin, or cutis, which lies beneath it. The cuticle is\nthin, without ſenſe or veſſels, and is continually worn\noff and renewed; the hair and the nails are productions\nof it.\n  Between the cuticle and the true ſkin lies the mucous\nbody deſcribed by Ma1pighi, in which the colour of the\nſkin is ſeated; and in this layer lies the colour of\nthe dark-ſkinned nations, the cuticle and true ſkin\nbeing nearly alike in all men.\n  Through the pores of the ſkin paſſes the inſenſible\nperſpiration. Sanctorius, by weighing himſelf, his\nfood, and his excretions for many years, found that the\ngreater part of all that is eaten paſſes off by this\nway. When the pores are ſuddenly cloſed by cold, the\nperſpiration is retained in the body, and becomes the\ncauſe of fevers, rheumatiſms, and catarrbs.\n  The true ſkin is full of nerves, and is the organ of\nthe ſenſe of touch.\n  SKINK, a lizard of Egypt.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "SKIN",
+        "text": "SKIN, in anatomy, the general covering of the body, composed of the cuticle, or scarf-skin, and the true skin, or cutis, which lies beneath it."
+      },
+      {
+        "id": "B2",
+        "section": "SKIN",
+        "text": "The cuticle is thin, without sense or vessels, and is continually worn off and renewed; the hair and the nails are productions of it."
+      },
+      {
+        "id": "B3",
+        "section": "SKIN",
+        "text": "Between the cuticle and the true skin lies the mucous body described by Malpighi, in which the colour of the skin is seated; and in this layer lies the colour of the dark-skinned nations, the cuticle and true skin being nearly alike in all men."
+      },
+      {
+        "id": "B4",
+        "section": "SKIN",
+        "text": "Through the pores of the skin passes the insensible perspiration. Sanctorius, by weighing himself, his food, and his excretions for many years, found that the greater part of all that is eaten passes off by this way."
+      },
+      {
+        "id": "B5",
+        "section": "SKIN",
+        "text": "When the pores are suddenly closed by cold, the perspiration is retained in the body, and becomes the cause of fevers, rheumatisms, and catarrhs."
+      },
+      {
+        "id": "B6",
+        "section": "SKIN",
+        "text": "The true skin is full of nerves, and is the organ of the sense of touch."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-skin",
+    "title": "Human skin",
+    "url": "https://en.wikipedia.org/wiki/Human_skin",
+    "dateModified": "2026-08-27",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "The human skin is the outer covering of the body and its largest organ. It has two main layers: the outer epidermis and the dermis below it. Under these lies the hypodermis, mainly made of fat."
+      },
+      {
+        "id": "W2",
+        "section": "Structure",
+        "text": "The outer cells of the epidermis are dead and are shed and replaced all the time. Hair and nails grow from the epidermis."
+      },
+      {
+        "id": "W3",
+        "section": "Skin colour",
+        "text": "Skin colour depends mainly on the pigment melanin. Cells called melanocytes in the bottom layer of the epidermis make it. People of all skin colours have about the same number of melanocytes; the amount and type of melanin differ."
+      },
+      {
+        "id": "W4",
+        "section": "Functions",
+        "text": "Water passes out through the skin by evaporation even when a person does not sweat. Sweat glands help to cool the body."
+      },
+      {
+        "id": "W5",
+        "section": "Functions",
+        "text": "The skin is a barrier that keeps out microbes and protects against loss of water. Infections, not a chill, cause fevers."
+      },
+      {
+        "id": "W6",
+        "section": "Functions",
+        "text": "The dermis contains nerve endings that sense touch, pressure, pain and temperature."
+      },
+      {
+        "id": "W7",
+        "section": "Functions",
+        "text": "When the skin is exposed to ultraviolet B light it makes vitamin D."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.86,
+    "rerankScore": 0.87,
+    "reasons": [
+      "Same headword: SKIN and Human skin.",
+      "Rare terms appear in both: cuticle and epidermis, perspiration, touch, nails.",
+      "Skin scores well but covers all animals, not only people."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Skin",
+      "url": "https://en.wikipedia.org/wiki/Skin",
+      "embedScore": 0.84,
+      "rerankScore": 0.72
+    },
+    {
+      "title": "Perspiration",
+      "url": "https://en.wikipedia.org/wiki/Perspiration",
+      "embedScore": 0.7,
+      "rerankScore": 0.5
+    }
+  ],
+  "alignments": [
+    {
+      "id": "sk1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Two layers",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "composed of the cuticle, or scarf-skin, and the true skin, or cutis"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "the outer epidermis and the dermis below it"
+      },
+      "note": "The cuticle is now the epidermis and the true skin is the dermis. This is a change in language."
+    },
+    {
+      "id": "sk2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Shed and renewed",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "is continually worn off and renewed"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "are shed and replaced all the time"
+      },
+      "note": "Same fact in new words."
+    },
+    {
+      "id": "sk3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Hair and nails",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the hair and the nails are productions of it"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Hair and nails grow from the epidermis"
+      },
+      "note": "Same origin given."
+    },
+    {
+      "id": "sk4",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Where colour lies",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "in this layer lies the colour of the dark-skinned nations, the cuticle and true skin being nearly alike in all men"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Cells called melanocytes in the bottom layer of the epidermis make it"
+      },
+      "note": "The place is about right: the pigment lies at the base of the epidermis. The 1810 entry did not know melanin or the cells that make it. Inference: the \"mucous body\" is the deep living layer of the epidermis."
+    },
+    {
+      "id": "sk5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Insensible perspiration",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "found that the greater part of all that is eaten passes off by this way"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Water passes out through the skin by evaporation even when a person does not sweat"
+      },
+      "note": "Water does leave the skin without sweat. Much of the weight Sanctorius measured left by the lungs, and he overstated the share of the skin."
+    },
+    {
+      "id": "sk6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Cold causes fevers",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the perspiration is retained in the body, and becomes the cause of fevers"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Infections, not a chill, cause fevers"
+      },
+      "note": "Retained perspiration does not cause fever. This is a change in knowledge: microbes cause infections."
+    },
+    {
+      "id": "sk7",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Sense of touch",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "The true skin is full of nerves, and is the organ of the sense of touch"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "The dermis contains nerve endings that sense touch"
+      },
+      "note": "Same fact. Wikipedia adds pain and temperature."
+    },
+    {
+      "id": "sk8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Barrier to microbes",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "a barrier that keeps out microbes"
+      },
+      "note": "Microbes were not known as a cause of disease in 1810."
+    },
+    {
+      "id": "sk9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Vitamin D",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "it makes vitamin D"
+      },
+      "note": "Vitamins were unknown in 1810."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Layers",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Hair and nails",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Colour",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Perspiration",
+      "britannica": 0.25,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Touch",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Disease and cold",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Barrier and vitamin D",
+      "britannica": 0,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "Was Sanctorius right about insensible perspiration?",
+    "Can a chill cause a fever?",
+    "Where does skin colour come from?"
+  ],
+  "answers": {
+    "Was Sanctorius right about insensible perspiration?": {
+      "answer": "In part. The 1810 entry says Sanctorius found that most of what is eaten passes off through the pores [B4]. Wikipedia confirms that water leaves the skin by evaporation without sweat [W4], but the large share he gave the skin is not supported.",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.88
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Can a chill cause a fever?": {
+      "answer": "The 1810 entry says cold closes the pores, keeps the perspiration in, and so causes fevers [B5]. Wikipedia says infections cause fevers and the skin is a barrier against microbes [W5].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Where does skin colour come from?": {
+      "answer": "The 1810 entry places colour in the mucous layer between the cuticle and the true skin [B3]. Wikipedia says the pigment melanin is made by melanocytes in the bottom layer of the epidermis, and the amount and type of melanin differ between people [W3].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}
