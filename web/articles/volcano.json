@@ -1,0 +1,403 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "volcano",
+    "label": "Volcano",
+    "headword": "VOLCANO",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Volcano",
+    "area": "geology",
+    "teaser": "The fire of volcanoes is fed by vast beds of sulphur, pyrites, and coal within the earth, which, being moistened by water, ferment and take fire of themselves."
+  },
+  "aliases": [
+    "volcano",
+    "volcanoes",
+    "volcanos",
+    "burning mountain",
+    "lava"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0037",
+    "headword": "VOLCANO",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 18",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 18 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "VOL                    [ 774 ]                    VOL\n\nVOLATILE, in chemiſtry, that which flies off by heat.\n  VOLCANO, a burning mountain, from the top of which\niſſue fire, ſmoke, aſhes, and ſtreams of melted matter\ncalled lava. The fire of volcanoes is fed by vaſt beds\nof ſulphur, pyrites, and coal within the earth, which,\nbeing moiſtened by water, ferment and take fire of\nthemſelves.\n  That volcanoes are all near the ſea is a proof that the\nwater of the ſea, penetrating to theſe fires, raiſes the\nvapours which cauſe the eruption. The lava is the earth\nand ſtones of the mountain itſelf, melted by the fire and\npoured out. The earthquakes which commonly precede\neruptions are cauſed by the ſame ſubterraneous fire en-\ndeavouring to find a vent.\n  When the combuſtible matter is conſumed the volcano\nis extinguiſhed, and becomes a common mountain. Such\nmountains as have burned ſince the memory of man are\nfew; Etna, Veſuvius, and Hecla being the chief.\n  VOLGA, a river of Ruſſia.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "VOLCANO",
+        "text": "VOLCANO, a burning mountain, from the top of which issue fire, smoke, ashes, and streams of melted matter called lava."
+      },
+      {
+        "id": "B2",
+        "section": "VOLCANO",
+        "text": "The fire of volcanoes is fed by vast beds of sulphur, pyrites, and coal within the earth, which, being moistened by water, ferment and take fire of themselves."
+      },
+      {
+        "id": "B3",
+        "section": "VOLCANO",
+        "text": "That volcanoes are all near the sea is a proof that the water of the sea, penetrating to these fires, raises the vapours which cause the eruption."
+      },
+      {
+        "id": "B4",
+        "section": "VOLCANO",
+        "text": "The lava is the earth and stones of the mountain itself, melted by the fire and poured out."
+      },
+      {
+        "id": "B5",
+        "section": "VOLCANO",
+        "text": "The earthquakes which commonly precede eruptions are caused by the same subterraneous fire endeavouring to find a vent."
+      },
+      {
+        "id": "B6",
+        "section": "VOLCANO",
+        "text": "When the combustible matter is consumed the volcano is extinguished, and becomes a common mountain."
+      },
+      {
+        "id": "B7",
+        "section": "VOLCANO",
+        "text": "Such mountains as have burned since the memory of man are few; Etna, Vesuvius, and Hecla being the chief."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-volcano",
+    "title": "Volcano",
+    "url": "https://en.wikipedia.org/wiki/Volcano",
+    "dateModified": "2026-10-05",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "A volcano is a rupture in the crust of a planet that allows hot lava, volcanic ash and gases to escape from a magma chamber below the surface."
+      },
+      {
+        "id": "W2",
+        "section": "Magma",
+        "text": "Magma forms when rock in the mantle or lower crust partly melts, because of falling pressure, added water or added heat."
+      },
+      {
+        "id": "W3",
+        "section": "Distribution",
+        "text": "Most volcanoes occur where tectonic plates pull apart or push together, especially around the Pacific Ocean in the Ring of Fire. Others form over hotspots, such as Hawaii, or in continental rifts far from the sea, such as in East Africa."
+      },
+      {
+        "id": "W4",
+        "section": "Lava",
+        "text": "Lava is magma that reaches the surface. It rises from deep below the volcano rather than coming from the volcano's own rock."
+      },
+      {
+        "id": "W5",
+        "section": "Eruptions",
+        "text": "Water dissolved in magma turns to gas as the magma rises, and this gas drives explosive eruptions."
+      },
+      {
+        "id": "W6",
+        "section": "Forecasting",
+        "text": "Rising magma causes swarms of small earthquakes, which are used to forecast eruptions."
+      },
+      {
+        "id": "W7",
+        "section": "Activity",
+        "text": "A volcano is called extinct when it is not expected to erupt again, usually because it no longer has a supply of magma."
+      },
+      {
+        "id": "W8",
+        "section": "Distribution",
+        "text": "About 1,350 potentially active volcanoes exist on land worldwide, and many more lie on the ocean floor."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.87,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same headword: VOLCANO and Volcano.",
+      "Rare terms appear in both: lava, ashes, eruption, earthquakes before eruptions, extinct volcanoes.",
+      "Magma scores well but covers only the molten rock, not the volcano."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Magma",
+      "url": "https://en.wikipedia.org/wiki/Magma",
+      "embedScore": 0.75,
+      "rerankScore": 0.56
+    },
+    {
+      "title": "Mount Vesuvius",
+      "url": "https://en.wikipedia.org/wiki/Mount_Vesuvius",
+      "embedScore": 0.72,
+      "rerankScore": 0.45
+    }
+  ],
+  "alignments": [
+    {
+      "id": "vo1",
+      "kind": "reworded",
+      "verdict": "partly",
+      "label": "A burning mountain",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a burning mountain"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "allows hot lava, volcanic ash and gases to escape from a magma chamber"
+      },
+      "note": "The lava, ash and gas are described correctly. Nothing burns: the heat comes from molten rock."
+    },
+    {
+      "id": "vo2",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Burning sulphur and coal",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "fed by vast beds of sulphur, pyrites, and coal within the earth"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Magma forms when rock in the mantle or lower crust partly melts"
+      },
+      "note": "There is no underground fire. Rock deep in the earth melts without burning anything."
+    },
+    {
+      "id": "vo3",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "All near the sea",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "That volcanoes are all near the sea"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "in continental rifts far from the sea, such as in East Africa"
+      },
+      "note": "Many are near coasts because plate boundaries run there, not because they need the sea."
+    },
+    {
+      "id": "vo4",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Vapour drives eruptions",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "raises the vapours which cause the eruption"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Water dissolved in magma turns to gas as the magma rises, and this gas drives explosive eruptions"
+      },
+      "note": "Steam does drive eruptions. The water is in the magma, not sea water running onto a fire."
+    },
+    {
+      "id": "vo5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Where lava comes from",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "the earth and stones of the mountain itself, melted by the fire"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "It rises from deep below the volcano rather than coming from the volcano's own rock"
+      },
+      "note": "The mountain does not melt itself. It is built from lava that came up from below."
+    },
+    {
+      "id": "vo6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Earthquakes before eruptions",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "caused by the same subterraneous fire endeavouring to find a vent"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Rising magma causes swarms of small earthquakes"
+      },
+      "note": "Right that they come first and that something below seeks a way out. That something is magma, not fire."
+    },
+    {
+      "id": "vo7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Extinct volcanoes",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "When the combustible matter is consumed the volcano is extinguished"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "usually because it no longer has a supply of magma"
+      },
+      "note": "Volcanoes do die when their supply runs out. The supply is magma, not fuel."
+    },
+    {
+      "id": "vo8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Only a few are active",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "Such mountains as have burned since the memory of man are few"
+      },
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "About 1,350 potentially active volcanoes exist on land worldwide"
+      },
+      "note": "The 1797 count is limited to the volcanoes Europeans knew: Etna, Vesuvius and Hecla."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What a volcano is",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Source of heat",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Where volcanoes are",
+      "britannica": 0.15,
+      "wikipedia": 0.18
+    },
+    {
+      "topic": "Lava",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Eruptions and earthquakes",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Extinct and active",
+      "britannica": 0.15,
+      "wikipedia": 0.13
+    },
+    {
+      "topic": "Plate tectonics",
+      "britannica": 0,
+      "wikipedia": 0.1
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1797 entry think made volcanoes hot?",
+    "Was the 1797 entry right that volcanoes are all near the sea?",
+    "Which 1797 claims about volcanoes still hold?"
+  ],
+  "answers": {
+    "What did the 1797 entry think made volcanoes hot?": {
+      "answer": "Underground beds of sulphur, pyrites and coal that took fire when moistened [B2]. Wikipedia says there is no fire: magma forms when rock in the mantle or lower crust partly melts [W2], and lava rises from deep below rather than from the mountain's own rock [W4].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.86
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Was the 1797 entry right that volcanoes are all near the sea?": {
+      "answer": "No. It took their position as proof that sea water reaches the fires [B3]. Wikipedia says most volcanoes lie along tectonic plate boundaries, many around the Pacific, but some form far from the sea, for example in East Africa [W3].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Which 1797 claims about volcanoes still hold?": {
+      "answer": "Only observations, not explanations. Earthquakes do come before eruptions [B5] [W6], steam does drive eruptions [B3] [W5], and volcanoes do become extinct [B6] [W7]. In each case the 1797 entry gives the wrong reason: a fire under the ground [B2], where Wikipedia has magma [W2].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.88
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.88
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.82
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.84
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.83
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.83
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.8
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.8
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

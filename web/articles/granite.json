@@ -1,0 +1,369 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "granite",
+    "label": "Granite",
+    "headword": "GRANITE",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "match": "strong",
+    "wikipediaTitle": "Granite",
+    "area": "geology",
+    "teaser": "Mr Werner and his followers hold that granite is the oldest of all rocks, the first that was deposited from the waters of the universal ocean which once covered the whole globe."
+  },
+  "aliases": [
+    "granite",
+    "granites",
+    "primitive rock",
+    "neptunism"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0039",
+    "headword": "GRANITE",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "volume": "Volume 10",
+    "meta": "Encyclopaedia Britannica - Fourth edition, Volume 10 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "GRA                    [ 168 ]                    GRA\n\nGRANADA, a city of Spain.\n  GRANITE, a hard ſtone compoſed of grains of quartz,\nfelſpar, and mica, cloſely joined together without any\ncement. Mr Werner and his followers hold that granite\nis the oldeſt of all rocks, the firſt that was depoſited\nfrom the waters of the univerſal ocean which once co-\nvered the whole globe. Being formed before plants and\nanimals exiſted, it contains no remains of them, and is\ntherefore called a primitive rock.\n  Dr Hutton, on the contrary, maintains that granite\nwas once melted by ſubterraneous heat and forced up\namong the other ſtrata; but this opinion has fewer fol-\nlowers. Granite forms the nucleus and the higheſt ſum-\nmits of all great mountain chains. It is every where the\nloweſt rock, upon which all others reſt.\n  GRANIVOROUS, feeding on grain.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "GRANITE",
+        "text": "GRANITE, a hard stone composed of grains of quartz, felspar, and mica, closely joined together without any cement."
+      },
+      {
+        "id": "B2",
+        "section": "GRANITE",
+        "text": "Mr Werner and his followers hold that granite is the oldest of all rocks, the first that was deposited from the waters of the universal ocean which once covered the whole globe."
+      },
+      {
+        "id": "B3",
+        "section": "GRANITE",
+        "text": "Being formed before plants and animals existed, it contains no remains of them, and is therefore called a primitive rock."
+      },
+      {
+        "id": "B4",
+        "section": "GRANITE",
+        "text": "Dr Hutton, on the contrary, maintains that granite was once melted by subterraneous heat and forced up among the other strata; but this opinion has fewer followers."
+      },
+      {
+        "id": "B5",
+        "section": "GRANITE",
+        "text": "Granite forms the nucleus and the highest summits of all great mountain chains."
+      },
+      {
+        "id": "B6",
+        "section": "GRANITE",
+        "text": "It is every where the lowest rock, upon which all others rest."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-granite",
+    "title": "Granite",
+    "url": "https://en.wikipedia.org/wiki/Granite",
+    "dateModified": "2026-08-24",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Granite is a coarse-grained igneous rock composed mostly of quartz, alkali feldspar and plagioclase, usually with mica or amphibole."
+      },
+      {
+        "id": "W2",
+        "section": "Origin",
+        "text": "Granite forms from magma that cools and crystallises slowly deep underground. It is an intrusive igneous rock, not a sedimentary rock laid down in water."
+      },
+      {
+        "id": "W3",
+        "section": "History",
+        "text": "In the late 18th century, Abraham Gottlob Werner's Neptunist school held that granite had settled out of a primeval ocean. James Hutton argued instead that it had once been molten, and his view prevailed in the 19th century."
+      },
+      {
+        "id": "W4",
+        "section": "Fossils",
+        "text": "Granite contains no fossils because it crystallised from molten rock."
+      },
+      {
+        "id": "W5",
+        "section": "Field relations",
+        "text": "Granite intrusions often cut across the rocks around them, which shows that the granite is younger than those rocks."
+      },
+      {
+        "id": "W6",
+        "section": "Occurrence",
+        "text": "Large granite bodies are common in the cores of mountain ranges, where uplift and erosion have exposed them."
+      },
+      {
+        "id": "W7",
+        "section": "Age",
+        "text": "Granites of many different ages exist, from billions of years old to only a few million years old."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.87,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same headword: GRANITE and Granite.",
+      "Rare terms appear in both: quartz, feldspar, mica, Werner, Hutton.",
+      "Neptunism scores well on the theory but leaves out the rock itself."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Neptunism",
+      "url": "https://en.wikipedia.org/wiki/Neptunism",
+      "embedScore": 0.74,
+      "rerankScore": 0.62
+    },
+    {
+      "title": "Igneous rock",
+      "url": "https://en.wikipedia.org/wiki/Igneous_rock",
+      "embedScore": 0.72,
+      "rerankScore": 0.51
+    }
+  ],
+  "alignments": [
+    {
+      "id": "gr1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "What granite is made of",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "grains of quartz, felspar, and mica"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "composed mostly of quartz, alkali feldspar and plagioclase, usually with mica"
+      },
+      "note": "Same minerals. Felspar is now spelt feldspar and split into two kinds."
+    },
+    {
+      "id": "gr2",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Settled from an ocean",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "deposited from the waters of the universal ocean which once covered the whole globe"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "not a sedimentary rock laid down in water"
+      },
+      "note": "Werner's Neptunism. Granite crystallises from molten rock, and no world ocean ever covered the globe."
+    },
+    {
+      "id": "gr3",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The oldest rock",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "granite is the oldest of all rocks"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Granites of many different ages exist"
+      },
+      "note": "Some granites are among the youngest rocks in their region."
+    },
+    {
+      "id": "gr4",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "No fossils",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "Being formed before plants and animals existed, it contains no remains of them"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Granite contains no fossils because it crystallised from molten rock"
+      },
+      "note": "Right that it has no fossils, wrong about why: molten rock destroys them, whatever its age."
+    },
+    {
+      "id": "gr5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Hutton's molten granite",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "granite was once melted by subterraneous heat and forced up among the other strata"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "James Hutton argued instead that it had once been molten"
+      },
+      "note": "The minority view of 1810 is the accepted view today."
+    },
+    {
+      "id": "gr6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Fewer followers",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "this opinion has fewer followers"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "his view prevailed in the 19th century"
+      },
+      "note": "True in 1810, no longer: Hutton's side won within a few decades."
+    },
+    {
+      "id": "gr7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Mountain summits",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "forms the nucleus and the highest summits of all great mountain chains"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "common in the cores of mountain ranges"
+      },
+      "note": "Common in mountain cores, yes. In all great chains and at the highest summits, no."
+    },
+    {
+      "id": "gr8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The lowest rock",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "It is every where the lowest rock, upon which all others rest"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Granite intrusions often cut across the rocks around them"
+      },
+      "note": "Granite often pushes up into rocks laid down before it, so it is not always at the bottom."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Minerals",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Origin",
+      "britannica": 0.35,
+      "wikipedia": 0.3
+    },
+    {
+      "topic": "Fossils",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Mountains",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Position and age",
+      "britannica": 0.2,
+      "wikipedia": 0.18
+    },
+    {
+      "topic": "Intrusions",
+      "britannica": 0,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "Who was right about granite in 1810, Werner or Hutton?",
+    "Why does granite contain no fossils?",
+    "Is granite always the oldest and lowest rock?"
+  ],
+  "answers": {
+    "Who was right about granite in 1810, Werner or Hutton?": {
+      "answer": "Hutton. In 1810 most followed Werner, who held that granite settled out of a universal ocean [B2]; Hutton's view that it had been molten had fewer followers [B4]. Wikipedia says granite forms from magma that cools slowly underground [W2], and that Hutton's view prevailed in the 19th century [W3].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.97
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Why does granite contain no fossils?": {
+      "answer": "The 1810 entry says granite formed before plants and animals existed [B3]. Wikipedia says the reason is that it crystallised from molten rock [W4]. Both agree there are no fossils; they disagree about why.",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Is granite always the oldest and lowest rock?": {
+      "answer": "No. The 1810 entry calls it the oldest of all rocks [B2] and the lowest everywhere [B6]. Wikipedia says granites of many ages exist [W7], and that granite intrusions often cut across older rocks around them [W5].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

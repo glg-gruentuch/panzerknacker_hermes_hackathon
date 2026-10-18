@@ -1,0 +1,407 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "mountain",
+    "label": "Mountain",
+    "headword": "MOUNTAIN",
+    "edition": "Second edition",
+    "year": 1778,
+    "match": "strong",
+    "wikipediaTitle": "Mountain",
+    "area": "geology",
+    "teaser": "Others ascribe them to the universal deluge, which, breaking up the crust of the earth, threw its fragments into heaps; and hence the shells found upon their tops."
+  },
+  "aliases": [
+    "mountain",
+    "mountains",
+    "mountain range",
+    "orogeny"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0038",
+    "headword": "MOUNTAIN",
+    "edition": "Second edition",
+    "year": 1778,
+    "volume": "Volume 7",
+    "meta": "Encyclopaedia Britannica - Second edition, Volume 7 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "MOU                    [ 5216 ]                    MOU\n\nMOULD, a hollow form for caſting metal.\n  MOUNTAIN, an eminence of land riſing above the ſur-\nrounding country. Some philoſophers ſuppoſe mountains\nto have been formed at the creation, together with the\nreſt of the earth, and to have ſtood unchanged ever ſince.\nOthers aſcribe them to the univerſal deluge, which, break-\ning up the cruſt of the earth, threw its fragments into\nheaps; and hence the ſhells found upon their tops.\n  The higheſt mountains in the world are the Andes of\nPeru, of which Chimboraço riſes about 20,000 feet above\nthe ſea. The great chains of mountains run for the moſt\npart from eaſt to weſt.\n  Mountains are of great uſe in collecting the vapours of\nthe atmoſphere, which, condenſing upon them, form ſprings\nand rivers.\n  MOURNING, a habit worn to ſignify grief.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "MOUNTAIN",
+        "text": "MOUNTAIN, an eminence of land rising above the surrounding country."
+      },
+      {
+        "id": "B2",
+        "section": "MOUNTAIN",
+        "text": "Some philosophers suppose mountains to have been formed at the creation, together with the rest of the earth, and to have stood unchanged ever since."
+      },
+      {
+        "id": "B3",
+        "section": "MOUNTAIN",
+        "text": "Others ascribe them to the universal deluge, which, breaking up the crust of the earth, threw its fragments into heaps; and hence the shells found upon their tops."
+      },
+      {
+        "id": "B4",
+        "section": "MOUNTAIN",
+        "text": "The highest mountains in the world are the Andes of Peru, of which Chimborazo rises about 20,000 feet above the sea."
+      },
+      {
+        "id": "B5",
+        "section": "MOUNTAIN",
+        "text": "The great chains of mountains run for the most part from east to west."
+      },
+      {
+        "id": "B6",
+        "section": "MOUNTAIN",
+        "text": "Mountains are of great use in collecting the vapours of the atmosphere, which, condensing upon them, form springs and rivers."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-mountain",
+    "title": "Mountain",
+    "url": "https://en.wikipedia.org/wiki/Mountain",
+    "dateModified": "2026-09-10",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "A mountain is an elevated portion of the Earth's crust, generally with steep sides, that rises above the surrounding land."
+      },
+      {
+        "id": "W2",
+        "section": "Formation",
+        "text": "Mountains are formed by tectonic forces, erosion or volcanism, which act over periods of up to tens of millions of years. Once mountain building stops, mountains are slowly worn down by weathering and erosion."
+      },
+      {
+        "id": "W3",
+        "section": "Formation",
+        "text": "Most high mountain ranges, such as the Himalayas and the Alps, formed where tectonic plates collided and the crust was folded and pushed upwards."
+      },
+      {
+        "id": "W4",
+        "section": "Geology",
+        "text": "Marine fossils found near mountain summits come from rocks that formed on the sea floor and were later raised by plate movements."
+      },
+      {
+        "id": "W5",
+        "section": "Height",
+        "text": "Mount Everest in the Himalayas, at 8,849 metres, is the highest mountain above sea level. Because the Earth bulges at the equator, the summit of Chimborazo in Ecuador is the point farthest from the Earth's centre."
+      },
+      {
+        "id": "W6",
+        "section": "Distribution",
+        "text": "Mountain ranges follow plate boundaries rather than any one direction: the Andes run north to south along the west of South America, while the Himalayas run roughly east to west."
+      },
+      {
+        "id": "W7",
+        "section": "Climate",
+        "text": "Air forced up a mountain cools, and its moisture falls as rain or snow, which feeds rivers."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.86,
+    "rerankScore": 0.89,
+    "reasons": [
+      "Same headword: MOUNTAIN and Mountain.",
+      "Rare terms appear in both: Chimborazo, Andes, shells on summits, springs and rivers.",
+      "Orogeny scores well on how mountains form but leaves out height and climate."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Orogeny",
+      "url": "https://en.wikipedia.org/wiki/Orogeny",
+      "embedScore": 0.77,
+      "rerankScore": 0.66
+    },
+    {
+      "title": "Chimborazo",
+      "url": "https://en.wikipedia.org/wiki/Chimborazo",
+      "embedScore": 0.64,
+      "rerankScore": 0.42
+    }
+  ],
+  "alignments": [
+    {
+      "id": "mo1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "What a mountain is",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "an eminence of land rising above the surrounding country"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "rises above the surrounding land"
+      },
+      "note": "Same definition."
+    },
+    {
+      "id": "mo2",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Unchanged since creation",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "formed at the creation, together with the rest of the earth, and to have stood unchanged ever since"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "act over periods of up to tens of millions of years"
+      },
+      "note": "Mountains are still rising and wearing down. None is as old as the earth."
+    },
+    {
+      "id": "mo3",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Heaped up by the deluge",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "breaking up the crust of the earth, threw its fragments into heaps"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "formed where tectonic plates collided and the crust was folded and pushed upwards"
+      },
+      "note": "A sudden flood is replaced by slow collision of plates."
+    },
+    {
+      "id": "mo4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Shells on the tops",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "and hence the shells found upon their tops"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "come from rocks that formed on the sea floor and were later raised by plate movements"
+      },
+      "note": "The shells are real. The sea did not rise to the summits; the sea floor rose to become them."
+    },
+    {
+      "id": "mo5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The highest mountains",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "The highest mountains in the world are the Andes of Peru"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Mount Everest in the Himalayas, at 8,849 metres, is the highest mountain above sea level"
+      },
+      "note": "The Himalayas had not been measured in 1778. One consolation: Chimborazo's summit is the farthest point from the earth's centre."
+    },
+    {
+      "id": "mo6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "East to west",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "run for the most part from east to west"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "follow plate boundaries rather than any one direction"
+      },
+      "note": "The Andes, which the entry calls the highest, run north to south."
+    },
+    {
+      "id": "mo7",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Mountains make rivers",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "collecting the vapours of the atmosphere, which, condensing upon them, form springs and rivers"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "its moisture falls as rain or snow, which feeds rivers"
+      },
+      "note": "Right: mountains catch moisture from the air and feed rivers."
+    },
+    {
+      "id": "mo8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Worn down",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "mountains are slowly worn down by weathering and erosion"
+      },
+      "note": "The 1778 entry has mountains standing unchanged."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Definition",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "How mountains form",
+      "britannica": 0.35,
+      "wikipedia": 0.3
+    },
+    {
+      "topic": "Shells on summits",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Highest mountains",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Direction of ranges",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Rain and rivers",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Erosion",
+      "britannica": 0,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "How did the 1778 entry explain the shells on mountain tops?",
+    "Which were the highest mountains in 1778?",
+    "What did the 1778 entry get right about mountains?"
+  ],
+  "answers": {
+    "How did the 1778 entry explain the shells on mountain tops?": {
+      "answer": "As a sign of the universal deluge, which broke up the earth's crust and heaped its fragments into mountains [B3]. Wikipedia says the shells come from rocks that formed on the sea floor and were later raised by the movement of tectonic plates [W4].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Which were the highest mountains in 1778?": {
+      "answer": "The 1778 entry names the Andes, with Chimborazo at about 20,000 feet [B4]. Wikipedia gives Mount Everest in the Himalayas, at 8,849 metres, as the highest above sea level, though Chimborazo's summit is the point farthest from the Earth's centre [W5].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What did the 1778 entry get right about mountains?": {
+      "answer": "Two things: the definition [B1] [W1], and that mountains collect moisture from the air and feed rivers [B6] [W7]. Its accounts of how mountains formed [B2] [B3], which are highest [B4] and which way ranges run [B5] are all replaced in Wikipedia [W2] [W3] [W5] [W6].",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.8
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.8
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.82
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.82
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.78
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.78
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.8
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.8
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.76
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.76
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

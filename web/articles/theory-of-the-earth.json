@@ -1,0 +1,409 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "theory-of-the-earth",
+    "label": "Theory of the earth",
+    "headword": "EARTH, THEORY OF",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "partial",
+    "wikipediaTitle": "Age of Earth",
+    "area": "geology",
+    "teaser": "According to the sacred chronology, the earth was created about 4000 years before the Christian era, which most writers of theories endeavour to reconcile with the appearances of nature."
+  },
+  "aliases": [
+    "theory of the earth",
+    "age of the earth",
+    "age of earth",
+    "deep time",
+    "deluge"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0040",
+    "headword": "EARTH, THEORY OF",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 6",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 6 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "EAR                    [ 228 ]                    EAR\n\nEARTH, Theory of, an account of the formation of the\nglobe and of the changes it has ſince undergone. Ac-\ncording to the ſacred chronology, the earth was created\nabout 4000 years before the Chriſtian era, which moſt\nwriters of theories endeavour to reconcile with the ap-\npearances of nature.\n  Dr Burnet ſuppoſed the original earth to have been a\nſmooth cruſt without mountains or ſeas, which, break-\ning at the deluge, let out the waters of the abyſs. Mr\nBuffon conjectures that the earth was ſtruck off from\nthe ſun by a comet, and has been cooling ever ſince, a\nperiod which he computes at about 75,000 years.\n  Dr Hutton of Edinburgh holds that the preſent conti-\nnents are formed of the ruins of former ones, worn down\nby water and raiſed again by ſubterraneous heat; and\nthat in this ſucceſſion he finds no veſtige of a begin-\nning, no proſpect of an end. The ſtrata of the earth are\nthought by moſt naturaliſts to have been depoſited all\nat once by the waters of the deluge.\n  EARTHQUAKE. See that article.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "EARTH, THEORY OF",
+        "text": "EARTH, Theory of, an account of the formation of the globe and of the changes it has since undergone."
+      },
+      {
+        "id": "B2",
+        "section": "EARTH, THEORY OF",
+        "text": "According to the sacred chronology, the earth was created about 4000 years before the Christian era, which most writers of theories endeavour to reconcile with the appearances of nature."
+      },
+      {
+        "id": "B3",
+        "section": "EARTH, THEORY OF",
+        "text": "Dr Burnet supposed the original earth to have been a smooth crust without mountains or seas, which, breaking at the deluge, let out the waters of the abyss."
+      },
+      {
+        "id": "B4",
+        "section": "EARTH, THEORY OF",
+        "text": "Mr Buffon conjectures that the earth was struck off from the sun by a comet, and has been cooling ever since, a period which he computes at about 75,000 years."
+      },
+      {
+        "id": "B5",
+        "section": "EARTH, THEORY OF",
+        "text": "Dr Hutton of Edinburgh holds that the present continents are formed of the ruins of former ones, worn down by water and raised again by subterraneous heat; and that in this succession he finds no vestige of a beginning, no prospect of an end."
+      },
+      {
+        "id": "B6",
+        "section": "EARTH, THEORY OF",
+        "text": "The strata of the earth are thought by most naturalists to have been deposited all at once by the waters of the deluge."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-age-of-earth",
+    "title": "Age of Earth",
+    "url": "https://en.wikipedia.org/wiki/Age_of_Earth",
+    "dateModified": "2026-09-26",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "The age of Earth is estimated to be 4.54 billion years, with an uncertainty of about 1%. The figure comes from radiometric dating of meteorites and of the oldest minerals on Earth."
+      },
+      {
+        "id": "W2",
+        "section": "History",
+        "text": "In the 17th century, James Ussher calculated from the Bible that the Earth was created in 4004 BC."
+      },
+      {
+        "id": "W3",
+        "section": "History",
+        "text": "Georges-Louis Leclerc, Comte de Buffon, estimated from the cooling of heated iron spheres that the Earth was about 75,000 years old."
+      },
+      {
+        "id": "W4",
+        "section": "History",
+        "text": "James Hutton argued in the late 18th century that slow processes seen today, such as erosion and the raising of land, had shaped the Earth over immense periods of time."
+      },
+      {
+        "id": "W5",
+        "section": "Formation",
+        "text": "The Earth formed together with the Sun and the other planets from a disc of dust and gas around the young Sun."
+      },
+      {
+        "id": "W6",
+        "section": "Geology",
+        "text": "Sedimentary rock layers built up slowly over very long periods; their order and the radiometric dating of volcanic layers within them give their ages."
+      },
+      {
+        "id": "W7",
+        "section": "History",
+        "text": "In the 19th century, Lord Kelvin estimated from the Earth's cooling an age of 20 to 400 million years. His figure was too low because he did not know about heating by radioactivity."
+      }
+    ]
+  },
+  "match": {
+    "strength": "partial",
+    "embedScore": 0.73,
+    "rerankScore": 0.72,
+    "reasons": [
+      "The 1797 entry is a survey of theories of the earth's formation; no single Wikipedia article has the same scope.",
+      "Age of Earth matches its central question, and names the same people: Ussher's chronology, Buffon, Hutton.",
+      "Rerank 0.72 is below our 0.75 threshold for a strong match. History of Earth and Neptunism each cover a part."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "History of Earth",
+      "url": "https://en.wikipedia.org/wiki/History_of_Earth",
+      "embedScore": 0.76,
+      "rerankScore": 0.66
+    },
+    {
+      "title": "Neptunism",
+      "url": "https://en.wikipedia.org/wiki/Neptunism",
+      "embedScore": 0.65,
+      "rerankScore": 0.48
+    },
+    {
+      "title": "Flood geology",
+      "url": "https://en.wikipedia.org/wiki/Flood_geology",
+      "embedScore": 0.68,
+      "rerankScore": 0.53
+    }
+  ],
+  "alignments": [
+    {
+      "id": "te1",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Six thousand years",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the earth was created about 4000 years before the Christian era"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "The age of Earth is estimated to be 4.54 billion years"
+      },
+      "note": "Off by a factor of about 750,000."
+    },
+    {
+      "id": "te2",
+      "kind": "retained",
+      "verdict": "wrong",
+      "label": "The sacred chronology",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "According to the sacred chronology"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "James Ussher calculated from the Bible that the Earth was created in 4004 BC"
+      },
+      "note": "Both describe the same date from the same source. Wikipedia treats it as history, not as an age."
+    },
+    {
+      "id": "te3",
+      "kind": "dropped",
+      "verdict": "wrong",
+      "label": "Burnet's smooth earth",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "a smooth crust without mountains or seas, which, breaking at the deluge, let out the waters of the abyss"
+      },
+      "wikipedia": null,
+      "note": "Inference: Wikipedia's account of the earth's formation has no smooth first crust and no flood."
+    },
+    {
+      "id": "te4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Struck off by a comet",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "struck off from the sun by a comet"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "The Earth formed together with the Sun and the other planets from a disc of dust and gas"
+      },
+      "note": "Buffon was right that the earth and sun are linked, wrong about the comet."
+    },
+    {
+      "id": "te5",
+      "kind": "retained",
+      "verdict": "wrong",
+      "label": "Buffon's 75,000 years",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "a period which he computes at about 75,000 years"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "estimated from the cooling of heated iron spheres that the Earth was about 75,000 years old"
+      },
+      "note": "Both report the same figure. It was bold for its time and still far too young."
+    },
+    {
+      "id": "te6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Hutton's cycle",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "worn down by water and raised again by subterraneous heat"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "slow processes seen today, such as erosion and the raising of land"
+      },
+      "note": "The one theory in the entry that still holds."
+    },
+    {
+      "id": "te7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "No vestige of a beginning",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "no vestige of a beginning, no prospect of an end"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "4.54 billion years"
+      },
+      "note": "Right that the earth is far older than anyone thought. It does have a beginning, now dated."
+    },
+    {
+      "id": "te8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Strata from the deluge",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "deposited all at once by the waters of the deluge"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Sedimentary rock layers built up slowly over very long periods"
+      },
+      "note": "The layers took millions of years, not one flood."
+    },
+    {
+      "id": "te9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Kelvin's estimate",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "His figure was too low because he did not know about heating by radioactivity"
+      },
+      "note": "Even the best 19th-century estimates were too young until radioactivity was found."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Age of the earth",
+      "britannica": 0.25,
+      "wikipedia": 0.3
+    },
+    {
+      "topic": "The deluge",
+      "britannica": 0.3,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Formation",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Hutton and deep time",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Strata",
+      "britannica": 0.1,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Radiometric dating",
+      "britannica": 0,
+      "wikipedia": 0.25
+    }
+  ],
+  "suggestedQuestions": [
+    "How old did people in 1797 think the earth was?",
+    "Which theory of the earth in 1797 has held up?",
+    "What did the 1797 entry think the strata were?"
+  ],
+  "answers": {
+    "How old did people in 1797 think the earth was?": {
+      "answer": "Most followed the sacred chronology: created about 4000 years before the Christian era [B2]. Buffon computed about 75,000 years from cooling [B4] [W3], and Hutton saw no vestige of a beginning [B5]. Wikipedia gives 4.54 billion years, from radiometric dating [W1].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.88
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Which theory of the earth in 1797 has held up?": {
+      "answer": "Hutton's. He held that continents are worn down by water and raised again by heat, in a long succession [B5]. Wikipedia credits him with arguing that slow processes seen today shaped the Earth over immense periods [W4]. Burnet's smooth crust [B3], Buffon's comet [B4] and the deluge strata [B6] have not held up [W5] [W6].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.8
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.8
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.8
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.78
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.78
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What did the 1797 entry think the strata were?": {
+      "answer": "Layers laid down all at once by the waters of the deluge, in the view of most naturalists [B6]. Wikipedia says sedimentary layers built up slowly over very long periods, and are dated by their order and by radiometric dating of volcanic layers [W6].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}
