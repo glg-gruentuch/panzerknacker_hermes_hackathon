@@ -1,0 +1,351 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "ear",
+    "label": "Ear",
+    "headword": "EAR",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Ear",
+    "area": "anatomy",
+    "teaser": "The semicircular canals are thought to serve, like the cochlea, for the perception of sounds."
+  },
+  "aliases": [
+    "ear",
+    "ears",
+    "hearing",
+    "eardrum",
+    "cochlea",
+    "tympanum"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0050",
+    "headword": "EAR",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 6",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 6 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "EAR                    [ 233 ]                    EAR\n\nEAGLE, in ornithology. See FALCO.\n  EAR, in anatomy, the organ of hearing, which is divi-\nded by anatomiſts into the external ear, the cavity of\nthe tympanum, and the labyrinth. The tympanum, or drum,\nis a thin membrane ſtretched acroſs the end of the paſ-\nſage; behind it lie four ſmall bones, the malleus or\nhammer, the incus or anvil, the os orbiculare, and the\nſtapes or ſtirrup, which convey the tremors of the\nmembrane to the labyrinth.\n  The labyrinth conſiſts of the veſtibule, the three\nſemicircular canals, and the cochlea, wbich is formed\nlike the ſhell of a ſnail; and in theſe the ſoft pulp\nof the auditory nerve is ſpread out, which is the imme-\ndiate organ of hearing. The ſemicircular canals are\nthought to ſerve, like the cochlea, for the perception\nof ſounds.\n  The Euftachian tube paſſes from the cavity of the\ntympanum to the back of the mouth, and admits air to\nthe inner ſide of the drum. The wax of the ear, which\nis bitter, ſerves to catch the duſt and to keep inſects\nfrom creeping into the paſſage.\n  EARL, a title of nobility next below a marquis.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "EAR",
+        "text": "EAR, in anatomy, the organ of hearing, which is divided by anatomists into the external ear, the cavity of the tympanum, and the labyrinth."
+      },
+      {
+        "id": "B2",
+        "section": "EAR",
+        "text": "The tympanum, or drum, is a thin membrane stretched across the end of the passage; behind it lie four small bones, the malleus or hammer, the incus or anvil, the os orbiculare, and the stapes or stirrup, which convey the tremors of the membrane to the labyrinth."
+      },
+      {
+        "id": "B3",
+        "section": "EAR",
+        "text": "The labyrinth consists of the vestibule, the three semicircular canals, and the cochlea, which is formed like the shell of a snail; and in these the soft pulp of the auditory nerve is spread out, which is the immediate organ of hearing."
+      },
+      {
+        "id": "B4",
+        "section": "EAR",
+        "text": "The semicircular canals are thought to serve, like the cochlea, for the perception of sounds."
+      },
+      {
+        "id": "B5",
+        "section": "EAR",
+        "text": "The Eustachian tube passes from the cavity of the tympanum to the back of the mouth, and admits air to the inner side of the drum."
+      },
+      {
+        "id": "B6",
+        "section": "EAR",
+        "text": "The wax of the ear, which is bitter, serves to catch the dust and to keep insects from creeping into the passage."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-ear",
+    "title": "Ear",
+    "url": "https://en.wikipedia.org/wiki/Ear",
+    "dateModified": "2026-09-08",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "In vertebrates the ear is the organ of hearing and of balance. In mammals it is usually described as having three parts: the outer ear, the middle ear and the inner ear."
+      },
+      {
+        "id": "W2",
+        "section": "Middle ear",
+        "text": "The eardrum, or tympanic membrane, separates the outer ear from the middle ear. Three small bones, the malleus, incus and stapes, carry its vibrations to the inner ear."
+      },
+      {
+        "id": "W3",
+        "section": "Inner ear",
+        "text": "The inner ear contains the cochlea, which is the organ of hearing, and the vestibular system, which senses balance and movement."
+      },
+      {
+        "id": "W4",
+        "section": "Hearing",
+        "text": "In the cochlea, hair cells turn sound vibrations into nerve signals. These signals travel along the auditory nerve to the brain."
+      },
+      {
+        "id": "W5",
+        "section": "Balance",
+        "text": "The semicircular canals are part of the vestibular system. They are filled with fluid and sense rotation of the head, which helps the body keep its balance."
+      },
+      {
+        "id": "W6",
+        "section": "Middle ear",
+        "text": "The Eustachian tube connects the middle ear to the back of the nose and throat. It keeps the air pressure equal on both sides of the eardrum."
+      },
+      {
+        "id": "W7",
+        "section": "Outer ear",
+        "text": "Earwax helps clean and protect the ear canal. It traps dust and dirt and may help keep out bacteria, fungi and insects."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.85,
+    "rerankScore": 0.86,
+    "reasons": [
+      "Same headword: EAR and Ear.",
+      "Rare terms appear in both: malleus, incus, stapes, cochlea, Eustachian tube.",
+      "Hearing scores well but covers sound and perception more than the organ."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Hearing",
+      "url": "https://en.wikipedia.org/wiki/Hearing",
+      "embedScore": 0.79,
+      "rerankScore": 0.6
+    },
+    {
+      "title": "Inner ear",
+      "url": "https://en.wikipedia.org/wiki/Inner_ear",
+      "embedScore": 0.77,
+      "rerankScore": 0.58
+    },
+    {
+      "title": "Ossicles",
+      "url": "https://en.wikipedia.org/wiki/Ossicles",
+      "embedScore": 0.7,
+      "rerankScore": 0.5
+    }
+  ],
+  "alignments": [
+    {
+      "id": "ea1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Three parts",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the external ear, the cavity of the tympanum, and the labyrinth"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "the outer ear, the middle ear and the inner ear"
+      },
+      "note": "Change in language. The cavity of the tympanum is the middle ear and the labyrinth is the inner ear."
+    },
+    {
+      "id": "ea2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Bones carry sound",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "convey the tremors of the membrane to the labyrinth"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "carry its vibrations to the inner ear"
+      },
+      "note": "Same function in new words."
+    },
+    {
+      "id": "ea3",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Four or three bones",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "four small bones"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Three small bones"
+      },
+      "note": "The count changed. Inference: the os orbiculare is now counted as part of the incus, not as a separate bone."
+    },
+    {
+      "id": "ea4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Cochlea",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the cochlea, which is formed like the shell of a snail"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "the cochlea, which is the organ of hearing"
+      },
+      "note": "Both place hearing in the cochlea."
+    },
+    {
+      "id": "ea5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Organ of hearing",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the soft pulp of the auditory nerve is spread out, which is the immediate organ of hearing"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "hair cells turn sound vibrations into nerve signals"
+      },
+      "note": "The auditory nerve is real. Today the sensing is done by hair cells, which pass signals to the nerve."
+    },
+    {
+      "id": "ea6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Semicircular canals",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "The semicircular canals are thought to serve, like the cochlea, for the perception of sounds"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "sense rotation of the head"
+      },
+      "note": "Change in knowledge. The canals serve balance, not hearing. Flourens showed this with pigeons in the 1820s."
+    },
+    {
+      "id": "ea7",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Eustachian tube",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "admits air to the inner side of the drum"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "keeps the air pressure equal on both sides of the eardrum"
+      },
+      "note": "Same function. Wikipedia names the throat behind the nose, not the mouth."
+    },
+    {
+      "id": "ea8",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Earwax",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "to keep insects from creeping into the passage"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "may help keep out bacteria, fungi and insects"
+      },
+      "note": "Insects are still named, but cleaning and protection against infection are now the main roles."
+    },
+    {
+      "id": "ea9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Balance",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "the organ of hearing and of balance"
+      },
+      "note": "The 1797 entry treats the ear as an organ of hearing only."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Parts of the ear",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Drum and small bones",
+      "britannica": 0.3,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Cochlea and hearing",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Semicircular canals",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Eustachian tube",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Earwax",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Hair cells and balance",
+      "britannica": 0,
+      "wikipedia": 0.13
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1797 entry think the semicircular canals do?",
+    "How many small bones did the 1797 entry find in the ear?"
+  ],
+  "answers": {
+    "What did the 1797 entry think the semicircular canals do?": {
+      "answer": "It said they serve, like the cochlea, for the perception of sounds [B4]. Wikipedia says they sense rotation of the head and help keep balance [W5].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "How many small bones did the 1797 entry find in the ear?": {
+      "answer": "Four: the hammer, the anvil, the os orbiculare and the stirrup [B2]. Wikipedia names three: the malleus, incus and stapes [W2].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.94
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

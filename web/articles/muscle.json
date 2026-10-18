@@ -1,0 +1,365 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "muscle",
+    "label": "Muscle",
+    "headword": "MUSCLE",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "match": "strong",
+    "wikipediaTitle": "Muscle",
+    "area": "anatomy",
+    "teaser": "The cause of muscular contraction has been much disputed; the most common opinion is that a fluid sent from the brain by the nerves swells the fibres, and so shortens them."
+  },
+  "aliases": [
+    "muscle",
+    "muscles",
+    "muscular motion",
+    "muscular contraction"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0049",
+    "headword": "MUSCLE",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "volume": "Volume 14",
+    "meta": "Encyclopaedia Britannica - Fourth edition, Volume 14 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "MUS                    [ 523 ]                    MUS\n\nMUSCAT, a town and port of Arabia.\n  MUSCLE, in anatomy, a bundle of fleſhy fibres, by the\ncontraction of which the ſeveral parts of the body are\nmoved. Each muſcle is commonly fixed at one end to a\nbone that is leſs moveable, and at the other, by a ten-\ndon, to the part which it moves.\n  The motions of the body are either voluntary, as\nthoſe of the limbs, which are performed at the command\nof the will; or involuntary, as thoſe of the heart and\nof the inteſtines, which go on without our knowledge.\n  The cauſe of muſcular contraction has been much diſ-\nputed; the moſt common opinion is that a fluid ſent\nfrom the brain by the nerves ſwells the fibres, and ſo\nſhortens them. The experiments of Galvani at Bologua,\nand of Vclta, ſhow that electricity applied to the\nnerve of a frog makes the muſcles contract ſtrongly;\nand many phyſiologiſts now ſuppoſe the nervous fluid to\nbe of an electrical nature.\n  The number of muſcles in the human body is reckoned\nby moſt anatomiſts at about four hundred and forty,\nthough ſome divide them differently. Muſcles grow lar-\nger and ſtronger by exerciſe, and waſte when they are\nlong unuſed, as is ſeen in limbs that have been bound\nup after a fracture.\n  MUSCOVY, an old name for Ruſſia.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "MUSCLE",
+        "text": "MUSCLE, in anatomy, a bundle of fleshy fibres, by the contraction of which the several parts of the body are moved."
+      },
+      {
+        "id": "B2",
+        "section": "MUSCLE",
+        "text": "Each muscle is commonly fixed at one end to a bone that is less moveable, and at the other, by a tendon, to the part which it moves."
+      },
+      {
+        "id": "B3",
+        "section": "MUSCLE",
+        "text": "The motions of the body are either voluntary, as those of the limbs, which are performed at the command of the will; or involuntary, as those of the heart and of the intestines, which go on without our knowledge."
+      },
+      {
+        "id": "B4",
+        "section": "MUSCLE",
+        "text": "The cause of muscular contraction has been much disputed; the most common opinion is that a fluid sent from the brain by the nerves swells the fibres, and so shortens them."
+      },
+      {
+        "id": "B5",
+        "section": "MUSCLE",
+        "text": "The experiments of Galvani at Bologna, and of Volta, show that electricity applied to the nerve of a frog makes the muscles contract strongly; and many physiologists now suppose the nervous fluid to be of an electrical nature."
+      },
+      {
+        "id": "B6",
+        "section": "MUSCLE",
+        "text": "The number of muscles in the human body is reckoned by most anatomists at about four hundred and forty, though some divide them differently."
+      },
+      {
+        "id": "B7",
+        "section": "MUSCLE",
+        "text": "Muscles grow larger and stronger by exercise, and waste when they are long unused, as is seen in limbs that have been bound up after a fracture."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-muscle",
+    "title": "Muscle",
+    "url": "https://en.wikipedia.org/wiki/Muscle",
+    "dateModified": "2026-10-03",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Muscle is a soft tissue and one of the four basic types of animal tissue. Muscle cells contain protein filaments that slide past one another and shorten the cell. Muscles produce force and motion."
+      },
+      {
+        "id": "W2",
+        "section": "Types",
+        "text": "There are three types of muscle: skeletal, cardiac and smooth. Skeletal muscle is under voluntary control. Cardiac and smooth muscle contract without conscious control."
+      },
+      {
+        "id": "W3",
+        "section": "Structure",
+        "text": "Skeletal muscles are attached to bones by tendons. A muscle moves a bone by pulling on it as it contracts."
+      },
+      {
+        "id": "W4",
+        "section": "Contraction",
+        "text": "Muscle contraction happens when the protein filaments actin and myosin slide past each other, using energy from a molecule called ATP."
+      },
+      {
+        "id": "W5",
+        "section": "Nervous control",
+        "text": "A nerve impulse is an electrical signal. At the junction between nerve and muscle it causes the release of acetylcholine, which makes the muscle fibre contract."
+      },
+      {
+        "id": "W6",
+        "section": "History",
+        "text": "In the late 18th century Luigi Galvani found that electricity makes the leg muscles of dead frogs contract. His work began the study of bioelectricity."
+      },
+      {
+        "id": "W7",
+        "section": "Number",
+        "text": "The human body has more than 600 skeletal muscles. The exact number depends on how they are counted."
+      },
+      {
+        "id": "W8",
+        "section": "Exercise",
+        "text": "Exercise makes muscles larger and stronger. Muscles that are not used for a long time, for example during bed rest or in a cast, become smaller and weaker; this is called atrophy."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.86,
+    "rerankScore": 0.87,
+    "reasons": [
+      "Same headword: MUSCLE and Muscle.",
+      "Rare terms appear in both: tendon, voluntary, contraction, Galvani.",
+      "Skeletal muscle scores well but leaves out the heart and the intestines."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Skeletal muscle",
+      "url": "https://en.wikipedia.org/wiki/Skeletal_muscle",
+      "embedScore": 0.82,
+      "rerankScore": 0.66
+    },
+    {
+      "title": "Muscle contraction",
+      "url": "https://en.wikipedia.org/wiki/Muscle_contraction",
+      "embedScore": 0.79,
+      "rerankScore": 0.61
+    }
+  ],
+  "alignments": [
+    {
+      "id": "mu1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Fibres that contract",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a bundle of fleshy fibres, by the contraction of which the several parts of the body are moved"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "Muscles produce force and motion"
+      },
+      "note": "Same function in new words."
+    },
+    {
+      "id": "mu2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Fixed by tendons",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "by a tendon, to the part which it moves"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Skeletal muscles are attached to bones by tendons"
+      },
+      "note": "Same structure."
+    },
+    {
+      "id": "mu3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Voluntary and involuntary",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "either voluntary, as those of the limbs"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Skeletal muscle is under voluntary control"
+      },
+      "note": "Change in language. The 1810 split of voluntary and involuntary motion matches skeletal muscle against cardiac and smooth muscle."
+    },
+    {
+      "id": "mu4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Cause of contraction",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "a fluid sent from the brain by the nerves swells the fibres"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "actin and myosin slide past each other"
+      },
+      "note": "Change in knowledge. No fluid swells the fibres. Protein filaments slide past each other."
+    },
+    {
+      "id": "mu5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Galvani's frogs",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "electricity applied to the nerve of a frog makes the muscles contract strongly"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "electricity makes the leg muscles of dead frogs contract"
+      },
+      "note": "Same experiment, reported in both texts."
+    },
+    {
+      "id": "mu6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Electrical nerves",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "suppose the nervous fluid to be of an electrical nature"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "A nerve impulse is an electrical signal"
+      },
+      "note": "The guess about electricity held. The idea of a nervous fluid did not, and a chemical step at the junction was not known."
+    },
+    {
+      "id": "mu7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Number of muscles",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "about four hundred and forty"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "more than 600 skeletal muscles"
+      },
+      "note": "The count went up. Inference: part of the gap comes from how small muscles are divided and counted."
+    },
+    {
+      "id": "mu8",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Use and disuse",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "Muscles grow larger and stronger by exercise, and waste when they are long unused"
+      },
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "Exercise makes muscles larger and stronger"
+      },
+      "note": "Same observation. Wikipedia names the wasting atrophy."
+    },
+    {
+      "id": "mu9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Energy from ATP",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "using energy from a molecule called ATP"
+      },
+      "note": "The 1810 entry does not say where the energy for contraction comes from."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Structure",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Types of motion",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Cause of contraction",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Nerves and electricity",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Number of muscles",
+      "britannica": 0.1,
+      "wikipedia": 0.05
+    },
+    {
+      "topic": "Exercise and disuse",
+      "britannica": 0.1,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Energy",
+      "britannica": 0,
+      "wikipedia": 0.1
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1810 entry think makes a muscle contract?",
+    "What did Galvani show?"
+  ],
+  "answers": {
+    "What did the 1810 entry think makes a muscle contract?": {
+      "answer": "The most common opinion was that a fluid sent from the brain by the nerves swells the fibres [B4]. Some already suspected the nervous fluid was electrical [B5]. Wikipedia says the filaments actin and myosin slide past each other [W4], triggered by an electrical nerve impulse [W5].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.88
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.87
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What did Galvani show?": {
+      "answer": "That electricity applied to a frog's nerve makes the muscles contract [B5]. Wikipedia reports the same experiment and says it began the study of bioelectricity [W6].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

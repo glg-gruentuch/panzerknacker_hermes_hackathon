@@ -1,0 +1,366 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "spleen",
+    "label": "Spleen",
+    "headword": "SPLEEN",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Spleen",
+    "area": "anatomy",
+    "teaser": "The use of the spleen is not yet known, and anatomists have offered many conjectures concerning it."
+  },
+  "aliases": [
+    "spleen",
+    "splenic",
+    "ague-cake",
+    "splenomegaly"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0048",
+    "headword": "SPLEEN",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 17",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 17 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "SPL                    [ 641 ]                    SPL\n\nSPITHEAD, a road for ſhips off Portſmouth.\n  SPLEEN, in anatomy, a ſoft, ſpongy viſcus of a livid\ncolour, ſituated in the left ſide of the belly, between\nthe ſtomach and the ribs. The uſe of the ſpleen is not\nyet known, and anatomiſts have offered many conjcctures\nconcerning it.\n  The ancients made the ſpleen the ſeat of melancholy,\nand ſome of them of laughter, whence the word ſpleen is\nſtill uſed for ill humour. Dogs from which the ſpleen\nhas been cut out have lived many years after, and have\nbeen in good health; ſo that it cannot be abſolutely\nneceſſary to life.\n  Some ſuppoſe that the blood, moving ſlowly through\nthe ſpleen, is there prepared for the better ſecretion\nof the bile in the liver, to which it goes by the ſple-\nnic vein. Others imagine that it ſends a juice to the\nſtomach by the ſhort veſſels, to ſharpen the appetite\nand aſſiſt digeſtion.\n  In ſome fevers, particularly in the intermittent, the\nſpleen ſwells to a great ſize and becomes hard; this\nthe common people call the ague-cake.\n  SPLEENWORT, in botany. See ASPLENIUM.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "SPLEEN",
+        "text": "SPLEEN, in anatomy, a soft, spongy viscus of a livid colour, situated in the left side of the belly, between the stomach and the ribs."
+      },
+      {
+        "id": "B2",
+        "section": "SPLEEN",
+        "text": "The use of the spleen is not yet known, and anatomists have offered many conjectures concerning it."
+      },
+      {
+        "id": "B3",
+        "section": "SPLEEN",
+        "text": "The ancients made the spleen the seat of melancholy, and some of them of laughter; whence the word spleen is still used for ill humour."
+      },
+      {
+        "id": "B4",
+        "section": "SPLEEN",
+        "text": "Dogs from which the spleen has been cut out have lived many years after, and have been in good health; so that it cannot be absolutely necessary to life."
+      },
+      {
+        "id": "B5",
+        "section": "SPLEEN",
+        "text": "Some suppose that the blood, moving slowly through the spleen, is there prepared for the better secretion of the bile in the liver, to which it goes by the splenic vein."
+      },
+      {
+        "id": "B6",
+        "section": "SPLEEN",
+        "text": "Others imagine that it sends a juice to the stomach by the short vessels, to sharpen the appetite and assist digestion."
+      },
+      {
+        "id": "B7",
+        "section": "SPLEEN",
+        "text": "In some fevers, particularly in the intermittent, the spleen swells to a great size and becomes hard; this the common people call the ague-cake."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-spleen",
+    "title": "Spleen",
+    "url": "https://en.wikipedia.org/wiki/Spleen",
+    "dateModified": "2026-09-30",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "The spleen is an organ found in almost all vertebrates. In humans it lies in the upper left part of the abdomen. It works mainly as a filter for the blood."
+      },
+      {
+        "id": "W2",
+        "section": "Function",
+        "text": "The spleen removes old and damaged red blood cells. Their iron is recycled, and their hemoglobin is broken down to bilirubin, which travels to the liver and leaves the body in the bile."
+      },
+      {
+        "id": "W3",
+        "section": "Immune system",
+        "text": "The spleen is part of the immune system. Its white pulp holds lymphocytes and helps the body fight bacteria, especially bacteria with a capsule."
+      },
+      {
+        "id": "W4",
+        "section": "Function",
+        "text": "The spleen holds a reserve of blood cells. In some animals, such as horses, it can release many red blood cells into the blood during exertion."
+      },
+      {
+        "id": "W5",
+        "section": "Clinical significance",
+        "text": "People can live without a spleen. After its removal, called splenectomy, they have a higher risk of serious infections, so vaccination is advised."
+      },
+      {
+        "id": "W6",
+        "section": "Clinical significance",
+        "text": "An enlarged spleen, called splenomegaly, has many causes, including infections such as malaria and infectious mononucleosis."
+      },
+      {
+        "id": "W7",
+        "section": "Society and culture",
+        "text": "In the humoral medicine of ancient Greece the spleen was linked to black bile and melancholy. In English the word spleen came to mean bad temper."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.85,
+    "rerankScore": 0.87,
+    "reasons": [
+      "Same headword: SPLEEN and Spleen.",
+      "Rare terms appear in both: melancholy, splenic vein, enlarged spleen in fevers.",
+      "Splenectomy scores well but covers only the removal of the organ."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Splenectomy",
+      "url": "https://en.wikipedia.org/wiki/Splenectomy",
+      "embedScore": 0.76,
+      "rerankScore": 0.55
+    },
+    {
+      "title": "Splenomegaly",
+      "url": "https://en.wikipedia.org/wiki/Splenomegaly",
+      "embedScore": 0.72,
+      "rerankScore": 0.5
+    }
+  ],
+  "alignments": [
+    {
+      "id": "sp1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Position",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "situated in the left side of the belly"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "lies in the upper left part of the abdomen"
+      },
+      "note": "Same position in new words."
+    },
+    {
+      "id": "sp2",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Use of the spleen",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "The use of the spleen is not yet known"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "It works mainly as a filter for the blood"
+      },
+      "note": "Change in knowledge. The statement was fair in 1797. Today the main uses are known."
+    },
+    {
+      "id": "sp3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Seat of melancholy",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "The ancients made the spleen the seat of melancholy"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "linked to black bile and melancholy"
+      },
+      "note": "Both report the old belief and its trace in the word spleen. Neither endorses it."
+    },
+    {
+      "id": "sp4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Life without a spleen",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "it cannot be absolutely necessary to life"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "People can live without a spleen"
+      },
+      "note": "Same conclusion. Wikipedia adds that the risk of serious infection goes up."
+    },
+    {
+      "id": "sp5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Link to the bile",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "is there prepared for the better secretion of the bile in the liver"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "travels to the liver and leaves the body in the bile"
+      },
+      "note": "Inference: the old guess points in a real direction. The spleen breaks down old red cells, and their waste goes to the liver and into the bile."
+    },
+    {
+      "id": "sp6",
+      "kind": "dropped",
+      "verdict": "wrong",
+      "label": "Juice for the stomach",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "it sends a juice to the stomach by the short vessels"
+      },
+      "wikipedia": null,
+      "note": "The short vessels carry blood, not a digestive juice. Wikipedia does not mention this old idea."
+    },
+    {
+      "id": "sp7",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Swelling in fevers",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "the spleen swells to a great size and becomes hard"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "An enlarged spleen, called splenomegaly"
+      },
+      "note": "Same observation. The intermittent fever of 1797 is mostly malaria, which Wikipedia names as a cause."
+    },
+    {
+      "id": "sp8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Immune role",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "The spleen is part of the immune system"
+      },
+      "note": "The 1797 entry knows nothing of the spleen's part in fighting infection."
+    },
+    {
+      "id": "sp9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Blood reserve",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "holds a reserve of blood cells"
+      },
+      "note": "Not in the 1797 entry."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Position",
+      "britannica": 0.15,
+      "wikipedia": 0.08
+    },
+    {
+      "topic": "Purpose and filtering",
+      "britannica": 0.35,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Immune system",
+      "britannica": 0,
+      "wikipedia": 0.17
+    },
+    {
+      "topic": "Blood reserve",
+      "britannica": 0,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Removal",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Enlargement",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Culture",
+      "britannica": 0.15,
+      "wikipedia": 0.13
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1797 entry know about the use of the spleen?",
+    "Can you live without a spleen?"
+  ],
+  "answers": {
+    "What did the 1797 entry know about the use of the spleen?": {
+      "answer": "It said the use was not yet known [B2]. It listed guesses: preparing blood for the bile [B5] and sending a juice to the stomach [B6]. Wikipedia says the spleen filters the blood [W1], removes old red cells [W2] and is part of the immune system [W3].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.8
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.88
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.84
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Can you live without a spleen?": {
+      "answer": "The 1797 entry says dogs lived many years after the spleen was cut out [B4]. Wikipedia agrees that people can live without it, but notes a higher risk of serious infections [W5].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

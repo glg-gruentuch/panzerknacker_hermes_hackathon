@@ -1,0 +1,358 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "liver",
+    "label": "Liver",
+    "headword": "LIVER",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Liver",
+    "area": "anatomy",
+    "teaser": "If the liver be much wounded, the wound is commonly mortal; nor is it known that any part of it, once destroyed, is ever restored."
+  },
+  "aliases": [
+    "liver",
+    "hepar",
+    "hepatic",
+    "bile",
+    "gall-bladder"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0047",
+    "headword": "LIVER",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 10",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 10 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "LIV                    [ 186 ]                    LIV\n\nLIVADIA, a province of Greece.\n  LIVER, in anatomy, the largeſt gland of the body, of\na dark red colour, ſituated in the right ſide of the\nbelly under the diaphragrn. Its office is to ſeparate\nthe bile from the blood, which is brought to it chiefly\nby the vena portae, a vein that collects the blood from\nthe ſtomach, inteſtines, and ſpleen. The bile is col-\nlected in the gall-bladder, and paſſes by the common\nduct into the inteſtine, where it aſſiſts in the digeſ-\ntion of the food.\n  The ancients, following Galcn, believed the liver to\nbe the workſhop of the blood, in which the chyle was\nchanged into blood; but this opinion has been given up\nſince the diſcovery of the lacteal veſſels and of the\ncirculation. The ancients alſo placed in the liver the\nſeat of love and of the paſſions; whence the poets\nſpeak of a wounded liver.\n  If the liver be much wounded, the wound is commonly\nmortal; nor is it known that any part of it, once\ndeſtroyed, is ever reſtored.\n  LIVERY, in London, the freemen of the city companies.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "LIVER",
+        "text": "LIVER, in anatomy, the largest gland of the body, of a dark red colour, situated in the right side of the belly under the diaphragm."
+      },
+      {
+        "id": "B2",
+        "section": "LIVER",
+        "text": "Its office is to separate the bile from the blood, which is brought to it chiefly by the vena portae, a vein that collects the blood from the stomach, intestines, and spleen."
+      },
+      {
+        "id": "B3",
+        "section": "LIVER",
+        "text": "The bile is collected in the gall-bladder, and passes by the common duct into the intestine, where it assists in the digestion of the food."
+      },
+      {
+        "id": "B4",
+        "section": "LIVER",
+        "text": "The ancients, following Galen, believed the liver to be the workshop of the blood, in which the chyle was changed into blood; but this opinion has been given up since the discovery of the lacteal vessels and of the circulation."
+      },
+      {
+        "id": "B5",
+        "section": "LIVER",
+        "text": "The ancients also placed in the liver the seat of love and of the passions; whence the poets speak of a wounded liver."
+      },
+      {
+        "id": "B6",
+        "section": "LIVER",
+        "text": "If the liver be much wounded, the wound is commonly mortal; nor is it known that any part of it, once destroyed, is ever restored."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-liver",
+    "title": "Liver",
+    "url": "https://en.wikipedia.org/wiki/Liver",
+    "dateModified": "2026-08-27",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "The liver is a large organ found in vertebrates. In humans it lies in the upper right part of the abdomen, below the diaphragm. It is the largest gland in the human body."
+      },
+      {
+        "id": "W2",
+        "section": "Bile",
+        "text": "The liver produces bile, which helps the body digest fats. Bile is stored in the gallbladder and released into the small intestine."
+      },
+      {
+        "id": "W3",
+        "section": "Blood supply",
+        "text": "The liver gets blood from two sources. The hepatic portal vein brings blood from the digestive tract and the spleen, and the hepatic artery brings oxygen-rich blood."
+      },
+      {
+        "id": "W4",
+        "section": "Metabolism",
+        "text": "The liver stores glucose as glycogen and releases it when the body needs it. Claude Bernard described this role of the liver in the 1850s."
+      },
+      {
+        "id": "W5",
+        "section": "Function",
+        "text": "The liver makes many blood proteins, including albumin and clotting factors. It also breaks down toxic substances such as alcohol and many drugs."
+      },
+      {
+        "id": "W6",
+        "section": "Regeneration",
+        "text": "The liver can regenerate. After part of it is removed or damaged, the remaining tissue can grow back to about its former size."
+      },
+      {
+        "id": "W7",
+        "section": "Society and culture",
+        "text": "In many ancient cultures the liver was seen as a seat of life or of the emotions. In Greek myth an eagle ate the liver of Prometheus each day, and it grew back each night."
+      },
+      {
+        "id": "W8",
+        "section": "Development",
+        "text": "In the early months of fetal life the liver is a main site of blood cell production. The bone marrow takes over this role before birth."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.86,
+    "rerankScore": 0.88,
+    "reasons": [
+      "Same headword: LIVER and Liver.",
+      "Rare terms appear in both: bile, gall-bladder, portal vein, diaphragm.",
+      "Bile scores well but covers only one of the liver's tasks."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Bile",
+      "url": "https://en.wikipedia.org/wiki/Bile",
+      "embedScore": 0.78,
+      "rerankScore": 0.6
+    },
+    {
+      "title": "Hepatic portal system",
+      "url": "https://en.wikipedia.org/wiki/Hepatic_portal_system",
+      "embedScore": 0.7,
+      "rerankScore": 0.48
+    }
+  ],
+  "alignments": [
+    {
+      "id": "li1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Largest gland",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the largest gland of the body"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "the largest gland in the human body"
+      },
+      "note": "Same fact, almost the same words."
+    },
+    {
+      "id": "li2",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Making bile",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "Its office is to separate the bile from the blood"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "The liver produces bile"
+      },
+      "note": "Change in knowledge. Liver cells make bile. The 1797 entry also gives the liver only this one office."
+    },
+    {
+      "id": "li3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Portal vein",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "brought to it chiefly by the vena portae"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "The hepatic portal vein brings blood from the digestive tract and the spleen"
+      },
+      "note": "Same vein in new words. Wikipedia adds the hepatic artery as a second supply."
+    },
+    {
+      "id": "li4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Gall-bladder and digestion",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "The bile is collected in the gall-bladder"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Bile is stored in the gallbladder"
+      },
+      "note": "Same fact. Wikipedia names fats as the food that bile helps to digest."
+    },
+    {
+      "id": "li5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Liver and blood making",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "this opinion has been given up"
+      },
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "the liver is a main site of blood cell production"
+      },
+      "note": "The 1797 entry rejects Galen, and this holds for the adult. Inference: the fetal liver does make blood cells, so the rejection is too broad."
+    },
+    {
+      "id": "li6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Seat of the passions",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "placed in the liver the seat of love and of the passions"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "seen as a seat of life or of the emotions"
+      },
+      "note": "Both report the old belief. Neither endorses it."
+    },
+    {
+      "id": "li7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Regrowth",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "nor is it known that any part of it, once destroyed, is ever restored"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "The liver can regenerate"
+      },
+      "note": "Change in knowledge. The liver can grow back after part of it is lost."
+    },
+    {
+      "id": "li8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Glycogen store",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "stores glucose as glycogen"
+      },
+      "note": "Claude Bernard found this role in the 1850s, after the 1797 edition."
+    },
+    {
+      "id": "li9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Proteins and toxins",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "breaks down toxic substances such as alcohol and many drugs"
+      },
+      "note": "The 1797 entry does not mention protein making or the breakdown of poisons."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Structure and position",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Bile",
+      "britannica": 0.3,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Blood supply",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Blood making",
+      "britannica": 0.15,
+      "wikipedia": 0.08
+    },
+    {
+      "topic": "Culture",
+      "britannica": 0.15,
+      "wikipedia": 0.11
+    },
+    {
+      "topic": "Regeneration",
+      "britannica": 0.1,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Metabolism and toxins",
+      "britannica": 0,
+      "wikipedia": 0.3
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1797 entry think the liver does?",
+    "Did the 1797 entry know that the liver grows back?"
+  ],
+  "answers": {
+    "What did the 1797 entry think the liver does?": {
+      "answer": "It gave the liver one office: to separate the bile from the blood of the vena portae [B2]. Wikipedia keeps bile [W2] and adds glycogen storage [W4], blood proteins and the breakdown of toxins [W5].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.85
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did the 1797 entry know that the liver grows back?": {
+      "answer": "No. It said no destroyed part of the liver is known to be restored [B6]. Wikipedia says the remaining tissue can grow back to about its former size [W6].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "bone",
+    "label": "Bone",
+    "headword": "BONE",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Bone",
+    "area": "anatomy",
+    "teaser": "The marrow, an oily substance lodged in the cavities of the long bones, is thought to nourish the bones and to keep them from becoming brittle."
+  },
+  "aliases": [
+    "bone",
+    "bones",
+    "skeleton",
+    "ossification",
+    "marrow"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0046",
+    "headword": "BONE",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 3",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 3 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "BON                    [ 412 ]                    BON\n\nBONASUS, in zoology, a ſpecies of wild ox. See BOS.\n  BONE, in anatomy, the hard and ſolid parts of the\nbody, which ſupport and give it ſhape, defend the ſof-\nter parts, and ſerve as levers for the muſcles. Bones\nconſiſt of an earthy matter, which gives them their\nhardnefs, and of a gelatine, which binds the earth\ntogether; for when a bone is ſteeped in an acid the\nearth is diſſolved and the bone becomes ſoft and fle-\nxible, and when it is burnt the gelatine is deſtroyed\nand the bone becomes brittle. The earth has lately been\nfound by Mr Scheele and Mr Gahn to be lime united with\nthe phoſphoric acid.\n  The marrow, an oily ſubſtance lodged in the cavities\nof the long bones, is thought to nouriſh the bones and\nto keep them from becoming brittle. The number of bones\nin the adult body is commonly reckoned about 240,\nthough anatomiſts differ in their counts, ſome inclu-\nding the teeth and the ſmall bones of the ear, and ſome\nleaving them out.\n  Bones grow in length by the addition of new matter at\ntheir ends, where in young perſons they are joincd to\ntheir heads by a griſtle, which in time becomes bone.\nMr Duhamel and Dr Hunter fed animals with madder, which\ntinges the bones red; and from theſe experiments it\nappears that the matter of the bones is continually\nremoved and laid down anew. When a bone is broken, the\nends are joined again by a callus, which is formed of\nthe juices exuding from the broken parts.\n  BONFIRE, a fire made in public on occaſions of joy.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "BONE",
+        "text": "BONE, in anatomy, the hard and solid parts of the body, which support and give it shape, defend the softer parts, and serve as levers for the muscles."
+      },
+      {
+        "id": "B2",
+        "section": "BONE",
+        "text": "Bones consist of an earthy matter, which gives them their hardness, and of a gelatine, which binds the earth together; for when a bone is steeped in an acid the earth is dissolved and the bone becomes soft and flexible, and when it is burnt the gelatine is destroyed and the bone becomes brittle. The earth has lately been found by Mr Scheele and Mr Gahn to be lime united with the phosphoric acid."
+      },
+      {
+        "id": "B3",
+        "section": "BONE",
+        "text": "The marrow, an oily substance lodged in the cavities of the long bones, is thought to nourish the bones and to keep them from becoming brittle."
+      },
+      {
+        "id": "B4",
+        "section": "BONE",
+        "text": "The number of bones in the adult body is commonly reckoned about 240, though anatomists differ in their counts, some including the teeth and the small bones of the ear, and some leaving them out."
+      },
+      {
+        "id": "B5",
+        "section": "BONE",
+        "text": "Bones grow in length by the addition of new matter at their ends, where in young persons they are joined to their heads by a gristle, which in time becomes bone."
+      },
+      {
+        "id": "B6",
+        "section": "BONE",
+        "text": "Mr Duhamel and Dr Hunter fed animals with madder, which tinges the bones red; and from these experiments it appears that the matter of the bones is continually removed and laid down anew."
+      },
+      {
+        "id": "B7",
+        "section": "BONE",
+        "text": "When a bone is broken, the ends are joined again by a callus, which is formed of the juices exuding from the broken parts."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-bone",
+    "title": "Bone",
+    "url": "https://en.wikipedia.org/wiki/Bone",
+    "dateModified": "2026-09-14",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "A bone is a rigid organ that forms part of the skeleton in most vertebrates. Bones protect organs, support the body, produce red and white blood cells, store minerals and make movement possible."
+      },
+      {
+        "id": "W2",
+        "section": "Composition",
+        "text": "Bone matrix has an organic part, mainly type I collagen, and an inorganic part, mainly hydroxyapatite, a form of calcium phosphate. The collagen gives bone some flexibility and the mineral gives it hardness."
+      },
+      {
+        "id": "W3",
+        "section": "Bone marrow",
+        "text": "Red bone marrow, found in the cavities of many bones, produces blood cells by a process called hematopoiesis. Yellow bone marrow is mostly fat."
+      },
+      {
+        "id": "W4",
+        "section": "Number of bones",
+        "text": "An adult human skeleton usually has 206 bones. A newborn has more separate bones, and many of these fuse together during growth."
+      },
+      {
+        "id": "W5",
+        "section": "Growth",
+        "text": "Long bones grow in length at the growth plates, layers of cartilage near the ends of the bone. The cartilage is replaced by bone, and the plates close in early adulthood."
+      },
+      {
+        "id": "W6",
+        "section": "Remodeling",
+        "text": "Bone is constantly remodeled. Cells called osteoclasts break down old bone and cells called osteoblasts lay down new bone."
+      },
+      {
+        "id": "W7",
+        "section": "Fracture repair",
+        "text": "A broken bone heals in stages. A callus of soft tissue and cartilage first bridges the break and is later replaced by bone."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.87,
+    "rerankScore": 0.89,
+    "reasons": [
+      "Same headword: BONE and Bone.",
+      "Rare terms appear in both: marrow, callus, phosphate, growth at the ends.",
+      "Skeleton scores well but describes the whole frame more than the tissue."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Skeleton",
+      "url": "https://en.wikipedia.org/wiki/Skeleton",
+      "embedScore": 0.81,
+      "rerankScore": 0.63
+    },
+    {
+      "title": "Bone marrow",
+      "url": "https://en.wikipedia.org/wiki/Bone_marrow",
+      "embedScore": 0.74,
+      "rerankScore": 0.52
+    }
+  ],
+  "alignments": [
+    {
+      "id": "bo1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Support and protection",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "support and give it shape, defend the softer parts"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "Bones protect organs, support the body"
+      },
+      "note": "Same functions in new words."
+    },
+    {
+      "id": "bo2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Earth and gelatine",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "an earthy matter, which gives them their hardness, and of a gelatine"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "an organic part, mainly type I collagen, and an inorganic part"
+      },
+      "note": "Change in language. The gelatine is the collagen, and the earth is the mineral part."
+    },
+    {
+      "id": "bo3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Phosphate of lime",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "lime united with the phosphoric acid"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "a form of calcium phosphate"
+      },
+      "note": "Same finding. Lime with phosphoric acid is the old name for calcium phosphate."
+    },
+    {
+      "id": "bo4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "What marrow does",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "is thought to nourish the bones and to keep them from becoming brittle"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "produces blood cells by a process called hematopoiesis"
+      },
+      "note": "Change in knowledge. Red marrow makes blood cells. It does not keep the bone from becoming brittle."
+    },
+    {
+      "id": "bo5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Number of bones",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "commonly reckoned about 240"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "usually has 206 bones"
+      },
+      "note": "The count changed. Inference: much of the gap comes from what is counted, since the old counts could include the teeth."
+    },
+    {
+      "id": "bo6",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Growth at the ends",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "Bones grow in length by the addition of new matter at their ends"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Long bones grow in length at the growth plates"
+      },
+      "note": "Same fact. The gristle of 1797 is the cartilage of the growth plate."
+    },
+    {
+      "id": "bo7",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Bone is renewed",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "the matter of the bones is continually removed and laid down anew"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Bone is constantly remodeled"
+      },
+      "note": "The madder experiments showed what is now called remodeling. Today the cells that do it are known."
+    },
+    {
+      "id": "bo8",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Healing by callus",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "formed of the juices exuding from the broken parts"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "A callus of soft tissue and cartilage first bridges the break"
+      },
+      "note": "The callus is real. Today it is known to form from living cells, not from juices that leak out."
+    },
+    {
+      "id": "bo9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Mineral store",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "store minerals"
+      },
+      "note": "The 1797 entry does not say that bone is a store of minerals for the body."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Function",
+      "britannica": 0.15,
+      "wikipedia": 0.18
+    },
+    {
+      "topic": "Composition",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Marrow",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Number of bones",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Growth and renewal",
+      "britannica": 0.2,
+      "wikipedia": 0.22
+    },
+    {
+      "topic": "Fracture healing",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Mineral storage",
+      "britannica": 0,
+      "wikipedia": 0.05
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1797 entry say the marrow does?",
+    "How many bones did the 1797 entry count?",
+    "Did anyone in 1797 know that bone is renewed?"
+  ],
+  "answers": {
+    "What did the 1797 entry say the marrow does?": {
+      "answer": "It said the marrow nourishes the bones and keeps them from becoming brittle [B3]. Wikipedia says red marrow produces blood cells, and yellow marrow is mostly fat [W3].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "How many bones did the 1797 entry count?": {
+      "answer": "About 240, with the note that anatomists counted differently [B4]. Wikipedia gives 206 for an adult and says a newborn has more separate bones that fuse during growth [W4].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.94
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did anyone in 1797 know that bone is renewed?": {
+      "answer": "Yes. The madder feeding experiments of Duhamel and Hunter showed that the matter of the bones is removed and laid down anew [B6]. Wikipedia calls this remodeling and names the cells that do it [W6].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.92
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}
