@@ -1,0 +1,356 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "itch",
+    "label": "Itch",
+    "headword": "ITCH",
+    "edition": "Second edition",
+    "year": 1778,
+    "match": "strong",
+    "wikipediaTitle": "Scabies",
+    "area": "infectious-disease",
+    "teaser": "Most physicians ascribe it to an acrid humour in the blood, produced by bad diet, uncleanliness, or a scorbutic habit."
+  },
+  "aliases": [
+    "itch",
+    "scabies",
+    "the itch",
+    "scabies mite",
+    "sarcoptes scabiei"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0062",
+    "headword": "ITCH",
+    "edition": "Second edition",
+    "year": 1778,
+    "volume": "Volume 6",
+    "meta": "Encyclopaedia Britannica - Second edition, Volume 6 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "ITC                    [ 4108 ]                    ITH\n\nITALY, a large country in the ſouth of Europe.\n  ITCH, a diſeaſe of the ſkin, conſiſting of ſmall\nwatery puftules, which appear firſt between the fingers\nand on the wriſts, and are attended with a great\nitching, eſpecially in bed. It is caught by touching\nthoſe who have it, or by wearing their clothes or lying\nin their beds.\n  Moſt phyſicians aſcribe it to an acrid humour in the\nblood, produced by bad diet, uncleanlineſs, or a ſcor-\nbutic habit. But ſome, after Bonomo and Ceſtoni, who\nwrote of it in Italy in 1687, think it is cauſed by\nvery ſmall inſects that burrow under the ſkin, and\nwhich may be taken out with the point of a ncedle.\n  The ſureſt remedy is an ointment of ſulphur, rubbed\non the parts for ſeveral nights, with the uſe of\nflowers of ſulphur inwardly. To drive in the eruption\nby mercurial or other repellent ointments is dangerous;\nfor the humour then falls upon the inner parts, and\nproduces dropſies, conſumptions, and other internal\ndiſeaſes.\n  ITHACA, an iſland in the Ionian ſea, the country of Ulyſſes.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "ITCH",
+        "text": "ITCH, a disease of the skin, consisting of small watery pustules, which appear first between the fingers and on the wrists, and are attended with a great itching, especially in bed."
+      },
+      {
+        "id": "B2",
+        "section": "ITCH",
+        "text": "It is caught by touching those who have it, or by wearing their clothes or lying in their beds."
+      },
+      {
+        "id": "B3",
+        "section": "ITCH",
+        "text": "Most physicians ascribe it to an acrid humour in the blood, produced by bad diet, uncleanliness, or a scorbutic habit."
+      },
+      {
+        "id": "B4",
+        "section": "ITCH",
+        "text": "But some, after Bonomo and Cestoni, who wrote of it in Italy in 1687, think it is caused by very small insects that burrow under the skin, and which may be taken out with the point of a needle."
+      },
+      {
+        "id": "B5",
+        "section": "ITCH",
+        "text": "The surest remedy is an ointment of sulphur, rubbed on the parts for several nights, with the use of flowers of sulphur inwardly."
+      },
+      {
+        "id": "B6",
+        "section": "ITCH",
+        "text": "To drive in the eruption by mercurial or other repellent ointments is dangerous; for the humour then falls upon the inner parts, and produces dropsies, consumptions, and other internal diseases."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-itch",
+    "title": "Scabies",
+    "url": "https://en.wikipedia.org/wiki/Scabies",
+    "dateModified": "2026-08-27",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Scabies is a contagious skin infestation by the mite Sarcoptes scabiei. The most common symptoms are severe itchiness and a pimple-like rash."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "The itch is often worse at night. The rash commonly appears between the fingers, on the wrists, around the waist and in other skin folds."
+      },
+      {
+        "id": "W3",
+        "section": "Cause",
+        "text": "The female mite burrows into the skin, where it lives and lays eggs. The symptoms come from an allergic reaction to the mites."
+      },
+      {
+        "id": "W4",
+        "section": "Transmission",
+        "text": "Scabies spreads mostly by long, close skin contact with an infested person. Spread through shared clothing or bedding is less common. Crowded living conditions raise the risk."
+      },
+      {
+        "id": "W5",
+        "section": "Treatment",
+        "text": "Permethrin cream and ivermectin by mouth are common treatments. Sulfur ointment is an older treatment that is still used in some places."
+      },
+      {
+        "id": "W6",
+        "section": "Complications",
+        "text": "Scratching can break the skin and lead to bacterial infection."
+      },
+      {
+        "id": "W7",
+        "section": "History",
+        "text": "Giovanni Cosimo Bonomo and Diacinto Cestoni described the mite as the cause of scabies in 1687. It was one of the first diseases with a known microscopic cause."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.8,
+    "rerankScore": 0.83,
+    "reasons": [
+      "The old name itch is the common name of scabies, and the Wikipedia article covers it.",
+      "Rare terms appear in both: Bonomo, Cestoni, 1687, sulphur ointment, between the fingers.",
+      "Itch scores high as a word but covers the symptom in general, not this disease."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Itch",
+      "url": "https://en.wikipedia.org/wiki/Itch",
+      "embedScore": 0.78,
+      "rerankScore": 0.52
+    },
+    {
+      "title": "Sarcoptes scabiei",
+      "url": "https://en.wikipedia.org/wiki/Sarcoptes_scabiei",
+      "embedScore": 0.72,
+      "rerankScore": 0.6
+    }
+  ],
+  "alignments": [
+    {
+      "id": "it1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Pustules and itching",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "small watery pustules"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a pimple-like rash"
+      },
+      "note": "Same sign in new words."
+    },
+    {
+      "id": "it2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Between the fingers",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "appear first between the fingers and on the wrists"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "between the fingers, on the wrists"
+      },
+      "note": "Same places on the body, almost the same words."
+    },
+    {
+      "id": "it3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Worse in bed",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a great itching, especially in bed"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "The itch is often worse at night"
+      },
+      "note": "Same observation. The fact did not change."
+    },
+    {
+      "id": "it4",
+      "kind": "reworded",
+      "verdict": "partly",
+      "label": "How it is caught",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "by wearing their clothes or lying in their beds"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Spread through shared clothing or bedding is less common"
+      },
+      "note": "Touch is the main route, as the 1778 entry also says. Clothes and beds are a lesser route than the entry suggests."
+    },
+    {
+      "id": "it5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Acrid humour",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "an acrid humour in the blood"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "The female mite burrows into the skin"
+      },
+      "note": "A change in knowledge. The view of most physicians in 1778 was wrong. A mite causes the disease, not a humour or bad diet."
+    },
+    {
+      "id": "it6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Bonomo and Cestoni",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "very small insects that burrow under the skin"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "described the mite as the cause of scabies in 1687"
+      },
+      "note": "The minority view of 1778 is the modern view. A change in language: a mite is now not called an insect. Inference: in 1778 the word insect covered small creatures in general."
+    },
+    {
+      "id": "it7",
+      "kind": "reworded",
+      "verdict": "partly",
+      "label": "Sulphur ointment",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "an ointment of sulphur"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Sulfur ointment is an older treatment that is still used in some places"
+      },
+      "note": "Sulphur still works in some places, but permethrin and ivermectin are now the common treatments. Taking sulphur by mouth is not part of modern treatment."
+    },
+    {
+      "id": "it8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Driving it in",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "the humour then falls upon the inner parts"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Scratching can break the skin and lead to bacterial infection"
+      },
+      "note": "A change in knowledge. Complications come from scratching and bacteria, not from a humour driven inward."
+    },
+    {
+      "id": "it9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Allergic reaction",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "The symptoms come from an allergic reaction to the mites"
+      },
+      "note": "The 1778 entry does not explain why the skin itches. Wikipedia names an allergic reaction."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Signs",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "How it spreads",
+      "britannica": 0.12,
+      "wikipedia": 0.17
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.3,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Danger of treatment",
+      "britannica": 0.18,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Complications",
+      "britannica": 0,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "History",
+      "britannica": 0,
+      "wikipedia": 0.18
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1778 entry say causes the itch?",
+    "Is sulphur still used against scabies?"
+  ],
+  "answers": {
+    "What did the 1778 entry say causes the itch?": {
+      "answer": "It gives two views. Most physicians blamed an acrid humour in the blood from bad diet or uncleanliness [B3]. Some, after Bonomo and Cestoni in 1687, blamed very small insects under the skin [B4]. Wikipedia confirms the second view: the mite Sarcoptes scabiei burrows into the skin [W3], and Bonomo and Cestoni described it as the cause in 1687 [W7].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.92
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Is sulphur still used against scabies?": {
+      "answer": "In some places, yes. The 1778 entry calls an ointment of sulphur the surest remedy [B5]. Wikipedia says sulfur ointment is an older treatment still used in some places, but permethrin cream and ivermectin are now the common treatments [W5].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

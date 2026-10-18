@@ -1,0 +1,348 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "wind",
+    "label": "Wind",
+    "headword": "WIND",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Wind",
+    "area": "natural-sciences",
+    "teaser": "The general cause of winds is heat, which, rarefying the air in one place, makes it lighter, so that the colder and heavier air around rushes in to restore the balance."
+  },
+  "aliases": [
+    "wind",
+    "winds",
+    "trade winds",
+    "trade wind",
+    "monsoon",
+    "monsoons"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0078",
+    "headword": "WIND",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 18",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 18 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "WIN                    [ 846 ]                    WIN\n\nWINCHESTER, a city of Hampſhire, in England.\n  WIND, a current or ſtream of air, moving from one\nplace to another. The general cauſe of winds is heat,\nwhich, rarefying the air in one place, makes it\nlighter, ſo that the colder and heavicr air around\nruſhes in to reſtore the balance. Many of the ancients\nheld the winds to be exhalations from the earth; and\nſudden guſts may well ariſe in this manner, from\nvapours burſting out of caverns.\n  Dr Halley explained the trade winds, which blow con-\nſtantly from the eaſt between the tropics, by the heat\nof the ſun, which rarefies the air moſt where it is\nvertical; and as the ſun moves dailv weſtward, the air\nis drawn after it. Mr Hadley afterwards ſhowed that the\neaſterly direction of theſe winds ariſes from the\nrotation of the earth, the air coming from the poles\nhaving leſs motion eaſtward than the earth at the\nequator.\n  In the Indian ſeas the monſoons blow one half of the\nyear from one quarter, and the other half from the\noppoſite, changing with the ſeaſons. Out of the tropics\nthe winds are ſo changeable that they ſeem to follow no\nregular laws, and it is not to be expected that they\ncan ever be foretold.\n  WINDLASS, a machine uſed for raiſing great weights.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "WIND",
+        "text": "WIND, a current or stream of air, moving from one place to another."
+      },
+      {
+        "id": "B2",
+        "section": "WIND",
+        "text": "The general cause of winds is heat, which, rarefying the air in one place, makes it lighter, so that the colder and heavier air around rushes in to restore the balance."
+      },
+      {
+        "id": "B3",
+        "section": "WIND",
+        "text": "Many of the ancients held the winds to be exhalations from the earth; and sudden gusts may well arise in this manner, from vapours bursting out of caverns."
+      },
+      {
+        "id": "B4",
+        "section": "WIND",
+        "text": "Dr Halley explained the trade winds, which blow constantly from the east between the tropics, by the heat of the sun, which rarefies the air most where it is vertical; and as the sun moves daily westward, the air is drawn after it."
+      },
+      {
+        "id": "B5",
+        "section": "WIND",
+        "text": "Mr Hadley afterwards showed that the easterly direction of these winds arises from the rotation of the earth, the air coming from the poles having less motion eastward than the earth at the equator."
+      },
+      {
+        "id": "B6",
+        "section": "WIND",
+        "text": "In the Indian seas the monsoons blow one half of the year from one quarter, and the other half from the opposite, changing with the seasons."
+      },
+      {
+        "id": "B7",
+        "section": "WIND",
+        "text": "Out of the tropics the winds are so changeable that they seem to follow no regular laws, and it is not to be expected that they can ever be foretold."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-wind",
+    "title": "Wind",
+    "url": "https://en.wikipedia.org/wiki/Wind",
+    "dateModified": "2026-10-02",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Wind is the natural movement of air or other gases relative to the surface of a planet."
+      },
+      {
+        "id": "W2",
+        "section": "Causes",
+        "text": "Wind is caused by differences in air pressure. These differences come mainly from uneven heating of the Earth's surface by the Sun, and air flows from areas of high pressure to areas of low pressure."
+      },
+      {
+        "id": "W3",
+        "section": "Global circulation",
+        "text": "The trade winds are part of the Hadley circulation, named after George Hadley, who in 1735 used the rotation of the Earth to explain why these winds blow from the east."
+      },
+      {
+        "id": "W4",
+        "section": "Coriolis effect",
+        "text": "Because of the Coriolis effect of the Earth's rotation, moving air turns to the right in the Northern Hemisphere and to the left in the Southern Hemisphere."
+      },
+      {
+        "id": "W5",
+        "section": "Monsoons",
+        "text": "Monsoons are seasonal winds that change direction because land and sea heat up at different rates. They bring the rainy season to South Asia."
+      },
+      {
+        "id": "W6",
+        "section": "Forecasting",
+        "text": "Meteorologists forecast wind days in advance with weather observations and computer models of the atmosphere."
+      },
+      {
+        "id": "W7",
+        "section": "Jet streams",
+        "text": "Jet streams are narrow bands of strong wind high in the atmosphere, near the tropopause, which blow mainly from west to east."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.88,
+    "rerankScore": 0.89,
+    "reasons": [
+      "Same headword: WIND and Wind.",
+      "Rare terms appear in both: trade winds, Hadley, monsoons, rotation of the earth.",
+      "Trade winds scores well but covers only one kind of wind."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Trade winds",
+      "url": "https://en.wikipedia.org/wiki/Trade_winds",
+      "embedScore": 0.8,
+      "rerankScore": 0.64
+    },
+    {
+      "title": "Monsoon",
+      "url": "https://en.wikipedia.org/wiki/Monsoon",
+      "embedScore": 0.74,
+      "rerankScore": 0.5
+    }
+  ],
+  "alignments": [
+    {
+      "id": "wi1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Air in motion",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a current or stream of air"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "the natural movement of air"
+      },
+      "note": "The same definition in new words."
+    },
+    {
+      "id": "wi2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Heat as the cause",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "heat, which, rarefying the air in one place, makes it lighter"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "uneven heating of the Earth's surface by the Sun"
+      },
+      "note": "The 1797 cause holds. Wikipedia speaks of air pressure where the entry speaks of light and heavy air. This is a change in language."
+    },
+    {
+      "id": "wi3",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Exhalations from the earth",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "sudden gusts may well arise in this manner, from vapours bursting out of caverns"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "air flows from areas of high pressure to areas of low pressure"
+      },
+      "note": "The entry still allows the ancient idea for sudden gusts. Gusts too come from air pressure and air movement, not from vapours out of the ground."
+    },
+    {
+      "id": "wi4",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Halley's trade winds",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "as the sun moves daily westward, the air is drawn after it"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "used the rotation of the Earth to explain why these winds blow from the east"
+      },
+      "note": "Halley was right that the sun's heat at the equator drives the trade winds. His reason for the east direction was wrong, and Hadley replaced it."
+    },
+    {
+      "id": "wi5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Hadley and rotation",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the easterly direction of these winds arises from the rotation of the earth"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "named after George Hadley"
+      },
+      "note": "Hadley's explanation holds. Wikipedia names the whole tropical air circulation after him."
+    },
+    {
+      "id": "wi6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Seasonal monsoons",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "the monsoons blow one half of the year from one quarter"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Monsoons are seasonal winds that change direction"
+      },
+      "note": "The observation holds. Wikipedia adds the cause: land and sea heat at different rates."
+    },
+    {
+      "id": "wi7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Winds cannot be foretold",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "it is not to be expected that they can ever be foretold"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Meteorologists forecast wind days in advance"
+      },
+      "note": "Weather maps, the telegraph and later computers made forecasts possible. This is a change in knowledge."
+    },
+    {
+      "id": "wi8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Coriolis effect",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "moving air turns to the right in the Northern Hemisphere"
+      },
+      "note": "The 1797 entry uses the rotation of the earth only for the trade winds. Wikipedia applies the Coriolis effect to all large winds."
+    },
+    {
+      "id": "wi9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Jet streams",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "narrow bands of strong wind high in the atmosphere"
+      },
+      "note": "The 1797 entry knows only winds near the ground. Jet streams were found in the 20th century."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What wind is",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Cause of winds",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Trade winds",
+      "britannica": 0.3,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Monsoons",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Forecasting",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Coriolis effect and jet streams",
+      "britannica": 0,
+      "wikipedia": 0.25
+    }
+  ],
+  "suggestedQuestions": [
+    "How did the 1797 entry explain the trade winds?",
+    "Was the 1797 entry right that winds cannot be predicted?"
+  ],
+  "answers": {
+    "How did the 1797 entry explain the trade winds?": {
+      "answer": "It gives two steps. Halley explained them by the sun's heat at the equator, and thought the air followed the sun westward [B4]. Hadley then showed that the east direction comes from the rotation of the earth [B5]. Wikipedia keeps Hadley's explanation and names the Hadley circulation after him [W3].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Was the 1797 entry right that winds cannot be predicted?": {
+      "answer": "No. It said winds outside the tropics follow no regular laws and can never be foretold [B7]. Wikipedia says meteorologists now forecast wind days ahead with observations and computer models [W6].",
+      "citations": [
+        {
+          "id": "B7",
+          "source": "britannica",
+          "passageId": "B7",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.94
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

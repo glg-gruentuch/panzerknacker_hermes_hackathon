@@ -1,0 +1,361 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "typhoid-fever",
+    "label": "Typhoid fever",
+    "headword": "NERVOUS FEVER, or SLOW FEVER",
+    "edition": "Sixth edition",
+    "year": 1823,
+    "match": "partial",
+    "wikipediaTitle": "Typhoid fever",
+    "area": "infectious-disease",
+    "teaser": "Most physicians consider it the same disease as the putrid or jail fever, differing from it only in degree, as being milder in its beginning and slower in its course."
+  },
+  "aliases": [
+    "typhoid fever",
+    "typhoid",
+    "nervous fever",
+    "slow fever",
+    "enteric fever",
+    "slow nervous fever"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0065",
+    "headword": "NERVOUS FEVER, or SLOW FEVER",
+    "edition": "Sixth edition",
+    "year": 1823,
+    "volume": "Volume 15",
+    "meta": "Encyclopaedia Britannica - Sixth edition, Volume 15 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "NER                    [ 94 ]                    NES\n\nNERVES. See ANATOMY.\n  NERVOUS FEVER, or SLOW FEVER, a fever of the\ncontinued kind, which comes on ſlowly, with chillineſs,\nheavineſs, headach, and a great dejcction of ſpirits.\nThe pulſe is quick and weak, the tongue dry; and as the\ndiſeaſe goes on, the patient falls into great weakneſs,\nwith a low muttering delirium and a trembling of the\nhands. It is deſcribed by Dr Huxham under the name of\nthe ſlow nervous fever, and it may laſt three or four\nweeks.\n  Moſt phyſicians conſider it the ſame diſeaſe as the\nputrid or jail fever, differing from it only in degree,\nas being milder in its beginning and ſlower in its\ncourſe. Some who have opened the bodies of thoſe dead\nof this fever have found the iuner coat of the bowels\ninflamed and ulcerated; but whether this be the cauſe\nor the effect of the fever is not yet known.\n  The cauſes are thought to be grief, anxiety, low ſpi-\nrits, fatigue, and the breathing of cloſe and corrupted\nair, as in crowded and damp houſes. The cure depends\nchiefly on ſupporting the ſtrength by wine, Peruvian\nbark, and a nouriſhing diet; bleeding is ſeldom proper.\n  NESS, a promontory or headland running out into the ſea.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "NERVOUS FEVER, or SLOW FEVER",
+        "text": "NERVOUS FEVER, or SLOW FEVER, a fever of the continued kind, which comes on slowly, with chilliness, heaviness, headach, and a great dejection of spirits."
+      },
+      {
+        "id": "B2",
+        "section": "NERVOUS FEVER, or SLOW FEVER",
+        "text": "The pulse is quick and weak, the tongue dry; and as the disease goes on, the patient falls into great weakness, with a low muttering delirium and a trembling of the hands."
+      },
+      {
+        "id": "B3",
+        "section": "NERVOUS FEVER, or SLOW FEVER",
+        "text": "It is described by Dr Huxham under the name of the slow nervous fever, and it may last three or four weeks."
+      },
+      {
+        "id": "B4",
+        "section": "NERVOUS FEVER, or SLOW FEVER",
+        "text": "Most physicians consider it the same disease as the putrid or jail fever, differing from it only in degree, as being milder in its beginning and slower in its course."
+      },
+      {
+        "id": "B5",
+        "section": "NERVOUS FEVER, or SLOW FEVER",
+        "text": "Some who have opened the bodies of those dead of this fever have found the inner coat of the bowels inflamed and ulcerated; but whether this be the cause or the effect of the fever is not yet known."
+      },
+      {
+        "id": "B6",
+        "section": "NERVOUS FEVER, or SLOW FEVER",
+        "text": "The causes are thought to be grief, anxiety, low spirits, fatigue, and the breathing of close and corrupted air, as in crowded and damp houses."
+      },
+      {
+        "id": "B7",
+        "section": "NERVOUS FEVER, or SLOW FEVER",
+        "text": "The cure depends chiefly on supporting the strength by wine, Peruvian bark, and a nourishing diet; bleeding is seldom proper."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-typhoid-fever",
+    "title": "Typhoid fever",
+    "url": "https://en.wikipedia.org/wiki/Typhoid_fever",
+    "dateModified": "2026-09-15",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Typhoid fever is a disease caused by the bacterium Salmonella enterica serotype Typhi. Symptoms usually begin 6 to 30 days after exposure, often with a gradual onset of high fever over several days."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "The fever is often accompanied by weakness, abdominal pain, constipation and headache. In severe cases people may become confused."
+      },
+      {
+        "id": "W3",
+        "section": "Signs and symptoms",
+        "text": "Without treatment, the illness classically passes through stages that each last about a week."
+      },
+      {
+        "id": "W4",
+        "section": "Cause",
+        "text": "The bacteria spread by eating or drinking food or water contaminated with the faeces of an infected person. Poor sanitation and poor hygiene are risk factors."
+      },
+      {
+        "id": "W5",
+        "section": "Pathophysiology",
+        "text": "The bacteria invade the lining of the small intestine, including the lymphoid tissue called Peyer's patches. Ulcers there can bleed or perforate the bowel."
+      },
+      {
+        "id": "W6",
+        "section": "History",
+        "text": "Typhoid and typhus were long thought to be one disease. The name typhoid means resembling typhus. In 1837 William Wood Gerhard of Philadelphia showed that they are different, and William Jenner confirmed it in England around 1850."
+      },
+      {
+        "id": "W7",
+        "section": "Treatment",
+        "text": "Antibiotics such as azithromycin, fluoroquinolones and third-generation cephalosporins are used to treat it. Resistance to antibiotics is a growing problem."
+      },
+      {
+        "id": "W8",
+        "section": "Prevention",
+        "text": "Vaccines against typhoid are available. Clean drinking water, sanitation and hand washing prevent its spread."
+      }
+    ]
+  },
+  "match": {
+    "strength": "partial",
+    "embedScore": 0.72,
+    "rerankScore": 0.7,
+    "reasons": [
+      "The old headword names a type of fever by its symptoms, not a single disease, so the match is loose.",
+      "The slow onset, the length of three or four weeks and the ulcers of the bowels point to typhoid fever.",
+      "Typhus also scores, because the 1823 entry treats both as one disease."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Epidemic typhus",
+      "url": "https://en.wikipedia.org/wiki/Epidemic_typhus",
+      "embedScore": 0.7,
+      "rerankScore": 0.6
+    },
+    {
+      "title": "Fever",
+      "url": "https://en.wikipedia.org/wiki/Fever",
+      "embedScore": 0.66,
+      "rerankScore": 0.38
+    }
+  ],
+  "alignments": [
+    {
+      "id": "ty1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Slow onset",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "comes on slowly"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a gradual onset of high fever over several days"
+      },
+      "note": "Same observation in new words."
+    },
+    {
+      "id": "ty2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Weakness and delirium",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "great weakness, with a low muttering delirium"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "In severe cases people may become confused"
+      },
+      "note": "Same signs. Wikipedia lists weakness and confusion."
+    },
+    {
+      "id": "ty3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Three or four weeks",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "it may last three or four weeks"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "stages that each last about a week"
+      },
+      "note": "The 1823 length fits the untreated course that Wikipedia describes."
+    },
+    {
+      "id": "ty4",
+      "kind": "reworded",
+      "verdict": "partly",
+      "label": "The name nervous fever",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "under the name of the slow nervous fever"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "The name typhoid means resembling typhus"
+      },
+      "note": "A change in language. The old name describes the symptoms. Inference: in 1823 nervous fever probably covered typhoid and some milder cases of typhus."
+    },
+    {
+      "id": "ty5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Same as typhus",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "the same disease as the putrid or jail fever, differing from it only in degree"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "In 1837 William Wood Gerhard of Philadelphia showed that they are different"
+      },
+      "note": "A change in knowledge. Typhoid and typhus are different diseases with different bacteria. Physicians separated them after 1823."
+    },
+    {
+      "id": "ty6",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Ulcers of the bowels",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the inner coat of the bowels inflamed and ulcerated"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Ulcers there can bleed or perforate the bowel"
+      },
+      "note": "The finding of some 1823 anatomists holds. Wikipedia places the ulcers in the small intestine."
+    },
+    {
+      "id": "ty7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Grief and bad air",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "grief, anxiety, low spirits, fatigue, and the breathing of close and corrupted air"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "food or water contaminated with the faeces of an infected person"
+      },
+      "note": "A change in knowledge. A bacterium in food and water causes the disease, not grief or bad air."
+    },
+    {
+      "id": "ty8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Wine and bark",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "supporting the strength by wine, Peruvian bark, and a nourishing diet"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Antibiotics such as azithromycin"
+      },
+      "note": "A change in knowledge. Antibiotics replaced wine and bark, which do not act on the infection."
+    },
+    {
+      "id": "ty9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Vaccine and clean water",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "Clean drinking water, sanitation and hand washing prevent its spread"
+      },
+      "note": "The 1823 entry has no prevention. Wikipedia adds vaccines and sanitation."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Signs and course",
+      "britannica": 0.35,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Relation to typhus",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Findings in the bowels",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.15,
+      "wikipedia": 0.18
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Prevention",
+      "britannica": 0,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Names",
+      "britannica": 0.05,
+      "wikipedia": 0.05
+    }
+  ],
+  "suggestedQuestions": [
+    "Did the 1823 entry know that typhoid and typhus are different diseases?",
+    "What did the 1823 entry think caused the nervous fever?"
+  ],
+  "answers": {
+    "Did the 1823 entry know that typhoid and typhus are different diseases?": {
+      "answer": "No. It says most physicians thought it the same disease as the putrid or jail fever, differing only in degree [B4]. Wikipedia says the two were long thought to be one disease, until William Wood Gerhard showed in 1837 that they are different, and William Jenner confirmed it around 1850 [W6].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What did the 1823 entry think caused the nervous fever?": {
+      "answer": "Grief, anxiety, low spirits, fatigue and close, corrupted air [B6]. Wikipedia says the bacterium Salmonella enterica serotype Typhi causes it [W1] and spreads through food or water contaminated with the faeces of an infected person [W4].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.92
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

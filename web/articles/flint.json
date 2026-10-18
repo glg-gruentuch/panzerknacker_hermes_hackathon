@@ -1,0 +1,363 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "flint",
+    "label": "Flint",
+    "headword": "FLINT",
+    "edition": "Second edition",
+    "year": 1778,
+    "match": "strong",
+    "wikipediaTitle": "Flint",
+    "area": "geology",
+    "teaser": "The common people in many countries believe that the arrow-heads of flint found in the fields, which they call elf-arrows, are shot by fairies at cattle; others hold them to be formed in the clouds by thunder."
+  },
+  "aliases": [
+    "flints",
+    "flintstone",
+    "gun-flint",
+    "silex"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0074",
+    "headword": "FLINT",
+    "edition": "Second edition",
+    "year": 1778,
+    "volume": "Volume 5",
+    "meta": "Encyclopaedia Britannica - Second edition, Volume 5 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "FLI                    [ 3104 ]                    FLI\n\nFLINDERS, ſmall pieces or ſplinters.\n  FLINT, a hard ſtone, commonly of a black or grey\ncolour, found in irregular lumps or nodnles, chiefly in\nbeds of chalk, where they lie in rows parallel to one\nanother. Its origin is not known. Some ſuppoſe that the\nflints were once ſoft, and were formed of the chalk\nitſelf, turned into ſtone by a petrifying juice which\npenetrated it; and ſhells and ſea urchins are often\nfound within them filled with flint.\n  Flint ſtrikes fire with ſteel more readily than any\nother ſtone, and is for this reaſon uſed in the locks\nof guns; the ſparks being ſmall particles of the ſteel,\ncut off and melted by the blow, as Dr Hooke obſerved\nwith the microſcope. Being burnt and ground to powder,\nit is uſed in making glaſs, and in the finer kinds of\nearthenware.\n  The common people in many countries believe that the\narrow-heads of flint found in the fields, which they\ncall elf-arrows, are ſhot by fairies at cattle; others\nhold them to be formed in the clouds by thunder. But\nthey are more probably the heads of the weapons of\nancient nations who had not the uſe of iron, ſuch as\nare ſtill uſed by the ſavages of America.\n  FLINTSHIRE, a county of North Wales.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "FLINT",
+        "text": "FLINT, a hard stone, commonly of a black or grey colour, found in irregular lumps or nodules, chiefly in beds of chalk, where they lie in rows parallel to one another."
+      },
+      {
+        "id": "B2",
+        "section": "FLINT",
+        "text": "Its origin is not known. Some suppose that the flints were once soft, and were formed of the chalk itself, turned into stone by a petrifying juice which penetrated it; and shells and sea urchins are often found within them filled with flint."
+      },
+      {
+        "id": "B3",
+        "section": "FLINT",
+        "text": "Flint strikes fire with steel more readily than any other stone, and is for this reason used in the locks of guns; the sparks being small particles of the steel, cut off and melted by the blow, as Dr Hooke observed with the microscope."
+      },
+      {
+        "id": "B4",
+        "section": "FLINT",
+        "text": "Being burnt and ground to powder, it is used in making glass, and in the finer kinds of earthenware."
+      },
+      {
+        "id": "B5",
+        "section": "FLINT",
+        "text": "The common people in many countries believe that the arrow-heads of flint found in the fields, which they call elf-arrows, are shot by fairies at cattle; others hold them to be formed in the clouds by thunder."
+      },
+      {
+        "id": "B6",
+        "section": "FLINT",
+        "text": "But they are more probably the heads of the weapons of ancient nations who had not the use of iron, such as are still used by the savages of America."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-flint",
+    "title": "Flint",
+    "url": "https://en.wikipedia.org/wiki/Flint",
+    "dateModified": "2026-08-19",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Flint is a hard, sedimentary cryptocrystalline form of the mineral quartz, a variety of chert that occurs in chalk or marly limestone."
+      },
+      {
+        "id": "W2",
+        "section": "Occurrence",
+        "text": "Flint occurs as nodules and masses in chalk and limestone, often arranged in layers along the bedding."
+      },
+      {
+        "id": "W3",
+        "section": "Origin",
+        "text": "The exact way flint forms is still not fully understood. It is thought to form when silica, much of it from the remains of sponges, dissolves and is deposited again within the chalk, replacing it."
+      },
+      {
+        "id": "W4",
+        "section": "Occurrence",
+        "text": "Fossils, such as sea urchins, are sometimes preserved in flint."
+      },
+      {
+        "id": "W5",
+        "section": "Fire",
+        "text": "When struck against steel, flint throws off sparks. The sparks are tiny pieces of steel, shaved off and heated by the blow, that burn in the air."
+      },
+      {
+        "id": "W6",
+        "section": "Tools",
+        "text": "Flint was widely used in the Stone Age to make tools and weapons, such as hand axes, blades and arrowheads, because it breaks with sharp edges."
+      },
+      {
+        "id": "W7",
+        "section": "Uses",
+        "text": "Flint was used in flintlock guns from the 17th to the 19th century, and calcined flint was added to pottery and glass."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.88,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same headword: FLINT and Flint.",
+      "Rare terms appear in both: nodules, chalk, steel, sparks, arrow-heads.",
+      "Chert scores well but covers a wider group of rocks."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Chert",
+      "url": "https://en.wikipedia.org/wiki/Chert",
+      "embedScore": 0.8,
+      "rerankScore": 0.62
+    },
+    {
+      "title": "Flintlock",
+      "url": "https://en.wikipedia.org/wiki/Flintlock",
+      "embedScore": 0.71,
+      "rerankScore": 0.48
+    }
+  ],
+  "alignments": [
+    {
+      "id": "fl1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Nodules in chalk",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "found in irregular lumps or nodules, chiefly in beds of chalk"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Flint occurs as nodules and masses in chalk and limestone"
+      },
+      "note": "Same observation in both texts."
+    },
+    {
+      "id": "fl2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Origin not known",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "Its origin is not known."
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "The exact way flint forms is still not fully understood."
+      },
+      "note": "Both texts admit that the origin is not settled. Wikipedia now gives a likely process."
+    },
+    {
+      "id": "fl3",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Chalk turned to stone",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "formed of the chalk itself, turned into stone by a petrifying juice"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "silica, much of it from the remains of sponges, dissolves and is deposited again within the chalk, replacing it"
+      },
+      "note": "Right that flint takes the place of chalk. The petrifying juice is silica in water, much of it from sponges, and the chalk is replaced, not changed into flint."
+    },
+    {
+      "id": "fl4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Sparks are steel",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the sparks being small particles of the steel, cut off and melted by the blow"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "The sparks are tiny pieces of steel, shaved off and heated by the blow"
+      },
+      "note": "Same fact in new words. Hooke saw this with his microscope in the 1660s. Wikipedia adds that the pieces burn in the air."
+    },
+    {
+      "id": "fl5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Glass and earthenware",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "it is used in making glass, and in the finer kinds of earthenware"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "calcined flint was added to pottery and glass"
+      },
+      "note": "Same uses. Calcined flint is flint that was burnt, as the 1778 entry says."
+    },
+    {
+      "id": "fl6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Shot by fairies",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "are shot by fairies at cattle"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Flint was widely used in the Stone Age to make tools and weapons"
+      },
+      "note": "The 1778 entry reports this as a belief of the common people. People made the arrow-heads in the Stone Age."
+    },
+    {
+      "id": "fl7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Formed by thunder",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "formed in the clouds by thunder"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "because it breaks with sharp edges"
+      },
+      "note": "Thunder does not shape stones. People chose flint for tools because it breaks with sharp edges."
+    },
+    {
+      "id": "fl8",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Weapons of ancient nations",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "the heads of the weapons of ancient nations who had not the use of iron"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "such as hand axes, blades and arrowheads"
+      },
+      "note": "The 1778 entry reached the right view by comparison with tools still in use in America. Wikipedia places these tools in the Stone Age."
+    },
+    {
+      "id": "fl9",
+      "kind": "added",
+      "verdict": null,
+      "label": "A form of quartz",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "cryptocrystalline form of the mineral quartz"
+      },
+      "note": "New knowledge. The 1778 entry does not say what flint is made of."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Where flint is found",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Origin",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Fire and gun-flints",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Glass and pottery",
+      "britannica": 0.1,
+      "wikipedia": 0.05
+    },
+    {
+      "topic": "Arrow-heads and tools",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Mineral make-up",
+      "britannica": 0,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1778 entry say about flint arrow-heads?",
+    "Why does flint make sparks with steel?",
+    "How does flint form?"
+  ],
+  "answers": {
+    "What did the 1778 entry say about flint arrow-heads?": {
+      "answer": "It reports two popular beliefs: fairies shot them at cattle, or thunder formed them in the clouds [B5]. It then calls them the weapons of ancient nations without iron [B6]. Wikipedia agrees with the last view: Stone Age people made flint tools and arrowheads [W6].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Why does flint make sparks with steel?": {
+      "answer": "The 1778 entry says the sparks are particles of steel cut off and melted by the blow [B3]. Wikipedia gives the same explanation: tiny pieces of steel, heated by the blow, burn in the air [W5].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "How does flint form?": {
+      "answer": "The 1778 entry says the origin is not known and reports a guess: chalk turned to stone by a petrifying juice [B2]. Wikipedia says it is still not fully understood, but silica, much of it from sponges, is deposited in the chalk and replaces it [W3].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

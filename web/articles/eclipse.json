@@ -1,0 +1,366 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "eclipse",
+    "label": "Eclipse",
+    "headword": "ECLIPSE",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Eclipse",
+    "area": "natural-sciences",
+    "teaser": "In total eclipses of the sun a luminous ring is seen round the moon, which many astronomers take to be the atmosphere of the moon, illuminated by the sun."
+  },
+  "aliases": [
+    "eclipse",
+    "eclipses",
+    "solar eclipse",
+    "lunar eclipse",
+    "saros"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0080",
+    "headword": "ECLIPSE",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 6",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 6 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "ECL                    [ 268 ]                    ECL\n\nECLECTICS, a ſect of ancient philoſophers who choſe from every ſect what ſeemed beſt.\n  ECLIPSE, in aſtronomy, a privation of the light of\none of the luminaries, by the interpoſition of ſome\nopaqne body. An eclipſe of the ſun happens when the\nmoon comes between the ſun and the earth; and an\neclipſe of the moon, when the earth comes between the\nſun and the moon, ſo that the ſhadow of the earth falls\nupon the moon. Eclipſes of the ſun happen only at the\nnew moon, and thoſe of the moon only at the full, and\nthen only when the moon is near one of her nodes.\n  The times of eclipſes are now computed by aſtronomers\nwith ſuch exactneſs that they may be foretold many\nyears before they happen. The Chaldeans found that\neclipſes return in nearly the ſame order after a period\nof about 18 years and 11 days, which is called the\nSaros. The vulgar in all ages have looked upon eclipſes\nas omens of ſome great calamitv; but this ſuperſtition\nhas been diſpelled by the knowledge of their cauſes.\n  In total eclipſes of the ſun a luminous ring is ſeen\nround the moon, which many aſtronomers take to be the\natmoſphere of the moon, illuminated by the ſun. A total\neclipſe of the ſun is ſeen only in a narrow tract of\nthe earth, over which the ſhadow of the moon paſſes; in\nother places it appears partial, or not at all.\n  ECLIPTIC, the great circle in which the ſun appears to move.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "ECLIPSE",
+        "text": "ECLIPSE, in astronomy, a privation of the light of one of the luminaries, by the interposition of some opaque body."
+      },
+      {
+        "id": "B2",
+        "section": "ECLIPSE",
+        "text": "An eclipse of the sun happens when the moon comes between the sun and the earth; and an eclipse of the moon, when the earth comes between the sun and the moon, so that the shadow of the earth falls upon the moon."
+      },
+      {
+        "id": "B3",
+        "section": "ECLIPSE",
+        "text": "Eclipses of the sun happen only at the new moon, and those of the moon only at the full, and then only when the moon is near one of her nodes."
+      },
+      {
+        "id": "B4",
+        "section": "ECLIPSE",
+        "text": "The times of eclipses are now computed by astronomers with such exactness that they may be foretold many years before they happen."
+      },
+      {
+        "id": "B5",
+        "section": "ECLIPSE",
+        "text": "The Chaldeans found that eclipses return in nearly the same order after a period of about 18 years and 11 days, which is called the Saros."
+      },
+      {
+        "id": "B6",
+        "section": "ECLIPSE",
+        "text": "The vulgar in all ages have looked upon eclipses as omens of some great calamity; but this superstition has been dispelled by the knowledge of their causes."
+      },
+      {
+        "id": "B7",
+        "section": "ECLIPSE",
+        "text": "In total eclipses of the sun a luminous ring is seen round the moon, which many astronomers take to be the atmosphere of the moon, illuminated by the sun."
+      },
+      {
+        "id": "B8",
+        "section": "ECLIPSE",
+        "text": "A total eclipse of the sun is seen only in a narrow tract of the earth, over which the shadow of the moon passes; in other places it appears partial, or not at all."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-eclipse",
+    "title": "Eclipse",
+    "url": "https://en.wikipedia.org/wiki/Eclipse",
+    "dateModified": "2026-09-30",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "An eclipse is an astronomical event in which an astronomical object is hidden for a time, either because it passes into the shadow of another body or because another body passes between it and the viewer."
+      },
+      {
+        "id": "W2",
+        "section": "Sun, Moon and Earth",
+        "text": "A solar eclipse occurs when the Moon passes between the Sun and Earth. A lunar eclipse occurs when Earth passes between the Sun and the Moon, and Earth's shadow falls on the Moon."
+      },
+      {
+        "id": "W3",
+        "section": "Sun, Moon and Earth",
+        "text": "Solar eclipses can happen only at new moon and lunar eclipses only at full moon. Even then the Moon must be near a node, where its tilted orbit crosses the plane of Earth's orbit."
+      },
+      {
+        "id": "W4",
+        "section": "Periodicity",
+        "text": "Eclipses repeat in cycles. The saros, a period of about 18 years and 11 days, was known to Babylonian astronomers and is still used to predict eclipses."
+      },
+      {
+        "id": "W5",
+        "section": "Solar eclipse",
+        "text": "A total solar eclipse is seen only along a narrow path, usually no more than a few hundred kilometres wide, where the Moon's darkest shadow, the umbra, touches Earth."
+      },
+      {
+        "id": "W6",
+        "section": "Solar eclipse",
+        "text": "During totality the Sun's corona, its faint outer atmosphere, becomes visible around the dark disk of the Moon."
+      },
+      {
+        "id": "W7",
+        "section": "Discoveries",
+        "text": "During the solar eclipse of 1868, astronomers saw an unknown yellow line in the spectrum of the Sun. It was later traced to a new element, helium."
+      },
+      {
+        "id": "W8",
+        "section": "History",
+        "text": "Many cultures saw eclipses as bad omens. Today their causes are well understood, and astronomers predict them to within seconds."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.9,
+    "rerankScore": 0.91,
+    "reasons": [
+      "Same headword: ECLIPSE and Eclipse.",
+      "Rare terms appear in both: nodes, new moon and full moon, saros, total eclipse.",
+      "Solar eclipse scores well but covers only one of the two kinds."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Solar eclipse",
+      "url": "https://en.wikipedia.org/wiki/Solar_eclipse",
+      "embedScore": 0.86,
+      "rerankScore": 0.74
+    },
+    {
+      "title": "Lunar eclipse",
+      "url": "https://en.wikipedia.org/wiki/Lunar_eclipse",
+      "embedScore": 0.83,
+      "rerankScore": 0.66
+    }
+  ],
+  "alignments": [
+    {
+      "id": "ec1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Light hidden by a body",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "by the interposition of some opaque body"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "another body passes between it and the viewer"
+      },
+      "note": "The same definition in new words. Wikipedia uses shadow and viewer where the entry uses privation and interposition."
+    },
+    {
+      "id": "ec2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Solar and lunar eclipses",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "when the moon comes between the sun and the earth"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "A solar eclipse occurs when the Moon passes between the Sun and Earth"
+      },
+      "note": "Both kinds are explained the same way in both texts."
+    },
+    {
+      "id": "ec3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "New moon, full moon, nodes",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "then only when the moon is near one of her nodes"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "the Moon must be near a node"
+      },
+      "note": "The condition holds without change."
+    },
+    {
+      "id": "ec4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Eclipses foretold",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "they may be foretold many years before they happen"
+      },
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "astronomers predict them to within seconds"
+      },
+      "note": "True in 1797. The precision is now much greater. This is a change in degree, not in knowledge."
+    },
+    {
+      "id": "ec5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "The Saros cycle",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "a period of about 18 years and 11 days, which is called the Saros"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "The saros, a period of about 18 years and 11 days"
+      },
+      "note": "Same period in both texts. The Chaldeans of the entry are the Babylonian astronomers of Wikipedia."
+    },
+    {
+      "id": "ec6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Omens of calamity",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "omens of some great calamity"
+      },
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "Today their causes are well understood"
+      },
+      "note": "The verdict is for the quoted popular belief. The 1797 entry itself rejects it, so on this point the entry and Wikipedia agree."
+    },
+    {
+      "id": "ec7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Ring is moon's air",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "the atmosphere of the moon, illuminated by the sun"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "the Sun's corona, its faint outer atmosphere"
+      },
+      "note": "The ring belongs to the sun, not the moon. The moon has almost no atmosphere. This is a change in knowledge."
+    },
+    {
+      "id": "ec8",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Narrow track of totality",
+      "britannica": {
+        "passageId": "B8",
+        "quote": "seen only in a narrow tract of the earth"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "seen only along a narrow path"
+      },
+      "note": "The observation holds. Wikipedia names the shadow the umbra."
+    },
+    {
+      "id": "ec9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Helium in 1868",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "It was later traced to a new element, helium"
+      },
+      "note": "Eclipses became a tool for study of the sun. The 1797 entry treats them only as events to predict."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What an eclipse is",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Conditions for eclipses",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Prediction and the Saros",
+      "britannica": 0.2,
+      "wikipedia": 0.18
+    },
+    {
+      "topic": "Omens and belief",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Total eclipse and ring of light",
+      "britannica": 0.3,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Discoveries during eclipses",
+      "britannica": 0,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1797 entry think the ring of light in a total eclipse was?",
+    "Could astronomers in 1797 predict eclipses?"
+  ],
+  "answers": {
+    "What did the 1797 entry think the ring of light in a total eclipse was?": {
+      "answer": "It says many astronomers took the ring to be the atmosphere of the moon, lit by the sun [B7]. Wikipedia says the ring is the Sun's corona, its faint outer atmosphere [W6].",
+      "citations": [
+        {
+          "id": "B7",
+          "source": "britannica",
+          "passageId": "B7",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Could astronomers in 1797 predict eclipses?": {
+      "answer": "Yes. The entry says eclipses could be foretold many years ahead [B4] and mentions the Saros of about 18 years and 11 days [B5]. Wikipedia says the saros is still used, and eclipses are now predicted to within seconds [W4] [W8].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "W8",
+          "source": "wikipedia",
+          "passageId": "W8",
+          "rerankScore": 0.88
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

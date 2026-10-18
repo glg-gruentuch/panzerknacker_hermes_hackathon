@@ -1,0 +1,352 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "lymphatics",
+    "label": "Lymphatic system",
+    "headword": "ABSORBENT VESSELS, or LYMPHATICS",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Lymphatic system",
+    "area": "anatomy",
+    "teaser": "Dr William Hunter and Dr Monro have disputed which of them first showed that these vessels, and not the veins, are the absorbents of the body; and it is now held that the red veins absorb nothing."
+  },
+  "aliases": [
+    "lymphatics",
+    "absorbents",
+    "absorbent vessels",
+    "lymph",
+    "lacteals"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0069",
+    "headword": "ABSORBENT VESSELS, or LYMPHATICS",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 1",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 1 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "ABS                    [ 58 ]                    ABS\n\nABSORBENT, in medicine, a remedy that dries up humours.\n  ABSORBENT VESSELS, or LYMPHATICS, in anatomy, a ſet\nof thin and tranfparent veſſels which carry a clear\nfluid called lymph, and which are found in almoſt every\npart of the body. They are furniſhed with many valvcs,\nwhich give them a knotted appearance; and they unite at\nlaſt into the thoracic duct, which empties its contents\ninto the left ſubclavian vein, near the heart.\n  The lacteals of the inteſtines, diſcovered by Aſel-\nlius in 1622, are of the ſame kind, and carry the chyle\nfrom the food to the blood. Dr William Hunter and Dr\nMonro have diſputed which of them firſt ſhowed that\ntheſe veſſels, and not the veins, are the abſorbents of\nthe body; and it is now held that the red veins abſorb\nnothing.\n  In their courſe the lymphatics paſs through the cong-\nlobate glands, in which the lymph is thought to be pre-\npared and made more perfect before it enters the blood.\nIn the ſcrofula, or king's evil, theſe glands, chiefly\nthoſe of the neck, ſwell and harden, and often break\ninto ulcers that are healed with difficulty.\n  ABSTEMII, a name given to ſuch as cannot drink wine.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "ABSORBENT VESSELS, or LYMPHATICS",
+        "text": "ABSORBENT VESSELS, or LYMPHATICS, in anatomy, a set of thin and transparent vessels which carry a clear fluid called lymph, and which are found in almost every part of the body."
+      },
+      {
+        "id": "B2",
+        "section": "ABSORBENT VESSELS, or LYMPHATICS",
+        "text": "They are furnished with many valves, which give them a knotted appearance; and they unite at last into the thoracic duct, which empties its contents into the left subclavian vein, near the heart."
+      },
+      {
+        "id": "B3",
+        "section": "ABSORBENT VESSELS, or LYMPHATICS",
+        "text": "The lacteals of the intestines, discovered by Asellius in 1622, are of the same kind, and carry the chyle from the food to the blood."
+      },
+      {
+        "id": "B4",
+        "section": "ABSORBENT VESSELS, or LYMPHATICS",
+        "text": "Dr William Hunter and Dr Monro have disputed which of them first showed that these vessels, and not the veins, are the absorbents of the body; and it is now held that the red veins absorb nothing."
+      },
+      {
+        "id": "B5",
+        "section": "ABSORBENT VESSELS, or LYMPHATICS",
+        "text": "In their course the lymphatics pass through the conglobate glands, in which the lymph is thought to be prepared and made more perfect before it enters the blood."
+      },
+      {
+        "id": "B6",
+        "section": "ABSORBENT VESSELS, or LYMPHATICS",
+        "text": "In the scrofula, or king's evil, these glands, chiefly those of the neck, swell and harden, and often break into ulcers that are healed with difficulty."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-lymphatics",
+    "title": "Lymphatic system",
+    "url": "https://en.wikipedia.org/wiki/Lymphatic_system",
+    "dateModified": "2026-10-05",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "The lymphatic system is a network of vessels, nodes and organs. Its vessels carry a clear fluid called lymph back towards the heart."
+      },
+      {
+        "id": "W2",
+        "section": "Structure",
+        "text": "Lymphatic vessels have valves that keep lymph flowing in one direction. Most of the lymph collects in the thoracic duct, which drains into the blood near the junction of the left subclavian and left internal jugular veins."
+      },
+      {
+        "id": "W3",
+        "section": "Function",
+        "text": "The lymphatic system returns fluid that leaks from the blood capillaries back to the blood. Most of this fluid, however, is taken back directly into the blood capillaries."
+      },
+      {
+        "id": "W4",
+        "section": "Function",
+        "text": "Lacteals in the small intestine absorb fats from digested food."
+      },
+      {
+        "id": "W5",
+        "section": "Lymph nodes",
+        "text": "Lymph passes through lymph nodes, which filter it. The nodes hold large numbers of white blood cells called lymphocytes, which fight infection."
+      },
+      {
+        "id": "W6",
+        "section": "Function",
+        "text": "The lymphatic system is part of the immune system."
+      },
+      {
+        "id": "W7",
+        "section": "Clinical significance",
+        "text": "Lymph nodes often swell during infections. Tuberculosis of the lymph nodes of the neck was formerly called scrofula."
+      },
+      {
+        "id": "W8",
+        "section": "History",
+        "text": "Gaspare Aselli described the lacteals in 1622. Olaus Rudbeck and Thomas Bartholin described the lymphatic vessels of the body in the 1650s."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.84,
+    "rerankScore": 0.85,
+    "reasons": [
+      "Same subject: ABSORBENT VESSELS, or LYMPHATICS and Lymphatic system.",
+      "Rare terms appear in both: lymph, thoracic duct, lacteals, scrofula.",
+      "Lymph node scores well but covers only the glands."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Lymph node",
+      "url": "https://en.wikipedia.org/wiki/Lymph_node",
+      "embedScore": 0.79,
+      "rerankScore": 0.6
+    },
+    {
+      "title": "Lacteal",
+      "url": "https://en.wikipedia.org/wiki/Lacteal",
+      "embedScore": 0.7,
+      "rerankScore": 0.52
+    }
+  ],
+  "alignments": [
+    {
+      "id": "ly1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Vessels with clear lymph",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "thin and transparent vessels which carry a clear fluid called lymph"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "Its vessels carry a clear fluid called lymph"
+      },
+      "note": "Same description."
+    },
+    {
+      "id": "ly2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Valves and the duct",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "they unite at last into the thoracic duct, which empties its contents into the left subclavian vein"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Most of the lymph collects in the thoracic duct"
+      },
+      "note": "Same route. Wikipedia gives the joining point of two veins in more detail."
+    },
+    {
+      "id": "ly3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Lacteals, 1622",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "The lacteals of the intestines, discovered by Asellius in 1622"
+      },
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "Gaspare Aselli described the lacteals in 1622"
+      },
+      "note": "Same discoverer and year. Asellius is the Latin form of Aselli."
+    },
+    {
+      "id": "ly4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Lacteals carry food",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "carry the chyle from the food to the blood"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "absorb fats from digested food"
+      },
+      "note": "Same function. Today the fat is named, not the chyle."
+    },
+    {
+      "id": "ly5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Only lymphatics absorb",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "it is now held that the red veins absorb nothing"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Most of this fluid, however, is taken back directly into the blood capillaries"
+      },
+      "note": "The lymphatics do absorb fluid. But the blood vessels take back most of it, so the claim that veins absorb nothing is wrong."
+    },
+    {
+      "id": "ly6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Glands prepare lymph",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the lymph is thought to be prepared and made more perfect"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Lymph passes through lymph nodes, which filter it"
+      },
+      "note": "The glands are now called lymph nodes. They filter the lymph and hold immune cells; they do not perfect it."
+    },
+    {
+      "id": "ly7",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Scrofula",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "In the scrofula, or king's evil, these glands, chiefly those of the neck, swell and harden"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Tuberculosis of the lymph nodes of the neck was formerly called scrofula"
+      },
+      "note": "Same disease. Its cause, tuberculosis, was not known in 1797."
+    },
+    {
+      "id": "ly8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Lymphocytes",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "white blood cells called lymphocytes, which fight infection"
+      },
+      "note": "Lymphocytes were not known in 1797."
+    },
+    {
+      "id": "ly9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Immune system",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "part of the immune system"
+      },
+      "note": "The 1797 entry gives the system no role in defence."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Vessels and lymph",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Thoracic duct and valves",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Lacteals and history",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Absorption",
+      "britannica": 0.2,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Glands and nodes",
+      "britannica": 0.1,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Disease",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Immune defence",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "Are the lymphatics the only absorbent vessels?",
+    "What do the lymph glands do?"
+  ],
+  "answers": {
+    "Are the lymphatics the only absorbent vessels?": {
+      "answer": "The 1797 entry says yes: the lymphatics absorb and the red veins absorb nothing [B4]. Wikipedia says the lymphatics return leaked fluid, but most of it goes back directly into the blood capillaries [W3].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.91
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What do the lymph glands do?": {
+      "answer": "The 1797 entry thought the glands prepare the lymph and make it more perfect [B5]. Wikipedia says the lymph nodes filter the lymph and hold lymphocytes that fight infection [W5], as part of the immune system [W6].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.8
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

@@ -1,0 +1,385 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "fixed-stars",
+    "label": "Fixed stars",
+    "headword": "STARS, FIXED",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Star",
+    "area": "natural-sciences",
+    "teaser": "It is most probable that every fixed star is a sun, as large and bright as our own, and that each is attended by planets which revolve about it."
+  },
+  "aliases": [
+    "fixed stars",
+    "fixed star",
+    "stars",
+    "milky way",
+    "stellar parallax"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0076",
+    "headword": "STARS, FIXED",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 17",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 17 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "STA                    [ 712 ]                    STA\n\nSTARCH, a fecula made of wheat, uſed to ſtiffen linen.\n  STARS, FIXED, thoſe heavenly bodies which conſtantly\nkeep the ſame ſituation with reſpect to one another,\nand are thus diſtinguiſhed from the planets and comets.\nThey ſhine by tbeir own native light, and not by light\nborrowed from the ſun, as the planets do; and this\nlight is thought to proceed from fire, like that of the\nſun.\n  It is moſt probable that every fixed ſtar is a ſun,\nas large and bright as our own, and that each is atten-\nded by planets which revolve about it. Their diſtance\nis ſo great that no ſenſible parallax has yet been diſ-\ncovered in any of them, even with the fineſt\ninſtruments.\n  The milky way, which ſome of the ancients took for a\nvapour, is found by Dr Herſchel's teleſcopes to conſiſt\nof an innumerable multitude of ſmall ſtars, too remote\nto be ſeen ſingly by the naked eye. As the ſtars are\nprobably of the ſame nature and magnitude, thoſe which\nappear brighteſt are judged to be the neareſt, and the\nfainteſt the moſt remote. Yet Dr Halley obſerved that\nSirius, Arcturns, and Aldebaran have changed their\nplaces ſince the time of Ptolemy; ſo that the ſtars are\nnot ſtrictly fixed, though their motion is too ſlow to\nbe perceived in the life of man.\n  STATE, a body politic, or ſociety of men united together.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "STARS, FIXED",
+        "text": "STARS, FIXED, those heavenly bodies which constantly keep the same situation with respect to one another, and are thus distinguished from the planets and comets."
+      },
+      {
+        "id": "B2",
+        "section": "STARS, FIXED",
+        "text": "They shine by their own native light, and not by light borrowed from the sun, as the planets do; and this light is thought to proceed from fire, like that of the sun."
+      },
+      {
+        "id": "B3",
+        "section": "STARS, FIXED",
+        "text": "It is most probable that every fixed star is a sun, as large and bright as our own, and that each is attended by planets which revolve about it."
+      },
+      {
+        "id": "B4",
+        "section": "STARS, FIXED",
+        "text": "Their distance is so great that no sensible parallax has yet been discovered in any of them, even with the finest instruments."
+      },
+      {
+        "id": "B5",
+        "section": "STARS, FIXED",
+        "text": "The milky way, which some of the ancients took for a vapour, is found by Dr Herschel's telescopes to consist of an innumerable multitude of small stars, too remote to be seen singly by the naked eye."
+      },
+      {
+        "id": "B6",
+        "section": "STARS, FIXED",
+        "text": "As the stars are probably of the same nature and magnitude, those which appear brightest are judged to be the nearest, and the faintest the most remote."
+      },
+      {
+        "id": "B7",
+        "section": "STARS, FIXED",
+        "text": "Yet Dr Halley observed that Sirius, Arcturus, and Aldebaran have changed their places since the time of Ptolemy; so that the stars are not strictly fixed, though their motion is too slow to be perceived in the life of man."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-fixed-stars",
+    "title": "Star",
+    "url": "https://en.wikipedia.org/wiki/Star",
+    "dateModified": "2026-09-21",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "A star is a luminous spheroid of plasma held together by its own gravity. The nearest star to Earth is the Sun."
+      },
+      {
+        "id": "W2",
+        "section": "Energy",
+        "text": "For most of its active life, a star shines because of nuclear fusion of hydrogen into helium in its core. The energy then travels out and leaves the surface as light and heat."
+      },
+      {
+        "id": "W3",
+        "section": "Planetary systems",
+        "text": "Many stars have planets. Planets around other stars were first confirmed in the 1990s, and thousands of such exoplanets are now known."
+      },
+      {
+        "id": "W4",
+        "section": "Distance",
+        "text": "Friedrich Bessel made the first successful measurement of a stellar parallax in 1838, for the star 61 Cygni. The nearest star after the Sun, Proxima Centauri, is about 4.2 light-years away."
+      },
+      {
+        "id": "W5",
+        "section": "Milky Way",
+        "text": "The Sun is one of billions of stars in the Milky Way galaxy. The band of light called the Milky Way is the combined light of stars too faint to see one by one."
+      },
+      {
+        "id": "W6",
+        "section": "Brightness",
+        "text": "Stars differ greatly in mass, size and luminosity. How bright a star looks from Earth depends on both its luminosity and its distance."
+      },
+      {
+        "id": "W7",
+        "section": "Motion",
+        "text": "Stars are not fixed. Each has a proper motion across the sky, too small to notice over a human lifetime without instruments. Edmond Halley first detected the proper motion of stars in 1718."
+      },
+      {
+        "id": "W8",
+        "section": "Life cycle",
+        "text": "Stars form from collapsing clouds of gas and dust. When a star uses up the fuel in its core, it changes and ends as a white dwarf, a neutron star or a black hole."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.84,
+    "rerankScore": 0.83,
+    "reasons": [
+      "Same subject: STARS, FIXED and Star.",
+      "Rare terms appear in both: parallax, Milky Way, Halley, proper motion of stars.",
+      "Milky Way scores well but covers only one part of the entry."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Fixed stars",
+      "url": "https://en.wikipedia.org/wiki/Fixed_stars",
+      "embedScore": 0.8,
+      "rerankScore": 0.66
+    },
+    {
+      "title": "Milky Way",
+      "url": "https://en.wikipedia.org/wiki/Milky_Way",
+      "embedScore": 0.74,
+      "rerankScore": 0.52
+    },
+    {
+      "title": "Stellar parallax",
+      "url": "https://en.wikipedia.org/wiki/Stellar_parallax",
+      "embedScore": 0.7,
+      "rerankScore": 0.48
+    }
+  ],
+  "alignments": [
+    {
+      "id": "fs1",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Same place always",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "constantly keep the same situation with respect to one another"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Stars are not fixed"
+      },
+      "note": "To the eye this holds. The stars do move, but too slowly to see in a lifetime. The entry itself makes this point in B7."
+    },
+    {
+      "id": "fs2",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Light from fire",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "this light is thought to proceed from fire, like that of the sun"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "a star shines because of nuclear fusion of hydrogen into helium in its core"
+      },
+      "note": "Right that stars make their own light. The source is nuclear fusion, not burning. This is a change in knowledge."
+    },
+    {
+      "id": "fs3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Each star a sun",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "every fixed star is a sun"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "The nearest star to Earth is the Sun"
+      },
+      "note": "The same idea in new words. Today the Sun is called a star, where 1797 called each star a sun."
+    },
+    {
+      "id": "fs4",
+      "kind": "revised",
+      "verdict": "correct",
+      "label": "Planets round stars",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "each is attended by planets which revolve about it"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Planets around other stars were first confirmed in the 1990s"
+      },
+      "note": "A guess in 1797 with no evidence. Observers confirmed it about two hundred years later. Not every star is known to have planets."
+    },
+    {
+      "id": "fs5",
+      "kind": "revised",
+      "verdict": "correct",
+      "label": "No parallax found",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "no sensible parallax has yet been discovered"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Friedrich Bessel made the first successful measurement of a stellar parallax in 1838"
+      },
+      "note": "True in 1797, and the word \"yet\" leaves room for later work. Bessel measured the first parallax 41 years later."
+    },
+    {
+      "id": "fs6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Milky Way is stars",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "an innumerable multitude of small stars"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "the combined light of stars too faint to see one by one"
+      },
+      "note": "Herschel's view holds. Wikipedia adds that the Sun itself is one of the stars of the Milky Way galaxy."
+    },
+    {
+      "id": "fs7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Brightness shows distance",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "those which appear brightest are judged to be the nearest"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Stars differ greatly in mass, size and luminosity"
+      },
+      "note": "Stars are not all alike. A bright star can be far away and very luminous. This is a change in knowledge."
+    },
+    {
+      "id": "fs8",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Halley's moving stars",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "Sirius, Arcturus, and Aldebaran have changed their places since the time of Ptolemy"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Edmond Halley first detected the proper motion of stars in 1718"
+      },
+      "note": "Both texts credit Halley. Wikipedia names the motion proper motion."
+    },
+    {
+      "id": "fs9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Stars are born and die",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "Stars form from collapsing clouds of gas and dust"
+      },
+      "note": "The 1797 entry treats the stars as lasting for ever. Wikipedia describes how stars form and how they end."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What a star is",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Source of light",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Planets of other stars",
+      "britannica": 0.12,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Distance and parallax",
+      "britannica": 0.18,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Milky Way",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Motion of stars",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Birth and death of stars",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "Did the 1797 entry guess that other stars have planets?",
+    "Are the fixed stars really fixed?",
+    "Why could astronomers in 1797 not measure the distance to a star?"
+  ],
+  "answers": {
+    "Did the 1797 entry guess that other stars have planets?": {
+      "answer": "Yes. It called it most probable that every fixed star is a sun with planets that revolve about it [B3]. This was a guess. Wikipedia says planets around other stars were first confirmed in the 1990s, and thousands are now known [W3].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.94
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Are the fixed stars really fixed?": {
+      "answer": "No. The 1797 entry defines them by their fixed places [B1], but it also reports that Halley found Sirius, Arcturus and Aldebaran had moved since Ptolemy [B7]. Wikipedia says every star has a proper motion, first detected by Halley in 1718 [W7].",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B7",
+          "source": "britannica",
+          "passageId": "B7",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Why could astronomers in 1797 not measure the distance to a star?": {
+      "answer": "The stars were too far away. The entry says no parallax had yet been found, even with the finest instruments [B4]. Wikipedia says Bessel made the first successful measurement in 1838, and the nearest star after the Sun is about 4.2 light-years away [W4].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

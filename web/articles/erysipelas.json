@@ -1,0 +1,360 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "erysipelas",
+    "label": "Erysipelas",
+    "headword": "ERYSIPELAS, or ST ANTHONY'S FIRE",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "match": "strong",
+    "wikipediaTitle": "Erysipelas",
+    "area": "infectious-disease",
+    "teaser": "The cause is commonly thought to be an acrid bile, thrown upon the skin from a disordered state of the stomach and liver."
+  },
+  "aliases": [
+    "erysipelas",
+    "st anthony's fire",
+    "saint anthony's fire"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0063",
+    "headword": "ERYSIPELAS, or ST ANTHONY'S FIRE",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "volume": "Volume 8",
+    "meta": "Encyclopaedia Britannica - Fourth edition, Volume 8 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "ERY                    [ 236 ]                    ERY\n\nERYNGIUM, ſea-holly, a genus of plants.\n  ERYSIPELAS, or ST ANTHONY'S FIRE, an inflammation of\nthe ſkin, with a red, hot and fhining ſwelling, which\nſpreads irregularly, and is attended with fever. It\nattacks the face more often than any other part, and\nthe ſwollen ſkin often riſes in ſmall bliſters filled\nwith a yellowiſh fluid. When it attacks the head it is\noften attended with delirium, and ſometimes proves\nfatal.\n  The cauſe is commonly thought to be an acrid bile,\nthrown upon the ſkin from a diſordered ſtate of the\nſtomach and liver. It has the name of St Anthony's fire\nfrom the ſaint who was invoked againſt it in the middle\nages. In hoſpitals it often follows wounds and opera-\ntions, and paſſes from one patient to another, ſo that\nvvhole wards are ſometimes affected.\n  The cure conſiſts in bleeding, in purging with ſaline\nmedicines, and a cooling diet; cold applications to the\npart are hurtful, as they may drive the diſeaſe\ninwards.\n  ERYTHRINA, coral-tree, a genus of plants.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "ERYSIPELAS, or ST ANTHONY'S FIRE",
+        "text": "ERYSIPELAS, or ST ANTHONY'S FIRE, an inflammation of the skin, with a red, hot and shining swelling, which spreads irregularly, and is attended with fever."
+      },
+      {
+        "id": "B2",
+        "section": "ERYSIPELAS, or ST ANTHONY'S FIRE",
+        "text": "It attacks the face more often than any other part, and the swollen skin often rises in small blisters filled with a yellowish fluid."
+      },
+      {
+        "id": "B3",
+        "section": "ERYSIPELAS, or ST ANTHONY'S FIRE",
+        "text": "When it attacks the head it is often attended with delirium, and sometimes proves fatal."
+      },
+      {
+        "id": "B4",
+        "section": "ERYSIPELAS, or ST ANTHONY'S FIRE",
+        "text": "The cause is commonly thought to be an acrid bile, thrown upon the skin from a disordered state of the stomach and liver."
+      },
+      {
+        "id": "B5",
+        "section": "ERYSIPELAS, or ST ANTHONY'S FIRE",
+        "text": "It has the name of St Anthony's fire from the saint who was invoked against it in the middle ages."
+      },
+      {
+        "id": "B6",
+        "section": "ERYSIPELAS, or ST ANTHONY'S FIRE",
+        "text": "In hospitals it often follows wounds and operations, and passes from one patient to another, so that whole wards are sometimes affected."
+      },
+      {
+        "id": "B7",
+        "section": "ERYSIPELAS, or ST ANTHONY'S FIRE",
+        "text": "The cure consists in bleeding, in purging with saline medicines, and a cooling diet; cold applications to the part are hurtful, as they may drive the disease inwards."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-erysipelas",
+    "title": "Erysipelas",
+    "url": "https://en.wikipedia.org/wiki/Erysipelas",
+    "dateModified": "2026-09-03",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Erysipelas is a bacterial infection of the upper layers of the skin. It causes a raised, well-defined, bright red rash, typically on the face or legs, often with fever."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "The affected skin is swollen, warm and tender, and it may form blisters."
+      },
+      {
+        "id": "W3",
+        "section": "Cause",
+        "text": "Most cases are caused by Streptococcus pyogenes, also called group A streptococcus."
+      },
+      {
+        "id": "W4",
+        "section": "Cause",
+        "text": "The bacteria usually enter through a break in the skin, such as a wound, a scratch or a surgical cut."
+      },
+      {
+        "id": "W5",
+        "section": "Treatment",
+        "text": "The usual treatment is an antibiotic, most often penicillin."
+      },
+      {
+        "id": "W6",
+        "section": "Complications",
+        "text": "Complications are uncommon but can include abscess, spread of the infection into deeper tissue, and sepsis."
+      },
+      {
+        "id": "W7",
+        "section": "History",
+        "text": "Erysipelas was historically called St Anthony's fire. The same name was also used for ergotism, a different illness caused by eating rye infected with a fungus."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.87,
+    "rerankScore": 0.88,
+    "reasons": [
+      "Same headword in both: ERYSIPELAS and Erysipelas.",
+      "Rare terms appear in both: St Anthony's fire, shining red swelling, blisters, wounds.",
+      "Ergotism scores because it shares the name St Anthony's fire, but it is a different disease."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Ergotism",
+      "url": "https://en.wikipedia.org/wiki/Ergotism",
+      "embedScore": 0.71,
+      "rerankScore": 0.45
+    },
+    {
+      "title": "Cellulitis",
+      "url": "https://en.wikipedia.org/wiki/Cellulitis",
+      "embedScore": 0.76,
+      "rerankScore": 0.58
+    }
+  ],
+  "alignments": [
+    {
+      "id": "er1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Red shining swelling",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a red, hot and shining swelling"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a raised, well-defined, bright red rash"
+      },
+      "note": "Same sign in new words."
+    },
+    {
+      "id": "er2",
+      "kind": "reworded",
+      "verdict": "partly",
+      "label": "The face",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "It attacks the face more often than any other part"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "typically on the face or legs"
+      },
+      "note": "Wikipedia names the face and the legs. The 1810 entry names only the face."
+    },
+    {
+      "id": "er3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Blisters",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "rises in small blisters"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "it may form blisters"
+      },
+      "note": "Same observation. The fact did not change."
+    },
+    {
+      "id": "er4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Acrid bile",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "an acrid bile, thrown upon the skin"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Most cases are caused by Streptococcus pyogenes"
+      },
+      "note": "A change in knowledge. A bacterium causes the disease, not bile from the stomach and liver."
+    },
+    {
+      "id": "er5",
+      "kind": "reworded",
+      "verdict": "partly",
+      "label": "St Anthony's fire",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "It has the name of St Anthony's fire"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "The same name was also used for ergotism"
+      },
+      "note": "A language point. The name was used for erysipelas, but also for ergotism, a different disease from poisoned rye. Inference: the medieval cult of St Anthony was linked mainly to ergotism, so the 1810 story of the name is doubtful."
+    },
+    {
+      "id": "er6",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "After wounds",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "it often follows wounds and operations"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "enter through a break in the skin, such as a wound, a scratch or a surgical cut"
+      },
+      "note": "Both link the disease to wounds. Wikipedia explains the link: bacteria enter through the break in the skin. Inference: the hospital outbreaks of 1810 fit bacteria passing between patients."
+    },
+    {
+      "id": "er7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Bleeding and purging",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "The cure consists in bleeding, in purging with saline medicines"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "The usual treatment is an antibiotic, most often penicillin"
+      },
+      "note": "A change in knowledge. Penicillin replaced bleeding and purging, which do not act on the infection."
+    },
+    {
+      "id": "er8",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "When it can kill",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "sometimes proves fatal"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Complications are uncommon"
+      },
+      "note": "Before antibiotics the disease could kill. Today serious complications such as sepsis are uncommon. The change comes from treatment."
+    },
+    {
+      "id": "er9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Which layer of skin",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a bacterial infection of the upper layers of the skin"
+      },
+      "note": "The 1810 entry calls it an inflammation of the skin. Wikipedia names the upper layers, which sets it apart from cellulitis."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Signs",
+      "britannica": 0.3,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.15,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Spread and wounds",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.2,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Danger",
+      "britannica": 0.1,
+      "wikipedia": 0.13
+    },
+    {
+      "topic": "Name",
+      "britannica": 0.1,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "Is St Anthony's fire the same as erysipelas?",
+    "What did the 1810 entry think caused erysipelas?"
+  ],
+  "answers": {
+    "Is St Anthony's fire the same as erysipelas?": {
+      "answer": "The 1810 entry uses the name for erysipelas [B1] and says it comes from the saint invoked against it [B5]. Wikipedia agrees that erysipelas was called St Anthony's fire, but notes that the same name was also used for ergotism, a different illness caused by rye infected with a fungus [W7]. So the name pointed to two diseases.",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.85
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What did the 1810 entry think caused erysipelas?": {
+      "answer": "An acrid bile thrown upon the skin from a disordered stomach and liver [B4]. Wikipedia says most cases are caused by the bacterium Streptococcus pyogenes [W3], which usually enters through a break in the skin such as a wound [W4]. The 1810 entry did note that it often follows wounds and operations in hospitals [B6].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.88
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.84
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

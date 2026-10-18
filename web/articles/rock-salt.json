@@ -1,0 +1,385 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "rock-salt",
+    "label": "Rock salt",
+    "headword": "SALT, ROCK, or SAL GEMMAE",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Halite",
+    "area": "geology",
+    "teaser": "These beds are thought by many to have been left by the waters of the deluge, which, drying away in hollows of the earth, deposited the salt they contained."
+  },
+  "aliases": [
+    "halite",
+    "sal gemmae",
+    "sal gem",
+    "fossil salt",
+    "mineral salt"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0071",
+    "headword": "SALT, ROCK, or SAL GEMMAE",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 16",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 16 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "SAL                    [ 712 ]                    SAL\n\nSALT-PETRE. See NITRE.\n  SALT, ROCK, or SAL GEMMAE, a foſſil ſalt dug out of\nthe earth in ſolid maſſes, which in its nature is the\nſame with common ſea ſalt. Great beds of it are found\nin Cheſhire, near Northwich, where it was firſt diſ-\ncovered in the year 1670 by perſons ſearching for coal.\nThe moſt celebrated mines are thoſe of Wieliczka in\nPoland, which have been wrought for many ages, and deſ-\ncend to a vaſt depth, with chambers, cbapels, and roads\ncut in the ſolid ſalt.\n  Theſe beds are thought by many to have been left by\nthe waters of the deluge, which, drying away in hollows\nof the earth, depoſited the ſalt they contained. Some\nſuppoſe that the ſea receives its ſaltneſs from rivers,\nwhich diſſolve mountains of rock ſalt in their courſe\nand carry it down to the ocean. It is alſo reported by\nthe miners that the ſalt grows again in places from\nwhich it has been taken, ſo that exhauſted chambers\nfill up in time.\n  Rock ſalt is commonly of a reddiſh or grey colour\nfrom the earth mixed with it; but the pureſt is clear\nas cryſtal, and breaks into pieces of a cubical figure.\n  SALTPANS, the pits or veſſels in which ſea water is\nboiled to make ſalt.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "SALT, ROCK, or SAL GEMMAE",
+        "text": "SALT, ROCK, or SAL GEMMAE, a fossil salt dug out of the earth in solid masses, which in its nature is the same with common sea salt."
+      },
+      {
+        "id": "B2",
+        "section": "SALT, ROCK, or SAL GEMMAE",
+        "text": "Great beds of it are found in Cheshire, near Northwich, where it was first discovered in the year 1670 by persons searching for coal."
+      },
+      {
+        "id": "B3",
+        "section": "SALT, ROCK, or SAL GEMMAE",
+        "text": "The most celebrated mines are those of Wieliczka in Poland, which have been wrought for many ages, and descend to a vast depth, with chambers, chapels, and roads cut in the solid salt."
+      },
+      {
+        "id": "B4",
+        "section": "SALT, ROCK, or SAL GEMMAE",
+        "text": "These beds are thought by many to have been left by the waters of the deluge, which, drying away in hollows of the earth, deposited the salt they contained."
+      },
+      {
+        "id": "B5",
+        "section": "SALT, ROCK, or SAL GEMMAE",
+        "text": "Some suppose that the sea receives its saltness from rivers, which dissolve mountains of rock salt in their course and carry it down to the ocean."
+      },
+      {
+        "id": "B6",
+        "section": "SALT, ROCK, or SAL GEMMAE",
+        "text": "It is also reported by the miners that the salt grows again in places from which it has been taken, so that exhausted chambers fill up in time."
+      },
+      {
+        "id": "B7",
+        "section": "SALT, ROCK, or SAL GEMMAE",
+        "text": "Rock salt is commonly of a reddish or grey colour from the earth mixed with it; but the purest is clear as crystal, and breaks into pieces of a cubical figure."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-rock-salt",
+    "title": "Halite",
+    "url": "https://en.wikipedia.org/wiki/Halite",
+    "dateModified": "2026-09-14",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Halite, commonly known as rock salt, is a type of salt, the mineral form of sodium chloride (NaCl). It forms cubic crystals."
+      },
+      {
+        "id": "W2",
+        "section": "Occurrence",
+        "text": "Halite occurs in vast beds of evaporite minerals, which form when enclosed lakes and seas dry up over long periods of time."
+      },
+      {
+        "id": "W3",
+        "section": "Occurrence",
+        "text": "Salt domes are pipe-like masses of salt that have been squeezed upward from deep salt beds by the weight of the rock above them."
+      },
+      {
+        "id": "W4",
+        "section": "Properties",
+        "text": "Pure halite is colourless or white. Impurities can give it shades of red, pink, yellow, grey or blue."
+      },
+      {
+        "id": "W5",
+        "section": "Properties",
+        "text": "Halite has perfect cubic cleavage, so it breaks into pieces with square faces."
+      },
+      {
+        "id": "W6",
+        "section": "Uses",
+        "text": "Rock salt is mined from underground beds in many countries. It is used in food, as a source of chemicals, and to melt ice on roads."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.84,
+    "rerankScore": 0.86,
+    "reasons": [
+      "The old headword names rock salt, and Wikipedia gives rock salt as the common name of halite.",
+      "Rare terms appear in both: beds of salt, cubic pieces, mining.",
+      "Sodium chloride scores well but covers the chemical, not the rock."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Sodium chloride",
+      "url": "https://en.wikipedia.org/wiki/Sodium_chloride",
+      "embedScore": 0.79,
+      "rerankScore": 0.61
+    },
+    {
+      "title": "Salt dome",
+      "url": "https://en.wikipedia.org/wiki/Salt_dome",
+      "embedScore": 0.72,
+      "rerankScore": 0.5
+    },
+    {
+      "title": "Wieliczka Salt Mine",
+      "url": "https://en.wikipedia.org/wiki/Wieliczka_Salt_Mine",
+      "embedScore": 0.7,
+      "rerankScore": 0.47
+    }
+  ],
+  "alignments": [
+    {
+      "id": "rs1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Same as sea salt",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "in its nature is the same with common sea salt"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "commonly known as rock salt, is a type of salt"
+      },
+      "note": "Same fact in new words. Rock salt and sea salt are the same substance."
+    },
+    {
+      "id": "rs2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Great beds",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "Great beds of it are found in Cheshire"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Halite occurs in vast beds of evaporite minerals"
+      },
+      "note": "Both texts say rock salt lies in large beds. The Cheshire beds are still worked."
+    },
+    {
+      "id": "rs3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Deep salt mines",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "The most celebrated mines are those of Wieliczka in Poland"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Rock salt is mined from underground beds in many countries"
+      },
+      "note": "Change in language only. Wikipedia speaks of mining in general and does not name Wieliczka."
+    },
+    {
+      "id": "rs4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Left by the deluge",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "left by the waters of the deluge"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "which form when enclosed lakes and seas dry up over long periods of time"
+      },
+      "note": "Change in knowledge. The idea that drying water leaves salt behind holds, but the water was ancient seas and lakes over long ages, not one flood."
+    },
+    {
+      "id": "rs5",
+      "kind": "dropped",
+      "verdict": "partly",
+      "label": "Sea salt from rivers",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the sea receives its saltness from rivers"
+      },
+      "wikipedia": null,
+      "note": "The Halite article does not discuss this. Inference: rivers do carry dissolved salts to the sea, but most come from the weathering of common rocks, not from mountains of rock salt."
+    },
+    {
+      "id": "rs6",
+      "kind": "dropped",
+      "verdict": "wrong",
+      "label": "Salt grows again",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "the salt grows again in places from which it has been taken"
+      },
+      "wikipedia": null,
+      "note": "Wikipedia does not mention this belief. Inference: salt does not grow, but under heavy load it can creep slowly and brine can seep in, which may have closed old workings."
+    },
+    {
+      "id": "rs7",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Cubic pieces",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "breaks into pieces of a cubical figure"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Halite has perfect cubic cleavage"
+      },
+      "note": "Same observation. Wikipedia names it cubic cleavage."
+    },
+    {
+      "id": "rs8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Sodium chloride",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "the mineral form of sodium chloride (NaCl)"
+      },
+      "note": "New knowledge. Sodium was first isolated in 1807, so the 1797 entry could not name the chemical make-up of salt."
+    },
+    {
+      "id": "rs9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Salt domes",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "squeezed upward from deep salt beds by the weight of the rock above them"
+      },
+      "note": "New knowledge. The 1797 entry does not know that buried salt can flow upward and form domes."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What rock salt is",
+      "britannica": 0.15,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Where it is found and mined",
+      "britannica": 0.3,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Origin of the beds",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Salt in the sea",
+      "britannica": 0.15,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Colour and crystal form",
+      "britannica": 0.2,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Salt domes",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "Where did the 1797 entry think rock salt beds came from?",
+    "Does salt grow back in old mines?",
+    "Which 1797 claims about rock salt still hold?"
+  ],
+  "answers": {
+    "Where did the 1797 entry think rock salt beds came from?": {
+      "answer": "From the waters of the deluge, which dried away in hollows and left their salt [B4]. Wikipedia keeps the idea of drying water but changes its source: the beds formed when enclosed lakes and seas dried up over long periods [W2].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Does salt grow back in old mines?": {
+      "answer": "The 1797 entry reports that miners said so [B6]. Wikipedia does not mention such regrowth. It does say that salt can move: salt domes are masses squeezed upward by the weight of the rock above [W3].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.7
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Which 1797 claims about rock salt still hold?": {
+      "answer": "The observations hold. Rock salt is the same as sea salt [B1] [W1], it lies in great beds [B2] [W2], and it breaks into cubic pieces [B7] [W5]. The explanation of the beds by the deluge does not hold [B4].",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.85
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.85
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.84
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.84
+        },
+        {
+          "id": "B7",
+          "source": "britannica",
+          "passageId": "B7",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.78
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}
