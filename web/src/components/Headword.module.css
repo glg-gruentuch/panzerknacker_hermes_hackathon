@@ -51,15 +51,24 @@
   color: #8b8d97;
 }
 
+/* The inline completion sits under the input. The typed part is hidden so only the rest shows. */
+.ghost {
+  grid-area: 1 / 1;
+  padding: 0 0 0.06em;
+  border-bottom: 1.5px solid transparent;
+  white-space: pre;
+  overflow: hidden;
+  color: #8b8d97;
+  pointer-events: none;
+}
+
+.ghostTyped {
+  color: transparent;
+}
+
 .input:focus {
   outline: none;
   border-bottom-color: var(--ink);
-}
-
-.suffix {
-  font-family: var(--font-caslon);
-  color: var(--muted);
-  white-space: nowrap;
 }
 
 .go {
@@ -94,10 +103,6 @@
   font-size: clamp(2.5rem, 8vw, 5.5rem);
 }
 
-.hero .suffix {
-  font-size: clamp(1.125rem, 2.6vw, 1.75rem);
-}
-
 .hero .go {
   height: 44px;
   margin-top: var(--space-5);
@@ -113,10 +118,6 @@
   font-size: 1.625rem;
 }
 
-.compact .suffix {
-  font-size: var(--text-md);
-}
-
 .compact .go {
   height: 30px;
   margin-left: 12px;
@@ -124,18 +125,7 @@
   font-size: var(--text-sm);
 }
 
-@media (max-width: 1199px) {
-  .compact .suffix {
-    display: none;
-  }
-}
-
 @media (max-width: 759px) {
-
-  .compact .suffix {
-    display: none;
-  }
-
   .compact .field {
     font-size: 1.375rem;
   }
