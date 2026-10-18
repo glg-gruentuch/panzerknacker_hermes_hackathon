@@ -10,12 +10,12 @@ import type {
 } from '../types'
 import { MORE_TOPICS } from './more-topics'
 
-// MOCK DATA. The Britannica passages are written in period style for the demo;
+// DEMO DATA. The Britannica passages are written in period style for the demo;
 // they are not OCR from the dataset. The Wikipedia passages paraphrase the
 // articles' content. Replace both by running the backend (VITE_API_MODE=live).
 
-export interface MockTopic {
-  /** Verdict counts are computed from the alignments in mock/index.ts. */
+export interface DemoTopic {
+  /** Verdict counts are computed from the alignments in demo/index.ts. */
   summary: Omit<TopicSummary, 'verdicts'>
   aliases: string[]
   britannica: BritannicaPage
@@ -38,7 +38,7 @@ const cite = (...ids: string[]): ChatResponse['citations'] =>
     rerankScore: Math.round((0.94 - i * 0.04) * 100) / 100,
   }))
 
-const blood: MockTopic = {
+const blood: DemoTopic = {
   summary: {
     slug: 'blood',
     label: 'Blood',
@@ -52,12 +52,12 @@ const blood: MockTopic = {
   },
   aliases: ['blood', 'sanguis', 'circulation of the blood'],
   britannica: {
-    pageId: 'MOCK-0001',
+    pageId: 'DEMO-0001',
     headword: 'BLOOD',
     edition: 'Third edition',
     year: 1797,
     volume: 'Volume 3',
-    meta: 'Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 3 (mock)',
+    meta: 'Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 3 (demo)',
     imageUrl: null,
     sourceUrl: null,
     rawText: `BLO                    [ 302 ]                    BLO
@@ -107,7 +107,7 @@ acuteneſs of its ſmell. See Canis.`,
     ],
   },
   wikipedia: {
-    identifier: 'mock-blood',
+    identifier: 'demo-blood',
     title: 'Blood',
     url: wiki('Blood'),
     dateModified: '2026-09-30',
@@ -205,7 +205,7 @@ acuteneſs of its ſmell. See Canis.`,
   },
 }
 
-const smallpox: MockTopic = {
+const smallpox: DemoTopic = {
   summary: {
     slug: 'smallpox',
     label: 'Smallpox',
@@ -219,12 +219,12 @@ const smallpox: MockTopic = {
   },
   aliases: ['smallpox', 'small-pox', 'small pox', 'variola', 'inoculation'],
   britannica: {
-    pageId: 'MOCK-0002',
+    pageId: 'DEMO-0002',
     headword: 'SMALL-POX',
     edition: 'Second edition',
     year: 1778,
     volume: 'Volume 9',
-    meta: 'Encyclopaedia Britannica; or, A dictionary of arts, sciences, &c. - Second edition, Volume 9 (mock)',
+    meta: 'Encyclopaedia Britannica; or, A dictionary of arts, sciences, &c. - Second edition, Volume 9 (demo)',
     imageUrl: null,
     sourceUrl: null,
     rawText: `SMA                    [ 7012 ]                    SMA
@@ -265,7 +265,7 @@ ence has ſhown that of thoſe inoculated, ſcarce one in
     ],
   },
   wikipedia: {
-    identifier: 'mock-smallpox',
+    identifier: 'demo-smallpox',
     title: 'Smallpox',
     url: wiki('Smallpox'),
     dateModified: '2026-09-21',
@@ -354,7 +354,7 @@ ence has ſhown that of thoſe inoculated, ſcarce one in
   },
 }
 
-const consumption: MockTopic = {
+const consumption: DemoTopic = {
   summary: {
     slug: 'consumption',
     label: 'Consumption',
@@ -368,12 +368,12 @@ const consumption: MockTopic = {
   },
   aliases: ['consumption', 'phthisis', 'tuberculosis', 'tb', 'phthisis pulmonalis'],
   britannica: {
-    pageId: 'MOCK-0003',
+    pageId: 'DEMO-0003',
     headword: 'CONSUMPTION',
     edition: 'Seventh edition',
     year: 1842,
     volume: 'Volume 7',
-    meta: 'Encyclopaedia Britannica - Seventh edition, Volume 7 (mock)',
+    meta: 'Encyclopaedia Britannica - Seventh edition, Volume 7 (demo)',
     imageUrl: null,
     sourceUrl: null,
     rawText: `CONSUMPTION.                    621
@@ -413,7 +413,7 @@ the disease is confirmed it is seldom cured.
     ],
   },
   wikipedia: {
-    identifier: 'mock-tuberculosis',
+    identifier: 'demo-tuberculosis',
     title: 'Tuberculosis',
     url: wiki('Tuberculosis'),
     dateModified: '2026-10-02',
@@ -500,7 +500,7 @@ the disease is confirmed it is seldom cured.
   },
 }
 
-const animalMagnetism: MockTopic = {
+const animalMagnetism: DemoTopic = {
   summary: {
     slug: 'animal-magnetism',
     label: 'Animal magnetism',
@@ -514,12 +514,12 @@ const animalMagnetism: MockTopic = {
   },
   aliases: ['animal magnetism', 'mesmerism', 'magnetism'],
   britannica: {
-    pageId: 'MOCK-0004',
+    pageId: 'DEMO-0004',
     headword: 'ANIMAL MAGNETISM',
     edition: 'Supplement to the 4th–6th editions',
     year: 1824,
     volume: 'Volume 1',
-    meta: 'Supplement to the fourth, fifth and sixth editions of the Encyclopaedia Britannica - Volume 1 (mock)',
+    meta: 'Supplement to the fourth, fifth and sixth editions of the Encyclopaedia Britannica - Volume 1 (demo)',
     imageUrl: null,
     sourceUrl: null,
     rawText: `ANIMAL MAGNETISM.                    329
@@ -547,7 +547,7 @@ to be invisible to the naked eye. See Microscope.`,
     ],
   },
   wikipedia: {
-    identifier: 'mock-animal-magnetism',
+    identifier: 'demo-animal-magnetism',
     title: 'Animal magnetism',
     url: wiki('Animal magnetism'),
     dateModified: '2026-08-14',
@@ -609,7 +609,7 @@ to be invisible to the naked eye. See Microscope.`,
   },
 }
 
-const animalSpirits: MockTopic = {
+const animalSpirits: DemoTopic = {
   summary: {
     slug: 'animal-spirits',
     label: 'Animal spirits',
@@ -623,12 +623,12 @@ const animalSpirits: MockTopic = {
   },
   aliases: ['animal spirits', 'spirits', 'nervous fluid', 'nervous power'],
   britannica: {
-    pageId: 'MOCK-0005',
+    pageId: 'DEMO-0005',
     headword: 'ANIMAL SPIRITS',
     edition: 'Third edition',
     year: 1797,
     volume: 'Volume 17',
-    meta: 'Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 17 (mock)',
+    meta: 'Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 17 (demo)',
     imageUrl: null,
     sourceUrl: null,
     rawText: `SPI                    [ 712 ]                    SPI
@@ -691,4 +691,4 @@ authors have ſuppoſed the nervous power to be of the
   },
 }
 
-export const MOCK_TOPICS: MockTopic[] = [blood, smallpox, consumption, animalMagnetism, animalSpirits, ...MORE_TOPICS]
+export const DEMO_TOPICS: DemoTopic[] = [blood, smallpox, consumption, animalMagnetism, animalSpirits, ...MORE_TOPICS]

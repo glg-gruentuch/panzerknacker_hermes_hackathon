@@ -61,7 +61,7 @@
   border-bottom-color: var(--ink);
 }
 
-.mock {
+.demo {
   font-size: var(--text-xs);
   color: var(--muted);
   white-space: nowrap;
@@ -280,7 +280,7 @@
   }
 
   .hideNarrow,
-  .mock {
+  .demo {
     display: none;
   }
 

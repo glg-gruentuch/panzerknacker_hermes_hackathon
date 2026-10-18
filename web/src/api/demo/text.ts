@@ -1,6 +1,6 @@
 import type { Passage, TermFrequency, TextStats } from '../types'
 
-// Small text statistics so mock comparisons get real vocabulary numbers.
+// Small text statistics so demo comparisons get real vocabulary numbers.
 // The backend computes its own; this only exists so the UI has honest data offline.
 
 const STOPWORDS = new Set(

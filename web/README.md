@@ -19,7 +19,7 @@ npm install
 npm run dev          # http://localhost:5173
 ```
 
-By default the UI runs on **built-in sample data** (five medical topics), so it
+By default the UI runs on **built-in demo data** (five medical topics), so it
 works before the backend exists. To use the real backend:
 
 ```bash
@@ -37,7 +37,7 @@ contract for the backend team**, with example payloads in
 | `npm run dev` | Dev server with hot reload |
 | `npm run build` | Typecheck, then production build into `dist/` |
 | `npm run typecheck` | TypeScript only |
-| `npm run examples` | Rewrite `api-examples/` from the mock data |
+| `npm run examples` | Rewrite `api-examples/` from the demo data |
 
 Link straight to a topic with `?q=`, for example `http://localhost:5173/?q=consumption`.
 
@@ -117,8 +117,8 @@ the Python backend.
 ```
 src/
   api/types.ts        the data contract (mirrors API.md)
-  api/client.ts       fetch wrapper; mock or live by VITE_API_MODE
-  api/mock/           sample topics, keyword fallback for chat, example cases
+  api/client.ts       fetch wrapper; demo or live by VITE_API_MODE
+  api/demo/           sample topics, keyword fallback for chat, example cases
   components/         one component + one CSS module each
   lib/                change kinds, text highlighting, chat state, breakpoints
   styles/tokens.css   colours, type, spacing
@@ -166,10 +166,10 @@ uv run --with pillow python web/scripts/prepare-plates.py
 | Hver, or boiling fountain (geyser) | Geology | 1369 | No |
 | Electricity | Natural sciences | 1446 | No |
 
-## About the sample data
+## About the demo data
 
-The mock Britannica passages (eight topics) are written in period style for
-the demo. They are **not** text from the dataset. The Wikipedia passages paraphrase the real
+The demo Britannica passages (eight topics) are written in period style.
+They are **not** text from the dataset. The Wikipedia passages paraphrase the real
 articles. The six agent cases are placeholders that show the format. All of it
-is replaced once the backend runs in live mode. The "Sample data" badge in the
-header shows while mock data is in use.
+is replaced once the backend runs in live mode. The "Demo data" badge in the
+header shows while demo data is in use.

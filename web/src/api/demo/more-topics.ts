@@ -1,7 +1,7 @@
 import type { ChatResponse } from '../types'
-import type { MockTopic } from './topics'
+import type { DemoTopic } from './topics'
 
-// MOCK DATA for the geology and natural-science areas. Same rules as topics.ts:
+// DEMO DATA for the geology and natural-science areas. Same rules as topics.ts:
 // the Britannica passages are written in period style for the demo, not OCR
 // from the dataset; the Wikipedia passages paraphrase the articles.
 
@@ -15,7 +15,7 @@ const cite = (...ids: string[]): ChatResponse['citations'] =>
     rerankScore: Math.round((0.93 - i * 0.04) * 100) / 100,
   }))
 
-const basalt: MockTopic = {
+const basalt: DemoTopic = {
   summary: {
     slug: 'basalt',
     label: 'Basalt',
@@ -29,12 +29,12 @@ const basalt: MockTopic = {
   },
   aliases: ['basalt', 'basaltes', "giant's causeway"],
   britannica: {
-    pageId: 'MOCK-0006',
+    pageId: 'DEMO-0006',
     headword: 'BASALTES',
     edition: 'Third edition',
     year: 1797,
     volume: 'Volume 2',
-    meta: 'Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 2 (mock)',
+    meta: 'Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 2 (demo)',
     imageUrl: null,
     sourceUrl: null,
     rawText: `BAS                    [ 112 ]                    BAS
@@ -67,7 +67,7 @@ tues of it.
     ],
   },
   wikipedia: {
-    identifier: 'mock-basalt',
+    identifier: 'demo-basalt',
     title: 'Basalt',
     url: wiki('Basalt'),
     dateModified: '2026-09-12',
@@ -130,7 +130,7 @@ tues of it.
   },
 }
 
-const earthquake: MockTopic = {
+const earthquake: DemoTopic = {
   summary: {
     slug: 'earthquake',
     label: 'Earthquake',
@@ -144,12 +144,12 @@ const earthquake: MockTopic = {
   },
   aliases: ['earthquake', 'earthquakes', 'lisbon'],
   britannica: {
-    pageId: 'MOCK-0007',
+    pageId: 'DEMO-0007',
     headword: 'EARTHQUAKE',
     edition: 'Third edition',
     year: 1797,
     volume: 'Volume 6',
-    meta: 'Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 6 (mock)',
+    meta: 'Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 6 (demo)',
     imageUrl: null,
     sourceUrl: null,
     rawText: `EAR                    [ 214 ]                    EAR
@@ -181,7 +181,7 @@ tants periſhed.
     ],
   },
   wikipedia: {
-    identifier: 'mock-earthquake',
+    identifier: 'demo-earthquake',
     title: 'Earthquake',
     url: wiki('Earthquake'),
     dateModified: '2026-10-04',
@@ -245,7 +245,7 @@ tants periſhed.
   },
 }
 
-const electricity: MockTopic = {
+const electricity: DemoTopic = {
   summary: {
     slug: 'electricity',
     label: 'Electricity',
@@ -259,12 +259,12 @@ const electricity: MockTopic = {
   },
   aliases: ['electricity', 'electric', 'lightning'],
   britannica: {
-    pageId: 'MOCK-0008',
+    pageId: 'DEMO-0008',
     headword: 'ELECTRICITY',
     edition: 'Third edition',
     year: 1797,
     volume: 'Volume 6',
-    meta: 'Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 6 (mock)',
+    meta: 'Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 6 (demo)',
     imageUrl: null,
     sourceUrl: null,
     rawText: `ELE                    [ 418 ]                    ELE
@@ -294,7 +294,7 @@ of the ſame nature with the electric fluid.
     ],
   },
   wikipedia: {
-    identifier: 'mock-electricity',
+    identifier: 'demo-electricity',
     title: 'Electricity',
     url: wiki('Electricity'),
     dateModified: '2026-09-27',
@@ -360,4 +360,4 @@ of the ſame nature with the electric fluid.
   },
 }
 
-export const MORE_TOPICS: MockTopic[] = [basalt, earthquake, electricity]
+export const MORE_TOPICS: DemoTopic[] = [basalt, earthquake, electricity]

@@ -43,7 +43,7 @@ export interface BritannicaPage {
   volume: string
   /** Raw `meta` string from the dataset, shown for provenance. */
   meta: string
-  /** Page scan. Null in mock mode. */
+  /** Page scan. Null in demo mode. */
   imageUrl: string | null
   /** Link to the page on digital.nls.uk, if known. */
   sourceUrl: string | null

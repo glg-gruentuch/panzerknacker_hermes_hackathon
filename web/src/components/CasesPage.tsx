@@ -17,7 +17,7 @@ export function CasesPage({ onReplay }: { onReplay: (c: AgentCase) => void }) {
     <main className={styles.page}>
       <h1 className={styles.title}>Agent cases</h1>
       <p className={styles.lede}>Three questions the agent answers well, and three where it fails, with what each failure shows about the pipeline.</p>
-      {API_MODE === 'mock' && <p className={styles.notice}>These six are placeholders in the right format. The backend replaces them with real runs.</p>}
+      {API_MODE === 'demo' && <p className={styles.notice}>These six are placeholders in the right format. The backend replaces them with real runs.</p>}
       {error && <p className={styles.notice}>{error}</p>}
       {!cases && !error && <p className={styles.lede}>Loading the cases…</p>}
 

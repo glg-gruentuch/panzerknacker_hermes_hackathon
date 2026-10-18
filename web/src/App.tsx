@@ -196,9 +196,9 @@ export default function App() {
         )}
 
         <nav className={styles.nav} aria-label="Pages">
-          {API_MODE === 'mock' && (
-            <span className={styles.mock} title="Built-in sample data. Set VITE_API_MODE=live to use the backend.">
-              Sample data
+          {API_MODE === 'demo' && (
+            <span className={styles.demo} title="Built-in demo data. Set VITE_API_MODE=live to use the backend.">
+              Demo data
             </span>
           )}
           {PAGES.map((p) => (

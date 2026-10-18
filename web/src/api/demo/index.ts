@@ -1,22 +1,22 @@
 import type { AgentCase, ChatRequest, ChatResponse, Comparison, Meta, TopicSummary, TraceStep } from '../types'
-import { MOCK_TOPICS, type MockTopic } from './topics'
+import { DEMO_TOPICS, type DemoTopic } from './topics'
 import { keywordRank, stats, vocabulary } from './text'
 
 const wait = (ms: number) => new Promise((r) => setTimeout(r, ms))
 
 const normalise = (s: string) => s.toLowerCase().replace(/[^a-z]+/g, ' ').trim()
 
-function find(query: string): MockTopic | undefined {
+function find(query: string): DemoTopic | undefined {
   const q = normalise(query)
   if (!q) return undefined
   return (
-    MOCK_TOPICS.find((t) => t.summary.slug === q.replace(/ /g, '-') || t.aliases.some((a) => normalise(a) === q)) ??
-    MOCK_TOPICS.find((t) => t.aliases.some((a) => normalise(a).startsWith(q) || q.startsWith(normalise(a))))
+    DEMO_TOPICS.find((t) => t.summary.slug === q.replace(/ /g, '-') || t.aliases.some((a) => normalise(a) === q)) ??
+    DEMO_TOPICS.find((t) => t.aliases.some((a) => normalise(a).startsWith(q) || q.startsWith(normalise(a))))
   )
 }
 
 /** The summary as the API serves it, with verdict counts taken from the claims. */
-function summary(t: MockTopic): TopicSummary {
+function summary(t: DemoTopic): TopicSummary {
   const judged = t.alignments.filter((a) => a.verdict !== null)
   const count = (v: string) => judged.filter((a) => a.verdict === v).length
   return {
@@ -27,7 +27,7 @@ function summary(t: MockTopic): TopicSummary {
 
 export async function topics(): Promise<TopicSummary[]> {
   await wait(150)
-  return MOCK_TOPICS.map(summary)
+  return DEMO_TOPICS.map(summary)
 }
 
 export async function compare(query: string): Promise<Comparison | null> {
@@ -52,22 +52,22 @@ export async function compare(query: string): Promise<Comparison | null> {
   }
 }
 
-const MOCK_TRACE: TraceStep[] = [
-  { step: 'Embed question', model: 'Nemotron-3-Embed-VL', detail: 'Mock: skipped', ms: null },
-  { step: 'Search both collections', model: 'LanceDB', detail: 'Mock: keyword match', ms: null },
-  { step: 'Rerank passages', model: 'Nemotron 3-Rerank-VL', detail: 'Mock: skipped', ms: null },
-  { step: 'Write answer', model: 'Hermes Agent · Nemotron 3.5 Super VL', detail: 'Mock: canned answer', ms: null },
+const DEMO_TRACE: TraceStep[] = [
+  { step: 'Embed question', model: 'Nemotron-3-Embed-VL', detail: 'Demo: skipped', ms: null },
+  { step: 'Search both collections', model: 'LanceDB', detail: 'Demo: keyword match', ms: null },
+  { step: 'Rerank passages', model: 'Nemotron 3-Rerank-VL', detail: 'Demo: skipped', ms: null },
+  { step: 'Write answer', model: 'Hermes Agent · Nemotron 3.5 Super VL', detail: 'Demo: canned answer', ms: null },
 ]
 
 export async function ask(req: ChatRequest): Promise<ChatResponse> {
   await wait(900 + Math.random() * 600)
   const t = find(req.topic)
   if (!t) {
-    return { answer: 'There is no indexed page for this topic, so the agent has nothing to compare.', citations: [], grounding: 'unsupported', trace: MOCK_TRACE }
+    return { answer: 'There is no indexed page for this topic, so the agent has nothing to compare.', citations: [], grounding: 'unsupported', trace: DEMO_TRACE }
   }
 
   const canned = Object.entries(t.answers).find(([q]) => normalise(q) === normalise(req.question))
-  if (canned) return { ...canned[1], trace: MOCK_TRACE }
+  if (canned) return { ...canned[1], trace: DEMO_TRACE }
 
   // Unscripted question: quote the best keyword match from each side.
   const b = keywordRank(req.question, t.britannica.passages)[0]
@@ -77,7 +77,7 @@ export async function ask(req: ChatRequest): Promise<ChatResponse> {
       answer: `Neither source has a passage that matches this question. Try one of the suggested questions, or ask about something the ${t.summary.year} entry discusses.`,
       citations: [],
       grounding: 'unsupported',
-      trace: MOCK_TRACE,
+      trace: DEMO_TRACE,
     }
   }
   const parts: string[] = []
@@ -85,7 +85,7 @@ export async function ask(req: ChatRequest): Promise<ChatResponse> {
   else parts.push(`The ${t.summary.year} Britannica entry has nothing on this.`)
   if (w) parts.push(`Wikipedia says: "${w.passage.text}" [${w.passage.id}]`)
   else if (t.wikipedia) parts.push('Wikipedia has nothing on this.')
-  parts.push('Mock mode: this answer quotes the closest keyword matches. With the backend running, the agent writes the comparison.')
+  parts.push('Demo mode: this answer quotes the closest keyword matches. With the backend running, the agent writes the comparison.')
   return {
     answer: parts.join('\n\n'),
     citations: [b, w]
@@ -97,7 +97,7 @@ export async function ask(req: ChatRequest): Promise<ChatResponse> {
         rerankScore: null,
       })),
     grounding: 'partial',
-    trace: MOCK_TRACE.map((s) => (s.step === 'Write answer' ? { ...s, detail: 'Mock: quoted keyword matches' } : s)),
+    trace: DEMO_TRACE.map((s) => (s.step === 'Write answer' ? { ...s, detail: 'Demo: quoted keyword matches' } : s)),
   }
 }
 

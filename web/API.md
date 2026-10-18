@@ -66,7 +66,7 @@ has one; the UI prints a heading whenever it changes.
 
 **`wikipedia: null` means no credible counterpart.** Send `match.strength:
 "none"`, keep `candidates` filled, and explain why in `match.reasons`. The UI
-shows the uncertainty instead of a comparison. The mock uses rerank ≥ 0.75 for
+shows the uncertainty instead of a comparison. The demo uses rerank ≥ 0.75 for
 `strong`, 0.5–0.75 for `partial`, < 0.5 for `none`; pick your own thresholds
 and say so in `reasons`.
 
@@ -166,7 +166,7 @@ reproduce the documented answer.
 
 Dataset versions and download dates (required for reproducibility), the model
 list, and the sample-selection method. The Britannica dataset revision in the
-mock (`309f765`, last modified 2026-07-16) is the real one from Hugging Face.
+demo (`309f765`, last modified 2026-07-16) is the real one from Hugging Face.
 Fill in the Wikipedia snapshot and download dates.
 
 ## Page scans

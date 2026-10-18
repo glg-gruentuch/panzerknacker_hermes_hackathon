@@ -1,8 +1,8 @@
 import type { AgentCase, ChatRequest, ChatResponse, Comparison, Meta, TopicSummary } from './types'
-import * as mock from './mock'
+import * as demo from './demo'
 
-/** "mock" serves built-in sample data; "live" calls the backend at /api. */
-export const API_MODE: 'mock' | 'live' = import.meta.env.VITE_API_MODE === 'live' ? 'live' : 'mock'
+/** "demo" serves built-in demo data; "live" calls the backend at /api. */
+export const API_MODE: 'demo' | 'live' = import.meta.env.VITE_API_MODE === 'live' ? 'live' : 'demo'
 
 export class ApiError extends Error {
   readonly status: number
@@ -40,13 +40,13 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 
 export const api = {
   topics(): Promise<TopicSummary[]> {
-    if (API_MODE === 'mock') return mock.topics()
+    if (API_MODE === 'demo') return demo.topics()
     return request<{ topics: TopicSummary[] }>('/topics').then((r) => r.topics)
   },
 
   /** Resolves to null when nothing in the index matches the query. */
   async compare(query: string): Promise<Comparison | null> {
-    if (API_MODE === 'mock') return mock.compare(query)
+    if (API_MODE === 'demo') return demo.compare(query)
     try {
       return await request<Comparison>(`/compare?q=${encodeURIComponent(query)}`)
     } catch (err) {
@@ -56,17 +56,17 @@ export const api = {
   },
 
   ask(body: ChatRequest): Promise<ChatResponse> {
-    if (API_MODE === 'mock') return mock.ask(body)
+    if (API_MODE === 'demo') return demo.ask(body)
     return request<ChatResponse>('/chat', { method: 'POST', body: JSON.stringify(body) })
   },
 
   cases(): Promise<AgentCase[]> {
-    if (API_MODE === 'mock') return mock.cases()
+    if (API_MODE === 'demo') return demo.cases()
     return request<{ cases: AgentCase[] }>('/cases').then((r) => r.cases)
   },
 
   meta(): Promise<Meta> {
-    if (API_MODE === 'mock') return mock.meta()
+    if (API_MODE === 'demo') return demo.meta()
     return request<Meta>('/meta')
   },
 }

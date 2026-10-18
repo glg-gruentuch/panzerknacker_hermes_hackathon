@@ -17,12 +17,12 @@
     }
   },
   "britannica": {
-    "pageId": "MOCK-0001",
+    "pageId": "DEMO-0001",
     "headword": "BLOOD",
     "edition": "Third edition",
     "year": 1797,
     "volume": "Volume 3",
-    "meta": "Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 3 (mock)",
+    "meta": "Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 3 (demo)",
     "imageUrl": null,
     "sourceUrl": null,
     "rawText": "BLO                    [ 302 ]                    BLO\n\nwere it not that the ſeeds are often deſtroyed by the\nbirds. See Botany, Index.\n  BLOOD, in anatomy, a red fluid, which circulates\nthrough the arteries and veins of animals, and is the\nimmediate nouriſhment of every part of the body.\n  When drawn from a vein and ſuffered to reſt, it ſe-\nparates into two parts: a red maſs called the craſſa-\nmentum, or cake, and a thin yellowiſh liquor named the\nſerum. The redneſs is owing to an infinite number of\nminute red globules, firſt diſcovered by the micro-\nſcope of Leeuwenhoeck, which ſwim in the ſerum and\nare thought to be compreſſible.\n  The blood is made from the chyle, which, being pre-\npared from the aliment in the ſtomach and inteſtines,\nis conveyed by the lacteal vefſels into the thoracic\nduct, and thence into the ſubclavian vein. Its motion\nwas firſt demonſtrated by our countryman Dr Harvey,\nwho ſhewed that the heart, by its contraction, drives\nthe blood through the arteries to every part, from\nwhence it returns by the veins.\n  Of the heat of the blood authors are not agreed;\nſome aſcribing it to a fermentation, others to the fric-\ntion of its parts againſt the ſides of the veſſels.\n  The ancients reckoned the blood one of the four\nhumours, and aſcribed to its abundance the ſanguine\ntemperament. Phyſicians at this day relieve a ple-\nthora, or too great fulneſs of blood, by opening a vein.\n  TRANSFUSION of blood from one animal into another\nwas attempted in the laſt century both in England and\nFrance; but the experiments, having ſometimes proved\nfatal, were forbidden by authority.\n  BLOOD-HOUND, a ſpecies of dog, remarkable for the\nacuteneſs of its ſmell. See Canis.",
@@ -70,7 +70,7 @@
     ]
   },
   "wikipedia": {
-    "identifier": "mock-blood",
+    "identifier": "demo-blood",
     "title": "Blood",
     "url": "https://en.wikipedia.org/wiki/Blood",
     "dateModified": "2026-09-30",
