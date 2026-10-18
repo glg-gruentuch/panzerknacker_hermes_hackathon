@@ -63,6 +63,9 @@ def parser() -> argparse.ArgumentParser:
     mode.add_argument("--offline", action="store_true", help="check packages without network access")
     mode.add_argument("--live", action="store_true", help="check resource catalogs and readiness; does not run inference")
     sub.add_parser("stages", help="list unfinished challenge milestones")
+    gateway = sub.add_parser("gateway", help="serve the retrieval contract from NVIDIA hosted NIM")
+    gateway.add_argument("--host", default="127.0.0.1")
+    gateway.add_argument("--port", type=int, default=8001)
     run = sub.add_parser("run", help="run a team milestone")
     run.add_argument("stage", choices=tasks.STAGES)
     run.add_argument("--work-dir", type=Path, default=Path("artifacts"))
@@ -89,6 +92,11 @@ def main(argv: list[str] | None = None) -> int:
             from .data import fetch_sample, load_manifest
 
             result = load_manifest() if args.data_command == "show" else fetch_sample(args.output_dir, args.cache_dir)
+        elif args.command == "gateway":
+            from .nim_gateway import serve_from_env
+
+            serve_from_env(args.host, args.port)
+            return 0
         else:
             settings = Settings.from_env()
             if args.command == "doctor":

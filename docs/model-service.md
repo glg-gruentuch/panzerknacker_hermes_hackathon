@@ -4,6 +4,8 @@ This Docker recipe serves the two retrieval models. It gives your code an HTTP i
 
 The service does not run Nemotron Parse 3.5. Use the Parse endpoint supplied by the organizer.
 
+For a hosted alternative without a GPU, see [nim-gateway.md](nim-gateway.md). It serves this contract from NVIDIA's hosted NIM API.
+
 ## Choose how to run it
 
 The organizer can provide a built image. Set the image name in your run command. Use an image digest when the organizer supplies one.
