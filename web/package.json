@@ -11,7 +11,7 @@
     "examples": "node scripts/export-examples.mjs",
     "dev:mock": "VITE_API_MODE=mock vite",
     "build:static": "tsc --noEmit && VITE_API_MODE=static vite build --outDir ../deliverables/website/app --emptyOutDir",
-    "build:cloudflare": "tsc --noEmit && VITE_API_MODE=mock vite build"
+    "build:cloudflare": "tsc --noEmit && VITE_API_MODE=static vite build && node scripts/copy-static-data.mjs dist"
   },
   "dependencies": {
     "react": "^19.3.1",

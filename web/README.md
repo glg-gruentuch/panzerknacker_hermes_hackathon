@@ -31,13 +31,13 @@ npm run dev:mock
 | `npm run dev:mock` | Dev server on built-in sample data |
 | `npm run build` | Typecheck, then a live build into `dist/`. CI runs this. |
 | `npm run build:static` | Static build into `../deliverables/website/app/`, read from exported JSON |
-| `npm run build:cloudflare` | Sample-data build into `dist/` for the Cloudflare deploy |
+| `npm run build:cloudflare` | Static build into `dist/` with `static-data/` and the scans, for the Cloudflare deploy |
 | `npm run typecheck` | TypeScript only |
 | `npm run examples` | Rewrite `api-examples/` from the mock data |
 
 [API.md](API.md) lists what the UI reads from each route, with saved live
-replies in `artifacts/web/`. Only `npm run dev:mock` and `npm run build:cloudflare`
-include the sample data; the live and static builds leave it out.
+replies in `artifacts/web/`. Only `npm run dev:mock` includes the sample data;
+every other build leaves it out.
 
 Link straight to an entry with `?q=`, for example `http://localhost:5173/?q=coinage`.
 
@@ -53,16 +53,23 @@ to `landing-page` starts a new deploy. The dashboard settings are:
 | Build command | `npm ci && npm run build` |
 | Deploy command | `npx wrangler deploy` |
 
-Cloudflare does not run the Python backend, so the deployed site uses the
-sample data for now. `wrangler.jsonc` has a `build.command`, so
-`npx wrangler deploy` first runs `npm run build:cloudflare`
-(`VITE_API_MODE=mock`) and then uploads `dist/`. The dashboard settings above
-stay as they are. The site says it runs on sample data, in the header and
-under the introduction.
+Cloudflare does not run the Python backend, so the deployed site reads a
+static export of the pipeline artifacts. `wrangler.jsonc` has a
+`build.command`, so `npx wrangler deploy` first runs `npm run build:cloudflare`:
+a static build (`VITE_API_MODE=static`), then a copy of `static-data/` to
+`dist/data/` and of `deliverables/website/assets/scans/` to `dist/scans/`. The
+dashboard settings above stay as they are.
 
-When the static export exists (B10), switch to real data: change
-`build:cloudflare` to `VITE_API_MODE=static vite build` and copy the exported
-`data/` folder and the scans into `dist/` before the upload.
+`static-data/` holds the export of commit `df45ca8` (`static-data/SOURCE.json`
+records the commit). To export newer artifacts, run from the repository root:
+
+```bash
+uv run python web/scripts/export-static.py --commit <commit> --out web/static-data
+```
+
+The script uses the backend's `WebAdapter` and recorded-run loader, so the files
+have the same shape as the live API, and it refuses to run if `artifacts/`
+differs from that commit. No model is called.
 
 `wrangler.jsonc` names the Worker and tells it to serve the built files in
 `dist/`. The name in that file must match the Worker name in Cloudflare.

@@ -30,14 +30,14 @@ Branch `ui-real-data`, based on `landing-page` with `main` merged at `df45ca8`. 
 
 ### Not done, and why
 
-- **F3 done-check on real export.** B10 has not written `deliverables/website/app/data/`. The static trial used a temporary export made from the live backend in a scratch folder, not in `deliverables/`. Rerun `npm run build:static`, then check a strong match, a fragment and an unmatched entry, and save `artifacts/web/static-*.png`, once B10 lands.
+- **F3 done-check on the B10 export.** B10 has not written `deliverables/website/app/data/`. The frontend export in `web/static-data/` (commit `df45ca8`) covers the Cloudflare site in the meantime. Once B10 lands, rerun `npm run build:static`, check a strong match, a fragment and an unmatched entry, and save `artifacts/web/static-*.png`.
 - **F3 hosting.** Waiting for the human: where the site is hosted, and whether the repository stays public. Nothing was published.
 - **F4 green run.** Needs a push, which the human has not asked for yet.
 - **`package-lock.json`.** This clone has no uncommitted lock change, so nothing to decide here. The teammate's local change still needs the human's call.
 
 ### Decisions by the human
 
-- **Cloudflare deploy uses sample data for now.** Cloudflare does not run the Python backend, and the static export does not exist yet. `web/wrangler.jsonc` runs `npm run build:cloudflare` (`VITE_API_MODE=mock`) before each deploy. The site labels itself as sample data in the header and under the introduction. Switch it to static mode once B10 writes the export (steps in `web/README.md`, "Deploy to Cloudflare").
+- **Cloudflare deploy uses the real artifacts of commit `df45ca8`.** Cloudflare does not run the Python backend, so `web/scripts/export-static.py` exports the artifacts to `web/static-data/` with the backend's `WebAdapter` and `recorded_run` (no model calls), and `web/wrangler.jsonc` runs `npm run build:cloudflare` (`VITE_API_MODE=static`) before each deploy. The landing page names the commit. An earlier commit on this branch used the sample data; the human replaced that with this export.
 
 ### Requests for the backend agent
 

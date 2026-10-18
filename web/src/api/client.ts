@@ -111,6 +111,12 @@ export const api = {
     return body.cases ?? []
   },
 
+  /** Static mode only: which commit's artifacts the export holds (data/SOURCE.json). */
+  async source(): Promise<{ commit: string; entries: number } | null> {
+    if (API_MODE !== 'static') return null
+    return file<{ commit: string; entries: number }>('SOURCE.json').catch(() => null)
+  },
+
   meta(): Promise<Meta> {
     if (API_MODE === 'mock') return loadMock().then((m) => m.meta())
     metaPromise ??= (API_MODE === 'static' ? file<Meta>('meta.json') : live<Meta>('/meta')).catch((e) => {

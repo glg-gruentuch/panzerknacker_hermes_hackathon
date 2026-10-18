@@ -103,6 +103,8 @@ In static mode the app searches `topics.json` in the browser (headword and title
 
 Build it with `npm run build:static`. It writes the app to `deliverables/website/app/` with relative paths, so it works under any base path.
 
+Until B10 lands, `web/scripts/export-static.py` writes the same files from the backend's own `WebAdapter` into `web/static-data/`, which the Cloudflare build serves. It adds three things a static host needs: `topics[].entryId`, `britannica.blocks` (the Parse boxes, because `/api/scans/<page>.json` is not available) and a relative `britannica.imageUrl` (`scans/<file>`). It also adds `meta.matchLogitThreshold` from `config.py`.
+
 ## Example payloads
 
 `web/api-examples/` holds sample replies generated from the mock by `npm run examples`. They show the shapes; they are not evidence. The live replies above are.

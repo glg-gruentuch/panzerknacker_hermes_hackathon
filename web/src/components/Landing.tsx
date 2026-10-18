@@ -1,7 +1,7 @@
-import { useMemo, useState } from 'react'
-import { API_MODE } from '../api/client'
-import type { AreaSlug, TopicSummary } from '../api/types'
-import { AREAS, HERO_PLATE, areaOf, type Area, type Plate } from '../config/areas'
+import { useEffect, useMemo, useState } from 'react'
+import { API_MODE, api } from '../api/client'
+import type { MatchStrength, TopicSummary } from '../api/types'
+import { AREAS, HERO_PLATE, type Plate } from '../config/areas'
 import { VERDICTS, VERDICT_ORDER } from '../lib/kinds'
 import { editionLine } from '../lib/when'
 import { Headword } from './Headword'
@@ -16,16 +16,39 @@ interface Props {
   onSearch: (q: string) => void
 }
 
-/** How many articles a subject lists before pointing to search. */
+/** How many entries a list shows before pointing to search. */
 const LIST_LIMIT = 6
+
+/** A list on the landing page: a subject, or (until entries carry subjects) a match strength. */
+interface Group {
+  key: string
+  label: string
+  blurb: string
+  plate: Plate
+  /** Slugs to show with their teaser and verdicts. */
+  featured: string[]
+  topics: TopicSummary[]
+}
+
+const STRENGTH_GROUPS: { strength: MatchStrength; label: string; blurb: string }[] = [
+  { strength: 'strong', label: 'Clear matches', blurb: 'The reranker is confident the Wikipedia article covers the same subject.' },
+  { strength: 'partial', label: 'Partial matches', blurb: 'An article passed the threshold, with less certainty. Check the evidence.' },
+  { strength: 'none', label: 'No clear counterpart', blurb: 'No article passed the rerank threshold. These entries show the uncertainty.' },
+]
+
+/** Entries with a headword first, fragments after. */
+const byHeadword = (a: TopicSummary, b: TopicSummary) => Number(!a.headword) - Number(!b.headword)
 
 /** Every plate the backdrop can show, once each. */
 const PLATES: Plate[] = [HERO_PLATE, ...AREAS.map((a) => a.plate)].filter((p, i, all) => all.findIndex((q) => q.slug === p.slug) === i)
 
 export function Landing({ topics, input, onInput, onSearch }: Props) {
-  const [open, setOpen] = useState<AreaSlug | null>(null)
-  const [preview, setPreview] = useState<AreaSlug | null>(null)
-  const plate = areaOf(preview ?? open)?.plate ?? HERO_PLATE
+  const [open, setOpen] = useState<string | null>(null)
+  const [preview, setPreview] = useState<string | null>(null)
+  const [source, setSource] = useState<{ commit: string } | null>(null)
+  useEffect(() => {
+    api.source().then(setSource, () => setSource(null))
+  }, [])
   // Suggest a word that is really in the index: the first clearly matched headword.
   const example = useMemo(() => {
     const same = (x: TopicSummary) => !!x.headword && x.headword.toLowerCase() === x.wikipediaTitle?.toLowerCase()
@@ -33,19 +56,28 @@ export function Landing({ topics, input, onInput, onSearch }: Props) {
     return t?.headword ? t.headword[0] + t.headword.slice(1).toLowerCase() : 'Blood'
   }, [topics])
 
-  // Topics per subject: featured ones first, in the order the config lists them.
-  const byArea = useMemo(() => {
-    const map = new Map<AreaSlug, TopicSummary[]>()
-    for (const area of AREAS) {
-      const inArea = topics.filter((t) => t.area === area.slug)
+  // Subjects when the entries carry them; otherwise the real index by match strength.
+  const groups = useMemo<Group[]>(() => {
+    const subjects = AREAS.map((area) => {
       const rank = (t: TopicSummary) => {
         const i = area.featured.indexOf(t.slug)
         return i < 0 ? area.featured.length : i
       }
-      map.set(area.slug, [...inArea].sort((a, b) => rank(a) - rank(b)))
-    }
-    return map
+      const inArea = topics.filter((t) => t.area === area.slug).sort((x, y) => rank(x) - rank(y))
+      return { key: area.slug, label: area.label, blurb: area.blurb, plate: area.plate, featured: area.featured, topics: inArea }
+    })
+    if (subjects.some((g) => g.topics.length > 0)) return subjects
+    return STRENGTH_GROUPS.map((g) => ({
+      key: g.strength,
+      label: g.label,
+      blurb: g.blurb,
+      plate: HERO_PLATE,
+      featured: [],
+      topics: topics.filter((t) => t.match === g.strength).sort(byHeadword),
+    })).filter((g) => g.topics.length > 0)
   }, [topics])
+  const bySubject = groups.some((g) => AREAS.some((area) => area.slug === g.key))
+  const plate = groups.find((g) => g.key === (preview ?? open))?.plate ?? HERO_PLATE
 
   return (
     <main className={styles.landing}>
@@ -75,6 +107,12 @@ export function Landing({ topics, input, onInput, onSearch }: Props) {
               </span>{' '}
               it.
             </p>
+            {source && (
+              <p className={styles.sampleNote}>
+                These are the pipeline’s saved results from commit <span className="num">{source.commit.slice(0, 7)}</span>. Stages that have not run show
+                as pending, and the agent panel replays recorded runs.
+              </p>
+            )}
             {API_MODE === 'mock' && (
               <p className={styles.sampleNote}>
                 This copy of the site runs on sample data. Its Britannica passages are written for the demo, not read from the scans, and its comparisons
@@ -85,17 +123,16 @@ export function Landing({ topics, input, onInput, onSearch }: Props) {
 
           <section className={styles.subjects} aria-labelledby="subjects-title">
             <h2 id="subjects-title" className={styles.subjectsTitle}>
-              Or browse a subject
+              {bySubject ? 'Or browse a subject' : `Or browse the index: ${topics.length} entries`}
             </h2>
             <ul className={styles.areas}>
-              {AREAS.map((area) => (
+              {groups.map((group) => (
                 <Subject
-                  key={area.slug}
-                  area={area}
-                  topics={byArea.get(area.slug) ?? []}
-                  open={open === area.slug}
-                  onToggle={() => setOpen((cur) => (cur === area.slug ? null : area.slug))}
-                  onPreview={(on) => setPreview(on ? area.slug : null)}
+                  key={group.key}
+                  group={group}
+                  open={open === group.key}
+                  onToggle={() => setOpen((cur) => (cur === group.key ? null : group.key))}
+                  onPreview={(on) => setPreview(on ? group.key : null)}
                   onSearch={onSearch}
                 />
               ))}
@@ -112,16 +149,16 @@ export function Landing({ topics, input, onInput, onSearch }: Props) {
 }
 
 interface SubjectProps {
-  area: Area
-  topics: TopicSummary[]
+  group: Group
   open: boolean
   onToggle: () => void
   onPreview: (on: boolean) => void
   onSearch: (q: string) => void
 }
 
-function Subject({ area, topics, open, onToggle, onPreview, onSearch }: SubjectProps) {
-  const listId = `subject-${area.slug}`
+function Subject({ group, open, onToggle, onPreview, onSearch }: SubjectProps) {
+  const { topics } = group
+  const listId = `subject-${group.key}`
   const shown = topics.slice(0, LIST_LIMIT)
   return (
     <li className={styles.area} data-open={open}>
@@ -136,14 +173,14 @@ function Subject({ area, topics, open, onToggle, onPreview, onSearch }: SubjectP
         onFocus={() => onPreview(true)}
         onBlur={() => onPreview(false)}
       >
-        <span className={styles.areaLabel}>{area.label}</span>
+        <span className={styles.areaLabel}>{group.label}</span>
         <span className={`${styles.areaCount} num`}>
-          {topics.length} {topics.length === 1 ? 'article' : 'articles'}
+          {topics.length} {topics.length === 1 ? 'entry' : 'entries'}
         </span>
         <span className={styles.chevron} aria-hidden="true">
           <Icon name="next" size={14} />
         </span>
-        <span className={styles.areaBlurb}>{area.blurb}</span>
+        <span className={styles.areaBlurb}>{group.blurb}</span>
       </button>
 
       <div id={listId} className={styles.articles} hidden={!open}>
@@ -152,7 +189,7 @@ function Subject({ area, topics, open, onToggle, onPreview, onSearch }: SubjectP
         ) : (
           <ul className={styles.articleList}>
             {shown.map((t) =>
-              area.featured.includes(t.slug) ? (
+              group.featured.includes(t.slug) ? (
                 <Featured key={t.slug} topic={t} onSearch={onSearch} />
               ) : (
                 <Compact key={t.slug} topic={t} onSearch={onSearch} />
@@ -162,7 +199,7 @@ function Subject({ area, topics, open, onToggle, onPreview, onSearch }: SubjectP
         )}
         {topics.length > LIST_LIMIT && (
           <p className={styles.more}>
-            {topics.length - LIST_LIMIT} more in this subject. Search above to find them.
+            {topics.length - LIST_LIMIT} more. Search above to find them.
           </p>
         )}
       </div>

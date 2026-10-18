@@ -240,6 +240,7 @@ button.cite:hover {
 
 .suggestion {
   max-width: 100%;
+  overflow-wrap: anywhere;
   padding: 7px var(--space-3);
   border: 1px solid var(--rule-strong);
   border-radius: var(--radius);

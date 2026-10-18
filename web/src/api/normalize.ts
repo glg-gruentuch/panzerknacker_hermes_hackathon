@@ -155,7 +155,7 @@ export function toComparison(v: unknown, blocks: { pageHeader: string | null; bl
       meta: str(b.meta) ?? '',
       pageHeader: str(b.pageHeader) ?? blocks?.pageHeader ?? null,
       imageUrl: str(b.imageUrl),
-      blocks: Array.isArray(b.blocks) ? (b.blocks as ScanBlock[]) : (blocks?.blocks ?? []),
+      blocks: Array.isArray(b.blocks) ? toBlocks({ blocks: b.blocks }).blocks : (blocks?.blocks ?? []),
       sourceUrl: str(b.sourceUrl),
       rawText: str(b.rawText) ?? '',
       normalized: normalized ? { text: str(normalized.text) ?? '', fixes: list(normalized.fixes) as TextFix[] } : null,
