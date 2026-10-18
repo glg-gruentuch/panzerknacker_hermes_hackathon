@@ -1,5 +1,6 @@
 import { useId, useMemo, useState, type KeyboardEvent } from 'react'
 import type { TopicSummary } from '../api/types'
+import { fieldFor } from '../config/areas'
 import { Icon } from './Icon'
 import { MatchMark } from './MatchMark'
 import styles from './Headword.module.css'
@@ -13,7 +14,7 @@ interface Props {
   autoFocus?: boolean
 }
 
-/** The search field, set like an encyclopaedia headword: "BLOOD, in medicine." */
+/** The search field, set like an encyclopaedia headword: "BLOOD, in anatomy." The field follows the topic's subject area. */
 export function Headword({ topics, value, onChange, onSubmit, size, autoFocus }: Props) {
   const id = useId()
   const [open, setOpen] = useState(false)
@@ -24,6 +25,20 @@ export function Headword({ topics, value, onChange, onSubmit, size, autoFocus }:
     if (!q) return topics
     return topics.filter((t) => t.label.toLowerCase().includes(q) || t.headword.toLowerCase().includes(q) || t.wikipediaTitle?.toLowerCase().includes(q))
   }, [topics, value])
+
+  const field = fieldFor(value || 'Blood', topics)
+
+  // In the hero an empty field searches for the word it shows ("Blood"), so the first click works.
+  const fallback = size === 'hero' ? 'Blood' : ''
+  const query = value.trim() || fallback
+
+  // In the hero the button sits on its own line under the headword; in the masthead it follows it.
+  const go = (
+    <button type="submit" className={styles.go} disabled={!query}>
+      Compare
+      <Icon name="arrow" size={14} />
+    </button>
+  )
 
   const choose = (query: string) => {
     setOpen(false)
@@ -55,7 +70,7 @@ export function Headword({ topics, value, onChange, onSubmit, size, autoFocus }:
       className={`${styles.form} ${styles[size]}`}
       onSubmit={(e) => {
         e.preventDefault()
-        if (value.trim()) choose(value.trim())
+        if (query) choose(query)
       }}
     >
       <label htmlFor={`${id}-input`} className="visually-hidden">
@@ -87,14 +102,12 @@ export function Headword({ topics, value, onChange, onSubmit, size, autoFocus }:
             onKeyDown={onKeyDown}
           />
         </span>
-        <span className={styles.suffix} aria-hidden="true">
-          , <em>in medicine.</em>
+        <span className={styles.suffix} aria-hidden="true" hidden={!field}>
+          , <em>{field}.</em>
         </span>
-        <button type="submit" className={styles.go} disabled={!value.trim()}>
-          Compare
-          <Icon name="arrow" size={14} />
-        </button>
+        {size === 'compact' && go}
       </div>
+      {size === 'hero' && go}
 
       {open && options.length > 0 && (
         <ul id={`${id}-list`} role="listbox" className={styles.list} aria-label="Indexed topics">

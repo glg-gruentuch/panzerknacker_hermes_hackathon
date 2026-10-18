@@ -1,7 +1,10 @@
 // The contract between this UI and the backend. API.md documents the same
 // shapes for the backend team; keep the two in step.
 
-/** A medical topic the index can answer for (one of the 100 sampled pages). */
+/** The subject areas the landing page groups articles into. Defined in src/config/areas.ts. */
+export type AreaSlug = 'infectious-disease' | 'anatomy' | 'geology' | 'natural-sciences'
+
+/** A topic the index can answer for (one of the sampled Britannica pages). */
 export interface TopicSummary {
   slug: string
   /** What the user types, e.g. "Blood". */
@@ -13,6 +16,12 @@ export interface TopicSummary {
   match: MatchStrength
   /** Title of the best Wikipedia match, or null when there is none. */
   wikipediaTitle: string | null
+  /** Subject area for the landing page. Null keeps the topic out of the subject lists (search still finds it). */
+  area: AreaSlug | null
+  /** One short, striking sentence from the Britannica entry, quoted exactly. */
+  teaser: string | null
+  /** How many Britannica claims hold up today. Null when no claims were compared. */
+  verdicts: { correct: number; partly: number; wrong: number } | null
 }
 
 export type MatchStrength = 'strong' | 'partial' | 'none'

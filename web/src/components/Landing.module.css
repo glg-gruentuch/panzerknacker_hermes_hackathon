@@ -1,17 +1,92 @@
+/*
+  The landing page sits on an engraved plate from the Britannica itself.
+  One plate at a time, large and set back on the right, fading to white under
+  the text. Opening or pointing at a subject swaps in that subject's plate.
+*/
+
 .landing {
+  position: relative;
   flex: 1;
-  overflow-y: auto;
-  padding: clamp(48px, 12vh, 128px) var(--gutter) var(--space-7);
+  min-height: 0;
+  overflow: hidden;
+  --plate-ink: 0.5;
 }
 
-.hero,
-.index {
-  max-width: 960px;
-  margin: 0 auto;
+/* Backdrop */
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.plate {
+  position: absolute;
+  top: var(--space-5);
+  left: 50%;
+  /* Stop short of the credit line at the bottom. */
+  height: calc(100% - 88px);
+  max-height: 900px;
+  width: auto;
+  max-width: 50%;
+  object-fit: contain;
+  object-position: left top;
+  mix-blend-mode: multiply;
+  opacity: 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 22%, #000 100%);
+  mask-image: linear-gradient(to right, transparent 0, #000 22%, #000 100%);
+  transition: opacity 500ms var(--ease-out);
+}
+
+.plate[data-on='true'] {
+  opacity: var(--plate-ink);
+}
+
+/* The one authored moment: the first plate inks in. */
+@media (prefers-reduced-motion: no-preference) {
+  .plate[data-on='true'] {
+    animation: inkIn 1400ms var(--ease-out) both;
+  }
+
+  @keyframes inkIn {
+    from {
+      opacity: 0;
+      filter: blur(6px);
+    }
+    to {
+      opacity: var(--plate-ink);
+      filter: blur(0);
+    }
+  }
+}
+
+.credit {
+  position: absolute;
+  right: var(--gutter);
+  bottom: var(--space-3);
+  max-width: 46ch;
+  font-size: var(--text-xs);
+  color: var(--muted);
+  text-align: right;
+  pointer-events: none;
+}
+
+/* Content */
+
+.scroll {
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.content {
+  max-width: 640px;
+  margin-left: max(var(--gutter), 7vw);
+  padding: clamp(40px, 10vh, 112px) 0 var(--space-7);
 }
 
 .lede {
-  max-width: 54ch;
+  max-width: 50ch;
   margin-top: var(--space-5);
   font-size: var(--text-lg);
   line-height: 1.6;
@@ -42,86 +117,280 @@
   text-decoration-color: var(--correct-line);
 }
 
-/* Index */
+/* Subjects */
 
-.index {
+.subjects {
   margin-top: var(--space-7);
-  padding-top: var(--space-5);
-  border-top: 1px solid var(--rule);
 }
 
-.indexTitle {
-  font-size: var(--text-xl);
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
-
-.count {
-  margin-left: var(--space-2);
-  font-weight: 400;
-  color: var(--muted);
-}
-
-.groups {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: var(--space-5) var(--space-6);
-  margin-top: var(--space-5);
-}
-
-.groupTitle {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  margin-bottom: var(--space-2);
+.subjectsTitle {
+  padding-bottom: var(--space-3);
   font-size: var(--text-sm);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--ink-2);
 }
 
-.list {
+.areas {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid var(--rule);
+}
+
+.area {
+  border-top: 1px solid var(--rule);
+}
+
+.areaButton {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  grid-template-areas:
+    'label count chevron'
+    'blurb blurb .';
+  align-items: baseline;
+  column-gap: var(--space-4);
+  row-gap: 2px;
+  width: 100%;
+  padding: var(--space-4) 0;
+  border: 0;
+  background: none;
+  text-align: left;
+}
+
+.areaLabel {
+  grid-area: label;
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  line-height: 1.15;
+  letter-spacing: 0.005em;
+  transition: color 150ms var(--ease-out);
+}
+
+.areaCount {
+  grid-area: count;
+  font-size: var(--text-sm);
+  color: var(--ink-2);
+}
+
+.chevron {
+  grid-area: chevron;
+  display: inline-flex;
+  align-self: center;
+  color: var(--muted);
+  transition: transform 200ms var(--ease-out);
+}
+
+.area[data-open='true'] .chevron {
+  transform: rotate(90deg);
+  color: var(--ink);
+}
+
+.areaBlurb {
+  grid-area: blurb;
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+
+.areaButton:hover .areaLabel {
+  color: var(--ink-2);
+}
+
+/* Articles in an open subject */
+
+.articles {
+  padding: 0 0 var(--space-5);
+}
+
+.articleList {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.entry {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-areas:
-    'head to'
-    'meta to';
-  gap: 0 var(--space-3);
-  align-items: center;
-  width: 100%;
-  padding: 10px var(--space-2);
-  margin: 0 calc(var(--space-2) * -1);
-  border: 0;
+.articleList > li + li {
   border-top: 1px solid var(--rule);
-  border-radius: 0;
+}
+
+.featured,
+.compact {
+  width: 100%;
+  border: 0;
   background: none;
   text-align: left;
-  transition: background-color 150ms var(--ease-out);
+  border-radius: 0;
 }
 
-.entry:hover {
-  background: var(--panel);
+.featured {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-4) 0;
 }
 
-.entryHead {
-  grid-area: head;
-  font-family: var(--font-caslon);
-  letter-spacing: 0.06em;
+.compact {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    'headword verdicts'
+    'meta verdicts';
+  align-items: center;
+  column-gap: var(--space-4);
+  padding: var(--space-3) 0;
 }
 
-.entryMeta {
+.compact .headword {
+  grid-area: headword;
+}
+
+.compact .meta {
   grid-area: meta;
+}
+
+.compact .verdicts {
+  grid-area: verdicts;
+}
+
+.headword {
+  font-family: var(--font-caslon);
+  font-size: var(--text-md);
+  letter-spacing: 0.08em;
+}
+
+.meta {
   font-size: var(--text-xs);
   color: var(--muted);
 }
 
-.entryTo {
-  grid-area: to;
+.teaser {
+  margin: var(--space-2) 0 var(--space-1);
+  max-width: 54ch;
+  font-family: var(--font-caslon);
+  font-size: var(--text-lg);
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.featuredFoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-top: var(--space-1);
+}
+
+.open {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--ink-2);
+  transition: color 150ms var(--ease-out), gap 150ms var(--ease-out);
+}
+
+.featured:hover .open {
+  color: var(--ink);
+  gap: 9px;
+}
+
+.featured:hover .headword,
+.compact:hover .headword {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.verdicts {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
   font-size: var(--text-sm);
   color: var(--ink-2);
+}
+
+.count {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+}
+
+.empty,
+.more {
+  padding-top: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+
+/* Medium screens: the plate sits further back behind the text. */
+@media (max-width: 1199px) {
+  .landing {
+    --plate-ink: 0.32;
+  }
+
+  .content {
+    max-width: min(640px, 50vw);
+  }
+
+  .plate {
+    left: 54%;
+    max-width: 52%;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 32%, #000 100%);
+    mask-image: linear-gradient(to right, transparent 0, #000 32%, #000 100%);
+  }
+}
+
+/* Phones: the plate rises behind the search, faint, and fades out below it. */
+@media (max-width: 759px) {
+  .landing {
+    --plate-ink: 0.14;
+  }
+
+  .plate {
+    top: 0;
+    left: auto;
+    right: -12%;
+    height: 520px;
+    max-width: none;
+    -webkit-mask-image: linear-gradient(to bottom, #000 40%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 40%, transparent 100%);
+  }
+
+  .content {
+    max-width: none;
+    margin: 0 var(--gutter);
+    padding-top: var(--space-6);
+  }
+
+  .areaLabel {
+    font-size: 1.375rem;
+  }
+
+  .areaButton {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      'label chevron'
+      'blurb blurb'
+      'count count';
+  }
+
+  .compact {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      'headword'
+      'meta'
+      'verdicts';
+    row-gap: var(--space-1);
+  }
+
+  .featuredFoot {
+    flex-wrap: wrap;
+  }
+
+  .credit {
+    position: static;
+    margin: 0 var(--gutter) var(--space-4);
+    text-align: left;
+  }
 }

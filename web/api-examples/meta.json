@@ -18,7 +18,7 @@
   "models": [
     {
       "role": "Reads the page scans",
-      "name": "Nemotron Parse 3.0",
+      "name": "Nemotron Parse 3.5",
       "host": "Organisers’ shared endpoint"
     },
     {
@@ -44,6 +44,6 @@
   ],
   "sample": {
     "size": 100,
-    "method": "Not recorded yet. Describe how the 100 Britannica pages were chosen."
+    "method": "Random, without replacement, from all 2,573 scans with seed 20261016 (src/nemotron_challenge/resources/britannica-manifest.json)."
   }
 }

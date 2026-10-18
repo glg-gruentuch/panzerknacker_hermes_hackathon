@@ -7,7 +7,14 @@
     "edition": "Third edition",
     "year": 1797,
     "match": "strong",
-    "wikipediaTitle": "Blood"
+    "wikipediaTitle": "Blood",
+    "area": "anatomy",
+    "teaser": "Physicians at this day relieve a plethora, or too great fulness of blood, by opening a vein.",
+    "verdicts": {
+      "correct": 5,
+      "partly": 1,
+      "wrong": 4
+    }
   },
   "britannica": {
     "pageId": "MOCK-0001",

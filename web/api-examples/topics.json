@@ -7,7 +7,14 @@
       "edition": "Third edition",
       "year": 1797,
       "match": "strong",
-      "wikipediaTitle": "Blood"
+      "wikipediaTitle": "Blood",
+      "area": "anatomy",
+      "teaser": "Physicians at this day relieve a plethora, or too great fulness of blood, by opening a vein.",
+      "verdicts": {
+        "correct": 5,
+        "partly": 1,
+        "wrong": 4
+      }
     },
     {
       "slug": "smallpox",
@@ -16,7 +23,14 @@
       "edition": "Second edition",
       "year": 1778,
       "match": "strong",
-      "wikipediaTitle": "Smallpox"
+      "wikipediaTitle": "Smallpox",
+      "area": "infectious-disease",
+      "teaser": "It was first described by the Arabian physicians, and is now so universal, that scarce one in a thousand escapes it at some period of life.",
+      "verdicts": {
+        "correct": 5,
+        "partly": 1,
+        "wrong": 2
+      }
     },
     {
       "slug": "consumption",
@@ -25,7 +39,14 @@
       "edition": "Seventh edition",
       "year": 1842,
       "match": "strong",
-      "wikipediaTitle": "Tuberculosis"
+      "wikipediaTitle": "Tuberculosis",
+      "area": "infectious-disease",
+      "teaser": "Whether it be contagious has been much disputed.",
+      "verdicts": {
+        "correct": 4,
+        "partly": 3,
+        "wrong": 3
+      }
     },
     {
       "slug": "animal-magnetism",
@@ -34,7 +55,14 @@
       "edition": "Supplement to the 4th–6th editions",
       "year": 1824,
       "match": "partial",
-      "wikipediaTitle": "Animal magnetism"
+      "wikipediaTitle": "Animal magnetism",
+      "area": "natural-sciences",
+      "teaser": "In 1784 commissioners appointed by the King of France, among whom was Dr Franklin, reported that the effects were owing to the imagination alone, and that the supposed fluid had no existence.",
+      "verdicts": {
+        "correct": 3,
+        "partly": 0,
+        "wrong": 1
+      }
     },
     {
       "slug": "animal-spirits",
@@ -43,7 +71,58 @@
       "edition": "Third edition",
       "year": 1797,
       "match": "none",
-      "wikipediaTitle": null
+      "wikipediaTitle": null,
+      "area": "anatomy",
+      "teaser": "Their existence has never been demonstrated, for no fluid has been found in the nerves even by the best microscopes; yet the hypothesis is retained by many as the easiest explanation of the phenomena.",
+      "verdicts": null
+    },
+    {
+      "slug": "basalt",
+      "label": "Basalt",
+      "headword": "BASALTES",
+      "edition": "Third edition",
+      "year": 1797,
+      "match": "strong",
+      "wikipediaTitle": "Basalt",
+      "area": "geology",
+      "teaser": "Concerning the origin of this stone naturalists are much divided.",
+      "verdicts": {
+        "correct": 4,
+        "partly": 1,
+        "wrong": 1
+      }
+    },
+    {
+      "slug": "earthquake",
+      "label": "Earthquake",
+      "headword": "EARTHQUAKE",
+      "edition": "Third edition",
+      "year": 1797,
+      "match": "strong",
+      "wikipediaTitle": "Earthquake",
+      "area": "geology",
+      "teaser": "The cause is commonly ascribed to subterraneous fires, or to vapours and exhalations which, being rarefied by heat and wanting room, burst forth with violence and shake the ground above them.",
+      "verdicts": {
+        "correct": 2,
+        "partly": 1,
+        "wrong": 2
+      }
+    },
+    {
+      "slug": "electricity",
+      "label": "Electricity",
+      "headword": "ELECTRICITY",
+      "edition": "Third edition",
+      "year": 1797,
+      "match": "strong",
+      "wikipediaTitle": "Electricity",
+      "area": "natural-sciences",
+      "teaser": "Some philosophers suppose that the nervous fluid itself may be of the same nature with the electric fluid.",
+      "verdicts": {
+        "correct": 5,
+        "partly": 2,
+        "wrong": 0
+      }
     }
   ]
 }

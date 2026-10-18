@@ -15,9 +15,19 @@ function find(query: string): MockTopic | undefined {
   )
 }
 
+/** The summary as the API serves it, with verdict counts taken from the claims. */
+function summary(t: MockTopic): TopicSummary {
+  const judged = t.alignments.filter((a) => a.verdict !== null)
+  const count = (v: string) => judged.filter((a) => a.verdict === v).length
+  return {
+    ...t.summary,
+    verdicts: judged.length ? { correct: count('correct'), partly: count('partly'), wrong: count('wrong') } : null,
+  }
+}
+
 export async function topics(): Promise<TopicSummary[]> {
   await wait(150)
-  return MOCK_TOPICS.map((t) => t.summary)
+  return MOCK_TOPICS.map(summary)
 }
 
 export async function compare(query: string): Promise<Comparison | null> {
@@ -26,7 +36,7 @@ export async function compare(query: string): Promise<Comparison | null> {
   if (!t) return null
   return {
     query,
-    topic: t.summary,
+    topic: summary(t),
     britannica: t.britannica,
     wikipedia: t.wikipedia,
     match: t.match,
@@ -181,12 +191,12 @@ export async function meta(): Promise<Meta> {
       },
     ],
     models: [
-      { role: 'Reads the page scans', name: 'Nemotron Parse 3.0', host: 'Organisers’ shared endpoint' },
+      { role: 'Reads the page scans', name: 'Nemotron Parse 3.5', host: 'Organisers’ shared endpoint' },
       { role: 'Embeds passages and questions', name: 'Nemotron-3-Embed-VL', host: 'Nebius AI Cloud' },
       { role: 'Reranks candidates', name: 'Nemotron 3-Rerank-VL', host: 'Nebius AI Cloud' },
       { role: 'Stores and searches vectors', name: 'LanceDB', host: 'Backend' },
       { role: 'Answers questions', name: 'Hermes Agent · Nemotron 3.5 Super VL', host: 'Nebius Token Factory' },
     ],
-    sample: { size: 100, method: 'Not recorded yet. Describe how the 100 Britannica pages were chosen.' },
+    sample: { size: 100, method: 'Random, without replacement, from all 2,573 scans with seed 20261016 (src/nemotron_challenge/resources/britannica-manifest.json).' },
   }
 }

@@ -21,7 +21,7 @@ shape). The UI shows `detail` to the user, so write it as a sentence.
 
 | Model | Fills these fields | Where the user sees it |
 |---|---|---|
-| Nemotron Parse 3.0 | `britannica.passages` (text of the page scan) | Left column; "Text read from the page scan by Nemotron Parse 3.0" |
+| Nemotron Parse 3.5 | `britannica.rawText` and `britannica.passages` | Left column: Original text and Summary |
 | Nemotron-3-Embed-VL | `match.embedScore`, `candidates[].embedScore` | Match card, "Other candidates" table |
 | Nemotron 3-Rerank-VL | `match.rerankScore`, `candidates[].rerankScore`, `citations[].rerankScore` | Match card, uncertainty state, the evidence list under each answer |
 | LanceDB | Retrieval behind `/compare` and `/chat` | The "How this answer was made" trace |
@@ -29,6 +29,20 @@ shape). The UI shows `detail` to the user, so write it as a sentence.
 
 Put the real model names and timings in `trace` on every chat response. It is
 how judges see the pipeline working.
+
+## `GET /api/topics`
+
+Return `{ "topics": TopicSummary[] }`, one entry per indexed Britannica page.
+The landing page groups them by subject, so fill these fields:
+
+| Field | What to send |
+|---|---|
+| `area` | One of `infectious-disease`, `anatomy`, `geology`, `natural-sciences`, or `null` to keep the page out of the subject lists (search still finds it). |
+| `teaser` | One short sentence from the Britannica entry, quoted exactly. Featured articles show it. |
+| `verdicts` | Counts of the claims in `/compare`: `{ "correct": 4, "partly": 1, "wrong": 1 }`. `null` when no claims were compared. |
+
+The four subjects, their plates and which articles are featured live in
+`src/config/areas.ts`. Change a subject's slug there and here together.
 
 ## `GET /api/compare?q=<topic>`
 

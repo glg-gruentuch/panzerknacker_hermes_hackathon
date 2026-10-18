@@ -43,9 +43,13 @@ Link straight to a topic with `?q=`, for example `http://localhost:5173/?q=consu
 
 ## What's on screen
 
-- **Headword search.** The search field is set like an encyclopaedia headword
-  ("BLOOD, *in medicine.*"). Suggestions list every indexed page and how well
-  it matched.
+- **Landing page.** An engraved plate from the Britannica sits behind the
+  page. The search field is set like an encyclopaedia headword ("BLOOD,
+  *in anatomy.*"), and its field follows the topic's subject. Below it, four
+  subjects (infectious disease and fevers, anatomy and physiology, geology,
+  natural sciences) open into short lists of articles. Featured articles show
+  a quoted line and how many of their claims are wrong, partly correct or
+  correct. Pointing at or opening a subject swaps in that subject's plate.
 - **Side by side.** Britannica on the left, Wikipedia on the right. The
   Britannica column switches between **Summary** (the entry, cleaned and split
   into the passages the agent cites), **Original text** (everything Nemotron
@@ -120,10 +124,35 @@ Minimal on purpose, refined with [Impeccable](https://impeccable.style)
 - To check a page against Impeccable's design rules, install it, then run
   `.claude/skills/impeccable/scripts/impeccable detect http://localhost:5173/`.
 
+## Subjects and plates
+
+`src/config/areas.ts` lists the subjects: label, one-line description, plate,
+and which articles to feature first. The backend tags each topic with a
+subject slug (see API.md).
+
+The plates come from the same Hugging Face dataset as the sample (revision
+`309f765`, CC0, National Library of Scotland). `scripts/prepare-plates.py`
+turns the paper white, crops the margins and writes `public/plates/` and
+`src/config/plates.json`, which records each plate's page ID, row and source
+checksum. To change a plate, edit the list at the top of the script and run it
+from the repository root:
+
+```bash
+uv run nemotron-challenge data fetch
+uv run --with pillow python web/scripts/prepare-plates.py
+```
+
+| Plate | Subject | Source row | In our 100-page sample |
+|---|---|---|---|
+| Anatomy (skeleton) | Anatomy and physiology, and the default | 1274 | No |
+| Helminthology (parasitic worms) | Infectious disease and fevers | 651 | Yes |
+| Hver, or boiling fountain (geyser) | Geology | 1369 | No |
+| Electricity | Natural sciences | 1446 | No |
+
 ## About the sample data
 
-The mock Britannica passages are written in period style for the demo. They are
-**not** text from the dataset. The Wikipedia passages paraphrase the real
+The mock Britannica passages (eight topics) are written in period style for
+the demo. They are **not** text from the dataset. The Wikipedia passages paraphrase the real
 articles. The six agent cases are placeholders that show the format. All of it
 is replaced once the backend runs in live mode. The "Sample data" badge in the
 header shows while mock data is in use.

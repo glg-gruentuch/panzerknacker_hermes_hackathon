@@ -8,13 +8,15 @@ import type {
   WikipediaArticle,
   WikipediaCandidate,
 } from '../types'
+import { MORE_TOPICS } from './more-topics'
 
 // MOCK DATA. The Britannica passages are written in period style for the demo;
 // they are not OCR from the dataset. The Wikipedia passages paraphrase the
 // articles' content. Replace both by running the backend (VITE_API_MODE=live).
 
 export interface MockTopic {
-  summary: TopicSummary
+  /** Verdict counts are computed from the alignments in mock/index.ts. */
+  summary: Omit<TopicSummary, 'verdicts'>
   aliases: string[]
   britannica: BritannicaPage
   wikipedia: WikipediaArticle | null
@@ -45,6 +47,8 @@ const blood: MockTopic = {
     year: 1797,
     match: 'strong',
     wikipediaTitle: 'Blood',
+    area: 'anatomy',
+    teaser: 'Physicians at this day relieve a plethora, or too great fulness of blood, by opening a vein.',
   },
   aliases: ['blood', 'sanguis', 'circulation of the blood'],
   britannica: {
@@ -210,6 +214,8 @@ const smallpox: MockTopic = {
     year: 1778,
     match: 'strong',
     wikipediaTitle: 'Smallpox',
+    area: 'infectious-disease',
+    teaser: 'It was first described by the Arabian physicians, and is now so universal, that scarce one in a thousand escapes it at some period of life.',
   },
   aliases: ['smallpox', 'small-pox', 'small pox', 'variola', 'inoculation'],
   britannica: {
@@ -357,6 +363,8 @@ const consumption: MockTopic = {
     year: 1842,
     match: 'strong',
     wikipediaTitle: 'Tuberculosis',
+    area: 'infectious-disease',
+    teaser: 'Whether it be contagious has been much disputed.',
   },
   aliases: ['consumption', 'phthisis', 'tuberculosis', 'tb', 'phthisis pulmonalis'],
   britannica: {
@@ -501,6 +509,8 @@ const animalMagnetism: MockTopic = {
     year: 1824,
     match: 'partial',
     wikipediaTitle: 'Animal magnetism',
+    area: 'natural-sciences',
+    teaser: 'In 1784 commissioners appointed by the King of France, among whom was Dr Franklin, reported that the effects were owing to the imagination alone, and that the supposed fluid had no existence.',
   },
   aliases: ['animal magnetism', 'mesmerism', 'magnetism'],
   britannica: {
@@ -608,6 +618,8 @@ const animalSpirits: MockTopic = {
     year: 1797,
     match: 'none',
     wikipediaTitle: null,
+    area: 'anatomy',
+    teaser: 'Their existence has never been demonstrated, for no fluid has been found in the nerves even by the best microscopes; yet the hypothesis is retained by many as the easiest explanation of the phenomena.',
   },
   aliases: ['animal spirits', 'spirits', 'nervous fluid', 'nervous power'],
   britannica: {
@@ -679,4 +691,4 @@ authors have ſuppoſed the nervous power to be of the
   },
 }
 
-export const MOCK_TOPICS: MockTopic[] = [blood, smallpox, consumption, animalMagnetism, animalSpirits]
+export const MOCK_TOPICS: MockTopic[] = [blood, smallpox, consumption, animalMagnetism, animalSpirits, ...MORE_TOPICS]

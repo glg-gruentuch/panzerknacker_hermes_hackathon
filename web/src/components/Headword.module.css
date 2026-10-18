@@ -100,7 +100,7 @@
 
 .hero .go {
   height: 44px;
-  margin-left: 20px;
+  margin-top: var(--space-5);
   padding: 0 20px;
   font-size: var(--text-md);
 }
@@ -131,9 +131,6 @@
 }
 
 @media (max-width: 759px) {
-  .hero .go {
-    margin: 20px 0 0;
-  }
 
   .compact .suffix {
     display: none;

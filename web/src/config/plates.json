@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "anatomy",
+    "title": "Anatomy",
+    "src": "/plates/anatomy.jpg",
+    "width": 572,
+    "height": 745,
+    "pageId": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1274",
+    "row": 1274,
+    "volumeId": "192984259",
+    "meta": "Encyclopaedia Britannica - Seventh edition, Volume 2, A-Anatomy - EB.15",
+    "sourceSha256": "98e9a0e46b4bd44697902df078901696b2930e22ce39205ad0468814fefd5a94"
+  },
+  {
+    "slug": "helminthology",
+    "title": "Helminthology",
+    "src": "/plates/helminthology.jpg",
+    "width": 511,
+    "height": 685,
+    "pageId": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:651",
+    "row": 651,
+    "volumeId": "192692192",
+    "meta": "Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Fourth edition, Volume 10 Part 1, GOT-Heraldry - EB.9",
+    "sourceSha256": "a4e89a900a4041b934828dcc5c677df6edf0de903ab97d097948b7b17427da7d"
+  },
+  {
+    "slug": "geyser",
+    "title": "Hver, or boiling fountain",
+    "src": "/plates/geyser.jpg",
+    "width": 522,
+    "height": 390,
+    "pageId": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1369",
+    "row": 1369,
+    "volumeId": "149981670",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 8, GOB-HYD - EB.5",
+    "sourceSha256": "427c5ca9dc85d700f88d0c3bcc72b609aae67043bb8aac6af86e250089cf4dac"
+  },
+  {
+    "slug": "electricity",
+    "title": "Electricity",
+    "src": "/plates/electricity.jpg",
+    "width": 566,
+    "height": 627,
+    "pageId": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1446",
+    "row": 1446,
+    "volumeId": "149979622",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 6, DIA-ETH - EB.5",
+    "sourceSha256": "d5471506d9cc58aa7fd3b38eeb6e03d97b2c5efbe7c9978c2e39b38fb7f6443a"
+  }
+]
