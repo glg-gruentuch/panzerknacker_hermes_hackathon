@@ -20,7 +20,7 @@ Chosen methods for the pipeline. The team confirmed each choice before implement
 
 - Candidates: the shared Wikipedia BM25 API, `top_k=30`, `excerpt_chars=1200`,
   query built from the entry heading and opening text (within 512 chars and
-  64 words).
+  48 words; the service rejects a full 64-word query).
 - Shortlist: Nemotron Embed VL (`input_type="query"` for the entry text,
   `input_type="document"` for candidate excerpts; batches of at most 16).
   Dot product of unit vectors keeps the best 8 candidates.

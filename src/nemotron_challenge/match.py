@@ -18,13 +18,16 @@ EVIDENCE_NAME = "evidence.jsonl"
 MATCHES_NAME = "matches.jsonl"
 SHORTLIST_SIZE = 8
 CANDIDATES = 30
+# The shared search service rejects longer queries (a 64-word query returns 422
+# with "at most 64 words"). Stay well below the boundary.
+QUERY_WORD_LIMIT = 48
 
 
 def build_query(entry: dict[str, Any]) -> str:
-    """BM25 query: heading plus opening text, within 512 chars and 64 words."""
+    """BM25 query: heading plus opening text, within 512 chars and the word limit."""
     text = f"{entry['heading']} {entry['body']}"
     text = re.sub(r"\s+", " ", text).strip()
-    return " ".join(text.split()[:64])[:512]
+    return " ".join(text.split()[:QUERY_WORD_LIMIT])[:512]
 
 
 def embed_documents(retrieval: RetrievalClient, texts: list[str]) -> list[list[float]]:

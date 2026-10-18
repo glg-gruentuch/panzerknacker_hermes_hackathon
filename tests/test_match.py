@@ -18,7 +18,7 @@ def test_build_query_respects_service_limits():
     entry = {"heading": "SHIP BUILDING", "body": "word " * 500}
     query = build_query(entry)
     assert len(query) <= 512
-    assert len(query.split()) <= 64
+    assert len(query.split()) <= 48
     assert query.startswith("SHIP BUILDING")
 
 
