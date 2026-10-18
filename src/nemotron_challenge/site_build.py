@@ -14,7 +14,6 @@ from .config import Settings
 from .data import load_manifest
 from .pipeline import read_jsonl, write_json
 
-TECTONIC = Path.home() / ".local" / "bin" / "tectonic"
 DEFAULT_OUT = Path("deliverables/website")
 LINK = re.compile(r'(?:href|src)="([^"]+)"')
 
@@ -34,8 +33,27 @@ def html_escape(text: str) -> str:
     return html.escape(str(text), quote=True)
 
 
+def tectonic_bin() -> str | None:
+    """The tectonic binary from PATH (task 8); the old fixed path is a fallback."""
+    found = shutil.which("tectonic")
+    if found:
+        return found
+    fallback = Path.home() / ".local" / "bin" / "tectonic"
+    return str(fallback) if fallback.exists() else None
+
+
+def safe_asset_name(name: str) -> str:
+    """Asset file name without characters a URL cannot carry, such as '#' (see B9)."""
+    return re.sub(r"[^A-Za-z0-9._-]", "_", name)
+
+
 def render_page_tex(page: dict[str, Any], checksum: str, volume_id: str) -> str:
-    """One LaTeX document per scan. Headings keep the reading order."""
+    """One LaTeX document per scan with the segmented reading order (B7).
+
+    A headword entry renders as an unnumbered section, its subsections as
+    subsections, a fragment as "Continued from an earlier page". List-item
+    blocks become itemize entries and Caption blocks render in italics.
+    """
     lines = [
         r"\documentclass{article}",
         r"\usepackage[utf8]{inputenc}",
@@ -49,13 +67,38 @@ def render_page_tex(page: dict[str, Any], checksum: str, volume_id: str) -> str:
         r"\end{center}",
     ]
     for entry in page["entries"]:
-        heading = entry.get("heading") or "(untitled)"
-        command = r"\section*" if entry.get("heading_class") == "Title" else r"\subsection*"
-        lines.append(f"{command}{{{tex_escape(heading)}}}")
-        body = entry.get("body", "").strip()
-        if body:
-            lines.append(tex_escape(body))
+        if entry.get("fragment") or not entry.get("heading"):
+            lines.append(r"\section*{Continued from an earlier page}")
+        else:
+            lines.append(r"\section*{" + tex_escape(entry["heading"]) + "}")
+        for subsection in entry.get("subsections", []):
+            lines.append(r"\subsection*{" + tex_escape(subsection) + "}")
+        items: list[str] = []
+
+        def flush_items() -> None:
+            if items:
+                lines.append(r"\begin{itemize}")
+                lines.extend(r"\item " + item for item in items)
+                lines.append(r"\end{itemize}")
+                items.clear()
+
+        for block in entry.get("blocks", []):
+            text = (block.get("text") or "").strip()
+            if not text:
+                continue
+            block_class = block.get("class")
+            if block_class == "List-item":
+                items.append(tex_escape(text))
+                continue
+            flush_items()
+            if block_class == "Caption":
+                lines.append(r"\textit{" + tex_escape(text) + "}")
+                continue
+            if block_class in {"Page-header", "Page-footer", "Page-number"}:
+                continue
+            lines.append(tex_escape(text))
             lines.append("")
+        flush_items()
     lines += [
         r"\section*{Source record}",
         r"\begin{itemize}",
@@ -75,13 +118,14 @@ def compile_tex(tex_path: Path, out_dir: Path) -> tuple[bool, str]:
     """Compile one LaTeX document with tectonic. Returns (ok, detail)."""
     tex_path = Path(tex_path).resolve()
     out_dir = Path(out_dir).resolve()
-    if not TECTONIC.exists():
-        return False, "tectonic not found at ~/.local/bin/tectonic"
+    tectonic = tectonic_bin()
+    if tectonic is None:
+        return False, "tectonic is missing: install it or put it on PATH (see README, task 8)"
     if not tex_path.exists():
         return False, f"LaTeX source missing: {tex_path}"
     out_dir.mkdir(parents=True, exist_ok=True)
     result = subprocess.run(
-        [str(TECTONIC), "--outdir", str(out_dir), str(tex_path)],
+        [tectonic, "--outdir", str(out_dir), str(tex_path)],
         capture_output=True, text=True, timeout=300, cwd=tex_path.parent,
     )
     if result.returncode != 0:
@@ -116,7 +160,7 @@ def _page_shell(title: str, body: str) -> str:
 </head>
 <body>
 <nav><a href="index.html">Index</a> <a href="compare.html">Comparisons</a>
-<a href="cases.html">Case studies</a> <a href="limits.html">Limits</a></nav>
+<a href="cases.html">Case studies</a> <a href="limits.html">Limits</a> <a href="app/">App</a></nav>
 <main>
 {body}
 </main>
@@ -153,11 +197,35 @@ def build_site(
         coverage = json.loads(coverage_path.read_text(encoding="utf-8"))
     entries_flat = read_jsonl(work_dir / "match" / "matches.jsonl")
     comparisons = read_jsonl(work_dir / "compare" / "comparisons.jsonl")
+    qa_by_file: dict[str, list[str]] = {}
+    notes_path = work_dir / "extract" / "qa" / "notes.json"
+    if notes_path.exists():
+        try:
+            notes = json.loads(notes_path.read_text(encoding="utf-8"))
+        except ValueError:
+            notes = {}
+        for row in notes.get("scans", []):
+            findings = [str(item) for item in row.get("findings", [])]
+            if row.get("verdict"):
+                findings = [f"Verdict: {row['verdict']}."] + findings
+            qa_by_file[row.get("filename", "")] = findings
+    scan_check_by_page: dict[str, list[dict[str, Any]]] = {}
+    report_path = work_dir / "agent" / "report.json"
+    if report_path.exists():
+        try:
+            agent_report = json.loads(report_path.read_text(encoding="utf-8"))
+        except ValueError:
+            agent_report = {}
+        for case in agent_report.get("cases", []):
+            for check in case.get("scan_checks") or []:
+                if check.get("page_id"):
+                    scan_check_by_page.setdefault(check["page_id"], []).append(check)
     tex_dir = work_dir / "site" / "tex"
     files_dir = out_dir / "files"
     assets = out_dir / "assets"
     out_dir.mkdir(parents=True, exist_ok=True)
     assets.mkdir(parents=True, exist_ok=True)
+    (out_dir / "app").mkdir(exist_ok=True)  # the React app data mount (B10); keeps the nav link resolved
     (assets / "style.css").write_text(STYLE, encoding="utf-8")
 
     compile_failures: list[dict[str, str]] = []
@@ -199,6 +267,17 @@ def build_site(
                 body.append(f'<p class="cite">Matched article: {html_escape(match["article_title"])} '
                             f'(<a href="{html_escape(match["article_url"])}">Wikipedia</a>, revision {html_escape(match["article_revision_id"])}, '
                             f're-rank score {match["match_confidence"]}){link}</p>')
+        issues = list(qa_by_file.get(page["filename"], []))
+        for check in scan_check_by_page.get(page["page_id"], []):
+            if check.get("status") == "ok":
+                issues.append(f"Scan check ({check.get('result')}): {check.get('reason', '')}")
+            else:
+                issues.append(f"Scan check did not complete ({check.get('status')}) for {check.get('quote', '')!r}.")
+        body.append("<h2>OCR issues</h2>")
+        if issues:
+            body.append("<ul>" + "".join(f"<li>{html_escape(issue)}</li>" for issue in issues) + "</ul>")
+        else:
+            body.append('<p class="cite">No OCR issues recorded for this page.</p>')
         name = page["filename"].removesuffix(".jpg")
         (out_dir / f"{name}.html").write_text(_page_shell(page["filename"], "\n".join(body)), encoding="utf-8")
         page_links.append((name, page["filename"], len(page["entries"])))
@@ -215,6 +294,29 @@ def build_site(
     for name, filename, entry_count in page_links:
         index_body.append(f'<li><a href="{html_escape(name)}.html">{html_escape(filename)}</a> ({entry_count} entries)</li>')
     index_body.append("</ul>")
+    failed_ids = [row.get("page_id") for row in coverage.get("failures", [])]
+    if failed_ids:
+        index_body.append("<h2>Parse failed; Super VL description</h2>")
+        index_body.append("<ul>")
+        for failed_id in failed_ids:
+            filename = next((page["filename"] for page in manifest["pages"] if page["page_id"] == failed_id),
+                            failed_id)
+            note = "no description recorded"
+            vl_path = work_dir / "extract" / "vl-fallback" / f"{filename}.json"
+            if vl_path.exists():
+                try:
+                    record = json.loads(vl_path.read_text(encoding="utf-8"))
+                except ValueError:
+                    record = {}
+                if record.get("kind") == "model_description":
+                    content = record.get("reply", {}).get("choices", [{}])[0].get("message", {}).get("content", "")
+                    note = (f"{content} (model {record.get('model')}, "
+                            f"finish_reason {record.get('finish_reason')})")
+                elif record.get("error"):
+                    note = f"Super VL call failed: {record['error']}"
+            index_body.append(f"<li>{html_escape(filename)}: {html_escape(note)}</li>")
+        index_body.append("</ul>")
+    index_body.append('<p><a href="app/">Interactive comparison app (static data lives in app/data/)</a></p>')
     (out_dir / "index.html").write_text(_page_shell("Index", "\n".join(index_body)), encoding="utf-8")
 
     compare_body = ["<h1>Comparisons</h1>"]
@@ -222,8 +324,9 @@ def build_site(
         plots_src = work_dir / "compare" / "plots"
         if plots_src.exists():
             for plot in sorted(plots_src.glob("*.png")):
-                shutil.copy2(plot, assets / plot.name)
-                compare_body.append(f'<p><img src="assets/{html_escape(plot.name)}" alt="{html_escape(plot.name)}" style="max-width:100%"></p>')
+                asset_name = safe_asset_name(plot.name)
+                shutil.copy2(plot, assets / asset_name)
+                compare_body.append(f'<p><img src="assets/{html_escape(asset_name)}" alt="{html_escape(asset_name)}" style="max-width:100%"></p>')
         compare_body.append("<table><tr><th>Entry</th><th>Article</th><th>Britannica tokens</th><th>Wikipedia tokens</th></tr>")
         for row in comparisons:
             compare_body.append(

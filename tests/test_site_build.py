@@ -11,7 +11,10 @@ PAGE = {
     "page_header": "292 SHIP-BUILDING",
     "entries": [
         {"entry_id": "britannica:rev:train:13#0000", "heading": "Practical Building",
-         "heading_class": "Section-header", "body": "A & B ~ 50% of the _ship_."},
+         "heading_class": "Text", "fragment": False, "subsections": ["3. Eyes placed thus"],
+         "blocks": [{"class": "Text", "text": "A & B ~ 50% of the _ship_."},
+                    {"class": "List-item", "text": "1. By chocks."},
+                    {"class": "Caption", "text": "Fig. 2 exhibits a view."}]},
     ],
 }
 MANIFEST = {"pages": [{"filename": "page-0013-aaaa.jpg", "page_id": PAGE["page_id"], "volume_id": "77",
@@ -24,7 +27,11 @@ def test_tex_escape_covers_specials():
 
 def test_render_page_tex_has_sections_and_record():
     tex = render_page_tex(PAGE, "a" * 64, "77")
-    assert r"\subsection*{Practical Building}" in tex
+    assert r"\section*{Practical Building}" in tex
+    assert r"\subsection*{3. Eyes placed thus}" in tex
+    assert r"\begin{itemize}" in tex and r"\item 1. By chocks." in tex
+    assert r"\textit{Fig. 2 exhibits a view.}" in tex
+    assert r"A \& B" in tex
     assert "Image SHA-256" in tex
     assert "a" * 64 in tex
     assert r"\end{document}" in tex
