@@ -143,22 +143,6 @@
   color: var(--muted);
 }
 
-.kv {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: var(--space-1) var(--space-4);
-  margin: var(--space-3) 0 0;
-  font-size: var(--text-sm);
-}
-
-.kv dt {
-  color: var(--muted);
-}
-
-.kv dd {
-  margin: 0;
-}
-
 .missing {
   color: var(--muted);
   font-style: italic;
@@ -198,11 +182,6 @@
 
 .host {
   color: var(--muted);
-}
-
-.method {
-  padding-top: var(--space-3);
-  font-size: var(--text-sm);
 }
 
 @media (max-width: 759px) {
