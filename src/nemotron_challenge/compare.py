@@ -14,8 +14,12 @@ from .pipeline import append_jsonl, read_jsonl, write_json
 
 METHOD = (
     "Token frequency and Laplace-smoothed log-odds on matched pairs. "
-    "Tokens are lowercase letter runs of two or more characters; stopwords are removed."
+    "Tokens are lowercase letter runs of two or more characters; stopwords are removed. "
+    "obsolete_terms lists Britannica terms with zero frequency in the Wikipedia article, "
+    "capped at 50, highest count first."
 )
+
+OBSOLETE_TERM_LIMIT = 50
 
 STOPWORDS = set(
     """
@@ -72,8 +76,11 @@ def compare_pair(entry: dict[str, Any], match: dict[str, Any], article: dict[str
     article_tokens, article_changes = normalize(article["text"])
     entry_counts = Counter(token for token in entry_tokens if token not in STOPWORDS)
     article_counts = Counter(token for token in article_tokens if token not in STOPWORDS)
-    teh = sum(entry_counts.values()) or 1
-    tah = sum(article_counts.values()) or 1
+    article_all = Counter(article_tokens)
+    obsolete_terms = [
+        [term, count] for term, count in entry_counts.most_common()
+        if article_all.get(term, 0) == 0
+    ][:OBSOLETE_TERM_LIMIT]
     return {
         "entry_id": match["entry_id"],
         "entry_title": match["entry_title"],
@@ -106,6 +113,7 @@ def compare_pair(entry: dict[str, Any], match: dict[str, Any], article: dict[str
             "britannica": log_odds(entry_counts, article_counts),
             "wikipedia": log_odds(article_counts, entry_counts),
         },
+        "obsolete_terms": obsolete_terms,
         "normalization": {"britannica": entry_changes, "wikipedia": article_changes},
         "citations": [
             {"source": "britannica", "page_id": match["page_id"], "scan": match.get("scan", ""),
@@ -153,7 +161,9 @@ def plot_pair(row: dict[str, Any], path: Path) -> None:
     axis.set_xticks(list(positions))
     axis.set_xticklabels(terms, rotation=45, ha="right")
     axis.set_ylabel("count")
-    axis.set_title(f"{row['entry_title'][:60]} vs {row['article_title'][:60]}")
+    entry_title = row.get("entry_title") or row["entry_id"].split(":")[-1]
+    article_title = row.get("article_title") or "(untitled)"
+    axis.set_title(f"{str(entry_title)[:60]} vs {str(article_title)[:60]}")
     axis.legend()
     figure.tight_layout()
     path.parent.mkdir(parents=True, exist_ok=True)
