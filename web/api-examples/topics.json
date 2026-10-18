@@ -1,0 +1,49 @@
+{
+  "topics": [
+    {
+      "slug": "blood",
+      "label": "Blood",
+      "headword": "BLOOD",
+      "edition": "Third edition",
+      "year": 1797,
+      "match": "strong",
+      "wikipediaTitle": "Blood"
+    },
+    {
+      "slug": "smallpox",
+      "label": "Smallpox",
+      "headword": "SMALL-POX",
+      "edition": "Second edition",
+      "year": 1778,
+      "match": "strong",
+      "wikipediaTitle": "Smallpox"
+    },
+    {
+      "slug": "consumption",
+      "label": "Consumption",
+      "headword": "CONSUMPTION",
+      "edition": "Seventh edition",
+      "year": 1842,
+      "match": "strong",
+      "wikipediaTitle": "Tuberculosis"
+    },
+    {
+      "slug": "animal-magnetism",
+      "label": "Animal magnetism",
+      "headword": "ANIMAL MAGNETISM",
+      "edition": "Supplement to the 4th–6th editions",
+      "year": 1824,
+      "match": "partial",
+      "wikipediaTitle": "Animal magnetism"
+    },
+    {
+      "slug": "animal-spirits",
+      "label": "Animal spirits",
+      "headword": "ANIMAL SPIRITS",
+      "edition": "Third edition",
+      "year": 1797,
+      "match": "none",
+      "wikipediaTitle": null
+    }
+  ]
+}

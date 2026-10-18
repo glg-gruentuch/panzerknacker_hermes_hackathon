@@ -1,0 +1,64 @@
+{
+  "cases": [
+    {
+      "id": "success-1",
+      "outcome": "success",
+      "title": "Contagion reversed",
+      "topic": "Consumption",
+      "question": "Did people in 1842 think consumption was contagious?",
+      "answerExcerpt": "Mostly not, in Britain… Wikipedia states that the disease spreads through the air, and that Robert Koch identified the bacterium in 1882.",
+      "diagnosis": "Retrieval found the one passage on each side that discusses contagion (B5, W3) and the reranker put both first, even though the titles differ.",
+      "lesson": "The pipeline works when each source states the claim plainly in a single passage."
+    },
+    {
+      "id": "success-2",
+      "outcome": "success",
+      "title": "What 1797 got wrong",
+      "topic": "Blood",
+      "question": "What did people in 1797 get wrong about blood?",
+      "answerExcerpt": "Three claims in the 1797 entry no longer hold: blood made from chyle, heat from fermentation, bloodletting as routine treatment.",
+      "diagnosis": "Each wrong claim was paired with the modern passage that replaces it, and every sentence carries a citation.",
+      "lesson": "Broad \"what changed\" questions work when the page is short and the match is strong."
+    },
+    {
+      "id": "success-3",
+      "outcome": "success",
+      "title": "Same word, different thing",
+      "topic": "Smallpox",
+      "question": "Is 'inoculation' in 1778 the same thing as a vaccine today?",
+      "answerExcerpt": "No. In 1778 \"inoculation\" meant ingrafting real smallpox matter, which still killed some patients. The first vaccine used cowpox instead.",
+      "diagnosis": "The agent separated a word that survived from a practice that changed, citing both sides.",
+      "lesson": "With both texts in view, the agent can tell a change in language from a change in knowledge."
+    },
+    {
+      "id": "failure-1",
+      "outcome": "failure",
+      "title": "Wrong article retrieved",
+      "topic": "Animal spirits",
+      "question": "What is the modern view of animal spirits?",
+      "answerExcerpt": "Today \"animal spirits\" describes the emotions and instincts that drive economic decisions…",
+      "diagnosis": "The question embedding matched the economics article on the shared title. The reranker scored it 0.12, but the agent answered from it anyway.",
+      "lesson": "Answers must respect the rerank threshold, and queries should include the Britannica passage text, not just the headword."
+    },
+    {
+      "id": "failure-2",
+      "outcome": "failure",
+      "title": "\"The last century\" misread",
+      "topic": "Blood",
+      "question": "When was blood transfusion first tried?",
+      "answerExcerpt": "According to the 1797 entry, transfusion was first attempted in the 18th century…",
+      "diagnosis": "Written in 1797, \"the last century\" means the 1600s. The agent read the relative date from today's point of view.",
+      "lesson": "Give each passage its publication year in the prompt, and resolve relative dates when the page is parsed."
+    },
+    {
+      "id": "failure-3",
+      "outcome": "failure",
+      "title": "Missed because of the long s",
+      "topic": "Smallpox",
+      "question": "How was smallpox treated in 1778?",
+      "answerExcerpt": "The 1778 entry does not describe a treatment for smallpox…",
+      "diagnosis": "The page prints \"ſ\" (long s), so the parsed text read \"frefh air\" and \"purging\" came out garbled. The treatment passage never reached the top results.",
+      "lesson": "Normalise ſ to s and common OCR confusions before embedding."
+    }
+  ]
+}

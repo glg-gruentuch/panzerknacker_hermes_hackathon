@@ -1,0 +1,75 @@
+{
+  "request": {
+    "topic": "Blood",
+    "question": "Which facts about blood survived from 1797 to today?",
+    "history": []
+  },
+  "response": {
+    "answer": "The core anatomy has held up. Harvey's account of the heart driving blood out through the arteries and back by the veins [B5] matches the modern description of the circulation [W5].\n\nThe observation that drawn blood separates into a clot and a yellowish serum [B2] is still how serum is defined, under the same name [W6].\n\nThe red globules seen through Leeuwenhoek's microscope [B3] are today's red blood cells [W2]: the fact survived, the name did not.",
+    "citations": [
+      {
+        "id": "B5",
+        "source": "britannica",
+        "passageId": "B5",
+        "rerankScore": 0.94
+      },
+      {
+        "id": "W5",
+        "source": "wikipedia",
+        "passageId": "W5",
+        "rerankScore": 0.9
+      },
+      {
+        "id": "B2",
+        "source": "britannica",
+        "passageId": "B2",
+        "rerankScore": 0.86
+      },
+      {
+        "id": "W6",
+        "source": "wikipedia",
+        "passageId": "W6",
+        "rerankScore": 0.82
+      },
+      {
+        "id": "B3",
+        "source": "britannica",
+        "passageId": "B3",
+        "rerankScore": 0.78
+      },
+      {
+        "id": "W2",
+        "source": "wikipedia",
+        "passageId": "W2",
+        "rerankScore": 0.74
+      }
+    ],
+    "grounding": "supported",
+    "trace": [
+      {
+        "step": "Embed question",
+        "model": "Nemotron-3-Embed-VL",
+        "detail": "Mock: skipped",
+        "ms": null
+      },
+      {
+        "step": "Search both collections",
+        "model": "LanceDB",
+        "detail": "Mock: keyword match",
+        "ms": null
+      },
+      {
+        "step": "Rerank passages",
+        "model": "Nemotron 3-Rerank-VL",
+        "detail": "Mock: skipped",
+        "ms": null
+      },
+      {
+        "step": "Write answer",
+        "model": "Hermes Agent · Nemotron 3.5 Super VL",
+        "detail": "Mock: canned answer",
+        "ms": null
+      }
+    ]
+  }
+}

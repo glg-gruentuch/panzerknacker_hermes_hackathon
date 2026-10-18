@@ -1,0 +1,11 @@
+.wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mark {
+  width: 11px;
+  height: 11px;
+  flex: none;
+}
