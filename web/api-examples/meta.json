@@ -1,0 +1,49 @@
+{
+  "datasets": [
+    {
+      "name": "Encyclopaedia Britannica Illustrated",
+      "source": "National Library of Scotland, via Hugging Face",
+      "url": "https://huggingface.co/datasets/NationalLibraryOfScotland/encyclopaedia_britannica_illustrated",
+      "version": "Revision 309f765 (2,573 page scans, 1768–1860)",
+      "downloaded": "Not recorded yet"
+    },
+    {
+      "name": "Wikipedia Structured Contents",
+      "source": "Wikimedia Foundation, via Kaggle",
+      "url": "https://www.kaggle.com/datasets/wikimedia-foundation/wikipedia-structured-contents",
+      "version": "Not recorded yet",
+      "downloaded": "Not recorded yet"
+    }
+  ],
+  "models": [
+    {
+      "role": "Reads the page scans",
+      "name": "Nemotron Parse 3.0",
+      "host": "Organisers’ shared endpoint"
+    },
+    {
+      "role": "Embeds passages and questions",
+      "name": "Nemotron-3-Embed-VL",
+      "host": "Nebius AI Cloud"
+    },
+    {
+      "role": "Reranks candidates",
+      "name": "Nemotron 3-Rerank-VL",
+      "host": "Nebius AI Cloud"
+    },
+    {
+      "role": "Stores and searches vectors",
+      "name": "LanceDB",
+      "host": "Backend"
+    },
+    {
+      "role": "Answers questions",
+      "name": "Hermes Agent · Nemotron 3.5 Super VL",
+      "host": "Nebius Token Factory"
+    }
+  ],
+  "sample": {
+    "size": 100,
+    "method": "Not recorded yet. Describe how the 100 Britannica pages were chosen."
+  }
+}

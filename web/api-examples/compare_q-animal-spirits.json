@@ -1,0 +1,158 @@
+{
+  "query": "animal spirits",
+  "topic": {
+    "slug": "animal-spirits",
+    "label": "Animal spirits",
+    "headword": "ANIMAL SPIRITS",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "none",
+    "wikipediaTitle": null
+  },
+  "britannica": {
+    "pageId": "MOCK-0005",
+    "headword": "ANIMAL SPIRITS",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 17",
+    "meta": "Encyclopaedia Britannica; or, A dictionary of arts, sciences, and miscellaneous literature - Third edition, Volume 17 (mock)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "SPI                    [ 712 ]                    SPI\n\n  SPIRITS, ANIMAL, a fine ſubtile fluid, ſuppoſed to be\nſeparated from the blood in the brain, and conveyed\nby the nerves to every part of the body, as the inſtru-\nment of ſenſation and muſcular motion.\n  Their exiſtence has never been demonſtrated, for no\nfluid has been found in the nerves even by the beſt mi-\ncroſcopes; yet the hypotheſis is retained by many as\nthe eaſieſt explanation of the phenomena. Some late\nauthors have ſuppoſed the nervous power to be of the\nſame nature with the electric fluid. See Nerves.\n  SPIRITS of WINE. See Alcohol.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "SPIRITS, ANIMAL",
+        "text": "ANIMAL SPIRITS, a fine subtile fluid, supposed to be separated from the blood in the brain, and conveyed by the nerves to every part of the body, as the instrument of sensation and muscular motion."
+      },
+      {
+        "id": "B2",
+        "section": "SPIRITS, ANIMAL",
+        "text": "Their existence has never been demonstrated, for no fluid has been found in the nerves even by the best microscopes; yet the hypothesis is retained by many as the easiest explanation of the phenomena."
+      },
+      {
+        "id": "B3",
+        "section": "SPIRITS, ANIMAL",
+        "text": "Some late authors have supposed the nervous power to be of the same nature with the electric fluid."
+      }
+    ]
+  },
+  "wikipedia": null,
+  "match": {
+    "strength": "none",
+    "embedScore": 0.71,
+    "rerankScore": 0.12,
+    "reasons": [
+      "The title match, Animal spirits (Keynes), is about economics. The reranker scores it 0.12.",
+      "Pneuma covers the ancient idea, but not the 18th-century medical theory.",
+      "No candidate passes the 0.5 rerank threshold, so no comparison is drawn."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Animal spirits (Keynes)",
+      "url": "https://en.wikipedia.org/wiki/Animal_spirits_(Keynes)",
+      "embedScore": 0.71,
+      "rerankScore": 0.12
+    },
+    {
+      "title": "Pneuma",
+      "url": "https://en.wikipedia.org/wiki/Pneuma",
+      "embedScore": 0.62,
+      "rerankScore": 0.38
+    },
+    {
+      "title": "Nervous system",
+      "url": "https://en.wikipedia.org/wiki/Nervous_system",
+      "embedScore": 0.6,
+      "rerankScore": 0.35
+    }
+  ],
+  "alignments": [],
+  "vocabulary": {
+    "britannica": [
+      {
+        "term": "fluid",
+        "count": 3,
+        "per1k": 34.5
+      },
+      {
+        "term": "nerves",
+        "count": 2,
+        "per1k": 23
+      },
+      {
+        "term": "supposed",
+        "count": 2,
+        "per1k": 23
+      },
+      {
+        "term": "authors",
+        "count": 1,
+        "per1k": 11.5
+      },
+      {
+        "term": "best",
+        "count": 1,
+        "per1k": 11.5
+      },
+      {
+        "term": "blood",
+        "count": 1,
+        "per1k": 11.5
+      },
+      {
+        "term": "body",
+        "count": 1,
+        "per1k": 11.5
+      },
+      {
+        "term": "brain",
+        "count": 1,
+        "per1k": 11.5
+      },
+      {
+        "term": "conveyed",
+        "count": 1,
+        "per1k": 11.5
+      },
+      {
+        "term": "demonstrated",
+        "count": 1,
+        "per1k": 11.5
+      }
+    ],
+    "wikipedia": [],
+    "shared": []
+  },
+  "coverage": [
+    {
+      "topic": "What the spirits are",
+      "britannica": 0.45,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Evidence",
+      "britannica": 0.35,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Electricity",
+      "britannica": 0.2,
+      "wikipedia": 0
+    }
+  ],
+  "stats": {
+    "britannica": {
+      "words": 87,
+      "sentences": 3,
+      "avgSentenceLength": 29,
+      "distinctTerms": 32
+    },
+    "wikipedia": null
+  },
+  "suggestedQuestions": [
+    "What is the modern view of animal spirits?",
+    "What did the 1797 entry think carried sensation along the nerves?"
+  ]
+}

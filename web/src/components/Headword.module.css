@@ -1,0 +1,205 @@
+.form {
+  position: relative;
+  min-width: 0;
+}
+
+.line {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0 0.12em;
+  min-width: 0;
+}
+
+/* The input grows with its text: the ::after mirror sets the width. */
+.field {
+  display: inline-grid;
+  max-width: 100%;
+  min-width: 0;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.035em;
+  line-height: 1.05;
+}
+
+.field::after {
+  content: attr(data-value) ' ';
+  grid-area: 1 / 1;
+  visibility: hidden;
+  white-space: pre;
+  overflow: hidden;
+}
+
+.input {
+  grid-area: 1 / 1;
+  width: 100%;
+  min-width: 2ch;
+  padding: 0 0 0.06em;
+  border: 0;
+  border-bottom: 1.5px dotted var(--rule-strong);
+  background: transparent;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: var(--ink);
+  caret-color: var(--ink);
+  border-radius: 0;
+}
+
+.input::placeholder {
+  /* Large text: 3:1 is the floor, and it should still read as a hint. */
+  color: #8b8d97;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom-color: var(--ink);
+}
+
+.suffix {
+  font-family: var(--font-caslon);
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.go {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: center;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--surface);
+  border-radius: var(--radius);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  transition: background-color 150ms var(--ease-out), opacity 150ms var(--ease-out);
+}
+
+.go:hover:not(:disabled) {
+  background: #2c2e38;
+  border-color: #2c2e38;
+}
+
+.go:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+/* Sizes */
+
+.hero .field {
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+}
+
+.hero .suffix {
+  font-size: clamp(1.125rem, 2.6vw, 1.75rem);
+}
+
+.hero .go {
+  height: 44px;
+  margin-left: 20px;
+  padding: 0 20px;
+  font-size: var(--text-md);
+}
+
+.compact .line {
+  flex-wrap: nowrap;
+}
+
+.compact .field {
+  font-size: 1.625rem;
+}
+
+.compact .suffix {
+  font-size: var(--text-md);
+}
+
+.compact .go {
+  height: 30px;
+  margin-left: 12px;
+  padding: 0 12px;
+  font-size: var(--text-sm);
+}
+
+@media (max-width: 1199px) {
+  .compact .suffix {
+    display: none;
+  }
+}
+
+@media (max-width: 759px) {
+  .hero .go {
+    margin: 20px 0 0;
+  }
+
+  .compact .suffix {
+    display: none;
+  }
+
+  .compact .field {
+    font-size: 1.375rem;
+  }
+
+  .compact .go {
+    margin-left: 8px;
+  }
+}
+
+/* Suggestions */
+
+.list {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 8px);
+  left: 0;
+  width: min(560px, calc(100vw - 2 * var(--gutter)));
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgb(22 23 29 / 12%), 0 2px 6px rgb(22 23 29 / 6%);
+}
+
+.option {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    'head match'
+    'meta match';
+  gap: 0 16px;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.option[aria-selected='true'] {
+  background: var(--hover);
+}
+
+.optHead {
+  grid-area: head;
+  font-family: var(--font-caslon);
+  font-size: var(--text-md);
+  letter-spacing: 0.06em;
+}
+
+.optMeta {
+  grid-area: meta;
+  font-size: var(--text-xs);
+  color: var(--muted);
+}
+
+.optMatch {
+  grid-area: match;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-sm);
+  color: var(--ink-2);
+}

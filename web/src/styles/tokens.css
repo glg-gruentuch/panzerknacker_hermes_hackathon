@@ -1,0 +1,62 @@
+/*
+  Restrained palette: ink on white, hairlines, and one colour system.
+  Colour means one thing only: whether a Britannica claim holds up today.
+  The two sources are told apart by typeface and position, not colour.
+*/
+:root {
+  color-scheme: light;
+
+  --surface: #ffffff;
+  --panel: #f8f9fb;
+  --hover: #f2f3f6;
+  --ink: #16171d;
+  --ink-2: #4a4c57;
+  --muted: #6b6d78;
+  --faint: #a3a5ae;
+  --rule: #e8e9ed;
+  --rule-strong: #d3d5db;
+
+  /* Verdicts. -line is for underlines and marks, -text for words, -tint for highlights. */
+  --correct-line: #2e9447;
+  --correct-text: #1f7a37;
+  --correct-tint: #e7f4ea;
+
+  --partly-line: #b27c00;
+  --partly-text: #94600a;
+  --partly-tint: #fdf3da;
+
+  --wrong-line: #c23434;
+  --wrong-text: #c23434;
+  --wrong-tint: #fbe9e9;
+
+  --font-caslon: 'Libre Caslon Text', 'Iowan Old Style', Georgia, serif;
+  --font-display: 'Libre Caslon Display', 'Libre Caslon Text', Georgia, serif;
+  --font-sans: 'Libre Franklin', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Fixed product scale, ratio ~1.15 */
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-md: 0.9375rem;
+  --text-lg: 1.0625rem;
+  --text-xl: 1.25rem;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  --radius: 6px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --masthead-h: 56px;
+  --gutter: 24px;
+}
+
+@media (max-width: 759px) {
+  :root {
+    --gutter: 16px;
+  }
+}
