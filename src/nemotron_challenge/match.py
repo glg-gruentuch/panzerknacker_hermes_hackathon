@@ -4,11 +4,13 @@ from __future__ import annotations
 import json
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 from typing import Any
 
 from .clients import RetrievalClient, ServiceError, WikiClient
-from .config import MATCH_LOGIT_THRESHOLD, Settings, WIKIPEDIA_REVISION
+from .compare import STOPWORDS
+from .config import MATCH_LOGIT_THRESHOLD, WIKIPEDIA_REVISION, Settings
 from .contracts import ArtifactRecord, SourceReference
 from .data import load_manifest
 from .pipeline import append_jsonl, read_jsonl, retry_call, write_json
@@ -16,18 +18,81 @@ from .storage import LanceArtifactStore
 
 EVIDENCE_NAME = "evidence.jsonl"
 MATCHES_NAME = "matches.jsonl"
-SHORTLIST_SIZE = 8
 CANDIDATES = 30
+FRAGMENT_QUERY_WORDS = 8
 # The shared search service rejects longer queries (a 64-word query returns 422
 # with "at most 64 words"). Stay well below the boundary.
 QUERY_WORD_LIMIT = 48
 
+CONTENT_WORD = re.compile(r"[a-z][a-z\-]*")
+SENTENCE_END = re.compile(r"[.!?](?:\s|$)")
 
-def build_query(entry: dict[str, Any]) -> str:
-    """BM25 query: heading plus opening text, within 512 chars and the word limit."""
-    text = f"{entry['heading']} {entry['body']}"
+
+def content_words(text: str) -> list[str]:
+    """Meaning-carrying words: letters and hyphens, three or more characters, no stopwords."""
+    words = [word.strip("-") for word in CONTENT_WORD.findall(text.lower())]
+    return [word for word in words if len(word) >= 3 and word not in STOPWORDS]
+
+
+def word_frequencies(entries: list[dict[str, Any]]) -> Counter[str]:
+    """How many entries hold each content word (document frequency).
+
+    Fragment queries pick their rarest words against this corpus count.
+    """
+    frequencies: Counter[str] = Counter()
+    for entry in entries:
+        for word in set(content_words(entry.get("body") or "")):
+            frequencies[word] += 1
+    return frequencies
+
+
+def rarest_query_words(text: str, frequencies: Counter[str], limit: int = FRAGMENT_QUERY_WORDS) -> list[str]:
+    """The rarest content words of a body, rarest first.
+
+    Ties prefer the longer word, then the earlier appearance.
+    """
+    words = content_words(text)
+    first_seen: dict[str, int] = {}
+    for position, word in enumerate(words):
+        first_seen.setdefault(word, position)
+    ranked = sorted(first_seen, key=lambda word: (frequencies.get(word, 1), -len(word), first_seen[word]))
+    return ranked[:limit]
+
+
+def first_sentence(text: str) -> str:
+    """Text up to and including the first sentence end. Whitespace is collapsed."""
+    cleaned = re.sub(r"\s+", " ", text).strip()
+    match = SENTENCE_END.search(cleaned)
+    return cleaned[: match.end()].strip() if match else cleaned
+
+
+def build_query(entry: dict[str, Any], frequencies: Counter[str] | None = None) -> str:
+    """BM25 query text within 512 characters and the shared word limit.
+
+    A headword entry contributes its heading plus the first sentence of the
+    body. A fragment contributes the eight rarest content words of its body.
+    """
+    heading = (entry.get("heading") or "").strip()
+    body = (entry.get("body") or "").strip()
+    if entry.get("fragment") or not heading:
+        text = " ".join(rarest_query_words(body, frequencies or Counter()))
+    else:
+        opening = first_sentence(body)
+        if opening and opening.lower().startswith(heading.lower()):
+            parts = [opening]
+        else:
+            parts = [heading, opening]
+        text = " ".join(part for part in parts if part)
     text = re.sub(r"\s+", " ", text).strip()
     return " ".join(text.split()[:QUERY_WORD_LIMIT])[:512]
+
+
+def entry_query(entry: dict[str, Any]) -> str:
+    """Retrieval text for one entry. Heading-only entries use the heading."""
+    body = (entry.get("body") or "").strip()
+    if body:
+        return body
+    return (entry.get("heading") or "").strip()
 
 
 def embed_documents(retrieval: RetrievalClient, texts: list[str]) -> list[list[float]]:
@@ -39,25 +104,42 @@ def embed_documents(retrieval: RetrievalClient, texts: list[str]) -> list[list[f
     return vectors
 
 
-def shortlist(retrieval: RetrievalClient, entry_text: str, hits: list[Any], keep: int = SHORTLIST_SIZE) -> list[dict[str, Any]]:
-    """Dot product of unit vectors. The query text is capped at 2000 chars by the client."""
+def shortlist(retrieval: RetrievalClient, entry_text: str, hits: list[Any],
+              keep: int | None = None) -> list[dict[str, Any]]:
+    """Rank every candidate by embedding similarity. ``keep`` optionally cuts the list.
+
+    The embedder sees each excerpt as a document and the entry text as the
+    query. Similarity is the dot product of unit vectors.
+    """
     query_vector = retry_call(lambda: retrieval.embed([entry_text[:2000]], input_type="query"))[0]
     documents = [hit.excerpt[:32000] for hit in hits]
     vectors = embed_documents(retrieval, documents)
-    scored = [
-        {"hit": hit, "similarity": sum(a * b for a, b in zip(query_vector, vector))}
-        for hit, vector in zip(hits, vectors)
-    ]
-    return sorted(scored, key=lambda row: -row["similarity"])[:keep]
+    scored = sorted(
+        (
+            {"hit": hit, "similarity": sum(a * b for a, b in zip(query_vector, vector))}
+            for hit, vector in zip(hits, vectors)
+        ),
+        key=lambda row: -row["similarity"],
+    )
+    for rank, row in enumerate(scored, start=1):
+        row["embed_rank"] = rank
+    return scored[:keep] if keep is not None else scored
 
 
-def rerank_candidates(retrieval: RetrievalClient, entry_text: str, rows: list[dict[str, Any]], top_n: int = SHORTLIST_SIZE) -> list[dict[str, Any]]:
-    """Rerank the shortlist. Result rows index into rows; scores are raw logits."""
-    top_n = min(top_n, len(rows))
+def rerank_candidates(retrieval: RetrievalClient, entry_text: str, rows: list[dict[str, Any]],
+                      top_n: int | None = None) -> list[dict[str, Any]]:
+    """Rerank the candidate rows in one request; the service takes up to 32.
+
+    Result rows index into rows; scores are raw logits; the reply order is the
+    rerank rank.
+    """
     reply = retry_call(
         lambda: retrieval.rerank(entry_text[:2000], [row["hit"].excerpt[:32000] for row in rows], top_n=top_n)
     )
-    return [{"row": rows[item["index"]], "logit": item["relevance_score"]} for item in reply]
+    return [
+        {"row": rows[item["index"]], "logit": item["relevance_score"], "rerank_rank": rank}
+        for rank, item in enumerate(reply, start=1)
+    ]
 
 
 def decide(reranked: list[dict[str, Any]], threshold: float) -> dict[str, Any] | None:
@@ -105,8 +187,10 @@ def match_tables(db_path: str | Path) -> tuple[Any, Any]:
                 ("candidate_title", pa.string()),
                 ("bm25_rank", pa.int32()),
                 ("bm25_score", pa.float64()),
-                ("similarity", pa.float64()),
+                ("embed_similarity", pa.float64()),
+                ("embed_rank", pa.int32()),
                 ("rerank_logit", pa.float64()),
+                ("rerank_rank", pa.int32()),
                 ("decision", pa.string()),
             ]
         ),
@@ -157,13 +241,14 @@ def run_match(
     entries = json.loads(entries_path.read_text(encoding="utf-8"))
     if limit is not None:
         entries = entries[:limit]
+    frequencies = word_frequencies(entries)
     match_dir = work_dir / "match"
     evidence_path = match_dir / EVIDENCE_NAME
     matches_path = match_dir / MATCHES_NAME
     articles_dir = match_dir / "articles"
     done = {row["entry_id"] for row in read_jsonl(evidence_path)}
     store = LanceArtifactStore(settings.db_path)
-    evidence_table, articles_table = match_tables(settings.db_path)
+    _evidence_table, articles_table = match_tables(settings.db_path)
     failures: list[dict[str, Any]] = []
     with WikiClient(settings.wikipedia_api_url) as wiki, RetrievalClient(
         settings.retrieval_base_url, settings.retrieval_api_key
@@ -172,24 +257,29 @@ def run_match(
             entry_id = entry["entry_id"]
             if entry_id in done:
                 continue
-            print(f"[match] {index}/{len(entries)} {entry_id} {entry['heading'][:50]}", file=sys.stderr, flush=True)
+            print(f"[match] {index}/{len(entries)} {entry_id} {(entry.get('heading') or '(fragment)')[:50]}",
+                  file=sys.stderr, flush=True)
             try:
-                search = retry_call(lambda: wiki.search(build_query(entry), top_k=CANDIDATES, excerpt_chars=1200))
+                search = retry_call(lambda: wiki.search(build_query(entry, frequencies), top_k=CANDIDATES,
+                                                        excerpt_chars=1200))
                 hits = search.hits
                 if not hits:
                     append_jsonl(evidence_path, [{"entry_id": entry_id, "page_id": entry["page_id"],
                                                   "candidate_page_id": None, "candidate_title": None,
-                                                  "bm25_rank": None, "bm25_score": None, "similarity": None,
-                                                  "rerank_logit": None, "decision": "no-candidates"}])
+                                                  "bm25_rank": None, "bm25_score": None, "embed_similarity": None,
+                                                  "embed_rank": None, "rerank_logit": None, "rerank_rank": None,
+                                                  "decision": "no-candidates"}])
                     continue
-                rows = shortlist(retrieval, entry["body"], hits)
-                reranked = rerank_candidates(retrieval, entry["body"], rows)
+                query_text = entry_query(entry)
+                rows = shortlist(retrieval, query_text, hits)
+                reranked = rerank_candidates(retrieval, query_text, rows)
                 best = decide(reranked, threshold)
-                shortlist_by_id = {row["hit"].page_id: row for row in rows}
+                similarity_by_id = {row["hit"].page_id: row["similarity"] for row in rows}
+                embed_rank_by_id = {row["hit"].page_id: row["embed_rank"] for row in rows}
                 logit_by_id = {row["row"]["hit"].page_id: row["logit"] for row in reranked}
+                rerank_rank_by_id = {row["row"]["hit"].page_id: row["rerank_rank"] for row in reranked}
                 evidence_rows = []
                 for rank, hit in enumerate(hits, start=1):
-                    row = shortlist_by_id.get(hit.page_id)
                     if best is not None and hit.page_id == best["row"]["hit"].page_id:
                         decision = "matched"
                     elif best is None:
@@ -203,8 +293,10 @@ def run_match(
                         "candidate_title": hit.title,
                         "bm25_rank": rank,
                         "bm25_score": hit.bm25_score,
-                        "similarity": row["similarity"] if row else None,
+                        "embed_similarity": similarity_by_id.get(hit.page_id),
+                        "embed_rank": embed_rank_by_id.get(hit.page_id),
                         "rerank_logit": logit_by_id.get(hit.page_id),
+                        "rerank_rank": rerank_rank_by_id.get(hit.page_id),
                         "decision": decision,
                     })
                 append_jsonl(evidence_path, evidence_rows)
@@ -226,12 +318,15 @@ def run_match(
                     "entry_id": entry_id,
                     "entry_title": entry["heading"],
                     "heading_class": entry.get("heading_class", ""),
+                    "fragment": bool(entry.get("fragment", False)),
                     "page_id": entry["page_id"],
                     "scan": entry.get("filename", ""),
                     "scan_sha256": entry.get("scan_sha256", ""),
                     "match_confidence": best["logit"],
                     "bm25_rank": next(row["bm25_rank"] for row in evidence_rows if row["candidate_page_id"] == hit.page_id),
                     "similarity": best["row"]["similarity"],
+                    "embed_rank": best["row"]["embed_rank"],
+                    "rerank_rank": rerank_rank_by_id.get(hit.page_id),
                     "article_page_id": article["page_id"],
                     "article_title": article["title"],
                     "article_revision_id": article["revision_id"],
@@ -271,8 +366,18 @@ def run_match(
     processed = {row["entry_id"] for row in evidence_all}
     matched_ids = {row["entry_id"] for row in all_matches}
     unresolved = {row["entry_id"] for row in evidence_all if row["decision"] in {"unmatched", "no-candidates"}}
+    coverage_path = work_dir / "extract" / "coverage.json"
+    coverage: dict[str, Any] = {}
+    if coverage_path.exists():
+        coverage = json.loads(coverage_path.read_text(encoding="utf-8"))
+    entry_pages = {row["page_id"] for row in entries}
+    failed_pages = coverage.get("failures", [])
     summary = summary_of(all_matches)
     summary.update({
+        "pages_total": coverage.get("pages_total", len(entry_pages) + len(failed_pages)),
+        "pages_with_text": coverage.get("pages_ok", len(entry_pages)),
+        "pages_failed": coverage.get("pages_failed", len(failed_pages)),
+        "failed_pages": failed_pages,
         "entries_total": len(entries),
         "entries_processed": len(processed),
         "matched": len(matched_ids),
