@@ -41,6 +41,28 @@ contract for the backend team**, with example payloads in
 
 Link straight to a topic with `?q=`, for example `http://localhost:5173/?q=consumption`.
 
+## Deploy to Cloudflare
+
+The site is static, so Cloudflare Workers serves `dist/` as static assets.
+`wrangler.jsonc` holds the config. The deployed site uses the built-in sample
+data, because Cloudflare does not run the Python backend.
+
+Deploy from your machine:
+
+```bash
+npx wrangler login   # once
+npm run deploy       # builds, then uploads dist/
+```
+
+Wrangler prints the URL, for example `https://knowledge-across-time.<account>.workers.dev`.
+
+The workflow `.github/workflows/deploy-web.yml` deploys on each push to `main`
+that changes `web/`. You can also start it by hand from the Actions tab. Add
+these repository secrets first:
+
+- `CLOUDFLARE_API_TOKEN`: an API token made from the "Edit Cloudflare Workers" template.
+- `CLOUDFLARE_ACCOUNT_ID`: shown on the Workers and Pages overview page.
+
 ## What's on screen
 
 - **Landing page.** An engraved plate from the Britannica sits behind the
