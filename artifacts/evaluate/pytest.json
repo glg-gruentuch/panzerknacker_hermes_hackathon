@@ -1,0 +1,5 @@
+{
+  "command": "uv run pytest -q",
+  "date": "2026-10-18",
+  "summary": "184 passed, 12 warnings in 13.33s"
+}

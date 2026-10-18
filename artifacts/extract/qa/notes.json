@@ -1,5 +1,7 @@
 {
   "reviewer": "Hermes Agent (vision review against the source scans)",
+  "reviewer_kind": "agent_review",
+  "reviewer_model_backed_alternative": "task 7 challenge_scan_check runs with nvidia/Nemotron-3.5-Super-VL vision input; see artifacts/agent/runs/scan-check-1 and artifacts/agent/runs/scan-check-2",
   "date": "2026-10-18",
   "method": "Vision read of the scan image, compared with the derived entry text for the same page.",
   "scans": [

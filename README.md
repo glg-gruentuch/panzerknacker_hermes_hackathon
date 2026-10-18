@@ -1,3 +1,46 @@
+# Our solution
+
+Our pipeline turns 100 historical Britannica scans into cited comparisons against Wikipedia, a static website with compiled LaTeX PDFs, and a Hermes agent that answers questions from the saved evidence.
+
+98 of 100 scans produced text (232 entries). 76 entries matched 76 unique Wikipedia articles, and 156 entries stay unmatched. 76 comparison pairs and 421 claims are recorded, each with quotes from both sources. Two scans failed (a blank binding and an engraved plate) and stay reported as failures.
+
+## Run the pipeline
+
+From the repository root on Linux with uv and Python 3.12:
+
+```sh
+uv sync --locked
+cp .env.example .env
+uv run nemotron-challenge data fetch
+uv run nemotron-challenge run extract
+uv run nemotron-challenge run match
+uv run nemotron-challenge run compare
+uv run nemotron-challenge run claims
+uv run nemotron-challenge run agent
+uv run nemotron-challenge run site
+uv run nemotron-challenge run evaluate
+uv run nemotron-challenge run export
+```
+
+Fill `.env` with the team endpoints and keys, and keep it out of Git.
+Re-derive the segmentation without model calls with `uv run nemotron-challenge run extract --derive-only`.
+
+## Report, method, and case studies
+
+- [Method](docs/method.md)
+- [Evaluation report](docs/evaluation.md)
+- [Submission](docs/submission.md)
+- [Case: scan-check-1](docs/cases/scan-check-1.md)
+- [Case: success-4](docs/cases/success-4.md)
+- [Case: success-3](docs/cases/success-3.md)
+- [Case: scan-check-2](docs/cases/scan-check-2.md)
+- [Case: failure-3](docs/cases/failure-3.md)
+- [Case: success-1](docs/cases/success-1.md)
+
+## Runs on
+
+Linux with uv. The team exercised every stage in a Linux container. The team's Intel Mac is not a target: the pinned `lancedb==0.40.0` has no Intel macOS wheel.
+
 # Nemotron Agentic AI Challenge
 
 Build an agent that compares historical Britannica pages with Wikipedia.
