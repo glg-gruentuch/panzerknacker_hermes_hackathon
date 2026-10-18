@@ -1,0 +1,389 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "plague",
+    "label": "Plague",
+    "headword": "PLAGUE",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Plague (disease)",
+    "area": "infectious-disease",
+    "teaser": "The disease is supposed to arise from a peculiar corruption of the air, which first breaks out in Egypt and the Levant, and is thence carried by ships to other countries."
+  },
+  "aliases": [
+    "plague",
+    "pestilence",
+    "pest",
+    "bubonic plague",
+    "black death"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0010",
+    "headword": "PLAGUE",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 15",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 15 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "PLA                    [ 112 ]                    PLA\n\nPLAGIARY, among the Romans, a perſon who bought,\nſold, or retained a freeman as a ſlave.\n  PLAGUE, or PESTILENCE, a very acute and conta-\ngious diſeaſe, attended with a fever, buboes or ſwell-\nings in the groin and armpits, carbuncles, and livid\nſpots upon the ſkin. It is the moſt fatal of all diſeaſes;\nin the great plague of London in 1665 there died, ac-\ncording to the bills of mortality, near 70,000 perſons.\n  The diſeaſe is ſuppoſed to ariſe from a peculiar cor-\nruption of the air, which firſt breaks out in Egypt and\nthe Levant, and is thence carried by ſhips to other\ncountries. It is communicated chiefly by contact with\ninfected perſons, and by goods, as cotton, wool, and\nclothes, which retain the infection for a long time.\n  For this reaſon ſhips and goods from infected places\nare kept in quarantine, that is, ſeparated for forty days\nbefore they may land, by which means the plague has\nbeen kept out of Britain for more than a century.\n  The cure is attempted by ſweating medicines, cor-\ndials, and by bringing the buboes to ſuppuration with\npoultices; but the greater part of thoſe ſeized periſh,\nwhatever be done.\n  PLAICE, a fiſh. See PLEURONECTES.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "PLAGUE",
+        "text": "PLAGUE, or PESTILENCE, a very acute and contagious disease, attended with a fever, buboes or swellings in the groin and armpits, carbuncles, and livid spots upon the skin."
+      },
+      {
+        "id": "B2",
+        "section": "PLAGUE",
+        "text": "It is the most fatal of all diseases; in the great plague of London in 1665 there died, according to the bills of mortality, near 70,000 persons."
+      },
+      {
+        "id": "B3",
+        "section": "PLAGUE",
+        "text": "The disease is supposed to arise from a peculiar corruption of the air, which first breaks out in Egypt and the Levant, and is thence carried by ships to other countries."
+      },
+      {
+        "id": "B4",
+        "section": "PLAGUE",
+        "text": "It is communicated chiefly by contact with infected persons, and by goods, as cotton, wool, and clothes, which retain the infection for a long time."
+      },
+      {
+        "id": "B5",
+        "section": "PLAGUE",
+        "text": "For this reason ships and goods from infected places are kept in quarantine, that is, separated for forty days before they may land, by which means the plague has been kept out of Britain for more than a century."
+      },
+      {
+        "id": "B6",
+        "section": "PLAGUE",
+        "text": "The cure is attempted by sweating medicines, cordials, and by bringing the buboes to suppuration with poultices; but the greater part of those seized perish, whatever be done."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-plague",
+    "title": "Plague (disease)",
+    "url": "https://en.wikipedia.org/wiki/Plague_(disease)",
+    "dateModified": "2026-09-30",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Plague is an infectious disease caused by the bacterium Yersinia pestis. Symptoms include fever, weakness and headache."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "There are three forms of plague. In bubonic plague, the lymph nodes swell into painful buboes, most often in the groin or armpit. Septicemic plague infects the blood, and pneumonic plague infects the lungs."
+      },
+      {
+        "id": "W3",
+        "section": "Transmission",
+        "text": "Bubonic plague is mainly spread by the bites of infected fleas from small animals such as rats. Pneumonic plague can spread between people through infected droplets in the air."
+      },
+      {
+        "id": "W4",
+        "section": "Cause",
+        "text": "The bacterium was identified in 1894 by Alexandre Yersin during an epidemic in Hong Kong."
+      },
+      {
+        "id": "W5",
+        "section": "Treatment",
+        "text": "Plague is treated with antibiotics such as gentamicin and doxycycline. Without treatment, plague kills 30 to 90% of those infected."
+      },
+      {
+        "id": "W6",
+        "section": "History",
+        "text": "The Black Death of the 14th century caused more than 50 million deaths. Later outbreaks included the Great Plague of London of 1665 to 1666."
+      },
+      {
+        "id": "W7",
+        "section": "Prevention",
+        "text": "Quarantine, from the Italian for forty days, began as a measure against plague in the late Middle Ages."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.85,
+    "rerankScore": 0.89,
+    "reasons": [
+      "Same headword: PLAGUE and Plague (disease).",
+      "Rare terms appear in both: buboes, groin, armpit, quarantine, 1665.",
+      "Great Plague of London scores well but covers only one outbreak, so it is a second candidate."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Great Plague of London",
+      "url": "https://en.wikipedia.org/wiki/Great_Plague_of_London",
+      "embedScore": 0.79,
+      "rerankScore": 0.71
+    },
+    {
+      "title": "Black Death",
+      "url": "https://en.wikipedia.org/wiki/Black_Death",
+      "embedScore": 0.77,
+      "rerankScore": 0.63
+    },
+    {
+      "title": "Quarantine",
+      "url": "https://en.wikipedia.org/wiki/Quarantine",
+      "embedScore": 0.62,
+      "rerankScore": 0.44
+    }
+  ],
+  "alignments": [
+    {
+      "id": "p1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Buboes",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "buboes or swellings in the groin and armpits"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "the lymph nodes swell into painful buboes, most often in the groin or armpit"
+      },
+      "note": "Same sign, same word, same places on the body."
+    },
+    {
+      "id": "p2",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The cause",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "a peculiar corruption of the air"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "caused by the bacterium Yersinia pestis"
+      },
+      "note": "Corrupted air is replaced by a bacterium, identified in 1894."
+    },
+    {
+      "id": "p3",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Infected goods",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "by goods, as cotton, wool, and clothes, which retain the infection for a long time"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "spread by the bites of infected fleas from small animals such as rats"
+      },
+      "note": "Inference: goods and clothes could carry infected fleas, so the observation had a basis. The carrier was the flea, not the cloth."
+    },
+    {
+      "id": "p4",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Contact with the sick",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "communicated chiefly by contact with infected persons"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Pneumonic plague can spread between people through infected droplets in the air"
+      },
+      "note": "Only the lung form passes directly between people. The common bubonic form comes from flea bites."
+    },
+    {
+      "id": "p5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Quarantine",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "kept in quarantine, that is, separated for forty days"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Quarantine, from the Italian for forty days"
+      },
+      "note": "Same practice, same forty days."
+    },
+    {
+      "id": "p6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "London, 1665",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "in the great plague of London in 1665"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "the Great Plague of London of 1665 to 1666"
+      },
+      "note": "Same outbreak. Wikipedia gives no death count in this passage."
+    },
+    {
+      "id": "p7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Most die",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "the greater part of those seized perish, whatever be done"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Plague is treated with antibiotics"
+      },
+      "note": "True in 1797, no longer: antibiotics now cure most patients. Untreated, 30 to 90% still die."
+    },
+    {
+      "id": "p8",
+      "kind": "dropped",
+      "verdict": "partly",
+      "label": "Born in the Levant",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "first breaks out in Egypt and the Levant"
+      },
+      "wikipedia": null,
+      "note": "Inference: Britain met plague through Levant trade, but the 1797 claim that it starts there has no support in the Wikipedia text."
+    },
+    {
+      "id": "p9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Three forms",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Septicemic plague infects the blood, and pneumonic plague infects the lungs"
+      },
+      "note": "The 1797 entry treats plague as one disease."
+    },
+    {
+      "id": "p10",
+      "kind": "added",
+      "verdict": null,
+      "label": "The bacterium",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "identified in 1894 by Alexandre Yersin"
+      },
+      "note": "Found almost a century after this edition."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Symptoms",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "How deadly it is",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "How it spreads",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Quarantine",
+      "britannica": 0.2,
+      "wikipedia": 0.08
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Fleas and rats",
+      "britannica": 0,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "History of pandemics",
+      "britannica": 0.05,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "How did people in 1797 think plague spread?",
+    "Did quarantine in 1797 work the same way it does today?",
+    "Is plague still as deadly as the 1797 entry says?"
+  ],
+  "answers": {
+    "How did people in 1797 think plague spread?": {
+      "answer": "Through a corruption of the air that started in Egypt and the Levant and travelled by ship [B3], and then by contact with the sick and with goods such as cotton, wool and clothes [B4].\n\nWikipedia says bubonic plague is mainly spread by the bites of infected fleas from rats and other small animals, and only the lung form passes between people [W3]. Goods carrying fleas would explain the old observation, but that is an inference.",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.92
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did quarantine in 1797 work the same way it does today?": {
+      "answer": "The word and the forty days are the same: in 1797 ships and goods from infected places were kept apart for forty days [B5], and Wikipedia traces the word to the Italian for forty days [W7]. The 1797 entry credits quarantine with keeping plague out of Britain for more than a century [B5]. Wikipedia does not say whether that is true.",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.88
+        }
+      ],
+      "grounding": "partial"
+    },
+    "Is plague still as deadly as the 1797 entry says?": {
+      "answer": "No. In 1797 the greater part of those seized died whatever was done [B6]. Today antibiotics such as gentamicin and doxycycline treat it; without treatment 30 to 90% of those infected still die [W5].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

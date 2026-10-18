@@ -1,0 +1,411 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "leprosy",
+    "label": "Leprosy",
+    "headword": "LEPROSY",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "match": "strong",
+    "wikipediaTitle": "Leprosy",
+    "area": "infectious-disease",
+    "teaser": "When the disease is confirmed it is reckoned incurable."
+  },
+  "aliases": [
+    "leprosy",
+    "lepra",
+    "hansen's disease",
+    "elephantiasis graecorum"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0015",
+    "headword": "LEPROSY",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "volume": "Volume 12",
+    "meta": "Encyclopaedia Britannica - Fourth edition, Volume 12 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "LEP                    [ 58 ]                    LEP\n\nLEPIDOPTERA, an order of inſects. See ENTOMOLOGY.\n  LEPROSY, a foul cutaneous diſeaſe, appearing in dry,\nwhite, thin, ſcurfy ſcabs, ſometimes attended with great\nitching. The leproſy of the Arabians, or elephantiaſis,\nis far more dreadful: the ſkin grows thick and tuber-\nculated, the face ſwells, the voice becomes hoarſe, and\nthe fingers and toes loſe all feeling and at length drop\noff.\n  In the middle ages it was ſo common in Europe that\nthere were lazar-houſes for lepers in almoſt every town;\nbut it has now nearly diſappeared from theſe kingdoms.\n  It is thought to be hereditary, and to be cauſed by\na groſs diet of ſalt fiſh and putrid meat, and by want\nof cleanlineſs. It was formerly held to be highly con-\ntagious, and lepers were therefore ſhut out from the\nſociety of other men. When the diſeaſe is confirmed\nit is reckoned incurable.\n  LEPUS, the hare. See MAMMALIA.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "LEPROSY",
+        "text": "LEPROSY, a foul cutaneous disease, appearing in dry, white, thin, scurfy scabs, sometimes attended with great itching."
+      },
+      {
+        "id": "B2",
+        "section": "LEPROSY",
+        "text": "The leprosy of the Arabians, or elephantiasis, is far more dreadful: the skin grows thick and tuberculated, the face swells, the voice becomes hoarse, and the fingers and toes lose all feeling and at length drop off."
+      },
+      {
+        "id": "B3",
+        "section": "LEPROSY",
+        "text": "In the middle ages it was so common in Europe that there were lazar-houses for lepers in almost every town; but it has now nearly disappeared from these kingdoms."
+      },
+      {
+        "id": "B4",
+        "section": "LEPROSY",
+        "text": "It is thought to be hereditary, and to be caused by a gross diet of salt fish and putrid meat, and by want of cleanliness."
+      },
+      {
+        "id": "B5",
+        "section": "LEPROSY",
+        "text": "It was formerly held to be highly contagious, and lepers were therefore shut out from the society of other men."
+      },
+      {
+        "id": "B6",
+        "section": "LEPROSY",
+        "text": "When the disease is confirmed it is reckoned incurable."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-leprosy",
+    "title": "Leprosy",
+    "url": "https://en.wikipedia.org/wiki/Leprosy",
+    "dateModified": "2026-09-18",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Leprosy, also known as Hansen's disease, is a long-term infection by the bacteria Mycobacterium leprae or Mycobacterium lepromatosis. It mainly damages the nerves, the skin, the eyes and the lining of the nose."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "Nerve damage leads to a loss of feeling in the hands and feet. Because injuries then go unnoticed, repeated wounds and infections can cause the loss of fingers and toes; the disease itself does not make body parts fall off."
+      },
+      {
+        "id": "W3",
+        "section": "Signs and symptoms",
+        "text": "In the lepromatous form, the skin thickens and forms nodules, especially on the face."
+      },
+      {
+        "id": "W4",
+        "section": "Cause",
+        "text": "Gerhard Armauer Hansen identified the bacterium in 1873. It was the first bacterium found to cause disease in humans."
+      },
+      {
+        "id": "W5",
+        "section": "Transmission",
+        "text": "Leprosy spreads between people, probably through droplets from the nose and mouth, after months of close contact. It is not highly contagious: about 95% of people who are exposed do not develop the disease."
+      },
+      {
+        "id": "W6",
+        "section": "Treatment",
+        "text": "Leprosy is curable with multidrug therapy, a combination of antibiotics recommended by the World Health Organization since 1981 and given free of charge."
+      },
+      {
+        "id": "W7",
+        "section": "History",
+        "text": "Leprosy was common in medieval Europe, where sufferers were often placed in leper colonies or leprosaria. It later declined in most of Europe. Patients still face stigma and isolation in many places."
+      },
+      {
+        "id": "W8",
+        "section": "Names",
+        "text": "Older texts used the word leprosy for many skin diseases, which were probably not Hansen's disease."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.84,
+    "rerankScore": 0.87,
+    "reasons": [
+      "Same headword in both: LEPROSY.",
+      "Rare terms appear in both: lepers, loss of feeling, fingers and toes, thickened skin.",
+      "Elephantiasis also scores, but today that word names a different disease, so it is listed as a candidate only."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Leper colony",
+      "url": "https://en.wikipedia.org/wiki/Leper_colony",
+      "embedScore": 0.77,
+      "rerankScore": 0.6
+    },
+    {
+      "title": "Elephantiasis",
+      "url": "https://en.wikipedia.org/wiki/Elephantiasis",
+      "embedScore": 0.66,
+      "rerankScore": 0.33
+    },
+    {
+      "title": "Psoriasis",
+      "url": "https://en.wikipedia.org/wiki/Psoriasis",
+      "embedScore": 0.58,
+      "rerankScore": 0.27
+    }
+  ],
+  "alignments": [
+    {
+      "id": "l1",
+      "kind": "reworded",
+      "verdict": "partly",
+      "label": "What the word covers",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "dry, white, thin, scurfy scabs"
+      },
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "Older texts used the word leprosy for many skin diseases"
+      },
+      "note": "A change in language. In 1810 'leprosy' also named scaly skin diseases; today it names only Hansen's disease."
+    },
+    {
+      "id": "l2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Loss of feeling",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the fingers and toes lose all feeling"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Nerve damage leads to a loss of feeling in the hands and feet"
+      },
+      "note": "Same sign. Wikipedia names the cause: nerve damage."
+    },
+    {
+      "id": "l3",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Fingers dropping off",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "at length drop off"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "the disease itself does not make body parts fall off"
+      },
+      "note": "Fingers and toes are lost, but through unnoticed injuries, not because the disease rots them away."
+    },
+    {
+      "id": "l4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Thickened skin",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the skin grows thick and tuberculated"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "the skin thickens and forms nodules"
+      },
+      "note": "Tubercles in 1810, nodules today."
+    },
+    {
+      "id": "l5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Medieval lazar-houses",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "there were lazar-houses for lepers in almost every town"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "sufferers were often placed in leper colonies or leprosaria"
+      },
+      "note": "Same institutions under other names."
+    },
+    {
+      "id": "l6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Diet as the cause",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "caused by a gross diet of salt fish and putrid meat"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a long-term infection by the bacteria Mycobacterium leprae"
+      },
+      "note": "Diet is replaced by a bacterium, found in 1873."
+    },
+    {
+      "id": "l7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Hereditary",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "It is thought to be hereditary"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Leprosy spreads between people"
+      },
+      "note": "Inference: cases in families come from long close contact, not inheritance."
+    },
+    {
+      "id": "l8",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Highly contagious",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "It was formerly held to be highly contagious"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "It is not highly contagious"
+      },
+      "note": "The 1810 entry already doubts the old view, and Wikipedia agrees. But the disease does pass between people."
+    },
+    {
+      "id": "l9",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Incurable",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "it is reckoned incurable"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Leprosy is curable with multidrug therapy"
+      },
+      "note": "True in 1810, no longer: antibiotics cure it."
+    },
+    {
+      "id": "l10",
+      "kind": "added",
+      "verdict": null,
+      "label": "Hansen's bacterium",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "It was the first bacterium found to cause disease in humans"
+      },
+      "note": "A landmark for germ theory, 63 years after this edition."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Skin signs",
+      "britannica": 0.25,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Nerves and limbs",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "History in Europe",
+      "britannica": 0.2,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Contagion",
+      "britannica": 0.1,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.1,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Stigma",
+      "britannica": 0,
+      "wikipedia": 0.08
+    },
+    {
+      "topic": "What the word covers",
+      "britannica": 0,
+      "wikipedia": 0.06
+    }
+  ],
+  "suggestedQuestions": [
+    "Is the 1810 leprosy the same disease as leprosy today?",
+    "Do fingers and toes really drop off with leprosy?",
+    "Was the 1810 entry right that leprosy is incurable?"
+  ],
+  "answers": {
+    "Is the 1810 leprosy the same disease as leprosy today?": {
+      "answer": "Only in part. The 1810 entry uses the word for a scaly skin disease with dry white scabs [B1] and for a worse form with thick skin and loss of feeling [B2]. Wikipedia says older texts used the word for many skin diseases that were probably not Hansen's disease [W8]. The second form [B2] matches the modern description of nerve damage and thickened skin [W2] [W3].",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W8",
+          "source": "wikipedia",
+          "passageId": "W8",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.82
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Do fingers and toes really drop off with leprosy?": {
+      "answer": "Not directly. The 1810 entry says the fingers and toes lose all feeling and at length drop off [B2]. Wikipedia says the loss of feeling is real, but fingers and toes are lost through repeated unnoticed injuries and infections; the disease itself does not make them fall off [W2].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Was the 1810 entry right that leprosy is incurable?": {
+      "answer": "It was right for 1810, but not today. The entry says the confirmed disease is reckoned incurable [B6]. Wikipedia says leprosy is curable with multidrug therapy, recommended by the World Health Organization since 1981 [W6].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.94
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

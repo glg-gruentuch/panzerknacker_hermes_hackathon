@@ -1,0 +1,394 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "hydrophobia",
+    "label": "Hydrophobia",
+    "headword": "HYDROPHOBIA",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Rabies",
+    "area": "infectious-disease",
+    "teaser": "When the hydrophobia is once formed, it is almost always fatal, and no remedy has yet been found that can be depended upon."
+  },
+  "aliases": [
+    "hydrophobia",
+    "rabies",
+    "canine madness",
+    "mad dog"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0016",
+    "headword": "HYDROPHOBIA",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 8",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 8 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "HYD                    [ 802 ]                    HYD\n\nHYDROPHANES, a kind of ſtone. See OCULUS MUNDI.\n  HYDROPHOBIA, a dread of water, the chief ſymptom\nof the diſeaſe which follows the bite of a mad dog, and\nhence often uſed as the name of the diſeaſe itſelf.\n  The bite of a mad dog, cat, or wolf communicates a\npoiſon which may lie hid in the body for weeks, and\nſometimes for months, before it ſhows itſelf. The diſ-\neaſe begins with pain in the bitten part, melancholy,\nand want of ſleep; then the patient is ſeized with a\nhorror at the ſight of water, and cannot ſwallow li-\nquids without violent convulſions.\n  When the hydrophobia is once formed, it is almoſt\nalways fatal, and no remedy has yet been found that\ncan be depended upon. The dipping in the ſea, and the\nOrmſkirk medicine, are much celebrated as preventives;\nbut the ſureſt is to cut out the bitten part immediately,\nand to waſh the wound well.\n  The madneſs in dogs is thought by ſome to ariſe from\ngreat heat, or from want of water.\n  HYDROSTATICS, that part of philoſophy which treats",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "HYDROPHOBIA",
+        "text": "HYDROPHOBIA, a dread of water, the chief symptom of the disease which follows the bite of a mad dog, and hence often used as the name of the disease itself."
+      },
+      {
+        "id": "B2",
+        "section": "HYDROPHOBIA",
+        "text": "The bite of a mad dog, cat, or wolf communicates a poison which may lie hid in the body for weeks, and sometimes for months, before it shows itself."
+      },
+      {
+        "id": "B3",
+        "section": "HYDROPHOBIA",
+        "text": "The disease begins with pain in the bitten part, melancholy, and want of sleep; then the patient is seized with a horror at the sight of water, and cannot swallow liquids without violent convulsions."
+      },
+      {
+        "id": "B4",
+        "section": "HYDROPHOBIA",
+        "text": "When the hydrophobia is once formed, it is almost always fatal, and no remedy has yet been found that can be depended upon."
+      },
+      {
+        "id": "B5",
+        "section": "HYDROPHOBIA",
+        "text": "The dipping in the sea, and the Ormskirk medicine, are much celebrated as preventives; but the surest is to cut out the bitten part immediately, and to wash the wound well."
+      },
+      {
+        "id": "B6",
+        "section": "HYDROPHOBIA",
+        "text": "The madness in dogs is thought by some to arise from great heat, or from want of water."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-rabies",
+    "title": "Rabies",
+    "url": "https://en.wikipedia.org/wiki/Rabies",
+    "dateModified": "2026-09-25",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Rabies is a viral disease that causes inflammation of the brain in humans and other mammals. It is caused by lyssaviruses, including the rabies virus."
+      },
+      {
+        "id": "W2",
+        "section": "Transmission",
+        "text": "The virus is spread when an infected animal bites or scratches a person. Dogs cause about 99% of human cases in countries where dogs commonly have the disease; in the Americas, bats are the main source."
+      },
+      {
+        "id": "W3",
+        "section": "Signs and symptoms",
+        "text": "The time between infection and the first symptoms is usually one to three months, but can vary from under a week to more than a year."
+      },
+      {
+        "id": "W4",
+        "section": "Signs and symptoms",
+        "text": "Early symptoms include fever and tingling at the site of the bite. Later come violent movements, fear of water, an inability to swallow, confusion and loss of consciousness."
+      },
+      {
+        "id": "W5",
+        "section": "Prognosis",
+        "text": "Once symptoms appear, rabies is nearly always fatal."
+      },
+      {
+        "id": "W6",
+        "section": "Prevention",
+        "text": "Washing the wound well with soap and water for about 15 minutes, followed by rabies vaccine and sometimes rabies immunoglobulin, prevents the disease if given before symptoms start."
+      },
+      {
+        "id": "W7",
+        "section": "History",
+        "text": "Louis Pasteur and Emile Roux developed the first rabies vaccine. In 1885 it was given to Joseph Meister, a nine-year-old boy bitten by a rabid dog, who survived."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.76,
+    "rerankScore": 0.89,
+    "reasons": [
+      "The headwords differ (HYDROPHOBIA and Rabies), but the content matches: bite of a mad dog, fear of water, long delay, almost always fatal.",
+      "Wikipedia's article on hydrophobia is a short page about the symptom, so the reranker puts Rabies first.",
+      "The embedding score is lower because of the different names."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Hydrophobia",
+      "url": "https://en.wikipedia.org/wiki/Hydrophobia",
+      "embedScore": 0.82,
+      "rerankScore": 0.61
+    },
+    {
+      "title": "Rabies vaccine",
+      "url": "https://en.wikipedia.org/wiki/Rabies_vaccine",
+      "embedScore": 0.68,
+      "rerankScore": 0.52
+    }
+  ],
+  "alignments": [
+    {
+      "id": "h1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Dread of water",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a dread of water"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "fear of water"
+      },
+      "note": "The same symptom. In 1797 it named the disease; today it is one sign of rabies."
+    },
+    {
+      "id": "h2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Spread by a bite",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "The bite of a mad dog, cat, or wolf communicates a poison"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "The virus is spread when an infected animal bites or scratches a person"
+      },
+      "note": "Same route. The 'poison' is now a virus."
+    },
+    {
+      "id": "h3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "A long delay",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "may lie hid in the body for weeks, and sometimes for months"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "usually one to three months"
+      },
+      "note": "The incubation period matches."
+    },
+    {
+      "id": "h4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "First sign at the bite",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "pain in the bitten part"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "tingling at the site of the bite"
+      },
+      "note": "Same early sign, in the same place."
+    },
+    {
+      "id": "h5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Cannot swallow",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "cannot swallow liquids without violent convulsions"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "violent movements, fear of water, an inability to swallow"
+      },
+      "note": "Same signs."
+    },
+    {
+      "id": "h6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Almost always fatal",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "it is almost always fatal"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Once symptoms appear, rabies is nearly always fatal"
+      },
+      "note": "Still true after two centuries."
+    },
+    {
+      "id": "h7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Treating the wound",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the surest is to cut out the bitten part immediately, and to wash the wound well"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Washing the wound well with soap and water for about 15 minutes"
+      },
+      "note": "Washing the wound is still the first step. Cutting it out is not; vaccine follows instead."
+    },
+    {
+      "id": "h8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Sea-dipping",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "The dipping in the sea, and the Ormskirk medicine, are much celebrated as preventives"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "followed by rabies vaccine and sometimes rabies immunoglobulin"
+      },
+      "note": "Folk preventives are replaced by vaccine given after the bite."
+    },
+    {
+      "id": "h9",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Madness in dogs",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "to arise from great heat, or from want of water"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "The virus is spread when an infected animal bites"
+      },
+      "note": "Dogs catch it from the bite of another infected animal, not from heat or thirst."
+    },
+    {
+      "id": "h10",
+      "kind": "added",
+      "verdict": null,
+      "label": "Pasteur's vaccine",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "In 1885 it was given to Joseph Meister"
+      },
+      "note": "The first rabies vaccine came 88 years after this edition."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "The name",
+      "britannica": 0.15,
+      "wikipedia": 0.05
+    },
+    {
+      "topic": "Bite and spread",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Incubation",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Symptoms",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Outcome",
+      "britannica": 0.1,
+      "wikipedia": 0.08
+    },
+    {
+      "topic": "Prevention after a bite",
+      "britannica": 0.15,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Disease in dogs",
+      "britannica": 0.1,
+      "wikipedia": 0.07
+    },
+    {
+      "topic": "Vaccine history",
+      "britannica": 0,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "Is hydrophobia in 1797 the same disease as rabies?",
+    "What did the 1797 entry advise after a bite, and what is advised now?",
+    "Is rabies still almost always fatal?"
+  ],
+  "answers": {
+    "Is hydrophobia in 1797 the same disease as rabies?": {
+      "answer": "Yes. The 1797 entry describes a disease that follows the bite of a mad dog and takes its name from the dread of water [B1]. Wikipedia describes rabies as spread by animal bites [W2], with fear of water and inability to swallow among its signs [W4]. The name changed from the symptom to the disease; the disease is the same.",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.92
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What did the 1797 entry advise after a bite, and what is advised now?": {
+      "answer": "In 1797 the surest measure was to cut out the bitten part at once and wash the wound well; sea-dipping and the Ormskirk medicine were popular but are not recommended by the entry [B5]. Today the wound is washed with soap and water for about 15 minutes, followed by rabies vaccine and sometimes immunoglobulin [W6]. Washing the wound is the step both texts share.",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Is rabies still almost always fatal?": {
+      "answer": "Yes, once symptoms appear. The 1797 entry says it is almost always fatal once formed [B4], and Wikipedia says the same [W5]. What changed is prevention: vaccine given after the bite stops the disease before symptoms start [W6].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.84
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

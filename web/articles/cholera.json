@@ -1,0 +1,391 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "cholera",
+    "label": "Cholera",
+    "headword": "CHOLERA",
+    "edition": "Seventh edition",
+    "year": 1842,
+    "match": "strong",
+    "wikipediaTitle": "Cholera",
+    "area": "infectious-disease",
+    "teaser": "Its cause has not been discovered."
+  },
+  "aliases": [
+    "cholera",
+    "cholera morbus",
+    "asiatic cholera",
+    "spasmodic cholera"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0013",
+    "headword": "CHOLERA",
+    "edition": "Seventh edition",
+    "year": 1842,
+    "volume": "Volume 6",
+    "meta": "Encyclopaedia Britannica - Seventh edition, Volume 6 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "CHOLERA.                    573\n\nCHOLER, one of the four humours. See BILE.\n  CHOLERA, or CHOLERA MORBUS, a ſudden purging and\nvomiting, with violent pains and cramps, common in\nthis country in the end of ſummer, and ſeldom fatal.\n  A far more dreadful form, called the ſpaſmodic, ma-\nlignant, or Aſiatic cholera, broke out at Jeſſore in Ben-\ngal in 1817, ſpread over the greater part of Aſia, and\nreached Sunderland in October 1831. The evacuations\nſoon loſe all colour and reſemble rice-water; the ſkin\nbecomes cold and blue, the pulſe fails, and death often\nfollows within a day.\n  Its cauſe has not been diſcovered. Moſt writers aſ-\ncribe it to ſome unknown ſtate of the atmoſphere, ſince\nit travels againſt the wind and attacks the cleanly and\nthe filthy alike. Whether it be contagious is ſtill diſ-\nputed; the greater number of medical men in this\ncountry hold that it is not, as attendants on the ſick\nſeldom take it.\n  Bleeding, calomel, and opium were chiefly uſed in\nthe cure. In 1832 Dr Latta of Leith injected large\nquantities of warm ſaline water into the veins, and\nſome patients apparently dying were reſtored.\n  CHOLESTERINE. See CHEMISTRY.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "CHOLERA",
+        "text": "CHOLERA, or CHOLERA MORBUS, a sudden purging and vomiting, with violent pains and cramps, common in this country in the end of summer, and seldom fatal."
+      },
+      {
+        "id": "B2",
+        "section": "CHOLERA",
+        "text": "A far more dreadful form, called the spasmodic, malignant, or Asiatic cholera, broke out at Jessore in Bengal in 1817, spread over the greater part of Asia, and reached Sunderland in October 1831."
+      },
+      {
+        "id": "B3",
+        "section": "CHOLERA",
+        "text": "The evacuations soon lose all colour and resemble rice-water; the skin becomes cold and blue, the pulse fails, and death often follows within a day."
+      },
+      {
+        "id": "B4",
+        "section": "CHOLERA",
+        "text": "Its cause has not been discovered. Most writers ascribe it to some unknown state of the atmosphere, since it travels against the wind and attacks the cleanly and the filthy alike."
+      },
+      {
+        "id": "B5",
+        "section": "CHOLERA",
+        "text": "Whether it be contagious is still disputed; the greater number of medical men in this country hold that it is not, as attendants on the sick seldom take it."
+      },
+      {
+        "id": "B6",
+        "section": "CHOLERA",
+        "text": "Bleeding, calomel, and opium were chiefly used in the cure. In 1832 Dr Latta of Leith injected large quantities of warm saline water into the veins, and some patients apparently dying were restored."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-cholera",
+    "title": "Cholera",
+    "url": "https://en.wikipedia.org/wiki/Cholera",
+    "dateModified": "2026-10-06",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Cholera is an infection of the small intestine by some strains of the bacterium Vibrio cholerae. The main symptom is large amounts of watery diarrhoea that can cause severe dehydration within hours."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "The diarrhoea has been described as rice-water stool. Severe dehydration can make the skin turn bluish, and death can follow within hours."
+      },
+      {
+        "id": "W3",
+        "section": "Transmission",
+        "text": "Cholera spreads mostly through water and food contaminated with human faeces containing the bacteria. Direct spread from one person to another is uncommon."
+      },
+      {
+        "id": "W4",
+        "section": "History",
+        "text": "The first cholera pandemic began in Bengal in 1817. The second pandemic reached Britain in 1831 and North America in 1832."
+      },
+      {
+        "id": "W5",
+        "section": "History",
+        "text": "In 1854 John Snow traced an outbreak in London to a contaminated public water pump on Broad Street. Filippo Pacini described the bacterium the same year, and Robert Koch identified it again in 1883."
+      },
+      {
+        "id": "W6",
+        "section": "Treatment",
+        "text": "The main treatment is oral rehydration therapy, replacing lost fluids with a mildly sweet and salty solution. Intravenous fluids are used for severe dehydration, and antibiotics shorten the illness."
+      },
+      {
+        "id": "W7",
+        "section": "Prevention",
+        "text": "Improved sanitation and clean drinking water prevent the disease. Oral vaccines also give protection."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.87,
+    "rerankScore": 0.92,
+    "reasons": [
+      "Same headword in both: CHOLERA.",
+      "Rare terms appear in both: rice-water, Bengal, 1817, 1831, blue skin.",
+      "The 1854 Broad Street outbreak article scores lower; it covers one event that this edition predates."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "1854 Broad Street cholera outbreak",
+      "url": "https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak",
+      "embedScore": 0.74,
+      "rerankScore": 0.51
+    },
+    {
+      "title": "1817–1824 cholera pandemic",
+      "url": "https://en.wikipedia.org/wiki/1817%E2%80%931824_cholera_pandemic",
+      "embedScore": 0.78,
+      "rerankScore": 0.64
+    },
+    {
+      "title": "Oral rehydration therapy",
+      "url": "https://en.wikipedia.org/wiki/Oral_rehydration_therapy",
+      "embedScore": 0.6,
+      "rerankScore": 0.35
+    }
+  ],
+  "alignments": [
+    {
+      "id": "c1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Bengal, 1817",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "broke out at Jessore in Bengal in 1817"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "The first cholera pandemic began in Bengal in 1817"
+      },
+      "note": "Same place, same year."
+    },
+    {
+      "id": "c2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Arrival in Britain",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "reached Sunderland in October 1831"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "The second pandemic reached Britain in 1831"
+      },
+      "note": "Same year. Wikipedia counts this as a second pandemic; the 1842 entry sees one continuous spread."
+    },
+    {
+      "id": "c3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Rice-water",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "resemble rice-water"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "rice-water stool"
+      },
+      "note": "The same image survives in the modern description."
+    },
+    {
+      "id": "c4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Blue skin, quick death",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the skin becomes cold and blue, the pulse fails, and death often follows within a day"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "the skin turn bluish, and death can follow within hours"
+      },
+      "note": "Same signs. Wikipedia names the cause: dehydration."
+    },
+    {
+      "id": "c5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The cause",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "some unknown state of the atmosphere"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "the bacterium Vibrio cholerae"
+      },
+      "note": "An unknown state of the air is replaced by a bacterium, found twelve years after this edition."
+    },
+    {
+      "id": "c6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Contagion",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the greater number of medical men in this country hold that it is not"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Cholera spreads mostly through water and food contaminated with human faeces"
+      },
+      "note": "Right that nurses seldom caught it by touch; wrong that it does not pass between people. It passes through water."
+    },
+    {
+      "id": "c7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Bleeding and calomel",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "Bleeding, calomel, and opium were chiefly used in the cure"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "The main treatment is oral rehydration therapy"
+      },
+      "note": "Bleeding removed fluid from patients who were dying of fluid loss."
+    },
+    {
+      "id": "c8",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Saline into the veins",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "injected large quantities of warm saline water into the veins"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Intravenous fluids are used for severe dehydration"
+      },
+      "note": "Latta's experiment of 1832 is the treatment used today for severe cases."
+    },
+    {
+      "id": "c9",
+      "kind": "dropped",
+      "verdict": "partly",
+      "label": "Summer cholera",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "common in this country in the end of summer, and seldom fatal"
+      },
+      "wikipedia": null,
+      "note": "Inference: in 1842 the word also covered ordinary summer diarrhoea. Today it names only the Vibrio infection."
+    },
+    {
+      "id": "c10",
+      "kind": "added",
+      "verdict": null,
+      "label": "Broad Street pump",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "John Snow traced an outbreak in London to a contaminated public water pump"
+      },
+      "note": "Snow's map came twelve years after this edition."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Symptoms",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Spread across the world",
+      "britannica": 0.2,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Contagion and water",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Summer cholera",
+      "britannica": 0.05,
+      "wikipedia": 0
+    },
+    {
+      "topic": "John Snow and the bacterium",
+      "britannica": 0,
+      "wikipedia": 0.14
+    },
+    {
+      "topic": "Sanitation and vaccines",
+      "britannica": 0,
+      "wikipedia": 0.12
+    }
+  ],
+  "suggestedQuestions": [
+    "Did doctors in 1842 think cholera was contagious?",
+    "Which 1842 treatment for cholera is still used?",
+    "What did the 1842 entry say caused cholera?"
+  ],
+  "answers": {
+    "Did doctors in 1842 think cholera was contagious?": {
+      "answer": "Most did not. The 1842 entry says the question was disputed, and most British medical men held that it was not contagious because attendants on the sick seldom caught it [B5]. Wikipedia says cholera spreads mostly through water and food contaminated with faeces, and that direct spread between people is uncommon [W3].\n\nSo the observation was sound, but the conclusion missed the water route, which John Snow traced in 1854 [W5].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.82
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Which 1842 treatment for cholera is still used?": {
+      "answer": "Saline fluid into the veins. The 1842 entry reports that Dr Latta of Leith injected warm saline water in 1832 and restored some dying patients [B6]. Wikipedia lists intravenous fluids for severe dehydration, with oral rehydration as the main treatment [W6]. Bleeding, calomel and opium [B6] are no longer used.",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.94
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What did the 1842 entry say caused cholera?": {
+      "answer": "It says the cause had not been discovered, and that most writers blamed an unknown state of the atmosphere [B4]. Wikipedia names the bacterium Vibrio cholerae [W1].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.92
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

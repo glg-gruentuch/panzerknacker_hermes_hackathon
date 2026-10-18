@@ -1,0 +1,402 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "ague",
+    "label": "Ague",
+    "headword": "AGUE",
+    "edition": "Second edition",
+    "year": 1778,
+    "match": "strong",
+    "wikipediaTitle": "Malaria",
+    "area": "infectious-disease",
+    "teaser": "The Peruvian bark is a certain specific in this disease"
+  },
+  "aliases": [
+    "ague",
+    "malaria",
+    "intermittent fever",
+    "marsh fever",
+    "tertian",
+    "quartan"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0011",
+    "headword": "AGUE",
+    "edition": "Second edition",
+    "year": 1778,
+    "volume": "Volume 1",
+    "meta": "Encyclopaedia Britannica - Second edition, Volume 1 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "AGU                    [ 214 ]                    AGU\n\nAGUAPECACA, a Braſilian bird. See TRINGA.\n  AGUE, an intermitting fever, conſiſting of a cold\nfit followed by a hot one, and ending in a ſweat, after\nwhich the patient is free until the next fit returns.\nWhen the fit returns every other day it is called a\ntertian; when two days intervene, a quartan; and\nwhen every day, a quotidian.\n  Agues are moſt common in low and marſhy coun-\ntries, as Eſſex, Lincolnſhire, and Holland, and in ſpring\nand autumn; and are juſtly aſcribed to the noxious\nvapours that riſe from ſtagnant waters. When an ague\ncontinues long, the ſpleen often ſwells into a hard tu-\nmour, which the common people call the ague-cake.\n  The Peruvian bark is a certain ſpecific in this diſ-\neaſe; it ſhould be given in the intervals between the\nfits, in doſes of a dram every two or three hours.\n  Agues in ſpring are ſeldom dangerous, and are even\nthought by ſome to be wholeſome; but thoſe of autumn\nare more obſtinate, and often end in dropſy.\n  AGUILLANEUF, a form of rejoicing. See YULE.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "AGUE",
+        "text": "AGUE, an intermitting fever, consisting of a cold fit followed by a hot one, and ending in a sweat, after which the patient is free until the next fit returns."
+      },
+      {
+        "id": "B2",
+        "section": "AGUE",
+        "text": "When the fit returns every other day it is called a tertian; when two days intervene, a quartan; and when every day, a quotidian."
+      },
+      {
+        "id": "B3",
+        "section": "AGUE",
+        "text": "Agues are most common in low and marshy countries, as Essex, Lincolnshire, and Holland, and in spring and autumn; and are justly ascribed to the noxious vapours that rise from stagnant waters."
+      },
+      {
+        "id": "B4",
+        "section": "AGUE",
+        "text": "When an ague continues long, the spleen often swells into a hard tumour, which the common people call the ague-cake."
+      },
+      {
+        "id": "B5",
+        "section": "AGUE",
+        "text": "The Peruvian bark is a certain specific in this disease; it should be given in the intervals between the fits, in doses of a dram every two or three hours."
+      },
+      {
+        "id": "B6",
+        "section": "AGUE",
+        "text": "Agues in spring are seldom dangerous, and are even thought by some to be wholesome; but those of autumn are more obstinate, and often end in dropsy."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-malaria",
+    "title": "Malaria",
+    "url": "https://en.wikipedia.org/wiki/Malaria",
+    "dateModified": "2026-10-02",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Malaria is a mosquito-borne infectious disease caused by single-celled parasites of the genus Plasmodium. It is spread by the bites of infected female Anopheles mosquitoes."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "Attacks usually begin with chills and shivering, followed by fever and then sweating. They can return every two days with P. vivax and P. ovale, and every three days with P. malariae."
+      },
+      {
+        "id": "W3",
+        "section": "Etymology",
+        "text": "The name comes from the medieval Italian mala aria, 'bad air'. The disease was once called ague or marsh fever because it was linked with swamps and marshland."
+      },
+      {
+        "id": "W4",
+        "section": "Signs and symptoms",
+        "text": "Repeated infections commonly cause an enlarged spleen and anaemia."
+      },
+      {
+        "id": "W5",
+        "section": "Treatment",
+        "text": "Quinine, from the bark of the cinchona tree, was the first effective treatment and was used in Europe from the 17th century. Today artemisinin-based combination therapies are recommended."
+      },
+      {
+        "id": "W6",
+        "section": "History",
+        "text": "In 1880 Charles Laveran saw the parasite in the blood of a patient, and in 1897 Ronald Ross showed that mosquitoes transmit it."
+      },
+      {
+        "id": "W7",
+        "section": "Epidemiology",
+        "text": "Malaria is now found mainly in tropical and subtropical regions, and most deaths are among young children in Africa. It was once common in parts of Europe, including the English fens."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.74,
+    "rerankScore": 0.86,
+    "reasons": [
+      "The headwords differ (AGUE and Malaria), but the Wikipedia article says the disease was once called ague.",
+      "Rare terms appear in both: tertian and quartan cycles, spleen, Peruvian (cinchona) bark, marshes.",
+      "The embedding score is lower because of the different names; the reranker reads the content and puts Malaria first."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Quinine",
+      "url": "https://en.wikipedia.org/wiki/Quinine",
+      "embedScore": 0.71,
+      "rerankScore": 0.55
+    },
+    {
+      "title": "Fever",
+      "url": "https://en.wikipedia.org/wiki/Fever",
+      "embedScore": 0.69,
+      "rerankScore": 0.37
+    },
+    {
+      "title": "Cinchona",
+      "url": "https://en.wikipedia.org/wiki/Cinchona",
+      "embedScore": 0.63,
+      "rerankScore": 0.42
+    }
+  ],
+  "alignments": [
+    {
+      "id": "a1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Cold, hot, sweat",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a cold fit followed by a hot one, and ending in a sweat"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "chills and shivering, followed by fever and then sweating"
+      },
+      "note": "The same three stages of an attack, in the same order."
+    },
+    {
+      "id": "a2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Tertian and quartan",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "When the fit returns every other day it is called a tertian; when two days intervene, a quartan"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "every two days with P. vivax and P. ovale, and every three days with P. malariae"
+      },
+      "note": "The rhythms of 1778 now map to parasite species."
+    },
+    {
+      "id": "a3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Marsh country",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "most common in low and marshy countries"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "linked with swamps and marshland"
+      },
+      "note": "The link to marshes is the same in both."
+    },
+    {
+      "id": "a4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The cause",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "justly ascribed to the noxious vapours that rise from stagnant waters"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "spread by the bites of infected female Anopheles mosquitoes"
+      },
+      "note": "Vapours from stagnant water are replaced by mosquitoes that breed in it. The name malaria, 'bad air', keeps the old theory."
+    },
+    {
+      "id": "a5",
+      "kind": "retained",
+      "verdict": "partly",
+      "label": "Essex and Holland",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "as Essex, Lincolnshire, and Holland"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "It was once common in parts of Europe, including the English fens"
+      },
+      "note": "True in 1778, no longer: malaria is now mainly tropical."
+    },
+    {
+      "id": "a6",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Ague-cake",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "the spleen often swells into a hard tumour"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "an enlarged spleen"
+      },
+      "note": "The common people's ague-cake is the enlarged spleen of modern texts."
+    },
+    {
+      "id": "a7",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Peruvian bark",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "The Peruvian bark is a certain specific in this disease"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Quinine, from the bark of the cinchona tree, was the first effective treatment"
+      },
+      "note": "Same remedy. Quinine is the drug in the bark; newer drugs have since replaced it as first choice."
+    },
+    {
+      "id": "a8",
+      "kind": "dropped",
+      "verdict": "wrong",
+      "label": "Wholesome agues",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "are even thought by some to be wholesome"
+      },
+      "wikipedia": null,
+      "note": "Inference: no modern source treats malaria as healthy. The 1778 entry itself reports the view without endorsing it."
+    },
+    {
+      "id": "a9",
+      "kind": "added",
+      "verdict": null,
+      "label": "The parasite",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "In 1880 Charles Laveran saw the parasite in the blood of a patient"
+      },
+      "note": "The cause was found a century after this edition."
+    },
+    {
+      "id": "a10",
+      "kind": "added",
+      "verdict": null,
+      "label": "Deaths today",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "most deaths are among young children in Africa"
+      },
+      "note": "The 1778 entry only knows the disease in northern Europe."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "The fit",
+      "britannica": 0.25,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Types by rhythm",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Marshes and bad air",
+      "britannica": 0.2,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Spleen",
+      "britannica": 0.1,
+      "wikipedia": 0.05
+    },
+    {
+      "topic": "Bark and quinine",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Season and outcome",
+      "britannica": 0.1,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Parasite and mosquito",
+      "britannica": 0,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Where it is today",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "Is the 1778 ague the same disease as malaria?",
+    "Was the 1778 entry right about Peruvian bark?",
+    "Why did people in 1778 link ague with marshes?"
+  ],
+  "answers": {
+    "Is the 1778 ague the same disease as malaria?": {
+      "answer": "Yes, in most respects. Wikipedia says the disease was once called ague or marsh fever [W3]. The 1778 description of a cold fit, a hot fit and a sweat [B1] matches the modern attack of chills, fever and sweating [W2], and the tertian and quartan rhythms [B2] match the two-day and three-day cycles of different Plasmodium species [W2].",
+      "citations": [
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.91
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.88
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Was the 1778 entry right about Peruvian bark?": {
+      "answer": "Yes. The 1778 entry calls the Peruvian bark a certain specific [B5]. Wikipedia says quinine, from the bark of the cinchona tree, was the first effective treatment [W5]. Today artemisinin-based combinations are recommended instead [W5].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.94
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Why did people in 1778 link ague with marshes?": {
+      "answer": "Because agues were most common in low, marshy country such as Essex, Lincolnshire and Holland, and were blamed on vapours from stagnant water [B3]. The link was real but the mechanism was wrong: Wikipedia says the disease is spread by Anopheles mosquitoes [W1], and the name malaria, 'bad air', preserves the old theory [W3].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.89
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

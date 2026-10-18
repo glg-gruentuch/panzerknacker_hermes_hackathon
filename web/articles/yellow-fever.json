@@ -1,0 +1,410 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "yellow-fever",
+    "label": "Yellow fever",
+    "headword": "YELLOW FEVER",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "match": "strong",
+    "wikipediaTitle": "Yellow fever",
+    "area": "infectious-disease",
+    "teaser": "Its cause is generally ascribed to the putrid exhalations of marshes and of filth, which are raised by the heat of the sun and corrupt the air."
+  },
+  "aliases": [
+    "yellow fever",
+    "yellow jack",
+    "black vomit"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0009",
+    "headword": "YELLOW FEVER",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "volume": "Volume 20",
+    "meta": "Encyclopaedia Britannica - Fourth edition, Volume 20 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "YEL                    [ 846 ]                    YEL\n\nYELLOW, one of the ſimple or primitive colours of\nlight. See CHROMATICS.\n  YELLOW FEVER, a malignant fever of hot climates,\nſo called from the yellow colour which the ſkin ac-\nquires in the courſe of it. It is moſt frequcnt in the\nWeſt Indies and in the ſea-ports of America, and chiefly\nattacks ſtrangers lately arrived from colder countries.\n  The diſeaſe begins with chills, violent pains in the\nhead and back, and a fluſhed face; after a ſhort re-\nmiſſion the ſkin turns yellow, and the patient often\nthrows up a matter like coffee-grounds, called the black\nvomit, which is commonly a fatal ſign.\n  Its cauſe is generally aſcribed to the putrid exhala-\ntions of marſhes and of filth, which are raiſed by the\nheat of the ſun and corrupt the air. Whether it be con-\ntagious is much diſputed. Many phyſicians in Philadel-\nphia, after the great epidemic of 1793, held that it does\nnot paſs from one perſon to another, but ariſes from\nthe air of the place.\n  The cure moſt in favour is by copious bleeding and\nby calomel given until the mouth becomes ſore; others\nprefer the bark and wine. It is obſerved that thoſe who\nhave once recovered from this fever are not attacked\nby it a ſecond time.\n  YELLOW-HAMMER. See EMBERIZA.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "YELLOW FEVER",
+        "text": "YELLOW FEVER, a malignant fever of hot climates, so called from the yellow colour which the skin acquires in the course of it."
+      },
+      {
+        "id": "B2",
+        "section": "YELLOW FEVER",
+        "text": "It is most frequent in the West Indies and in the sea-ports of America, and chiefly attacks strangers lately arrived from colder countries."
+      },
+      {
+        "id": "B3",
+        "section": "YELLOW FEVER",
+        "text": "The disease begins with chills, violent pains in the head and back, and a flushed face; after a short remission the skin turns yellow, and the patient often throws up a matter like coffee-grounds, called the black vomit, which is commonly a fatal sign."
+      },
+      {
+        "id": "B4",
+        "section": "YELLOW FEVER",
+        "text": "Its cause is generally ascribed to the putrid exhalations of marshes and of filth, which are raised by the heat of the sun and corrupt the air."
+      },
+      {
+        "id": "B5",
+        "section": "YELLOW FEVER",
+        "text": "Whether it be contagious is much disputed. Many physicians in Philadelphia, after the great epidemic of 1793, held that it does not pass from one person to another, but arises from the air of the place."
+      },
+      {
+        "id": "B6",
+        "section": "YELLOW FEVER",
+        "text": "The cure most in favour is by copious bleeding and by calomel given until the mouth becomes sore; others prefer the bark and wine."
+      },
+      {
+        "id": "B7",
+        "section": "YELLOW FEVER",
+        "text": "It is observed that those who have once recovered from this fever are not attacked by it a second time."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-yellow-fever",
+    "title": "Yellow fever",
+    "url": "https://en.wikipedia.org/wiki/Yellow_fever",
+    "dateModified": "2026-09-14",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Yellow fever is a viral disease of typically short duration. In most cases, symptoms include fever, chills, loss of appetite, nausea, muscle pains, particularly in the back, and headaches."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "In about 15% of people, the disease enters a second, toxic phase after a brief improvement, with recurring fever, jaundice caused by liver damage, and bleeding, including bleeding into the stomach that causes dark vomit. Between 20 and 50% of people who enter this phase die."
+      },
+      {
+        "id": "W3",
+        "section": "Cause",
+        "text": "The disease is caused by the yellow fever virus and is spread by the bite of an infected female mosquito, mainly Aedes aegypti. It does not spread directly between people."
+      },
+      {
+        "id": "W4",
+        "section": "History",
+        "text": "The virus originated in Africa and reached the Americas with the slave trade in the 17th century. A 1793 epidemic in Philadelphia killed about a tenth of the city's population."
+      },
+      {
+        "id": "W5",
+        "section": "History",
+        "text": "In 1900 a United States Army commission led by Walter Reed confirmed Carlos Finlay's theory that mosquitoes transmit the disease."
+      },
+      {
+        "id": "W6",
+        "section": "Prevention",
+        "text": "A safe and effective vaccine exists, developed by Max Theiler in the 1930s, and one dose protects most people for life. Mosquito control also prevents spread."
+      },
+      {
+        "id": "W7",
+        "section": "Treatment",
+        "text": "No medicine is known to work against the virus itself; treatment consists of supportive care. Survivors have lifelong immunity."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.86,
+    "rerankScore": 0.91,
+    "reasons": [
+      "Same headword in both: YELLOW FEVER and Yellow fever.",
+      "Rare terms appear in both: black vomit, Philadelphia, 1793.",
+      "The mosquito article scores lower because the 1810 entry never mentions insects."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "1793 Philadelphia yellow fever epidemic",
+      "url": "https://en.wikipedia.org/wiki/1793_Philadelphia_yellow_fever_epidemic",
+      "embedScore": 0.8,
+      "rerankScore": 0.69
+    },
+    {
+      "title": "Aedes aegypti",
+      "url": "https://en.wikipedia.org/wiki/Aedes_aegypti",
+      "embedScore": 0.64,
+      "rerankScore": 0.38
+    }
+  ],
+  "alignments": [
+    {
+      "id": "y1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "The yellow skin",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the yellow colour which the skin acquires"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "jaundice caused by liver damage"
+      },
+      "note": "Both name the sign that gives the disease its name. Wikipedia adds the cause: the liver is damaged."
+    },
+    {
+      "id": "y2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Two stages",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "after a short remission the skin turns yellow"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "a second, toxic phase after a brief improvement"
+      },
+      "note": "The same course of illness: a pause, then the dangerous phase with jaundice."
+    },
+    {
+      "id": "y3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Black vomit",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "called the black vomit, which is commonly a fatal sign"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "bleeding into the stomach that causes dark vomit"
+      },
+      "note": "The 1810 entry records the sign. Wikipedia explains it as blood from the stomach."
+    },
+    {
+      "id": "y4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The cause",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "the putrid exhalations of marshes and of filth"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "caused by the yellow fever virus and is spread by the bite of an infected female mosquito"
+      },
+      "note": "Bad air from marshes is replaced by a virus carried by mosquitoes. The marshes mattered because mosquitoes breed in water."
+    },
+    {
+      "id": "y5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Not passed person to person",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "it does not pass from one person to another"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "It does not spread directly between people"
+      },
+      "note": "Right for the wrong reason. The Philadelphia physicians blamed the local air; the real link between people is the mosquito."
+    },
+    {
+      "id": "y6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Philadelphia, 1793",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "after the great epidemic of 1793"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "A 1793 epidemic in Philadelphia"
+      },
+      "note": "Same event, same year."
+    },
+    {
+      "id": "y7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Where it comes from",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "most frequent in the West Indies and in the sea-ports of America"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "The virus originated in Africa and reached the Americas with the slave trade"
+      },
+      "note": "True of where Britons met it in 1810, but the disease came from Africa."
+    },
+    {
+      "id": "y8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The cure",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "copious bleeding and by calomel given until the mouth becomes sore"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "treatment consists of supportive care"
+      },
+      "note": "Bleeding and mercury (calomel) weakened patients. No drug acts on the virus; care is supportive."
+    },
+    {
+      "id": "y9",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Immunity",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "are not attacked by it a second time"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Survivors have lifelong immunity"
+      },
+      "note": "The same observation, now with a name for it."
+    },
+    {
+      "id": "y10",
+      "kind": "added",
+      "verdict": null,
+      "label": "Mosquitoes",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "confirmed Carlos Finlay's theory that mosquitoes transmit the disease"
+      },
+      "note": "The mosquito link was proved 90 years after this edition."
+    },
+    {
+      "id": "y11",
+      "kind": "added",
+      "verdict": null,
+      "label": "Vaccine",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "A safe and effective vaccine exists"
+      },
+      "note": "Prevention by vaccine has no counterpart in 1810."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Symptoms",
+      "britannica": 0.3,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Contagion",
+      "britannica": 0.15,
+      "wikipedia": 0.05
+    },
+    {
+      "topic": "Where it occurs",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.15,
+      "wikipedia": 0.08
+    },
+    {
+      "topic": "Immunity",
+      "britannica": 0.1,
+      "wikipedia": 0.05
+    },
+    {
+      "topic": "Mosquito transmission",
+      "britannica": 0,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Vaccine",
+      "britannica": 0,
+      "wikipedia": 0.15
+    }
+  ],
+  "suggestedQuestions": [
+    "Was the 1810 entry right that yellow fever does not pass from person to person?",
+    "What did the 1810 entry think caused yellow fever?",
+    "How was yellow fever treated in 1810, and how is it treated now?"
+  ],
+  "answers": {
+    "Was the 1810 entry right that yellow fever does not pass from person to person?": {
+      "answer": "Yes, but for the wrong reason. The 1810 entry reports that physicians in Philadelphia held that it does not pass from one person to another and arises from the air of the place [B5]. Wikipedia agrees that it does not spread directly between people [W3], but the link is the mosquito, which carries the virus from one person to the next [W3]. The mosquito theory was confirmed in 1900 [W5].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.81
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What did the 1810 entry think caused yellow fever?": {
+      "answer": "Putrid exhalations from marshes and filth, raised by the heat of the sun [B4]. Wikipedia names the yellow fever virus, spread by the bite of an infected mosquito [W3].\n\nThis is a change in knowledge. The old link to marshes was not empty, since mosquitoes breed in standing water, but that is an inference: neither text says it.",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    },
+    "How was yellow fever treated in 1810, and how is it treated now?": {
+      "answer": "In 1810 the favoured cure was copious bleeding and calomel, with bark and wine as an alternative [B6]. Today no medicine acts on the virus, so care is supportive [W7], and the disease is prevented with a vaccine and mosquito control [W6].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.91
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.84
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

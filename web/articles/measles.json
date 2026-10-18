@@ -1,0 +1,371 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "measles",
+    "label": "Measles",
+    "headword": "MEASLES",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Measles",
+    "area": "infectious-disease",
+    "teaser": "The cause is a peculiar acrimony of the blood, which nature endeavours to throw out by the skin."
+  },
+  "aliases": [
+    "measles",
+    "morbilli",
+    "rubeola"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0014",
+    "headword": "MEASLES",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 11",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 11 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "MEA                    [ 386 ]                    MEA\n\nMEASURE, in geometry, any quantity aſſumed as one.\n  MEASLES, a contagious diſeaſe, conſiſting of a fever\nwith an eruption of ſmall red ſpots upon the ſkin,\nwhich diſappear in a few days with a ſcurf like bran.\nIt begins with ſneezing, a running of the noſe, a dry\ncough, and redneſs and watering of the eyes, three or\nfour days before the eruption appears.\n  It was firſt diſtinguiſhed from the ſmall-pox by Rha-\nzes, an Arabian phyſician, and ſeldom attacks the ſame\nperſon twice. The diſeaſe is not in itſelf dangerous,\nbut the cough which follows it frequently ends in an\ninflammation of the lungs, or lays the foundation of\na conſumption.\n  The cauſe is a peculiar acrimony of the blood, which\nnature endeavours to throw out by the ſkin. In 1758\nDr Home of Edinburgh attempted to communicate the\nmeaſles by inoculation with the blood of patients, in\norder to produce a milder diſeaſe, as is done with the\nſmall-pox. The cure conſiſts in a cooling regimen, di-\nluting drinks, and bleeding when the breaſt is oppreſſed.\n  MEAT, in general, ſignifies any kind of food.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "MEASLES",
+        "text": "MEASLES, a contagious disease, consisting of a fever with an eruption of small red spots upon the skin, which disappear in a few days with a scurf like bran."
+      },
+      {
+        "id": "B2",
+        "section": "MEASLES",
+        "text": "It begins with sneezing, a running of the nose, a dry cough, and redness and watering of the eyes, three or four days before the eruption appears."
+      },
+      {
+        "id": "B3",
+        "section": "MEASLES",
+        "text": "It was first distinguished from the small-pox by Rhazes, an Arabian physician, and seldom attacks the same person twice."
+      },
+      {
+        "id": "B4",
+        "section": "MEASLES",
+        "text": "The disease is not in itself dangerous, but the cough which follows it frequently ends in an inflammation of the lungs, or lays the foundation of a consumption."
+      },
+      {
+        "id": "B5",
+        "section": "MEASLES",
+        "text": "The cause is a peculiar acrimony of the blood, which nature endeavours to throw out by the skin."
+      },
+      {
+        "id": "B6",
+        "section": "MEASLES",
+        "text": "In 1758 Dr Home of Edinburgh attempted to communicate the measles by inoculation with the blood of patients, in order to produce a milder disease, as is done with the small-pox."
+      },
+      {
+        "id": "B7",
+        "section": "MEASLES",
+        "text": "The cure consists in a cooling regimen, diluting drinks, and bleeding when the breast is oppressed."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-measles",
+    "title": "Measles",
+    "url": "https://en.wikipedia.org/wiki/Measles",
+    "dateModified": "2026-10-09",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Measles is a highly contagious, vaccine-preventable infectious disease caused by measles virus. It spreads through the air when an infected person coughs or sneezes."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "Symptoms include fever, cough, runny nose and inflamed eyes, followed by a red, flat rash that starts on the face and spreads to the rest of the body. The rash usually begins three to five days after the first symptoms."
+      },
+      {
+        "id": "W3",
+        "section": "Complications",
+        "text": "Common complications include diarrhoea, middle ear infection and pneumonia. Pneumonia causes most measles deaths."
+      },
+      {
+        "id": "W4",
+        "section": "History",
+        "text": "The Persian physician Rhazes wrote the first known description that told measles apart from smallpox, in the 10th century."
+      },
+      {
+        "id": "W5",
+        "section": "Prevention",
+        "text": "A safe and effective vaccine has been available since 1963 and is usually given together with mumps and rubella vaccines as MMR."
+      },
+      {
+        "id": "W6",
+        "section": "Treatment",
+        "text": "There is no specific treatment. Supportive care, including vitamin A, may improve outcomes."
+      },
+      {
+        "id": "W7",
+        "section": "Immunity",
+        "text": "People who recover are immune for life. The infection can also weaken immunity to other diseases for months or years."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.88,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same headword in both: MEASLES.",
+      "Rare terms appear in both: Rhazes, smallpox, running nose, watering eyes.",
+      "Measles vaccine scores well but covers only prevention, so it is a second candidate."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Measles vaccine",
+      "url": "https://en.wikipedia.org/wiki/Measles_vaccine",
+      "embedScore": 0.76,
+      "rerankScore": 0.58
+    },
+    {
+      "title": "Measles morbillivirus",
+      "url": "https://en.wikipedia.org/wiki/Measles_morbillivirus",
+      "embedScore": 0.73,
+      "rerankScore": 0.49
+    }
+  ],
+  "alignments": [
+    {
+      "id": "m1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Early signs",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "sneezing, a running of the nose, a dry cough, and redness and watering of the eyes"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "fever, cough, runny nose and inflamed eyes"
+      },
+      "note": "The same first signs, in plainer words."
+    },
+    {
+      "id": "m2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "When the rash comes",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "three or four days before the eruption appears"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "The rash usually begins three to five days after the first symptoms"
+      },
+      "note": "The timing matches."
+    },
+    {
+      "id": "m3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Rhazes",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "first distinguished from the small-pox by Rhazes"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Rhazes wrote the first known description that told measles apart from smallpox"
+      },
+      "note": "Same physician, same achievement. He is Arabian in 1797 and Persian today."
+    },
+    {
+      "id": "m4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Lasting immunity",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "seldom attacks the same person twice"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "People who recover are immune for life"
+      },
+      "note": "The same observation, with a name for the mechanism."
+    },
+    {
+      "id": "m5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Danger to the lungs",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "The disease is not in itself dangerous, but the cough which follows it frequently ends in an inflammation of the lungs"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Pneumonia causes most measles deaths"
+      },
+      "note": "The lung danger is right. Calling measles not dangerous in itself is not."
+    },
+    {
+      "id": "m6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The cause",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "a peculiar acrimony of the blood"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "caused by measles virus"
+      },
+      "note": "A sharpness in the blood is replaced by a virus."
+    },
+    {
+      "id": "m7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "A milder disease on purpose",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "attempted to communicate the measles by inoculation"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "A safe and effective vaccine has been available since 1963"
+      },
+      "note": "The aim, protection through a mild infection, is what a vaccine does. Home's method did not become practice."
+    },
+    {
+      "id": "m8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The cure",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "bleeding when the breast is oppressed"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "There is no specific treatment"
+      },
+      "note": "Bleeding is gone. Care is supportive, with vitamin A."
+    },
+    {
+      "id": "m9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Spread through the air",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "It spreads through the air when an infected person coughs or sneezes"
+      },
+      "note": "The 1797 entry calls measles contagious but does not say how it passes."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Symptoms",
+      "britannica": 0.3,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "History",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Immunity",
+      "britannica": 0.05,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Complications",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Prevention",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.15,
+      "wikipedia": 0.08
+    },
+    {
+      "topic": "Transmission",
+      "britannica": 0,
+      "wikipedia": 0.1
+    }
+  ],
+  "suggestedQuestions": [
+    "Did the 1797 entry think measles was dangerous?",
+    "Did anyone try to prevent measles in 1797?",
+    "What caused measles according to the 1797 entry?"
+  ],
+  "answers": {
+    "Did the 1797 entry think measles was dangerous?": {
+      "answer": "Only through what followed it. The 1797 entry says the disease is not dangerous in itself, but the cough after it often ends in an inflammation of the lungs or a consumption [B4]. Wikipedia agrees on the lungs: pneumonia causes most measles deaths [W3]. It does not treat measles itself as harmless.",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did anyone try to prevent measles in 1797?": {
+      "answer": "Yes. The 1797 entry reports that Dr Home of Edinburgh tried in 1758 to give patients a milder measles by inoculation with blood, as was done for smallpox [B6]. Wikipedia describes the vaccine that has prevented measles since 1963 [W5].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.91
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What caused measles according to the 1797 entry?": {
+      "answer": "A peculiar acrimony of the blood, which nature tried to throw out through the skin [B5]. Wikipedia names measles virus, spread through the air [W1].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.92
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

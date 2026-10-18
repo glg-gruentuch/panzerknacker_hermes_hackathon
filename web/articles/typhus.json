@@ -1,0 +1,399 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "typhus",
+    "label": "Typhus",
+    "headword": "TYPHUS",
+    "edition": "Fifth edition",
+    "year": 1817,
+    "match": "strong",
+    "wikipediaTitle": "Epidemic typhus",
+    "area": "infectious-disease",
+    "teaser": "It arises from the effluvia of human bodies confined in close and dirty places, which, being long retained, acquire a peculiar contagious quality."
+  },
+  "aliases": [
+    "typhus",
+    "epidemic typhus",
+    "jail fever",
+    "gaol fever",
+    "ship fever",
+    "hospital fever",
+    "camp fever"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0012",
+    "headword": "TYPHUS",
+    "edition": "Fifth edition",
+    "year": 1817,
+    "volume": "Volume 20",
+    "meta": "Encyclopaedia Britannica - Fifth edition, Volume 20 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "TYP                    [ 718 ]                    TYP\n\nTYPHON, in phyſiology, a violent whirlwind.\n  TYPHUS, the name given by Dr Cullen to that kind\nof continued fever which is attended with great weak-\nneſs, ſtupor, and a dark red eruption or petechiæ on\nthe ſkin. It is the ſame diſeaſe which is known as the\njail, hoſpital, or ſhip fever, from the places where it\nis moſt commonly generated.\n  It ariſes from the effluvia of human bodies confined\nin cloſe and dirty places, which, being long retained,\nacquire a peculiar contagious quality. At the Black\nAſſize at Oxford in 1577, the judge, the jury, and\ngreat part of the court were carried off by a fever\ncaught from the priſoners.\n  The fever is beſt prevented by cleanlineſs, by freſh\nair, and by waſhing and fumigating the clothes and\nbedding of the ſick. In the cure, Dr Currie of Liver-\npool recommends daſhing cold water over the patient\nin the early ſtage; afterwards wine and the bark are\ngiven to ſupport the ſtrength.\n  TYPOGRAPHY. See PRINTING.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "TYPHUS",
+        "text": "TYPHUS, the name given by Dr Cullen to that kind of continued fever which is attended with great weakness, stupor, and a dark red eruption or petechiae on the skin."
+      },
+      {
+        "id": "B2",
+        "section": "TYPHUS",
+        "text": "It is the same disease which is known as the jail, hospital, or ship fever, from the places where it is most commonly generated."
+      },
+      {
+        "id": "B3",
+        "section": "TYPHUS",
+        "text": "It arises from the effluvia of human bodies confined in close and dirty places, which, being long retained, acquire a peculiar contagious quality."
+      },
+      {
+        "id": "B4",
+        "section": "TYPHUS",
+        "text": "At the Black Assize at Oxford in 1577, the judge, the jury, and great part of the court were carried off by a fever caught from the prisoners."
+      },
+      {
+        "id": "B5",
+        "section": "TYPHUS",
+        "text": "The fever is best prevented by cleanliness, by fresh air, and by washing and fumigating the clothes and bedding of the sick."
+      },
+      {
+        "id": "B6",
+        "section": "TYPHUS",
+        "text": "In the cure, Dr Currie of Liverpool recommends dashing cold water over the patient in the early stage; afterwards wine and the bark are given to support the strength."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-epidemic-typhus",
+    "title": "Epidemic typhus",
+    "url": "https://en.wikipedia.org/wiki/Epidemic_typhus",
+    "dateModified": "2026-08-27",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Epidemic typhus is a form of typhus caused by the bacterium Rickettsia prowazekii and spread by body lice."
+      },
+      {
+        "id": "W2",
+        "section": "Introduction",
+        "text": "It has been known as camp fever, jail fever, hospital fever and ship fever, because outbreaks occurred where people lived crowded together in poor hygiene, such as prisons, armies and ships."
+      },
+      {
+        "id": "W3",
+        "section": "Signs and symptoms",
+        "text": "Symptoms include high fever, severe headache, and a rash that begins on the trunk and spreads. Confusion and stupor are common; the name comes from the Greek typhos, meaning smoky or hazy."
+      },
+      {
+        "id": "W4",
+        "section": "Transmission",
+        "text": "Lice become infected by feeding on a sick person and pass the bacteria on in their faeces, which enter the skin when the bite is scratched. In 1909 Charles Nicolle showed that lice carry the disease."
+      },
+      {
+        "id": "W5",
+        "section": "History",
+        "text": "In England, jail fever spread from prisoners to the courts in the 16th century; sessions at which judges and jurors died became known as Black Assizes."
+      },
+      {
+        "id": "W6",
+        "section": "Treatment",
+        "text": "The disease is treated with the antibiotic doxycycline. Without treatment, between 10 and 60% of patients die."
+      },
+      {
+        "id": "W7",
+        "section": "History",
+        "text": "Typhoid fever is a different disease, caused by Salmonella bacteria; doctors learned to tell the two apart in the 19th century."
+      },
+      {
+        "id": "W8",
+        "section": "Prevention",
+        "text": "Prevention depends on removing lice by washing and treating clothes and bedding."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.83,
+    "rerankScore": 0.88,
+    "reasons": [
+      "The headword TYPHUS matches; the epidemic form is the one known as jail and ship fever.",
+      "Rare terms appear in both: jail fever, ship fever, stupor, Black Assize.",
+      "The general Typhus article and Typhoid fever also score; the first covers other forms, the second is a different disease."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Typhus",
+      "url": "https://en.wikipedia.org/wiki/Typhus",
+      "embedScore": 0.84,
+      "rerankScore": 0.74
+    },
+    {
+      "title": "Typhoid fever",
+      "url": "https://en.wikipedia.org/wiki/Typhoid_fever",
+      "embedScore": 0.72,
+      "rerankScore": 0.39
+    }
+  ],
+  "alignments": [
+    {
+      "id": "t1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Jail and ship fever",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "known as the jail, hospital, or ship fever"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "camp fever, jail fever, hospital fever and ship fever"
+      },
+      "note": "The same old names, given for the same reason."
+    },
+    {
+      "id": "t2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Crowding and dirt",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "confined in close and dirty places"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "where people lived crowded together in poor hygiene"
+      },
+      "note": "Both tie the disease to crowded, dirty places."
+    },
+    {
+      "id": "t3",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The cause",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the effluvia of human bodies"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "caused by the bacterium Rickettsia prowazekii and spread by body lice"
+      },
+      "note": "Bodily effluvia are replaced by a bacterium carried by lice."
+    },
+    {
+      "id": "t4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Stupor",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "great weakness, stupor, and a dark red eruption"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "Confusion and stupor are common"
+      },
+      "note": "Same signs. The Greek name, 'smoky', describes the clouded mind."
+    },
+    {
+      "id": "t5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Typhus and typhoid",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "that kind of continued fever"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Typhoid fever is a different disease"
+      },
+      "note": "In 1817 'continued fever' covered both. They were told apart only later in the century."
+    },
+    {
+      "id": "t6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Black Assize",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "the judge, the jury, and great part of the court were carried off"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "sessions at which judges and jurors died became known as Black Assizes"
+      },
+      "note": "Same kind of event. Wikipedia does not name Oxford or 1577 in this passage."
+    },
+    {
+      "id": "t7",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Washing clothes",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "washing and fumigating the clothes and bedding of the sick"
+      },
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "removing lice by washing and treating clothes and bedding"
+      },
+      "note": "The 1817 advice worked, though no one knew why: washing killed the lice."
+    },
+    {
+      "id": "t8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The cure",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "dashing cold water over the patient"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "treated with the antibiotic doxycycline"
+      },
+      "note": "Cold water, wine and bark are replaced by an antibiotic."
+    },
+    {
+      "id": "t9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Lice",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "In 1909 Charles Nicolle showed that lice carry the disease"
+      },
+      "note": "The carrier was found nearly a century after this edition."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Names",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Symptoms",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.2,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Outbreaks in courts",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Prevention",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Lice",
+      "britannica": 0,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Typhoid distinguished",
+      "britannica": 0,
+      "wikipedia": 0.1
+    }
+  ],
+  "suggestedQuestions": [
+    "Why did the 1817 advice to wash clothes and bedding work?",
+    "Is jail fever the same disease as typhus today?",
+    "How did the 1817 entry explain the cause of typhus?"
+  ],
+  "answers": {
+    "Why did the 1817 advice to wash clothes and bedding work?": {
+      "answer": "The 1817 entry recommends washing and fumigating the clothes and bedding of the sick [B5]. Wikipedia explains why it helped: the disease is spread by body lice [W1], and prevention depends on removing lice by washing and treating clothes and bedding [W8].\n\nThe practice was right; the reason given in 1817, contagious effluvia [B3], was not.",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W8",
+          "source": "wikipedia",
+          "passageId": "W8",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.84
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Is jail fever the same disease as typhus today?": {
+      "answer": "Yes. The 1817 entry says typhus is the disease known as jail, hospital or ship fever [B2], and Wikipedia lists the same names for epidemic typhus [W2]. One caution: in 1817 'continued fever' also covered typhoid [B1], which Wikipedia treats as a different disease [W7].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.94
+        },
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.8
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.78
+        }
+      ],
+      "grounding": "supported"
+    },
+    "How did the 1817 entry explain the cause of typhus?": {
+      "answer": "As effluvia from human bodies kept in close, dirty places, which in time became contagious [B3]. Wikipedia names the bacterium Rickettsia prowazekii, spread by body lice [W1].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

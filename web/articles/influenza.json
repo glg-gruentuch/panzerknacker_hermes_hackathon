@@ -1,0 +1,369 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "influenza",
+    "label": "Influenza",
+    "headword": "INFLUENZA",
+    "edition": "Sixth edition",
+    "year": 1823,
+    "match": "strong",
+    "wikipediaTitle": "Influenza",
+    "area": "infectious-disease",
+    "teaser": "The name is Italian, and was given because the disease was ascribed to the influence of the stars."
+  },
+  "aliases": [
+    "influenza",
+    "the flu",
+    "grippe",
+    "epidemic catarrh"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0017",
+    "headword": "INFLUENZA",
+    "edition": "Sixth edition",
+    "year": 1823,
+    "volume": "Volume 11",
+    "meta": "Encyclopaedia Britannica - Sixth edition, Volume 11 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "INF                    [ 207 ]                    INF\n\nINFLECTION, in grammar, the variation of nouns and\nverbs.\n  INFLUENZA, an epidemic catarrhal fever, which at\ntimes ſpreads over whole countries, and even over the\ngreater part of Europe, in a few weeks. The name is\nItalian, and was given becauſe the diſeaſe was aſcribed\nto the influence of the ſtars.\n  It begins with chillineſs, pain of the head and limbs,\nſneezing, a running from the eyes and noſe, and a trou-\nbleſome cough, with great weakneſs out of proportion\nto the fever. Its cauſe is ſome peculiar ſtate of the at-\nmoſphere, for it attacks whole cities at once, and could\nnot ſpread ſo faſt by contagion from one perſon to an-\nother. Remarkable epidemics of this kind happened in\n1762, 1775, and 1782.\n  It is ſeldom fatal, except to old perſons and to thoſe\nalready weakened by diſeaſe of the lungs. The cure is\nby reſt, warm diluting drinks, and gentle ſweating;\nbleeding is to be uſed with caution, as the weakneſs is\ngreat.\n  INFORMATION, in law, an accuſation or complaint",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "INFLUENZA",
+        "text": "INFLUENZA, an epidemic catarrhal fever, which at times spreads over whole countries, and even over the greater part of Europe, in a few weeks."
+      },
+      {
+        "id": "B2",
+        "section": "INFLUENZA",
+        "text": "The name is Italian, and was given because the disease was ascribed to the influence of the stars."
+      },
+      {
+        "id": "B3",
+        "section": "INFLUENZA",
+        "text": "It begins with chilliness, pain of the head and limbs, sneezing, a running from the eyes and nose, and a troublesome cough, with great weakness out of proportion to the fever."
+      },
+      {
+        "id": "B4",
+        "section": "INFLUENZA",
+        "text": "Its cause is some peculiar state of the atmosphere, for it attacks whole cities at once, and could not spread so fast by contagion from one person to another."
+      },
+      {
+        "id": "B5",
+        "section": "INFLUENZA",
+        "text": "Remarkable epidemics of this kind happened in 1762, 1775, and 1782."
+      },
+      {
+        "id": "B6",
+        "section": "INFLUENZA",
+        "text": "It is seldom fatal, except to old persons and to those already weakened by disease of the lungs."
+      },
+      {
+        "id": "B7",
+        "section": "INFLUENZA",
+        "text": "The cure is by rest, warm diluting drinks, and gentle sweating; bleeding is to be used with caution, as the weakness is great."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-influenza",
+    "title": "Influenza",
+    "url": "https://en.wikipedia.org/wiki/Influenza",
+    "dateModified": "2026-10-11",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Influenza, commonly known as the flu, is an infectious disease caused by influenza viruses. Symptoms range from mild to severe and often include fever, runny nose, sore throat, muscle pain, headache, coughing and fatigue."
+      },
+      {
+        "id": "W2",
+        "section": "Etymology",
+        "text": "The word comes from the Italian influenza, meaning influence. Epidemics were once blamed on the influence of the stars; the word entered English in the 18th century."
+      },
+      {
+        "id": "W3",
+        "section": "Transmission",
+        "text": "The virus spreads from person to person through the air in droplets and small particles produced when infected people cough, sneeze or talk, and through contaminated surfaces."
+      },
+      {
+        "id": "W4",
+        "section": "Epidemiology",
+        "text": "Seasonal epidemics cause 290,000 to 650,000 deaths each year. People at highest risk include the elderly, young children, pregnant women and people with chronic illness."
+      },
+      {
+        "id": "W5",
+        "section": "History",
+        "text": "The 1918 pandemic infected about a third of the world's population and killed tens of millions of people."
+      },
+      {
+        "id": "W6",
+        "section": "Virology",
+        "text": "Human influenza virus was first isolated in 1933 by Wilson Smith, Christopher Andrewes and Patrick Laidlaw."
+      },
+      {
+        "id": "W7",
+        "section": "Prevention and treatment",
+        "text": "Yearly vaccination is the main way to prevent the disease. Most people recover with rest and fluids, and antiviral drugs such as oseltamivir can shorten the illness."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.86,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same headword in both: INFLUENZA.",
+      "Both explain the Italian name and the influence of the stars.",
+      "Spanish flu scores well but covers only the 1918 pandemic, so it is a second candidate."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Spanish flu",
+      "url": "https://en.wikipedia.org/wiki/Spanish_flu",
+      "embedScore": 0.74,
+      "rerankScore": 0.48
+    },
+    {
+      "title": "Common cold",
+      "url": "https://en.wikipedia.org/wiki/Common_cold",
+      "embedScore": 0.7,
+      "rerankScore": 0.36
+    }
+  ],
+  "alignments": [
+    {
+      "id": "i1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "The name",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "ascribed to the influence of the stars"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "Epidemics were once blamed on the influence of the stars"
+      },
+      "note": "Both tell the same story of the name. Neither treats the stars as the cause."
+    },
+    {
+      "id": "i2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Symptoms",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "pain of the head and limbs, sneezing, a running from the eyes and nose, and a troublesome cough"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "runny nose, sore throat, muscle pain, headache, coughing"
+      },
+      "note": "The same list in modern words."
+    },
+    {
+      "id": "i3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Great weakness",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "great weakness out of proportion to the fever"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "fatigue"
+      },
+      "note": "The 1823 entry notes the weakness more sharply than the modern summary."
+    },
+    {
+      "id": "i4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The cause",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "Its cause is some peculiar state of the atmosphere"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "caused by influenza viruses"
+      },
+      "note": "A state of the air is replaced by a virus, isolated in 1933."
+    },
+    {
+      "id": "i5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Not contagious",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "could not spread so fast by contagion from one person to another"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "The virus spreads from person to person through the air"
+      },
+      "note": "The speed that seemed to rule out contagion is explained by airborne spread."
+    },
+    {
+      "id": "i6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Who is at risk",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "except to old persons and to those already weakened by disease of the lungs"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "People at highest risk include the elderly"
+      },
+      "note": "Same groups at risk. Wikipedia adds young children and pregnant women."
+    },
+    {
+      "id": "i7",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Rest and drinks",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "The cure is by rest, warm diluting drinks"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Most people recover with rest and fluids"
+      },
+      "note": "The advice has hardly changed. The 1823 caution about bleeding is no longer needed."
+    },
+    {
+      "id": "i8",
+      "kind": "added",
+      "verdict": null,
+      "label": "The 1918 pandemic",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "The 1918 pandemic infected about a third of the world's population"
+      },
+      "note": "The worst outbreak came almost a century after this edition."
+    },
+    {
+      "id": "i9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Vaccines",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Yearly vaccination is the main way to prevent the disease"
+      },
+      "note": "No prevention is mentioned in 1823."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Spread across countries",
+      "britannica": 0.2,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "The name",
+      "britannica": 0.1,
+      "wikipedia": 0.08
+    },
+    {
+      "topic": "Symptoms",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Cause and contagion",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Past epidemics",
+      "britannica": 0.1,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Who dies",
+      "britannica": 0.1,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Virus and vaccines",
+      "britannica": 0,
+      "wikipedia": 0.18
+    }
+  ],
+  "suggestedQuestions": [
+    "Why did the 1823 entry think influenza was not contagious?",
+    "Where does the name influenza come from?",
+    "Has the advice for treating influenza changed since 1823?"
+  ],
+  "answers": {
+    "Why did the 1823 entry think influenza was not contagious?": {
+      "answer": "Because it attacked whole cities at once, and the entry judged that no contagion between people could spread so fast; it blamed a state of the atmosphere instead [B4]. Wikipedia says the virus spreads from person to person through the air in droplets and small particles [W3], which explains the speed.",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Where does the name influenza come from?": {
+      "answer": "From Italian. Both texts say the disease was blamed on the influence of the stars [B2] [W2]. Wikipedia adds that the word entered English in the 18th century [W2].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Has the advice for treating influenza changed since 1823?": {
+      "answer": "Less than for most diseases. In 1823 the cure was rest, warm drinks and gentle sweating, with caution about bleeding [B7]. Today most people recover with rest and fluids, antiviral drugs can shorten the illness, and yearly vaccination prevents it [W7].",
+      "citations": [
+        {
+          "id": "B7",
+          "source": "britannica",
+          "passageId": "B7",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.94
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

@@ -1,0 +1,394 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "worms",
+    "label": "Worms",
+    "headword": "WORMS",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "partial",
+    "wikipediaTitle": "Helminthiasis",
+    "area": "infectious-disease",
+    "teaser": "The tape-worm is the most difficult to expel, and if the head be not brought away, it grows again."
+  },
+  "aliases": [
+    "worms",
+    "intestinal worms",
+    "helminthiasis",
+    "tapeworm",
+    "roundworm",
+    "threadworm"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0018",
+    "headword": "WORMS",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 18",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 18 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "WOR                    [ 930 ]                    WOR\n\nWORMWOOD. See ARTEMISIA.\n  WORMS, in medicine, are of three principal kinds\nfound in the human body: the round worm, or lumbri-\ncus; the ſmall thread-worm, or aſcaris, which lodges\nin the lower gut; and the tape-worm, or tænia, which\nis flat and jointed, and ſometimes many yards long.\n  Children are much more ſubject to worms than grown\nperſons, eſpecially thoſe who eat much fruit and un-\nripe food. Some have held that worms are bred from\nthe corruption of the humours in the bowels; but it is\nmore probable that they come from eggs ſwallowed\nwith our food and drink.\n  The ſigns of worms are a pale countenance, itching\nof the noſe, grinding of the teeth in ſleep, a ſwelled\nbelly, and an appetite ſometimes craving and ſome-\ntimes wanting. Of the remedies, the moſt approved are\nmercury, powder of tin, and the down of cowhage mixed\nwith ſyrup, followed by a purge.\n  The tape-worm is the moſt difficult to expel, and if\nthe head be not brought away, it grows again.\n  WORSHIP, the outward expreſſion of reverence",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "WORMS",
+        "text": "WORMS, in medicine, are of three principal kinds found in the human body: the round worm, or lumbricus; the small thread-worm, or ascaris, which lodges in the lower gut; and the tape-worm, or taenia, which is flat and jointed, and sometimes many yards long."
+      },
+      {
+        "id": "B2",
+        "section": "WORMS",
+        "text": "Children are much more subject to worms than grown persons, especially those who eat much fruit and unripe food."
+      },
+      {
+        "id": "B3",
+        "section": "WORMS",
+        "text": "Some have held that worms are bred from the corruption of the humours in the bowels; but it is more probable that they come from eggs swallowed with our food and drink."
+      },
+      {
+        "id": "B4",
+        "section": "WORMS",
+        "text": "The signs of worms are a pale countenance, itching of the nose, grinding of the teeth in sleep, a swelled belly, and an appetite sometimes craving and sometimes wanting."
+      },
+      {
+        "id": "B5",
+        "section": "WORMS",
+        "text": "Of the remedies, the most approved are mercury, powder of tin, and the down of cowhage mixed with syrup, followed by a purge."
+      },
+      {
+        "id": "B6",
+        "section": "WORMS",
+        "text": "The tape-worm is the most difficult to expel, and if the head be not brought away, it grows again."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-helminthiasis",
+    "title": "Helminthiasis",
+    "url": "https://en.wikipedia.org/wiki/Helminthiasis",
+    "dateModified": "2026-08-19",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Helminthiasis, also known as worm infection, is any disease of humans or animals caused by parasitic worms, or helminths. The main groups are roundworms, tapeworms and flukes."
+      },
+      {
+        "id": "W2",
+        "section": "Types",
+        "text": "Soil-transmitted helminths include the large roundworm Ascaris lumbricoides, whipworm and hookworm. The pinworm, Enterobius vermicularis, lives in the large intestine and causes itching around the anus."
+      },
+      {
+        "id": "W3",
+        "section": "Transmission",
+        "text": "Most worms spread when their eggs, passed in the faeces of an infected person, contaminate soil, water or food and are swallowed. Tapeworms are mostly caught by eating undercooked meat or fish containing larvae."
+      },
+      {
+        "id": "W4",
+        "section": "Epidemiology",
+        "text": "Worm infections are among the most common infections in the world. They mostly affect children in poor regions with little access to clean water and sanitation."
+      },
+      {
+        "id": "W5",
+        "section": "Signs and symptoms",
+        "text": "Light infections often cause no symptoms. Heavy infections can cause abdominal pain, diarrhoea, malnutrition, anaemia and poor growth in children."
+      },
+      {
+        "id": "W6",
+        "section": "Treatment",
+        "text": "Infections are treated with anthelmintic drugs such as albendazole, mebendazole and praziquantel. In many countries, school children are dewormed regularly."
+      },
+      {
+        "id": "W7",
+        "section": "Tapeworms",
+        "text": "A tapeworm attaches to the gut wall with its head, the scolex, and grows by adding segments. Treatment must kill or remove the head, or the worm can regrow."
+      }
+    ]
+  },
+  "match": {
+    "strength": "partial",
+    "embedScore": 0.71,
+    "rerankScore": 0.68,
+    "reasons": [
+      "The 1797 headword WORMS is a plain plural noun. The closest Wikipedia article uses the medical term Helminthiasis.",
+      "The general Worm article scores higher on embedding but is about worms as animals, so the reranker drops it.",
+      "Rerank 0.68 is below our 0.75 threshold for a strong match: Helminthiasis covers the topic, but no single article matches all three kinds the entry describes."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Worm",
+      "url": "https://en.wikipedia.org/wiki/Worm",
+      "embedScore": 0.79,
+      "rerankScore": 0.41
+    },
+    {
+      "title": "Ascariasis",
+      "url": "https://en.wikipedia.org/wiki/Ascariasis",
+      "embedScore": 0.7,
+      "rerankScore": 0.61
+    },
+    {
+      "title": "Tapeworm infection",
+      "url": "https://en.wikipedia.org/wiki/Tapeworm_infection",
+      "embedScore": 0.68,
+      "rerankScore": 0.58
+    }
+  ],
+  "alignments": [
+    {
+      "id": "w1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "The round worm",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the round worm, or lumbricus"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "the large roundworm Ascaris lumbricoides"
+      },
+      "note": "Same worm. Its old name, lumbricus, survives in the species name."
+    },
+    {
+      "id": "w2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "The thread-worm",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the small thread-worm, or ascaris, which lodges in the lower gut"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "The pinworm, Enterobius vermicularis, lives in the large intestine"
+      },
+      "note": "A change in language: in 1797 'ascaris' meant the thread-worm; today Ascaris is the large roundworm."
+    },
+    {
+      "id": "w3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Flat and jointed",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "the tape-worm, or taenia, which is flat and jointed"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "grows by adding segments"
+      },
+      "note": "The 1797 joints are the modern segments."
+    },
+    {
+      "id": "w4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Children most affected",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "Children are much more subject to worms than grown persons"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "They mostly affect children"
+      },
+      "note": "Same observation. Wikipedia ties it to poor sanitation, not to fruit."
+    },
+    {
+      "id": "w5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Swallowed eggs",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "they come from eggs swallowed with our food and drink"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "contaminate soil, water or food and are swallowed"
+      },
+      "note": "The 1797 entry already rejects the idea that worms breed from corruption, and picks the answer that holds today."
+    },
+    {
+      "id": "w6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Signs of worms",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "a pale countenance, itching of the nose, grinding of the teeth in sleep, a swelled belly"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Heavy infections can cause abdominal pain, diarrhoea, malnutrition, anaemia"
+      },
+      "note": "Pallor and a swollen belly fit anaemia and heavy infection. Inference: the nose and teeth signs have no support in the Wikipedia text."
+    },
+    {
+      "id": "w7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Mercury and tin",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "mercury, powder of tin, and the down of cowhage"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "anthelmintic drugs such as albendazole, mebendazole and praziquantel"
+      },
+      "note": "The old remedies are replaced by drugs that kill the worms."
+    },
+    {
+      "id": "w8",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "The head regrows",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "if the head be not brought away, it grows again"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Treatment must kill or remove the head, or the worm can regrow"
+      },
+      "note": "The same practical rule, two centuries apart."
+    },
+    {
+      "id": "w9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Often silent",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Light infections often cause no symptoms"
+      },
+      "note": "The 1797 entry lists signs but does not say that most infections show none."
+    },
+    {
+      "id": "w10",
+      "kind": "added",
+      "verdict": null,
+      "label": "Mass deworming",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "school children are dewormed regularly"
+      },
+      "note": "Treating whole groups at once is a modern public-health idea."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Kinds of worm",
+      "britannica": 0.3,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Who is affected",
+      "britannica": 0.1,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Origin and spread",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Signs",
+      "britannica": 0.2,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Remedies",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Tapeworm head",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Sanitation and deworming",
+      "britannica": 0,
+      "wikipedia": 0.16
+    }
+  ],
+  "suggestedQuestions": [
+    "Did the 1797 entry know where worms come from?",
+    "Does 'ascaris' mean the same worm in 1797 and today?",
+    "How were worms treated in 1797?"
+  ],
+  "answers": {
+    "Did the 1797 entry know where worms come from?": {
+      "answer": "Mostly, yes. The 1797 entry mentions the old view that worms breed from corruption in the bowels, but judges it more probable that they come from eggs swallowed with food and drink [B3]. Wikipedia says most worms spread when eggs from faeces contaminate soil, water or food and are swallowed [W3].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.94
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Does 'ascaris' mean the same worm in 1797 and today?": {
+      "answer": "No. In 1797 'ascaris' is the small thread-worm of the lower gut [B1]. Today that worm is the pinworm, Enterobius vermicularis, and Ascaris names the large roundworm [W2]. This is a change in language, not in knowledge: both texts describe the same two worms.",
+      "citations": [
+        {
+          "id": "B1",
+          "source": "britannica",
+          "passageId": "B1",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    },
+    "How were worms treated in 1797?": {
+      "answer": "With mercury, powder of tin and the down of cowhage in syrup, followed by a purge [B5]. Today anthelmintic drugs such as albendazole, mebendazole and praziquantel are used [W6]. One rule survives: a tapeworm grows again unless its head is removed [B6] [W7].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.86
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.86
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}
