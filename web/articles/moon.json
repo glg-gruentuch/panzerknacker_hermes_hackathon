@@ -1,0 +1,409 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "moon",
+    "label": "Moon",
+    "headword": "MOON",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Moon",
+    "area": "natural-sciences",
+    "teaser": "The darker spots are commonly thought to be seas, and the brighter parts land"
+  },
+  "aliases": [
+    "moon",
+    "the moon",
+    "luna",
+    "lunar",
+    "phases of the moon"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0057",
+    "headword": "MOON",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 12",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 12 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "MOO                    [ 204 ]                    MOO\n\nMOOD, in grammar, the manner of conjugating verbs.\n  MOON, in aſtronomy, a ſecondary planet, or ſatellite,\nwhich revolves round the earth, and accompanies it in\nits annual courſe round the ſun. The moon is an opaque\nbody, and ſhines only by the light of the ſun reflected\nfrom its ſurface; whence ariſe its different phaſes, as\nmore or leſs of its enlightened half is turned towards\nus.\n  Its mean diſtance from the earth is about 60 ſemidia-\nmeters of the earth, or nearly 240,000 miles; and its\ndiameter is about 2180 miles. It turns round its axis\nin the ſame time in which it goes round the earth, and\ntherefore always preſents nearly the ſame face to us.\n  The ſurface of the moon is full of mountains and\ncavitics. The heights of the mountains are found by\nmeaſuring the lengths of their ſhadows, and ſome of\nthem are thought to riſe above two miles.\n  The darker ſpots are commonly thought to be ſeas, and\nthe brighter parts land; hence aſtronomers have given\nthe ſpots the names of ſeas, as the Sea of Tranquillity\nand the Sea of Serenity. Some aſtronomers ſuppoſe the\nmoon to have an atmoſphere, though much rarer than\nours; and ſome think it inhabited, like the earth.\n  The moon is commonly believed to have an influence on\nthe weather, and on the bodies of men and animals; and\nphyſicians have obſerved that rnadmen are moſt diſorde-\nred at the change and full of the moon, whence they are\ncalled lunatics.\n  MOONWORT, a plant. See BOTANY.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "MOON",
+        "text": "MOON, in astronomy, a secondary planet, or satellite, which revolves round the earth, and accompanies it in its annual course round the sun."
+      },
+      {
+        "id": "B2",
+        "section": "MOON",
+        "text": "The moon is an opaque body, and shines only by the light of the sun reflected from its surface; whence arise its different phases, as more or less of its enlightened half is turned towards us."
+      },
+      {
+        "id": "B3",
+        "section": "MOON",
+        "text": "Its mean distance from the earth is about 60 semidiameters of the earth, or nearly 240,000 miles; and its diameter is about 2180 miles."
+      },
+      {
+        "id": "B4",
+        "section": "MOON",
+        "text": "It turns round its axis in the same time in which it goes round the earth, and therefore always presents nearly the same face to us."
+      },
+      {
+        "id": "B5",
+        "section": "MOON",
+        "text": "The surface of the moon is full of mountains and cavities. The heights of the mountains are found by measuring the lengths of their shadows, and some of them are thought to rise above two miles."
+      },
+      {
+        "id": "B6",
+        "section": "MOON",
+        "text": "The darker spots are commonly thought to be seas, and the brighter parts land; hence astronomers have given the spots the names of seas, as the Sea of Tranquillity and the Sea of Serenity. Some astronomers suppose the moon to have an atmosphere, though much rarer than ours; and some think it inhabited, like the earth."
+      },
+      {
+        "id": "B7",
+        "section": "MOON",
+        "text": "The moon is commonly believed to have an influence on the weather, and on the bodies of men and animals; and physicians have observed that madmen are most disordered at the change and full of the moon, whence they are called lunatics."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-moon",
+    "title": "Moon",
+    "url": "https://en.wikipedia.org/wiki/Moon",
+    "dateModified": "2026-09-14",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "The Moon is Earth's only natural satellite. It orbits Earth at an average distance of about 384,400 kilometres (about 239,000 miles), and its diameter is about 3,474 kilometres (about 2,159 miles)."
+      },
+      {
+        "id": "W2",
+        "section": "Appearance",
+        "text": "The Moon shines by reflecting sunlight. Its phases change as different parts of its sunlit half face Earth during each cycle of about 29.5 days."
+      },
+      {
+        "id": "W3",
+        "section": "Rotation",
+        "text": "The Moon is tidally locked to Earth. It turns once on its axis in the same time that it orbits Earth, so the same side always faces Earth."
+      },
+      {
+        "id": "W4",
+        "section": "Surface",
+        "text": "Lunar mountains rise several kilometres above the surrounding plains. Galileo first estimated their heights from the lengths of their shadows in 1610."
+      },
+      {
+        "id": "W5",
+        "section": "Maria",
+        "text": "The dark areas called maria, Latin for seas, are wide plains of solidified basalt lava. Early astronomers took them for seas, and the names remain."
+      },
+      {
+        "id": "W6",
+        "section": "Atmosphere",
+        "text": "The Moon has a very thin exosphere, so thin that it is close to a vacuum. No liquid water lies on its surface, and no life is known there."
+      },
+      {
+        "id": "W7",
+        "section": "Exploration",
+        "text": "In July 1969 Apollo 11 landed the first humans on the Moon. Twelve astronauts walked on its surface between 1969 and 1972."
+      },
+      {
+        "id": "W8",
+        "section": "Cultural influence",
+        "text": "The words lunatic and lunacy come from the old belief that the Moon causes madness. Studies have not found reliable evidence for such an effect."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.9,
+    "rerankScore": 0.92,
+    "reasons": [
+      "Same headword: MOON and Moon.",
+      "Rare terms appear in both: phases, the same face, mountains measured by shadows, seas, lunatics.",
+      "Lunar mare scores well but covers only the dark plains."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Lunar mare",
+      "url": "https://en.wikipedia.org/wiki/Lunar_mare",
+      "embedScore": 0.76,
+      "rerankScore": 0.55
+    },
+    {
+      "title": "Selenography",
+      "url": "https://en.wikipedia.org/wiki/Selenography",
+      "embedScore": 0.74,
+      "rerankScore": 0.5
+    }
+  ],
+  "alignments": [
+    {
+      "id": "mo1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Reflected light",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "shines only by the light of the sun reflected from its surface"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "The Moon shines by reflecting sunlight"
+      },
+      "note": "Same fact. Both texts also explain the phases by the part of the sunlit half that faces us."
+    },
+    {
+      "id": "mo2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Distance and size",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "nearly 240,000 miles; and its diameter is about 2180 miles"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "(about 239,000 miles)"
+      },
+      "note": "The 1797 figures are close to the modern ones. The diameter of 2180 miles differs from 2,159 miles by about 1 percent."
+    },
+    {
+      "id": "mo3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Same face",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "always presents nearly the same face to us"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "so the same side always faces Earth"
+      },
+      "note": "Same fact in new words. Wikipedia calls this tidal locking."
+    },
+    {
+      "id": "mo4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Mountains from shadows",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "The heights of the mountains are found by measuring the lengths of their shadows"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "from the lengths of their shadows"
+      },
+      "note": "The method holds. Heights of several kilometres agree with the 1797 estimate of more than two miles."
+    },
+    {
+      "id": "mo5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Dark spots as seas",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "The darker spots are commonly thought to be seas"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "wide plains of solidified basalt lava"
+      },
+      "note": "A change in knowledge: the dark areas are dry lava plains. The old names survive as a change in language: mare means sea."
+    },
+    {
+      "id": "mo6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "A thin atmosphere",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "an atmosphere, though much rarer than ours"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "so thin that it is close to a vacuum"
+      },
+      "note": "Right that any atmosphere is much thinner than ours. It is so thin that it is close to none."
+    },
+    {
+      "id": "mo7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Inhabitants",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "some think it inhabited, like the earth"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "no life is known there"
+      },
+      "note": "No life is known on the moon. Astronauts found a dry surface with no water or air to support life."
+    },
+    {
+      "id": "mo8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Moon and madness",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "madmen are most disordered at the change and full of the moon"
+      },
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "Studies have not found reliable evidence for such an effect"
+      },
+      "note": "The belief has no support today. The word lunatic survives as a change in language only."
+    },
+    {
+      "id": "mo9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Humans on the moon",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "In July 1969 Apollo 11 landed the first humans on the Moon"
+      },
+      "note": "The 1797 entry could only observe the moon from the earth. Samples and visits since 1969 settled the questions of seas and life."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Orbit and distance",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Light and phases",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Rotation",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Surface and seas",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Atmosphere and life",
+      "britannica": 0.15,
+      "wikipedia": 0.13
+    },
+    {
+      "topic": "Influence on men",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Exploration",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "Was the 1797 entry right that the dark spots on the moon are seas?",
+    "Did the 1797 entry think the moon was inhabited?",
+    "Which 1797 claims about the moon still hold?"
+  ],
+  "answers": {
+    "Was the 1797 entry right that the dark spots on the moon are seas?": {
+      "answer": "No. The 1797 entry took the darker spots for seas and the brighter parts for land [B6]. Wikipedia says the dark areas are wide plains of solidified basalt lava, and that the old names of seas remain [W5].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did the 1797 entry think the moon was inhabited?": {
+      "answer": "It reports that some astronomers thought the moon had a thin atmosphere and inhabitants [B6]. Wikipedia says the moon has an exosphere so thin that it is close to a vacuum, and no life is known there [W6].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Which 1797 claims about the moon still hold?": {
+      "answer": "The moon shines by reflected sunlight [B2] [W2]. It always shows nearly the same face [B4] [W3]. Its distance and size are close to the modern figures [B3] [W1]. Its mountains can be measured from their shadows [B5] [W4].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.87
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.84
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.81
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.78
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.75
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

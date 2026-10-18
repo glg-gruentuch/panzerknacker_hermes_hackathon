@@ -1,0 +1,412 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "gravity",
+    "label": "Gravity",
+    "headword": "GRAVITATION",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Gravity",
+    "area": "natural-sciences",
+    "teaser": "What the cause of gravity is, is not yet known."
+  },
+  "aliases": [
+    "gravity",
+    "gravitation",
+    "universal gravitation",
+    "law of gravitation",
+    "attraction of gravity"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0059",
+    "headword": "GRAVITATION",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 8",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 8 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "GRA                    [ 452 ]                    GRA\n\nGRAVEL, in medicine, ſmall ſtones formed in the kidneys.\n  GRAVITATION, in philoſophy, the tendency of all\nbodies towards one another; or that force by which\nevery particle of matter is attracted towards every\nother particle. Sir Iſaac Newton has ſhown that this\nforce acts directly as the quantity of matter in the\nattracting body, and inverſely as the ſquare of the\ndiſtance; and that the ſame power which makes a ſtone\nfall to the ground retains the moon in her orbit, and\nthe planets in theirs about the ſun.\n  A heavy body falling near the ſurface of the earth\ndeſcends about 16 feet in the firſt ſecond of its fall.\n  Becauſe the earth turns on its axis, Sir Iſaac Newton\nconcluded that it muſt be flattened at the poles; and\nthis has been confirmed by the degrees meaſured by the\nFrench acadernicians in Lapland and in Peru.\n  What the cauſe of gravity is, is not yet known. Sir\nIſaac Newton himſelf would not aſſign any cauſe, but\ntreated it as a fact proved by experience. Some philo-\nſophers aſcribe it to the preſſure of a ſubtle aether,\nor of very minute corpuſcies moving in all directions,\nwhich puſh bodies towards one another.\n  Gravity is commonly ſuppoſed to act in an inſtant,\nand at all diſtances, without any time being ſpent in\nits paſſage.\n  GRAVITY, ſpecific. See SPECIFIC GRAVITY.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "GRAVITATION",
+        "text": "GRAVITATION, in philosophy, the tendency of all bodies towards one another; or that force by which every particle of matter is attracted towards every other particle."
+      },
+      {
+        "id": "B2",
+        "section": "GRAVITATION",
+        "text": "Sir Isaac Newton has shown that this force acts directly as the quantity of matter in the attracting body, and inversely as the square of the distance; and that the same power which makes a stone fall to the ground retains the moon in her orbit, and the planets in theirs about the sun."
+      },
+      {
+        "id": "B3",
+        "section": "GRAVITATION",
+        "text": "A heavy body falling near the surface of the earth descends about 16 feet in the first second of its fall."
+      },
+      {
+        "id": "B4",
+        "section": "GRAVITATION",
+        "text": "Because the earth turns on its axis, Sir Isaac Newton concluded that it must be flattened at the poles; and this has been confirmed by the degrees measured by the French academicians in Lapland and in Peru."
+      },
+      {
+        "id": "B5",
+        "section": "GRAVITATION",
+        "text": "What the cause of gravity is, is not yet known. Sir Isaac Newton himself would not assign any cause, but treated it as a fact proved by experience."
+      },
+      {
+        "id": "B6",
+        "section": "GRAVITATION",
+        "text": "Some philosophers ascribe it to the pressure of a subtle aether, or of very minute corpuscles moving in all directions, which push bodies towards one another."
+      },
+      {
+        "id": "B7",
+        "section": "GRAVITATION",
+        "text": "Gravity is commonly supposed to act in an instant, and at all distances, without any time being spent in its passage."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-gravity",
+    "title": "Gravity",
+    "url": "https://en.wikipedia.org/wiki/Gravity",
+    "dateModified": "2026-10-03",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "In physics, gravity is a fundamental interaction that causes attraction between all things that have mass or energy. On Earth it gives weight to objects, and it holds the Moon in orbit around Earth and the planets in orbit around the Sun."
+      },
+      {
+        "id": "W2",
+        "section": "Newton's theory",
+        "text": "In 1687 Isaac Newton published his law of universal gravitation. It states that every mass attracts every other mass with a force proportional to the product of their masses and inversely proportional to the square of the distance between them."
+      },
+      {
+        "id": "W3",
+        "section": "Cavendish experiment",
+        "text": "In 1798 Henry Cavendish measured the very small attraction between lead balls with a torsion balance. His result made it possible to find the density of Earth, and later the gravitational constant."
+      },
+      {
+        "id": "W4",
+        "section": "Earth's gravity",
+        "text": "Near Earth's surface, a falling object accelerates at about 9.8 metres per second squared, so it falls about 4.9 metres (16 feet) in the first second if air resistance is ignored."
+      },
+      {
+        "id": "W5",
+        "section": "Earth's shape",
+        "text": "Earth's rotation makes it bulge at the equator and flatten at the poles. For this reason gravity is slightly weaker at the equator than at the poles."
+      },
+      {
+        "id": "W6",
+        "section": "General relativity",
+        "text": "In 1915 Albert Einstein published the general theory of relativity. It describes gravity not as a force but as the curvature of spacetime caused by mass and energy."
+      },
+      {
+        "id": "W7",
+        "section": "Speed of gravity",
+        "text": "Changes in gravity travel at the speed of light. Gravitational waves were first detected directly in 2015 by the LIGO observatories."
+      },
+      {
+        "id": "W8",
+        "section": "Newton's theory",
+        "text": "Newton's law remains accurate enough for most everyday and engineering uses. General relativity is needed for strong fields and for very precise work, such as the orbit of Mercury and the clocks of GPS satellites."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.86,
+    "rerankScore": 0.89,
+    "reasons": [
+      "The headword GRAVITATION is the older name for the topic of Gravity.",
+      "Rare terms appear in both: inverse square of the distance, the moon's orbit, flattening at the poles, 16 feet in the first second.",
+      "Newton's law of universal gravitation scores well but covers only Newton's theory."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Newton's law of universal gravitation",
+      "url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation",
+      "embedScore": 0.84,
+      "rerankScore": 0.74
+    },
+    {
+      "title": "General relativity",
+      "url": "https://en.wikipedia.org/wiki/General_relativity",
+      "embedScore": 0.7,
+      "rerankScore": 0.45
+    }
+  ],
+  "alignments": [
+    {
+      "id": "gr1",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Inverse square law",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "inversely as the square of the distance"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "inversely proportional to the square of the distance between them"
+      },
+      "note": "Same law. Newton's form is still used for most calculations."
+    },
+    {
+      "id": "gr2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Falling stone and moon",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "the same power which makes a stone fall to the ground retains the moon in her orbit"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "it holds the Moon in orbit around Earth"
+      },
+      "note": "Same fact. One force explains falling bodies and orbits."
+    },
+    {
+      "id": "gr3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Fall in the first second",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "descends about 16 feet in the first second"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "it falls about 4.9 metres (16 feet) in the first second"
+      },
+      "note": "Same figure. Wikipedia gives it as an acceleration in metric units."
+    },
+    {
+      "id": "gr4",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Flattened at the poles",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "it must be flattened at the poles"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "flatten at the poles"
+      },
+      "note": "Newton's prediction holds, and the French measurements of the 1730s confirmed it."
+    },
+    {
+      "id": "gr5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Cause unknown",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "What the cause of gravity is, is not yet known."
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "the curvature of spacetime caused by mass and energy"
+      },
+      "note": "True in 1797. Einstein's theory of 1915 now describes gravity as the curvature of spacetime."
+    },
+    {
+      "id": "gr6",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Pushing aether",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "the pressure of a subtle aether, or of very minute corpuscles"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "not as a force but as the curvature of spacetime"
+      },
+      "note": "A change in knowledge. No aether or stream of corpuscles pushes bodies together."
+    },
+    {
+      "id": "gr7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Instant action",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "act in an instant, and at all distances"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Changes in gravity travel at the speed of light"
+      },
+      "note": "Gravity does reach to all distances. Its changes take time to arrive; they move at the speed of light."
+    },
+    {
+      "id": "gr8",
+      "kind": "added",
+      "verdict": null,
+      "label": "Cavendish experiment",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "In 1798 Henry Cavendish measured the very small attraction between lead balls"
+      },
+      "note": "This experiment came one year after the 1797 edition. It showed the attraction between small bodies in a laboratory."
+    },
+    {
+      "id": "gr9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Limits of Newton's law",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "General relativity is needed for strong fields and for very precise work"
+      },
+      "note": "The 1797 entry treats Newton's law as complete. Wikipedia names the cases where it is not exact enough."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Newton's law",
+      "britannica": 0.3,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Falling bodies",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Shape of the earth",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Cause of gravity",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Speed of gravity",
+      "britannica": 0.15,
+      "wikipedia": 0.13
+    },
+    {
+      "topic": "Measuring the force",
+      "britannica": 0,
+      "wikipedia": 0.13
+    },
+    {
+      "topic": "Limits of Newton's law",
+      "britannica": 0,
+      "wikipedia": 0.12
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1797 entry say causes gravity?",
+    "Does gravity act instantly, as the 1797 entry says?",
+    "Which parts of Newton's theory in the 1797 entry still hold?"
+  ],
+  "answers": {
+    "What did the 1797 entry say causes gravity?": {
+      "answer": "It said the cause was not yet known, and that Newton did not assign one [B5]. It reports that some ascribed gravity to the pressure of an aether or of minute corpuscles [B6]. Wikipedia describes gravity, after Einstein, as the curvature of spacetime caused by mass and energy [W6].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Does gravity act instantly, as the 1797 entry says?": {
+      "answer": "No. The 1797 entry says gravity was commonly supposed to act in an instant at all distances [B7]. Wikipedia says changes in gravity travel at the speed of light, and gravitational waves were detected directly in 2015 [W7].",
+      "citations": [
+        {
+          "id": "B7",
+          "source": "britannica",
+          "passageId": "B7",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Which parts of Newton's theory in the 1797 entry still hold?": {
+      "answer": "The inverse square law [B2] [W2], the single force behind falling bodies and orbits [B2] [W1], the fall of about 16 feet in the first second [B3] [W4], and the flattening of the earth at the poles [B4] [W5]. Wikipedia adds that general relativity is needed for strong fields and very precise work [W8].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.87
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.84
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.81
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.78
+        },
+        {
+          "id": "W8",
+          "source": "wikipedia",
+          "passageId": "W8",
+          "rerankScore": 0.75
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

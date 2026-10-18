@@ -1,0 +1,395 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "water",
+    "label": "Water",
+    "headword": "WATER",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Water",
+    "area": "natural-sciences",
+    "teaser": "Water was long held by philosophers to be one of the four elements"
+  },
+  "aliases": [
+    "water",
+    "h2o",
+    "composition of water",
+    "ice",
+    "freezing of water"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0060",
+    "headword": "WATER",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 18",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 18 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "WAT                    [ 712 ]                    WAT\n\nWATCH, a ſmall portable machine for meaſuring time.\n  WATER, a tranſparent fluid, without colour, taſte, or\nſmell, which becomes ſolid by cold, and is raiſed into\nvapour by heat. Water was long held by philoſophers to\nbe one of the four elements, ſimple and unchangeablc,\nof which all other bodies are compoſed.\n  But Mr Cavendiſh and M. Lavoiſier have ſhown, by bur-\nning inflammable air with vital air in cloſe veſſels,\nthat water is produced, and that it is compoſed of\ntheſe two airs; and M. Lavoiſier has alſo decompoſed\nit, by paſſing its ſteam through a red-hot iron tube.\nAccording to M. Lavoiſier, 100 parts of water contain\nabout 85 parts of vital air and 15 of inflammable air,\nby weight. Some chemiſts, however, and among them Dr\nPrieſtlcy, ſtill diſpute this doctrine.\n  Water expands in freezing, ſo that ice is lighter\nthan water and floats upon it; and water is found to be\ndenſeſt at about the fortieth degree of Fahrenheit's\nthermometer, a little above the freezing point.\n  When water is turned into vapour it abſorbs a great\nquantity of heat, which becomes latent; and vapour is\nwater united with caloric.\n  It was formerly believed that water, by long and\nrepeated diſtillation, is converted into earth; but M.\nLavoiſier ſhowed in 1770 that this earth comes from the\nglaſs veſſels, which are worn by the water.\n  WATER-SPOUT. See SPOUT.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "WATER",
+        "text": "WATER, a transparent fluid, without colour, taste, or smell, which becomes solid by cold, and is raised into vapour by heat."
+      },
+      {
+        "id": "B2",
+        "section": "WATER",
+        "text": "Water was long held by philosophers to be one of the four elements, simple and unchangeable, of which all other bodies are composed."
+      },
+      {
+        "id": "B3",
+        "section": "WATER",
+        "text": "But Mr Cavendish and M. Lavoisier have shown, by burning inflammable air with vital air in close vessels, that water is produced, and that it is composed of these two airs; and M. Lavoisier has also decomposed it, by passing its steam through a red-hot iron tube."
+      },
+      {
+        "id": "B4",
+        "section": "WATER",
+        "text": "According to M. Lavoisier, 100 parts of water contain about 85 parts of vital air and 15 of inflammable air, by weight. Some chemists, however, and among them Dr Priestley, still dispute this doctrine."
+      },
+      {
+        "id": "B5",
+        "section": "WATER",
+        "text": "Water expands in freezing, so that ice is lighter than water and floats upon it; and water is found to be densest at about the fortieth degree of Fahrenheit's thermometer, a little above the freezing point."
+      },
+      {
+        "id": "B6",
+        "section": "WATER",
+        "text": "When water is turned into vapour it absorbs a great quantity of heat, which becomes latent; and vapour is water united with caloric."
+      },
+      {
+        "id": "B7",
+        "section": "WATER",
+        "text": "It was formerly believed that water, by long and repeated distillation, is converted into earth; but M. Lavoisier showed in 1770 that this earth comes from the glass vessels, which are worn by the water."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-water",
+    "title": "Water",
+    "url": "https://en.wikipedia.org/wiki/Water",
+    "dateModified": "2026-09-30",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless and nearly colorless substance, and it is the main part of Earth's oceans and of the fluids of living things."
+      },
+      {
+        "id": "W2",
+        "section": "Chemical properties",
+        "text": "Each water molecule has two hydrogen atoms joined by covalent bonds to one oxygen atom. The molecule is polar, and hydrogen bonds between molecules give water many of its unusual properties."
+      },
+      {
+        "id": "W3",
+        "section": "History",
+        "text": "Henry Cavendish showed around 1781 that water forms when hydrogen burns. Antoine Lavoisier repeated the work, named hydrogen, and showed that water is a compound of hydrogen and oxygen."
+      },
+      {
+        "id": "W4",
+        "section": "Composition",
+        "text": "By mass, water is about 89 percent oxygen and 11 percent hydrogen."
+      },
+      {
+        "id": "W5",
+        "section": "Density",
+        "text": "Water is densest at about 4 C. It expands when it freezes, so ice is less dense than liquid water and floats."
+      },
+      {
+        "id": "W6",
+        "section": "Heat",
+        "text": "Water has a high heat of vaporization. Turning liquid water into steam takes a large amount of energy, which is released again when the steam condenses."
+      },
+      {
+        "id": "W7",
+        "section": "On Earth",
+        "text": "Water covers about 71 percent of Earth's surface, mostly in seas and oceans."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.88,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same headword: WATER and Water.",
+      "Rare terms appear in both: Cavendish, Lavoisier, composition from two gases, ice floats, densest above freezing.",
+      "Properties of water scores well but leaves out the history of the discovery."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Properties of water",
+      "url": "https://en.wikipedia.org/wiki/Properties_of_water",
+      "embedScore": 0.84,
+      "rerankScore": 0.72
+    },
+    {
+      "title": "Hydrogen",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen",
+      "embedScore": 0.7,
+      "rerankScore": 0.44
+    }
+  ],
+  "alignments": [
+    {
+      "id": "wa1",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "A simple element",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "one of the four elements, simple and unchangeable"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "two hydrogen atoms joined by covalent bonds to one oxygen atom"
+      },
+      "note": "Water is a compound, not an element. The 1797 entry reports this old view and rejects it in the next passage."
+    },
+    {
+      "id": "wa2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Two airs",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "burning inflammable air with vital air in close vessels"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "water is a compound of hydrogen and oxygen"
+      },
+      "note": "Same fact. Inflammable air is now hydrogen and vital air is oxygen: a change in language."
+    },
+    {
+      "id": "wa3",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Proportions by weight",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "about 85 parts of vital air and 15 of inflammable air, by weight"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "about 89 percent oxygen and 11 percent hydrogen"
+      },
+      "note": "The order is right: most of the weight is oxygen. Lavoisier's measurement gave too much hydrogen."
+    },
+    {
+      "id": "wa4",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Still disputed",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "still dispute this doctrine"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "showed that water is a compound of hydrogen and oxygen"
+      },
+      "note": "True in 1797, when Priestley still held to phlogiston. The dispute ended soon after, and the compound view is now settled."
+    },
+    {
+      "id": "wa5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Ice floats",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "Water expands in freezing, so that ice is lighter than water and floats upon it"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "It expands when it freezes"
+      },
+      "note": "Same fact in both texts."
+    },
+    {
+      "id": "wa6",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Greatest density",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "densest at about the fortieth degree of Fahrenheit's thermometer"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Water is densest at about 4 C"
+      },
+      "note": "Same fact in another scale. 40 F is about 4.4 C."
+    },
+    {
+      "id": "wa7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Latent heat and caloric",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "vapour is water united with caloric"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Turning liquid water into steam takes a large amount of energy"
+      },
+      "note": "Right that vapour takes in much heat. Heat is energy, not a substance called caloric that joins the water."
+    },
+    {
+      "id": "wa8",
+      "kind": "dropped",
+      "verdict": "correct",
+      "label": "Water into earth",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "this earth comes from the glass vessels"
+      },
+      "wikipedia": null,
+      "note": "The entry reports the old belief and Lavoisier's proof against it. Wikipedia does not discuss this old belief."
+    },
+    {
+      "id": "wa9",
+      "kind": "added",
+      "verdict": null,
+      "label": "A polar molecule",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "The molecule is polar"
+      },
+      "note": "The 1797 entry has no idea of molecules or bonds. The formula H2O came with atomic theory in the next century."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What water is",
+      "britannica": 0.1,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Element or compound",
+      "britannica": 0.45,
+      "wikipedia": 0.28
+    },
+    {
+      "topic": "Ice and density",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Vapour and heat",
+      "britannica": 0.1,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Water into earth",
+      "britannica": 0.15,
+      "wikipedia": 0
+    },
+    {
+      "topic": "Molecule and bonds",
+      "britannica": 0,
+      "wikipedia": 0.18
+    },
+    {
+      "topic": "Water on Earth",
+      "britannica": 0,
+      "wikipedia": 0.12
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1797 entry say water is made of?",
+    "Did chemists in 1797 agree that water is a compound?",
+    "Which 1797 facts about ice and vapour still hold?"
+  ],
+  "answers": {
+    "What did the 1797 entry say water is made of?": {
+      "answer": "It said Cavendish and Lavoisier had shown that water is made of inflammable air and vital air [B3], about 85 parts vital air to 15 inflammable air by weight [B4]. Wikipedia names these gases hydrogen and oxygen [W3] and gives about 89 percent oxygen and 11 percent hydrogen by mass [W4].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.87
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did chemists in 1797 agree that water is a compound?": {
+      "answer": "Not all of them. The 1797 entry says some chemists, among them Priestley, still disputed it [B4]. Older chemists had held water to be a simple element [B2]. Wikipedia treats the compound view as settled [W3].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Which 1797 facts about ice and vapour still hold?": {
+      "answer": "Water expands when it freezes, so ice floats [B5] [W5]. It is densest a little above freezing, near 40 F or 4 C [B5] [W5]. Vapour takes in a great quantity of heat [B6], which Wikipedia calls a high heat of vaporization [W6]. The 1797 idea of caloric did not hold.",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.87
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

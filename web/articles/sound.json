@@ -1,0 +1,391 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "sound",
+    "label": "Sound",
+    "headword": "SOUND",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Sound",
+    "area": "natural-sciences",
+    "teaser": "That air is the common medium of sound appears from the experiment of a bell rung in the receiver of an air-pump"
+  },
+  "aliases": [
+    "sound",
+    "sounds",
+    "acoustics",
+    "speed of sound",
+    "velocity of sound"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0058",
+    "headword": "SOUND",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 17",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 17 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "SOU                    [ 476 ]                    SOU\n\nSOUL. See METAPHYSICS.\n  SOUND, in philoſophy, a perception of the mind, com-\nmunicated by means of the ear; or that tremulous motion\nof the air which, being excited by the vibrations of a\nſounding body, is conveyed to the organ of hearing.\n  That air is the common medium of ſound appears from\nthe experiment of a bell rung in the receiver of an\nair-pump, which, as the air is exhauſied, is heard\nfainter and fainter, till at laſt it can ſcarce be\nheard at all.\n  Some philoſophers have held that ſound is propagated\nby particles of air thrown off from the ſounding body\nand flying to the ear. M. de Mairan ſuppoſes the air to\nconſiſt of particles of different elaſticities, each of\nwhich conveys one particular tone.\n  The vclocity of ſound, by the experiments of Dr\nDerham, is about 1142 feet in a ſecond; and all ſounds,\nwhether loud or ſoft, grave or acute, move with the\nſame velocity. Sir Iſaac Newton computed this velocity\nfrom the elaſticity and denſity of the air, and found\nit about 968 feet in a ſecond; the cauſe of the diffe-\nrence between his computation and experiment has not\nyet been ſatiſfactorily explained.\n  Water and ſolid bodies convey ſound better than air;\nfor a ſtroke under water is heard at a great diſtance,\nand the ſcratch of a pin at one end of a long beam is\nheard at the other.\n  The tone of a ſound, whether grave or acute, depends\non the number of vibrations made in a given time by the\nſounding body.\n  SOUNDING, in navigation, the trying the depth of the\nwater with a line and plummet.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "SOUND",
+        "text": "SOUND, in philosophy, a perception of the mind, communicated by means of the ear; or that tremulous motion of the air which, being excited by the vibrations of a sounding body, is conveyed to the organ of hearing."
+      },
+      {
+        "id": "B2",
+        "section": "SOUND",
+        "text": "That air is the common medium of sound appears from the experiment of a bell rung in the receiver of an air-pump, which, as the air is exhausted, is heard fainter and fainter, till at last it can scarce be heard at all."
+      },
+      {
+        "id": "B3",
+        "section": "SOUND",
+        "text": "Some philosophers have held that sound is propagated by particles of air thrown off from the sounding body and flying to the ear. M. de Mairan supposes the air to consist of particles of different elasticities, each of which conveys one particular tone."
+      },
+      {
+        "id": "B4",
+        "section": "SOUND",
+        "text": "The velocity of sound, by the experiments of Dr Derham, is about 1142 feet in a second; and all sounds, whether loud or soft, grave or acute, move with the same velocity."
+      },
+      {
+        "id": "B5",
+        "section": "SOUND",
+        "text": "Sir Isaac Newton computed this velocity from the elasticity and density of the air, and found it about 968 feet in a second; the cause of the difference between his computation and experiment has not yet been satisfactorily explained."
+      },
+      {
+        "id": "B6",
+        "section": "SOUND",
+        "text": "Water and solid bodies convey sound better than air; for a stroke under water is heard at a great distance, and the scratch of a pin at one end of a long beam is heard at the other."
+      },
+      {
+        "id": "B7",
+        "section": "SOUND",
+        "text": "The tone of a sound, whether grave or acute, depends on the number of vibrations made in a given time by the sounding body."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-sound",
+    "title": "Sound",
+    "url": "https://en.wikipedia.org/wiki/Sound",
+    "dateModified": "2026-08-27",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "In physics, sound is a vibration that travels as an acoustic wave through a medium such as a gas, liquid or solid. In human physiology, sound is the reception of such waves and their perception by the brain."
+      },
+      {
+        "id": "W2",
+        "section": "Propagation",
+        "text": "Sound needs a medium to travel. It cannot travel through a vacuum, because there is no matter there to carry the vibration."
+      },
+      {
+        "id": "W3",
+        "section": "Waves",
+        "text": "The particles of the medium do not travel with the sound. Each particle vibrates about its resting place and passes the motion to its neighbours."
+      },
+      {
+        "id": "W4",
+        "section": "Speed of sound",
+        "text": "The speed of sound in dry air at 20 C is about 343 metres per second, or about 1,125 feet per second. The speed depends on the temperature. Ordinary sounds of all pitches and loudness travel at nearly the same speed in air."
+      },
+      {
+        "id": "W5",
+        "section": "Speed of sound",
+        "text": "Newton's calculation of the speed of sound in air gave a value that was too low. Laplace later corrected it by taking into account the heat produced when air is compressed."
+      },
+      {
+        "id": "W6",
+        "section": "Speed of sound",
+        "text": "Sound travels faster in liquids and solids than in air. Its speed is about 1,480 metres per second in water and about 5,960 metres per second in steel."
+      },
+      {
+        "id": "W7",
+        "section": "Pitch",
+        "text": "Pitch depends mainly on the frequency of the sound wave, that is the number of vibrations per second."
+      },
+      {
+        "id": "W8",
+        "section": "Hearing",
+        "text": "Humans can usually hear sounds with frequencies from about 20 Hz to 20,000 Hz. Sound above this range is called ultrasound, and sound below it is called infrasound."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.86,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same headword: SOUND and Sound.",
+      "Rare terms appear in both: vibration, vacuum, velocity in feet per second, Newton's computation.",
+      "Speed of sound scores well but covers only one part of the entry."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Speed of sound",
+      "url": "https://en.wikipedia.org/wiki/Speed_of_sound",
+      "embedScore": 0.8,
+      "rerankScore": 0.66
+    },
+    {
+      "title": "Acoustics",
+      "url": "https://en.wikipedia.org/wiki/Acoustics",
+      "embedScore": 0.75,
+      "rerankScore": 0.52
+    }
+  ],
+  "alignments": [
+    {
+      "id": "so1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "A vibration of the air",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "that tremulous motion of the air"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a vibration that travels as an acoustic wave through a medium"
+      },
+      "note": "Same idea in new words. Wikipedia adds that liquids and solids also carry the wave."
+    },
+    {
+      "id": "so2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Bell in a vacuum",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "is heard fainter and fainter, till at last it can scarce be heard at all"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "It cannot travel through a vacuum"
+      },
+      "note": "The air-pump experiment holds. Some sound still reaches the ear through the glass and the frame of the pump."
+    },
+    {
+      "id": "so3",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Flying particles",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "propagated by particles of air thrown off from the sounding body and flying to the ear"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "The particles of the medium do not travel with the sound"
+      },
+      "note": "A change in knowledge. Only the vibration moves from the source to the ear; the air stays in place."
+    },
+    {
+      "id": "so4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "A particle for each tone",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "each of which conveys one particular tone"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Pitch depends mainly on the frequency of the sound wave"
+      },
+      "note": "The same air carries all tones. The tone depends on the frequency, as the entry itself says in B7."
+    },
+    {
+      "id": "so5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Speed of sound",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "about 1142 feet in a second"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "about 1,125 feet per second"
+      },
+      "note": "Close to the modern figure. The entry does not say that the speed changes with temperature."
+    },
+    {
+      "id": "so6",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Same speed for all sounds",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "all sounds, whether loud or soft, grave or acute, move with the same velocity"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "Ordinary sounds of all pitches and loudness travel at nearly the same speed in air"
+      },
+      "note": "This holds for ordinary sounds. Inference: the word nearly in the modern text allows for very strong blasts."
+    },
+    {
+      "id": "so7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Newton's computation",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the cause of the difference between his computation and experiment has not yet been satisfactorily explained"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Laplace later corrected it by taking into account the heat produced when air is compressed"
+      },
+      "note": "The gap between theory and experiment was real in 1797. Laplace explained it after this edition."
+    },
+    {
+      "id": "so8",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Water and solids",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "Water and solid bodies convey sound better than air"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Sound travels faster in liquids and solids than in air"
+      },
+      "note": "The fact holds. Wikipedia gives the speeds in water and steel."
+    },
+    {
+      "id": "so9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Range of hearing",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W8",
+        "quote": "Humans can usually hear sounds with frequencies from about 20 Hz to 20,000 Hz"
+      },
+      "note": "The 1797 entry gives no limits of hearing. Ultrasound and infrasound are later terms."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "What sound is",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Need for a medium",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "How sound travels",
+      "britannica": 0.2,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Speed",
+      "britannica": 0.3,
+      "wikipedia": 0.3
+    },
+    {
+      "topic": "Water and solids",
+      "britannica": 0.1,
+      "wikipedia": 0.13
+    },
+    {
+      "topic": "Pitch",
+      "britannica": 0.1,
+      "wikipedia": 0.08
+    },
+    {
+      "topic": "Range of hearing",
+      "britannica": 0,
+      "wikipedia": 0.1
+    }
+  ],
+  "suggestedQuestions": [
+    "How fast did the 1797 entry say sound travels?",
+    "How did the 1797 entry show that sound needs air?",
+    "Which 1797 ideas about how sound travels were wrong?"
+  ],
+  "answers": {
+    "How fast did the 1797 entry say sound travels?": {
+      "answer": "About 1142 feet in a second, from Derham's experiments [B4]. Wikipedia gives about 1,125 feet per second in dry air at 20 C, and says the speed depends on the temperature [W4]. The 1797 entry also noted that Newton's computed value was too low [B5], which Laplace later explained [W5].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.87
+        }
+      ],
+      "grounding": "supported"
+    },
+    "How did the 1797 entry show that sound needs air?": {
+      "answer": "With a bell rung inside the receiver of an air-pump: as the air was pumped out, the bell grew fainter until it could scarcely be heard [B2]. Wikipedia agrees that sound cannot travel through a vacuum [W2].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Which 1797 ideas about how sound travels were wrong?": {
+      "answer": "Two reported ideas were wrong. One was that particles of air fly from the sounding body to the ear [B3]; Wikipedia says the particles only vibrate in place [W3]. The other was Mairan's idea of separate particles for each tone [B3]; pitch depends on frequency [W7].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.9
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}
