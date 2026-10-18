@@ -1,0 +1,356 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "puerperal-fever",
+    "label": "Puerperal fever",
+    "headword": "PUERPERAL FEVER",
+    "edition": "Fifth edition",
+    "year": 1817,
+    "match": "partial",
+    "wikipediaTitle": "Postpartum infections",
+    "area": "infectious-disease",
+    "teaser": "it is carried from one patient to another by the midwife or the physician who attends her"
+  },
+  "aliases": [
+    "puerperal fever",
+    "childbed fever",
+    "postpartum infection",
+    "puerperal sepsis"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0045",
+    "headword": "PUERPERAL FEVER",
+    "edition": "Fifth edition",
+    "year": 1817,
+    "volume": "Volume 17",
+    "meta": "Encyclopaedia Britannica - Fifth edition, Volume 17 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "PUE                    [ 312 ]                    PUF\n\nPUERILITY, childishness.\n  PUERPERAL FEVER, a fever which ſeizes women ſoon\nafter delivery, commonly on the ſecond or third day,\nwith a fhivering, a great pain and ſwelling of the\nbelly, and a quick pulſe. It is often fatal, and in\nſome years it rages as an cpidemic, eſpecially in the\nlying-in hoſpitals of great cities, where it has car-\nried off great numbers of women. Some authors have\naſcribed it to a tranſlation of the milk from the\nbreaſts to the belly; others to a peculiar conſtitution\nof the atmoſphere.\n  Dr Alexander Gordon of Aberdeen, in a treatiſe pub-\nliſhed in 1795, maintained that the diſeaſe is propaga-\nted by a ſpecific contagion, and that it is carried\nfrom one patient to another by the midwife or the phy-\nſician who attends her. This opinion has not been gene-\nrally received by the profeſſion.\n  Dr Gordon recommends copious and early bleeding at\nthe beginning of the diſeaſe, followed by purging.\n  PUFFIN, a sea-bird of the auk kind.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "PUERPERAL FEVER",
+        "text": "PUERPERAL FEVER, a fever which seizes women soon after delivery, commonly on the second or third day, with a shivering, a great pain and swelling of the belly, and a quick pulse."
+      },
+      {
+        "id": "B2",
+        "section": "PUERPERAL FEVER",
+        "text": "It is often fatal, and in some years it rages as an epidemic, especially in the lying-in hospitals of great cities, where it has carried off great numbers of women."
+      },
+      {
+        "id": "B3",
+        "section": "PUERPERAL FEVER",
+        "text": "Some authors have ascribed it to a translation of the milk from the breasts to the belly; others to a peculiar constitution of the atmosphere."
+      },
+      {
+        "id": "B4",
+        "section": "PUERPERAL FEVER",
+        "text": "Dr Alexander Gordon of Aberdeen, in a treatise published in 1795, maintained that the disease is propagated by a specific contagion, and that it is carried from one patient to another by the midwife or the physician who attends her."
+      },
+      {
+        "id": "B5",
+        "section": "PUERPERAL FEVER",
+        "text": "This opinion has not been generally received by the profession."
+      },
+      {
+        "id": "B6",
+        "section": "PUERPERAL FEVER",
+        "text": "Dr Gordon recommends copious and early bleeding at the beginning of the disease, followed by purging."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-puerperal-fever",
+    "title": "Postpartum infections",
+    "url": "https://en.wikipedia.org/wiki/Postpartum_infections",
+    "dateModified": "2026-08-19",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Postpartum infections, also known as childbed fever and puerperal fever, are bacterial infections of the female reproductive tract after childbirth or miscarriage. Signs and symptoms usually include a fever, chills, lower abdominal pain, and possibly bad-smelling vaginal discharge."
+      },
+      {
+        "id": "W2",
+        "section": "Cause",
+        "text": "The infection is caused by bacteria, often several types together, including streptococci."
+      },
+      {
+        "id": "W3",
+        "section": "Risk factors",
+        "text": "Caesarean section is the main risk factor. Other risks include long labour and early rupture of the membranes."
+      },
+      {
+        "id": "W4",
+        "section": "History",
+        "text": "Before modern hygiene, childbed fever was common in maternity hospitals and killed many mothers."
+      },
+      {
+        "id": "W5",
+        "section": "History",
+        "text": "In 1795 Alexander Gordon of Aberdeen concluded that the fever was carried from patient to patient by the doctors and midwives who attended them."
+      },
+      {
+        "id": "W6",
+        "section": "History",
+        "text": "In 1847 Ignaz Semmelweis in Vienna showed that hand washing with a chlorine solution by doctors greatly reduced deaths from the fever. His findings were widely rejected in his lifetime."
+      },
+      {
+        "id": "W7",
+        "section": "Treatment",
+        "text": "Treatment is with antibiotics, often given through a vein, such as clindamycin with gentamicin."
+      }
+    ]
+  },
+  "match": {
+    "strength": "partial",
+    "embedScore": 0.8,
+    "rerankScore": 0.74,
+    "reasons": [
+      "The Wikipedia title is Postpartum infections, but its first sentence names puerperal fever and childbed fever.",
+      "Rare terms appear in both: Alexander Gordon, Aberdeen, 1795.",
+      "Ignaz Semmelweis scores well but covers the man more than the disease."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Ignaz Semmelweis",
+      "url": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis",
+      "embedScore": 0.74,
+      "rerankScore": 0.58
+    },
+    {
+      "title": "Sepsis",
+      "url": "https://en.wikipedia.org/wiki/Sepsis",
+      "embedScore": 0.68,
+      "rerankScore": 0.42
+    }
+  ],
+  "alignments": [
+    {
+      "id": "pf1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Fever after childbirth",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a fever which seizes women soon after delivery"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "after childbirth or miscarriage"
+      },
+      "note": "Same disease. Change in language only."
+    },
+    {
+      "id": "pf2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Deaths in hospitals",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "especially in the lying-in hospitals of great cities"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "common in maternity hospitals and killed many mothers"
+      },
+      "note": "Both tie the disease to hospitals. Lying-in hospitals are maternity hospitals."
+    },
+    {
+      "id": "pf3",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Milk in the belly",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "a translation of the milk from the breasts to the belly"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "The infection is caused by bacteria"
+      },
+      "note": "Change in knowledge. Milk does not move to the belly. Bacteria cause the fever."
+    },
+    {
+      "id": "pf4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "The atmosphere",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "a peculiar constitution of the atmosphere"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "carried from patient to patient by the doctors and midwives"
+      },
+      "note": "Change in knowledge. The air of a season did not cause the epidemics. The hands of the attendants did."
+    },
+    {
+      "id": "pf5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Carried by attendants",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "carried from one patient to another by the midwife or the physician"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "carried from patient to patient by the doctors and midwives"
+      },
+      "note": "Gordon's 1795 claim holds. Both texts give the same name, place and year."
+    },
+    {
+      "id": "pf6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "A specific contagion",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "propagated by a specific contagion"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "often several types together"
+      },
+      "note": "A contagion passes between patients, but more than one kind of bacterium can cause the fever."
+    },
+    {
+      "id": "pf7",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Doctors reject the idea",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "This opinion has not been generally received"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "His findings were widely rejected in his lifetime"
+      },
+      "note": "Inference: Semmelweis met the same refusal as Gordon. The 1817 text records the refusal correctly."
+    },
+    {
+      "id": "pf8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Bleeding",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "copious and early bleeding"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Treatment is with antibiotics"
+      },
+      "note": "Change in knowledge. Bleeding weakens the patient and does not stop the infection."
+    },
+    {
+      "id": "pf9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Hand washing",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "hand washing with a chlorine solution"
+      },
+      "note": "Semmelweis made his discovery thirty years after this edition."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Signs",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Hospitals and deaths",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.2,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Carried by attendants",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Hand washing",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "Who first said that doctors carried puerperal fever?",
+    "What did the 1817 entry think caused the fever?"
+  ],
+  "answers": {
+    "Who first said that doctors carried puerperal fever?": {
+      "answer": "Both texts name Alexander Gordon of Aberdeen, who said in 1795 that the midwife or physician carried the disease from one patient to another [B4] [W5]. The 1817 entry adds that the profession did not accept his view [B5]. Semmelweis later showed in 1847 that hand washing reduced deaths [W6].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.84
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.86
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What did the 1817 entry think caused the fever?": {
+      "answer": "It reports two views: milk moving from the breasts to the belly, or a peculiar state of the atmosphere [B3]. It also gives Gordon's view of a specific contagion [B4]. Wikipedia says bacteria cause the infection, often several types together [W2].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.85
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.93
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

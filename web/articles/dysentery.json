@@ -1,0 +1,357 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "dysentery",
+    "label": "Dysentery",
+    "headword": "DYSENTERY",
+    "edition": "Second edition",
+    "year": 1778,
+    "match": "strong",
+    "wikipediaTitle": "Dysentery",
+    "area": "infectious-disease",
+    "teaser": "It is the scourge of camps and fleets, and of crowded jails and hospitals"
+  },
+  "aliases": [
+    "dysentery",
+    "bloody flux",
+    "amoebic dysentery",
+    "bacillary dysentery",
+    "shigellosis"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0042",
+    "headword": "DYSENTERY",
+    "edition": "Second edition",
+    "year": 1778,
+    "volume": "Volume 4",
+    "meta": "Encyclopaedia Britannica - Second edition, Volume 4 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "DYS                    [ 2541 ]                    DYS\n\nDYSCRASY, in medicine, an ill habit of body.\n  DYSENTERY, or BLOODY FLUX, a diſeaſe in which the\npatient has frequent ſtools, mixed with blood and\nſlime, attended with violent grlpes and a continual\ndeſire to go to ſtool. It is the ſcourge of camps and\nfleets, and of crowded jails and hoſpitals; and it com-\nmonly rages in the end of ſummer and in autumn.\n  The cauſes aſſigned are a putrid air, the eating of\nunrlpe fruit, and a ſudden ſtopping of the perſpiration\nby cold and damp after great heat. The diſeaſe is con-\ntagious; and Sir John Pringle obſerved, that it is\nchiefly ſpread by the privies which the ſick have uſed,\nand by their foul linen.\n  The cure is begun with a vomit of ipecacuanha, which\nis reckoned almoſt a ſpecific in this diſeaſe; after\nwhich the bowels are cleanſed with rhubarb. When the\ngripes are violent, opium is given at night to procure\neaſe; and the patient is fed on rice, ſago, and other\nmild and mucilaginous food.\n  DYSPEPSY, a difficulty of digestion.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "DYSENTERY",
+        "text": "DYSENTERY, or BLOODY FLUX, a disease in which the patient has frequent stools, mixed with blood and slime, attended with violent gripes and a continual desire to go to stool."
+      },
+      {
+        "id": "B2",
+        "section": "DYSENTERY",
+        "text": "It is the scourge of camps and fleets, and of crowded jails and hospitals; and it commonly rages in the end of summer and in autumn."
+      },
+      {
+        "id": "B3",
+        "section": "DYSENTERY",
+        "text": "The causes assigned are a putrid air, the eating of unripe fruit, and a sudden stopping of the perspiration by cold and damp after great heat."
+      },
+      {
+        "id": "B4",
+        "section": "DYSENTERY",
+        "text": "The disease is contagious; and Sir John Pringle observed, that it is chiefly spread by the privies which the sick have used, and by their foul linen."
+      },
+      {
+        "id": "B5",
+        "section": "DYSENTERY",
+        "text": "The cure is begun with a vomit of ipecacuanha, which is reckoned almost a specific in this disease; after which the bowels are cleansed with rhubarb."
+      },
+      {
+        "id": "B6",
+        "section": "DYSENTERY",
+        "text": "When the gripes are violent, opium is given at night to procure ease; and the patient is fed on rice, sago, and other mild and mucilaginous food."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-dysentery",
+    "title": "Dysentery",
+    "url": "https://en.wikipedia.org/wiki/Dysentery",
+    "dateModified": "2026-08-27",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Dysentery is a type of gastroenteritis that results in bloody diarrhea. Other symptoms may include fever, abdominal pain, and a feeling of incomplete defecation."
+      },
+      {
+        "id": "W2",
+        "section": "Cause",
+        "text": "Dysentery is mainly caused by bacteria, most often Shigella, or by an amoeba, Entamoeba histolytica."
+      },
+      {
+        "id": "W3",
+        "section": "Transmission",
+        "text": "The infection spreads through food or water contaminated with feces, and from person to person through poor hygiene."
+      },
+      {
+        "id": "W4",
+        "section": "History",
+        "text": "Through history, outbreaks of dysentery have killed large numbers of soldiers in military camps and people in crowded places."
+      },
+      {
+        "id": "W5",
+        "section": "Treatment",
+        "text": "The main treatment is to keep up fluid intake, for example with oral rehydration solution. Antibiotics are used for some bacterial cases, and amoebic dysentery is treated with drugs such as metronidazole."
+      },
+      {
+        "id": "W6",
+        "section": "History",
+        "text": "Ipecacuanha root was used against dysentery from the 17th century. Its alkaloid emetine was later used to treat amoebic dysentery."
+      },
+      {
+        "id": "W7",
+        "section": "Prevention",
+        "text": "Prevention depends on hand washing, safe food and water, and good sanitation."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.86,
+    "rerankScore": 0.88,
+    "reasons": [
+      "Same headword: DYSENTERY and Dysentery.",
+      "Both texts describe bloody stools, pain in the belly and the urge to pass stool.",
+      "Shigellosis scores well but covers only one cause."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Shigellosis",
+      "url": "https://en.wikipedia.org/wiki/Shigellosis",
+      "embedScore": 0.78,
+      "rerankScore": 0.6
+    },
+    {
+      "title": "Amoebiasis",
+      "url": "https://en.wikipedia.org/wiki/Amoebiasis",
+      "embedScore": 0.74,
+      "rerankScore": 0.55
+    },
+    {
+      "title": "Diarrhea",
+      "url": "https://en.wikipedia.org/wiki/Diarrhea",
+      "embedScore": 0.7,
+      "rerankScore": 0.46
+    }
+  ],
+  "alignments": [
+    {
+      "id": "dy1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Bloody stools",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "frequent stools, mixed with blood and slime"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "results in bloody diarrhea"
+      },
+      "note": "Same sign. Change in language only."
+    },
+    {
+      "id": "dy2",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Gripes",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "attended with violent gripes"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "abdominal pain"
+      },
+      "note": "Gripes is the old word for cramping pain in the belly."
+    },
+    {
+      "id": "dy3",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Urge to pass stool",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a continual desire to go to stool"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a feeling of incomplete defecation"
+      },
+      "note": "Same sign in new words."
+    },
+    {
+      "id": "dy4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Camps and crowds",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "It is the scourge of camps and fleets"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "killed large numbers of soldiers in military camps"
+      },
+      "note": "Both tie the disease to armies and crowded places."
+    },
+    {
+      "id": "dy5",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Cause",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "a putrid air, the eating of unripe fruit"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "mainly caused by bacteria"
+      },
+      "note": "Change in knowledge. Bacteria or an amoeba cause the disease. Bad air, fruit and stopped sweat do not."
+    },
+    {
+      "id": "dy6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Spread by the privies",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "chiefly spread by the privies which the sick have used"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "food or water contaminated with feces"
+      },
+      "note": "Pringle saw that the stools of the sick carry the disease. The route through food and water was not known."
+    },
+    {
+      "id": "dy7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Ipecacuanha",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "a vomit of ipecacuanha, which is reckoned almost a specific"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "Its alkaloid emetine was later used to treat amoebic dysentery"
+      },
+      "note": "The root has an effect on the amoebic form only. Inference: as a vomit it did not help the bacterial form."
+    },
+    {
+      "id": "dy8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Purging",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "the bowels are cleansed with rhubarb"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "keep up fluid intake"
+      },
+      "note": "Change in knowledge. Treatment now replaces lost fluid. Inference: a purge adds to the loss."
+    },
+    {
+      "id": "dy9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Prevention",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Prevention depends on hand washing, safe food and water, and good sanitation"
+      },
+      "note": "Wikipedia adds prevention by hygiene. The 1778 text gives none."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Signs",
+      "britannica": 0.3,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Where it strikes",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.15,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Spread",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.25,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Prevention",
+      "britannica": 0,
+      "wikipedia": 0.1
+    }
+  ],
+  "suggestedQuestions": [
+    "How did the 1778 entry think dysentery spreads?",
+    "Did ipecacuanha work against dysentery?"
+  ],
+  "answers": {
+    "How did the 1778 entry think dysentery spreads?": {
+      "answer": "It calls the disease contagious and, after Pringle, says it spreads chiefly by the privies the sick have used and by their foul linen [B4]. Wikipedia says it spreads through food or water contaminated with feces and through poor hygiene [W3]. The link to the stools of the sick held.",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.94
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Did ipecacuanha work against dysentery?": {
+      "answer": "In part. The 1778 entry calls it almost a specific [B5]. Wikipedia says its alkaloid emetine was later used for amoebic dysentery [W6]. Most cases have a bacterial cause [W2], and treatment today relies on fluids and drugs such as metronidazole [W5].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W2",
+          "source": "wikipedia",
+          "passageId": "W2",
+          "rerankScore": 0.8
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.84
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

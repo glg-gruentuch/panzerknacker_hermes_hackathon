@@ -1,0 +1,339 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "syphilis",
+    "label": "Syphilis",
+    "headword": "SYPHILIS, or LUES VENEREA",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Syphilis",
+    "area": "infectious-disease",
+    "teaser": "Mercury is the only certain remedy"
+  },
+  "aliases": [
+    "syphilis",
+    "lues venerea",
+    "venereal disease",
+    "great pox",
+    "french disease"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0043",
+    "headword": "SYPHILIS, or LUES VENEREA",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 18",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 18 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "SYP                    [ 312 ]                    SYP\n\nSYNTHESIS, in logic, the method of composition.\n  SYPHILIS, or LUES VENEREA, the venereal diſeaſe, a\ncontagious diftemper communicated chiefly by impure\ncoition with an infected perſon. It is generally belie-\nved to have been brought into Europe from America by\nthe ſailors of Columbus, and to have firſt appeared at\nthe ſiege of Naples in 1495. Mr John Hunter holds that\nthe gonorrhoea and the chancre ariſe from one and the\nſame poiſon, which produces the one or the other accor-\nding to the part it falls upon.\n  The firſt ſign is commonly a ſmall ulcer called a\nchancre; the poiſon afterwards enters the blood, and\nſhows itſelf by eruptions on the ſkin and ulcers of the\nthroat. If neglected, it at length attacks the bones,\ncauſing nocturnal pains and nodes, and may deſtroy the\nbones of the noſe and palatc.\n  Mercury is the only certain remedy; it is given by\nthe mouth or rubbed into the ſkin, till the gums become\nſore and a ſalivation is raiſed.\n  SYPHON. See SIPHON.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "SYPHILIS, or LUES VENEREA",
+        "text": "SYPHILIS, or LUES VENEREA, the venereal disease, a contagious distemper communicated chiefly by impure coition with an infected person."
+      },
+      {
+        "id": "B2",
+        "section": "SYPHILIS, or LUES VENEREA",
+        "text": "It is generally believed to have been brought into Europe from America by the sailors of Columbus, and to have first appeared at the siege of Naples in 1495."
+      },
+      {
+        "id": "B3",
+        "section": "SYPHILIS, or LUES VENEREA",
+        "text": "Mr John Hunter holds that the gonorrhoea and the chancre arise from one and the same poison, which produces the one or the other according to the part it falls upon."
+      },
+      {
+        "id": "B4",
+        "section": "SYPHILIS, or LUES VENEREA",
+        "text": "The first sign is commonly a small ulcer called a chancre; the poison afterwards enters the blood, and shows itself by eruptions on the skin and ulcers of the throat."
+      },
+      {
+        "id": "B5",
+        "section": "SYPHILIS, or LUES VENEREA",
+        "text": "If neglected, it at length attacks the bones, causing nocturnal pains and nodes, and may destroy the bones of the nose and palate."
+      },
+      {
+        "id": "B6",
+        "section": "SYPHILIS, or LUES VENEREA",
+        "text": "Mercury is the only certain remedy; it is given by the mouth or rubbed into the skin, till the gums become sore and a salivation is raised."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-syphilis",
+    "title": "Syphilis",
+    "url": "https://en.wikipedia.org/wiki/Syphilis",
+    "dateModified": "2026-10-02",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Syphilis is a sexually transmitted infection caused by the bacterium Treponema pallidum subspecies pallidum."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "The infection develops in stages: primary, secondary, latent and tertiary. The primary stage usually presents as a single painless chancre, a firm ulcer at the site of infection."
+      },
+      {
+        "id": "W3",
+        "section": "Signs and symptoms",
+        "text": "Secondary syphilis brings a widespread rash, which often includes the palms and soles, and may cause sores in the mouth."
+      },
+      {
+        "id": "W4",
+        "section": "Signs and symptoms",
+        "text": "Tertiary syphilis can appear years after infection. It may cause soft growths called gummas, and can damage the heart and the nervous system (neurosyphilis)."
+      },
+      {
+        "id": "W5",
+        "section": "History",
+        "text": "The origin of syphilis is disputed. One hypothesis holds that sailors on the voyages of Christopher Columbus carried it from the Americas to Europe; another holds that it was present in Europe before. The first well-recorded European outbreak was in 1494 and 1495 in Naples."
+      },
+      {
+        "id": "W6",
+        "section": "History",
+        "text": "For a long time gonorrhea and syphilis were thought to be one disease. In the 1830s Philippe Ricord showed that they are separate diseases."
+      },
+      {
+        "id": "W7",
+        "section": "Treatment",
+        "text": "Mercury was used for centuries but had serious toxic side effects. Since the 1940s the first-line treatment has been penicillin."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.85,
+    "rerankScore": 0.87,
+    "reasons": [
+      "Same name: SYPHILIS and Syphilis.",
+      "Rare terms appear in both: chancre, Columbus, Naples, mercury.",
+      "Gonorrhea scores lower because the old entry only touches on it."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Sexually transmitted infection",
+      "url": "https://en.wikipedia.org/wiki/Sexually_transmitted_infection",
+      "embedScore": 0.76,
+      "rerankScore": 0.55
+    },
+    {
+      "title": "Gonorrhea",
+      "url": "https://en.wikipedia.org/wiki/Gonorrhea",
+      "embedScore": 0.7,
+      "rerankScore": 0.48
+    }
+  ],
+  "alignments": [
+    {
+      "id": "sy1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Sexual contact",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "communicated chiefly by impure coition"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a sexually transmitted infection"
+      },
+      "note": "Same fact. Change in language only."
+    },
+    {
+      "id": "sy2",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "From America",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "brought into Europe from America by the sailors of Columbus"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "The origin of syphilis is disputed"
+      },
+      "note": "The 1797 text gives one hypothesis as settled. It is still one of two main views."
+    },
+    {
+      "id": "sy3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Naples, 1495",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "first appeared at the siege of Naples in 1495"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "1494 and 1495 in Naples"
+      },
+      "note": "Same outbreak, same years."
+    },
+    {
+      "id": "sy4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "One poison",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "the gonorrhoea and the chancre arise from one and the same poison"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "they are separate diseases"
+      },
+      "note": "Change in knowledge. Hunter's view was given up after Ricord's work."
+    },
+    {
+      "id": "sy5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Chancre",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "a small ulcer called a chancre"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "a single painless chancre"
+      },
+      "note": "Same first sign and the same term."
+    },
+    {
+      "id": "sy6",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Rash and throat",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "eruptions on the skin and ulcers of the throat"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "a widespread rash"
+      },
+      "note": "The second stage is described in the same way."
+    },
+    {
+      "id": "sy7",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Late stage",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "at length attacks the bones"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "can damage the heart and the nervous system"
+      },
+      "note": "Damage to bone does occur. The 1797 text does not know the late damage to heart and brain."
+    },
+    {
+      "id": "sy8",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Mercury",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "Mercury is the only certain remedy"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "had serious toxic side effects"
+      },
+      "note": "Change in knowledge. Mercury poisons the patient and does not cure the infection. Penicillin does."
+    },
+    {
+      "id": "sy9",
+      "kind": "added",
+      "verdict": null,
+      "label": "A bacterium",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "caused by the bacterium Treponema pallidum"
+      },
+      "note": "The 1797 text speaks of a poison. The bacterium was found in 1905."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Transmission",
+      "britannica": 0.15,
+      "wikipedia": 0.12
+    },
+    {
+      "topic": "Origin",
+      "britannica": 0.25,
+      "wikipedia": 0.2
+    },
+    {
+      "topic": "Gonorrhoea question",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Stages and signs",
+      "britannica": 0.3,
+      "wikipedia": 0.35
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.15,
+      "wikipedia": 0.13
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0,
+      "wikipedia": 0.1
+    }
+  ],
+  "suggestedQuestions": [
+    "Did syphilis come from America?",
+    "How was syphilis treated in 1797?"
+  ],
+  "answers": {
+    "Did syphilis come from America?": {
+      "answer": "The 1797 entry says so, naming the sailors of Columbus [B2]. Wikipedia says the origin is disputed: one hypothesis supports the Columbus route and another says the disease was already in Europe [W5]. Both texts agree on the outbreak at Naples in the 1490s [B2] [W5].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "How was syphilis treated in 1797?": {
+      "answer": "With mercury, given by mouth or rubbed into the skin until the gums became sore [B6]. Wikipedia says mercury had serious toxic side effects and that penicillin has been the first-line treatment since the 1940s [W7].",
+      "citations": [
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.95
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

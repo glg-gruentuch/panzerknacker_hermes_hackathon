@@ -1,0 +1,365 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "scarlet-fever",
+    "label": "Scarlet fever",
+    "headword": "SCARLET FEVER",
+    "edition": "Third edition",
+    "year": 1797,
+    "match": "strong",
+    "wikipediaTitle": "Scarlet fever",
+    "area": "infectious-disease",
+    "teaser": "In its common form it is a mild disease, and seldom proves fatal, if the patient be kept from cold and from hot medicines."
+  },
+  "aliases": [
+    "scarlet fever",
+    "scarlatina",
+    "scarlatina anginosa"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0041",
+    "headword": "SCARLET FEVER",
+    "edition": "Third edition",
+    "year": 1797,
+    "volume": "Volume 17",
+    "meta": "Encyclopaedia Britannica - Third edition, Volume 17 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "SCA                    [ 26 ]                    SCA\n\nSCARLET, a beautiful bright red colour.\n  SCARLET FEVER, or SCARLATINA, a fever attendcd with a\nred eruption, which ſpreads over the whole ſkin in\nlarge patches, and makes it appear as if it were dyed\nwith ſcarlet. The diſeaſe is commonly joined with a\nſoreneſs of the throat and a difficulty of ſwallowing;\nand it attacks children more frequently than grown per-\nſons. It is aſcribed by phyſicians to an acrid humour\nin tbe blood, which nature throws out upon the ſkin;\nothers derive it from a putrid ſtate of the air.\n  In its common form it is a mild diſeaſe, and ſeldom\nproves fatal, if the patient be kept from cold and from\nhot medicines. The malignant kind, with an ulcerated\nthroat, is contagious, and has ſometimes ſwept away the\nchildren of whole families.\n  The cure conſiſts in bleeding, if the fever run high,\nin gentle purges, and in a cooling diet; the patient is\nto drink plentifully of barley-water and lemonade. When\nthe redneſs goes off, the ſcarf-ſkin falls off in\nſcales, and ſometimes the ſkin of the hands peels away\nentire like a glove.\n  SCARP, in fortification. See FORTIFICATION.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "SCARLET FEVER",
+        "text": "SCARLET FEVER, or SCARLATINA, a fever attended with a red eruption, which spreads over the whole skin in large patches, and makes it appear as if it were dyed with scarlet."
+      },
+      {
+        "id": "B2",
+        "section": "SCARLET FEVER",
+        "text": "The disease is commonly joined with a soreness of the throat and a difficulty of swallowing; and it attacks children more frequently than grown persons."
+      },
+      {
+        "id": "B3",
+        "section": "SCARLET FEVER",
+        "text": "It is ascribed by physicians to an acrid humour in the blood, which nature throws out upon the skin; others derive it from a putrid state of the air."
+      },
+      {
+        "id": "B4",
+        "section": "SCARLET FEVER",
+        "text": "In its common form it is a mild disease, and seldom proves fatal, if the patient be kept from cold and from hot medicines."
+      },
+      {
+        "id": "B5",
+        "section": "SCARLET FEVER",
+        "text": "The malignant kind, with an ulcerated throat, is contagious, and has sometimes swept away the children of whole families."
+      },
+      {
+        "id": "B6",
+        "section": "SCARLET FEVER",
+        "text": "The cure consists in bleeding, if the fever run high, in gentle purges, and in a cooling diet; the patient is to drink plentifully of barley-water and lemonade."
+      },
+      {
+        "id": "B7",
+        "section": "SCARLET FEVER",
+        "text": "When the redness goes off, the scarf-skin falls off in scales, and sometimes the skin of the hands peels away entire like a glove."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-scarlet-fever",
+    "title": "Scarlet fever",
+    "url": "https://en.wikipedia.org/wiki/Scarlet_fever",
+    "dateModified": "2026-09-14",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Scarlet fever, also known as scarlatina, is an infectious disease caused by Streptococcus pyogenes, a group A streptococcus. It most commonly affects children between five and fifteen years of age."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "Signs and symptoms include a sore throat, fever, headache, swollen lymph nodes and a typical rash. The rash is red and feels like sandpaper, and the tongue may be red and bumpy."
+      },
+      {
+        "id": "W3",
+        "section": "Cause",
+        "text": "The disease is caused by strains of group A streptococcus that release toxins. It spreads mainly through respiratory droplets when an infected person coughs or sneezes."
+      },
+      {
+        "id": "W4",
+        "section": "History",
+        "text": "In the 19th century scarlet fever was a major cause of death in children in Europe and North America, with large epidemics."
+      },
+      {
+        "id": "W5",
+        "section": "Treatment",
+        "text": "Treatment with antibiotics such as penicillin shortens the illness and prevents complications such as rheumatic fever. With treatment, deaths are rare."
+      },
+      {
+        "id": "W6",
+        "section": "Signs and symptoms",
+        "text": "As the rash fades after about a week, the skin may peel, especially on the hands and feet."
+      },
+      {
+        "id": "W7",
+        "section": "Prevention",
+        "text": "There is no vaccine against scarlet fever. Prevention depends on hand washing and on keeping sick people away from others."
+      }
+    ]
+  },
+  "match": {
+    "strength": "strong",
+    "embedScore": 0.87,
+    "rerankScore": 0.9,
+    "reasons": [
+      "Same name: SCARLET FEVER, or SCARLATINA, and Scarlet fever, also known as scarlatina.",
+      "Both texts describe the red rash, the sore throat and the peeling skin.",
+      "Streptococcal pharyngitis scores well but covers the throat infection without the rash."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Streptococcal pharyngitis",
+      "url": "https://en.wikipedia.org/wiki/Streptococcal_pharyngitis",
+      "embedScore": 0.79,
+      "rerankScore": 0.61
+    },
+    {
+      "title": "Streptococcus pyogenes",
+      "url": "https://en.wikipedia.org/wiki/Streptococcus_pyogenes",
+      "embedScore": 0.71,
+      "rerankScore": 0.5
+    }
+  ],
+  "alignments": [
+    {
+      "id": "sf1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Red rash",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "a red eruption, which spreads over the whole skin"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "The rash is red and feels like sandpaper"
+      },
+      "note": "Same sign. Change in language only."
+    },
+    {
+      "id": "sf2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Sore throat",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "a soreness of the throat"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "a sore throat"
+      },
+      "note": "Same fact, almost the same words."
+    },
+    {
+      "id": "sf3",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Mostly children",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "it attacks children more frequently than grown persons"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "most commonly affects children"
+      },
+      "note": "Both say the disease mostly strikes children."
+    },
+    {
+      "id": "sf4",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Cause",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "an acrid humour in the blood"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "caused by Streptococcus pyogenes"
+      },
+      "note": "Change in knowledge. A bacterium causes the disease, not a humour or putrid air."
+    },
+    {
+      "id": "sf5",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Contagion",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "The malignant kind, with an ulcerated throat, is contagious"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "It spreads mainly through respiratory droplets"
+      },
+      "note": "The 1797 text calls only the malignant kind contagious. Today all forms are known to spread from person to person."
+    },
+    {
+      "id": "sf6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "A mild disease",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "In its common form it is a mild disease, and seldom proves fatal"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "a major cause of death in children"
+      },
+      "note": "Mild cases occur, but in the 19th century the disease killed many children. Inference: the 1797 view reflects a period of milder outbreaks."
+    },
+    {
+      "id": "sf7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Cure",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "The cure consists in bleeding"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Treatment with antibiotics such as penicillin"
+      },
+      "note": "Change in knowledge. Bleeding does not treat the infection. Antibiotics do."
+    },
+    {
+      "id": "sf8",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Peeling skin",
+      "britannica": {
+        "passageId": "B7",
+        "quote": "the scarf-skin falls off in scales"
+      },
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "the skin may peel, especially on the hands and feet"
+      },
+      "note": "Same sign. The scarf-skin is the outer layer of the skin."
+    },
+    {
+      "id": "sf9",
+      "kind": "added",
+      "verdict": null,
+      "label": "No vaccine",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "There is no vaccine against scarlet fever"
+      },
+      "note": "Wikipedia adds prevention. The 1797 text gives no advice on it."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Rash and signs",
+      "britannica": 0.3,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Contagion",
+      "britannica": 0.1,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Severity",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Peeling",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Prevention",
+      "britannica": 0,
+      "wikipedia": 0.1
+    }
+  ],
+  "suggestedQuestions": [
+    "What did the 1797 entry say causes scarlet fever?",
+    "Was scarlet fever a mild disease?"
+  ],
+  "answers": {
+    "What did the 1797 entry say causes scarlet fever?": {
+      "answer": "It names an acrid humour in the blood that nature throws out on the skin, or a putrid state of the air [B3]. Wikipedia names a bacterium, Streptococcus pyogenes [W1], whose strains release toxins and spread by droplets [W3].",
+      "citations": [
+        {
+          "id": "B3",
+          "source": "britannica",
+          "passageId": "B3",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W1",
+          "source": "wikipedia",
+          "passageId": "W1",
+          "rerankScore": 0.95
+        },
+        {
+          "id": "W3",
+          "source": "wikipedia",
+          "passageId": "W3",
+          "rerankScore": 0.88
+        }
+      ],
+      "grounding": "supported"
+    },
+    "Was scarlet fever a mild disease?": {
+      "answer": "The 1797 entry calls the common form mild and seldom fatal [B4], though it says the malignant kind could kill the children of whole families [B5]. Wikipedia says that in the 19th century it was a major cause of death in children [W4]. Today antibiotics make deaths rare [W5].",
+      "citations": [
+        {
+          "id": "B4",
+          "source": "britannica",
+          "passageId": "B4",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.85
+        },
+        {
+          "id": "W4",
+          "source": "wikipedia",
+          "passageId": "W4",
+          "rerankScore": 0.93
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.82
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}

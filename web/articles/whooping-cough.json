@@ -1,0 +1,349 @@
+{
+  "demo": true,
+  "summary": {
+    "slug": "whooping-cough",
+    "label": "Whooping cough",
+    "headword": "CHIN-COUGH",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "match": "partial",
+    "wikipediaTitle": "Whooping cough",
+    "area": "infectious-disease",
+    "teaser": "it seldom attacks the same person a second time"
+  },
+  "aliases": [
+    "whooping cough",
+    "pertussis",
+    "chin-cough",
+    "chincough",
+    "hooping cough",
+    "100-day cough"
+  ],
+  "britannica": {
+    "pageId": "DEMO-0044",
+    "headword": "CHIN-COUGH",
+    "edition": "Fourth edition",
+    "year": 1810,
+    "volume": "Volume 5",
+    "meta": "Encyclopaedia Britannica - Fourth edition, Volume 5 (demo)",
+    "imageUrl": null,
+    "sourceUrl": null,
+    "rawText": "CHI                    [ 418 ]                    CHI\n\nCHIN, the lower part of the face.\n  CHIN-COUGH, or HOOPING-COUGH, a convulfive cough, in\nwhich the patient, after ſeveral quick expirations,\ndraws in his breath with a loud and ſhrill noiſe,\ncalled the hoop. It is chiefly a diſeaſe of children,\nand is very contagious; it ſeldom attacks the ſame\nperſon a ſecond time. It commonly laſts many weeks, and\nſometimes ſeveral months; and it proves dangerous\nchiefly to infants, and when it is joined with inflam-\nmation of the lungs.\n  The diſeaſe is ſuppoſed to ariſe from a peculiar con-\ntagion, which acts upon the nerves of the lungs and\nſtomach, and brings on fits of coughing that often end\nin vomiting.\n  The cure is attempted by gentle vomits, frequently\nrepeated, and by bliſters between the ſhoulders; and in\nthe later ſtage, by the barlc and by opiates. A change\nof air is found to be of great ſervice; and riding on\nhorſeback or in a carriage has been much recommended.\n  CHINA, a large empire in Asia.",
+    "passages": [
+      {
+        "id": "B1",
+        "section": "CHIN-COUGH",
+        "text": "CHIN-COUGH, or HOOPING-COUGH, a convulsive cough, in which the patient, after several quick expirations, draws in his breath with a loud and shrill noise, called the hoop."
+      },
+      {
+        "id": "B2",
+        "section": "CHIN-COUGH",
+        "text": "It is chiefly a disease of children, and is very contagious; it seldom attacks the same person a second time."
+      },
+      {
+        "id": "B3",
+        "section": "CHIN-COUGH",
+        "text": "It commonly lasts many weeks, and sometimes several months; and it proves dangerous chiefly to infants, and when it is joined with inflammation of the lungs."
+      },
+      {
+        "id": "B4",
+        "section": "CHIN-COUGH",
+        "text": "The disease is supposed to arise from a peculiar contagion, which acts upon the nerves of the lungs and stomach, and brings on fits of coughing that often end in vomiting."
+      },
+      {
+        "id": "B5",
+        "section": "CHIN-COUGH",
+        "text": "The cure is attempted by gentle vomits, frequently repeated, and by blisters between the shoulders; and in the later stage, by the bark and by opiates."
+      },
+      {
+        "id": "B6",
+        "section": "CHIN-COUGH",
+        "text": "A change of air is found to be of great service; and riding on horseback or in a carriage has been much recommended."
+      }
+    ]
+  },
+  "wikipedia": {
+    "identifier": "demo-whooping-cough",
+    "title": "Whooping cough",
+    "url": "https://en.wikipedia.org/wiki/Whooping_cough",
+    "dateModified": "2026-09-03",
+    "passages": [
+      {
+        "id": "W1",
+        "section": "Introduction",
+        "text": "Whooping cough, also known as pertussis or the 100-day cough, is a highly contagious bacterial disease caused by Bordetella pertussis."
+      },
+      {
+        "id": "W2",
+        "section": "Signs and symptoms",
+        "text": "After one or two weeks of cold-like symptoms, severe coughing fits begin. A fit may end with a high-pitched whoop as the person breathes in, and vomiting after coughing is common."
+      },
+      {
+        "id": "W3",
+        "section": "Signs and symptoms",
+        "text": "The coughing may last for ten weeks or more."
+      },
+      {
+        "id": "W4",
+        "section": "Complications",
+        "text": "The disease is most dangerous in babies. Pneumonia is a common complication and cause of death."
+      },
+      {
+        "id": "W5",
+        "section": "Immunity",
+        "text": "Neither infection nor vaccination gives lifelong immunity. Protection wanes over the years, and adults can catch the disease again."
+      },
+      {
+        "id": "W6",
+        "section": "Prevention",
+        "text": "The pertussis vaccine prevents the disease. It is given to infants in combination with diphtheria and tetanus vaccines."
+      },
+      {
+        "id": "W7",
+        "section": "Treatment",
+        "text": "Antibiotics such as azithromycin shorten the time a person is contagious. Given early, they may also make the illness milder."
+      }
+    ]
+  },
+  "match": {
+    "strength": "partial",
+    "embedScore": 0.78,
+    "rerankScore": 0.72,
+    "reasons": [
+      "The old headword CHIN-COUGH differs from the modern title, but the entry names it HOOPING-COUGH.",
+      "Both texts describe the coughing fits, the whoop and the danger to infants.",
+      "Bordetella pertussis scores lower because it covers the bacterium more than the disease."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Bordetella pertussis",
+      "url": "https://en.wikipedia.org/wiki/Bordetella_pertussis",
+      "embedScore": 0.7,
+      "rerankScore": 0.52
+    },
+    {
+      "title": "Pertussis vaccine",
+      "url": "https://en.wikipedia.org/wiki/Pertussis_vaccine",
+      "embedScore": 0.66,
+      "rerankScore": 0.44
+    }
+  ],
+  "alignments": [
+    {
+      "id": "wc1",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "The whoop",
+      "britannica": {
+        "passageId": "B1",
+        "quote": "draws in his breath with a loud and shrill noise, called the hoop"
+      },
+      "wikipedia": {
+        "passageId": "W2",
+        "quote": "a high-pitched whoop as the person breathes in"
+      },
+      "note": "Same sign. Change in language only."
+    },
+    {
+      "id": "wc2",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Contagious",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "is very contagious"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "a highly contagious bacterial disease"
+      },
+      "note": "Same fact."
+    },
+    {
+      "id": "wc3",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Only once",
+      "britannica": {
+        "passageId": "B2",
+        "quote": "it seldom attacks the same person a second time"
+      },
+      "wikipedia": {
+        "passageId": "W5",
+        "quote": "Protection wanes over the years"
+      },
+      "note": "Infection gives protection, but it does not last for life. Adults can catch the disease again."
+    },
+    {
+      "id": "wc4",
+      "kind": "reworded",
+      "verdict": "correct",
+      "label": "Long course",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "sometimes several months"
+      },
+      "wikipedia": {
+        "passageId": "W3",
+        "quote": "ten weeks or more"
+      },
+      "note": "Both describe a long illness."
+    },
+    {
+      "id": "wc5",
+      "kind": "retained",
+      "verdict": "correct",
+      "label": "Danger to infants",
+      "britannica": {
+        "passageId": "B3",
+        "quote": "it proves dangerous chiefly to infants"
+      },
+      "wikipedia": {
+        "passageId": "W4",
+        "quote": "most dangerous in babies"
+      },
+      "note": "Same fact. Both also name lung inflammation, now pneumonia."
+    },
+    {
+      "id": "wc6",
+      "kind": "revised",
+      "verdict": "partly",
+      "label": "Cause",
+      "britannica": {
+        "passageId": "B4",
+        "quote": "a peculiar contagion, which acts upon the nerves of the lungs"
+      },
+      "wikipedia": {
+        "passageId": "W1",
+        "quote": "caused by Bordetella pertussis"
+      },
+      "note": "A contagion is right, and a bacterium is that contagion. The action on the nerves is wrong."
+    },
+    {
+      "id": "wc7",
+      "kind": "revised",
+      "verdict": "wrong",
+      "label": "Vomits and blisters",
+      "britannica": {
+        "passageId": "B5",
+        "quote": "The cure is attempted by gentle vomits"
+      },
+      "wikipedia": {
+        "passageId": "W7",
+        "quote": "Antibiotics such as azithromycin"
+      },
+      "note": "Change in knowledge. Vomits and blisters do not treat the infection."
+    },
+    {
+      "id": "wc8",
+      "kind": "dropped",
+      "verdict": "wrong",
+      "label": "Change of air",
+      "britannica": {
+        "passageId": "B6",
+        "quote": "riding on horseback or in a carriage has been much recommended"
+      },
+      "wikipedia": null,
+      "note": "Wikipedia does not list a change of air or riding as a treatment. Inference: the advice has no effect on the infection."
+    },
+    {
+      "id": "wc9",
+      "kind": "added",
+      "verdict": null,
+      "label": "Vaccine",
+      "britannica": null,
+      "wikipedia": {
+        "passageId": "W6",
+        "quote": "The pertussis vaccine prevents the disease"
+      },
+      "note": "The vaccine came in the 20th century. The 1810 text has no means of prevention."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Signs",
+      "britannica": 0.3,
+      "wikipedia": 0.25
+    },
+    {
+      "topic": "Contagion and immunity",
+      "britannica": 0.15,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Course and danger",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Cause",
+      "britannica": 0.15,
+      "wikipedia": 0.1
+    },
+    {
+      "topic": "Treatment",
+      "britannica": 0.2,
+      "wikipedia": 0.15
+    },
+    {
+      "topic": "Prevention",
+      "britannica": 0,
+      "wikipedia": 0.2
+    }
+  ],
+  "suggestedQuestions": [
+    "Can a person catch whooping cough twice?",
+    "What did the 1810 entry recommend as a cure?"
+  ],
+  "answers": {
+    "Can a person catch whooping cough twice?": {
+      "answer": "The 1810 entry says it seldom attacks the same person a second time [B2]. Wikipedia says neither infection nor vaccination gives lifelong immunity, so adults can catch it again [W5].",
+      "citations": [
+        {
+          "id": "B2",
+          "source": "britannica",
+          "passageId": "B2",
+          "rerankScore": 0.97
+        },
+        {
+          "id": "W5",
+          "source": "wikipedia",
+          "passageId": "W5",
+          "rerankScore": 0.96
+        }
+      ],
+      "grounding": "supported"
+    },
+    "What did the 1810 entry recommend as a cure?": {
+      "answer": "Gentle vomits, blisters between the shoulders, and later the bark and opiates [B5], plus a change of air and riding [B6]. Wikipedia lists antibiotics such as azithromycin [W7] and prevention by vaccine [W6].",
+      "citations": [
+        {
+          "id": "B5",
+          "source": "britannica",
+          "passageId": "B5",
+          "rerankScore": 0.96
+        },
+        {
+          "id": "B6",
+          "source": "britannica",
+          "passageId": "B6",
+          "rerankScore": 0.9
+        },
+        {
+          "id": "W7",
+          "source": "wikipedia",
+          "passageId": "W7",
+          "rerankScore": 0.92
+        },
+        {
+          "id": "W6",
+          "source": "wikipedia",
+          "passageId": "W6",
+          "rerankScore": 0.8
+        }
+      ],
+      "grounding": "supported"
+    }
+  }
+}
